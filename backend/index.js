@@ -8,6 +8,7 @@ const jwt = require('jsonwebtoken');
 require('dotenv').config();
 
 const authRoutes = require('./routes/authRoutes');
+const forumRoutes = require('./routes/forumRoutes');
 
 const app = express();
 app.use(cors());
@@ -21,6 +22,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/ebench')
 
 // ── Routes ──
 app.use('/api/auth', authRoutes);
+app.use('/api/forum', forumRoutes);
 
 const server = http.createServer(app);
 const io = new Server(server, {

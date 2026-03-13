@@ -33,31 +33,31 @@ const FEATURES = [
     wide: false,
   },
     {
-    num:"05", icon:"🎯", badge:"Personalized",
+      num:"06", icon:"🤖", badge:"Guided Assistance",
     name:"AI chat Bot",
     desc:"Ask legal questions in plain language and get instant AI-guided answers, relevant sections, and step-by-step clarity for common legal situations.",
     wide: false,
   },
     {
-    num:"06", icon:"🎯", badge:"Personalized",
+      num:"07", icon:"🧑‍⚖️", badge:"Community Support",
     name:"Legal Forum & Community",
     desc:"Join moderated discussions with learners and legal professionals, share experiences, and get peer support on legal topics and procedures.",
     wide: false,
   },
     {
-    num:"07", icon:"🎯", badge:"Personalized",
+      num:"08", icon:"🎓", badge:"Legal Literacy",
     name:"Micro-Learning Modules",
     desc:"Learn core legal concepts through short bite-sized lessons, quick examples, and practical explainers designed for everyday understanding.",
     wide: false,
   },
     {
-    num:"08", icon:"🎯", badge:"Personalized",
+      num:"09", icon:"🗂️", badge:"Document Processing",
     name:"Case Summarizer",
     desc:"Turn long case records and court filings into structured key-point summaries with facts, issues, arguments, and outcomes in minutes.",
     wide: false,
   },
     {
-    num:"09", icon:"🎯", badge:"Personalized",
+      num:"10", icon:"🗞️", badge:"Stay Updated",
     name:"Legal News Feed",
     desc:"Track latest judgments, policy updates, and legal developments through a clean feed with quick takeaways and category filters.",
     wide: false,
@@ -84,12 +84,12 @@ export default function FeaturesSection() {
           Core Features
         </h2>
         <p className="reveal-up delay-2 font-cormorant" style={{ fontSize:19, fontWeight:400, lineHeight:1.65, color:"var(--text-mid)", maxWidth:520 }}>
-          Five powerful AI tools built for legal intelligence — from case analysis to personalized law awareness.
+          Ten powerful legal tools built for legal intelligence and awareness, from case analysis to community-driven guidance.
         </p>
 
         <div className="features-grid" style={{ display:"grid", gridTemplateColumns:"repeat(3,1fr)", gap:18, marginTop:50 }}>
           {FEATURES.map((f, i) => (
-            <FeatureCard key={f.num} feature={f} delay={i + 2} />
+            <FeatureCard key={`${f.num}-${f.name}`} feature={f} delay={i + 2} />
           ))}
         </div>
       </div>

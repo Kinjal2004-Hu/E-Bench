@@ -318,6 +318,7 @@ const mainNav = [
     { label: "Contracts", href: "/contracts", icon: FileText },
     { label: "AI Chatbot", href: "/chat", icon: Bot },
     { label: "My Chats", href: "/chats", icon: BookOpen },
+  { label: "Community", href: "/community", icon: BookOpen },
 ]
 
 const bottomNav = [
@@ -387,10 +388,13 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
                             <Link href="/contact" className="eb-navbar-contact">
                                 <Mail size={14} /> Contact Us
                             </Link>
+                            <Link href="/community" className="eb-navbar-contact">
+                              <BookOpen size={14} /> Community
+                            </Link>
                             <button className="eb-theme-btn" data-tip={dark ? "Light Mode" : "Dark Mode"} onClick={() => setDark(!dark)}>
                                 {dark ? <Sun size={16} /> : <Moon size={16} />}
                             </button>
-                            <button className="eb-notif-btn">
+                            <button className="eb-notif-btn" title="Notifications" aria-label="Notifications">
                                 <Bell size={16} /><span className="eb-notif-dot" />
                             </button>
                         </div>
