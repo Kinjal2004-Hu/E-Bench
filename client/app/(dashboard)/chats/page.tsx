@@ -6,6 +6,7 @@ import {
     Search, Plus, Pin, PinOff, Trash2, MessageSquare,
     Scale, FileText, Shield, Clock, ChevronRight, Sparkles, BookOpenText
 } from "lucide-react";
+import { fetchMyChats, deleteChatById, type ApiChat } from "@/lib/chatApi";
 
 /* ── Types ── */
 type ChatEntry = {
@@ -56,16 +57,6 @@ const DEFAULT_BOT = { icon: Sparkles, color: THEME_DARK, bg: THEME_SOFT };
 const FILTERS = ["All", "Legal Research", "Case Analysis", "Contract Review", "Summary"] as const;
 type FilterType = typeof FILTERS[number];
 
-/* ── Demo data (shown when localStorage is empty) ── */
-const DEMO_CHATS: ChatEntry[] = [
-    { id: "demo_1", title: "Section 279 BNS — Rash Driving Penalties", last_message: "Here are relevant Supreme Court judgments on rash driving under Section 279...", bot_type: "Legal Research", timestamp: "2026-03-12T13:40:00", message_count: 8, pinned: true },
-    { id: "demo_2", title: "Contract Clause Review — NDA Template", last_message: "The non-compete clause in Section 4.2 may be unenforceable under...", bot_type: "Contract Review", timestamp: "2026-03-11T10:15:00", message_count: 12, pinned: false },
-    { id: "demo_3", title: "CrPC vs BNSS — Bail Provisions Comparison", last_message: "Under BNSS 2023, the bail provisions have been restructured...", bot_type: "Case Analysis", timestamp: "2026-03-10T16:30:00", message_count: 6, pinned: false },
-    { id: "demo_4", title: "Motor Vehicle Act — Accident Compensation", last_message: "Section 166 of the Motor Vehicles Act provides for claims tribunals...", bot_type: "Legal Research", timestamp: "2026-03-09T09:20:00", message_count: 5, pinned: false },
-    { id: "demo_5", title: "IT Act Section 66A — Still Valid?", last_message: "Section 66A was struck down by the Supreme Court in Shreya Singhal v UOI...", bot_type: "Legal Research", timestamp: "2026-03-08T14:55:00", message_count: 4, pinned: false },
-    { id: "demo_6", title: "Corporate Fraud — Director Liability Under Companies Act", last_message: "Under Section 447, fraud carries both civil and criminal penalties...", bot_type: "Case Analysis", timestamp: "2026-03-07T11:10:00", message_count: 9, pinned: false },
-];
-
 const DEMO_SUMMARIES: SummaryEntry[] = [
     {
         id: "sum_1",
@@ -110,6 +101,7 @@ export default function ChatHistoryPage() {
     const [search, setSearch] = useState("");
     const [activeFilter, setActiveFilter] = useState<FilterType>("All");
     const [deleteConfirm, setDeleteConfirm] = useState<string | null>(null);
+    const [error, setError] = useState("");
 
     useEffect(() => {
         const requestedFilter = searchParams.get("filter");
@@ -118,27 +110,36 @@ export default function ChatHistoryPage() {
         }
     }, [searchParams]);
 
-    // Load chats from localStorage
-    useEffect(() => {
-        try {
-            const stored = localStorage.getItem("ebench_chats");
-            if (stored) {
-                const parsed = JSON.parse(stored);
-                if (Array.isArray(parsed) && parsed.length > 0) {
-                    setChats(parsed);
-                    return;
-                }
-            }
-        } catch { /* ignore */ }
-        setChats(DEMO_CHATS);
-        localStorage.setItem("ebench_chats", JSON.stringify(DEMO_CHATS));
-    }, []);
+    const mapApiChatToEntry = (chat: ApiChat): ChatEntry => {
+        const ownUserType = typeof window !== "undefined" ? localStorage.getItem("userType") : "user";
+        const ownModel = ownUserType === "consultant" ? "Consultant" : "User";
+        const other = chat.participants.find((p) => p.participantModel !== ownModel)?.participant;
 
-    // Persist to localStorage
-    const persist = (updated: ChatEntry[]) => {
-        setChats(updated);
-        localStorage.setItem("ebench_chats", JSON.stringify(updated));
+        return {
+            id: chat._id,
+            title: other?.fullName || chat.title || "Direct Chat",
+            last_message: chat.lastMessage || "No messages yet",
+            bot_type: "Legal Research",
+            timestamp: chat.lastMessageAt || chat.updatedAt,
+            message_count: chat.messages?.length || 0,
+            pinned: false,
+        };
     };
+
+    // Load chats from API
+    useEffect(() => {
+        const load = async () => {
+            try {
+                const apiChats = await fetchMyChats();
+                setChats(apiChats.map(mapApiChatToEntry));
+            } catch (err) {
+                const msg = err instanceof Error ? err.message : "Failed to load chats";
+                setError(msg);
+            }
+        };
+
+        load();
+    }, []);
 
     // Start new chat
     const handleNewChat = () => {
@@ -162,14 +163,20 @@ export default function ChatHistoryPage() {
     // Toggle pin
     const handlePin = (id: string, e: React.MouseEvent) => {
         e.stopPropagation();
-        persist(chats.map(c => c.id === id ? { ...c, pinned: !c.pinned } : c));
+        setChats((prev) => prev.map(c => c.id === id ? { ...c, pinned: !c.pinned } : c));
     };
 
     // Delete chat
-    const handleDelete = (id: string, e: React.MouseEvent) => {
+    const handleDelete = async (id: string, e: React.MouseEvent) => {
         e.stopPropagation();
         if (deleteConfirm === id) {
-            persist(chats.filter(c => c.id !== id));
+            try {
+                await deleteChatById(id);
+                setChats((prev) => prev.filter((c) => c.id !== id));
+            } catch (err) {
+                const msg = err instanceof Error ? err.message : "Failed to delete chat";
+                setError(msg);
+            }
             setDeleteConfirm(null);
         } else {
             setDeleteConfirm(id);
@@ -289,6 +296,9 @@ export default function ChatHistoryPage() {
 
             {/* Chat List */}
             <div className="flex-1 overflow-y-auto min-h-0 space-y-2 pr-1">
+                {error ? (
+                    <div className="p-3 rounded-lg text-sm text-red-700 bg-red-50 border border-red-100 mb-2">{error}</div>
+                ) : null}
                 {filtered.length === 0 ? (
                     <div className="flex flex-col items-center justify-center h-64 text-gray-400">
                         <MessageSquare size={40} strokeWidth={1.2} className="mb-3 text-gray-300" />
