@@ -14,13 +14,13 @@ export default function CategoryCard({ category }: { category: ForumCategory }) 
   const Icon = iconMap[category.icon as keyof typeof iconMap] ?? Scale;
 
   return (
-    <article className="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
-      <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-slate-100 text-slate-700">
+    <article className="rounded-xl border border-[#E2DAC8] bg-[#FFFFFF] p-5 shadow-sm transition-all duration-200 ease-in-out hover:-translate-y-0.5 hover:shadow-md">
+      <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-[#1C2333] text-[#C49A10]">
         <Icon className="h-5 w-5" />
       </div>
-      <h3 className="text-base font-semibold text-slate-900">{category.name}</h3>
-      <p className="mt-2 text-sm leading-6 text-slate-600">{category.description}</p>
-      <p className="mt-3 text-xs font-medium text-slate-500">{category.postCount} discussions</p>
+      <h3 className="text-lg font-semibold text-[#1C2333]">{category.name}</h3>
+      <p className="mt-1 text-sm text-[#555]">{category.description}</p>
+      <p className="mt-2 text-xs text-[#777]">{category.postCount} discussions</p>
     </article>
   );
 }

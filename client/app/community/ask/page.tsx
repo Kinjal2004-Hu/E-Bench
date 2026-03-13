@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Paperclip } from "lucide-react";
-import { forumCategories } from "@/lib/forum-data";
+import { forumCategories, forumPosts } from "@/lib/forum-data";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -21,6 +21,12 @@ export default function AskQuestionPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState("");
 
+  const similarQuestions = title.trim()
+    ? forumPosts
+        .filter((post) => post.title.toLowerCase().includes(title.toLowerCase()) || title.toLowerCase().includes(post.title.toLowerCase().split(" ")[0]))
+        .slice(0, 3)
+    : [];
+
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setError("");
@@ -36,7 +42,10 @@ export default function AskQuestionPage() {
           category,
           tags,
           author: "Community Member",
+          authorAvatar: "CM",
+          authorReputation: 100,
           authorRole: "member",
+          views: 1,
         }),
       });
 
@@ -75,6 +84,18 @@ export default function AskQuestionPage() {
             required
             placeholder="Example: Is notice period mandatory in all employment contracts?"
           />
+          {similarQuestions.length > 0 ? (
+            <div className="rounded-lg border border-[#E2DAC8] bg-[#F5F1EA] p-3">
+              <p className="text-xs font-semibold text-[#1C2333]">Similar questions from community</p>
+              <ul className="mt-2 space-y-1">
+                {similarQuestions.map((item) => (
+                  <li key={item.id} className="text-xs text-[#555]">
+                    • {item.title}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : null}
         </div>
 
         <div className="space-y-2">
@@ -145,8 +166,9 @@ export default function AskQuestionPage() {
         </div>
 
         <div className="flex flex-col gap-3 pt-2 sm:flex-row">
-          <Button type="submit" disabled={isSubmitting}>
+          <Button className="mt-3 inline-flex rounded-lg bg-[#C49A10] px-4 py-2 text-sm font-medium text-white transition hover:opacity-90" type="submit" disabled={isSubmitting}>
             {isSubmitting ? "Posting..." : "Post Question"}
+
           </Button>
 
           <Link

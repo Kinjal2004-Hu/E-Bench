@@ -11,8 +11,11 @@ export type ForumPost = {
   title: string;
   category: string;
   author: string;
+  authorAvatar: string;
+  authorReputation: number;
   authorRole: "member" | "lawyer";
   replies: number;
+  views: number;
   upvotes: number;
   timestamp: string;
   solved: boolean;
@@ -26,6 +29,7 @@ export type ForumReply = {
   user: string;
   role: "member" | "lawyer";
   avatar: string;
+  reputation: number;
   text: string;
   timestamp: string;
   upvotes: number;
@@ -83,8 +87,11 @@ export const forumPosts: ForumPost[] = [
     title: "Can an FIR be withdrawn after a settlement in a minor assault case?",
     category: "Criminal Law",
     author: "Riya S.",
+    authorAvatar: "RS",
+    authorReputation: 240,
     authorRole: "member",
     replies: 14,
+    views: 1240,
     upvotes: 62,
     timestamp: "2h ago",
     solved: true,
@@ -97,8 +104,11 @@ export const forumPosts: ForumPost[] = [
     title: "How to verify title chain before buying inherited land?",
     category: "Property Law",
     author: "Mohan K.",
+    authorAvatar: "MK",
+    authorReputation: 186,
     authorRole: "member",
     replies: 8,
+    views: 980,
     upvotes: 47,
     timestamp: "5h ago",
     solved: false,
@@ -111,8 +121,11 @@ export const forumPosts: ForumPost[] = [
     title: "Employer denied maternity leave despite one year of service",
     category: "Corporate Law",
     author: "Ananya P.",
+    authorAvatar: "AP",
+    authorReputation: 920,
     authorRole: "member",
     replies: 19,
+    views: 1680,
     upvotes: 88,
     timestamp: "1d ago",
     solved: true,
@@ -125,8 +138,11 @@ export const forumPosts: ForumPost[] = [
     title: "Online shopping platform refusing refund for defective phone",
     category: "Consumer Rights",
     author: "Nitin A.",
+    authorAvatar: "NA",
+    authorReputation: 150,
     authorRole: "member",
     replies: 11,
+    views: 1120,
     upvotes: 54,
     timestamp: "2d ago",
     solved: false,
@@ -139,8 +155,11 @@ export const forumPosts: ForumPost[] = [
     title: "What immediate steps should I take after a UPI fraud complaint?",
     category: "Cyber Law",
     author: "Dheeraj M.",
+    authorAvatar: "DM",
+    authorReputation: 430,
     authorRole: "member",
     replies: 27,
+    views: 2410,
     upvotes: 102,
     timestamp: "3d ago",
     solved: true,
@@ -153,8 +172,11 @@ export const forumPosts: ForumPost[] = [
     title: "Shared custody rights when one parent relocates to another city",
     category: "Family Law",
     author: "Sneha V.",
+    authorAvatar: "SV",
+    authorReputation: 305,
     authorRole: "member",
     replies: 9,
+    views: 860,
     upvotes: 36,
     timestamp: "4d ago",
     solved: false,
@@ -171,6 +193,7 @@ export const forumReplies: ForumReply[] = [
     user: "Adv. Karan Mehta",
     role: "lawyer",
     avatar: "KM",
+    reputation: 1480,
     text:
       "In compoundable matters, parties can settle and file the compromise memo before the trial court. For non-compoundable sections, you generally approach the High Court for quashing under Section 482 CrPC with settlement documents and affidavits.",
     timestamp: "1h ago",
@@ -183,6 +206,7 @@ export const forumReplies: ForumReply[] = [
     user: "Asha R.",
     role: "member",
     avatar: "AR",
+    reputation: 210,
     text:
       "Please also keep signed settlement terms and identity proofs ready. It helped us avoid delays in court filing.",
     timestamp: "58m ago",
@@ -194,6 +218,7 @@ export const forumReplies: ForumReply[] = [
     user: "Adv. Nidhi Prasad",
     role: "lawyer",
     avatar: "NP",
+    reputation: 1335,
     text:
       "Report to cybercrime helpline 1930 immediately, preserve transaction screenshots, and submit written complaint to bank nodal officer. If unresolved, file with cyber police and banking ombudsman.",
     timestamp: "2d ago",
@@ -206,6 +231,7 @@ export const forumReplies: ForumReply[] = [
     user: "Raghav T.",
     role: "member",
     avatar: "RT",
+    reputation: 160,
     text:
       "I got partial recovery by escalating within 24 hours. Keep your complaint reference number handy for follow-up.",
     timestamp: "2d ago",
@@ -214,10 +240,10 @@ export const forumReplies: ForumReply[] = [
 ];
 
 export const topContributors = [
-  { name: "Adv. Karan Mehta", points: 1480 },
-  { name: "Adv. Nidhi Prasad", points: 1335 },
-  { name: "Ananya P.", points: 920 },
-  { name: "Mohan K.", points: 870 },
+  { name: "Adv. Karan Mehta", avatar: "KM", points: 1480 },
+  { name: "Adv. Nidhi Prasad", avatar: "NP", points: 1335 },
+  { name: "Ananya P.", avatar: "AP", points: 920 },
+  { name: "Mohan K.", avatar: "MK", points: 870 },
 ];
 
 export const trendingTopics = [
@@ -246,6 +272,24 @@ export const beginnerGuides = [
     title: "Understanding bail terms in simple language",
     readTime: "7 min",
   },
+  {
+    title: "Tenant rights in India: quick checklist",
+    readTime: "5 min",
+  },
+  {
+    title: "What to do after cyber fraud",
+    readTime: "4 min",
+  },
+  {
+    title: "Consumer complaint process made simple",
+    readTime: "6 min",
+  },
+];
+
+export const reputationRules = [
+  "+10 for most helpful answer",
+  "+5 for posting a useful answer",
+  "+2 for each upvote received",
 ];
 
 export function toRelativeTimestamp(input: string | Date) {

@@ -1,6 +1,6 @@
 "use client";
 
-import { Bell, Search, Moon, Sun, Mail, SearchCode } from "lucide-react";
+import { Bell, Search, Moon, Sun, Mail } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
@@ -43,14 +43,6 @@ export default function TopNav() {
                     Contact Us
                 </Link>
 
-                <Link
-                    href="/community"
-                    className="hidden md:flex items-center gap-2 px-4 py-2 bg-[#E9EEF7] text-[#1C4D8D] font-medium text-sm rounded-full hover:bg-[#DDE7F5] transition-colors"
-                >
-                    <SearchCode size={16} />
-                    Community
-                </Link>
-
                 {/* Action Icons */}
                 <div className="flex items-center gap-1.5 ml-2">
                     <button
@@ -60,7 +52,7 @@ export default function TopNav() {
                         {isDark ? <Sun size={18} className="text-amber-500" /> : <Moon size={18} />}
                     </button>
 
-                    <button title="Notifications" aria-label="Notifications" className="relative w-9 h-9 flex items-center justify-center rounded-full text-gray-500 hover:bg-gray-100 transition-colors">
+                    <button aria-label="Notifications" className="relative w-9 h-9 flex items-center justify-center rounded-full text-gray-500 hover:bg-gray-100 transition-colors">
                         <Bell size={18} />
                         <span className="absolute top-1.5 right-1.5 w-2 h-2 bg-red-500 border-2 border-white rounded-full"></span>
                     </button>

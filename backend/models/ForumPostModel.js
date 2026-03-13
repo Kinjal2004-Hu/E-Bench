@@ -29,6 +29,17 @@ const forumPostSchema = new mongoose.Schema(
       trim: true,
       maxlength: 80,
     },
+    authorAvatar: {
+      type: String,
+      default: 'CM',
+      trim: true,
+      maxlength: 4,
+    },
+    authorReputation: {
+      type: Number,
+      default: 100,
+      min: 0,
+    },
     authorRole: {
       type: String,
       enum: ['member', 'lawyer'],
@@ -40,6 +51,11 @@ const forumPostSchema = new mongoose.Schema(
       min: 0,
     },
     upvotes: {
+      type: Number,
+      default: 0,
+      min: 0,
+    },
+    views: {
       type: Number,
       default: 0,
       min: 0,

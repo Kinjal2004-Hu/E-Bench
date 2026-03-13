@@ -4,9 +4,9 @@ import { cn } from "@/lib/utils";
 type BadgeVariant = "default" | "secondary" | "success";
 
 const badgeVariants: Record<BadgeVariant, string> = {
-  default: "bg-blue-50 text-blue-700",
-  secondary: "bg-slate-100 text-slate-700",
-  success: "bg-emerald-50 text-emerald-700",
+  default: "bg-[#F5F1EA] text-[#1C2333]",
+  secondary: "bg-[#EDE7D9] text-[#1C2333]",
+  success: "bg-[#F5F1EA] text-[#C49A10]",
 };
 
 export interface BadgeProps extends React.HTMLAttributes<HTMLSpanElement> {

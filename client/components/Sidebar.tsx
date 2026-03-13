@@ -10,6 +10,7 @@ import {
     Settings,
     User,
     Users,
+    GraduationCap,
     PanelLeftClose,
     PanelLeftOpen,
 } from "lucide-react";
@@ -19,6 +20,7 @@ const navItems = [
     { name: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
     { name: "Cases", href: "/cases", icon: Scale },
     { name: "Contracts", href: "/contracts", icon: FileText },
+    { name: "Microlearning", href: "/microlearning", icon: GraduationCap },
     { name: "Community", href: "/community", icon: Users },
     { name: "Downloads", href: "/downloads", icon: Download },
 ];
