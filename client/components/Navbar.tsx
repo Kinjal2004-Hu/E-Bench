@@ -7,6 +7,7 @@ const NAV_LINKS = [
   { label: "Home", href: "#hero" },
   { label: "Purpose", href: "#purpose" },
   { label: "Features", href: "#features" },
+  { label: "Community", href: "/community" },
   { label: "Sources", href: "#sources" },
   { label: "FAQ", href: "#faq" },
   { label: "Contact", href: "#contact" },

@@ -1,6 +1,6 @@
 "use client";
 
-import { Bell, Search, Moon, Sun, Mail, SearchCode } from "lucide-react";
+import { Bell, Search, Moon, Sun, Mail } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
@@ -52,7 +52,7 @@ export default function TopNav() {
                         {isDark ? <Sun size={18} className="text-amber-500" /> : <Moon size={18} />}
                     </button>
 
-                    <button className="relative w-9 h-9 flex items-center justify-center rounded-full text-gray-500 hover:bg-gray-100 transition-colors">
+                    <button aria-label="Notifications" className="relative w-9 h-9 flex items-center justify-center rounded-full text-gray-500 hover:bg-gray-100 transition-colors">
                         <Bell size={18} />
                         <span className="absolute top-1.5 right-1.5 w-2 h-2 bg-red-500 border-2 border-white rounded-full"></span>
                     </button>

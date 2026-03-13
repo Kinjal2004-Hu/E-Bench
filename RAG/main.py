@@ -120,6 +120,31 @@ class AskResponse(BaseModel):
     indian_kanoon_results: Optional[List[IKResult]] = None
 
 
+class CaseStudy(BaseModel):
+    title: str
+    facts: str
+    legal_issue: str
+    key_learning: str
+    related_sections: List[str] = []
+
+
+class MicrolearningAskRequest(BaseModel):
+    lesson_id: Optional[str] = None
+    lesson_title: str
+    law_text: str
+    question: str
+    top_k: int = 5
+
+
+class MicrolearningAskResponse(BaseModel):
+    lesson_title: str
+    question: str
+    ai_answer: str
+    supporting_sections: List[SearchResult]
+    case_studies: List[CaseStudy]
+    model_used: str
+
+
 def chunk_text(text, chunk_size=220, overlap=40):
     words = text.split()
     chunks = []
@@ -445,6 +470,59 @@ def ask_llm(question, sections, ik_results=None):
     return str(output)
 
 
+def to_search_results(ranked):
+
+    results = []
+
+    for r in ranked:
+        sec = r["section"]
+        results.append(
+            SearchResult(
+                document=sec["document"],
+                section_number=sec["section"],
+                title=sec["title"],
+                snippet=sec["text"][:400],
+                punishment_summary=extract_punishment(sec["text"]),
+                page=sec["page"],
+                score=r["score"],
+                score_breakdown=r["score_breakdown"]
+            )
+        )
+
+    return results
+
+
+def build_case_studies(question, sections, ik_results=None):
+
+    case_studies = []
+
+    for i, sec in enumerate(sections[:2], start=1):
+        section_ref = f"{sec['document']} Section {sec['section']}"
+        case_studies.append(
+            CaseStudy(
+                title=f"Case Study {i}: Applying {section_ref}",
+                facts=f"A citizen faces a legal problem similar to '{question}'. Authorities need to act within due legal process.",
+                legal_issue=f"Whether safeguards under {section_ref} and related procedure were followed.",
+                key_learning=f"Map facts to statutory elements first, then evaluate remedies under {section_ref}.",
+                related_sections=[section_ref],
+            )
+        )
+
+    if ik_results:
+        first_case = ik_results[0]
+        case_studies.append(
+            CaseStudy(
+                title="Case Study 3: Case-Law Perspective",
+                facts=f"Reference judgment: {first_case.get('title', 'Indian Kanoon precedent')}",
+                legal_issue="How precedent can guide interpretation of facts in similar disputes.",
+                key_learning="Use case-law ratio to strengthen legal reasoning beyond bare section text.",
+                related_sections=[],
+            )
+        )
+
+    return case_studies[:3]
+
+
 @app.on_event("startup")
 def startup():
 
@@ -474,21 +552,7 @@ def ask(body: AskRequest):
 
     ai_answer = ask_llm(body.question, sections, ik_results=ik_raw)
 
-    results = []
-    for r in ranked:
-        sec = r["section"]
-        results.append(
-            SearchResult(
-                document=sec["document"],
-                section_number=sec["section"],
-                title=sec["title"],
-                snippet=sec["text"][:400],
-                punishment_summary=extract_punishment(sec["text"]),
-                page=sec["page"],
-                score=r["score"],
-                score_breakdown=r["score_breakdown"]
-            )
-        )
+    results = to_search_results(ranked)
 
     ik_models = [IKResult(doc_id=d["doc_id"], title=d["title"], headline=d.get("headline", "")) for d in ik_raw]
 
@@ -511,21 +575,7 @@ def query(q: str = Query(...), top_k: int = 7):
 
     ai_answer = ask_llm(q, sections, ik_results=ik_raw)
 
-    results = []
-    for r in ranked:
-        sec = r["section"]
-        results.append(
-            SearchResult(
-                document=sec["document"],
-                section_number=sec["section"],
-                title=sec["title"],
-                snippet=sec["text"][:400],
-                punishment_summary=extract_punishment(sec["text"]),
-                page=sec["page"],
-                score=r["score"],
-                score_breakdown=r["score_breakdown"]
-            )
-        )
+    results = to_search_results(ranked)
 
     ik_models = [IKResult(doc_id=d["doc_id"], title=d["title"], headline=d.get("headline", "")) for d in ik_raw]
 
@@ -537,6 +587,40 @@ def query(q: str = Query(...), top_k: int = 7):
         model_used=BYTEZ_MODEL,
         user_rights=None,
         indian_kanoon_results=ik_models,
+    )
+
+
+@app.post("/microlearning/ask", response_model=MicrolearningAskResponse)
+def microlearning_ask(body: MicrolearningAskRequest):
+
+    composite_query = (
+        f"Lesson: {body.lesson_title}. "
+        f"Law Text: {body.law_text}. "
+        f"User Question: {body.question}"
+    )
+
+    ranked = retrieve(composite_query, body.top_k)
+    sections = [r["section"] for r in ranked]
+
+    ik_raw = ik_search(f"{body.lesson_title} {body.question}", max_results=3)
+
+    ai_answer = ask_llm(
+        f"Microlearning lesson '{body.lesson_title}'. Question: {body.question}. "
+        f"Explain in concise, learner-friendly steps with practical legal caution.",
+        sections,
+        ik_results=ik_raw,
+    )
+
+    results = to_search_results(ranked)
+    case_studies = build_case_studies(body.question, sections, ik_raw)
+
+    return MicrolearningAskResponse(
+        lesson_title=body.lesson_title,
+        question=body.question,
+        ai_answer=ai_answer,
+        supporting_sections=results,
+        case_studies=case_studies,
+        model_used=BYTEZ_MODEL,
     )
 
 

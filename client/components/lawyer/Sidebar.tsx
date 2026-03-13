@@ -10,6 +10,7 @@ import {
   FolderOpen,
   UserCog,
   Scale,
+  Users,
   Menu,
   X,
 } from "lucide-react";
@@ -21,6 +22,7 @@ const NAV = [
   { label: "Appointments",           href: "/lawyer-dashboard/appointments",  icon: CalendarDays },
   { label: "Client Chat",            href: "/lawyer-dashboard/chat",          icon: MessageSquare },
   { label: "Case Files",             href: "/lawyer-dashboard/case-files",    icon: FolderOpen },
+  { label: "Community Forum",        href: "/community",                      icon: Users },
   { label: "Profile Settings",       href: "/lawyer-dashboard/profile",       icon: UserCog },
 ];
 

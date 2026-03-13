@@ -4,7 +4,7 @@ import { useState } from "react"
 import {
     Bell, Search, Scale, FileText, LayoutDashboard, BookOpen,
   Download, Settings, User, ChevronLeft, ChevronRight as ChevronR,
-    Mail, Sun, Moon, Bot, Plus
+    Mail, Sun, Moon, Bot, Plus, GraduationCap
 } from "lucide-react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
@@ -168,12 +168,6 @@ const makeStyle = (dark :boolean) => `
     cursor:pointer; transition:all 0.18s; position:relative;
   }
   .eb-theme-btn:hover { background:var(--gold); color:#fff; border-color:var(--gold); }
-  .eb-theme-btn::after {
-    content:attr(data-tip); position:absolute; bottom:calc(100%+8px); left:50%; transform:translateX(-50%);
-    background:var(--navy); color:#fff; font-size:11px; font-weight:500; padding:4px 9px;
-    border-radius:6px; white-space:nowrap; opacity:0; pointer-events:none; transition:opacity 0.18s; z-index:100;
-  }
-  .eb-theme-btn:hover::after { opacity:1; }
 
   /* notification icon-only btn */
   .eb-notif-btn {
@@ -182,12 +176,6 @@ const makeStyle = (dark :boolean) => `
     display:flex; align-items:center; justify-content:center; cursor:pointer; transition:all 0.18s;
   }
   .eb-notif-btn:hover { background:var(--gold); color:#fff; border-color:var(--gold); }
-  .eb-notif-btn::after {
-    content:'Notifications'; position:absolute; bottom:calc(100%+8px); left:50%; transform:translateX(-50%);
-    background:var(--navy); color:#fff; font-size:11px; font-weight:500; padding:4px 9px;
-    border-radius:6px; white-space:nowrap; opacity:0; pointer-events:none; transition:opacity 0.18s; z-index:100;
-  }
-  .eb-notif-btn:hover::after { opacity:1; }
   .eb-notif-dot { position:absolute; top:6px; right:7px; width:7px; height:7px; background:#E74C3C; border-radius:50%; border:2px solid var(--surface2); }
 
   /* content */
@@ -316,8 +304,10 @@ const mainNav = [
     { label: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
     { label: "Cases", href: "/cases", icon: Scale },
     { label: "Contracts", href: "/contracts", icon: FileText },
+    { label: "Microlearning", href: "/microlearning", icon: GraduationCap },
     { label: "AI Chatbot", href: "/chat", icon: Bot },
     { label: "My Chats", href: "/chats", icon: BookOpen },
+  { label: "Community", href: "/community", icon: BookOpen },
 ]
 
 const bottomNav = [
@@ -392,10 +382,10 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
                             <Link href="/contact" className="eb-navbar-contact">
                                 <Mail size={14} /> Contact Us
                             </Link>
-                            <button className="eb-theme-btn" data-tip={dark ? "Light Mode" : "Dark Mode"} onClick={() => setDark(!dark)}>
+                            <button className="eb-theme-btn" onClick={() => setDark(!dark)}>
                                 {dark ? <Sun size={16} /> : <Moon size={16} />}
                             </button>
-                            <button className="eb-notif-btn">
+                            <button className="eb-notif-btn" title="Notifications" aria-label="Notifications">
                                 <Bell size={16} /><span className="eb-notif-dot" />
                             </button>
                         </div>

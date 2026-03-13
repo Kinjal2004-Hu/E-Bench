@@ -9,9 +9,10 @@ import {
     Download,
     Settings,
     User,
+    Users,
+    GraduationCap,
     PanelLeftClose,
     PanelLeftOpen,
-    Users,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -20,6 +21,8 @@ const navItems = [
     { name: "Cases", href: "/cases", icon: Scale },
     { name: "Contracts", href: "/contracts", icon: FileText },
     { name: "Consultation", href: "/chats/new", icon: Users },
+    { name: "Microlearning", href: "/microlearning", icon: GraduationCap },
+    { name: "Community", href: "/community", icon: Users },
     { name: "Downloads", href: "/downloads", icon: Download },
 ];
 

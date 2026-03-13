@@ -12,6 +12,7 @@ const chatRoutes = require('./routes/chatRoutes');
 const lawyerRoutes = require('./routes/lawyerRoutes');
 const userRoutes = require('./routes/userRoutes');
 const Chat = require('./models/ChatModel');
+const forumRoutes = require('./routes/forumRoutes');
 
 const app = express();
 app.use(cors());
@@ -28,6 +29,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/chats', chatRoutes);
 app.use('/api/lawyer', lawyerRoutes);
 app.use('/api/user', userRoutes);
+app.use('/api/forum', forumRoutes);
 
 const server = http.createServer(app);
 const io = new Server(server, {
