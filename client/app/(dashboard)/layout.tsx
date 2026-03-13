@@ -4,7 +4,7 @@ import { useState } from "react"
 import {
     Bell, Search, Scale, FileText, LayoutDashboard, BookOpen,
   Download, Settings, User, ChevronLeft, ChevronRight as ChevronR,
-    Mail, Sun, Moon, Bot
+    Mail, Sun, Moon, Bot, Plus
 } from "lucide-react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
@@ -337,7 +337,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
 
     return (
         <>
-            <style>{css}</style>
+            <style suppressHydrationWarning>{css}</style>
             <div className="eb-root">
 
                 {/* ── SIDEBAR ── */}
@@ -363,6 +363,11 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
                                 <Icon size={16} /><span className="eb-navitem-label">{label}</span>
                             </Link>
                         ))}
+                        <Link href="/chats/new" data-tip="New Chat"
+                            className="eb-navitem"
+                            style={{ marginTop: 4, background: 'var(--gold)', borderRadius: 8, color: '#fff', opacity: 1 }}>
+                            <Plus size={16} /><span className="eb-navitem-label" style={{ fontWeight: 600 }}>New Chat</span>
+                        </Link>
                         <div className="eb-sidebar-spacer" />
                         <div className="eb-sidebar-divider" />
                         {bottomNav.map(({ label, href, icon: Icon }) => (

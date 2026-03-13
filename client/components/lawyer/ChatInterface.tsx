@@ -2,7 +2,14 @@
 
 import { useMemo, useRef, useEffect, useState } from "react";
 import { io, Socket } from "socket.io-client";
-import { fetchMyChats, getToken, type ApiChat } from "@/lib/chatApi";
+import {
+  createOrGetDirectChat,
+  fetchClients,
+  fetchMyChats,
+  getToken,
+  type ApiChat,
+  type ApiClient,
+} from "@/lib/chatApi";
 
 type UiMessage = {
   id: string;
@@ -59,6 +66,10 @@ export default function ChatInterface() {
   const [chatState, setChatState] = useState<UiChat[]>([]);
   const [activeChatId, setActiveChatId] = useState("");
   const [draft, setDraft] = useState("");
+  const [clients, setClients] = useState<ApiClient[]>([]);
+  const [showClientPicker, setShowClientPicker] = useState(false);
+  const [clientsLoading, setClientsLoading] = useState(false);
+  const [clientSearch, setClientSearch] = useState("");
   const [error, setError] = useState("");
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const socketRef = useRef<Socket | null>(null);
@@ -149,6 +160,58 @@ export default function ChatInterface() {
     });
   }, [chatState]);
 
+  const filteredClients = useMemo(() => {
+    const q = clientSearch.trim().toLowerCase();
+    if (!q) return clients;
+    return clients.filter((client) => {
+      return (
+        client.fullName.toLowerCase().includes(q) ||
+        client.email.toLowerCase().includes(q)
+      );
+    });
+  }, [clients, clientSearch]);
+
+  const openClientPicker = async () => {
+    setShowClientPicker(true);
+    if (clients.length > 0) return;
+
+    setClientsLoading(true);
+    setError("");
+    try {
+      const data = await fetchClients();
+      setClients(data);
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : "Failed to load clients";
+      setError(msg);
+    } finally {
+      setClientsLoading(false);
+    }
+  };
+
+  const startChatWithClient = async (client: ApiClient) => {
+    setError("");
+    try {
+      const chat = await createOrGetDirectChat({
+        participantId: client._id,
+        participantModel: "User",
+        initialMessage: "Hello, I am available to assist you with your legal matter.",
+      });
+
+      const mapped = mapApiChat(chat);
+      setChatState((prev) => {
+        const existing = prev.find((c) => c.id === mapped.id);
+        if (existing) return prev;
+        return [mapped, ...prev];
+      });
+      setActiveChatId(mapped.id);
+      setShowClientPicker(false);
+      setClientSearch("");
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : "Failed to start chat";
+      setError(msg);
+    }
+  };
+
   const sendMessage = () => {
     const text = draft.trim();
     if (!text || !activeChatId || !socketRef.current) return;
@@ -174,9 +237,18 @@ export default function ChatInterface() {
       <div className="grid grid-cols-1 lg:grid-cols-3 min-h-[500px]">
         <aside className="border-r" style={{ borderColor: "#c1b77a", background: "#e8dfa8" }}>
           <div className="p-4 border-b" style={{ borderColor: "#c1b77a" }}>
-            <h3 className="font-semibold text-sm" style={{ color: "#2f3e24" }}>
-              Clients
-            </h3>
+            <div className="flex items-center justify-between gap-2">
+              <h3 className="font-semibold text-sm" style={{ color: "#2f3e24" }}>
+                Clients
+              </h3>
+              <button
+                onClick={openClientPicker}
+                className="text-xs px-2.5 py-1 rounded-md font-medium text-white"
+                style={{ background: "#757f35" }}
+              >
+                New Chat
+              </button>
+            </div>
           </div>
           <div className="overflow-y-auto max-h-[440px]">
             {chatState.map((c) => (
@@ -275,6 +347,68 @@ export default function ChatInterface() {
           </div>
         </section>
       </div>
+
+      {showClientPicker ? (
+        <div className="fixed inset-0 z-50 bg-black/30 flex items-center justify-center p-4">
+          <div
+            className="w-full max-w-lg rounded-xl border shadow-lg"
+            style={{ borderColor: "#c1b77a", background: "#fdf8e8" }}
+          >
+            <div className="p-4 border-b" style={{ borderColor: "#c1b77a" }}>
+              <div className="flex items-center justify-between gap-3">
+                <h3 className="text-sm font-semibold" style={{ color: "#2f3e24" }}>
+                  Start Chat With Client
+                </h3>
+                <button
+                  onClick={() => setShowClientPicker(false)}
+                  className="text-xs px-2 py-1 rounded border"
+                  style={{ borderColor: "#c1b77a", color: "#5a5920" }}
+                >
+                  Close
+                </button>
+              </div>
+              <input
+                value={clientSearch}
+                onChange={(e) => setClientSearch(e.target.value)}
+                placeholder="Search by name or email"
+                className="mt-3 w-full rounded-lg border px-3 py-2 text-sm outline-none"
+                style={{ borderColor: "#c1b77a", background: "#fff" }}
+              />
+            </div>
+
+            <div className="max-h-72 overflow-y-auto p-2">
+              {clientsLoading ? (
+                <p className="text-xs px-2 py-3" style={{ color: "#7a7040" }}>
+                  Loading clients...
+                </p>
+              ) : null}
+
+              {!clientsLoading && filteredClients.length === 0 ? (
+                <p className="text-xs px-2 py-3" style={{ color: "#7a7040" }}>
+                  No clients found.
+                </p>
+              ) : null}
+
+              {!clientsLoading &&
+                filteredClients.map((client) => (
+                  <button
+                    key={client._id}
+                    onClick={() => startChatWithClient(client)}
+                    className="w-full text-left px-3 py-2 rounded-lg border mb-2 hover:bg-[#f2e9c0] transition-colors"
+                    style={{ borderColor: "#c1b77a" }}
+                  >
+                    <p className="text-sm font-semibold" style={{ color: "#2f3e24" }}>
+                      {client.fullName}
+                    </p>
+                    <p className="text-xs" style={{ color: "#5a5920" }}>
+                      {client.email}
+                    </p>
+                  </button>
+                ))}
+            </div>
+          </div>
+        </div>
+      ) : null}
     </div>
   );
 }

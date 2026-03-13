@@ -1,4 +1,6 @@
 const Chat = require('../models/ChatModel');
+const Consultant = require('../models/ConsultantModel');
+const User = require('../models/UserModel');
 
 const toParticipantModel = (userType) => (userType === 'consultant' ? 'Consultant' : 'User');
 
@@ -10,9 +12,74 @@ const normalizeParticipant = (id, model) => ({
 });
 
 const ensureRequesterInChat = (chat, requesterId, requesterModel) => {
+  const requesterIdStr = String(requesterId);
   return chat.participants.some(
-    (p) => p.participant.toString() === requesterId && p.participantModel === requesterModel
+    (p) => {
+      const participantId = p?.participant?._id || p?.participant;
+      return String(participantId) === requesterIdStr && p.participantModel === requesterModel;
+    }
   );
+};
+
+// GET /api/chats/lawyers
+const getAvailableLawyers = async (req, res) => {
+  try {
+    const { specialization, search, verifiedOnly } = req.query;
+
+    const query = {};
+    if (verifiedOnly === 'true') {
+      query.isVerified = true;
+    }
+    if (specialization && typeof specialization === 'string') {
+      query.specialization = specialization;
+    }
+    if (search && typeof search === 'string' && search.trim()) {
+      const q = search.trim();
+      query.$or = [
+        { fullName: { $regex: q, $options: 'i' } },
+        { email: { $regex: q, $options: 'i' } },
+        { specialization: { $regex: q, $options: 'i' } },
+      ];
+    }
+
+    const lawyers = await Consultant.find(query)
+      .select('_id fullName email specialization professionalSummary rating totalClients isVerified consultationFee')
+      .sort({ rating: -1, totalClients: -1, fullName: 1 });
+
+    return res.json(lawyers);
+  } catch (error) {
+    console.error('getAvailableLawyers error:', error);
+    return res.status(500).json({ error: 'Failed to fetch lawyers' });
+  }
+};
+
+// GET /api/chats/clients
+const getAvailableClients = async (req, res) => {
+  try {
+    if (req.user.userType !== 'consultant') {
+      return res.status(403).json({ error: 'Only consultants can access clients list' });
+    }
+
+    const { search } = req.query;
+    const query = {};
+
+    if (search && typeof search === 'string' && search.trim()) {
+      const q = search.trim();
+      query.$or = [
+        { fullName: { $regex: q, $options: 'i' } },
+        { email: { $regex: q, $options: 'i' } },
+      ];
+    }
+
+    const clients = await User.find(query)
+      .select('_id fullName email createdAt')
+      .sort({ fullName: 1 });
+
+    return res.json(clients);
+  } catch (error) {
+    console.error('getAvailableClients error:', error);
+    return res.status(500).json({ error: 'Failed to fetch clients' });
+  }
 };
 
 // POST /api/chats
@@ -214,6 +281,8 @@ const deleteChat = async (req, res) => {
 };
 
 module.exports = {
+  getAvailableLawyers,
+  getAvailableClients,
   createOrGetDirectChat,
   getMyChats,
   getChatById,

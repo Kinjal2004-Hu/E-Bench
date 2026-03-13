@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
     User, Mail, Phone, Building2, MapPin, FileText,
     Shield, Lock, Key, Monitor, Bell, BellOff,
@@ -9,6 +9,7 @@ import {
     CheckCircle, Edit3, Save, X, LogOut, ExternalLink,
     Gavel, BadgeCheck
 } from "lucide-react";
+import { fetchUserProfile, updateUserProfile } from "@/lib/userApi";
 
 /* ── Types ── */
 type ProfileData = {
@@ -82,19 +83,21 @@ function UsageBar({ label, value, max, color }: { label: string; value: number; 
 export default function ProfilePage() {
     const [editing, setEditing] = useState(false);
     const [saved, setSaved] = useState(false);
+    const [saving, setSaving] = useState(false);
+    const [saveError, setSaveError] = useState("");
     const [showPasswordModal, setShowPasswordModal] = useState(false);
     const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
     const [activeTab, setActiveTab] = useState("profile");
 
     const [profile, setProfile] = useState<ProfileData>({
-        fullName: "Adv. Kinjal Ojha",
-        email: "kinjal.ojha@ojhalegal.com",
-        phone: "+91 98765 43210",
-        organization: "Ojha & Associates Legal Firm",
-        location: "Mumbai, Maharashtra",
-        bio: "Senior legal partner specialising in corporate litigation, contract law, and digital rights. 12+ years of experience across Indian High Courts and Supreme Court matters.",
-        role: "Senior Lawyer",
-        barId: "MAH/2014/12345",
+        fullName: "",
+        email: "",
+        phone: "",
+        organization: "",
+        location: "",
+        bio: "",
+        role: "Client",
+        barId: "",
     });
     const [draft, setDraft] = useState<ProfileData>(profile);
 
@@ -105,13 +108,53 @@ export default function ProfilePage() {
         productUpdates: true,
     });
 
-    const handleSave = () => {
-        setProfile(draft);
-        setEditing(false);
-        setSaved(true);
-        setTimeout(() => setSaved(false), 2500);
+    // Load profile from DB on mount
+    useEffect(() => {
+        fetchUserProfile()
+            .then((data) => {
+                const p: ProfileData = {
+                    fullName: data.fullName || "",
+                    email: data.email || "",
+                    phone: data.phone || "",
+                    organization: data.organization || "",
+                    location: data.location || "",
+                    bio: data.bio || "",
+                    role: data.role || "Client",
+                    barId: data.barId || "",
+                };
+                setProfile(p);
+                setDraft(p);
+            })
+            .catch(() => { /* keep default empty */ });
+    }, []);
+
+    const handleSave = async () => {
+        setSaving(true);
+        setSaveError("");
+        try {
+            const updated = await updateUserProfile(draft);
+            const p: ProfileData = {
+                fullName: updated.fullName || "",
+                email: updated.email || "",
+                phone: updated.phone || "",
+                organization: updated.organization || "",
+                location: updated.location || "",
+                bio: updated.bio || "",
+                role: updated.role || "Client",
+                barId: updated.barId || "",
+            };
+            setProfile(p);
+            setDraft(p);
+            setEditing(false);
+            setSaved(true);
+            setTimeout(() => setSaved(false), 2500);
+        } catch (err: unknown) {
+            setSaveError(err instanceof Error ? err.message : "Failed to save.");
+        } finally {
+            setSaving(false);
+        }
     };
-    const handleCancel = () => { setDraft(profile); setEditing(false); };
+    const handleCancel = () => { setDraft(profile); setEditing(false); setSaveError(""); };
 
     const TABS = [
         { id: "profile", label: "Profile" },
@@ -155,6 +198,9 @@ export default function ProfilePage() {
                                 <CheckCircle size={15} /> Saved
                             </span>
                         )}
+                        {saveError && (
+                            <span className="text-sm text-red-600">{saveError}</span>
+                        )}
                         <button
                             onClick={() => editing ? handleCancel() : setEditing(true)}
                             className={`flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold transition-colors ${editing ? "bg-gray-100 text-gray-700 hover:bg-gray-200" : "bg-[#0F2854] text-white hover:bg-[#1C4D8D]"}`}
@@ -164,9 +210,10 @@ export default function ProfilePage() {
                         {editing && (
                             <button
                                 onClick={handleSave}
-                                className="flex items-center gap-2 px-4 py-2 bg-emerald-600 text-white rounded-xl text-sm font-semibold hover:bg-emerald-700 transition-colors"
+                                disabled={saving}
+                                className="flex items-center gap-2 px-4 py-2 bg-emerald-600 text-white rounded-xl text-sm font-semibold hover:bg-emerald-700 transition-colors disabled:opacity-60"
                             >
-                                <Save size={15} /> Save
+                                <Save size={15} /> {saving ? "Saving…" : "Save"}
                             </button>
                         )}
                     </div>

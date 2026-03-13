@@ -1,18 +1,65 @@
 "use client";
 
-import { ShieldAlert, UploadCloud, Server, AlertTriangle, FileText, CheckCircle2 } from "lucide-react";
+import { ShieldAlert, UploadCloud, Server, AlertTriangle, FileText, CheckCircle2, Save, CheckCircle } from "lucide-react";
 import { useState } from "react";
+import { ragAsk, saveAnalysis } from "@/lib/userApi";
+import type { RagAskResponse } from "@/lib/userApi";
+
+const RISK_KEYWORDS = ["liability", "terminate", "waive", "indemnif", "penalt", "forfeit", "damages", "restrict", "prohibit", "disclaim"];
+
+function computeRiskScore(text: string): number {
+    if (!text) return 0;
+    const lower = text.toLowerCase();
+    const hits = RISK_KEYWORDS.filter((kw) => lower.includes(kw)).length;
+    return Math.min(100, Math.round((hits / RISK_KEYWORDS.length) * 100));
+}
 
 export default function RiskAnalyzerPage() {
+    const [contractText, setContractText] = useState("");
     const [analyzing, setAnalyzing] = useState(false);
-    const [result, setResult] = useState<null | boolean>(null);
+    const [result, setResult] = useState<RagAskResponse | null>(null);
+    const [riskScore, setRiskScore] = useState(0);
+    const [analyzeError, setAnalyzeError] = useState("");
+    const [saving, setSaving] = useState(false);
+    const [saved, setSaved] = useState(false);
 
-    const analyze = () => {
+    const analyze = async () => {
+        if (!contractText.trim()) return;
         setAnalyzing(true);
-        setTimeout(() => {
+        setAnalyzeError("");
+        setResult(null);
+        setSaved(false);
+        try {
+            const data = await ragAsk(
+                "Identify legal risks and unfair clauses in this contract: " + contractText
+            );
+            setResult(data);
+            setRiskScore(computeRiskScore(contractText));
+        } catch (err: unknown) {
+            setAnalyzeError(err instanceof Error ? err.message : "Analysis failed. Please try again.");
+        } finally {
             setAnalyzing(false);
-            setResult(true);
-        }, 1800);
+        }
+    };
+
+    const handleSave = async () => {
+        if (!result) return;
+        setSaving(true);
+        try {
+            await saveAnalysis({
+                type: "contract",
+                title: contractText.slice(0, 80) || "Contract Risk Analysis",
+                description: contractText,
+                aiAnswer: result.ai_answer,
+                sections: result.supporting_sections,
+                userRights: result.user_rights,
+                legalSteps: result.legal_steps,
+                riskScore,
+            });
+            setSaved(true);
+        } catch { /* no-op */ } finally {
+            setSaving(false);
+        }
     };
 
     return (
@@ -32,24 +79,37 @@ export default function RiskAnalyzerPage() {
                         <h2 className="text-sm font-bold text-[#0F2854] uppercase tracking-wider mb-4 flex items-center gap-2">
                             <UploadCloud size={18} /> Upload Contract
                         </h2>
-                        <div className="border-2 border-dashed border-gray-300 rounded-xl p-8 flex-1 flex flex-col justify-center items-center text-center cursor-pointer hover:bg-gray-50 hover:border-amber-400 transition-all group min-h-[300px]">
-                            <div className="w-16 h-16 bg-amber-50 text-amber-600 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                                <FileText size={32} />
+                        <div className="border-2 border-dashed border-gray-300 rounded-xl p-6 flex flex-col justify-center items-center text-center cursor-pointer hover:bg-gray-50 hover:border-amber-400 transition-all group">
+                            <div className="w-12 h-12 bg-amber-50 text-amber-600 rounded-full flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                                <FileText size={24} />
                             </div>
-                            <p className="text-base font-bold text-[#0F2854] mb-2">Drag & Drop Contract PDF / Word Doc</p>
-                            <p className="text-sm text-gray-500 mb-6">Or click to browse your computer</p>
-                            <span className="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg text-sm font-medium border border-gray-200">Browse Files</span>
-                            <p className="text-xs text-gray-400 mt-4">Max file size: 20MB</p>
+                            <p className="text-sm font-bold text-[#0F2854] mb-1">Drag & Drop Contract PDF / Word Doc</p>
+                            <p className="text-xs text-gray-500">Max file size: 20MB</p>
                         </div>
+
+                        <div className="flex items-center gap-4 my-4">
+                            <div className="h-px bg-gray-200 flex-1"></div>
+                            <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">OR paste text</span>
+                            <div className="h-px bg-gray-200 flex-1"></div>
+                        </div>
+
+                        <textarea
+                            rows={6}
+                            value={contractText}
+                            onChange={(e) => setContractText(e.target.value)}
+                            placeholder="Paste the contract text here to analyze for risky clauses..."
+                            className="w-full border border-gray-300 rounded-xl px-4 py-3 outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400 transition-all resize-none text-sm text-gray-700"
+                        />
 
                         <button
                             onClick={analyze}
-                            disabled={analyzing}
-                            className="mt-6 w-full bg-[#0F2854] hover:bg-[#1C4D8D] text-white py-3 rounded-xl font-medium transition-colors flex justify-center items-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed shadow-sm"
+                            disabled={analyzing || !contractText.trim()}
+                            className="mt-4 w-full bg-[#0F2854] hover:bg-[#1C4D8D] text-white py-3 rounded-xl font-medium transition-colors flex justify-center items-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed shadow-sm"
                         >
                             {analyzing ? <span className="animate-spin"><Server size={18} /></span> : <ShieldAlert size={18} />}
                             {analyzing ? "Scanning Clauses & Risk Variables..." : "Run Risk Analysis"}
                         </button>
+                        {analyzeError && <p className="mt-2 text-xs text-red-600">{analyzeError}</p>}
                     </div>
                 </div>
 
@@ -73,54 +133,61 @@ export default function RiskAnalyzerPage() {
                     {result && !analyzing && (
                         <div className="animate-in fade-in slide-in-from-bottom-4 duration-500 h-full overflow-y-auto pr-2 custom-scrollbar">
                             <div className="flex flex-col mb-6 bg-white rounded-xl border border-gray-200 p-5 shadow-sm text-center">
-                                <p className="text-sm text-gray-500 uppercase tracking-wider font-bold mb-2">Overall Risk Score</p>
+                                <div className="flex justify-between items-start mb-2">
+                                    <p className="text-sm text-gray-500 uppercase tracking-wider font-bold">Overall Risk Score</p>
+                                    <button
+                                        onClick={handleSave}
+                                        disabled={saving || saved}
+                                        className="flex items-center gap-1.5 text-xs font-semibold text-white bg-[#0F2854] hover:bg-[#1C4D8D] px-3 py-1.5 rounded-lg shadow-sm disabled:opacity-70 transition-colors"
+                                    >
+                                        {saved ? <><CheckCircle size={14} /> Saved</> : saving ? "Saving…" : <><Save size={14} /> Save Report</>}
+                                    </button>
+                                </div>
                                 <div className="flex items-end justify-center gap-2">
-                                    <span className="text-5xl font-bold text-red-600">82</span>
+                                    <span className={`text-5xl font-bold ${riskScore >= 70 ? "text-red-600" : riskScore >= 40 ? "text-amber-500" : "text-emerald-600"}`}>{riskScore}</span>
                                     <span className="text-lg font-bold text-gray-400 mb-1">/ 100</span>
                                 </div>
                                 <div className="w-full bg-gray-100 h-2 mt-4 rounded-full overflow-hidden">
-                                    <div className="bg-red-500 h-full rounded-full" style={{ width: '82%' }}></div>
+                                    <div className={`h-full rounded-full ${riskScore >= 70 ? "bg-red-500" : riskScore >= 40 ? "bg-amber-500" : "bg-emerald-500"}`} style={{ width: `${riskScore}%` }}></div>
                                 </div>
-                                <p className="text-xs font-semibold text-red-600 mt-2 flex items-center justify-center gap-1">
-                                    <AlertTriangle size={12} /> High Risk Detected
+                                <p className={`text-xs font-semibold mt-2 flex items-center justify-center gap-1 ${riskScore >= 70 ? "text-red-600" : riskScore >= 40 ? "text-amber-500" : "text-emerald-600"}`}>
+                                    {riskScore >= 70 ? <><AlertTriangle size={12} /> High Risk Detected</> : riskScore >= 40 ? <><AlertTriangle size={12} /> Moderate Risk</> : <><CheckCircle2 size={12} /> Low Risk</>}
                                 </p>
                             </div>
 
                             <div className="space-y-4">
-                                <h3 className="text-sm font-bold uppercase tracking-wider text-[#0F2854] mb-3 border-b border-gray-200 pb-2">Highlighted Risky Clauses</h3>
-
-                                <div className="bg-white rounded-xl border border-red-200 shadow-sm overflow-hidden flex flex-col">
-                                    <div className="bg-red-50 p-3 border-b border-red-200 flex items-center justify-between">
-                                        <span className="font-bold text-red-700 text-sm">1. Limitation of Liability (Clause 8.2)</span>
-                                        <span className="bg-red-600 text-white text-[10px] uppercase font-bold px-2 py-0.5 rounded shadow-sm">Critical</span>
-                                    </div>
-                                    <div className="p-4">
-                                        <p className="text-xs text-gray-600 leading-relaxed italic bg-gray-50 border-l-2 border-red-300 pl-3 py-1">
-                                            "Under no circumstances shall the Company's total aggregate liability arising out of or in connection with this Agreement exceed the sum of ₹100 regardless of action."
-                                        </p>
-                                        <div className="mt-3">
-                                            <p className="text-xs font-bold text-[#0F2854] mb-1">AI Suggestion:</p>
-                                            <p className="text-sm text-gray-700">The liability cap is unreasonably low (₹100). Suggest amending it to equal the total contract value or 12 months' fees, standard in B2B SaaS agreements under Indian Contract Act Section 73.</p>
-                                        </div>
-                                    </div>
+                                <div>
+                                    <h3 className="text-sm font-bold uppercase tracking-wider text-[#0F2854] mb-3 border-b border-gray-200 pb-2">AI Risk Analysis</h3>
+                                    <p className="text-sm text-gray-700 leading-relaxed whitespace-pre-line">{result.ai_answer}</p>
                                 </div>
 
-                                <div className="bg-white rounded-xl border border-amber-200 shadow-sm overflow-hidden flex flex-col">
-                                    <div className="bg-amber-50 p-3 border-b border-amber-200 flex items-center justify-between">
-                                        <span className="font-bold text-amber-700 text-sm">2. Unilateral Termination (Clause 12.1)</span>
-                                        <span className="bg-amber-500 text-white text-[10px] uppercase font-bold px-2 py-0.5 rounded shadow-sm">Moderate</span>
-                                    </div>
-                                    <div className="p-4">
-                                        <p className="text-xs text-gray-600 leading-relaxed italic bg-gray-50 border-l-2 border-amber-300 pl-3 py-1">
-                                            "Provider retains the right to terminate this agreement at any time, without cause, providing 24 hours written notice."
-                                        </p>
-                                        <div className="mt-3">
-                                            <p className="text-xs font-bold text-[#0F2854] mb-1">AI Suggestion:</p>
-                                            <p className="text-sm text-gray-700">24 hours is inadequate notice for a commercial contract. Propose mutual termination for convenience with a minimum 30 or 60-day notice period.</p>
+                                {result.supporting_sections && result.supporting_sections.length > 0 && (
+                                    <div>
+                                        <h3 className="text-sm font-bold uppercase tracking-wider text-[#0F2854] mb-3 border-b border-gray-200 pb-2">Relevant Legal Provisions</h3>
+                                        <div className="flex flex-col gap-2">
+                                            {result.supporting_sections.map((s, i) => (
+                                                <div key={i} className="bg-white rounded-xl border border-amber-200 shadow-sm overflow-hidden flex flex-col">
+                                                    <div className="bg-amber-50 p-3 border-b border-amber-200 flex items-center justify-between">
+                                                        <span className="font-bold text-amber-700 text-sm">{s.document} — {s.section_number}{s.title ? ` (${s.title})` : ""}</span>
+                                                    </div>
+                                                    <div className="p-3">
+                                                        {s.snippet && <p className="text-xs text-gray-600 italic">{s.snippet}</p>}
+                                                        {s.punishment_summary && <p className="text-xs text-red-600 mt-1 font-medium">⚖ {s.punishment_summary}</p>}
+                                                    </div>
+                                                </div>
+                                            ))}
                                         </div>
                                     </div>
-                                </div>
+                                )}
 
+                                {result.legal_steps && result.legal_steps.length > 0 && (
+                                    <div>
+                                        <h3 className="text-sm font-bold uppercase tracking-wider text-[#0F2854] mb-3 border-b border-gray-200 pb-2">Recommended Actions</h3>
+                                        <ul className="text-sm text-gray-700 space-y-2 list-disc pl-4 marker:text-amber-500">
+                                            {result.legal_steps.map((s, i) => <li key={i}>{s}</li>)}
+                                        </ul>
+                                    </div>
+                                )}
                             </div>
                         </div>
                     )}

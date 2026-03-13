@@ -3,7 +3,9 @@ const JWT_SECRET = process.env.JWT_SECRET || 'dev_jwt_secret_change_me';
 
 const authMiddleware = (req, res, next) => {
     try {
-        const token = req.headers.authorization?.split(' ')[1];
+        // Support ?token= query param for browser download links (no custom headers allowed)
+        const bearerToken = req.headers.authorization?.split(' ')[1];
+        const token = bearerToken || req.query.token;
         
         if (!token) {
             return res.status(401).json({ error: 'No token provided' });

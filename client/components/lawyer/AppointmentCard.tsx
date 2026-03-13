@@ -1,4 +1,4 @@
-import type { Appointment } from "@/data/mockLawyerData";
+import type { Appointment } from "@/lib/lawyerApi";
 
 const STATUS_BADGE: Record<Appointment["status"], { bg: string; color: string }> = {
   confirmed:   { bg: "#d1fae5", color: "#065f46" },

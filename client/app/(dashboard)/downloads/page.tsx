@@ -1,31 +1,54 @@
 "use client";
 
-import { Download, File as FileIcon, Search, FileText, FileSearch, ShieldAlert, Folder } from "lucide-react";
-import { useState } from "react";
+import { Download, File as FileIcon, Search, FileText, FileSearch, ShieldAlert, Folder, Trash2 } from "lucide-react";
+import { useState, useEffect } from "react";
+import { fetchAnalyses, deleteAnalysis } from "@/lib/userApi";
+import type { SavedAnalysis } from "@/lib/userApi";
 
-const mockFiles = [
-    { id: "F-01", name: "Report_Sharma_Corp_Fraud.pdf", type: "Case Analysis", size: "2.4 MB", date: "Oct 12, 2023" },
-    { id: "F-02", name: "SaaS_Enterprise_RiskScore.pdf", type: "Contract Risk", size: "1.1 MB", date: "Dec 05, 2023" },
-    { id: "F-03", name: "Summary_FIR_402.docx", type: "Summary", size: "0.8 MB", date: "Nov 15, 2023" },
-    { id: "F-04", name: "Report_TechNova.pdf", type: "Case Analysis", size: "3.2 MB", date: "Nov 05, 2023" },
-];
+const TYPE_MAP: Record<string, string> = {
+    case: "Case Analysis",
+    contract: "Contract Risk",
+    summary: "Summary",
+};
 
 export default function DownloadsPage() {
+    const [files, setFiles] = useState<SavedAnalysis[]>([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState("");
     const [searchTerm, setSearchTerm] = useState("");
+
+    useEffect(() => {
+        fetchAnalyses()
+            .then(setFiles)
+            .catch((err: unknown) =>
+                setError(err instanceof Error ? err.message : "Failed to load reports.")
+            )
+            .finally(() => setLoading(false));
+    }, []);
+
+    const handleDelete = async (id: string) => {
+        try {
+            await deleteAnalysis(id);
+            setFiles((prev) => prev.filter((f) => f._id !== id));
+        } catch { /* no-op */ }
+    };
 
     const getIcon = (type: string) => {
         switch (type) {
-            case "Case Analysis": return <FileSearch className="text-[#4988C4]" size={24} />;
-            case "Contract Risk": return <ShieldAlert className="text-amber-500" size={24} />;
-            case "Summary": return <FileText className="text-emerald-500" size={24} />;
+            case "case": return <FileSearch className="text-[#4988C4]" size={24} />;
+            case "contract": return <ShieldAlert className="text-amber-500" size={24} />;
+            case "summary": return <FileText className="text-emerald-500" size={24} />;
             default: return <FileIcon className="text-gray-400" size={24} />;
         }
     };
 
-    const filtered = mockFiles.filter(f =>
-        f.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        f.type.toLowerCase().includes(searchTerm.toLowerCase())
+    const filtered = files.filter((f) =>
+        f.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        (TYPE_MAP[f.type] ?? f.type).toLowerCase().includes(searchTerm.toLowerCase())
     );
+
+    if (loading) return <p className="text-sm py-8 text-center text-gray-500">Loading…</p>;
+    if (error) return <p className="text-sm py-8 text-center text-red-600">{error}</p>;
 
     return (
         <div className="flex flex-col gap-6 h-full">
@@ -52,27 +75,30 @@ export default function DownloadsPage() {
 
             <div className="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden p-6">
                 <h2 className="text-sm font-bold text-gray-700 uppercase tracking-wider mb-4 border-b pb-2 flex items-center gap-2">
-                    <Folder size={16} /> Generated Files
+                    <Folder size={16} /> Saved Reports
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
                     {filtered.map((file) => (
-                        <div key={file.id} className="border border-gray-200 rounded-xl p-4 flex flex-col gap-3 hover:border-[#4988C4] hover:shadow-md transition-all group cursor-pointer bg-gray-50">
+                        <div key={file._id} className="border border-gray-200 rounded-xl p-4 flex flex-col gap-3 hover:border-[#4988C4] hover:shadow-md transition-all group cursor-pointer bg-gray-50">
                             <div className="flex justify-between items-start">
                                 <div className="p-2 bg-white rounded-lg shadow-sm">
                                     {getIcon(file.type)}
                                 </div>
-                                <button className="text-gray-400 hover:text-[#0F2854] transition-colors p-1.5 rounded-md hover:bg-gray-200">
-                                    <Download size={16} />
+                                <button
+                                    onClick={() => handleDelete(file._id)}
+                                    className="text-gray-400 hover:text-red-500 transition-colors p-1.5 rounded-md hover:bg-gray-200"
+                                >
+                                    <Trash2 size={15} />
                                 </button>
                             </div>
                             <div>
-                                <h3 className="text-sm font-semibold text-[#0F2854] line-clamp-2" title={file.name}>{file.name}</h3>
+                                <h3 className="text-sm font-semibold text-[#0F2854] line-clamp-2" title={file.title}>{file.title}</h3>
                                 <div className="flex items-center justify-between mt-2">
                                     <span className="text-[11px] font-medium px-2 py-0.5 bg-white border border-gray-200 rounded text-gray-600">
-                                        {file.type}
+                                        {TYPE_MAP[file.type] ?? file.type}
                                     </span>
-                                    <span className="text-xs text-gray-400">{file.size}</span>
+                                    <span className="text-xs text-gray-400">{new Date(file.createdAt).toLocaleDateString()}</span>
                                 </div>
                             </div>
                         </div>
@@ -80,7 +106,7 @@ export default function DownloadsPage() {
                     {filtered.length === 0 && (
                         <div className="col-span-full py-12 flex flex-col items-center justify-center text-gray-400">
                             <FileIcon size={48} className="mb-4 opacity-50" />
-                            <p>No files found.</p>
+                            <p>{files.length === 0 ? "No reports yet. Use the AI tools to generate reports." : "No files found."}</p>
                         </div>
                     )}
                 </div>

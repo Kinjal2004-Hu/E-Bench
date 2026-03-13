@@ -7,6 +7,7 @@ import {
     BookOpen, ChevronRight, Clock, Shield,
     CheckCircle, Sparkles, MessageSquare, Maximize2
 } from "lucide-react"
+import { fetchUserProfile } from "@/lib/userApi"
 
 /* ─── typewriter taglines ─── */
 const TAGLINES = [
@@ -79,9 +80,18 @@ const categories = ["All", "Criminal", "Cyber Law", "Constitutional", "Civil", "
 export default function Dashboard() {
     const [activeCat, setActiveCat] = useState("All")
     const [message, setMessage] = useState("")
+    const [userName, setUserName] = useState("there")
     const { display, cursor } = useTypewriter(TAGLINES)
     const router = useRouter()
-    const userName = "Kinjal"
+
+    useEffect(() => {
+        fetchUserProfile()
+            .then((p) => {
+                const first = p.fullName?.split(" ")[0]
+                if (first) setUserName(first)
+            })
+            .catch(() => { /* keep default */ })
+    }, [])
 
     const handleAskClick = () => {
         if (message.trim()) {

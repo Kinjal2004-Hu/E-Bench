@@ -26,6 +26,25 @@ export type ApiChat = {
   createdAt: string;
 };
 
+export type ApiConsultant = {
+  _id: string;
+  fullName: string;
+  email: string;
+  specialization: string;
+  professionalSummary?: string;
+  rating?: number;
+  totalClients?: number;
+  isVerified?: boolean;
+  consultationFee?: string;
+};
+
+export type ApiClient = {
+  _id: string;
+  fullName: string;
+  email: string;
+  createdAt?: string;
+};
+
 const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:4000";
 
 export function getToken() {
@@ -73,4 +92,23 @@ export async function fetchChatById(chatId: string): Promise<ApiChat> {
 
 export async function deleteChatById(chatId: string): Promise<void> {
   await authedFetch(`/api/chats/${chatId}`, { method: "DELETE" });
+}
+
+export async function fetchConsultants(): Promise<ApiConsultant[]> {
+  return authedFetch("/api/chats/lawyers", { method: "GET" });
+}
+
+export async function fetchClients(): Promise<ApiClient[]> {
+  return authedFetch("/api/chats/clients", { method: "GET" });
+}
+
+export async function createOrGetDirectChat(payload: {
+  participantId: string;
+  participantModel: "User" | "Consultant";
+  initialMessage?: string;
+}): Promise<ApiChat> {
+  return authedFetch("/api/chats", {
+    method: "POST",
+    body: JSON.stringify(payload),
+  });
 }

@@ -1,18 +1,54 @@
 "use client";
 
-import { FileText, UploadCloud, Sparkles, Server, List } from "lucide-react";
+import { FileText, UploadCloud, Sparkles, Server, List, Save, CheckCircle } from "lucide-react";
 import { useState } from "react";
+import { ragAsk, saveAnalysis } from "@/lib/userApi";
+import type { RagAskResponse } from "@/lib/userApi";
 
 export default function CaseSummarizerPage() {
+    const [text, setText] = useState("");
     const [analyzing, setAnalyzing] = useState(false);
-    const [result, setResult] = useState<null | boolean>(null);
+    const [result, setResult] = useState<RagAskResponse | null>(null);
+    const [analyzeError, setAnalyzeError] = useState("");
+    const [saving, setSaving] = useState(false);
+    const [saved, setSaved] = useState(false);
 
-    const analyze = () => {
+    const analyze = async () => {
+        if (!text.trim()) return;
         setAnalyzing(true);
-        setTimeout(() => {
+        setAnalyzeError("");
+        setResult(null);
+        setSaved(false);
+        try {
+            const data = await ragAsk(
+                "Summarize this legal document and highlight key facts: " + text
+            );
+            setResult(data);
+        } catch (err: unknown) {
+            setAnalyzeError(err instanceof Error ? err.message : "Summarization failed. Please try again.");
+        } finally {
             setAnalyzing(false);
-            setResult(true);
-        }, 1500);
+        }
+    };
+
+    const handleSave = async () => {
+        if (!result) return;
+        setSaving(true);
+        try {
+            await saveAnalysis({
+                type: "summary",
+                title: text.slice(0, 80) || "Case Summary",
+                description: text,
+                aiAnswer: result.ai_answer,
+                sections: result.supporting_sections,
+                userRights: result.user_rights,
+                legalSteps: result.legal_steps,
+                riskScore: 0,
+            });
+            setSaved(true);
+        } catch { /* no-op */ } finally {
+            setSaving(false);
+        }
     };
 
     return (
@@ -32,24 +68,37 @@ export default function CaseSummarizerPage() {
                         <h2 className="text-sm font-bold text-[#0F2854] uppercase tracking-wider mb-4 flex items-center gap-2">
                             <UploadCloud size={18} /> Upload Legal Document
                         </h2>
-                        <div className="border-2 border-dashed border-gray-300 rounded-xl p-8 flex-1 flex flex-col justify-center items-center text-center cursor-pointer hover:bg-gray-50 hover:border-[#4988C4] transition-all group min-h-[300px]">
-                            <div className="w-16 h-16 bg-[#F5F7FA] text-[#1C4D8D] rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                                <FileText size={32} />
+                        <div className="border-2 border-dashed border-gray-300 rounded-xl p-6 flex flex-col justify-center items-center text-center cursor-pointer hover:bg-gray-50 hover:border-[#4988C4] transition-all group">
+                            <div className="w-12 h-12 bg-[#F5F7FA] text-[#1C4D8D] rounded-full flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                                <FileText size={24} />
                             </div>
-                            <p className="text-base font-bold text-[#0F2854] mb-2">Drag & Drop Judgement / FIR / Chargesheet</p>
-                            <p className="text-sm text-gray-500 mb-6">Or click to browse your computer</p>
-                            <span className="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg text-sm font-medium border border-gray-200">Browse Files</span>
-                            <p className="text-xs text-gray-400 mt-4">Supported formats: PDF, DOCX (Max 50MB)</p>
+                            <p className="text-sm font-bold text-[#0F2854] mb-1">Drag & Drop Judgement / FIR / Chargesheet</p>
+                            <p className="text-xs text-gray-500">PDF, DOCX (Max 50MB)</p>
                         </div>
+
+                        <div className="flex items-center gap-4 my-4">
+                            <div className="h-px bg-gray-200 flex-1"></div>
+                            <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">OR paste text</span>
+                            <div className="h-px bg-gray-200 flex-1"></div>
+                        </div>
+
+                        <textarea
+                            rows={6}
+                            value={text}
+                            onChange={(e) => setText(e.target.value)}
+                            placeholder="Paste the legal document content here (FIR, judgment, chargesheet)..."
+                            className="w-full border border-gray-300 rounded-xl px-4 py-3 outline-none focus:border-[#4988C4] focus:ring-1 focus:ring-[#4988C4] transition-all resize-none text-sm text-gray-700"
+                        />
 
                         <button
                             onClick={analyze}
-                            disabled={analyzing}
-                            className="mt-6 w-full bg-[#0F2854] hover:bg-[#1C4D8D] text-white py-3 rounded-xl font-medium transition-colors flex justify-center items-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed shadow-sm"
+                            disabled={analyzing || !text.trim()}
+                            className="mt-4 w-full bg-[#0F2854] hover:bg-[#1C4D8D] text-white py-3 rounded-xl font-medium transition-colors flex justify-center items-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed shadow-sm"
                         >
                             {analyzing ? <span className="animate-spin"><Server size={18} /></span> : <List size={18} />}
                             {analyzing ? "Processing Document..." : "Generate Summary"}
                         </button>
+                        {analyzeError && <p className="mt-2 text-xs text-red-600">{analyzeError}</p>}
                     </div>
                 </div>
 
@@ -76,41 +125,51 @@ export default function CaseSummarizerPage() {
                                 <div className="flex items-center gap-2 text-[#1C4D8D] bg-[#F0F4F8] border border-[#1C4D8D]/20 px-3 py-1.5 rounded-lg text-xs font-bold w-fit">
                                     <Sparkles size={14} /> AI Summary Generated
                                 </div>
-                                <button className="text-xs font-semibold text-[#4988C4] hover:underline bg-white px-3 py-1.5 rounded-lg border border-gray-200 shadow-sm flex items-center gap-1.5">
-                                    <FileText size={14} /> Download PDF
+                                <button
+                                    onClick={handleSave}
+                                    disabled={saving || saved}
+                                    className="flex items-center gap-1.5 text-xs font-semibold text-white bg-[#0F2854] hover:bg-[#1C4D8D] px-3 py-1.5 rounded-lg shadow-sm disabled:opacity-70 transition-colors"
+                                >
+                                    {saved ? <><CheckCircle size={14} /> Saved</> : saving ? "Saving…" : <><Save size={14} /> Save Report</>}
                                 </button>
                             </div>
 
                             <div className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden divide-y divide-gray-100">
-                                <div className="p-5 bg-gray-50/50">
-                                    <h3 className="font-bold text-[#0F2854] mb-1">State vs. ABC & Others</h3>
-                                    <p className="text-xs text-gray-500">Document Type: FIR Copy • Pages Reduced: 14 to 1</p>
-                                </div>
-
                                 <div className="p-5">
-                                    <h4 className="text-xs font-bold uppercase tracking-widest text-[#4988C4] mb-3">Simplified Summary</h4>
-                                    <p className="text-sm text-gray-700 leading-relaxed mb-0">
-                                        The complainant alleges that an unauthorized withdrawal of Rs. 4,50,000 was made from their bank account via a cloned debit card. The incident spans over three transactions across different ATMs in Mumbai on the night of Oct 14th. Police have registered the FIR against unknown persons.
-                                    </p>
+                                    <h4 className="text-xs font-bold uppercase tracking-widest text-[#4988C4] mb-3">Summary</h4>
+                                    <p className="text-sm text-gray-700 leading-relaxed whitespace-pre-line">{result.ai_answer}</p>
                                 </div>
 
-                                <div className="p-5">
-                                    <h4 className="text-xs font-bold uppercase tracking-widest text-[#4988C4] mb-3">Key Facts</h4>
-                                    <ul className="text-sm text-gray-700 space-y-2.5">
-                                        <li className="flex gap-2 items-start"><span className="text-emerald-500 font-bold mt-0.5">•</span> <strong>Location:</strong> Mumbai, Maharashtra (ATMs located in Andheri)</li>
-                                        <li className="flex gap-2 items-start"><span className="text-emerald-500 font-bold mt-0.5">•</span> <strong>Date of Offense:</strong> 14th October 2023, 11:30 PM - 11:45 PM</li>
-                                        <li className="flex gap-2 items-start"><span className="text-emerald-500 font-bold mt-0.5">•</span> <strong>Modus Operandi:</strong> Card Cloning / Skimming Devices</li>
-                                    </ul>
-                                </div>
-
-                                <div className="p-5 bg-[#F5F7FA]">
-                                    <h4 className="text-xs font-bold uppercase tracking-widest text-[#0F2854] mb-3 border-b border-gray-200 pb-2">Legal Sections Involved</h4>
-                                    <div className="flex gap-2 flex-wrap">
-                                        <span className="px-3 py-1.5 bg-white border border-gray-200 rounded-md text-[#1C4D8D] text-xs font-bold shadow-sm">IPC 420</span>
-                                        <span className="px-3 py-1.5 bg-white border border-gray-200 rounded-md text-[#1C4D8D] text-xs font-bold shadow-sm">IT Act 66C</span>
-                                        <span className="px-3 py-1.5 bg-white border border-gray-200 rounded-md text-[#1C4D8D] text-xs font-bold shadow-sm">IT Act 66D</span>
+                                {result.supporting_sections && result.supporting_sections.length > 0 && (
+                                    <div className="p-5 bg-[#F5F7FA]">
+                                        <h4 className="text-xs font-bold uppercase tracking-widest text-[#0F2854] mb-3">Legal Sections Referenced</h4>
+                                        <div className="flex gap-2 flex-wrap">
+                                            {result.supporting_sections.map((s, i) => (
+                                                <span key={i} className="px-3 py-1.5 bg-white border border-gray-200 rounded-md text-[#1C4D8D] text-xs font-bold shadow-sm">
+                                                    {s.section_number} — {s.document}
+                                                </span>
+                                            ))}
+                                        </div>
                                     </div>
-                                </div>
+                                )}
+
+                                {result.user_rights && result.user_rights.length > 0 && (
+                                    <div className="p-5">
+                                        <h4 className="text-xs font-bold uppercase tracking-widest text-[#4988C4] mb-3">Your Rights</h4>
+                                        <ul className="text-sm text-gray-700 space-y-2 list-disc pl-4 marker:text-[#4988C4]">
+                                            {result.user_rights.map((r, i) => <li key={i}>{r}</li>)}
+                                        </ul>
+                                    </div>
+                                )}
+
+                                {result.legal_steps && result.legal_steps.length > 0 && (
+                                    <div className="p-5">
+                                        <h4 className="text-xs font-bold uppercase tracking-widest text-[#4988C4] mb-3">Recommended Action Steps</h4>
+                                        <ul className="text-sm text-gray-700 space-y-2 list-disc pl-4 marker:text-[#4988C4]">
+                                            {result.legal_steps.map((s, i) => <li key={i}>{s}</li>)}
+                                        </ul>
+                                    </div>
+                                )}
                             </div>
                         </div>
                     )}

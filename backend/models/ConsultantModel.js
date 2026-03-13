@@ -34,7 +34,27 @@ const consultantSchema = new mongoose.Schema({
     },
     professionalSummary: {
         type: String,
-        maxlength: 200
+        maxlength: 500
+    },
+    experience: {
+        type: String,
+        default: ''
+    },
+    languages: {
+        type: String,
+        default: ''
+    },
+    consultationFee: {
+        type: String,
+        default: ''
+    },
+    availability: {
+        type: String,
+        default: ''
+    },
+    photoUrl: {
+        type: String,
+        default: ''
     },
     isVerified: {
         type: Boolean,

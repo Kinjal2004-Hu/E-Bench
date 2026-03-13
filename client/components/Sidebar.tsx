@@ -11,6 +11,7 @@ import {
     User,
     PanelLeftClose,
     PanelLeftOpen,
+    Users,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -18,6 +19,7 @@ const navItems = [
     { name: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
     { name: "Cases", href: "/cases", icon: Scale },
     { name: "Contracts", href: "/contracts", icon: FileText },
+    { name: "Consultation", href: "/chats/new", icon: Users },
     { name: "Downloads", href: "/downloads", icon: Download },
 ];
 

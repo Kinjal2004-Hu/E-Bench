@@ -1,4 +1,4 @@
-import type { DashboardStats } from "@/data/mockLawyerData";
+import type { DashboardStats } from "@/lib/lawyerApi";
 
 const CARDS = [
   { key: "todaysAppointments",  label: "Today's Appointments",        icon: "📅" },

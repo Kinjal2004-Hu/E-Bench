@@ -1,6 +1,8 @@
 const express = require('express');
 const authMiddleware = require('../middleware/authMiddleware');
 const {
+  getAvailableLawyers,
+  getAvailableClients,
   createOrGetDirectChat,
   getMyChats,
   getChatById,
@@ -12,6 +14,8 @@ const router = express.Router();
 
 router.use(authMiddleware);
 
+router.get('/lawyers', getAvailableLawyers);
+router.get('/clients', getAvailableClients);
 router.post('/', createOrGetDirectChat);
 router.get('/', getMyChats);
 router.get('/:chatId', getChatById);

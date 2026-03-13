@@ -1,9 +1,30 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import AppointmentCard from "@/components/lawyer/AppointmentCard";
-import { appointments } from "@/data/mockLawyerData";
+import { fetchAppointments } from "@/lib/lawyerApi";
+import type { Appointment } from "@/lib/lawyerApi";
 
 export default function AppointmentsPage() {
-  const today = appointments.filter((a) => a.date === "2026-03-13");
-  const upcoming = appointments.filter((a) => a.date > "2026-03-13");
+  const [all, setAll] = useState<Appointment[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
+
+  useEffect(() => {
+    fetchAppointments()
+      .then(setAll)
+      .catch((err: unknown) =>
+        setError(err instanceof Error ? err.message : "Failed to load appointments.")
+      )
+      .finally(() => setLoading(false));
+  }, []);
+
+  if (loading) return <p className="text-sm py-8 text-center" style={{ color: "#7a7040" }}>Loading…</p>;
+  if (error) return <p className="text-sm py-8 text-center text-red-600">{error}</p>;
+
+  const today = new Date().toISOString().split("T")[0];
+  const todayApts = all.filter((a) => a.date === today);
+  const upcoming = all.filter((a) => a.date > today);
 
   return (
     <div className="space-y-8">
@@ -15,13 +36,13 @@ export default function AppointmentsPage() {
       <section className="space-y-3">
         <h2 className="text-base font-semibold" style={{ color: "#2f3e24" }}>
           Today
-          <span className="ml-2 text-xs font-normal" style={{ color: "#757f35" }}>({today.length})</span>
+          <span className="ml-2 text-xs font-normal" style={{ color: "#757f35" }}>({todayApts.length})</span>
         </h2>
-        {today.length === 0 ? (
+        {todayApts.length === 0 ? (
           <p className="text-sm" style={{ color: "#7a7040" }}>No appointments today.</p>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
-            {today.map((apt) => <AppointmentCard key={apt.id} apt={apt} />)}
+            {todayApts.map((apt) => <AppointmentCard key={apt._id} apt={apt} />)}
           </div>
         )}
       </section>
@@ -35,7 +56,7 @@ export default function AppointmentsPage() {
           <p className="text-sm" style={{ color: "#7a7040" }}>No upcoming appointments.</p>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
-            {upcoming.map((apt) => <AppointmentCard key={apt.id} apt={apt} />)}
+            {upcoming.map((apt) => <AppointmentCard key={apt._id} apt={apt} />)}
           </div>
         )}
       </section>

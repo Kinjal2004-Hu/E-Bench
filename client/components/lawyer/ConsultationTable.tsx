@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import type { ConsultationRequest } from "@/data/mockLawyerData";
+import { updateConsultationStatus } from "@/lib/lawyerApi";
+import type { ConsultationRequest } from "@/lib/lawyerApi";
 
 type ConsultationTableProps = {
   requests: ConsultationRequest[];
@@ -15,9 +16,19 @@ const STATUS_COLORS: Record<string, string> = {
 
 export default function ConsultationTable({ requests }: ConsultationTableProps) {
   const [rows, setRows] = useState(requests);
+  const [busy, setBusy] = useState<string | null>(null);
 
-  const update = (id: string, status: "accepted" | "rejected") =>
-    setRows((prev) => prev.map((r) => (r.id === id ? { ...r, status } : r)));
+  const update = async (id: string, status: "accepted" | "rejected") => {
+    setBusy(id);
+    try {
+      const updated = await updateConsultationStatus(id, status);
+      setRows((prev) => prev.map((r) => (r._id === id ? updated : r)));
+    } catch (err) {
+      console.error("Failed to update consultation status:", err);
+    } finally {
+      setBusy(null);
+    }
+  };
 
   return (
     <div
@@ -37,38 +48,46 @@ export default function ConsultationTable({ requests }: ConsultationTableProps) 
             </tr>
           </thead>
           <tbody>
-            {rows.map((req) => (
-              <tr key={req.id} className="border-t align-top" style={{ borderColor: "#c1b77a" }}>
-                <td className="px-4 py-3 font-semibold" style={{ color: "#2f3e24" }}>{req.clientName}</td>
-                <td className="px-4 py-3" style={{ color: "#5a5920" }}>{req.legalCategory}</td>
-                <td className="px-4 py-3" style={{ color: "#5a5920" }}>{req.requestedDate}</td>
-                <td className="px-4 py-3 max-w-xs" style={{ color: "#5a5920" }}>{req.message}</td>
-                <td className="px-4 py-3">
-                  <span className={`text-xs px-2 py-1 rounded-full capitalize font-medium ${STATUS_COLORS[req.status]}`}>
-                    {req.status}
-                  </span>
-                </td>
-                <td className="px-4 py-3">
-                  <div className="flex gap-2">
-                    <button
-                      onClick={() => update(req.id, "accepted")}
-                      disabled={req.status !== "pending"}
-                      className="px-3 py-1.5 rounded-md text-white text-xs font-medium disabled:opacity-40 transition-colors"
-                      style={{ background: req.status === "pending" ? "#757f35" : "#999" }}
-                    >
-                      Accept
-                    </button>
-                    <button
-                      onClick={() => update(req.id, "rejected")}
-                      disabled={req.status !== "pending"}
-                      className="px-3 py-1.5 rounded-md bg-red-500 text-white text-xs font-medium disabled:opacity-40"
-                    >
-                      Reject
-                    </button>
-                  </div>
+            {rows.length === 0 ? (
+              <tr>
+                <td colSpan={6} className="px-4 py-6 text-center text-sm" style={{ color: "#7a7040" }}>
+                  No consultation requests found.
                 </td>
               </tr>
-            ))}
+            ) : (
+              rows.map((req) => (
+                <tr key={req._id} className="border-t align-top" style={{ borderColor: "#c1b77a" }}>
+                  <td className="px-4 py-3 font-semibold" style={{ color: "#2f3e24" }}>{req.clientName}</td>
+                  <td className="px-4 py-3" style={{ color: "#5a5920" }}>{req.legalCategory}</td>
+                  <td className="px-4 py-3" style={{ color: "#5a5920" }}>{req.requestedDate}</td>
+                  <td className="px-4 py-3 max-w-xs" style={{ color: "#5a5920" }}>{req.message}</td>
+                  <td className="px-4 py-3">
+                    <span className={`text-xs px-2 py-1 rounded-full capitalize font-medium ${STATUS_COLORS[req.status]}`}>
+                      {req.status}
+                    </span>
+                  </td>
+                  <td className="px-4 py-3">
+                    <div className="flex gap-2">
+                      <button
+                        onClick={() => update(req._id, "accepted")}
+                        disabled={req.status !== "pending" || busy === req._id}
+                        className="px-3 py-1.5 rounded-md text-white text-xs font-medium disabled:opacity-40 transition-colors"
+                        style={{ background: req.status === "pending" ? "#757f35" : "#999" }}
+                      >
+                        {busy === req._id ? "…" : "Accept"}
+                      </button>
+                      <button
+                        onClick={() => update(req._id, "rejected")}
+                        disabled={req.status !== "pending" || busy === req._id}
+                        className="px-3 py-1.5 rounded-md bg-red-500 text-white text-xs font-medium disabled:opacity-40"
+                      >
+                        {busy === req._id ? "…" : "Reject"}
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+              ))
+            )}
           </tbody>
         </table>
       </div>

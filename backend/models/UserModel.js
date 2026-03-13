@@ -23,6 +23,13 @@ const userSchema = new mongoose.Schema({
         enum: ['user', 'consultant'],
         default: 'user'
     },
+    // Extended profile fields
+    phone: { type: String, default: '' },
+    organization: { type: String, default: '' },
+    location: { type: String, default: '' },
+    bio: { type: String, default: '', maxlength: 500 },
+    role: { type: String, default: 'Client' },
+    barId: { type: String, default: '' },
     createdAt: {
         type: Date,
         default: Date.now

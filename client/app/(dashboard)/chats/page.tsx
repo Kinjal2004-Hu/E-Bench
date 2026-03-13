@@ -6,7 +6,9 @@ import {
     Search, Plus, Pin, PinOff, Trash2, MessageSquare,
     Scale, FileText, Shield, Clock, ChevronRight, Sparkles, BookOpenText
 } from "lucide-react";
-import { fetchMyChats, deleteChatById, type ApiChat } from "@/lib/chatApi";
+import { fetchMyChats, deleteChatById, createOrGetDirectChat, type ApiChat, type ApiConsultant } from "@/lib/chatApi";
+import LawyerPickerModal from "@/components/LawyerPickerModal";
+import PaymentModal, { type SessionType } from "@/components/PaymentModal";
 
 /* ── Types ── */
 type ChatEntry = {
@@ -103,6 +105,49 @@ export default function ChatHistoryPage() {
     const [deleteConfirm, setDeleteConfirm] = useState<string | null>(null);
     const [error, setError] = useState("");
 
+    // ── Lawyer booking flow ──
+    const [showLawyerPicker, setShowLawyerPicker] = useState(false);
+    const [selectedLawyer, setSelectedLawyer] = useState<ApiConsultant | null>(null);
+    const [bookingLoading, setBookingLoading] = useState(false);
+
+    const handleLawyerSelect = (lawyer: ApiConsultant) => {
+        setSelectedLawyer(lawyer);
+        setShowLawyerPicker(false);
+    };
+
+    const handlePaymentSuccess = async (sessionType: SessionType) => {
+        if (!selectedLawyer) return;
+        setBookingLoading(true);
+        setSelectedLawyer(null);
+        try {
+            if (sessionType === "video") {
+                const token = typeof window !== "undefined"
+                    ? localStorage.getItem("token") || localStorage.getItem("ebench_token") || ""
+                    : "";
+                const res = await fetch("http://localhost:4000/create-room", {
+                    method: "POST",
+                    headers: { Authorization: `Bearer ${token}` },
+                });
+                if (!res.ok) throw new Error("Failed to create room");
+                const { roomId } = await res.json();
+                const lawyerParam = encodeURIComponent(selectedLawyer.fullName);
+                router.push(`/session/${roomId}/video?lawyer=${lawyerParam}`);
+            } else {
+                const chat = await createOrGetDirectChat({
+                    participantId: selectedLawyer._id,
+                    participantModel: "Consultant",
+                });
+                const lawyerParam = encodeURIComponent(selectedLawyer.fullName);
+                const lawyerIdParam = selectedLawyer._id;
+                router.push(`/session/${chat._id}/chat?lawyer=${lawyerParam}&lawyerId=${lawyerIdParam}`);
+            }
+        } catch (err) {
+            setError(err instanceof Error ? err.message : "Failed to start session");
+        } finally {
+            setBookingLoading(false);
+        }
+    };
+
     useEffect(() => {
         const requestedFilter = searchParams.get("filter");
         if (requestedFilter && FILTERS.includes(requestedFilter as FilterType)) {
@@ -141,9 +186,9 @@ export default function ChatHistoryPage() {
         load();
     }, []);
 
-    // Start new chat
+    // Open lawyer picker when user clicks + New Chat
     const handleNewChat = () => {
-        router.push(`/chat`);
+        setShowLawyerPicker(true);
     };
 
     const handleFilterChange = (filter: FilterType) => {
@@ -240,6 +285,31 @@ export default function ChatHistoryPage() {
 
     return (
         <div className="flex flex-col flex-1 min-h-0 h-full gap-4">
+            {/* ── Modals ── */}
+            {showLawyerPicker && (
+                <LawyerPickerModal
+                    onSelect={handleLawyerSelect}
+                    onClose={() => setShowLawyerPicker(false)}
+                />
+            )}
+            {selectedLawyer && (
+                <PaymentModal
+                    lawyer={selectedLawyer}
+                    onSuccess={handlePaymentSuccess}
+                    onClose={() => setSelectedLawyer(null)}
+                />
+            )}
+            {bookingLoading && (
+                <div className="fixed inset-0 z-50 bg-black/50 flex items-center justify-center">
+                    <div className="bg-white rounded-2xl px-10 py-8 flex flex-col items-center gap-3 shadow-xl">
+                        <svg className="animate-spin h-8 w-8 text-[#8D7A55]" viewBox="0 0 24 24" fill="none">
+                            <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                            <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z" />
+                        </svg>
+                        <p className="text-sm font-medium text-[#8D7A55]">Setting up your session…</p>
+                    </div>
+                </div>
+            )}
             {/* Header */}
             <div className="flex items-center justify-between shrink-0">
                 <div>

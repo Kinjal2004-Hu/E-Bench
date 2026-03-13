@@ -9,6 +9,8 @@ require('dotenv').config();
 
 const authRoutes = require('./routes/authRoutes');
 const chatRoutes = require('./routes/chatRoutes');
+const lawyerRoutes = require('./routes/lawyerRoutes');
+const userRoutes = require('./routes/userRoutes');
 const Chat = require('./models/ChatModel');
 
 const app = express();
@@ -24,6 +26,8 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/ebench')
 // ── Routes ──
 app.use('/api/auth', authRoutes);
 app.use('/api/chats', chatRoutes);
+app.use('/api/lawyer', lawyerRoutes);
+app.use('/api/user', userRoutes);
 
 const server = http.createServer(app);
 const io = new Server(server, {
@@ -51,12 +55,22 @@ app.post('/create-room', (req, res) => {
   const roomId = uuidv4();
   rooms.set(roomId, { user: null, lawyer: null, createdAt: Date.now() });
 
+  // Try to extract caller name from JWT token
+  let callerName = 'A client';
+  try {
+    const bearerToken = req.headers.authorization?.split(' ')[1];
+    if (bearerToken) {
+      const decoded = jwt.verify(bearerToken, JWT_SECRET);
+      callerName = decoded.fullName || decoded.name || 'A client';
+    }
+  } catch { /* ignore invalid tokens — still create the room */ }
+
   // Notify every online lawyer about the incoming call
   for (const [, lawyerSocket] of lawyers) {
-    lawyerSocket.emit('incoming-call', { roomId, from: 'user', timestamp: Date.now() });
+    lawyerSocket.emit('incoming-call', { roomId, from: 'user', callerName, timestamp: Date.now() });
   }
 
-  console.log(`Room created: ${roomId} — notified ${lawyers.size} lawyer(s)`);
+  console.log(`Room created: ${roomId} — notified ${lawyers.size} lawyer(s) (caller: ${callerName})`);
   res.json({ roomId });
 });
 

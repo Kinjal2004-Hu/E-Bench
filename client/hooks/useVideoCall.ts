@@ -59,7 +59,11 @@ export function useVideoCall(roomId: string, role: string) {
     if (!roomId) return;
 
     let cancelled = false;
-    const socket = io(SIGNAL_SERVER) as Socket;
+    const token =
+      typeof window !== "undefined"
+        ? localStorage.getItem("token") || localStorage.getItem("ebench_token") || ""
+        : "";
+    const socket = io(SIGNAL_SERVER, { auth: { token } }) as Socket;
     socketRef.current = socket;
 
     const setup = async () => {
@@ -72,16 +76,15 @@ export function useVideoCall(roomId: string, role: string) {
 
         socket.emit("join-room", { roomId, role });
 
-        // When the other peer joins, the user (who created the room) makes the offer
+        // When the other peer joins, the peer already in room creates the offer.
+        // This avoids deadlock when lawyer joins first and user joins second.
         socket.on("peer-joined", async () => {
-          if (role === "user") {
-            const pc = createPC();
-            pcRef.current = pc;
-            stream.getTracks().forEach((t) => pc.addTrack(t, stream));
-            const offer = await pc.createOffer();
-            await pc.setLocalDescription(offer);
-            socket.emit("offer", { roomId, offer });
-          }
+          const pc = createPC();
+          pcRef.current = pc;
+          stream.getTracks().forEach((t) => pc.addTrack(t, stream));
+          const offer = await pc.createOffer();
+          await pc.setLocalDescription(offer);
+          socket.emit("offer", { roomId, offer });
         });
 
         socket.on("offer", async ({ offer }: { offer: RTCSessionDescriptionInit }) => {
@@ -113,6 +116,10 @@ export function useVideoCall(roomId: string, role: string) {
         socket.on("peer-left", () => {
           setIsConnected(false);
           if (remoteVideoRef.current) remoteVideoRef.current.srcObject = null;
+        });
+
+        socket.on("connect_error", (err: Error) => {
+          setError(err.message || "Socket connection failed");
         });
       } catch (err) {
         setError(err instanceof Error ? err.message : "Failed to access camera/mic");
