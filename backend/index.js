@@ -8,6 +8,8 @@ const jwt = require('jsonwebtoken');
 require('dotenv').config();
 
 const authRoutes = require('./routes/authRoutes');
+const chatRoutes = require('./routes/chatRoutes');
+const Chat = require('./models/ChatModel');
 
 const app = express();
 app.use(cors());
@@ -21,6 +23,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/ebench')
 
 // ── Routes ──
 app.use('/api/auth', authRoutes);
+app.use('/api/chats', chatRoutes);
 
 const server = http.createServer(app);
 const io = new Server(server, {
@@ -61,6 +64,9 @@ app.post('/create-room', (req, res) => {
 io.on('connection', (socket) => {
   console.log('Socket connected:', socket.id);
   socket.data = {};
+
+  const requesterId = socket.user?.id || socket.user?.userId;
+  const requesterModel = socket.user?.userType === 'consultant' ? 'Consultant' : 'User';
 
   // Register as lawyer listener (so they receive incoming-call notifications)
   socket.on('register-lawyer', () => {
@@ -113,6 +119,77 @@ io.on('connection', (socket) => {
       sender,
       timestamp: Date.now()
     });
+  });
+
+  // ── DB-backed direct chat ──
+  socket.on('join-chat-room', async ({ chatId }) => {
+    try {
+      if (!chatId || !requesterId) return;
+      const chat = await Chat.findOne({
+        _id: chatId,
+        participants: {
+          $elemMatch: {
+            participant: requesterId,
+            participantModel: requesterModel,
+          },
+        },
+      });
+      if (!chat) return;
+      socket.join(`chat:${chatId}`);
+    } catch (error) {
+      console.error('join-chat-room error:', error);
+    }
+  });
+
+  socket.on('send-chat-message', async ({ chatId, content }, ack) => {
+    try {
+      if (!chatId || typeof content !== 'string' || !content.trim() || !requesterId) {
+        if (typeof ack === 'function') ack({ ok: false, error: 'Invalid payload' });
+        return;
+      }
+
+      const chat = await Chat.findOne({
+        _id: chatId,
+        participants: {
+          $elemMatch: {
+            participant: requesterId,
+            participantModel: requesterModel,
+          },
+        },
+      });
+
+      if (!chat) {
+        if (typeof ack === 'function') ack({ ok: false, error: 'Chat not found' });
+        return;
+      }
+
+      const message = {
+        sender: requesterId,
+        senderModel: requesterModel,
+        content: content.trim(),
+      };
+
+      chat.messages.push(message);
+      chat.lastMessage = message.content;
+      chat.lastMessageAt = new Date();
+      await chat.save();
+
+      const savedMessage = chat.messages[chat.messages.length - 1];
+      const payload = {
+        _id: savedMessage._id,
+        chatId,
+        sender: savedMessage.sender,
+        senderModel: savedMessage.senderModel,
+        content: savedMessage.content,
+        timestamp: savedMessage.timestamp,
+      };
+
+      io.to(`chat:${chatId}`).emit('chat-message-realtime', payload);
+      if (typeof ack === 'function') ack({ ok: true, message: payload });
+    } catch (error) {
+      console.error('send-chat-message error:', error);
+      if (typeof ack === 'function') ack({ ok: false, error: 'Failed to send message' });
+    }
   });
 
   // ── Disconnect cleanup ──

@@ -1,7 +1,6 @@
 "use client";
 
 import ChatInterface from "@/components/lawyer/ChatInterface";
-import { clientChats } from "@/data/mockLawyerData";
 
 export default function ChatPage() {
   return (
@@ -12,7 +11,7 @@ export default function ChatPage() {
           Communicate with your clients directly through the platform.
         </p>
       </div>
-      <ChatInterface chats={clientChats} />
+      <ChatInterface />
     </div>
   );
 }
