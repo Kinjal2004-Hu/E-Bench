@@ -37,7 +37,7 @@ const THEME_BORDER = "#E7D9BE";
 const THEME_PANEL = "#FBF8F2";
 
 export default function ChatPage() {
-    const chatIdRef = useRef<string>(`chat_${Date.now()}`);
+    const chatIdRef = useRef<string>("");
     const [messages, setMessages] = useState<Message[]>([]);
     const [input, setInput] = useState("");
     const [isTyping, setIsTyping] = useState(false);
@@ -51,9 +51,35 @@ export default function ChatPage() {
         return new Date(iso).toLocaleTimeString("en-IN", { hour: "2-digit", minute: "2-digit" });
     }
 
+    useEffect(() => {
+        try {
+            const activeId = localStorage.getItem("ebench_active_chat_id");
+            const raw = localStorage.getItem("ebench_chats");
+            const all: Record<string, unknown>[] = raw ? JSON.parse(raw) : [];
+
+            if (activeId) {
+                const existing = all.find((c: { id?: string }) => c.id === activeId) as { id?: string; messages?: Message[] } | undefined;
+                if (existing?.id) {
+                    chatIdRef.current = existing.id;
+                    if (Array.isArray(existing.messages) && existing.messages.length > 0) {
+                        setMessages(existing.messages);
+                    }
+                    return;
+                }
+            }
+
+            const newId = `chat_${Date.now()}`;
+            chatIdRef.current = newId;
+            localStorage.setItem("ebench_active_chat_id", newId);
+        } catch {
+            const fallbackId = `chat_${Date.now()}`;
+            chatIdRef.current = fallbackId;
+        }
+    }, []);
+
     // Persist to localStorage whenever messages change
     useEffect(() => {
-        if (messages.length === 0) return;
+        if (!chatIdRef.current || messages.length === 0) return;
         const id = chatIdRef.current;
         try {
             const raw = localStorage.getItem("ebench_chats");
@@ -74,8 +100,26 @@ export default function ChatPage() {
             if (idx >= 0) all[idx] = entry;
             else all.unshift(entry);
             localStorage.setItem("ebench_chats", JSON.stringify(all));
+            localStorage.setItem("ebench_active_chat_id", id);
         } catch { /* ignore */ }
     }, [messages]);
+
+    const clearCurrentChat = () => {
+        try {
+            const currentId = chatIdRef.current;
+            const raw = localStorage.getItem("ebench_chats");
+            const all: Record<string, unknown>[] = raw ? JSON.parse(raw) : [];
+            const filtered = all.filter((c: { id?: string }) => c.id !== currentId);
+            localStorage.setItem("ebench_chats", JSON.stringify(filtered));
+
+            const newId = `chat_${Date.now()}`;
+            chatIdRef.current = newId;
+            localStorage.setItem("ebench_active_chat_id", newId);
+        } catch {
+            chatIdRef.current = `chat_${Date.now()}`;
+        }
+        setMessages([]);
+    };
 
     const sendMessage = async (text?: string) => {
         const q = (text ?? input).trim();
@@ -143,7 +187,7 @@ export default function ChatPage() {
                 </div>
                 {!isEmpty && (
                     <button
-                        onClick={() => setMessages([])}
+                        onClick={clearCurrentChat}
                         className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-white/10 border border-white/20 text-white text-xs font-medium hover:bg-white/20 transition-colors"
                     >
                         <Trash2 size={12} /> Clear Chat

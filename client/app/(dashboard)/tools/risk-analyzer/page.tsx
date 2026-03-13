@@ -1,64 +1,30 @@
 "use client";
 
-import { ShieldAlert, UploadCloud, Server, AlertTriangle, FileText, CheckCircle2, Save, CheckCircle } from "lucide-react";
+import { ShieldAlert, UploadCloud, Server, AlertTriangle, FileText, CheckCircle2, CheckCircle } from "lucide-react";
 import { useState } from "react";
-import { ragAsk, saveAnalysis } from "@/lib/userApi";
-import type { RagAskResponse } from "@/lib/userApi";
-
-const RISK_KEYWORDS = ["liability", "terminate", "waive", "indemnif", "penalt", "forfeit", "damages", "restrict", "prohibit", "disclaim"];
-
-function computeRiskScore(text: string): number {
-    if (!text) return 0;
-    const lower = text.toLowerCase();
-    const hits = RISK_KEYWORDS.filter((kw) => lower.includes(kw)).length;
-    return Math.min(100, Math.round((hits / RISK_KEYWORDS.length) * 100));
-}
+import { toolContractRisk } from "@/lib/userApi";
+import type { ToolContractRiskResponse } from "@/lib/userApi";
 
 export default function RiskAnalyzerPage() {
     const [contractText, setContractText] = useState("");
     const [analyzing, setAnalyzing] = useState(false);
-    const [result, setResult] = useState<RagAskResponse | null>(null);
+    const [result, setResult] = useState<ToolContractRiskResponse | null>(null);
     const [riskScore, setRiskScore] = useState(0);
     const [analyzeError, setAnalyzeError] = useState("");
-    const [saving, setSaving] = useState(false);
-    const [saved, setSaved] = useState(false);
 
     const analyze = async () => {
         if (!contractText.trim()) return;
         setAnalyzing(true);
         setAnalyzeError("");
         setResult(null);
-        setSaved(false);
         try {
-            const data = await ragAsk(
-                "Identify legal risks and unfair clauses in this contract: " + contractText
-            );
+            const data = await toolContractRisk(contractText);
             setResult(data);
-            setRiskScore(computeRiskScore(contractText));
+            setRiskScore(data.risk_score || 0);
         } catch (err: unknown) {
             setAnalyzeError(err instanceof Error ? err.message : "Analysis failed. Please try again.");
         } finally {
             setAnalyzing(false);
-        }
-    };
-
-    const handleSave = async () => {
-        if (!result) return;
-        setSaving(true);
-        try {
-            await saveAnalysis({
-                type: "contract",
-                title: contractText.slice(0, 80) || "Contract Risk Analysis",
-                description: contractText,
-                aiAnswer: result.ai_answer,
-                sections: result.supporting_sections,
-                userRights: result.user_rights,
-                legalSteps: result.legal_steps,
-                riskScore,
-            });
-            setSaved(true);
-        } catch { /* no-op */ } finally {
-            setSaving(false);
         }
     };
 
@@ -135,13 +101,9 @@ export default function RiskAnalyzerPage() {
                             <div className="flex flex-col mb-6 bg-white rounded-xl border border-gray-200 p-5 shadow-sm text-center">
                                 <div className="flex justify-between items-start mb-2">
                                     <p className="text-sm text-gray-500 uppercase tracking-wider font-bold">Overall Risk Score</p>
-                                    <button
-                                        onClick={handleSave}
-                                        disabled={saving || saved}
-                                        className="flex items-center gap-1.5 text-xs font-semibold text-white bg-[#0F2854] hover:bg-[#1C4D8D] px-3 py-1.5 rounded-lg shadow-sm disabled:opacity-70 transition-colors"
-                                    >
-                                        {saved ? <><CheckCircle size={14} /> Saved</> : saving ? "Saving…" : <><Save size={14} /> Save Report</>}
-                                    </button>
+                                    <div className="flex items-center gap-1.5 text-xs font-semibold text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-lg border border-emerald-200">
+                                        <CheckCircle size={14} /> Auto-saved
+                                    </div>
                                 </div>
                                 <div className="flex items-end justify-center gap-2">
                                     <span className={`text-5xl font-bold ${riskScore >= 70 ? "text-red-600" : riskScore >= 40 ? "text-amber-500" : "text-emerald-600"}`}>{riskScore}</span>
@@ -180,11 +142,11 @@ export default function RiskAnalyzerPage() {
                                     </div>
                                 )}
 
-                                {result.legal_steps && result.legal_steps.length > 0 && (
+                                {result.flagged_clauses && result.flagged_clauses.length > 0 && (
                                     <div>
-                                        <h3 className="text-sm font-bold uppercase tracking-wider text-[#0F2854] mb-3 border-b border-gray-200 pb-2">Recommended Actions</h3>
+                                        <h3 className="text-sm font-bold uppercase tracking-wider text-[#0F2854] mb-3 border-b border-gray-200 pb-2">Flagged Clauses</h3>
                                         <ul className="text-sm text-gray-700 space-y-2 list-disc pl-4 marker:text-amber-500">
-                                            {result.legal_steps.map((s, i) => <li key={i}>{s}</li>)}
+                                            {result.flagged_clauses.map((s, i) => <li key={i}>{s}</li>)}
                                         </ul>
                                     </div>
                                 )}

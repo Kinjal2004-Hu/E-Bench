@@ -1,0 +1,34 @@
+CASE: Cyber Fraud via Fake E-Commerce Website
+
+COMPLAINANT: Mr. Rajesh Kumar Sharma, Age 34, Resident of Sector 45, Gurugram, Haryana
+
+ACCUSED: Unknown individuals operating under the name "BestDealMart.in"
+
+FACTS OF THE CASE:
+
+On 15th January 2026, the complainant Mr. Rajesh Kumar Sharma visited a website named "BestDealMart.in" which appeared to be a legitimate e-commerce platform offering electronic goods at heavily discounted prices. The website displayed fake customer reviews, fabricated trust badges, and a fraudulent GST registration number (GSTIN: 06AABCU9603R1ZM).
+
+The complainant placed an order for a Samsung Galaxy S25 Ultra smartphone listed at Rs. 45,000 (MRP Rs. 1,29,999) and a MacBook Air M3 listed at Rs. 52,000 (MRP Rs. 1,14,900). The total transaction amount was Rs. 97,000.
+
+Payment was made via UPI transfer to the account "bestdealmart@ybl" linked to a Punjab National Bank account. After payment, the complainant received an automated email with a fake tracking number (AWB: BD2026011534782).
+
+When the products did not arrive within the promised delivery window of 5-7 business days, the complainant attempted to contact customer support. The phone number listed on the website (9876543210) was switched off. The email support@bestdealmart.in bounced back as undeliverable. By 28th January 2026, the website was taken offline.
+
+Upon further investigation by the complainant:
+1. The domain "BestDealMart.in" was registered on 1st December 2025 using fabricated identity documents
+2. The bank account receiving payment was opened using forged Aadhaar and PAN documents
+3. At least 47 other victims have filed similar complaints against the same entity on consumer forums
+4. The total estimated fraud amount across all known victims exceeds Rs. 35,00,000
+
+The complainant filed an FIR at Cyber Crime Police Station, Gurugram on 30th January 2026.
+
+EVIDENCE AVAILABLE:
+- Screenshots of the website (archived via Wayback Machine)
+- UPI transaction receipts and bank statements
+- Email correspondence with fake tracking details
+- WhatsApp chat screenshots with the "customer care" number
+- Consumer forum complaints from other victims
+- Domain registration records from NIXI
+
+RELIEF SOUGHT:
+The complainant seeks recovery of Rs. 97,000 along with compensation for mental agony and harassment. Criminal prosecution of the accused persons is also requested.

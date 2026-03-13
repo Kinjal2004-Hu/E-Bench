@@ -1,0 +1,130 @@
+IN THE HIGH COURT OF KERALA AT ERNAKULAM
+
+WRIT PETITION (CIVIL) No. 23456/2025
+
+M/s. Sunrise Fisheries Pvt. Ltd.
+Through its Managing Director Mr. Thomas Mathew
+Having registered office at Harbour Road, Fort Kochi, Ernakulam 682001
+                                                    ... PETITIONER
+
+VERSUS
+
+1. The State of Kerala
+   Through the Chief Secretary, Government Secretariat, Thiruvananthapuram
+
+2. Kerala State Pollution Control Board (KSPCB)
+   Pattom, Thiruvananthapuram 695004
+
+3. District Collector, Ernakulam
+
+4. The Panchayat President, Cherai Grama Panchayat
+
+5. Mr. Jose Kurien and 47 Others
+   (List of respondent-intervenors attached as Annexure-A)
+                                                    ... RESPONDENTS
+
+ORDER
+
+(Delivered on 14th February 2026)
+
+Hon'ble Mr. Justice K. Ramakrishnan Nair
+Hon'ble Ms. Justice Deepa Mohan
+
+The petitioner, M/s. Sunrise Fisheries Pvt. Ltd., engaged in the business of shrimp farming and seafood processing since 2008, has filed this writ petition challenging the closure order dated 15th November 2025 issued by the Kerala State Pollution Control Board (KSPCB) under Section 33-A of the Water (Prevention and Control of Pollution) Act, 1974.
+
+BACKGROUND:
+
+The petitioner operates a shrimp hatchery and processing unit on approximately 15 acres of land in Cherai, Ernakulam district, employing over 200 workers. The unit has been operating with a valid Consent to Operate (CTO) issued by the KSPCB since 2010, last renewed on 1st April 2024 with validity until 31st March 2027.
+
+In October 2025, following complaints from local residents (Respondents No. 5), the KSPCB conducted an inspection on 25th October 2025. The inspection team collected water samples from the effluent discharge point, the nearby Vembanad Lake, and the drainage canal leading from the petitioner's unit.
+
+KSPCB FINDINGS:
+
+The inspection report dated 5th November 2025 recorded the following violations:
+
+1. Biological Oxygen Demand (BOD) levels in the discharged effluent were 180 mg/L against the permissible standard of 30 mg/L — a six-fold exceedance.
+
+2. Total Suspended Solids (TSS) measured at 450 mg/L against the permissible limit of 100 mg/L.
+
+3. Chemical Oxygen Demand (COD) was 520 mg/L against the standard of 250 mg/L.
+
+4. The Effluent Treatment Plant (ETP) installed by the petitioner was found to be non-functional. The aeration system had been switched off, and the settling tanks had not been cleaned for over 6 months.
+
+5. Untreated wastewater was being directly discharged into the drainage canal connected to Vembanad Lake through a bypass pipe installed contrary to the approved scheme.
+
+Based on these findings, the KSPCB issued the impugned closure order on 15th November 2025 directing immediate cessation of all operations and disconnection of electricity and water supply.
+
+PETITIONER'S CONTENTIONS:
+
+Learned Senior Counsel Sri. P. Raghunath appearing for the petitioner contended:
+
+(a) The closure order was issued without affording adequate opportunity of hearing, violating principles of natural justice. The petitioner was given only 48 hours' notice before the closure order was passed.
+
+(b) The inspection was conducted during the peak processing season when effluent levels are naturally higher. A single inspection cannot form the basis for such a drastic order.
+
+(c) The ETP was temporarily non-functional due to equipment failure, and spare parts had already been ordered from Japan. The petitioner had informed the KSPCB about this through a letter dated 20th October 2025.
+
+(d) The closure would render 200 workers jobless and cause irreparable damage to the petitioner's business, as shrimp stock worth Rs. 3,50,00,000 would perish.
+
+(e) The petitioner has a valid CTO and has invested Rs. 12,00,00,000 in pollution control infrastructure.
+
+RESPONDENTS' CONTENTIONS:
+
+The State and KSPCB, represented by the Government Pleader Sri. K.M. Vijayan, argued:
+
+(a) The petitioner was given multiple opportunities to comply with pollution norms. Show cause notices were issued on 3rd June 2025 and 12th August 2025, both of which went unanswered.
+
+(b) The bypass pipe for untreated discharge was a deliberate and calculated violation, not an accidental equipment failure.
+
+(c) Vembanad Lake is a Ramsar Wetland of international importance. The pollution is causing severe damage to the ecosystem and threatening the livelihood of thousands of traditional fishermen.
+
+(d) The principle of "Polluter Pays" under environmental jurisprudence must apply.
+
+(e) Right to a clean environment under Article 21 of the Constitution takes precedence over the petitioner's business interests.
+
+Respondents No. 5 (local residents), through their counsel Adv. Mary Thomas, submitted:
+
+(f) The discharge has contaminated drinking water sources in three wards of Cherai Panchayat, affecting approximately 5,000 residents.
+
+(g) Fish kills reported in the drainage canal and adjoining backwaters since August 2025.
+
+(h) Foul odor from the unit has made living conditions unbearable for neighboring residents within a 500-meter radius.
+
+COURT'S ANALYSIS AND ORDER:
+
+After careful consideration of the submissions, evidence, and applicable law, this Court is of the view that:
+
+1. The right to a clean and healthy environment is a fundamental right guaranteed under Article 21 of the Constitution of India, as held in M.C. Mehta v. Union of India (1987) and Vellore Citizens Welfare Forum v. Union of India (1996).
+
+2. The KSPCB's inspection report clearly establishes serious pollution violations — not mere technical breaches but deliberate circumvention of environmental norms through the bypass pipe.
+
+3. While the principles of natural justice must be followed, the urgency of preventing further environmental damage to a Ramsar wetland site justifies the expedited action. The petitioner had been put on notice through two prior show cause notices which were disregarded.
+
+4. However, considering the livelihood of 200 workers and the perishable nature of the shrimp stock, an absolute closure without any phased approach would be disproportionate.
+
+ACCORDINGLY, this Court directs:
+
+(a) The closure order dated 15th November 2025 is PARTIALLY SET ASIDE subject to the following conditions:
+
+(b) The petitioner shall make the ETP fully operational within 30 days from this order, certified by an independent agency approved by the KSPCB.
+
+(c) The bypass pipe shall be dismantled immediately under the supervision of the KSPCB and the District Collector.
+
+(d) The petitioner shall deposit Rs. 50,00,000 (Fifty Lakhs) with the KSPCB within 15 days as environmental compensation, which shall be utilized for restoration of the affected areas of Vembanad Lake.
+
+(e) The petitioner shall operate at 50% capacity until the ETP is certified as fully functional.
+
+(f) The KSPCB shall conduct monthly inspections for 12 months. Any further violation shall result in permanent closure without further notice.
+
+(g) The petitioner shall provide potable water supply to the affected residents of Cherai Panchayat at its own cost until the water quality is certified as safe by the KSPCB.
+
+(h) Non-compliance with any of the above conditions shall result in automatic restoration of the closure order with contempt proceedings.
+
+Writ Petition is disposed of in the above terms. No order as to costs.
+
+Registry to provide copies of this order to all parties forthwith.
+
+Sd/-                                    Sd/-
+K. Ramakrishnan Nair, J.               Deepa Mohan, J.
+
+Date: 14th February 2026

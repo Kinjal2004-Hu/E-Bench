@@ -1,0 +1,67 @@
+EMPLOYMENT AGREEMENT
+
+This Employment Agreement ("Agreement") is entered into as of 1st March 2026.
+
+BETWEEN:
+TechNova Solutions Private Limited, a company incorporated under the Companies Act, 2013, having its registered office at WeWork Galaxy, Residency Road, Bengaluru 560025 (hereinafter referred to as the "Company" or "Employer")
+
+AND:
+Mr. Arjun Mehta, aged 26, residing at Flat 302, Prestige Lakeside Habitat, Whitefield, Bengaluru 560066 (hereinafter referred to as the "Employee")
+
+TERMS AND CONDITIONS:
+
+1. POSITION AND DUTIES
+The Employee is hired as "Senior Software Engineer" and shall perform duties as assigned by the Company from time to time. The Company reserves the right to change the Employee's designation, role, reporting structure, or department at any time without prior notice or consent.
+
+2. COMPENSATION
+Base Salary: Rs. 18,00,000 per annum, payable monthly.
+The Company may, at its sole discretion, revise, reduce, or withhold salary at any time without providing reasons. The Employee agrees that variable pay and bonuses are entirely discretionary and the Company has no obligation to pay them even if targets are met.
+
+3. WORKING HOURS
+The Employee shall work a minimum of 50 hours per week. Overtime work is expected and shall not be compensated separately. The Employee shall be available 24/7 for emergencies as determined solely by the Company.
+
+4. INTELLECTUAL PROPERTY
+All work product, inventions, code, designs, ideas, and innovations created by the Employee during the term of employment AND for a period of 24 months after termination, whether or not related to the Company's business, whether created during working hours or personal time, shall be the exclusive property of the Company. The Employee irrevocably assigns all such rights to the Company worldwide in perpetuity.
+
+5. NON-COMPETE CLAUSE
+The Employee shall not, for a period of 36 months after termination of employment, engage in any business that competes with or is similar to the Company's business, either directly or indirectly, anywhere in India, Southeast Asia, or the Middle East. This includes employment with competitors, consulting, freelancing, or starting a new venture.
+
+Violation of this clause shall result in liquidated damages of Rs. 50,00,000 payable immediately.
+
+6. NON-SOLICITATION
+For 24 months after termination, the Employee shall not solicit, contact, or engage with any client, customer, vendor, or employee of the Company. This includes passive engagement such as accepting LinkedIn connection requests.
+
+7. TERMINATION
+a) The Company may terminate this Agreement at any time, with or without cause, with immediate effect, without any notice period or severance pay.
+b) The Employee must provide 90 days written notice before resignation. If the Employee fails to serve the full notice period, the Employee shall pay the Company an amount equal to 3 months' gross salary as liquidated damages.
+c) Upon termination, the Employee forfeits all unvested stock options, pending bonuses, and accrued but unused leave encashment.
+
+8. CONFIDENTIALITY
+The Employee shall maintain strict confidentiality of all Company information for an indefinite period after termination. This includes business strategies, client lists, pricing models, internal processes, salary structures, and any information the Company deems confidential.
+
+Breach of confidentiality shall result in liquidated damages of Rs. 1,00,00,000.
+
+9. LIABILITY AND INDEMNIFICATION
+The Employee shall indemnify and hold harmless the Company against any and all losses, claims, damages, and expenses arising from the Employee's actions, omissions, or performance of duties. The Company shall not be liable for any personal injury, health issues, or damages suffered by the Employee during the course of employment.
+
+10. DISPUTE RESOLUTION
+All disputes shall be resolved through arbitration at Bengaluru. The arbitrator shall be appointed solely by the Company. The Employee agrees to bear all costs of arbitration regardless of outcome.
+
+11. GOVERNING LAW
+This Agreement shall be governed by the laws of India. The Employee waives the right to file any complaint with labour courts or tribunals and agrees that all disputes shall be resolved only through the arbitration mechanism specified herein.
+
+12. AMENDMENT
+The Company reserves the right to modify, amend, or supplement any terms of this Agreement at any time. Such modifications shall be communicated via email and shall take effect immediately upon dispatch.
+
+13. GARDEN LEAVE
+During the notice period, the Company may place the Employee on garden leave. During garden leave, the Employee shall receive only 50% of the basic salary and shall not take up any other employment or engagement.
+
+SIGNED BY:
+
+For TechNova Solutions Pvt Ltd
+[Signature]
+Mr. Varun Kapoor, CEO
+
+Employee
+[Signature]
+Mr. Arjun Mehta

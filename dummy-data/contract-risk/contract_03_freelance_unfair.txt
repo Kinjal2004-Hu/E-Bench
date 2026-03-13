@@ -1,0 +1,70 @@
+FREELANCE SERVICE AGREEMENT
+
+Agreement No: FSA/2026/0342
+Date: 10th January 2026
+
+BETWEEN:
+CLIENT: GreenLeaf Digital Marketing LLP, having its office at 12, Nehru Place, New Delhi 110019 (hereinafter "Client")
+
+AND:
+FREELANCER: Mr. Kabir Singh, Web Developer, residing at 78, Rajouri Garden, New Delhi 110027 (hereinafter "Freelancer")
+
+PROJECT: Complete redesign and development of Client's corporate website (www.greenleafdigital.in) including mobile-responsive design, SEO optimization, CMS integration, payment gateway integration, and 12 months of post-launch support.
+
+1. SCOPE OF WORK:
+The Freelancer shall deliver:
+   a) UI/UX Design (20 pages)
+   b) Frontend Development (React.js)
+   c) Backend Development (Node.js + MongoDB)
+   d) Integration with Razorpay payment gateway
+   e) SEO optimization for all pages
+   f) Admin dashboard with analytics
+   g) 12 months post-launch support and maintenance
+   h) Any additional features the Client may request during or after the project
+
+2. TIMELINE:
+The project shall be completed within 45 calendar days. Delays shall attract a penalty of Rs. 2,000 per day. The Client's review periods, scope changes, and feedback delays shall not extend the deadline. Force majeure events do not excuse late delivery.
+
+3. COMPENSATION:
+Total Project Fee: Rs. 1,50,000
+Payment Schedule:
+   - 10% advance upon signing (Rs. 15,000)
+   - 40% upon Client approval of design mockups
+   - 50% upon final delivery and acceptance
+
+The Client shall have the right to withhold final payment indefinitely if the deliverables do not meet the Client's "satisfaction", which shall be determined solely by the Client. The Client may also demand unlimited revisions without additional compensation.
+
+4. INTELLECTUAL PROPERTY:
+All intellectual property rights including source code, designs, documentation, and any derivative works shall vest exclusively in the Client from the moment of creation. The Freelancer shall have no right to use, showcase, or reference this work in their portfolio without written consent from the Client.
+
+5. WARRANTY:
+The Freelancer warrants that the website shall function without any bugs or issues for 24 months after delivery. Any bugs, performance issues, or compatibility problems discovered during this period shall be fixed by the Freelancer at no additional cost within 24 hours of being reported.
+
+6. LIABILITY:
+The Freelancer shall be liable for any losses, damages, or claims arising from the website, including third-party claims, security breaches, downtime, data loss, or any business losses suffered by the Client. The Freelancer's total liability shall be unlimited.
+
+7. TERMINATION:
+   a) The Client may terminate this agreement at any time without cause. Upon termination by the Client, the Freelancer shall deliver all work completed to date and shall only be paid for the milestone last approved. No payment for partially completed milestones.
+   b) The Freelancer may not terminate this agreement once work has commenced.
+
+8. CONFIDENTIALITY:
+The Freelancer shall treat all information about the Client's business as strictly confidential for a period of 10 years. This includes project requirements, business plans, and the existence of this agreement itself.
+
+9. NON-COMPETE:
+The Freelancer shall not work with any direct or indirect competitor of the Client in the digital marketing industry for 18 months after project completion within India.
+
+10. DISPUTE RESOLUTION:
+All disputes shall be resolved through arbitration in New Delhi. The arbitrator shall be appointed by the Client. The Freelancer agrees to bear the full cost of arbitration.
+
+11. INDEMNIFICATION:
+The Freelancer shall indemnify the Client against all third-party claims including claims of copyright infringement, patent claims, and personal data breaches, even if such issues arise from content or specifications provided by the Client.
+
+SIGNED:
+
+For GreenLeaf Digital Marketing LLP:
+___________________
+Name: Ms. Anita Rao, Managing Partner
+
+Freelancer:
+___________________
+Name: Mr. Kabir Singh

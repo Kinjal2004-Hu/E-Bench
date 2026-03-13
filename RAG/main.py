@@ -1,5 +1,6 @@
 import json
 import re
+import html
 import numpy as np
 from pathlib import Path
 from typing import List, Optional
@@ -142,6 +143,42 @@ class MicrolearningAskResponse(BaseModel):
     ai_answer: str
     supporting_sections: List[SearchResult]
     case_studies: List[CaseStudy]
+    model_used: str
+
+
+class ToolCaseAnalyzerRequest(BaseModel):
+    case_text: str
+    top_k: int = 7
+
+
+class ToolCaseAnalyzerResponse(BaseModel):
+    ai_answer: str
+    supporting_sections: List[SearchResult]
+    model_used: str
+
+
+class ToolContractRiskRequest(BaseModel):
+    contract_text: str
+    top_k: int = 7
+
+
+class ToolContractRiskResponse(BaseModel):
+    ai_answer: str
+    supporting_sections: List[SearchResult]
+    risk_score: int
+    risk_level: str
+    flagged_clauses: List[str]
+    model_used: str
+
+
+class ToolCaseSummarizerRequest(BaseModel):
+    document_text: str
+    top_k: int = 7
+
+
+class ToolCaseSummarizerResponse(BaseModel):
+    ai_answer: str
+    supporting_sections: List[SearchResult]
     model_used: str
 
 
@@ -353,15 +390,66 @@ def extract_punishment(text):
 
 def _strip_html(raw: str) -> str:
     """Remove HTML tags from Indian Kanoon response text."""
-    return re.sub(r"<[^>]+>", "", raw).strip()
+    text = re.sub(r"<[^>]+>", "", raw)
+    return html.unescape(text).strip()
+
+
+def build_case_summary(raw_html: str, title: str) -> str:
+    """Generate a detailed, structured summary of a full judgment using Bytez."""
+    # Preserve some paragraph structure before stripping tags.
+    text = re.sub(r"<(?:p|br|div|li|tr|h[1-6])[^>]*>", "\n", raw_html, flags=re.IGNORECASE)
+    text = _strip_html(text)
+    text = re.sub(r"\n{3,}", "\n\n", text)
+    text = re.sub(r"[ \t]{2,}", " ", text).strip()
+
+    if not text:
+        return "No readable case text was returned by Indian Kanoon for this document."
+
+    # Keep within model context while retaining the most informative beginning of the judgment.
+    context = text[:18000]
+
+    messages = [
+        {
+            "role": "system",
+            "content": (
+                "You are a senior Indian legal analyst. Produce a detailed but clear case summary. "
+                "Use headings and bullet points. Prefer precise legal language. "
+                "Do not hallucinate facts not present in the text."
+            ),
+        },
+        {
+            "role": "user",
+            "content": (
+                f"Case title: {title}\n\n"
+                "Summarize this full judgment with these sections:\n"
+                "1) Background and facts\n"
+                "2) Key legal issues\n"
+                "3) Parties' arguments\n"
+                "4) Court's reasoning\n"
+                "5) Final decision and relief\n"
+                "6) Key legal principles / precedent value\n"
+                "7) Practical takeaway for a litigant\n\n"
+                "If any section is unavailable in text, explicitly say 'Not clearly stated in extracted text'.\n\n"
+                f"Judgment text:\n{context}"
+            ),
+        },
+    ]
+
+    result = llm.run(messages, {"temperature": 0})
+    if result.error:
+        raise HTTPException(500, str(result.error))
+
+    output = result.output
+    summary = output.get("content", str(output)) if isinstance(output, dict) else str(output)
+    return summary.strip()
 
 
 def ik_search(query: str, page: int = 0, max_results: int = 5) -> List[dict]:
     """Search Indian Kanoon and return a list of result dicts."""
     try:
-        resp = httpx.get(
+        resp = httpx.post(
             f"{IK_BASE_URL}/search/",
-            params={"formInput": query, "pagenum": page},
+            data={"formInput": query, "pagenum": page},
             headers=IK_HEADERS,
             timeout=15,
         )
@@ -427,6 +515,92 @@ def ik_doc_fragment(doc_id: str, query: str) -> dict:
         return {}
 
 
+# ── Case section parsing ──
+
+LEGAL_SECTION_KEYWORDS = {
+    "Facts": ["facts", "background", "brief facts", "factual background", "case arose"],
+    "Issues": ["issues", "question", "points for consideration", "issue involved"],
+    "Arguments": ["argument", "submission", "contention", "counsel submitted", "pleading"],
+    "Judgment": ["held", "judgment", "order", "disposed", "dismissed", "allowed", "decided"],
+    "Ratio": ["ratio", "ratio decidendi", "legal principle", "principle of law"],
+    "Reasoning": ["reasoning", "analysis", "consideration", "finding", "observed"],
+    "Relief": ["relief", "remedy", "direction", "compensation", "awarded", "damages"],
+    "Conclusion": ["conclusion", "therefore", "accordingly", "result", "in view of"],
+}
+
+
+def _detect_section_label(text: str) -> str:
+    lower = text.lower()
+    for label, keywords in LEGAL_SECTION_KEYWORDS.items():
+        if any(kw in lower for kw in keywords):
+            return label
+    return ""
+
+
+def parse_case_into_sections(raw_html: str) -> List[dict]:
+    """Convert raw HTML case text into step-by-step named sections."""
+    text = re.sub(r"<(?:p|br|div|h[1-6]|li|tr)[^>]*>", "\n", raw_html, flags=re.IGNORECASE)
+    text = _strip_html(text)
+    text = re.sub(r"\n{3,}", "\n\n", text).strip()
+
+    paragraphs = [p.strip() for p in text.split("\n\n") if len(p.strip()) > 80]
+
+    if not paragraphs:
+        return [{"step": 1, "heading": "Full Case", "content": text[:3000]}]
+
+    sections = []
+    step = 0
+    seen_labels = {}
+
+    for para in paragraphs[:20]:
+        first_line = para.split("\n")[0].strip()
+        if first_line.isupper() and 3 < len(first_line) < 80:
+            heading = first_line.title()
+            content = para[len(first_line):].strip() or para
+        else:
+            label = _detect_section_label(para[:300])
+            if label:
+                count = seen_labels.get(label, 0) + 1
+                seen_labels[label] = count
+                heading = label if count == 1 else f"{label} (cont.)"
+            else:
+                heading = ""
+            content = para
+
+        if not heading:
+            heading = f"Section {step + 1}"
+
+        step += 1
+        sections.append({"step": step, "heading": heading, "content": content[:2000]})
+
+    return sections
+
+
+class CaseSection(BaseModel):
+    step: int
+    heading: str
+    content: str
+
+
+class CaseSectionsResponse(BaseModel):
+    doc_id: str
+    title: str
+    source: str
+    sections: List[CaseSection]
+
+
+class CaseAskRequest(BaseModel):
+    section_text: str
+    question: str
+
+
+class CaseAskResponse(BaseModel):
+    question: str
+    section_heading: str
+    ai_answer: str
+    model_used: str
+
+
 SYSTEM_PROMPT = """
 You are an expert Indian legal assistant.
 
@@ -468,6 +642,27 @@ def ask_llm(question, sections, ik_results=None):
         return output.get("content", str(output))
 
     return str(output)
+
+
+def _extract_json_object(text: str) -> Optional[dict]:
+    """Extract first JSON object from model output text."""
+    if not text:
+        return None
+    m = re.search(r"\{[\s\S]*\}", text)
+    if not m:
+        return None
+    try:
+        return json.loads(m.group(0))
+    except Exception:
+        return None
+
+
+def _normalize_risk_level(score: int) -> str:
+    if score >= 70:
+        return "High"
+    if score >= 40:
+        return "Moderate"
+    return "Low"
 
 
 def to_search_results(ranked):
@@ -624,6 +819,124 @@ def microlearning_ask(body: MicrolearningAskRequest):
     )
 
 
+@app.post("/tools/case-analyzer", response_model=ToolCaseAnalyzerResponse)
+def tool_case_analyzer(body: ToolCaseAnalyzerRequest):
+    if not body.case_text.strip():
+        raise HTTPException(400, "case_text is required")
+
+    prompt = (
+        "Analyze this case description and provide a practical legal analysis for India. "
+        "Include likely offences/violations, applicable legal provisions, and immediate legal steps.\n\n"
+        f"Case text:\n{body.case_text}"
+    )
+
+    ranked = retrieve(prompt, body.top_k)
+    sections = [r["section"] for r in ranked]
+    ai_answer = ask_llm(prompt, sections)
+
+    return ToolCaseAnalyzerResponse(
+        ai_answer=ai_answer,
+        supporting_sections=to_search_results(ranked),
+        model_used=BYTEZ_MODEL,
+    )
+
+
+@app.post("/tools/contract-risk", response_model=ToolContractRiskResponse)
+def tool_contract_risk(body: ToolContractRiskRequest):
+    if not body.contract_text.strip():
+        raise HTTPException(400, "contract_text is required")
+
+    ranked = retrieve(
+        "Identify legal risks, unfair terms, liabilities, and enforceability concerns in this contract:\n"
+        + body.contract_text,
+        body.top_k,
+    )
+    sections = [r["section"] for r in ranked]
+
+    messages = [
+        {
+            "role": "system",
+            "content": (
+                "You are a senior contract risk analyst for Indian law. "
+                "Return STRICT JSON only with keys: summary, risk_score, flagged_clauses, recommendations."
+            ),
+        },
+        {
+            "role": "user",
+            "content": (
+                "Analyze this contract text and output JSON.\n"
+                "risk_score must be an integer from 0-100.\n"
+                "flagged_clauses must be an array of short strings (max 8).\n"
+                "recommendations must be an array of short strings (max 8).\n\n"
+                f"Contract text:\n{body.contract_text[:12000]}"
+            ),
+        },
+    ]
+
+    result = llm.run(messages, {"temperature": 0})
+    if result.error:
+        raise HTTPException(500, str(result.error))
+
+    output = result.output.get("content", str(result.output)) if isinstance(result.output, dict) else str(result.output)
+    parsed = _extract_json_object(output) or {}
+
+    risk_score = parsed.get("risk_score", 0)
+    try:
+        risk_score = int(risk_score)
+    except Exception:
+        risk_score = 0
+    risk_score = max(0, min(100, risk_score))
+
+    flagged_clauses = parsed.get("flagged_clauses") or []
+    if not isinstance(flagged_clauses, list):
+        flagged_clauses = []
+    flagged_clauses = [str(x).strip() for x in flagged_clauses if str(x).strip()][:8]
+
+    recommendations = parsed.get("recommendations") or []
+    if not isinstance(recommendations, list):
+        recommendations = []
+    recommendations = [str(x).strip() for x in recommendations if str(x).strip()][:8]
+
+    summary = str(parsed.get("summary", "")).strip()
+    if not summary:
+        summary = output[:1500] if output else "Contract risk analysis generated."
+
+    ai_answer = summary
+    if recommendations:
+        ai_answer += "\n\nRecommended Actions:\n" + "\n".join([f"- {r}" for r in recommendations])
+
+    return ToolContractRiskResponse(
+        ai_answer=ai_answer,
+        supporting_sections=to_search_results(ranked),
+        risk_score=risk_score,
+        risk_level=_normalize_risk_level(risk_score),
+        flagged_clauses=flagged_clauses,
+        model_used=BYTEZ_MODEL,
+    )
+
+
+@app.post("/tools/case-summarizer", response_model=ToolCaseSummarizerResponse)
+def tool_case_summarizer(body: ToolCaseSummarizerRequest):
+    if not body.document_text.strip():
+        raise HTTPException(400, "document_text is required")
+
+    prompt = (
+        "Summarize this legal document in a structured format for a litigant. "
+        "Cover key facts, legal issues, findings, and practical next steps.\n\n"
+        f"Document text:\n{body.document_text}"
+    )
+
+    ranked = retrieve(prompt, body.top_k)
+    sections = [r["section"] for r in ranked]
+    ai_answer = ask_llm(prompt, sections)
+
+    return ToolCaseSummarizerResponse(
+        ai_answer=ai_answer,
+        supporting_sections=to_search_results(ranked),
+        model_used=BYTEZ_MODEL,
+    )
+
+
 @app.get("/section/{number}")
 def section(number: int):
 
@@ -725,6 +1038,30 @@ def ik_docmeta_endpoint(doc_id: str):
     return data
 
 
+@app.get("/ik/case/{doc_id}/summary")
+def ik_case_summary(doc_id: str):
+    """Generate a detailed summary for the complete case text from Indian Kanoon."""
+    data = ik_get_document(doc_id)
+    if not data:
+        raise HTTPException(404, "Document not found on Indian Kanoon")
+
+    raw_html = data.get("doc", "")
+    title = _strip_html(data.get("title", "Case"))
+
+    if not raw_html:
+        raise HTTPException(404, "Case content not available from Indian Kanoon")
+
+    summary = build_case_summary(raw_html, title)
+
+    return {
+        "doc_id": doc_id,
+        "title": title,
+        "summary": summary,
+        "model_used": BYTEZ_MODEL,
+        "source": "Indian Kanoon",
+    }
+
+
 @app.get("/ik/fragment/{doc_id}")
 def ik_fragment_endpoint(doc_id: str, q: str = Query(...)):
     """Fetch document fragments matching a query from Indian Kanoon."""
@@ -732,6 +1069,60 @@ def ik_fragment_endpoint(doc_id: str, q: str = Query(...)):
     if not data:
         raise HTTPException(404, "Fragment not found on Indian Kanoon")
     return data
+
+
+@app.get("/ik/case/{doc_id}/sections", response_model=CaseSectionsResponse)
+def ik_case_sections(doc_id: str):
+    """Fetch an Indian Kanoon case and break it into step-by-step named sections."""
+    data = ik_get_document(doc_id)
+    if not data:
+        raise HTTPException(404, "Document not found on Indian Kanoon")
+    raw_html = data.get("doc", "")
+    title = _strip_html(data.get("title", "Case"))
+    source = data.get("docsource", "Indian Kanoon")
+    sections = parse_case_into_sections(raw_html)
+    return CaseSectionsResponse(
+        doc_id=doc_id,
+        title=title,
+        source=source,
+        sections=[CaseSection(**s) for s in sections],
+    )
+
+
+@app.post("/ik/case/{doc_id}/ask", response_model=CaseAskResponse)
+def ik_case_ask(doc_id: str, body: CaseAskRequest):
+    """Ask the LLM a question about a specific section of an Indian Kanoon case."""
+    if not body.question.strip() or not body.section_text.strip():
+        raise HTTPException(400, "Both question and section_text are required.")
+    messages = [
+        {
+            "role": "system",
+            "content": (
+                "You are an expert Indian legal assistant analyzing a court judgment. "
+                "Answer the user's question based strictly on the provided case section. "
+                "Cite specific legal points, acts, and section numbers where relevant. "
+                "Be clear and concise."
+            ),
+        },
+        {
+            "role": "user",
+            "content": (
+                f"Case Section:\n{body.section_text[:2500]}\n\n"
+                f"Question: {body.question}"
+            ),
+        },
+    ]
+    result = llm.run(messages, {"temperature": 0})
+    if result.error:
+        raise HTTPException(500, str(result.error))
+    output = result.output
+    answer = output.get("content", str(output)) if isinstance(output, dict) else str(output)
+    return CaseAskResponse(
+        question=body.question,
+        section_heading=body.section_text[:80].rstrip() + "...",
+        ai_answer=answer,
+        model_used=BYTEZ_MODEL,
+    )
 
 
 @app.get("/stats")

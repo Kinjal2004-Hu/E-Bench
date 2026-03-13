@@ -87,6 +87,30 @@ export type RagAskResponse = {
   legal_steps?: string[];
 };
 
+export type ToolCaseAnalyzerResponse = {
+  ai_answer: string;
+  supporting_sections: AnalysisSection[];
+  model_used: string;
+  savedAnalysisId?: string;
+};
+
+export type ToolContractRiskResponse = {
+  ai_answer: string;
+  supporting_sections: AnalysisSection[];
+  risk_score: number;
+  risk_level: string;
+  flagged_clauses: string[];
+  model_used: string;
+  savedAnalysisId?: string;
+};
+
+export type ToolCaseSummarizerResponse = {
+  ai_answer: string;
+  supporting_sections: AnalysisSection[];
+  model_used: string;
+  savedAnalysisId?: string;
+};
+
 // ── User Profile ──────────────────────────────────────────────────────────────
 
 export async function fetchUserProfile(): Promise<UserProfile> {
@@ -154,4 +178,27 @@ export async function ragAsk(question: string, top_k = 7): Promise<RagAskRespons
     throw new Error(msg);
   }
   return res.json();
+}
+
+// ── Tool APIs (routed through backend → RAG, auto-saved) ─────────────────────
+
+export async function toolCaseAnalyzer(caseText: string, top_k = 7): Promise<ToolCaseAnalyzerResponse> {
+  return userFetch("/api/tools/case-analyzer", {
+    method: "POST",
+    body: JSON.stringify({ case_text: caseText, top_k }),
+  });
+}
+
+export async function toolContractRisk(contractText: string, top_k = 7): Promise<ToolContractRiskResponse> {
+  return userFetch("/api/tools/contract-risk", {
+    method: "POST",
+    body: JSON.stringify({ contract_text: contractText, top_k }),
+  });
+}
+
+export async function toolCaseSummarizer(documentText: string, top_k = 7): Promise<ToolCaseSummarizerResponse> {
+  return userFetch("/api/tools/case-summarizer", {
+    method: "POST",
+    body: JSON.stringify({ document_text: documentText, top_k }),
+  });
 }

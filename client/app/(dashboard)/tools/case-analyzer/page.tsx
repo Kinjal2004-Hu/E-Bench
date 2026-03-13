@@ -1,53 +1,28 @@
 "use client";
 
-import { Scale, UploadCloud, Sparkles, Server, FileText, ArrowRight, Save, CheckCircle } from "lucide-react";
+import { Scale, UploadCloud, Sparkles, Server, FileText, ArrowRight, CheckCircle } from "lucide-react";
 import { useState } from "react";
-import { ragAsk, saveAnalysis } from "@/lib/userApi";
-import type { RagAskResponse } from "@/lib/userApi";
+import { toolCaseAnalyzer } from "@/lib/userApi";
+import type { ToolCaseAnalyzerResponse } from "@/lib/userApi";
 
 export default function CaseAnalyzerPage() {
     const [description, setDescription] = useState("");
     const [analyzing, setAnalyzing] = useState(false);
-    const [result, setResult] = useState<RagAskResponse | null>(null);
+    const [result, setResult] = useState<ToolCaseAnalyzerResponse | null>(null);
     const [analyzeError, setAnalyzeError] = useState("");
-    const [saving, setSaving] = useState(false);
-    const [saved, setSaved] = useState(false);
 
     const analyze = async () => {
         if (!description.trim()) return;
         setAnalyzing(true);
         setAnalyzeError("");
         setResult(null);
-        setSaved(false);
         try {
-            const data = await ragAsk(
-                "Analyze this case and identify applicable legal sections: " + description
-            );
+            const data = await toolCaseAnalyzer(description);
             setResult(data);
         } catch (err: unknown) {
             setAnalyzeError(err instanceof Error ? err.message : "Analysis failed. Please try again.");
         } finally {
             setAnalyzing(false);
-        }
-    };
-
-    const handleSave = async () => {
-        if (!result) return;
-        setSaving(true);
-        try {
-            await saveAnalysis({
-                type: "case",
-                title: description.slice(0, 80) || "Case Analysis",
-                description,
-                aiAnswer: result.ai_answer,
-                sections: result.supporting_sections,
-                userRights: result.user_rights,
-                legalSteps: result.legal_steps,
-                riskScore: 0,
-            });
-            setSaved(true);
-        } catch { /* no-op */ } finally {
-            setSaving(false);
         }
     };
 
@@ -130,13 +105,9 @@ export default function CaseAnalyzerPage() {
                                 <div className="flex items-center gap-2 text-emerald-600 bg-emerald-50 px-3 py-1.5 rounded-lg border border-emerald-100 text-xs font-bold w-fit">
                                     <Sparkles size={14} /> Analysis Complete
                                 </div>
-                                <button
-                                    onClick={handleSave}
-                                    disabled={saving || saved}
-                                    className="flex items-center gap-1.5 text-xs font-semibold text-white bg-[#0F2854] hover:bg-[#1C4D8D] px-3 py-1.5 rounded-lg shadow-sm disabled:opacity-70 transition-colors"
-                                >
-                                    {saved ? <><CheckCircle size={14} /> Saved</> : saving ? "Saving…" : <><Save size={14} /> Save Report</>}
-                                </button>
+                                <div className="flex items-center gap-1.5 text-xs font-semibold text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-lg border border-emerald-200">
+                                    <CheckCircle size={14} /> Auto-saved
+                                </div>
                             </div>
 
                             <div className="space-y-6">
@@ -160,28 +131,10 @@ export default function CaseAnalyzerPage() {
                                     </div>
                                 )}
 
-                                {result.user_rights && result.user_rights.length > 0 && (
-                                    <div>
-                                        <h3 className="text-sm font-bold uppercase tracking-wider text-[#0F2854] mb-3 border-b border-gray-200 pb-2">Your Rights</h3>
-                                        <ul className="text-sm text-gray-700 space-y-2 list-disc pl-4 marker:text-[#4988C4]">
-                                            {result.user_rights.map((r, i) => <li key={i}>{r}</li>)}
-                                        </ul>
-                                    </div>
-                                )}
-
-                                {result.legal_steps && result.legal_steps.length > 0 && (
-                                    <div>
-                                        <h3 className="text-sm font-bold uppercase tracking-wider text-[#0F2854] mb-3 border-b border-gray-200 pb-2">Recommended Steps</h3>
-                                        <div className="flex flex-col gap-2">
-                                            {result.legal_steps.map((step, i) => (
-                                                <div key={i} className="flex gap-2 items-start text-sm text-gray-700">
-                                                    <ArrowRight size={14} className="text-[#4988C4] mt-0.5 shrink-0" />
-                                                    <span>{step}</span>
-                                                </div>
-                                            ))}
-                                        </div>
-                                    </div>
-                                )}
+                                <div className="text-xs text-gray-500 flex items-center gap-1">
+                                    <ArrowRight size={12} className="text-[#4988C4]" />
+                                    Model: {result.model_used}
+                                </div>
                             </div>
                         </div>
                     )}

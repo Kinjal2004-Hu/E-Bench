@@ -105,6 +105,10 @@ export default function Dashboard() {
         }
     }
 
+    const openTool = (toolPath: string) => {
+        router.push(toolPath)
+    }
+
     return (
         <>
             {/* WELCOME */}
@@ -146,7 +150,7 @@ export default function Dashboard() {
 
                 {/* 3 TOOL CARDS stacked */}
                 <div className="eb-tools-col">
-                    <div className="eb-tool-card">
+                    <button type="button" className="eb-tool-card" onClick={() => openTool('/tools/case-analyzer')}>
                         <div className="eb-tool-top-row">
                             <div className="eb-tool-icon-box"><Scale size={18} /></div>
                             <span className="eb-tool-tag">Case Intelligence</span>
@@ -154,8 +158,8 @@ export default function Dashboard() {
                         <div className="eb-tool-name">AI Case Analyzer</div>
                         <div className="eb-tool-desc">Upload or describe a case and instantly identify applicable legal sections and relevant past judgments.</div>
                         <div className="eb-tool-link">Analyze a Case <ChevronRight size={12} /></div>
-                    </div>
-                    <div className="eb-tool-card">
+                    </button>
+                    <button type="button" className="eb-tool-card" onClick={() => openTool('/tools/risk-analyzer')}>
                         <div className="eb-tool-top-row">
                             <div className="eb-tool-icon-box"><AlertTriangle size={18} /></div>
                             <span className="eb-tool-tag">Risk Detection</span>
@@ -163,8 +167,8 @@ export default function Dashboard() {
                         <div className="eb-tool-name">Contract Risk Analyzer</div>
                         <div className="eb-tool-desc">Detect hidden risks, unfair clauses, and legal loopholes. Get a plain-English risk score.</div>
                         <div className="eb-tool-link">Review a Contract <ChevronRight size={12} /></div>
-                    </div>
-                    <div className="eb-tool-card">
+                    </button>
+                    <button type="button" className="eb-tool-card" onClick={() => openTool('/tools/case-summarizer')}>
                         <div className="eb-tool-top-row">
                             <div className="eb-tool-icon-box"><FileText size={18} /></div>
                             <span className="eb-tool-tag">Document Processing</span>
@@ -172,7 +176,7 @@ export default function Dashboard() {
                         <div className="eb-tool-name">Case File Summarizer</div>
                         <div className="eb-tool-desc">Convert FIRs, chargesheets, and court orders into clear structured summaries in minutes.</div>
                         <div className="eb-tool-link">Summarize a Document <ChevronRight size={12} /></div>
-                    </div>
+                    </button>
                 </div>
 
             </div>

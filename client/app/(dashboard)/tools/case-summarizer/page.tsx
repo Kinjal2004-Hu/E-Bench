@@ -1,53 +1,28 @@
 "use client";
 
-import { FileText, UploadCloud, Sparkles, Server, List, Save, CheckCircle } from "lucide-react";
+import { FileText, UploadCloud, Sparkles, Server, List, CheckCircle } from "lucide-react";
 import { useState } from "react";
-import { ragAsk, saveAnalysis } from "@/lib/userApi";
-import type { RagAskResponse } from "@/lib/userApi";
+import { toolCaseSummarizer } from "@/lib/userApi";
+import type { ToolCaseSummarizerResponse } from "@/lib/userApi";
 
 export default function CaseSummarizerPage() {
     const [text, setText] = useState("");
     const [analyzing, setAnalyzing] = useState(false);
-    const [result, setResult] = useState<RagAskResponse | null>(null);
+    const [result, setResult] = useState<ToolCaseSummarizerResponse | null>(null);
     const [analyzeError, setAnalyzeError] = useState("");
-    const [saving, setSaving] = useState(false);
-    const [saved, setSaved] = useState(false);
 
     const analyze = async () => {
         if (!text.trim()) return;
         setAnalyzing(true);
         setAnalyzeError("");
         setResult(null);
-        setSaved(false);
         try {
-            const data = await ragAsk(
-                "Summarize this legal document and highlight key facts: " + text
-            );
+            const data = await toolCaseSummarizer(text);
             setResult(data);
         } catch (err: unknown) {
             setAnalyzeError(err instanceof Error ? err.message : "Summarization failed. Please try again.");
         } finally {
             setAnalyzing(false);
-        }
-    };
-
-    const handleSave = async () => {
-        if (!result) return;
-        setSaving(true);
-        try {
-            await saveAnalysis({
-                type: "summary",
-                title: text.slice(0, 80) || "Case Summary",
-                description: text,
-                aiAnswer: result.ai_answer,
-                sections: result.supporting_sections,
-                userRights: result.user_rights,
-                legalSteps: result.legal_steps,
-                riskScore: 0,
-            });
-            setSaved(true);
-        } catch { /* no-op */ } finally {
-            setSaving(false);
         }
     };
 
@@ -125,13 +100,9 @@ export default function CaseSummarizerPage() {
                                 <div className="flex items-center gap-2 text-[#1C4D8D] bg-[#F0F4F8] border border-[#1C4D8D]/20 px-3 py-1.5 rounded-lg text-xs font-bold w-fit">
                                     <Sparkles size={14} /> AI Summary Generated
                                 </div>
-                                <button
-                                    onClick={handleSave}
-                                    disabled={saving || saved}
-                                    className="flex items-center gap-1.5 text-xs font-semibold text-white bg-[#0F2854] hover:bg-[#1C4D8D] px-3 py-1.5 rounded-lg shadow-sm disabled:opacity-70 transition-colors"
-                                >
-                                    {saved ? <><CheckCircle size={14} /> Saved</> : saving ? "Saving…" : <><Save size={14} /> Save Report</>}
-                                </button>
+                                <div className="flex items-center gap-1.5 text-xs font-semibold text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-lg border border-emerald-200">
+                                    <CheckCircle size={14} /> Auto-saved
+                                </div>
                             </div>
 
                             <div className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden divide-y divide-gray-100">
@@ -153,23 +124,7 @@ export default function CaseSummarizerPage() {
                                     </div>
                                 )}
 
-                                {result.user_rights && result.user_rights.length > 0 && (
-                                    <div className="p-5">
-                                        <h4 className="text-xs font-bold uppercase tracking-widest text-[#4988C4] mb-3">Your Rights</h4>
-                                        <ul className="text-sm text-gray-700 space-y-2 list-disc pl-4 marker:text-[#4988C4]">
-                                            {result.user_rights.map((r, i) => <li key={i}>{r}</li>)}
-                                        </ul>
-                                    </div>
-                                )}
-
-                                {result.legal_steps && result.legal_steps.length > 0 && (
-                                    <div className="p-5">
-                                        <h4 className="text-xs font-bold uppercase tracking-widest text-[#4988C4] mb-3">Recommended Action Steps</h4>
-                                        <ul className="text-sm text-gray-700 space-y-2 list-disc pl-4 marker:text-[#4988C4]">
-                                            {result.legal_steps.map((s, i) => <li key={i}>{s}</li>)}
-                                        </ul>
-                                    </div>
-                                )}
+                                <div className="p-5 text-xs text-gray-500">Model: {result.model_used}</div>
                             </div>
                         </div>
                     )}
