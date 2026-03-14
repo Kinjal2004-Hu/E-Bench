@@ -193,6 +193,11 @@ const getChatById = async (req, res) => {
     const requesterModel = toParticipantModel(req.user.userType);
     const { chatId } = req.params;
 
+    // Reject non-ObjectID strings (e.g. localStorage keys like chat_1234567890)
+    if (!/^[a-f\d]{24}$/i.test(chatId)) {
+      return res.status(404).json({ error: 'Chat not found' });
+    }
+
     const chat = await Chat.findById(chatId)
       .populate('participants.participant', 'fullName email')
       .populate('messages.sender', 'fullName email');

@@ -2,11 +2,13 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
-import { ArrowLeft, Search, Star, Video, ShieldCheck } from "lucide-react";
+import { ArrowLeft, Search, Star, Video, ShieldCheck, MessageSquare, PhoneCall, Clock, ChevronRight } from "lucide-react";
 import {
   createOrGetDirectChat,
   fetchConsultants,
+  fetchMyChats,
   type ApiConsultant,
+  type ApiChat,
 } from "@/lib/chatApi";
 import PaymentModal, { type SessionType } from "@/components/PaymentModal";
 
@@ -14,6 +16,49 @@ const THEME_COLOR = "#C8B48A";
 const THEME_DARK = "#8D7A55";
 const THEME_SOFT = "#F5EFE4";
 const THEME_BORDER = "#E7D9BE";
+
+type HistoryEntry = {
+  id: string;
+  kind: "chat" | "call";
+  lawyerName: string;
+  lastMessage: string;
+  timestamp: string;
+};
+
+function formatDate(iso: string) {
+  const d = new Date(iso);
+  const now = new Date();
+  const diff = now.getTime() - d.getTime();
+  const mins = Math.floor(diff / 60000);
+  if (mins < 60) return `${mins}m ago`;
+  const hrs = Math.floor(mins / 60);
+  if (hrs < 24) return `${hrs}h ago`;
+  const days = Math.floor(hrs / 24);
+  if (days < 7) return `${days}d ago`;
+  return d.toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric" });
+}
+
+function loadCallHistory(): HistoryEntry[] {
+  if (typeof window === "undefined") return [];
+  try {
+    const raw = localStorage.getItem("ebench_call_history");
+    if (!raw) return [];
+    const list = JSON.parse(raw) as Array<{
+      roomId: string;
+      lawyerName: string;
+      timestamp: string;
+    }>;
+    return list.map((c) => ({
+      id: c.roomId,
+      kind: "call",
+      lawyerName: c.lawyerName || "Lawyer",
+      lastMessage: "Video consultation",
+      timestamp: c.timestamp,
+    }));
+  } catch {
+    return [];
+  }
+}
 
 function formatSpecialization(value: string) {
   return value
@@ -30,6 +75,7 @@ export default function NewChatPage() {
   const [creatingId, setCreatingId] = useState<string | null>(null);
   const [error, setError] = useState("");
   const [selectedLawyer, setSelectedLawyer] = useState<ApiConsultant | null>(null);
+  const [history, setHistory] = useState<HistoryEntry[]>([]);
 
   useEffect(() => {
     const userType = localStorage.getItem("userType");
@@ -39,10 +85,31 @@ export default function NewChatPage() {
       return;
     }
 
-    const loadLawyers = async () => {
+    const loadAll = async () => {
       try {
-        const data = await fetchConsultants();
-        setLawyers(data);
+        const [lawyers, apiChats] = await Promise.all([
+          fetchConsultants(),
+          fetchMyChats().catch(() => [] as ApiChat[]),
+        ]);
+        setLawyers(lawyers);
+
+        const ownModel = "User";
+        const chatEntries: HistoryEntry[] = apiChats.map((c) => {
+          const other = c.participants.find((p) => p.participantModel !== ownModel)?.participant;
+          return {
+            id: c._id,
+            kind: "chat",
+            lawyerName: other?.fullName || "Lawyer",
+            lastMessage: c.lastMessage || "No messages yet",
+            timestamp: c.lastMessageAt || c.updatedAt,
+          };
+        });
+
+        const callEntries = loadCallHistory();
+        const combined = [...chatEntries, ...callEntries].sort(
+          (a, b) => new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime()
+        );
+        setHistory(combined);
       } catch (err) {
         const msg = err instanceof Error ? err.message : "Failed to load lawyers";
         setError(msg);
@@ -51,7 +118,7 @@ export default function NewChatPage() {
       }
     };
 
-    loadLawyers();
+    loadAll();
   }, []);
 
   const filteredLawyers = useMemo(() => {
@@ -84,6 +151,13 @@ export default function NewChatPage() {
         });
         if (!res.ok) throw new Error("Failed to create call room");
         const { roomId } = await res.json();
+        // save call to history
+        try {
+          const raw = localStorage.getItem("ebench_call_history");
+          const list = raw ? JSON.parse(raw) : [];
+          list.unshift({ roomId, lawyerName: selectedLawyer.fullName, timestamp: new Date().toISOString() });
+          localStorage.setItem("ebench_call_history", JSON.stringify(list.slice(0, 30)));
+        } catch { /* ignore */ }
         const lp = encodeURIComponent(selectedLawyer.fullName);
         router.push(`/session/${roomId}/video?lawyer=${lp}`);
       } else {
@@ -188,7 +262,7 @@ export default function NewChatPage() {
                   }
                 >
                   {lawyer.isVerified && <ShieldCheck size={11} />}
-                  {lawyer.isVerified ? "Verified" : "Pending Verification"}
+                  {lawyer.isVerified ? "Verified" : " Verified"}
                 </span>
               </div>
 
@@ -236,6 +310,103 @@ export default function NewChatPage() {
               </button>
             </div>
           ))}
+      </div>
+
+      {/* ── Consultation History ────────────────────────────── */}
+      <div
+        className="rounded-2xl border bg-white p-5"
+        style={{ borderColor: THEME_BORDER }}
+      >
+        <div className="flex items-center gap-2 mb-4">
+          <Clock size={16} style={{ color: THEME_DARK }} />
+          <h2
+            className="text-base font-semibold"
+            style={{ fontFamily: "'Playfair Display', serif", color: THEME_DARK }}
+          >
+            Consultation History
+          </h2>
+          {history.length > 0 && (
+            <span
+              className="ml-auto text-xs px-2 py-0.5 rounded-full border font-medium"
+              style={{ borderColor: THEME_BORDER, color: THEME_DARK, backgroundColor: THEME_SOFT }}
+            >
+              {history.length}
+            </span>
+          )}
+        </div>
+
+        {loading && (
+          <div className="space-y-3">
+            {[1, 2, 3].map((i) => (
+              <div key={i} className="h-14 animate-pulse rounded-xl" style={{ backgroundColor: THEME_SOFT }} />
+            ))}
+          </div>
+        )}
+
+        {!loading && history.length === 0 && (
+          <div className="flex flex-col items-center justify-center py-10 text-center">
+            <div
+              className="w-10 h-10 rounded-full flex items-center justify-center mb-2"
+              style={{ backgroundColor: THEME_SOFT }}
+            >
+              <MessageSquare size={18} style={{ color: THEME_DARK }} />
+            </div>
+            <p className="text-sm text-gray-500">No consultations yet</p>
+            <p className="text-xs text-gray-400 mt-1">Your lawyer chats and video calls will appear here.</p>
+          </div>
+        )}
+
+        {!loading && history.length > 0 && (
+          <div className="divide-y" style={{ borderColor: THEME_BORDER }}>
+            {history.map((entry) => (
+              <button
+                key={entry.id}
+                type="button"
+                onClick={() =>
+                  entry.kind === "chat"
+                    ? router.push(`/session/${entry.id}/chat`)
+                    : router.push(`/session/${entry.id}/video`)
+                }
+                className="w-full flex items-center gap-3 py-3 text-left hover:bg-[#faf7f0] transition-colors rounded-lg px-2 -mx-2 group"
+              >
+                {/* icon */}
+                <div
+                  className="w-9 h-9 rounded-full flex items-center justify-center shrink-0"
+                  style={{
+                    backgroundColor: entry.kind === "chat" ? "#EEF4FF" : "#FFF4E5",
+                    color: entry.kind === "chat" ? "#1C4D8D" : "#A0530A",
+                  }}
+                >
+                  {entry.kind === "chat" ? <MessageSquare size={16} /> : <PhoneCall size={16} />}
+                </div>
+
+                {/* info */}
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-2">
+                    <p className="text-sm font-medium text-gray-900 truncate">{entry.lawyerName}</p>
+                    <span
+                      className="text-[10px] px-1.5 py-0.5 rounded-full border shrink-0"
+                      style={
+                        entry.kind === "chat"
+                          ? { borderColor: "#C8DEFF", backgroundColor: "#EEF4FF", color: "#1C4D8D" }
+                          : { borderColor: "#FFD8A8", backgroundColor: "#FFF4E5", color: "#A0530A" }
+                      }
+                    >
+                      {entry.kind === "chat" ? "Chat" : "Video Call"}
+                    </span>
+                  </div>
+                  <p className="text-xs text-gray-500 truncate mt-0.5">{entry.lastMessage}</p>
+                </div>
+
+                {/* timestamp + arrow */}
+                <div className="flex flex-col items-end gap-1 shrink-0">
+                  <span className="text-[10px] text-gray-400">{formatDate(entry.timestamp)}</span>
+                  <ChevronRight size={14} className="text-gray-400 group-hover:text-gray-600" />
+                </div>
+              </button>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );

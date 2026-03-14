@@ -111,6 +111,31 @@ export type ToolCaseSummarizerResponse = {
   savedAnalysisId?: string;
 };
 
+export type LawAwarenessCaseReference = {
+  case_name: string;
+  year: string;
+  principle: string;
+};
+
+export type LawAwarenessArticleSummary = {
+  article_id: string;
+  article_number: string;
+  title: string;
+  short_description: string;
+};
+
+export type LawAwarenessArticleDetail = LawAwarenessArticleSummary & {
+  rights_explained: string;
+  practical_use: string[];
+  case_references: LawAwarenessCaseReference[];
+};
+
+export type LawAwarenessListResponse = {
+  law_title: string;
+  intro: string;
+  articles: LawAwarenessArticleSummary[];
+};
+
 // ── User Profile ──────────────────────────────────────────────────────────────
 
 export async function fetchUserProfile(): Promise<UserProfile> {
@@ -201,4 +226,30 @@ export async function toolCaseSummarizer(documentText: string, top_k = 7): Promi
     method: "POST",
     body: JSON.stringify({ document_text: documentText, top_k }),
   });
+}
+
+export async function fetchRightsLawAwareness(): Promise<LawAwarenessListResponse> {
+  const res = await fetch(`${RAG_BASE}/law-awareness/rights`);
+  if (!res.ok) {
+    let msg = `RAG request failed (${res.status})`;
+    try {
+      const data = await res.json();
+      msg = data.detail || msg;
+    } catch { /* no-op */ }
+    throw new Error(msg);
+  }
+  return res.json();
+}
+
+export async function fetchRightsLawArticle(articleId: string): Promise<LawAwarenessArticleDetail> {
+  const res = await fetch(`${RAG_BASE}/law-awareness/rights/${articleId}`);
+  if (!res.ok) {
+    let msg = `RAG request failed (${res.status})`;
+    try {
+      const data = await res.json();
+      msg = data.detail || msg;
+    } catch { /* no-op */ }
+    throw new Error(msg);
+  }
+  return res.json();
 }

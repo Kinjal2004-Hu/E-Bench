@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
-import { BookOpen, FileText, Gavel, Home, SearchX, ShieldAlert } from "lucide-react";
+import { BookOpen, FileText, Gavel, Home, SearchX, ShieldAlert, X } from "lucide-react";
 import ForumHeader from "@/components/forum/ForumHeader";
 import PostCard from "@/components/forum/PostCard";
 import { forumPosts, toRelativeTimestamp, type ForumPost } from "@/lib/forum-data";
@@ -21,36 +21,237 @@ const tagOptions = [
   { label: "Property Disputes", value: "Property" },
 ] as const;
 
-const rightsCards = [
+type RightsGuide = {
+  title: string;
+  description: string;
+  readTime: string;
+  icon: React.ElementType;
+  sections: { heading: string; points: string[] }[];
+};
+
+const rightsCards: RightsGuide[] = [
   {
     title: "How to file an FIR",
     description: "Understand where to file, what to include, and what rights you have at the police station.",
     readTime: "6 min",
     icon: FileText,
+    sections: [
+      {
+        heading: "What is an FIR?",
+        points: [
+          "A First Information Report (FIR) is a written document prepared by police when they receive information about a cognizable offence.",
+          "Filing an FIR is your legal right under Section 154 of CrPC (now Section 173 BNSS, 2023).",
+          "Cognizable offences (murder, robbery, rape, kidnapping, etc.) allow police to arrest without a warrant.",
+        ],
+      },
+      {
+        heading: "Where to file",
+        points: [
+          "Visit the police station in whose jurisdiction the crime occurred.",
+          "If the jurisdictional station refuses, you can file at any station under Section 154(3) CrPC.",
+          "You can also send an FIR by post to the Superintendent of Police.",
+          "Online FIR portals are available in most states for select offences (e.g., cyber crime, vehicle theft).",
+        ],
+      },
+      {
+        heading: "What to include",
+        points: [
+          "Your full name, address, and contact details.",
+          "Date, time, and place of the incident.",
+          "A clear description of the offence and persons involved.",
+          "Names of witnesses, if any.",
+          "Description of any property lost or damaged.",
+        ],
+      },
+      {
+        heading: "Your rights at the police station",
+        points: [
+          "You have the right to receive a free copy of the FIR immediately after it is registered.",
+          "Police cannot refuse to register an FIR for a cognizable offence.",
+          "If refused, you can approach the Superintendent of Police or a Magistrate.",
+          "You may file a Zero FIR at any police station if the crime occurred in a different jurisdiction.",
+          "Female complainants can have the FIR recorded at their home by a woman officer.",
+        ],
+      },
+    ],
   },
   {
     title: "Consumer complaint format",
     description: "Step-by-step structure for filing a consumer complaint with supporting documents.",
     readTime: "5 min",
     icon: Gavel,
+    sections: [
+      {
+        heading: "Who can file?",
+        points: [
+          "Any consumer who has purchased goods or availed services for personal use can file a complaint.",
+          "A complaint can be filed by a consumer, a registered consumer association, or the Central/State Government.",
+          "The complaint must be filed within 2 years of the cause of action.",
+        ],
+      },
+      {
+        heading: "Which forum to approach?",
+        points: [
+          "District Commission: claims up to ₹1 crore.",
+          "State Commission: claims between ₹1 crore and ₹10 crore.",
+          "National Commission (NCDRC): claims above ₹10 crore.",
+          "You can also file online at consumerhelpline.gov.in or call 1915 (National Consumer Helpline).",
+        ],
+      },
+      {
+        heading: "Format of the complaint",
+        points: [
+          "1. Name, address, and contact details of the complainant.",
+          "2. Name and address of the opposite party (seller/service provider).",
+          "3. Facts of the case – chronological description of events.",
+          "4. Grounds of complaint – deficiency in service or defective goods.",
+          "5. Relief sought – refund, replacement, compensation, or all three.",
+          "6. Declaration that the complaint is correct to the best of your knowledge.",
+        ],
+      },
+      {
+        heading: "Supporting documents",
+        points: [
+          "Original purchase receipt, invoice, or bill.",
+          "Warranty/guarantee card.",
+          "Correspondence with the seller (emails, letters, WhatsApp screenshots).",
+          "Medical reports if injury is involved.",
+          "Expert opinion or assessment report, if applicable.",
+        ],
+      },
+    ],
   },
   {
     title: "Understanding bail terms",
     description: "A plain-language guide to bail process, conditions, and practical precautions.",
     readTime: "7 min",
     icon: ShieldAlert,
+    sections: [
+      {
+        heading: "Types of bail",
+        points: [
+          "Regular Bail (Section 483 BNSS): Granted by a court after arrest for a bailable or non-bailable offence.",
+          "Anticipatory Bail (Section 484 BNSS): Applied before arrest when a person apprehends arrest.",
+          "Interim Bail: Temporary bail granted for a short period pending hearing of the main bail application.",
+          "Default Bail: Granted when police fail to file a charge sheet within the stipulated time (60 or 90 days).",
+        ],
+      },
+      {
+        heading: "Bailable vs. non-bailable offences",
+        points: [
+          "Bailable offences: Bail is a right (e.g., theft below ₹5,000, assault without grievous hurt). Police must grant bail.",
+          "Non-bailable offences: Bail is at the discretion of the court (e.g., murder, rape, dacoity).",
+        ],
+      },
+      {
+        heading: "Common bail conditions",
+        points: [
+          "Surrender your passport and do not leave the country without court permission.",
+          "Report to the local police station periodically (weekly/monthly).",
+          "Do not contact witnesses or tamper with evidence.",
+          "Provide a surety (a person who guarantees your appearance in court).",
+          "Deposit a cash bond or execute a personal bond.",
+        ],
+      },
+      {
+        heading: "Practical precautions",
+        points: [
+          "Always carry a certified copy of the bail order when moving around.",
+          "Attend every court date; absence may lead to cancellation of bail and a non-bailable warrant.",
+          "Inform your lawyer immediately if any condition becomes difficult to comply with.",
+          "Avoid social media posts that could be presented as evidence of non-compliance.",
+        ],
+      },
+    ],
   },
   {
     title: "Tenant rights in India",
     description: "Key legal protections around notice periods, deposits, eviction, and rent disputes.",
     readTime: "5 min",
     icon: Home,
+    sections: [
+      {
+        heading: "Notice period before eviction",
+        points: [
+          "A landlord cannot evict a tenant without prior written notice as specified in the rental agreement or state rent law.",
+          "Under the Model Tenancy Act 2021, the notice period is typically 24 hours for emergency repairs and 15 days for other reasons.",
+          "Forced eviction without due legal process is illegal regardless of rent payment status.",
+        ],
+      },
+      {
+        heading: "Security deposit",
+        points: [
+          "The Model Tenancy Act caps security deposits at 2 months' rent for residential premises.",
+          "The deposit must be refunded within 1 month of handing over possession of the property.",
+          "Deductions can only be made for actual damage beyond normal wear and tear — with proof.",
+          "A written receipt for the security deposit must be provided.",
+        ],
+      },
+      {
+        heading: "Grounds for lawful eviction",
+        points: [
+          "Non-payment of rent for 2 or more months.",
+          "Subletting the premises without the landlord's written consent.",
+          "Using the property for a different purpose than agreed.",
+          "Causing nuisance or creating a public health hazard.",
+          "Landlord's bona fide personal use (with 3 months' notice).",
+        ],
+      },
+      {
+        heading: "Rent dispute resolution",
+        points: [
+          "First raise the dispute in writing with your landlord and keep a copy.",
+          "Approach the Rent Authority or Rent Tribunal in your district.",
+          "Disputes under the Model Tenancy Act are heard by a dedicated Rent Court.",
+          "You may also approach the District Consumer Forum if the matter involves a service deficiency.",
+        ],
+      },
+    ],
   },
   {
     title: "What to do after cyber fraud",
     description: "Immediate actions, reporting channels, and documentation checklist for recovery.",
     readTime: "4 min",
     icon: ShieldAlert,
+    sections: [
+      {
+        heading: "Immediate actions (first 30 minutes)",
+        points: [
+          "Call the National Cyber Crime Helpline: 1930 to freeze fraudulent transactions.",
+          "Immediately block your debit/credit card and internet banking via your bank's helpline.",
+          "Change passwords for your email, banking, and social media accounts.",
+          "Do not delete any messages, emails, or call logs — they are evidence.",
+        ],
+      },
+      {
+        heading: "Reporting channels",
+        points: [
+          "Online: File a complaint at cybercrime.gov.in (handles financial fraud, social media crimes, etc.).",
+          "Police: Visit the nearest Cyber Cell or file an FIR at any police station.",
+          "Bank: File a dispute with your bank's fraud department; request a chargeback for card transactions.",
+          "RBI Ombudsman: For unresolved banking complaints at rbi.org.in.",
+        ],
+      },
+      {
+        heading: "Documentation checklist",
+        points: [
+          "Screenshots of fraudulent messages, emails, or social media profiles.",
+          "Bank statements showing unauthorized transactions with dates and amounts.",
+          "Transaction reference numbers/UTR numbers for all disputed transfers.",
+          "Copies of any identity documents that were shared / misused.",
+          "Call recordings, if any (check your device's call recorder app).",
+        ],
+      },
+      {
+        heading: "Recovery tips",
+        points: [
+          "Report to the bank within 3 days of the fraud for maximum chargeback eligibility under RBI guidelines.",
+          "Keep all acknowledgment numbers from every complaint you file.",
+          "Regularly follow up with the police and bank — inaction often stalls recovery.",
+          "If your Aadhaar was misused, lock your biometrics at uidai.gov.in.",
+        ],
+      },
+    ],
   },
 ];
 
@@ -161,6 +362,7 @@ export default function CommunityHomePage() {
   const [pagination, setPagination] = useState({ page: 1, limit: PAGE_LIMIT, total: 0, totalPages: 1 });
   const [loading, setLoading] = useState(true);
   const [showGuidelines, setShowGuidelines] = useState(false);
+  const [selectedGuide, setSelectedGuide] = useState<RightsGuide | null>(null);
 
   const updateQueryParam = (key: string, value: string, resetPage = false) => {
     const params = new URLSearchParams(searchParams.toString());
@@ -436,6 +638,7 @@ export default function CommunityHomePage() {
             return (
             <article
               key={guide.title}
+              onClick={() => setSelectedGuide(guide)}
               className="cursor-pointer rounded-lg border border-[#E2DAC8] bg-[#F5F1EA] p-3 text-sm text-[#555] transition hover:-translate-y-0.5 hover:shadow-md"
             >
               <div className="mb-2 inline-flex h-8 w-8 items-center justify-center rounded-lg bg-[#1C2333] text-[#C49A10]">
@@ -467,6 +670,62 @@ export default function CommunityHomePage() {
             >
               Close
             </button>
+          </div>
+        </div>
+      ) : null}
+
+      {selectedGuide ? (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 px-4 py-8">
+          <div className="flex w-full max-w-2xl flex-col rounded-xl border border-[#E2DAC8] bg-[#FFFFFF] shadow-lg" style={{ maxHeight: "90vh" }}>
+            {/* Modal header */}
+            <div className="flex items-start justify-between border-b border-[#E2DAC8] px-6 py-4">
+              <div className="flex items-center gap-3">
+                <div className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#1C2333] text-[#C49A10]">
+                  <selectedGuide.icon className="h-4 w-4" />
+                </div>
+                <div>
+                  <h3 className="text-base font-semibold text-[#1C2333]">{selectedGuide.title}</h3>
+                  <p className="text-xs text-[#777]">{selectedGuide.readTime} read</p>
+                </div>
+              </div>
+              <button
+                type="button"
+                onClick={() => setSelectedGuide(null)}
+                className="ml-4 rounded-lg p-1 text-[#777] transition hover:bg-[#F5F1EA] hover:text-[#1C2333]"
+                aria-label="Close guide"
+              >
+                <X className="h-5 w-5" />
+              </button>
+            </div>
+
+            {/* Modal body — scrollable */}
+            <div className="overflow-y-auto px-6 py-5 space-y-6">
+              <p className="text-sm text-[#555]">{selectedGuide.description}</p>
+              {selectedGuide.sections.map((section) => (
+                <div key={section.heading}>
+                  <h4 className="mb-2 text-sm font-semibold text-[#1C2333]">{section.heading}</h4>
+                  <ul className="space-y-2">
+                    {section.points.map((point, i) => (
+                      <li key={i} className="flex gap-2 text-sm text-[#555]">
+                        <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#C49A10]" />
+                        <span>{point}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+
+            {/* Modal footer */}
+            <div className="border-t border-[#E2DAC8] px-6 py-4">
+              <button
+                type="button"
+                onClick={() => setSelectedGuide(null)}
+                className="rounded-lg bg-[#1C2333] px-4 py-2 text-sm font-medium text-white transition hover:opacity-90"
+              >
+                Close
+              </button>
+            </div>
           </div>
         </div>
       ) : null}

@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState, useCallback } from "react";
 import { useParams, useRouter, useSearchParams } from "next/navigation";
-import { SendHorizontal, Clock, ArrowLeft, Scale } from "lucide-react";
+import { SendHorizontal, Clock, ArrowLeft, Scale, Paperclip, X, FileText, Image } from "lucide-react";
 import { io, Socket } from "socket.io-client";
 
 const SESSION_DURATION = 30 * 60;
@@ -19,6 +19,7 @@ interface ChatMsg {
   content: string;
   timestamp?: string;
   pending?: boolean;
+  attachment?: { name: string; url: string; type: string };
 }
 
 function getToken() {
@@ -39,6 +40,9 @@ export default function ChatSessionPage() {
   const [sessionEnded, setSessionEnded] = useState(false);
   const [timeLeft, setTimeLeft] = useState(SESSION_DURATION);
   const [connected, setConnected] = useState(false);
+
+  const [attachedFile, setAttachedFile] = useState<{ name: string; url: string; type: string } | null>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   const socketRef = useRef<Socket | null>(null);
   const bottomRef = useRef<HTMLDivElement>(null);
@@ -81,16 +85,26 @@ export default function ChatSessionPage() {
 
   useEffect(() => { bottomRef.current?.scrollIntoView({ behavior: "smooth" }); }, [messages]);
 
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    const url = URL.createObjectURL(file);
+    setAttachedFile({ name: file.name, url, type: file.type });
+    e.target.value = "";
+  };
+
   const handleSend = useCallback(() => {
-    if (!input.trim() || sessionEnded || !socketRef.current) return;
-    const content = input.trim();
+    if ((!input.trim() && !attachedFile) || sessionEnded || !socketRef.current) return;
+    const content = input.trim() || (attachedFile ? `📎 ${attachedFile.name}` : "");
+    const attachment = attachedFile ?? undefined;
     setInput("");
-    const optimistic: ChatMsg = { sender: userIdRef.current, senderModel: role === "lawyer" ? "Consultant" : "User", content, pending: true };
+    setAttachedFile(null);
+    const optimistic: ChatMsg = { sender: userIdRef.current, senderModel: role === "lawyer" ? "Consultant" : "User", content, attachment, pending: true };
     setMessages((prev) => [...prev, optimistic]);
     socketRef.current.emit("send-chat-message", { chatId, content }, (ack: { ok: boolean }) => {
       if (!ack?.ok) setMessages((prev) => prev.filter((m) => m !== optimistic));
     });
-  }, [input, sessionEnded, chatId, role]);
+  }, [input, attachedFile, sessionEnded, chatId, role]);
 
   const isWarning = timeLeft > 0 && timeLeft <= 5 * 60;
   const isMyMessage = (msg: ChatMsg) => lawyerId
@@ -138,11 +152,28 @@ export default function ChatSessionPage() {
           const mine = isMyMessage(msg);
           return (
             <div key={i} className={`flex ${mine ? "justify-end" : "justify-start"}`}>
-              <div className={`max-w-[75%] px-4 py-2.5 rounded-2xl text-sm shadow-sm ${msg.pending ? "opacity-60" : ""}`}
+              <div className={`max-w-[75%] rounded-2xl text-sm shadow-sm ${msg.pending ? "opacity-60" : ""}`}
                 style={mine
                   ? { background: "#8D7A55", color: "#F5EFE4", borderBottomRightRadius: 4 }
                   : { background: "#fff", color: "#3d3220", borderBottomLeftRadius: 4, border: "1px solid #C8B48A" }}>
-                {msg.content}
+                {msg.attachment && (
+                  <div className="px-4 pt-2.5 pb-1">
+                    {msg.attachment.type.startsWith("image/") ? (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img src={msg.attachment.url} alt={msg.attachment.name} className="max-w-full rounded-lg max-h-48 object-cover" />
+                    ) : (
+                      <a href={msg.attachment.url} download={msg.attachment.name}
+                        className="flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-medium"
+                        style={{ background: mine ? "rgba(255,255,255,0.15)" : "#F5EFE4", color: mine ? "#F5EFE4" : "#8D7A55" }}>
+                        <FileText size={14} />
+                        <span className="truncate max-w-[180px]">{msg.attachment.name}</span>
+                      </a>
+                    )}
+                  </div>
+                )}
+                {(!msg.attachment || !msg.content.startsWith("📎")) && (
+                  <div className="px-4 py-2.5">{msg.content}</div>
+                )}
               </div>
             </div>
           );
@@ -159,17 +190,37 @@ export default function ChatSessionPage() {
             </button>
           </div>
         ) : (
-          <div className="flex gap-2">
-            <input type="text" value={input} onChange={(e) => setInput(e.target.value)}
-              onKeyDown={(e) => e.key === "Enter" && handleSend()}
-              placeholder="Type your message…"
-              className="flex-1 px-4 py-2.5 rounded-xl text-sm outline-none border"
-              style={{ background: "#fff", border: "1px solid #C8B48A", color: "#3d3220" }} />
-            <button onClick={handleSend} disabled={!input.trim()}
-              className="p-2.5 rounded-xl disabled:opacity-40 transition-colors"
-              style={{ background: "#8D7A55", color: "#F5EFE4" }}>
-              <SendHorizontal size={18} />
-            </button>
+          <div className="flex flex-col gap-2">
+            {attachedFile && (
+              <div className="flex items-center gap-2 px-3 py-2 rounded-xl text-sm" style={{ background: "#fff", border: "1px solid #C8B48A", color: "#3d3220" }}>
+                {attachedFile.type.startsWith("image/") ? <Image size={14} style={{ color: "#8D7A55", flexShrink: 0 }} /> : <FileText size={14} style={{ color: "#8D7A55", flexShrink: 0 }} />}
+                <span className="flex-1 truncate text-xs">{attachedFile.name}</span>
+                <button onClick={() => setAttachedFile(null)} className="p-0.5 rounded hover:bg-black/10">
+                  <X size={13} style={{ color: "#8D7A55" }} />
+                </button>
+              </div>
+            )}
+            <div className="flex gap-2">
+              <input ref={fileInputRef} type="file" className="hidden" onChange={handleFileChange} />
+              <button
+                onClick={() => fileInputRef.current?.click()}
+                title="Attach file"
+                className="p-2.5 rounded-xl transition-colors flex-shrink-0"
+                style={{ background: attachedFile ? "#C8B48A" : "#fff", border: "1px solid #C8B48A", color: "#8D7A55" }}
+              >
+                <Paperclip size={18} />
+              </button>
+              <input type="text" value={input} onChange={(e) => setInput(e.target.value)}
+                onKeyDown={(e) => e.key === "Enter" && handleSend()}
+                placeholder="Type your message…"
+                className="flex-1 px-4 py-2.5 rounded-xl text-sm outline-none border"
+                style={{ background: "#fff", border: "1px solid #C8B48A", color: "#3d3220" }} />
+              <button onClick={handleSend} disabled={!input.trim() && !attachedFile}
+                className="p-2.5 rounded-xl disabled:opacity-40 transition-colors"
+                style={{ background: "#8D7A55", color: "#F5EFE4" }}>
+                <SendHorizontal size={18} />
+              </button>
+            </div>
           </div>
         )}
       </div>

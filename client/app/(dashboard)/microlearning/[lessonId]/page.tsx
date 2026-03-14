@@ -1,15 +1,19 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
-import { ArrowLeft, BookOpen, Brain, HelpCircle, Lightbulb, Loader2, Scale } from "lucide-react";
+import { ArrowLeft, BookOpen, Brain, HelpCircle, Lightbulb, Loader2, Scale, CheckCircle2 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Progress } from "@/components/ui/progress";
 import { microLessons } from "@/lib/microlearning-data";
+
+const COMPLETED_KEY = "ebench_microlearning_completed_lessons";
+const QUIZ_PROGRESS_KEY = "ebench_microlearning_quiz_progress";
 
 type QuizOption = {
   id: string;
@@ -63,6 +67,8 @@ export default function MicrolearningLessonPage() {
   const [aiAnswer, setAiAnswer] = useState("");
   const [caseStudies, setCaseStudies] = useState<Array<{ title: string; facts: string; legal_issue: string; key_learning: string; related_sections: string[] }>>([]);
   const [supportingSections, setSupportingSections] = useState<Array<{ document: string; section_number: number; title: string; snippet: string }>>([]);
+  const [completed, setCompleted] = useState(false);
+  const [completionMsg, setCompletionMsg] = useState("");
 
   const lesson = useMemo(() => microLessons.find((item) => item.id === lessonId), [lessonId]);
 
@@ -72,8 +78,58 @@ export default function MicrolearningLessonPage() {
     }, 0);
   }, [answers]);
 
+  const answeredCount = useMemo(() => Object.keys(answers).length, [answers]);
+  const allQuestionsAnswered = answeredCount === defaultQuiz.length;
+  const quizProgress = Math.round((answeredCount / defaultQuiz.length) * 100);
+
+  useEffect(() => {
+    if (!lesson) return;
+    try {
+      const progressRaw = localStorage.getItem(QUIZ_PROGRESS_KEY);
+      const progress = progressRaw ? (JSON.parse(progressRaw) as Record<string, Record<string, string>>) : {};
+      const savedAnswers = progress[lesson.id] || {};
+      setAnswers(savedAnswers);
+
+      const completedRaw = localStorage.getItem(COMPLETED_KEY);
+      const completedLessons = completedRaw ? (JSON.parse(completedRaw) as string[]) : [];
+      setCompleted(lesson.status === "completed" || completedLessons.includes(lesson.id));
+    } catch {
+      setAnswers({});
+      setCompleted(lesson.status === "completed");
+    }
+  }, [lesson]);
+
   const handleSelectAnswer = (questionId: string, optionId: string) => {
-    setAnswers((prev) => ({ ...prev, [questionId]: optionId }));
+    const next = { ...answers, [questionId]: optionId };
+    setAnswers(next);
+
+    if (!lesson) return;
+    try {
+      const progressRaw = localStorage.getItem(QUIZ_PROGRESS_KEY);
+      const progress = progressRaw ? (JSON.parse(progressRaw) as Record<string, Record<string, string>>) : {};
+      progress[lesson.id] = next;
+      localStorage.setItem(QUIZ_PROGRESS_KEY, JSON.stringify(progress));
+    } catch {
+      // no-op
+    }
+  };
+
+  const markCourseCompleted = () => {
+    if (!lesson || !allQuestionsAnswered) return;
+
+    try {
+      const completedRaw = localStorage.getItem(COMPLETED_KEY);
+      const list = completedRaw ? (JSON.parse(completedRaw) as string[]) : [];
+      if (!list.includes(lesson.id)) {
+        list.push(lesson.id);
+        localStorage.setItem(COMPLETED_KEY, JSON.stringify(list));
+      }
+      setCompleted(true);
+      setCompletionMsg("Course marked as completed.");
+    } catch {
+      setCompletionMsg("Course completion saved for this session.");
+      setCompleted(true);
+    }
   };
 
   const callMicrolearningAi = async (question: string) => {
@@ -210,13 +266,39 @@ export default function MicrolearningLessonPage() {
 
               <TabsContent value="quiz" className="space-y-4">
                 <Card className="rounded-xl border p-0 bg-slate-50">
-                  <CardContent className="p-4 flex flex-wrap items-center justify-between gap-3">
-                    <div className="inline-flex items-center gap-2 text-sm text-[#1C2333]">
-                      <BookOpen className="h-4 w-4 text-[#C49A10]" />
-                      Quiz Score
+                  <CardContent className="p-4 space-y-3">
+                    <div className="flex flex-wrap items-center justify-between gap-3">
+                      <div className="inline-flex items-center gap-2 text-sm text-[#1C2333]">
+                        <BookOpen className="h-4 w-4 text-[#C49A10]" />
+                        Quiz Score
+                      </div>
+                      <div className="text-sm font-semibold text-[#1C2333]">
+                        {score} / {defaultQuiz.length} Correct
+                      </div>
                     </div>
-                    <div className="text-sm font-semibold text-[#1C2333]">
-                      {score} / {defaultQuiz.length} Correct
+
+                    <div className="space-y-1.5">
+                      <div className="flex items-center justify-between text-xs text-slate-600">
+                        <span>Questions Answered</span>
+                        <span>{answeredCount}/{defaultQuiz.length}</span>
+                      </div>
+                      <Progress value={quizProgress} />
+                    </div>
+
+                    <div className="flex flex-wrap items-center gap-2">
+                      <Button
+                        type="button"
+                        onClick={markCourseCompleted}
+                        disabled={!allQuestionsAnswered || completed}
+                        className="rounded-lg px-4 py-2 font-medium bg-[#1C2333] text-white hover:opacity-90 disabled:opacity-60"
+                      >
+                        <CheckCircle2 className="h-4 w-4" />
+                        {completed ? "Course Completed" : "Mark Course as Completed"}
+                      </Button>
+                      {!allQuestionsAnswered && !completed ? (
+                        <p className="text-xs text-slate-600">Answer all quiz questions to enable completion.</p>
+                      ) : null}
+                      {completionMsg ? <p className="text-xs text-emerald-700">{completionMsg}</p> : null}
                     </div>
                   </CardContent>
                 </Card>

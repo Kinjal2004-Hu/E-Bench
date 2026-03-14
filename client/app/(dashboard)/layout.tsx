@@ -356,7 +356,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
                         <Link href="/chats/new" data-tip="Consultation"
                             className="eb-navitem"
                             style={{ marginTop: 4, background: 'var(--gold)', borderRadius: 8, color: '#fff', opacity: 1 }}>
-                            <Plus size={16} /><span className="eb-navitem-label" style={{ fontWeight: 600 }}>New Chat</span>
+                            <Plus size={16} /><span className="eb-navitem-label" style={{ fontWeight: 600 }}>Consultation</span>
                         </Link>
                         <div className="eb-sidebar-spacer" />
                         <div className="eb-sidebar-divider" />

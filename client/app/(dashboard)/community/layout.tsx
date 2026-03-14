@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
-import { BadgeCheck, BriefcaseBusiness, Building2, Headset, Scale, Shield, Users } from "lucide-react";
+import { useSearchParams, usePathname } from "next/navigation";
+import { BadgeCheck, BriefcaseBusiness, Building2, Headset, Scale, Shield, Users, LayoutDashboard, MessageSquare, PenSquare, ChevronRight } from "lucide-react";
 import TrendingWidget from "@/components/forum/TrendingWidget";
 import { forumCategories, recentlySolved, topContributors, trendingTopics } from "@/lib/forum-data";
 
@@ -20,8 +20,14 @@ const categoryIcons = {
   BriefcaseBusiness,
 } as const;
 
+const communityNavItems = [
+  { label: "Forum", href: "/community", icon: MessageSquare },
+  { label: "Ask a Question", href: "/community/ask", icon: PenSquare },
+];
+
 export default function CommunityLayout({ children }: { children: React.ReactNode }) {
   const searchParams = useSearchParams();
+  const pathname = usePathname();
   const activeCategory = searchParams.get("category") || "All";
   const [trendingItems, setTrendingItems] = useState<SidebarTopic[]>([]);
   const [recentSolvedItems, setRecentSolvedItems] = useState<SidebarTopic[]>([]);
@@ -77,6 +83,40 @@ export default function CommunityLayout({ children }: { children: React.ReactNod
 
   return (
     <div className="min-h-screen bg-[#EDE8DF]">
+      {/* Top Navbar */}
+      <nav className="sticky top-0 z-30 bg-white border-b border-[#E2DAC8] shadow-sm">
+        <div className="mx-auto flex max-w-7xl items-center gap-1 px-6 h-12">
+          {/* Back to Dashboard */}
+          <Link
+            href="/dashboard"
+            className="flex items-center gap-1.5 text-sm font-medium text-[#555] hover:text-[#1C2333] transition-colors pr-4 border-r border-[#E2DAC8] mr-3"
+          >
+            <LayoutDashboard size={15} />
+            Dashboard
+          </Link>
+          <ChevronRight size={14} className="text-[#C49A10] mr-2 flex-shrink-0" />
+          <span className="text-xs font-semibold uppercase tracking-widest text-[#C49A10] mr-4">Community</span>
+          {/* Community section tabs */}
+          {communityNavItems.map(({ label, href, icon: Icon }) => {
+            const isActive = pathname === href || (href !== "/community" && pathname.startsWith(href));
+            return (
+              <Link
+                key={href}
+                href={href}
+                className={`flex items-center gap-1.5 px-4 h-12 text-sm font-medium border-b-2 transition-colors ${
+                  isActive
+                    ? "border-[#C49A10] text-[#1C2333]"
+                    : "border-transparent text-[#777] hover:text-[#1C2333] hover:border-[#E2DAC8]"
+                }`}
+              >
+                <Icon size={14} />
+                {label}
+              </Link>
+            );
+          })}
+        </div>
+      </nav>
+
       <div className="mx-auto grid w-full max-w-7xl grid-cols-1 gap-6 px-6 py-6 md:grid-cols-12">
         <aside className="space-y-6 md:col-span-3">
           <section className="rounded-xl border border-[#E2DAC8] bg-[#FFFFFF] p-5 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md">

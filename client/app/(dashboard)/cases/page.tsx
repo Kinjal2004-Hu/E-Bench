@@ -1,9 +1,11 @@
 "use client";
 
-import { Scale, Search, Trash2, Loader2, Save } from "lucide-react";
+import { Scale, Search, Trash2, Loader2, Save, X, Download } from "lucide-react";
 import { useEffect, useState } from "react";
-import { fetchAnalyses, deleteAnalysis, saveAnalysis } from "@/lib/userApi";
-import type { SavedAnalysis } from "@/lib/userApi";
+import { fetchAnalyses, deleteAnalysis, saveAnalysis, fetchAnalysisById } from "@/lib/userApi";
+import type { SavedAnalysis, FullAnalysis } from "@/lib/userApi";
+import FormattedAiText from "@/components/FormattedAiText";
+import { exportTextAsPdf } from "@/lib/exportPdf";
 
 const RAG_BASE = "http://localhost:8000";
 
@@ -28,6 +30,38 @@ export default function CasesPage() {
   const [savingDocId, setSavingDocId] = useState<string | null>(null);
   const [savedDocIds, setSavedDocIds] = useState<Record<string, boolean>>({});
   const [statusMsg, setStatusMsg] = useState("");
+  const [viewLoadingId, setViewLoadingId] = useState<string | null>(null);
+  const [viewMode, setViewMode] = useState<"complete" | "summary">("complete");
+  const [viewData, setViewData] = useState<FullAnalysis | null>(null);
+
+  const pushSummaryToMyChats = (title: string, summaryText: string) => {
+    try {
+      const raw = localStorage.getItem("ebench_chats");
+      const chats: Array<Record<string, unknown>> = raw ? JSON.parse(raw) : [];
+
+      const id = `chat_${Date.now()}`;
+      const now = new Date().toISOString();
+      const messages = [
+        { id: Date.now(), sender: "user", text: `Summary request: ${title}` },
+        { id: Date.now() + 1, sender: "ai", text: summaryText || "Summary generated." },
+      ];
+
+      chats.unshift({
+        id,
+        title: `Summary: ${title}`,
+        last_message: (summaryText || "Summary generated.").slice(0, 120),
+        bot_type: "Summary",
+        timestamp: now,
+        message_count: messages.length,
+        messages,
+        pinned: false,
+      });
+
+      localStorage.setItem("ebench_chats", JSON.stringify(chats));
+    } catch {
+      // no-op
+    }
+  };
 
   const loadCases = async () => {
     setCasesLoading(true);
@@ -133,6 +167,72 @@ export default function CasesPage() {
     }
   };
 
+  const handleViewComplete = async (caseId: string) => {
+    setViewLoadingId(caseId);
+    try {
+      const full = await fetchAnalysisById(caseId);
+      setViewMode("complete");
+      setViewData(full);
+    } catch {
+      setIkError("Failed to load complete case details.");
+    } finally {
+      setViewLoadingId(null);
+    }
+  };
+
+  const handleViewSummary = async (caseItem: SavedAnalysis) => {
+    setViewLoadingId(caseItem._id);
+    try {
+      const full = await fetchAnalysisById(caseItem._id);
+      const summaryText = (full.aiAnswer || full.description || "").trim();
+
+      if (!summaryText) {
+        setIkError("No summary text available for this case.");
+        return;
+      }
+
+      pushSummaryToMyChats(caseItem.title, summaryText);
+      setStatusMsg("Summary opened and added to My Chats as Summary.");
+      setViewMode("summary");
+      setViewData(full);
+    } catch {
+      setIkError("Failed to load case summary.");
+    } finally {
+      setViewLoadingId(null);
+    }
+  };
+
+  const downloadViewedPdf = () => {
+    if (!viewData) return;
+
+    const summaryText = (viewData.aiAnswer || viewData.description || "").trim();
+    const lines = viewMode === "summary"
+      ? [
+          "Case Summary",
+          "",
+          `Title: ${viewData.title}`,
+          "",
+          summaryText,
+        ]
+      : [
+          "Complete Case Analysis",
+          "",
+          `Title: ${viewData.title}`,
+          "",
+          "Case Description:",
+          viewData.description || "-",
+          "",
+          "AI Analysis:",
+          summaryText || "No AI analysis available.",
+        ];
+
+    exportTextAsPdf(
+      `${viewMode}-${Date.now()}.pdf`,
+      viewMode === "summary" ? "E-Bench Case Summary" : "E-Bench Complete Case Analysis",
+      lines
+    );
+  };
+
   return (
     <div className="flex flex-col gap-5 h-full">
       <div className="flex justify-between items-center flex-wrap gap-3">
@@ -219,9 +319,25 @@ export default function CasesPage() {
                           </td>
                           <td className="p-4 text-sm text-gray-500 whitespace-nowrap">{new Date(c.createdAt).toLocaleDateString()}</td>
                           <td className="p-4 pr-6">
-                            <button onClick={() => handleDelete(c._id)} className="p-1.5 text-gray-400 hover:text-red-500 transition-colors rounded">
-                              <Trash2 size={15} />
-                            </button>
+                            <div className="flex items-center gap-2">
+                              <button
+                                onClick={() => handleViewComplete(c._id)}
+                                disabled={viewLoadingId === c._id}
+                                className="px-2.5 py-1.5 text-xs font-semibold rounded-lg border border-[#BDE8F5] text-[#1C4D8D] bg-[#F2FAFD] hover:bg-[#E7F5FB] disabled:opacity-60"
+                              >
+                                {viewLoadingId === c._id ? "Loading..." : "View Analysis"}
+                              </button>
+                              <button
+                                onClick={() => handleViewSummary(c)}
+                                disabled={viewLoadingId === c._id}
+                                className="px-2.5 py-1.5 text-xs font-semibold rounded-lg border border-[#E7D9BE] text-[#8D7A55] bg-[#FBF8F1] hover:bg-[#F5EFE4] disabled:opacity-60"
+                              >
+                                View Summary
+                              </button>
+                              <button onClick={() => handleDelete(c._id)} className="p-1.5 text-gray-400 hover:text-red-500 transition-colors rounded" title="Delete">
+                                <Trash2 size={15} />
+                              </button>
+                            </div>
                           </td>
                         </tr>
                       ))
@@ -295,6 +411,62 @@ export default function CasesPage() {
           </div>
         </div>
       )}
+
+      {viewData ? (
+        <div className="fixed inset-0 z-50 bg-black/50 flex items-center justify-center p-4">
+          <div className="bg-white w-full max-w-3xl max-h-[85vh] rounded-2xl shadow-2xl border border-gray-200 overflow-hidden">
+            <div className="flex items-start justify-between gap-3 px-5 py-4 border-b border-gray-100 bg-[#FBF8F1]">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-wide text-[#8D7A55]">
+                  {viewMode === "complete" ? "Case Analysis" : "Case Summary"}
+                </p>
+                <h3 className="text-base font-bold text-[#3d3220] mt-1 leading-snug">{viewData.title}</h3>
+                <p className="text-xs text-gray-500 mt-1">Saved on {new Date(viewData.createdAt).toLocaleString()}</p>
+              </div>
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={downloadViewedPdf}
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-gray-200 bg-white text-[#0F2854] text-xs font-semibold hover:bg-gray-50"
+                >
+                  <Download size={14} /> Download PDF
+                </button>
+                <button
+                  onClick={() => setViewData(null)}
+                  className="p-2 rounded-lg hover:bg-gray-100 text-gray-500"
+                  aria-label="Close view"
+                >
+                  <X size={16} />
+                </button>
+              </div>
+            </div>
+
+            <div className="p-5 overflow-y-auto max-h-[calc(85vh-92px)]">
+              <div className="space-y-4">
+                {viewMode === "summary" ? (
+                  <FormattedAiText
+                    text={viewData.aiAnswer || viewData.description || "No summary available."}
+                    className="space-y-1"
+                  />
+                ) : (
+                  <>
+                    <div>
+                      <h4 className="text-sm font-bold uppercase tracking-wider text-[#0F2854] mb-2">Case Description</h4>
+                      <p className="text-sm text-gray-700 leading-relaxed whitespace-pre-wrap">{viewData.description || "-"}</p>
+                    </div>
+                    <div>
+                      <h4 className="text-sm font-bold uppercase tracking-wider text-[#0F2854] mb-2">AI Analysis</h4>
+                      <FormattedAiText
+                        text={viewData.aiAnswer || "No AI analysis available."}
+                        className="space-y-1"
+                      />
+                    </div>
+                  </>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      ) : null}
     </div>
   );
 }

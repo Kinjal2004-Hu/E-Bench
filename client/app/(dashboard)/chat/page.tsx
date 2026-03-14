@@ -1,10 +1,12 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import {
     Scale, Gavel, Paperclip, Send, Trash2, Sparkles,
     CheckCheck, FileText, BookOpen, Copy, BookMarked, ChevronRight,
 } from "lucide-react";
+import FormattedAiText from "@/components/FormattedAiText";
 
 const RAG_API = process.env.NEXT_PUBLIC_RAG_API || "http://localhost:8000";
 
@@ -37,7 +39,9 @@ const THEME_BORDER = "#E7D9BE";
 const THEME_PANEL = "#FBF8F2";
 
 export default function ChatPage() {
+    const searchParams = useSearchParams();
     const chatIdRef = useRef<string>("");
+    const lastRoutedMessageRef = useRef("");
     const [messages, setMessages] = useState<Message[]>([]);
     const [input, setInput] = useState("");
     const [isTyping, setIsTyping] = useState(false);
@@ -156,6 +160,14 @@ export default function ChatPage() {
         }
     };
 
+    useEffect(() => {
+        const routedMessage = (searchParams.get("message") || "").trim();
+        if (!routedMessage) return;
+        if (lastRoutedMessageRef.current === routedMessage) return;
+        lastRoutedMessageRef.current = routedMessage;
+        sendMessage(routedMessage);
+    }, [searchParams]);
+
     const handleCopy = (id: number, text: string) => {
         navigator.clipboard.writeText(text).catch(() => {});
         setMessages(prev => prev.map(m => m.id === id ? { ...m, copied: true } : m));
@@ -251,7 +263,11 @@ export default function ChatPage() {
                                                 ? { backgroundColor: THEME_COLOR }
                                                 : { borderColor: THEME_BORDER }}
                                         >
-                                            {msg.text}
+                                            {msg.sender === "ai" ? (
+                                                <FormattedAiText text={msg.text} className="space-y-1" />
+                                            ) : (
+                                                msg.text
+                                            )}
                                         </div>
                                         {/* Referenced Laws */}
                                         {msg.sections && msg.sections.length > 0 && (

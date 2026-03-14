@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import {
     LayoutDashboard,
     Scale,
@@ -13,6 +13,7 @@ import {
     GraduationCap,
     PanelLeftClose,
     PanelLeftOpen,
+    LogOut,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -39,6 +40,15 @@ export default function Sidebar({
     setIsOpen: (v: boolean) => void;
 }) {
     const pathname = usePathname();
+    const router = useRouter();
+
+    function handleLogout() {
+        localStorage.removeItem("token");
+        localStorage.removeItem("ebench_token");
+        localStorage.removeItem("userType");
+        localStorage.removeItem("ebench_active_chat_id");
+        router.push("/auth");
+    }
 
     return (
         <aside
@@ -114,6 +124,17 @@ export default function Sidebar({
                         </Link>
                     );
                 })}
+
+                <button
+                    onClick={handleLogout}
+                    title={!isOpen ? "Logout" : undefined}
+                    className="flex items-center gap-3 px-3 py-2.5 rounded-xl transition-all group text-slate-300 hover:bg-red-500/20 hover:text-red-300 mt-1"
+                >
+                    <LogOut size={20} className="flex-shrink-0 text-slate-400 group-hover:text-red-300" />
+                    <span className={`text-sm font-medium whitespace-nowrap transition-all duration-300 ${isOpen ? "opacity-100 w-auto" : "opacity-0 w-0 hidden"}`}>
+                        Logout
+                    </span>
+                </button>
             </div>
         </aside>
     );

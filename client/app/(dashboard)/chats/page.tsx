@@ -310,7 +310,7 @@ export default function ChatHistoryPage() {
 
   const handleOpen = (id: string, source?: "api" | "local") => {
     if (source === "local" || id.startsWith("chat_")) {
-      router.push(`/chat/${id}`);
+      router.push(`/chats/${id}`);
       return;
     }
     router.push(`/session/${id}/chat`);
@@ -475,13 +475,7 @@ export default function ChatHistoryPage() {
             {historyItems.length} saved chats and summaries in one place
           </p>
         </div>
-        <button
-          onClick={handleNewChat}
-          className="flex items-center gap-2 px-5 py-2.5 text-white rounded-xl text-sm font-semibold transition-colors shadow-sm"
-          style={{ backgroundColor: THEME_COLOR }}
-        >
-          <Plus size={16} /> New Chat
-        </button>
+
       </div>
 
       <div className="flex items-center gap-3 shrink-0 flex-wrap">

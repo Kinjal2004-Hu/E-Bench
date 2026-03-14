@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
+import FormattedAiText from "@/components/FormattedAiText";
 
 const RAG_API = process.env.NEXT_PUBLIC_RAG_API || "http://localhost:8000";
 
@@ -176,7 +177,11 @@ export default function ChatConversationPage() {
                                     }`}
                                 style={msg.sender === "user" ? { backgroundColor: THEME_COLOR } : undefined}
                             >
-                                {msg.text}
+                                {msg.sender === "ai" ? (
+                                    <FormattedAiText text={msg.text} className="space-y-1" />
+                                ) : (
+                                    msg.text
+                                )}
                             </div>
                             {msg.sources && msg.sources.length > 0 && (
                                 <div className="mt-1 bg-white border border-gray-200 rounded-xl p-3 shadow-sm w-full">

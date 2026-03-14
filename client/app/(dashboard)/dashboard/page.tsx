@@ -4,10 +4,17 @@ import { useState, useEffect, useRef } from "react"
 import { useRouter } from "next/navigation"
 import {
     Scale, FileText, AlertTriangle, Newspaper,
-    BookOpen, ChevronRight, Clock, Shield,
-    CheckCircle, Sparkles, MessageSquare, Maximize2
+    BookOpen, ChevronRight, Clock, Shield, Gavel,
+    CheckCircle, Sparkles, MessageSquare, Maximize2, X, Landmark, LogOut
 } from "lucide-react"
-import { fetchUserProfile } from "@/lib/userApi"
+import {
+    fetchRightsLawArticle,
+    fetchRightsLawAwareness,
+    fetchUserProfile,
+    type LawAwarenessArticleDetail,
+    type LawAwarenessArticleSummary,
+} from "@/lib/userApi"
+import { mockLegalNews } from "@/data/mockLegalNews"
 
 /* ─── typewriter taglines ─── */
 const TAGLINES = [
@@ -61,28 +68,53 @@ function useTypewriter(lines: string[], typingSpeed = 60, pauseMs = 1800, delete
     return { display, cursor }
 }
 
-const newsItems = [
-    { text: "Supreme Court upholds digital privacy in landmark ruling", time: "2h ago" },
-    { text: "IPC Section 420 amendments on fraud — penalties tightened", time: "5h ago" },
-    { text: "Ministry releases new guidelines for digital evidence", time: "1d ago" },
-    { text: "High Court stays new bail amendment provisions", time: "2d ago" },
-    { text: "Cyber law tribunals established across 12 new states", time: "3d ago" },
+const categories = ["Rights Guide"]
+
+const DASHBOARD_SUGGESTED = [
+    { q: "What is Section 302 BNS and its punishment?", icon: Scale },
+    { q: "Explain bail provisions under BNSS 2023", icon: Gavel },
+    { q: "How does Section 420 IPC apply to fraud cases?", icon: FileText },
+    { q: "What are rights of an accused under Indian law?", icon: BookOpen },
+    { q: "Procedure for filing an FIR in India", icon: Scale },
+    { q: "Director liability under Companies Act 2013", icon: FileText },
 ]
-const awarenessItems = [
-    { text: "RTI filing now fully digital — simplified process for all citizens", badge: "New", type: "new" },
-    { text: "Consumer Protection Act 2019: updated complaint deadlines issued", badge: "Update", type: "update" },
-    { text: "New POCSO guidelines issued by Ministry of Women & Child Dev.", badge: "New", type: "new" },
-    { text: "Amended Motor Vehicles Act — penalty structures revised", badge: "Update", type: "update" },
-    { text: "Domestic Violence Act amendments — broader protection scope", badge: "New", type: "new" },
-]
-const categories = ["All", "Criminal", "Cyber Law", "Constitutional", "Civil", "Corporate"]
 
 export default function Dashboard() {
     const [activeCat, setActiveCat] = useState("All")
     const [message, setMessage] = useState("")
+    const [isInputFocused, setIsInputFocused] = useState(false)
     const [userName, setUserName] = useState("there")
+    const [rightsArticles, setRightsArticles] = useState<LawAwarenessArticleSummary[]>([])
+    const [rightsLoading, setRightsLoading] = useState(true)
+    const [rightsError, setRightsError] = useState("")
+    const [selectedArticle, setSelectedArticle] = useState<LawAwarenessArticleDetail | null>(null)
+    const [articleLoading, setArticleLoading] = useState(false)
+    const [articleError, setArticleError] = useState("")
     const { display, cursor } = useTypewriter(TAGLINES)
     const router = useRouter()
+    const showTypewriter = !isInputFocused && message.trim().length === 0
+
+    useEffect(() => {
+        let active = true
+
+        fetchRightsLawAwareness()
+            .then((data) => {
+                if (!active) return
+                setRightsArticles(data.articles)
+                setRightsError("")
+            })
+            .catch((err: Error) => {
+                if (!active) return
+                setRightsError(err.message || "Unable to load rights law content.")
+            })
+            .finally(() => {
+                if (active) setRightsLoading(false)
+            })
+
+        return () => {
+            active = false
+        }
+    }, [])
 
     useEffect(() => {
         fetchUserProfile()
@@ -100,20 +132,91 @@ export default function Dashboard() {
     }
 
     const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
-        if (e.key === 'Enter') {
+        if (e.key === "Enter") {
             handleAskClick()
         }
+    }
+
+    const openChatWithPrompt = (prompt: string) => {
+        router.push(`/chat?message=${encodeURIComponent(prompt)}`)
     }
 
     const openTool = (toolPath: string) => {
         router.push(toolPath)
     }
 
+    const openLawAwarenessPage = () => {
+        router.push("/free-tools/law-awareness")
+    }
+
+    const openNewsPage = () => {
+        router.push("/free-tools/news")
+    }
+
+    const handleLogout = () => {
+        localStorage.removeItem("token")
+        localStorage.removeItem("ebench_token")
+        localStorage.removeItem("userType")
+        localStorage.removeItem("ebench_active_chat_id")
+        router.push("/auth")
+    }
+
+    const openRightsArticle = async (articleId: string) => {
+        setArticleLoading(true)
+        setArticleError("")
+        setSelectedArticle(null)
+        try {
+            const detail = await fetchRightsLawArticle(articleId)
+            setSelectedArticle(detail)
+        } catch (err) {
+            setArticleError(err instanceof Error ? err.message : "Unable to load article details.")
+        } finally {
+            setArticleLoading(false)
+        }
+    }
+
+    useEffect(() => {
+        if (!selectedArticle && !articleError && !articleLoading) return
+
+        const onKeyDown = (event: KeyboardEvent) => {
+            if (event.key === "Escape") {
+                setSelectedArticle(null)
+                setArticleError("")
+            }
+        }
+
+        window.addEventListener("keydown", onKeyDown)
+        return () => window.removeEventListener("keydown", onKeyDown)
+    }, [selectedArticle, articleError, articleLoading])
+
     return (
         <>
             {/* WELCOME */}
-            <div className="eb-welcome">
+            <div className="eb-welcome" style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
                 <div className="eb-welcome-title">Welcome back, {userName}.</div>
+                <button
+                    type="button"
+                    onClick={handleLogout}
+                    style={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: 7,
+                        padding: "8px 16px",
+                        borderRadius: 10,
+                        border: "1.5px solid rgba(220,38,38,0.25)",
+                        background: "rgba(220,38,38,0.06)",
+                        color: "#dc2626",
+                        fontSize: 13,
+                        fontWeight: 600,
+                        cursor: "pointer",
+                        transition: "background 0.15s",
+                    }}
+                    onMouseEnter={e => (e.currentTarget.style.background = "rgba(220,38,38,0.12)")}
+                    onMouseLeave={e => (e.currentTarget.style.background = "rgba(220,38,38,0.06)")}
+                >
+                    <LogOut size={15} />
+                    Logout
+                </button>
             </div>
 
             {/* TOP ROW: chatbot (big left) + tool cards stacked (right) */}
@@ -131,19 +234,72 @@ export default function Dashboard() {
                     <div className="eb-chatbot-desc">
                         Get instant, conversational legal insights backed by verified citations, acts, and books. Ask anything about your case, contract, or legal rights — in plain language.
                     </div>
+
+                    <div
+                        style={{
+                            display: "grid",
+                            gridTemplateColumns: "repeat(2, minmax(0, 1fr))",
+                            gap: 10,
+                        }}
+                    >
+                        {DASHBOARD_SUGGESTED.map(({ q, icon: Icon }) => (
+                            <button
+                                key={q}
+                                type="button"
+                                onClick={() => openChatWithPrompt(q)}
+                                style={{
+                                    display: "flex",
+                                    alignItems: "center",
+                                    gap: 10,
+                                    textAlign: "left",
+                                    border: "1.5px solid rgba(196,154,16,0.25)",
+                                    borderRadius: 12,
+                                    background: "rgba(255,255,255,0.82)",
+                                    padding: "12px 12px",
+                                    fontSize: 12.5,
+                                    color: "var(--txt)",
+                                    lineHeight: 1.35,
+                                    cursor: "pointer",
+                                }}
+                            >
+                                <span
+                                    style={{
+                                        width: 28,
+                                        height: 28,
+                                        borderRadius: 8,
+                                        background: "rgba(139,105,20,0.12)",
+                                        color: "var(--gold)",
+                                        display: "flex",
+                                        alignItems: "center",
+                                        justifyContent: "center",
+                                        flexShrink: 0,
+                                    }}
+                                >
+                                    <Icon size={14} />
+                                </span>
+                                <span style={{ flex: 1 }}>{q}</span>
+                                <ChevronRight size={13} style={{ color: "var(--gold)", flexShrink: 0 }} />
+                            </button>
+                        ))}
+                    </div>
+
                     <div className="eb-chatbot-input-row">
                         <MessageSquare size={14} />
                         <input 
                             className="eb-chat-input" 
-                            placeholder="" 
+                            placeholder={showTypewriter ? "" : "Ask your legal question..."}
                             value={message}
                             onChange={(e) => setMessage(e.target.value)}
-                            onKeyPress={handleKeyPress}
-                            style={{ caretColor: "transparent" }} 
+                            onKeyDown={handleKeyPress}
+                            onFocus={() => setIsInputFocused(true)}
+                            onBlur={() => setIsInputFocused(false)}
+                            style={{ caretColor: "var(--txt)" }} 
                         />
-                        <span style={{ fontSize: 13, color: "var(--txt-light)", pointerEvents: "none", whiteSpace: "nowrap", overflow: "hidden", flex: 1, display: "flex", alignItems: "center" }}>
-                            {display}<span className="eb-chat-cursor" style={{ opacity: cursor ? 1 : 0 }} />
-                        </span>
+                        {showTypewriter ? (
+                            <span style={{ fontSize: 13, color: "var(--txt-light)", pointerEvents: "none", whiteSpace: "nowrap", overflow: "hidden", flex: 1, display: "flex", alignItems: "center" }}>
+                                {display}<span className="eb-chat-cursor" style={{ opacity: cursor ? 1 : 0 }} />
+                            </span>
+                        ) : null}
                         <button className="eb-chat-send" onClick={handleAskClick}><Sparkles size={13} /> Ask</button>
                     </div>
                 </div>
@@ -190,9 +346,9 @@ export default function Dashboard() {
                         <div className="eb-info-icon"><BookOpen size={17} /></div>
                         <div>
                             <div className="eb-info-title">Daily Law Awareness</div>
-                            <div className="eb-info-sub">Know your rights · stay informed</div>
+                            <div className="eb-info-sub">Fundamental rights guide · open article details</div>
                         </div>
-                        <button className="eb-fullscreen-btn" title="Full screen"><Maximize2 size={13} /></button>
+                        <button className="eb-fullscreen-btn" title="Open full guide" onClick={openLawAwarenessPage}><Maximize2 size={13} /></button>
                     </div>
                     <div className="eb-law-chips">
                         {categories.map(c => (
@@ -200,12 +356,32 @@ export default function Dashboard() {
                         ))}
                     </div>
                     <div className="eb-law-list">
-                        {awarenessItems.map((item, i) => (
-                            <div className="eb-awareness-item" key={i}>
+                        {rightsLoading ? (
+                            <div className="eb-awareness-item">
                                 <CheckCircle size={13} />
-                                <div className="eb-awareness-text">{item.text}</div>
-                                <span className={`eb-awareness-badge ${item.type === "new" ? "eb-badge-new" : "eb-badge-update"}`}>{item.badge}</span>
+                                <div className="eb-awareness-text">Loading rights articles...</div>
+                                <span className="eb-awareness-badge eb-badge-update">Loading</span>
                             </div>
+                        ) : rightsError ? (
+                            <div className="eb-awareness-item">
+                                <CheckCircle size={13} />
+                                <div className="eb-awareness-text">{rightsError}</div>
+                                <span className="eb-awareness-badge eb-badge-new">Error</span>
+                            </div>
+                        ) : rightsArticles.map((item) => (
+                            <button
+                                type="button"
+                                className="eb-awareness-item"
+                                key={item.article_id}
+                                onClick={() => openRightsArticle(item.article_id)}
+                                style={{ width: "100%", border: "none", textAlign: "left" }}
+                            >
+                                <CheckCircle size={13} />
+                                <div className="eb-awareness-text">
+                                    <strong>{item.article_number}</strong> - {item.title}
+                                </div>
+                                <span className="eb-awareness-badge eb-badge-update">Open</span>
+                            </button>
                         ))}
                     </div>
                 </div>
@@ -216,25 +392,153 @@ export default function Dashboard() {
                         <div className="eb-info-icon"><Newspaper size={17} /></div>
                         <div>
                             <div className="eb-info-title">Legal News Feed</div>
-                            <div className="eb-info-sub">Curated legal developments · updated hourly</div>
+                            <div className="eb-info-sub">Dummy legal updates · curated preview</div>
                         </div>
-                        <button className="eb-fullscreen-btn" title="Full screen"><Maximize2 size={13} /></button>
+                        <button className="eb-fullscreen-btn" title="Open news section" onClick={openNewsPage}><Maximize2 size={13} /></button>
                     </div>
                     <div className="eb-news-scroll">
-                        {newsItems.map((item, i) => (
-                            <div className="eb-news-item" key={i}>
+                        {mockLegalNews.slice(0, 5).map((item) => (
+                            <button type="button" className="eb-news-item" key={item.id} onClick={openNewsPage} style={{ width: "100%", border: "none", textAlign: "left" }}>
                                 <div className="eb-news-dot" />
                                 <div>
-                                    <div className="eb-news-text">{item.text}</div>
-                                    <div className="eb-news-time"><Clock size={9} /> {item.time}</div>
+                                    <div className="eb-news-text">{item.headline}</div>
+                                    <div className="eb-news-time"><Clock size={9} /> {item.date}</div>
                                 </div>
-                            </div>
+                            </button>
                         ))}
                     </div>
-                    <div className="eb-view-all">View All News <ChevronRight size={12} /></div>
+                    <button type="button" className="eb-view-all" onClick={openNewsPage} style={{ background: "transparent", border: "none" }}>
+                        View All News <ChevronRight size={12} />
+                    </button>
                 </div>
 
             </div>
+
+            {(articleLoading || articleError || selectedArticle) ? (
+                <div
+                    style={{
+                        position: "fixed",
+                        inset: 0,
+                        zIndex: 1000,
+                        background: "rgba(15,30,51,0.56)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        padding: 20,
+                    }}
+                >
+                    <div
+                        style={{
+                            width: "min(880px, 100%)",
+                            maxHeight: "90vh",
+                            overflow: "hidden",
+                            borderRadius: 24,
+                            border: "1px solid rgba(196,154,16,0.25)",
+                            background: "var(--warm-white)",
+                            boxShadow: "0 28px 80px rgba(15,30,51,0.35)",
+                        }}
+                    >
+                        <div
+                            style={{
+                                display: "flex",
+                                justifyContent: "space-between",
+                                gap: 16,
+                                padding: "22px 24px",
+                                borderBottom: "1px solid rgba(196,154,16,0.12)",
+                                background: "linear-gradient(180deg,#FCF7EC 0%,#FFFDF8 100%)",
+                            }}
+                        >
+                            <div>
+                                <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--gold)" }}>
+                                    {selectedArticle?.article_number || "Rights Article"}
+                                </div>
+                                <div style={{ fontFamily: "'Playfair Display', serif", fontSize: 27, fontWeight: 700, color: "var(--navy)", marginTop: 6 }}>
+                                    {selectedArticle?.title || "Loading article..."}
+                                </div>
+                            </div>
+                            <button
+                                type="button"
+                                onClick={() => {
+                                    setSelectedArticle(null)
+                                    setArticleError("")
+                                }}
+                                style={{
+                                    width: 40,
+                                    height: 40,
+                                    borderRadius: 14,
+                                    border: "1px solid rgba(196,154,16,0.2)",
+                                    background: "#fff",
+                                    color: "var(--navy)",
+                                    display: "flex",
+                                    alignItems: "center",
+                                    justifyContent: "center",
+                                    cursor: "pointer",
+                                    flexShrink: 0,
+                                }}
+                            >
+                                <X size={18} />
+                            </button>
+                        </div>
+
+                        <div style={{ maxHeight: "calc(90vh - 96px)", overflowY: "auto", padding: 24, display: "grid", gap: 18 }}>
+                            {articleLoading ? (
+                                <div style={{ background: "#FBF8F1", border: "1px dashed rgba(196,154,16,0.25)", borderRadius: 18, padding: 18, color: "var(--text-mid)", fontSize: 14 }}>
+                                    Loading article details...
+                                </div>
+                            ) : articleError ? (
+                                <div style={{ background: "#FFF6F6", border: "1px solid #F1CFCF", borderRadius: 18, padding: 18, color: "#9B3A3A", fontSize: 14 }}>
+                                    {articleError}
+                                </div>
+                            ) : selectedArticle ? (
+                                <>
+                                    <div style={{ background: "#FFFEFB", border: "1px solid rgba(196,154,16,0.18)", borderRadius: 22, padding: 20 }}>
+                                        <div style={{ display: "flex", alignItems: "center", gap: 8, color: "var(--navy)", marginBottom: 10 }}>
+                                            <BookOpen size={18} />
+                                            <div style={{ fontWeight: 700 }}>What this article protects</div>
+                                        </div>
+                                        <div style={{ fontSize: 14, lineHeight: 1.8, color: "var(--text-mid)" }}>{selectedArticle.rights_explained}</div>
+                                    </div>
+
+                                    <div style={{ background: "#FFFEFB", border: "1px solid rgba(196,154,16,0.18)", borderRadius: 22, padding: 20 }}>
+                                        <div style={{ display: "flex", alignItems: "center", gap: 8, color: "var(--navy)", marginBottom: 12 }}>
+                                            <Scale size={18} />
+                                            <div style={{ fontWeight: 700 }}>Practical use</div>
+                                        </div>
+                                        <div style={{ display: "grid", gap: 10 }}>
+                                            {selectedArticle.practical_use.map((item) => (
+                                                <div key={item} style={{ display: "flex", gap: 10, background: "#F8F2E5", borderRadius: 16, padding: "12px 14px", fontSize: 14, color: "var(--text-mid)", lineHeight: 1.7 }}>
+                                                    <span style={{ width: 8, height: 8, borderRadius: 999, background: "var(--gold)", marginTop: 8, flexShrink: 0 }} />
+                                                    <span>{item}</span>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+
+                                    <div style={{ background: "#FFFEFB", border: "1px solid rgba(196,154,16,0.18)", borderRadius: 22, padding: 20 }}>
+                                        <div style={{ display: "flex", alignItems: "center", gap: 8, color: "var(--navy)", marginBottom: 12 }}>
+                                            <Landmark size={18} />
+                                            <div style={{ fontWeight: 700 }}>Past case references</div>
+                                        </div>
+                                        <div style={{ display: "grid", gap: 12 }}>
+                                            {selectedArticle.case_references.map((caseItem) => (
+                                                <div key={`${caseItem.case_name}-${caseItem.year}`} style={{ background: "#FCF8F0", border: "1px solid rgba(196,154,16,0.18)", borderRadius: 18, padding: 16 }}>
+                                                    <div style={{ display: "flex", justifyContent: "space-between", gap: 12, alignItems: "center", flexWrap: "wrap" }}>
+                                                        <div style={{ fontSize: 14, fontWeight: 700, color: "var(--navy)" }}>{caseItem.case_name}</div>
+                                                        <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.16em", textTransform: "uppercase", color: "var(--text-light)", background: "#fff", borderRadius: 999, padding: "6px 10px" }}>
+                                                            {caseItem.year}
+                                                        </div>
+                                                    </div>
+                                                    <div style={{ fontSize: 13.5, lineHeight: 1.7, color: "var(--text-mid)", marginTop: 8 }}>{caseItem.principle}</div>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                </>
+                            ) : null}
+                        </div>
+                    </div>
+                </div>
+            ) : null}
         </>
     )
 }

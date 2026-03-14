@@ -1,4 +1,550 @@
-# E-Bench — AI-Powered Legal Assistance Platform
+# E-Bench — Digital Justice Platform
+
+> AI-powered legal platform that gives every Indian citizen access to legal intelligence, verified lawyer consultations, and real-time case tools — in plain language.
+
+---
+
+## Table of Contents
+
+1. [Why E-Bench](#why-e-bench)
+2. [Feature Overview](#feature-overview)
+3. [System Architecture](#system-architecture)
+4. [Tech Stack](#tech-stack)
+5. [Repository Structure](#repository-structure)
+6. [Data Flow](#data-flow)
+7. [Key Modules](#key-modules)
+8. [Getting Started](#getting-started)
+9. [Environment Variables](#environment-variables)
+10. [User Roles](#user-roles)
+11. [RAG Pipeline](#rag-pipeline)
+12. [Real-time Communication](#real-time-communication)
+
+---
+
+## Why E-Bench
+
+India has over 40 million pending court cases. The vast majority of citizens cannot afford a lawyer for every question, do not know their basic rights, and are unable to understand legal documents written in technical language. E-Bench bridges this gap by combining:
+
+- **AI legal intelligence** built on verified Indian statutes (BNS 2023, BNSS 2023, BSA 2023, Motor Vehicles Act, Corporate Laws, Securities Laws).
+- **Live lawyer consultations** via secured text chat and video call.
+- **Document-processing tools** that turn dense FIRs, chargesheets, and contracts into clear summaries and risk scores — in seconds.
+- **Community legal forum** so citizens can learn from shared experiences.
+- **Microlearning** modules to build ongoing legal literacy.
+
+---
+
+## Feature Overview
+
+### For Citizens (User Dashboard)
+
+| Feature | What it does |
+|---|---|
+| **AI Legal Chat** | Conversational Q&A grounded in Indian statutes via RAG; supports suggested questions, copy/save responses, formatted markdown output |
+| **AI Case Analyzer** | Upload or paste a case description → get applicable BNS sections + relevant judgments from Indian Kanoon |
+| **Contract Risk Analyzer** | Upload/paste a contract → receive an overall risk score, flagged harmful clauses highlighted in the full contract text, and clause-by-clause explanation |
+| **Case File Summarizer** | Upload FIRs, chargesheets, court orders (PDF/DOCX/TXT) → get a structured plain-English summary |
+| **Saved Cases** | All tool analyses auto-saved to the database; full-view and harmful-clause views available per saved contract |
+| **Consultation (Chat + Video)** | Book a lawyer, pay, then start a real-time text chat or WebRTC video call |
+| **Consultation History** | Past chats and video calls listed on the New Consultation page |
+| **Community Forum** | Post questions, up-vote answers, filter by category/tag, earn reputation points; trending discussions surfaced automatically |
+| **Know Your Rights** | Five detailed legal guides (FIR filing, consumer complaints, bail, tenant rights, cyber fraud) presented in an expandable modal |
+| **Microlearning** | Bite-sized legal lessons organised by topic |
+| **Daily Law Awareness** | Rotating articles on fundamental rights pulled from the RAG API |
+| **Legal News Feed** | Curated legal news headlines |
+| **Downloads** | PDF download history persisted in localStorage; one-click re-download without a server round-trip |
+| **Profile & Settings** | User profile management, active sessions view |
+
+### For Lawyers (Lawyer Dashboard)
+
+| Feature | What it does |
+|---|---|
+| **Overview** | Today's appointments, pending consultation requests, total clients, total earnings |
+| **Consultation Requests** | Accept/reject incoming requests with notes |
+| **Appointments** | Calendar view of scheduled sessions |
+| **Client Chat** | Real-time text chat with clients; Socket.IO powered |
+| **Case Files** | View and manage case documents uploaded by clients |
+| **Incoming Call Notification** | Persistent Socket.IO listener across all lawyer pages; animated toast with Accept/Decline when a client initiates a video call |
+| **Community Forum** | Same community page accessible from both portals |
+| **Contracts / Downloads / Microlearning** | Full access shared with user dashboard |
+
+---
+
+## System Architecture
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                         Browser (Next.js)                        │
+│  ┌──────────────┐  ┌──────────────────┐  ┌───────────────────┐  │
+│  │ User Dashboard│  │ Lawyer Dashboard │  │  Landing / Auth   │  │
+│  │ /dashboard   │  │ /lawyer-dashboard│  │  /  and  /auth    │  │
+│  └──────┬───────┘  └────────┬─────────┘  └─────────┬─────────┘  │
+│         │  REST + Socket.IO │                       │ REST       │
+└─────────┼───────────────────┼───────────────────────┼────────────┘
+          │                   │                       │
+          ▼                   ▼                       ▼
+┌───────────────────────────────────────────────────────────────┐
+│               Node.js / Express Backend  :4000                │
+│                                                               │
+│  /api/auth      JWT login · register · token verification     │
+│  /api/chats     CRUD chats · send messages · list lawyers     │
+│  /api/lawyer    Stats · appointments · consultation requests  │
+│  /api/user      Profile · tool analysis history               │
+│  /api/forum     Posts · replies · upvotes                     │
+│  /api/tools     Save case/contract/summary analyses           │
+│  /create-room   Generate UUID video call room                 │
+│                                                               │
+│  Socket.IO:                                                   │
+│    join-chat-room → chat-message-realtime (lawyer↔user chat)  │
+│    register-lawyer → incoming-call (video call signalling)    │
+└───────────────────────────┬───────────────────────────────────┘
+                            │ Mongoose ODM
+                            ▼
+                    ┌───────────────┐
+                    │   MongoDB     │
+                    │               │
+                    │  Users        │
+                    │  Consultants  │
+                    │  Chats        │
+                    │  CaseAnalyses │
+                    │  Appointments │
+                    │  ForumPosts   │
+                    │  ForumReplies │
+                    │  ConsultReqs  │
+                    └───────────────┘
+
+          Browser also calls RAG API directly for AI features:
+          ┌───────────────────────────────────────────────────┐
+          │           FastAPI RAG Server  :8000               │
+          │                                                   │
+          │  POST /ask              Legal Q&A                 │
+          │  POST /tools/analyze    Case analysis             │
+          │  POST /tools/summarize  Document summarization    │
+          │  POST /tools/contract-risk  Contract risk scorer  │
+          │  GET  /rights           Law awareness articles    │
+          │  GET  /ik/search        Indian Kanoon search      │
+          │  GET  /ik/case/:id/summary  Case summary          │
+          └─────────────────┬─────────────────────────────────┘
+                            │
+              ┌─────────────┴──────────────┐
+              │  FAISS Vector Index        │  ← law_faiss.index
+              │  SentenceTransformer embed │  ← BAAI/bge-base-en-v1.5
+              │  CrossEncoder reranker     │  ← ms-marco-MiniLM-L-6-v2
+              │  Qwen2.5-7B-Instruct LLM  │  ← via Bytez API
+              │  Indian Kanoon API         │  ← case law retrieval
+              └────────────────────────────┘
+```
+
+---
+
+## Tech Stack
+
+### Frontend (`/client`)
+| Layer | Technology |
+|---|---|
+| Framework | Next.js 14 (App Router) |
+| Language | TypeScript |
+| Styling | Tailwind CSS |
+| Icons | lucide-react |
+| 3D Landing | React Three Fiber + Drei + Three.js |
+| PDF Export | jsPDF |
+| Document Parsing | pdfjs-dist, mammoth (DOCX) |
+| Realtime | socket.io-client |
+| State | React `useState` / `useEffect` / `useMemo` / `useRef` |
+| Persistence | localStorage (chat history, PDF downloads, call history) |
+
+### Backend (`/backend`)
+| Layer | Technology |
+|---|---|
+| Runtime | Node.js |
+| Framework | Express 5 |
+| Database | MongoDB via Mongoose |
+| Auth | JWT (jsonwebtoken) + bcrypt |
+| Realtime | Socket.IO 4 |
+| File Uploads | Multer |
+| Room IDs | uuid |
+
+### RAG AI Server (`/RAG`)
+| Layer | Technology |
+|---|---|
+| Framework | FastAPI (Python) |
+| Embeddings | `sentence-transformers` — BAAI/bge-base-en-v1.5 |
+| Vector Search | FAISS |
+| Reranker | CrossEncoder ms-marco-MiniLM-L-6-v2 |
+| LLM | Qwen/Qwen2.5-7B-Instruct via Bytez API |
+| Case Law | Indian Kanoon REST API |
+| PDF Extraction | pdfplumber |
+
+---
+
+## Repository Structure
+
+```
+St.John Hackathon/
+│
+├── client/                          # Next.js frontend
+│   ├── app/
+│   │   ├── (dashboard)/             # Protected user route group
+│   │   │   ├── dashboard/           # Main dashboard with AI chat widget
+│   │   │   ├── chat/                # AI legal chat (RAG Q&A)
+│   │   │   ├── chats/               # Lawyer chat history + new session
+│   │   │   ├── cases/               # Saved case analyses
+│   │   │   ├── contracts/           # Saved contract analyses (full + harmful view)
+│   │   │   ├── tools/
+│   │   │   │   ├── case-analyzer/   # AI Case Analyzer tool
+│   │   │   │   ├── risk-analyzer/   # Contract Risk Analyzer tool
+│   │   │   │   └── case-summarizer/ # Case File Summarizer tool
+│   │   │   ├── community/           # Forum (posts, ask, post detail)
+│   │   │   ├── microlearning/       # Lesson browser + [lessonId] detail
+│   │   │   ├── downloads/           # PDF download history
+│   │   │   ├── free-tools/
+│   │   │   │   ├── law-awareness/   # Rights articles browser
+│   │   │   │   └── news/            # Legal news feed
+│   │   │   ├── profile/             # User profile management
+│   │   │   └── settings/
+│   │   ├── lawyer-dashboard/        # Protected lawyer route group
+│   │   │   ├── page.tsx             # Overview with stats
+│   │   │   ├── consultations/       # Accept/reject requests
+│   │   │   ├── appointments/        # Scheduled sessions
+│   │   │   ├── chat/                # Client chat interface
+│   │   │   ├── case-files/          # Case document management
+│   │   │   └── profile/             # Lawyer profile
+│   │   ├── session/[roomId]/        # Video + chat session pages
+│   │   ├── auth/                    # Login / Register
+│   │   └── page.tsx                 # Landing page (3D hero)
+│   │
+│   ├── components/
+│   │   ├── Sidebar.tsx              # Collapsible user sidebar with logout
+│   │   ├── FormattedAiText.tsx      # Markdown renderer for AI responses
+│   │   ├── PaymentModal.tsx         # Consultation payment flow
+│   │   ├── LawyerPickerModal.tsx    # Lawyer selection modal
+│   │   ├── lawyer/Sidebar.tsx       # Collapsible lawyer sidebar with logout
+│   │   └── forum/                   # Forum UI components
+│   │
+│   └── lib/
+│       ├── chatApi.ts               # Lawyer chat API functions
+│       ├── userApi.ts               # Profile + tool analysis API functions
+│       ├── lawyerApi.ts             # Lawyer-specific API functions
+│       ├── exportPdf.ts             # jsPDF export + auto-save to download history
+│       ├── downloadHistory.ts       # localStorage PDF download history manager
+│       └── forum-data.ts            # Static fallback forum data
+│
+├── backend/                         # Express API + Socket.IO server
+│   ├── index.js                     # App entry: routes, Socket.IO, room management
+│   ├── controller/
+│   │   ├── authController.js        # Register, login, JWT issue
+│   │   ├── chatController.js        # Chat CRUD, message delivery
+│   │   ├── lawyerController.js      # Stats, appointments, consultation requests
+│   │   ├── toolController.js        # Save/fetch AI tool analyses
+│   │   └── userController.js        # Profile CRUD
+│   ├── models/
+│   │   ├── UserModel.js             # Citizen accounts
+│   │   ├── ConsultantModel.js       # Lawyer accounts
+│   │   ├── ChatModel.js             # Chat threads + messages
+│   │   ├── CaseAnalysisModel.js     # Tool output storage (cases, contracts, summaries)
+│   │   ├── AppointmentModel.js
+│   │   ├── ConsultationRequestModel.js
+│   │   ├── ForumPostModel.js
+│   │   └── ForumReplyModel.js
+│   └── middleware/
+│       └── authMiddleware.js        # JWT Bearer token validation
+│
+└── RAG/                             # Python FastAPI AI server
+    ├── main.py                      # All AI endpoints
+    ├── law_sections.json            # Pre-extracted statute sections
+    ├── law_embeddings.npy           # Pre-computed section embeddings
+    ├── law_faiss.index              # FAISS index for vector search
+    ├── bns_sections.json            # BNS-specific sections
+    └── bns_embeddings.npy           # BNS-specific embeddings
+```
+
+---
+
+## Data Flow
+
+### 1. AI Legal Chat (Q&A)
+
+```
+User types question
+      │
+      ▼
+Frontend (chat/page.tsx)
+  POST http://localhost:8000/ask  { query: "..." }
+      │
+      ▼
+RAG Server (main.py)
+  1. Embed query with BAAI/bge-base-en-v1.5
+  2. FAISS top-60 vector search across statute sections
+  3. CrossEncoder reranks to top-7 with final score = 0.35×vector + 0.65×rerank
+  4. Relevant sections → context window
+  5. Retrieve top Indian Kanoon results for supplementary case law
+  6. Qwen2.5-7B-Instruct generates grounded answer with citations
+      │
+      ▼
+Response { answer, sections[], ikResults[] }
+      │
+      ▼
+FormattedAiText component renders:
+  ## headings → styled h3
+  **bold** → <strong>
+  - bullets → styled list
+  1. numbered → ordered list
+  > blockquote → left-bordered citation block
+```
+
+### 2. Contract Risk Analysis
+
+```
+User uploads/pastes contract text
+      │
+      ▼
+Frontend (tools/risk-analyzer/page.tsx)
+  POST http://localhost:8000/tools/contract-risk
+      │
+      ▼
+RAG Server
+  Analyses contract clauses against legal standards
+  Returns { risk_score, flagged_clauses[], ai_answer }
+      │
+      ▼
+Frontend receives result, auto-saves to backend:
+  POST http://localhost:4000/api/tools/save  { type: "contract", ... }
+      │
+      ▼
+User can toggle:
+  [Full View]      → full contract text with <mark> highlights on flagged wording
+  [Harmful Clauses] → per-clause cards with matched excerpt from contract
+```
+
+### 3. Lawyer Video Consultation
+
+```
+Client (chats/new/page.tsx)
+  → Selects lawyer → PaymentModal → confirms
+      │
+      ▼
+POST /create-room  (Express)
+  → Generates UUID roomId
+  → Stores in in-memory rooms Map
+  → Returns { roomId }
+      │
+      ▼
+Client navigates to /session/[roomId]/video
+  → Socket.IO emits "join-room" with { roomId, role: "user", callerName }
+  → Server emits "incoming-call" to all registered lawyers
+      │
+      ▼
+Lawyer (lawyer-dashboard layout)
+  → Always-on Socket.IO listener
+  → Receives "incoming-call" → toast notification (60s timeout)
+  → Clicks Accept → navigates to /session/[roomId]/video?role=lawyer
+      │
+      ▼
+Both peers in same room → WebRTC signalling via Socket.IO
+  "offer" / "answer" / "ice-candidate" events
+  → Peer-to-peer video/audio stream established
+```
+
+### 4. Authentication Flow
+
+```
+Register / Login (auth/page.tsx)
+  POST /api/auth/register  or  POST /api/auth/login
+      │
+      ▼
+Backend (authController.js)
+  bcrypt hashes password on register
+  JWT signed with JWT_SECRET (24h expiry)
+  Returns { token, userType: "user"|"consultant" }
+      │
+      ▼
+Frontend stores token + userType in localStorage
+  All subsequent API calls: Authorization: Bearer <token>
+      │
+      ▼
+authMiddleware.js verifies token on every protected route
+  Attaches req.user = { id, userType } 
+  → Used for ownership checks (e.g. ensureRequesterInChat)
+      │
+      ▼
+Logout: clears token, ebench_token, userType, ebench_active_chat_id
+  Redirects to /auth
+```
+
+---
+
+## Key Modules
+
+### `FormattedAiText` (`components/FormattedAiText.tsx`)
+Shared markdown renderer used across every AI output surface. Handles:
+- `## heading` / `### heading` → styled headers
+- `**bold**` → `<strong>`
+- `- bullet` → styled list item with dot marker
+- `1. numbered` → ordered list with blue numbering
+- `> blockquote` → left gold border, beige background, italic
+
+### `exportPdf.ts` + `downloadHistory.ts`
+Every PDF generated by jsPDF is automatically saved as a base64 `dataUri` in localStorage (`ebench_pdf_downloads`, max 15 entries). The Downloads page reads this list and provides one-click re-download with no server round-trip.
+
+### Contract Clause Matching (risk-analyzer + contracts)
+Because RAG returns clause *descriptions* rather than verbatim quotes, a fuzzy matcher extracts the first 16 words of each flagged clause description, builds a whitespace-tolerant regex, and searches the raw contract text to locate and excerpt the actual matching passage.
+
+### Chat ID Guard (chatController.js)
+localStorage AI chat IDs (`chat_1234567890`) are rejected before `Chat.findById()` via a 24-char hex regex check, returning a clean 404 instead of a Mongoose CastError 500.
+
+### Socket.IO Chat vs Video Routing
+- **Lawyer ↔ User text chat**: `join-chat-room` / `send-chat-message` / `chat-message-realtime` events, persisted to MongoDB.
+- **Video signalling**: `join-room` / `incoming-call` / `offer` / `answer` / `ice-candidate` events, state held in-memory (`rooms` Map).
+
+---
+
+## Getting Started
+
+### Prerequisites
+- Node.js ≥ 18
+- Python ≥ 3.10
+- MongoDB running locally or Atlas URI
+- Bytez API key (for Qwen2.5-7B)
+- Indian Kanoon API token
+
+### 1. Clone & install
+
+```bash
+git clone <repo-url>
+cd "St.John Hackathon"
+
+# Backend
+cd backend
+npm install
+
+# Frontend
+cd ../client
+npm install
+
+# RAG (Python)
+cd ../RAG
+pip install -r requirements.txt
+```
+
+### 2. Configure environment
+
+```bash
+# backend/.env  (copy from .env.example)
+MONGODB_URI=mongodb://localhost:27017/ebench
+JWT_SECRET=your_secret_here
+PORT=4000
+
+# client/.env.local
+NEXT_PUBLIC_API_URL=http://localhost:4000
+NEXT_PUBLIC_RAG_API=http://localhost:8000
+```
+
+### 3. Run all three servers
+
+```bash
+# Terminal 1 — MongoDB (if local)
+mongod
+
+# Terminal 2 — Backend
+cd backend && npm run dev        # http://localhost:4000
+
+# Terminal 3 — RAG AI Server
+cd RAG && python -m uvicorn main:app --reload --port 8000
+
+# Terminal 4 — Frontend
+cd client && npm run dev         # http://localhost:3000
+```
+
+### 4. First-time setup
+1. Open `http://localhost:3000`
+2. Click **Get Started** → Register as User or Lawyer
+3. Users land on `/dashboard`; Lawyers land on `/lawyer-dashboard`
+
+---
+
+## Environment Variables
+
+| Variable | Service | Description |
+|---|---|---|
+| `MONGODB_URI` | Backend | MongoDB connection string |
+| `JWT_SECRET` | Backend | Secret for signing JWT tokens |
+| `PORT` | Backend | Server port (default 4000) |
+| `NEXT_PUBLIC_API_URL` | Frontend | Backend base URL |
+| `NEXT_PUBLIC_RAG_API` | Frontend | RAG server base URL |
+
+The RAG server's Bytez API key and Indian Kanoon token are currently hardcoded in `RAG/main.py` — move these to environment variables before deploying to production.
+
+---
+
+## User Roles
+
+### `user` (Citizen)
+- Full access to AI tools, chat, community, microlearning, downloads
+- Can book lawyer consultations (text or video)
+- Consultation history persisted in database (chat) and localStorage (video call log)
+
+### `consultant` (Lawyer)
+- Access to lawyer dashboard: stats, appointment calendar, consultation requests
+- Incoming video call notifications via persistent Socket.IO connection
+- Shares community forum, microlearning, contracts, downloads with user portal
+- Profile managed separately from user profile
+
+Role is set at registration, stored in JWT payload and localStorage as `userType`, used throughout middleware and frontend routing logic.
+
+---
+
+## RAG Pipeline
+
+The RAG (Retrieval-Augmented Generation) pipeline is the AI core of E-Bench.
+
+**Indexed documents:**
+- Bharatiya Nyaya Sanhita (BNS) 2023
+- Bharatiya Nagarik Suraksha Sanhita (BNSS) 2023
+- Bharatiya Sakshya Adhiniyam (BSA) 2023
+- Motor Vehicles Act
+- Corporate Laws
+- Securities Laws
+
+**Retrieval:**
+1. Query is embedded with `BAAI/bge-base-en-v1.5` (768-dim)
+2. FAISS inner-product search returns top-60 candidate sections
+3. CrossEncoder (`ms-marco-MiniLM-L-6-v2`) reranks all 60 with final score `0.35 × vector_score + 0.65 × rerank_score`
+4. Top-7 sections form the context window
+
+**Generation:**
+- `Qwen/Qwen2.5-7B-Instruct` (via Bytez API) generates a grounded answer with section citations
+- Indian Kanoon API supplements with real case law search results
+
+**Caching:** Section text, embeddings, and the FAISS index are persisted as `law_sections.json`, `law_embeddings.npy`, and `law_faiss.index` to avoid re-computation on every server restart.
+
+---
+
+## Real-time Communication
+
+Socket.IO runs on the same Express HTTP server (port 4000). All connections require a valid JWT in `socket.handshake.auth.token`.
+
+### Events — Lawyer-Client Chat
+
+| Event | Direction | Payload |
+|---|---|---|
+| `join-chat-room` | Client → Server | `{ chatId }` |
+| `send-chat-message` | Client → Server | `{ chatId, content }` |
+| `chat-message-realtime` | Server → Room | `{ _id, senderModel, content, timestamp, chatId }` |
+
+### Events — Video Call Signalling
+
+| Event | Direction | Payload |
+|---|---|---|
+| `register-lawyer` | Lawyer → Server | _(none)_ |
+| `join-room` | Client/Lawyer → Server | `{ roomId, role, callerName? }` |
+| `incoming-call` | Server → All Lawyers | `{ roomId, callerName }` |
+| `offer` | Peer → Server → Peer | `{ roomId, offer }` |
+| `answer` | Peer → Server → Peer | `{ roomId, answer }` |
+| `ice-candidate` | Peer → Server → Peer | `{ roomId, candidate }` |
+
+---
+
+*Built for St. John Hackathon — E-Bench: Making justice accessible, understandable, and actionable for every Indian citizen.*
+ — AI-Powered Legal Assistance Platform
 
 > An end-to-end legal tech platform that connects citizens and lawyers, provides AI-powered legal analysis using RAG (Retrieval-Augmented Generation) over Indian law documents, enables real-time video consultations, and delivers live chat — all in a single full-stack application.
 

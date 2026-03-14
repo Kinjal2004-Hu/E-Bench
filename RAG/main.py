@@ -182,6 +182,207 @@ class ToolCaseSummarizerResponse(BaseModel):
     model_used: str
 
 
+class LawAwarenessCaseReference(BaseModel):
+    case_name: str
+    year: str
+    principle: str
+
+
+class LawAwarenessArticleSummary(BaseModel):
+    article_id: str
+    article_number: str
+    title: str
+    short_description: str
+
+
+class LawAwarenessArticleDetail(LawAwarenessArticleSummary):
+    rights_explained: str
+    practical_use: List[str]
+    case_references: List[LawAwarenessCaseReference]
+
+
+class LawAwarenessListResponse(BaseModel):
+    law_title: str
+    intro: str
+    articles: List[LawAwarenessArticleSummary]
+
+
+RIGHTS_LAW_DATA = {
+    "law_title": "Fundamental Rights of People in India",
+    "intro": (
+        "A citizen-focused guide to the key Fundamental Rights under the Constitution of India. "
+        "Select an article to read what it protects, when it is used, and which landmark cases shaped it."
+    ),
+    "articles": [
+        {
+            "article_id": "article-14",
+            "article_number": "Article 14",
+            "title": "Equality Before Law",
+            "short_description": "Protects every person against arbitrary state action and guarantees equal treatment before law.",
+            "rights_explained": (
+                "Article 14 guarantees equality before law and equal protection of laws. "
+                "The State cannot act arbitrarily, selectively, or irrationally while making laws or taking executive action. "
+                "Reasonable classification is allowed, but it must have an intelligible basis and a rational link to the objective."
+            ),
+            "practical_use": [
+                "Challenge arbitrary government decisions, discriminatory policies, or unequal treatment by public authorities.",
+                "Invoke it where a rule unfairly targets one class without valid legal reason.",
+                "Use alongside Articles 19 and 21 when administrative action is unfair and unreasonable."
+            ],
+            "case_references": [
+                {
+                    "case_name": "E.P. Royappa v. State of Tamil Nadu",
+                    "year": "1974",
+                    "principle": "Arbitrariness is antithetical to equality; arbitrary state action violates Article 14."
+                },
+                {
+                    "case_name": "Maneka Gandhi v. Union of India",
+                    "year": "1978",
+                    "principle": "Fairness, non-arbitrariness, and reasonableness became central to constitutional review."
+                }
+            ]
+        },
+        {
+            "article_id": "article-19",
+            "article_number": "Article 19",
+            "title": "Freedoms of Speech, Movement and Association",
+            "short_description": "Covers core civil freedoms such as speech, assembly, association, movement, residence, and profession.",
+            "rights_explained": (
+                "Article 19(1) grants key freedoms to citizens, including free speech and expression, peaceful assembly, forming associations, "
+                "moving freely, residing anywhere in India, and practising a profession or business. These freedoms are subject to reasonable restrictions "
+                "in the interests of public order, sovereignty, morality, security, and other constitutionally recognised grounds."
+            ),
+            "practical_use": [
+                "Raise it when speech is curtailed without lawful basis or a permit condition is excessive.",
+                "Use it in disputes involving bans on meetings, associations, protests, or trade activity.",
+                "Check whether the restriction is proportionate and grounded in a valid statute."
+            ],
+            "case_references": [
+                {
+                    "case_name": "Shreya Singhal v. Union of India",
+                    "year": "2015",
+                    "principle": "Struck down Section 66A of the IT Act for violating free speech protections."
+                },
+                {
+                    "case_name": "Bennett Coleman & Co. v. Union of India",
+                    "year": "1973",
+                    "principle": "Freedom of the press is an essential part of Article 19(1)(a)."
+                }
+            ]
+        },
+        {
+            "article_id": "article-21",
+            "article_number": "Article 21",
+            "title": "Right to Life and Personal Liberty",
+            "short_description": "Ensures that no person is deprived of life or personal liberty except by just, fair, and reasonable procedure.",
+            "rights_explained": (
+                "Article 21 has evolved into the broadest human-rights guarantee in Indian constitutional law. "
+                "It covers dignity, privacy, livelihood, legal aid, a clean environment, fair procedure, health, and many other protections. "
+                "Any procedure restricting liberty must be just, fair, and reasonable, not merely formally valid."
+            ),
+            "practical_use": [
+                "Use it in cases involving unlawful detention, police excess, privacy invasion, or denial of dignified treatment.",
+                "Rely on it where executive action affects survival, health, shelter, or procedural fairness.",
+                "It often works together with Articles 14 and 22 in custody-related matters."
+            ],
+            "case_references": [
+                {
+                    "case_name": "Maneka Gandhi v. Union of India",
+                    "year": "1978",
+                    "principle": "Expanded personal liberty and required fair, just, and reasonable procedure."
+                },
+                {
+                    "case_name": "Justice K.S. Puttaswamy v. Union of India",
+                    "year": "2017",
+                    "principle": "Recognised privacy as a fundamental right under Article 21."
+                }
+            ]
+        },
+        {
+            "article_id": "article-21a",
+            "article_number": "Article 21A",
+            "title": "Right to Education",
+            "short_description": "Provides free and compulsory education for children between 6 and 14 years of age.",
+            "rights_explained": (
+                "Article 21A obligates the State to provide free and compulsory education to children aged 6 to 14 years. "
+                "It strengthens access to schooling as a constitutional entitlement and is closely linked to dignity, development, and equality."
+            ),
+            "practical_use": [
+                "Use it when a child is denied admission, basic access, or state educational support within the protected age group.",
+                "Relevant in school-access disputes, neighbourhood-school issues, and public education enforcement.",
+                "Works alongside the Right of Children to Free and Compulsory Education Act, 2009."
+            ],
+            "case_references": [
+                {
+                    "case_name": "Mohini Jain v. State of Karnataka",
+                    "year": "1992",
+                    "principle": "Recognised the importance of education as integral to constitutional freedoms."
+                },
+                {
+                    "case_name": "Unni Krishnan v. State of Andhra Pradesh",
+                    "year": "1993",
+                    "principle": "Laid the foundation for later constitutional recognition of the right to education."
+                }
+            ]
+        },
+        {
+            "article_id": "article-22",
+            "article_number": "Article 22",
+            "title": "Protection Against Arbitrary Arrest and Detention",
+            "short_description": "Grants safeguards such as being informed of grounds of arrest and consulting a lawyer.",
+            "rights_explained": (
+                "Article 22 provides procedural safeguards for arrested persons, including the right to be informed of the grounds of arrest, "
+                "the right to consult and be defended by a legal practitioner, and production before a magistrate within 24 hours, subject to exceptions."
+            ),
+            "practical_use": [
+                "Use it immediately after arrest or detention to test whether procedural safeguards were followed.",
+                "Relevant where police fail to communicate grounds of arrest or delay production before a magistrate.",
+                "Often relied on together with statutory safeguards under criminal procedure."
+            ],
+            "case_references": [
+                {
+                    "case_name": "D.K. Basu v. State of West Bengal",
+                    "year": "1997",
+                    "principle": "Laid down arrest and detention guidelines to curb custodial abuse."
+                },
+                {
+                    "case_name": "Joginder Kumar v. State of Uttar Pradesh",
+                    "year": "1994",
+                    "principle": "Arrest must not be routine; necessity and justification matter."
+                }
+            ]
+        },
+        {
+            "article_id": "article-32",
+            "article_number": "Article 32",
+            "title": "Right to Constitutional Remedies",
+            "short_description": "Allows a person to directly approach the Supreme Court for enforcement of fundamental rights.",
+            "rights_explained": (
+                "Article 32 is the enforcement mechanism for Fundamental Rights. "
+                "It empowers the Supreme Court to issue writs such as habeas corpus, mandamus, prohibition, certiorari, and quo warranto where fundamental rights are violated."
+            ),
+            "practical_use": [
+                "Use it when there is a direct and serious violation of a Fundamental Right requiring constitutional remedy.",
+                "Helpful in urgent liberty matters, unlawful detention, censorship, or systemic state violations.",
+                "High Courts provide similar remedies under Article 226, often used first in practice."
+            ],
+            "case_references": [
+                {
+                    "case_name": "Romesh Thappar v. State of Madras",
+                    "year": "1950",
+                    "principle": "Confirmed the importance of direct constitutional remedy for free speech violations."
+                },
+                {
+                    "case_name": "Bandhua Mukti Morcha v. Union of India",
+                    "year": "1984",
+                    "principle": "Expanded public interest litigation for enforcing fundamental rights of vulnerable groups."
+                }
+            ]
+        }
+    ]
+}
+
+
 def chunk_text(text, chunk_size=220, overlap=40):
     words = text.split()
     chunks = []
@@ -1123,6 +1324,23 @@ def ik_case_ask(doc_id: str, body: CaseAskRequest):
         ai_answer=answer,
         model_used=BYTEZ_MODEL,
     )
+
+
+@app.get("/law-awareness/rights", response_model=LawAwarenessListResponse)
+def law_awareness_rights_list():
+    return LawAwarenessListResponse(
+        law_title=RIGHTS_LAW_DATA["law_title"],
+        intro=RIGHTS_LAW_DATA["intro"],
+        articles=[LawAwarenessArticleSummary(**article) for article in RIGHTS_LAW_DATA["articles"]],
+    )
+
+
+@app.get("/law-awareness/rights/{article_id}", response_model=LawAwarenessArticleDetail)
+def law_awareness_rights_detail(article_id: str):
+    article = next((item for item in RIGHTS_LAW_DATA["articles"] if item["article_id"] == article_id), None)
+    if not article:
+        raise HTTPException(404, "Rights article not found")
+    return LawAwarenessArticleDetail(**article)
 
 
 @app.get("/stats")
