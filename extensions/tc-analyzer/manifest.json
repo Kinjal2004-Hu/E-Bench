@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "T&C Analyzer",
+  "version": "1.0",
+  "description": "AI-powered Terms & Conditions analyzer - auto-detects and analyzes T&C on any page",
+  "permissions": ["activeTab"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+// Popup is display only - auto-analysis happens in content script
