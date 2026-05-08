@@ -189,11 +189,13 @@ export async function deleteAnalysis(id: string): Promise<void> {
 // ── RAG AI Ask ────────────────────────────────────────────────────────────────
 
 export async function ragAsk(question: string, top_k = 7): Promise<RagAskResponse> {
+  console.log("[ragAsk] sending:", { question: question.slice(0, 100), top_k });
   const res = await fetch(`${RAG_BASE}/ask`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ question, top_k }),
   });
+  console.log("[ragAsk] response status:", res.status);
   if (!res.ok) {
     let msg = `RAG request failed (${res.status})`;
     try {
@@ -202,7 +204,9 @@ export async function ragAsk(question: string, top_k = 7): Promise<RagAskRespons
     } catch { /* no-op */ }
     throw new Error(msg);
   }
-  return res.json();
+  const data = await res.json();
+  console.log("[ragAsk] response data:", data);
+  return data;
 }
 
 // ── Tool APIs (routed through backend → RAG, auto-saved) ─────────────────────

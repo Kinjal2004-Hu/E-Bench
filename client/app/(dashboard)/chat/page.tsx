@@ -132,29 +132,59 @@ export default function ChatPage() {
         const now = new Date().toISOString();
         setMessages(prev => [...prev, { id: Date.now(), sender: "user", text: q, timestamp: now }]);
         setIsTyping(true);
+
+        const msgId = Date.now() + 1;
+        setMessages(prev => [...prev, {
+            id: msgId, sender: "ai", text: "", timestamp: new Date().toISOString(),
+            sections: [], ikResults: [],
+        }]);
+
         try {
-            const res = await fetch(`${RAG_API}/ask`, {
+            const res = await fetch(`${RAG_API}/ask/stream`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ question: q, top_k: 7 }),
             });
             if (!res.ok) throw new Error(`${res.status}`);
-            const data = await res.json();
-            setMessages(prev => [...prev, {
-                id: Date.now() + 1,
-                sender: "ai",
-                text: data.ai_answer || "No response generated.",
-                timestamp: new Date().toISOString(),
-                sections: data.supporting_sections || [],
-                ikResults: data.indian_kanoon_results || [],
-            }]);
+
+            const reader = res.body?.getReader();
+            if (!reader) throw new Error("No response body reader");
+
+            const decoder = new TextDecoder();
+            let buffer = "";
+
+            while (true) {
+                const { done, value } = await reader.read();
+                if (done) break;
+                buffer += decoder.decode(value, { stream: true });
+
+                const lines = buffer.split("\n");
+                buffer = lines.pop() || "";
+
+                for (const line of lines) {
+                    if (!line.startsWith("data: ")) continue;
+                    try {
+                        const event = JSON.parse(line.slice(6));
+                        if (event.t === "token") {
+                            setMessages(prev => prev.map(m =>
+                                m.id === msgId ? { ...m, text: m.text + event.c } : m
+                            ));
+                        } else if (event.t === "meta") {
+                            setMessages(prev => prev.map(m =>
+                                m.id === msgId ? { ...m, sections: event.sections || [], ikResults: event.ik || [] } : m
+                            ));
+                        } else if (event.t === "error") {
+                            setMessages(prev => prev.map(m =>
+                                m.id === msgId ? { ...m, text: "Error: " + event.c } : m
+                            ));
+                        }
+                    } catch { /* ignore parse errors on partial lines */ }
+                }
+            }
         } catch {
-            setMessages(prev => [...prev, {
-                id: Date.now() + 1,
-                sender: "ai",
-                text: "Sorry, I couldn't reach the AI service. Please ensure the RAG server is running at localhost:8000.",
-                timestamp: new Date().toISOString(),
-            }]);
+            setMessages(prev => prev.map(m =>
+                m.id === msgId ? { ...m, text: "Sorry, I couldn't reach the AI service. Please ensure the RAG server is running at localhost:8000." } : m
+            ));
         } finally {
             setIsTyping(false);
         }
