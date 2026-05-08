@@ -11,11 +11,11 @@ import faiss
 
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import HTMLResponse
+from fastapi.responses import HTMLResponse, StreamingResponse
 from pydantic import BaseModel
 
 from sentence_transformers import SentenceTransformer, CrossEncoder
-from bytez import Bytez
+from openai import OpenAI
 
 
 DOCUMENTS = {
@@ -27,8 +27,7 @@ DOCUMENTS = {
     "Secuirities Laws": "SecuritiesLaws.pdf"
 }
 
-BYTEZ_API_KEY = "9268ffc395909476591c086452f3d86f"
-BYTEZ_MODEL = "Qwen/Qwen2.5-7B-Instruct"
+LLM_MODEL = "nvidia/nemotron-3-super-120b-a12b"
 
 # ── Indian Kanoon API ──
 IK_API_TOKEN = "13b60931108de83810d7b4e1509dfb3f8e2b55b3"
@@ -53,8 +52,10 @@ RERANK_WEIGHT = 0.65
 embed_model = SentenceTransformer("BAAI/bge-base-en-v1.5")
 reranker = CrossEncoder("cross-encoder/ms-marco-MiniLM-L-6-v2")
 
-sdk = Bytez(BYTEZ_API_KEY)
-llm = sdk.model(BYTEZ_MODEL)
+client = OpenAI(
+    base_url="https://integrate.api.nvidia.com/v1",
+    api_key="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"
+)
 
 app = FastAPI(
     title="Indian Law AI API",
@@ -596,7 +597,7 @@ def _strip_html(raw: str) -> str:
 
 
 def build_case_summary(raw_html: str, title: str) -> str:
-    """Generate a detailed, structured summary of a full judgment using Bytez."""
+    """Generate a detailed, structured summary of a full judgment using LLM."""
     # Preserve some paragraph structure before stripping tags.
     text = re.sub(r"<(?:p|br|div|li|tr|h[1-6])[^>]*>", "\n", raw_html, flags=re.IGNORECASE)
     text = _strip_html(text)
@@ -636,13 +637,14 @@ def build_case_summary(raw_html: str, title: str) -> str:
         },
     ]
 
-    result = llm.run(messages, {"temperature": 0})
-    if result.error:
-        raise HTTPException(500, str(result.error))
-
-    output = result.output
-    summary = output.get("content", str(output)) if isinstance(output, dict) else str(output)
-    return summary.strip()
+    response = client.chat.completions.create(
+        model=LLM_MODEL,
+        messages=messages,
+        temperature=0,
+        max_tokens=16384,
+        extra_body={"chat_template_kwargs": {"enable_thinking": True}, "reasoning_budget": 16384}
+    )
+    return (response.choices[0].message.content or "").strip()
 
 
 def ik_search(query: str, page: int = 0, max_results: int = 5) -> List[dict]:
@@ -832,17 +834,35 @@ def ask_llm(question, sections, ik_results=None):
         }
     ]
 
-    result = llm.run(messages, {"temperature": 0})
-
-    if result.error:
-        return str(result.error)
-
-    output = result.output
-
-    if isinstance(output, dict):
-        return output.get("content", str(output))
-
-    return str(output)
+    print(f"[ask_llm] sending to LLM: question='{question[:100]}' sections={len(sections)} ik_results={len(ik_results or [])}", flush=True)
+    try:
+        completion = client.chat.completions.create(
+            model=LLM_MODEL,
+            messages=messages,
+            temperature=0,
+            max_tokens=16384,
+            extra_body={"chat_template_kwargs": {"enable_thinking": True}, "reasoning_budget": 16384},
+            stream=True
+        )
+        full_content = []
+        full_reasoning = []
+        for chunk in completion:
+            if not chunk.choices:
+                continue
+            reasoning = getattr(chunk.choices[0].delta, "reasoning_content", None)
+            if reasoning:
+                full_reasoning.append(reasoning)
+                print(reasoning, end="", flush=True)
+            if chunk.choices[0].delta.content is not None:
+                full_content.append(chunk.choices[0].delta.content)
+                print(chunk.choices[0].delta.content, end="", flush=True)
+        print("\n", flush=True)
+        answer = "".join(full_content)
+        print(f"[ask_llm] done: content_len={len(answer)} reasoning_len={len(''.join(full_reasoning))}", flush=True)
+        return answer
+    except Exception as e:
+        print(f"[ask_llm] ERROR: {e}", flush=True)
+        return f"Sorry, I encountered an error: {str(e)}"
 
 
 def _extract_json_object(text: str) -> Optional[dict]:
@@ -940,13 +960,17 @@ def home():
 @app.post("/ask", response_model=AskResponse)
 def ask(body: AskRequest):
 
+    print(f"[ask] question='{body.question}' top_k={body.top_k}", flush=True)
+
     ranked = retrieve(body.question, body.top_k)
+    print(f"[ask] retrieved {len(ranked)} sections", flush=True)
     sections = [r["section"] for r in ranked]
 
-    # Fetch Indian Kanoon results in parallel with LLM
     ik_raw = ik_search(body.question, max_results=5)
+    print(f"[ask] indian kanoon returned {len(ik_raw)} results", flush=True)
 
     ai_answer = ask_llm(body.question, sections, ik_results=ik_raw)
+    print(f"[ask] ai_answer length={len(ai_answer)} preview='{ai_answer[:200]}'", flush=True)
 
     results = to_search_results(ranked)
 
@@ -956,9 +980,58 @@ def ask(body: AskRequest):
         question=body.question,
         ai_answer=ai_answer,
         supporting_sections=results,
-        model_used=BYTEZ_MODEL,
+        model_used=LLM_MODEL,
         indian_kanoon_results=ik_models,
     )
+
+
+@app.post("/ask/stream")
+def ask_stream(body: AskRequest):
+    print(f"[ask/stream] question='{body.question}'", flush=True)
+
+    ranked = retrieve(body.question, body.top_k)
+    sections = [r["section"] for r in ranked]
+    ik_raw = ik_search(body.question, max_results=5)
+
+    context = ""
+    for s in sections:
+        context += f"\n{s['document']} Section {s['section']} — {s['title']}\n{s['text']}\n"
+    if ik_raw:
+        context += "\n--- Indian Kanoon Case Law ---\n"
+        for ik in ik_raw:
+            context += f"\n[{ik['title']}]\n{ik.get('headline', '')}\n"
+
+    messages = [
+        {"role": "system", "content": SYSTEM_PROMPT},
+        {"role": "user", "content": f"Question: {body.question}\n\nRelevant law:\n{context}"}
+    ]
+
+    sections_meta = [{"document": s["document"], "section_number": s["section"], "title": s["title"], "snippet": s["text"][:400]} for s in sections]
+    ik_meta = [{"doc_id": d["doc_id"], "title": d["title"], "headline": d.get("headline", "")} for d in ik_raw]
+
+    def event_stream():
+        try:
+            completion = client.chat.completions.create(
+                model=LLM_MODEL,
+                messages=messages,
+                temperature=0,
+                max_tokens=16384,
+                extra_body={"chat_template_kwargs": {"enable_thinking": True}, "reasoning_budget": 16384},
+                stream=True
+            )
+            for chunk in completion:
+                if not chunk.choices:
+                    continue
+                if chunk.choices[0].delta.content is not None:
+                    yield f"data: {json.dumps({'t': 'token', 'c': chunk.choices[0].delta.content})}\n\n"
+        except Exception as e:
+            print(f"[ask/stream] ERROR: {e}", flush=True)
+            yield f"data: {json.dumps({'t': 'error', 'c': str(e)})}\n\n"
+
+        yield f"data: {json.dumps({'t': 'meta', 'sections': sections_meta, 'ik': ik_meta})}\n\n"
+        yield f"data: {json.dumps({'t': 'done'})}\n\n"
+
+    return StreamingResponse(event_stream(), media_type="text/event-stream")
 
 
 @app.get("/query", response_model=QueryResponse)
@@ -980,7 +1053,7 @@ def query(q: str = Query(...), top_k: int = 7):
         ai_answer=ai_answer,
         results=results,
         total_found=len(results),
-        model_used=BYTEZ_MODEL,
+        model_used=LLM_MODEL,
         user_rights=None,
         indian_kanoon_results=ik_models,
     )
@@ -1016,7 +1089,7 @@ def microlearning_ask(body: MicrolearningAskRequest):
         ai_answer=ai_answer,
         supporting_sections=results,
         case_studies=case_studies,
-        model_used=BYTEZ_MODEL,
+        model_used=LLM_MODEL,
     )
 
 
@@ -1038,7 +1111,7 @@ def tool_case_analyzer(body: ToolCaseAnalyzerRequest):
     return ToolCaseAnalyzerResponse(
         ai_answer=ai_answer,
         supporting_sections=to_search_results(ranked),
-        model_used=BYTEZ_MODEL,
+        model_used=LLM_MODEL,
     )
 
 
@@ -1074,11 +1147,14 @@ def tool_contract_risk(body: ToolContractRiskRequest):
         },
     ]
 
-    result = llm.run(messages, {"temperature": 0})
-    if result.error:
-        raise HTTPException(500, str(result.error))
-
-    output = result.output.get("content", str(result.output)) if isinstance(result.output, dict) else str(result.output)
+    response = client.chat.completions.create(
+        model=LLM_MODEL,
+        messages=messages,
+        temperature=0,
+        max_tokens=16384,
+        extra_body={"chat_template_kwargs": {"enable_thinking": True}, "reasoning_budget": 16384}
+    )
+    output = response.choices[0].message.content or ""
     parsed = _extract_json_object(output) or {}
 
     risk_score = parsed.get("risk_score", 0)
@@ -1112,7 +1188,7 @@ def tool_contract_risk(body: ToolContractRiskRequest):
         risk_score=risk_score,
         risk_level=_normalize_risk_level(risk_score),
         flagged_clauses=flagged_clauses,
-        model_used=BYTEZ_MODEL,
+        model_used=LLM_MODEL,
     )
 
 
@@ -1134,7 +1210,7 @@ def tool_case_summarizer(body: ToolCaseSummarizerRequest):
     return ToolCaseSummarizerResponse(
         ai_answer=ai_answer,
         supporting_sections=to_search_results(ranked),
-        model_used=BYTEZ_MODEL,
+        model_used=LLM_MODEL,
     )
 
 
@@ -1258,7 +1334,7 @@ def ik_case_summary(doc_id: str):
         "doc_id": doc_id,
         "title": title,
         "summary": summary,
-        "model_used": BYTEZ_MODEL,
+        "model_used": LLM_MODEL,
         "source": "Indian Kanoon",
     }
 
@@ -1313,16 +1389,19 @@ def ik_case_ask(doc_id: str, body: CaseAskRequest):
             ),
         },
     ]
-    result = llm.run(messages, {"temperature": 0})
-    if result.error:
-        raise HTTPException(500, str(result.error))
-    output = result.output
-    answer = output.get("content", str(output)) if isinstance(output, dict) else str(output)
+    response = client.chat.completions.create(
+        model=LLM_MODEL,
+        messages=messages,
+        temperature=0,
+        max_tokens=16384,
+        extra_body={"chat_template_kwargs": {"enable_thinking": True}, "reasoning_budget": 16384}
+    )
+    answer = response.choices[0].message.content or ""
     return CaseAskResponse(
         question=body.question,
         section_heading=body.section_text[:80].rstrip() + "...",
         ai_answer=answer,
-        model_used=BYTEZ_MODEL,
+        model_used=LLM_MODEL,
     )
 
 
@@ -1358,6 +1437,6 @@ def stats():
         "sections_per_document": doc_counts,
         "vector_model": "bge-base-en-v1.5",
         "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2",
-        "llm": BYTEZ_MODEL,
+        "llm": LLM_MODEL,
         "external_sources": ["Indian Kanoon (api.indiankanoon.org)"],
     }
