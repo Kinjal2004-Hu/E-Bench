@@ -20,6 +20,7 @@ const toolRoutes = require('./routes/toolRoutes');
 const app = express();
 app.use(cors());
 app.use(express.json({ limit: '10mb' }));
+app.use(express.urlencoded({ extended: true })); // For Twilio webhooks
 const JWT_SECRET = process.env.JWT_SECRET || 'dev_jwt_secret_change_me';
 
 // ── MongoDB Connection ──
@@ -34,9 +35,22 @@ app.use('/api/lawyer', lawyerRoutes);
 app.use('/api/user', userRoutes);
 app.use('/api/forum', forumRoutes);
 app.use('/api/tools', toolRoutes);
+app.use('/api', require('./routes/analyzeImageRoutes'));
+
+// ── Twilio Voice AI Routes ──
+const voiceRouter = require('./twilio-voice/endpoints');
+app.use('/twilio-voice', voiceRouter);
 
 // ── Extension T&C Analyzer API (using fetch) ──
 require('dotenv').config({ path: './.env' });
+
+// ── Twilio Phone Call Setup ──
+const twilio = require('twilio');
+const TWILIO_ACCOUNT_SID = 'AC88f86fd497f66c2105342f249f40ee52';
+const TWILIO_AUTH_TOKEN = '344dc86b3a3571ad1a53d321c57d70ae';
+const TWILIO_PHONE_NUMBER = '+13366007937';
+
+const twilioClient = twilio(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN);
 
 const TC_SYSTEM_PROMPT = `You are an expert legal document analyzer for Terms & Conditions.
 
@@ -150,6 +164,30 @@ app.post('/create-room', (req, res) => {
 
   console.log(`Room created: ${roomId} — notified ${lawyers.size} lawyer(s) (caller: ${callerName})`);
   res.json({ roomId });
+});
+
+// ── REST: Trigger Twilio Phone Call ──
+app.post('/api/call', async (req, res) => {
+  try {
+    const { to } = req.body;
+    if (!to) {
+      return res.status(400).json({ error: 'Phone number required' });
+    }
+
+    console.log(`📞 Initiating call to ${to} from ${TWILIO_PHONE_NUMBER}`);
+
+    const call = await twilioClient.calls.create({
+      to: to,
+      from: TWILIO_PHONE_NUMBER,
+      url: `http://twimlets.com/echo?Twimml=${encodeURIComponent('<Response><Say>Hello, connecting you to E-Bench legal services. Please stay on the line.</Say></Response>')}`
+    });
+
+    console.log(`✅ Call initiated: ${call.sid}`);
+    res.json({ success: true, callSid: call.sid, status: call.status });
+  } catch (err) {
+    console.error('❌ Twilio call failed:', err.message);
+    res.status(500).json({ error: err.message });
+  }
 });
 
 // ── Socket.IO ──
