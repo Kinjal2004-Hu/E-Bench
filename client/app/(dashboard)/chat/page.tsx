@@ -4,11 +4,12 @@ import { useState, useRef, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import {
     Scale, Gavel, Paperclip, Send, Trash2, Sparkles,
-    CheckCheck, FileText, BookOpen, Copy, BookMarked, ChevronRight,
+    CheckCheck, FileText, BookOpen, Copy, BookMarked, ChevronRight, ImageIcon, X,
 } from "lucide-react";
 import FormattedAiText from "@/components/FormattedAiText";
 
 const RAG_API = process.env.NEXT_PUBLIC_RAG_API || "http://localhost:8000";
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:4000";
 
 const SUGGESTED: { q: string; icon: typeof Scale }[] = [
     { q: "What is Section 302 BNS and its punishment?", icon: Scale },
@@ -45,6 +46,9 @@ export default function ChatPage() {
     const [messages, setMessages] = useState<Message[]>([]);
     const [input, setInput] = useState("");
     const [isTyping, setIsTyping] = useState(false);
+    const [selectedImage, setSelectedImage] = useState<string | null>(null);
+    const [imagePreview, setImagePreview] = useState<string | null>(null);
+    const fileInputRef = useRef<HTMLInputElement>(null);
     const messagesEndRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
@@ -108,6 +112,60 @@ export default function ChatPage() {
         } catch { /* ignore */ }
     }, [messages]);
 
+    const handleImageSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const file = e.target.files?.[0];
+        if (!file) return;
+
+        const reader = new FileReader();
+        reader.onload = () => {
+            const b64 = reader.result as string;
+            setSelectedImage(b64);
+            setImagePreview(URL.createObjectURL(file));
+        };
+        reader.readAsDataURL(file);
+        e.target.value = "";
+    };
+
+    const removeImage = () => {
+        setSelectedImage(null);
+        if (imagePreview) URL.revokeObjectURL(imagePreview);
+        setImagePreview(null);
+    };
+
+    const analyzeImage = async (imageBase64: string) => {
+        const now = new Date().toISOString();
+        const msgId = Date.now() + 1;
+
+        setMessages(prev => [...prev, {
+            id: Date.now(), sender: "user", text: "📷 Uploaded a screenshot for analysis", timestamp: now
+        }]);
+        setMessages(prev => [...prev, {
+            id: msgId, sender: "ai", text: "", timestamp: new Date().toISOString(),
+            sections: [], ikResults: [],
+        }]);
+        setIsTyping(true);
+
+        try {
+            const res = await fetch(`${API_BASE}/api/analyze-image`, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ image: imageBase64, question: input.trim() || undefined }),
+            });
+            const data = await res.json();
+            setMessages(prev => prev.map(m =>
+                m.id === msgId ? { ...m, text: data.result || data.error || "Could not analyze image." } : m
+            ));
+        } catch (err) {
+            setMessages(prev => prev.map(m =>
+                m.id === msgId ? { ...m, text: "Failed to analyze image. Ensure the backend is running." } : m
+            ));
+        } finally {
+            setIsTyping(false);
+            setInput("");
+            removeImage();
+        }
+    };
+
     const clearCurrentChat = () => {
         try {
             const currentId = chatIdRef.current;
@@ -126,6 +184,10 @@ export default function ChatPage() {
     };
 
     const sendMessage = async (text?: string) => {
+        if (selectedImage) {
+            await analyzeImage(selectedImage);
+            return;
+        }
         const q = (text ?? input).trim();
         if (!q || isTyping) return;
         setInput("");
@@ -376,26 +438,53 @@ export default function ChatPage() {
 
             {/* ── Input Bar ── */}
             <div className="shrink-0 bg-white border-t border-gray-100 px-4 pt-3.5 pb-4">
+                {/* Image Preview */}
+                {imagePreview && (
+                    <div className="flex items-center gap-3 mb-3 p-2.5 rounded-xl bg-gray-50 border border-gray-200">
+                        <img src={imagePreview} alt="Screenshot preview" className="w-14 h-14 rounded-lg object-cover border border-gray-200 shrink-0" />
+                        <div className="flex-1 min-w-0">
+                            <p className="text-xs font-medium text-gray-700 truncate">Screenshot ready for analysis</p>
+                            <p className="text-[10px] text-gray-400 mt-0.5">The image will be analyzed alongside your question</p>
+                        </div>
+                        <button type="button" onClick={removeImage} className="p-1.5 rounded-lg hover:bg-gray-200 text-gray-400 transition-colors shrink-0">
+                            <X size={14} />
+                        </button>
+                    </div>
+                )}
+
                 <form
                     onSubmit={(e) => { e.preventDefault(); sendMessage(); }}
                     className="flex items-center gap-2"
                 >
-                    <button type="button" className="p-2 rounded-xl text-gray-400 transition-colors shrink-0" style={{ color: THEME_DARK, backgroundColor: "transparent" }} title="Attach file">
-                        <Paperclip size={17} />
+                    <input
+                        ref={fileInputRef}
+                        type="file"
+                        accept="image/*"
+                        onChange={handleImageSelect}
+                        style={{ display: "none" }}
+                    />
+                    <button
+                        type="button"
+                        onClick={() => fileInputRef.current?.click()}
+                        className="p-2 rounded-xl text-gray-400 transition-colors shrink-0"
+                        style={{ color: selectedImage ? THEME_COLOR : THEME_DARK, backgroundColor: "transparent" }}
+                        title="Upload screenshot"
+                    >
+                        <ImageIcon size={17} />
                     </button>
                     <div className="flex-1 border rounded-2xl focus-within:bg-white transition-all" style={{ borderColor: THEME_BORDER, backgroundColor: THEME_PANEL, boxShadow: `0 0 0 0 rgba(0,0,0,0)` }}>
                         <input
                             type="text"
                             value={input}
                             onChange={(e) => setInput(e.target.value)}
-                            placeholder="Ask a legal question — cite a section, case, or scenario..."
+                            placeholder={selectedImage ? "Optional: add a question about this screenshot..." : "Ask a legal question — cite a section, case, or scenario..."}
                             className="w-full bg-transparent px-4 py-3 outline-none text-sm text-gray-800 placeholder:text-gray-400"
                             disabled={isTyping}
                         />
                     </div>
                     <button
                         type="submit"
-                        disabled={!input.trim() || isTyping}
+                        disabled={(!input.trim() && !selectedImage) || isTyping}
                         className="p-3 rounded-2xl text-white flex items-center justify-center disabled:opacity-40 disabled:bg-gray-300 transition-all shrink-0 shadow-sm"
                         style={{ backgroundColor: THEME_COLOR }}
                     >

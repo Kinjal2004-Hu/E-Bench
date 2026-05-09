@@ -1,11 +1,35 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { Newspaper, Bell, ExternalLink, Calendar, ArrowLeft } from "lucide-react";
-import { mockLegalNews, trendingLegalTopics } from "@/data/mockLegalNews";
+import { Newspaper, Bell, ExternalLink, Calendar, ArrowLeft, Loader2 } from "lucide-react";
+import { fetchTrendingNews, type LegalNewsItem } from "@/lib/userApi";
+import { trendingLegalTopics } from "@/data/mockLegalNews";
 
 export default function DailyNewsPage() {
     const router = useRouter();
+    const [news, setNews] = useState<LegalNewsItem[]>([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState("");
+
+    useEffect(() => {
+        let active = true;
+        setLoading(true);
+        fetchTrendingNews()
+            .then((data) => {
+                if (!active) return;
+                setNews(data.news || []);
+                setError("");
+            })
+            .catch((err: Error) => {
+                if (!active) return;
+                setError(err.message || "Unable to fetch legal news.");
+            })
+            .finally(() => {
+                if (active) setLoading(false);
+            });
+        return () => { active = false; };
+    }, []);
 
     return (
         <div className="flex flex-col gap-6 max-w-5xl mx-auto h-full">
@@ -30,40 +54,51 @@ export default function DailyNewsPage() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
-                {/* Main Feed */}
                 <div className="md:col-span-8 flex flex-col gap-6">
-                    {mockLegalNews.map((item) => (
-                        <div key={item.id} className={`bg-white rounded-2xl shadow-sm border p-6 hover:shadow-md transition-shadow cursor-pointer group ${item.featured ? 'border-[#4988C4] shadow-[#BDE8F5]/50' : 'border-gray-200'}`}>
-
-                            {item.featured && (
-                                <div className="flex items-center gap-1.5 text-xs font-bold text-[#1C4D8D] bg-[#BDE8F5]/50 px-3 py-1 rounded-full w-fit mb-4">
-                                    <div className="w-1.5 h-1.5 rounded-full bg-[#1C4D8D] animate-pulse"></div> Breaking News
-                                </div>
-                            )}
-
-                            <div className="flex gap-2 items-center mb-3 text-xs font-bold text-gray-400">
-                                <span className="uppercase tracking-widest text-[#4988C4]">{item.category}</span>
-                                <span>•</span>
-                                <span className="flex items-center gap-1"><Calendar size={12} /> {item.date}</span>
-                                <span>•</span>
-                                <span>{item.tag}</span>
-                            </div>
-
-                            <h2 className="text-xl font-bold text-[#0F2854] group-hover:text-[#1C4D8D] transition-colors mb-3 leading-snug">
-                                {item.headline}
-                            </h2>
-                            <p className="text-sm text-gray-600 leading-relaxed mb-4">
-                                {item.summary}
-                            </p>
-
-                            <div className="flex items-center gap-1 text-[11px] font-bold text-[#0F2854] uppercase tracking-wider group-hover:underline w-fit">
-                                Read Full Article <ExternalLink size={12} className="ml-1" />
-                            </div>
+                    {loading ? (
+                        <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-12 flex flex-col items-center justify-center gap-3">
+                            <Loader2 size={24} className="animate-spin text-[#1C4D8D]" />
+                            <p className="text-gray-500 text-sm font-medium">Fetching latest legal news...</p>
                         </div>
-                    ))}
+                    ) : error ? (
+                        <div className="bg-white rounded-2xl shadow-sm border border-red-200 p-6">
+                            <p className="text-red-600 text-sm font-medium">{error}</p>
+                        </div>
+                    ) : news.length === 0 ? (
+                        <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-6">
+                            <p className="text-gray-500 text-sm font-medium">No legal news available at this time.</p>
+                        </div>
+                    ) : (
+                        news.map((item, idx) => (
+                            <button
+                                type="button"
+                                key={item.id}
+                                onClick={() => router.push(`/free-tools/news/${encodeURIComponent(item.id)}?headline=${encodeURIComponent(item.headline)}&summary=${encodeURIComponent(item.summary)}&category=${encodeURIComponent(item.category)}`)}
+                                className="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow cursor-pointer group text-left w-full"
+                            >
+                                <div className="flex gap-2 items-center mb-3 text-xs font-bold text-gray-400">
+                                    <span className="uppercase tracking-widest text-[#4988C4]">{item.category}</span>
+                                    <span>•</span>
+                                    <span className="flex items-center gap-1"><Calendar size={12} /> {item.date}</span>
+                                    <span>•</span>
+                                    <span>{item.source}</span>
+                                </div>
+
+                                <h2 className="text-xl font-bold text-[#0F2854] group-hover:text-[#1C4D8D] transition-colors mb-3 leading-snug">
+                                    {item.headline}
+                                </h2>
+                                <p className="text-sm text-gray-600 leading-relaxed mb-4">
+                                    {item.summary}
+                                </p>
+
+                                <div className="flex items-center gap-1 text-[11px] font-bold text-[#0F2854] uppercase tracking-wider group-hover:underline w-fit">
+                                    Analyze Legal Impact <ExternalLink size={12} className="ml-1" />
+                                </div>
+                            </button>
+                        ))
+                    )}
                 </div>
 
-                {/* Sidebar */}
                 <div className="md:col-span-4 flex flex-col gap-6">
                     <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-200">
                         <h3 className="font-bold text-[#0F2854] uppercase tracking-wider text-xs mb-4 border-b pb-3">Trending Topics</h3>

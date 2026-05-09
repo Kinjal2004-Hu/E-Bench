@@ -36,13 +36,12 @@ app.use('/api/user', userRoutes);
 app.use('/api/forum', forumRoutes);
 app.use('/api/tools', toolRoutes);
 app.use('/api', require('./routes/analyzeImageRoutes'));
+app.use('/api', require('./routes/extensionRoutes'));
+app.use('/api/user/microlearning', require('./routes/microlearningRoutes'));
 
 // ── Twilio Voice AI Routes ──
 const voiceRouter = require('./twilio-voice/endpoints');
 app.use('/twilio-voice', voiceRouter);
-
-// ── Extension T&C Analyzer API (using fetch) ──
-require('dotenv').config({ path: './.env' });
 
 // ── Twilio Phone Call Setup ──
 const twilio = require('twilio');
@@ -51,75 +50,6 @@ const TWILIO_AUTH_TOKEN = '344dc86b3a3571ad1a53d321c57d70ae';
 const TWILIO_PHONE_NUMBER = '+13366007937';
 
 const twilioClient = twilio(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN);
-
-const TC_SYSTEM_PROMPT = `You are an expert legal document analyzer for Terms & Conditions.
-
-Return JSON:
-{"riskLevel":"Low|Medium|High","summary":"2-3 sentences","redFlags":["clause1","clause2"],"recommendation":"Accept|Review Carefully|Do Not Accept"}
-
-Analyze: data collection, termination, auto-renewal, hidden fees, arbitration, data sharing, modification rights, deletion.`;
-
-async function analyzeTC(documentText) {
-  const truncated = documentText.slice(0, 15000);
-  const apiKey = process.env.NVIDIA_API_KEY;
-  
-  console.log('🔑 Using API key:', apiKey ? apiKey.substring(0,20)+'...' : 'MISSING!');
-  
-  const response = await fetch('https://integrate.api.nvidia.com/v1/chat/completions', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${apiKey}`
-    },
-    body: JSON.stringify({
-      model: 'nvidia/nemotron-3-super-120b-a12b',
-      messages: [
-        { role: 'system', content: TC_SYSTEM_PROMPT },
-        { role: 'user', content: `Analyze this Terms & Conditions document:\n\n${truncated}` }
-      ],
-      temperature: 0.1,
-      max_tokens: 4096,
-      extra_body: {
-        chat_template_kwargs: { enable_thinking: true },
-        reasoning_budget: 16384
-      }
-    })
-  });
-
-  if (!response.ok) {
-    const err = await response.text();
-    throw new Error(err);
-  }
-
-  const data = await response.json();
-  const content = data.choices?.[0]?.message?.content || '';
-  
-  // Parse JSON from response
-  try {
-    const jsonMatch = content.match(/\{[\s\S]*\}/);
-    if (jsonMatch) return JSON.parse(jsonMatch[0]);
-  } catch (e) {}
-  
-  return {
-    riskLevel: 'Medium',
-    summary: content.slice(0, 200),
-    redFlags: ['Could not parse analysis'],
-    recommendation: 'Review Carefully'
-  };
-}
-
-app.post('/api/extension/analyze-tc', async (req, res) => {
-  try {
-    const { documentText } = req.body;
-    if (!documentText || documentText.length < 100) {
-      return res.status(400).json({ error: 'Document text too short' });
-    }
-    const result = await analyzeTC(documentText);
-    res.json(result);
-  } catch (err) {
-    res.status(500).json({ error: err.message });
-  }
-});
 
 const server = http.createServer(app);
 const io = new Server(server, {

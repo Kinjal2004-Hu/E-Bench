@@ -245,6 +245,121 @@ export async function fetchRightsLawAwareness(): Promise<LawAwarenessListRespons
   return res.json();
 }
 
+// ── Legal News & Microlearning Progress ──────────────────────────────────
+
+export type LegalNewsItem = {
+  id: string;
+  headline: string;
+  summary: string;
+  date: string;
+  category: string;
+  source: string;
+};
+
+export type NewsToLessonResponse = {
+  news_id: string;
+  headline: string;
+  legal_topic: string;
+  sections: AnalysisSection[];
+  explanation: string;
+  lesson_title: string;
+  lesson_law_text: string;
+  lesson_simple_explanation: string;
+  lesson_scenario: string;
+  lesson_quiz: any[];
+  case_references: string[];
+  model_used: string;
+};
+
+export type QuizAnswer = {
+  questionId: string;
+  selectedOption: string;
+  correct: boolean;
+};
+
+export type LessonProgress = {
+  lessonId: string;
+  lessonTitle: string;
+  completed: boolean;
+  completedAt: string | null;
+  quizAnswers: QuizAnswer[];
+  quizScore: number;
+  quizTotal: number;
+  source: string;
+};
+
+export type LearningProgress = {
+  _id: string;
+  userId: string;
+  dailyStreak: {
+    current: number;
+    longest: number;
+    lastActive: string | null;
+  };
+  lessons: LessonProgress[];
+};
+
+export async function fetchTrendingNews(): Promise<{ news: LegalNewsItem[]; total: number }> {
+  const res = await fetch(`${RAG_BASE}/legal-news/trending`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+  });
+  if (!res.ok) {
+    let msg = `RAG request failed (${res.status})`;
+    try { const d = await res.json(); msg = d.detail || msg; } catch { /* no-op */ }
+    throw new Error(msg);
+  }
+  return res.json();
+}
+
+export async function fetchNewsToLesson(payload: {
+  news_id: string;
+  headline: string;
+  summary: string;
+  category?: string;
+}): Promise<NewsToLessonResponse> {
+  const res = await fetch(`${RAG_BASE}/legal-news/to-lesson`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ ...payload, category: payload.category || 'General' }),
+  });
+  if (!res.ok) {
+    let msg = `RAG request failed (${res.status})`;
+    try { const d = await res.json(); msg = d.detail || msg; } catch { /* no-op */ }
+    throw new Error(msg);
+  }
+  return res.json();
+}
+
+export async function fetchLearningProgress(): Promise<LearningProgress> {
+  return userFetch('/api/user/microlearning/progress');
+}
+
+export async function saveLessonProgress(payload: {
+  lessonId: string;
+  lessonTitle?: string;
+  source?: string;
+}): Promise<LearningProgress> {
+  return userFetch('/api/user/microlearning/progress/lesson', {
+    method: 'POST',
+    body: JSON.stringify(payload),
+  });
+}
+
+export async function saveQuizProgress(payload: {
+  lessonId: string;
+  lessonTitle?: string;
+  answers?: QuizAnswer[];
+  score?: number;
+  total?: number;
+  source?: string;
+}): Promise<LearningProgress> {
+  return userFetch('/api/user/microlearning/progress/quiz', {
+    method: 'POST',
+    body: JSON.stringify(payload),
+  });
+}
+
 export async function fetchRightsLawArticle(articleId: string): Promise<LawAwarenessArticleDetail> {
   const res = await fetch(`${RAG_BASE}/law-awareness/rights/${articleId}`);
   if (!res.ok) {

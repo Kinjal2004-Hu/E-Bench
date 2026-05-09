@@ -2,27 +2,63 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=300">
-  <title>T&C Analyzer</title>
+  <meta name="viewport" content="width=380">
+  <title>IndianLegal Chat</title>
   <link rel="stylesheet" href="styles.css">
-  <style>
-    body { margin: 0; padding: 0; width: 300px; }
-    .container { padding: 12px; }
-    .header { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
-    .logo-icon { font-size: 20px; }
-    .header span { font-size: 14px; font-weight: 600; }
-    p { font-size: 12px; color: #666; margin: 8px 0; }
-    small { font-size: 10px; color: #999; }
-  </style>
 </head>
 <body>
   <div class="container">
-    <div class="header">
-      <span class="logo-icon">⚖️</span>
-      <span>T&C Analyzer</span>
+    <!-- Tab Bar -->
+    <div class="tab-bar">
+      <button class="tab-btn active" data-tab="chat">💬 Chat</button>
+      <button class="tab-btn" data-tab="analyze">⚖️ Analyze</button>
     </div>
-    <p>Automatically analyzes Terms & Conditions on any page.</p>
-    <small>Visit a T&C page to see analysis.</small>
+
+    <!-- Chat Tab -->
+    <div id="tab-chat" class="tab-content active">
+      <div class="chat-header">
+        <span class="chat-logo">⚖️</span>
+        <div>
+          <div class="chat-title">IndianLegal Chat</div>
+          <div class="chat-subtitle">AI legal assistant</div>
+        </div>
+      </div>
+
+      <div id="chat-messages" class="chat-messages">
+        <div class="msg msg-ai">
+          <div class="msg-bubble">
+            Namaste! 👋 I'm your Indian Legal AI assistant. Ask me about Indian laws, legal rights, or upload a screenshot of a legal document for analysis.
+          </div>
+        </div>
+      </div>
+
+      <div id="ocr-preview" class="ocr-preview hidden">
+        <div class="ocr-header">
+          <span>📄 Screenshot OCR</span>
+          <button id="ocr-remove-btn" class="ocr-remove">&times;</button>
+        </div>
+        <div id="ocr-text" class="ocr-text"></div>
+      </div>
+
+      <div class="chat-input-area">
+        <button id="upload-btn" class="upload-btn" title="Upload screenshot">📷</button>
+        <input id="chat-input" class="chat-input" type="text" placeholder="Ask a legal question..." />
+        <button id="send-btn" class="send-btn">Send</button>
+      </div>
+    </div>
+
+    <!-- Analyze Tab -->
+    <div id="tab-analyze" class="tab-content">
+      <div class="analyze-header">
+        <span class="analyze-logo">⚖️</span>
+        <span class="analyze-title">T&C Analyzer</span>
+      </div>
+      <p class="analyze-desc">Automatically analyzes Terms & Conditions on any page you visit. Click below to analyze the current page.</p>
+      <button id="analyze-now-btn" class="btn-primary">Analyze Current Page</button>
+      <div id="analyze-result" class="analyze-result hidden"></div>
+    </div>
   </div>
+
+  <script src="popup.js"></script>
 </body>
 </html>

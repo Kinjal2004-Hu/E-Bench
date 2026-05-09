@@ -54,6 +54,7 @@ The frontend calls **both** the Express backend (for auth / CRUD / chat) and the
 | Realtime | socket.io-client |
 | State | React `useState` / `useEffect` / `useMemo` / `useRef` |
 | Persistence | localStorage (chat history, PDF downloads, call history) |
+| Translation | Google Translate widget (en, hi, mr) |
 
 ### Backend (`/backend`)
 | Layer | Technology |
@@ -65,6 +66,20 @@ The frontend calls **both** the Express backend (for auth / CRUD / chat) and the
 | Realtime | Socket.IO 4 |
 | File Uploads | Multer (max 10MB, allowed: .pdf .doc .docx .jpg .jpeg .png .txt) |
 | Room IDs | uuid |
+| LLM | NVIDIA Nemotron-3 Super 120B (via API) |
+| Image Storage | Cloudinary v2 |
+| OCR | tesseract.js |
+| Telephony | Twilio (voice calls) |
+| Live Tunnel | localtunnel |
+
+### Chrome Extension (`/extensions/tc-analyzer`)
+| Layer | Technology |
+|---|---|
+| Platform | Chrome Extension Manifest V3 |
+| Language | JavaScript (Vanilla) |
+| OCR | tesseract.js (server-side via backend) |
+| Image Upload | Cloudinary (signed uploads via backend) |
+| Styling | Pure CSS |
 
 ### RAG AI Server (`/RAG`)
 | Layer | Technology |
@@ -115,7 +130,8 @@ E-Bench/
 │   │   │   │   └── risk-analyzer/page.tsx    # Contract Risk Analyzer
 │   │   │   └── free-tools/
 │   │   │       ├── law-awareness/page.tsx  # Know Your Rights (constitutional rights)
-│   │   │       └── news/page.tsx           # Legal news feed
+│   │   │       ├── news/page.tsx           # Legal news feed (fetches from RAG trending)
+│   │   │       └── news/[id]/page.tsx      # News → legal impact → microlearning lesson
 │   │   ├── lawyer-dashboard/           # Protected lawyer route group
 │   │   │   ├── layout.tsx             # Lawyer sidebar + persistent Socket.IO (incoming-call)
 │   │   │   ├── page.tsx               # Overview stats: appointments, requests, clients
@@ -197,7 +213,8 @@ E-Bench/
 │   │   ├── AppointmentModel.js       # Lawyer appointments
 │   │   ├── ConsultationRequestModel.js # Consultation requests
 │   │   ├── ForumPostModel.js         # Community forum posts
-│   │   └── ForumReplyModel.js        # Forum replies
+│   │   ├── ForumReplyModel.js        # Forum replies
+│   │   └── LearningProgressModel.js  # User learning progress + daily streak
 │   ├── middleware/
 │   │   └── authMiddleware.js         # JWT verification (Bearer + ?token= query param)
 │   ├── routes/
@@ -205,11 +222,20 @@ E-Bench/
 │   │   ├── chatRoutes.js             # CRUD chats, lawyers, clients
 │   │   ├── lawyerRoutes.js           # All /api/lawyer/* (with multer)
 │   │   ├── userRoutes.js             # All /api/user/*
+│   │   ├── microlearningRoutes.js    # Learning progress CRUD + daily streak /api/user/microlearning/*
 │   │   ├── forumRoutes.js            # Forum posts, replies, upvotes, trending
-│   │   └── toolRoutes.js             # /api/tools/case-analyzer, contract-risk, case-summarizer
+│   │   ├── toolRoutes.js             # /api/tools/case-analyzer, contract-risk, case-summarizer
+│   │   ├── analyzeImageRoutes.js     # Image analysis via NVIDIA LLM
+│   │   └── extensionRoutes.js        # Extension APIs: T&C analyze, legal chat, OCR, Cloudinary upload
 │   ├── hooks/
 │   │   └── useVideoCall.js           # (unused) server-side helper
-│   └── uploads/                      # Multer case file storage
+│   ├── uploads/                      # Multer case file storage
+│   └── twilio-voice/                 # Twilio voice AI endpoints
+│       ├── index.js
+│       ├── config.js
+│       ├── endpoints.js
+│       ├── functions.js
+│       └── router.js
 │
 ├── RAG/                               # Python FastAPI AI server
 │   ├── main.py                       # Full RAG pipeline + 20 API endpoints
@@ -226,6 +252,14 @@ E-Bench/
 │   ├── MotorVehicleAct.pdf
 │   ├── CorporateLaws.pdf
 │   └── SecurityLaw.pdf               # Securities Laws
+│
+├── extensions/tc-analyzer/            # Chrome Extension — T&C Analyzer + IndianLegal Chat
+│   ├── manifest.json                  # Manifest V3
+│   ├── background.js                  # Service worker
+│   ├── content.js                     # Auto-detect T&C pages, inject analysis banner
+│   ├── popup.html                     # Tabbed UI: IndianLegal Chat + T&C Analyzer
+│   ├── popup.js                       # Chat logic, screenshot upload, T&C analysis trigger
+│   └── styles.css                     # Popup + chat UI styles
 │
 ├── dummy-data/                        # Test data for legal AI tools
 │   ├── case-analyzer/                 # 3 case description texts
@@ -286,6 +320,12 @@ E-Bench/
 - **Collection**: `forumreplies`
 - **Fields**: `postId` (ref ForumPost), `user`, `role` (member|lawyer), `avatar`, `reputation`, `text` (max 5000, required), `upvotes`, `isBestAnswer` (boolean)
 - **Indexes**: `postId + createdAt`
+
+### LearningProgress (`LearningProgressModel.js`)
+- **Collection**: `learningprogresses`
+- **Fields**: `userId` (ref User, unique, indexed), `dailyStreak` (embedded: `current`, `longest`, `lastActive`), `lessons` (array of embedded: `lessonId`, `lessonTitle`, `completed`, `completedAt`, `quizAnswers[{questionId, selectedOption, correct}]`, `quizScore`, `quizTotal`, `source` enum "static"|"news"|"rag")
+- **Unique index**: `userId` (one progress document per user)
+- Daily streak computed server-side by comparing consecutive active dates
 
 ---
 
@@ -352,6 +392,15 @@ E-Bench/
 | POST | `/:chatId/messages` | Send message via REST |
 | DELETE | `/:chatId` | Delete chat |
 
+### Microlearning Routes (`/api/user/microlearning`) — `/backend/routes/microlearningRoutes.js`
+*All require JWT auth*
+
+| Method | Path | Description |
+|--------|------|-------------|
+| GET | `/progress` | Fetch user's learning progress (lessons, daily streak) |
+| POST | `/progress/lesson` | Mark lesson as completed (auto-updates daily streak) |
+| POST | `/progress/quiz` | Save quiz answers, score, and total |
+
 ### Tool Routes (`/api/tools`) — `/backend/routes/toolRoutes.js`
 *All require JWT auth — forward to RAG + auto-save to DB*
 
@@ -375,11 +424,28 @@ E-Bench/
 | POST | `/replies/:replyId/upvote` | Upvote reply |
 | POST | `/posts/:id/mark-helpful` | Mark reply as best answer |
 
-### WebRTC Signaling — Inline in `/backend/index.js`
+### Extension Routes (`/api/extension`) — `/backend/routes/extensionRoutes.js`
+
+| Method | Path | Description |
+|--------|------|-------------|
+| POST | `/analyze-tc` | Analyze Terms & Conditions document → NVIDIA LLM |
+| POST | `/legal-chat` | IndianLegal Chat (message + OCR context + history) → NVIDIA LLM |
+| POST | `/upload-image` | Upload image to Cloudinary (multipart) |
+| POST | `/ocr` | Extract text from image via Tesseract.js (multipart) |
+
+### Other Backend Endpoints — Inline in `/backend/index.js`
 
 | Method | Path | Description |
 |--------|------|-------------|
 | POST | `/create-room` | Create UUID video call room + notify all online lawyers |
+| POST | `/api/call` | Trigger Twilio phone call to a number |
+| POST | `/api/extension/analyze-tc` | (Deprecated — moved to extension routes) |
+
+### Image Analysis Routes (`/api/`) — `/backend/routes/analyzeImageRoutes.js`
+
+| Method | Path | Description |
+|--------|------|-------------|
+| POST | `/analyze-image` | Analyze image text via NVIDIA LLM |
 
 ### RAG API Endpoints (`/RAG/main.py`) — `http://localhost:8000`
 
@@ -404,6 +470,8 @@ E-Bench/
 | POST | `/ik/case/{doc_id}/ask` | Ask LLM about a case section |
 | GET | `/law-awareness/rights` | List fundamental rights articles |
 | GET | `/law-awareness/rights/{article_id}` | Get detailed rights article |
+| POST | `/legal-news/trending` | Fetch trending legal news from Indian Kanoon (multiple queries merged) |
+| POST | `/legal-news/to-lesson` | News → legal topic → sections → explanation → microlearning lesson |
 | GET | `/stats` | Index statistics |
 
 ---
@@ -496,6 +564,55 @@ Lawyer uploads file → POST /api/lawyer/case-files (multipart/form-data)
   → Download supports ?token= query param for <a> tag links
 ```
 
+### T&C Analyzer (Chrome Extension)
+```
+User visits any site with T&C / privacy text (auto-detected by keywords)
+  → content.js extracts page text (up to 20K chars from relevant DOM selectors)
+  → Injects floating banner (bottom-right) with "Analyzing..." spinner
+  → POST http://localhost:4000/api/extension/analyze-tc { documentText }
+  → Backend calls NVIDIA Nemotron-3 120B LLM with T&C analysis prompt
+  → Returns { riskLevel, summary, redFlags[], recommendation }
+  → Banner updates with risk score (color-coded), summary, flagged clauses, recommendation
+  → Popup "Analyze Current Page" button triggers same flow manually
+```
+
+### IndianLegal Chat (Chrome Extension)
+```
+User opens popup → Chat tab
+  → Types a legal question OR uploads a document screenshot
+  → Screenshot upload:
+    1. Sent to POST /api/extension/ocr → Tesseract.js extracts text
+    2. Also uploaded to Cloudinary (POST /api/extension/upload-image)
+    3. OCR text shown in preview bar
+  → POST /api/extension/legal-chat { message, ocrText?, history[] }
+  → Backend calls NVIDIA Nemotron-3 120B with legal system prompt + chat history
+  → Returns AI reply → displayed in chat
+  → Chat history persisted in chrome.storage.local
+```
+
+### News → Legal Topic → Microlearning Lesson
+```
+User visits news page → fetches live from RAG POST /legal-news/trending
+  → IK trending searches (Supreme Court, High Court, rights, criminal law queries)
+  → Deduplicates, returns up to 10 news items with headline/summary/category/date
+
+User clicks a news item → /free-tools/news/[id] page
+  → POST http://localhost:8000/legal-news/to-lesson { news_id, headline, summary, category }
+  → RAG Server (main.py):
+    1. Retrieves relevant statute sections via FAISS + CrossEncoder
+    2. Searches Indian Kanoon for supplementary case law
+    3. LLM identifies legal topic (e.g. "Right to Privacy", "Bail")
+    4. LLM generates explanation connecting news to legal provisions
+    5. LLM generates microlearning lesson (title, law text, simple explanation, scenario)
+    6. LLM generates 2 quiz questions with 4 options each
+  → Response: { news_id, headline, legal_topic, sections[], explanation, lesson_title,
+                  lesson_law_text, lesson_simple_explanation, lesson_scenario,
+                  lesson_quiz[], case_references[], model_used }
+  → User views 4 tabs: Explanation, Legal Sections, Micro Lesson, Quiz
+  → Quiz answers + lesson completion saved to backend progress API
+  → Daily streak auto-updated on lesson completion
+```
+
 ### Forum
 ```
 REST-based community forum:
@@ -516,7 +633,7 @@ REST-based community forum:
 ### User Dashboard Features
 | Feature | Route | What it does |
 |---------|-------|-------------|
-| Dashboard Overview | `/dashboard` | Typewriter AI search bar, quick-action cards, recent stats |
+| Dashboard Overview | `/dashboard` | Typewriter AI search bar, quick-action cards, daily streak card, recent stats |
 | AI Legal Chat | `/chat` | Conversational Q&A via RAG; suggested questions, markdown output |
 | AI Case Analyzer | `/tools/case-analyzer` | Upload/paste case → BNS sections + Indian Kanoon judgments |
 | Contract Risk Analyzer | `/tools/risk-analyzer` | Upload/paste contract → risk score, flagged clauses, highlights |
@@ -528,8 +645,9 @@ REST-based community forum:
 | Consultation (Chat + Video) | `/chats/new` | Select lawyer → Pay → Real-time chat or WebRTC video call |
 | Community Forum | `/community` | Posts, replies, upvotes, categories, reputation |
 | Know Your Rights | `/free-tools/law-awareness` | 5 constitutional rights guides (Art 14, 19, 21, 22, 32) |
-| Microlearning | `/microlearning` | Bite-sized legal lessons by topic |
-| Legal News | `/free-tools/news` | Curated legal news headlines |
+| Microlearning | `/microlearning` | Bite-sized legal lessons by topic; progress saved to backend |
+| Legal News | `/free-tools/news` | Curated legal news headlines (live from Indian Kanoon via RAG) |
+| News Detail | `/free-tools/news/[id]` | Full news → legal topic → sections → explanation → microlearning lesson pipeline |
 | Profile | `/profile` | Edit personal details |
 | Settings | `/settings` | Account settings |
 
@@ -543,6 +661,16 @@ REST-based community forum:
 | Case Files | `/lawyer-dashboard/case-files` | Upload, list, download, delete |
 | Profile | `/lawyer-dashboard/profile` | Edit specialization, fee, languages |
 | Incoming Call | (layout-level) | Animated toast with Accept/Decline (60s timeout) |
+
+### Chrome Extension Features (T&C Analyzer + IndianLegal Chat)
+| Feature | What it does |
+|---------|-------------|
+| T&C Auto-Detect | Automatically detects Terms & Conditions pages by keywords, extracts text, and analyzes via NVIDIA LLM |
+| T&C Popup | "Analyze Current Page" button in extension popup triggers manual analysis |
+| IndianLegal Chat | Legal AI chat in popup — ask questions about Indian law |
+| Screenshot OCR | Upload a screenshot of any legal document → Tesseract.js extracts text |
+| Cloudinary Storage | Uploaded screenshots stored on Cloudinary for reference |
+| Chat History | Conversations persisted in chrome.storage.local |
 
 ---
 
@@ -618,6 +746,11 @@ REST-based community forum:
 - `toolContractRisk(contractText)` — via backend proxy + auto-save
 - `toolCaseSummarizer(documentText)` — via backend proxy + auto-save
 - `fetchRightsLawAwareness()`, `fetchRightsLawArticle(articleId)` — from RAG server
+- `fetchTrendingNews()` — live legal news from RAG POST /legal-news/trending
+- `fetchNewsToLesson(payload)` — convert news to full lesson from RAG POST /legal-news/to-lesson
+- `fetchLearningProgress()` — fetch user's learning progress from backend
+- `saveLessonProgress(payload)` — mark lesson complete, auto-updates daily streak
+- `saveQuizProgress(payload)` — save quiz answers/score
 
 ### `client/lib/lawyerApi.ts`
 - `fetchStats()`, `fetchLawyerProfile()`, `updateLawyerProfile(data)`
@@ -667,8 +800,12 @@ REST-based community forum:
 6. **WebRTC peer-to-peer** — video calls don't route through server; backend only handles signaling
 7. **localStorage persistence** — chat history (`ebench_chats`), PDF downloads (`ebench_pdf_downloads`), video call history, AI chat IDs
 8. **Static mock data** — Forum and microlearning use static data from `lib/forum-data.ts` and `lib/microlearning-data.ts`; API routes exist but aren't fully wired
-9. **Dark/light theme** — inline CSS-in-JS with CSS custom properties, toggle stored in sidebar layout
-10. **Socket.IO in lawyer layout** — persistent listener across all lawyer pages for incoming call notifications
+9. **Live legal news** — News page fetches from RAG POST /legal-news/trending (Indian Kanoon API); news detail dynamically generates microlearning lessons
+10. **Backend learning progress** — `LearningProgressModel` persists lesson completions and daily streak server-side; frontend falls back to localStorage if backend unreachable
+11. **Dark/light theme** — inline CSS-in-JS with CSS custom properties, toggle stored in sidebar layout
+12. **Socket.IO in lawyer layout** — persistent listener across all lawyer pages for incoming call notifications
+13. **Google Translate widget** — on-page translation via `googtrans` cookie approach; available in English, Hindi, Marathi in both sidebar and navbar
+14. **Chrome Extension as standalone product** — T&C Analyzer and IndianLegal Chat work independently of the main web app, calling backend NVIDIA API directly
 
 ---
 
@@ -682,6 +819,10 @@ REST-based community forum:
 | `NEXT_PUBLIC_API_URL` | Frontend | Backend base URL (default http://localhost:4000) |
 | `NEXT_PUBLIC_RAG_URL` | Frontend | RAG server base URL (default http://localhost:8000) |
 | `RAG_BASE_URL` | Backend | RAG server URL for tool controller (default http://localhost:8000) |
+| `NVIDIA_API_KEY` | Backend | API key for NVIDIA Nemotron LLM (T&C analysis, legal chat) |
+| `CLOUDINARY_CLOUD_NAME` | Backend | Cloudinary cloud name for image uploads |
+| `CLOUDINARY_API_KEY` | Backend | Cloudinary API key |
+| `CLOUDINARY_API_SECRET` | Backend | Cloudinary API secret |
 
 **Hardcoded in RAG/main.py** (move to env for production):
 - `BYTEZ_API_KEY` — API key for Bytez LLM inference

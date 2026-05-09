@@ -1,10 +1,8 @@
-// Image Analysis Router - NVIDIA LLM Direct
 const express = require('express');
 const router = express.Router();
-const fetch = require('node-fetch');
+const Tesseract = require('tesseract.js');
 
 const NVIDIA_API_KEY = process.env.NVIDIA_API_KEY || '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';
-const RAG_URL = process.env.RAG_URL || 'http://localhost:8000';
 
 const LEGAL_SYSTEM_PROMPT = `You are a professional legal document analyzer. 
 Analyze any text from a webpage or document and provide:
@@ -12,135 +10,74 @@ Analyze any text from a webpage or document and provide:
 2. Key clauses and their meanings
 3. Any legal risks or concerns
 4. Recommendations
-
 Be concise, clear, and helpful. Use plain language.`;
 
+function base64ToBuffer(dataUri) {
+  const matches = dataUri.match(/^data:([^;]+);base64,(.+)$/);
+  if (!matches) return null;
+  return Buffer.from(matches[2], 'base64');
+}
+
 router.post('/analyze-image', async (req, res) => {
-  console.log('[E-Bench Backend] Request received');
-  console.log('[E-Bench Backend] Body keys:', Object.keys(req.body || {}));
-  
   try {
     const { image, question } = req.body;
-    
-    console.log('[E-Bench Backend] image:', image ? 'present' : 'missing');
-    console.log('[E-Bench Backend] question:', question ? question.substring(0, 100) : 'missing');
-    
     if (!image && !question) {
-      console.log('[E-Bench Backend] No image or question provided');
       return res.json({ success: false, error: 'No image or question provided' });
     }
-    
-    console.log('[E-Bench Backend] 📷 Analyzing screenshot...');
-    
-    // If only question (follow-up chat), use RAG directly
+
+    // If only text question (no image), forward to RAG
     if (!image && question) {
-      console.log('💬 Follow-up question, using RAG...');
-      try {
-        const ragRes = await fetch(`${RAG_URL}/ask`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ question: question.slice(0, 2000), top_k: 5 })
-        });
-        if (ragRes.ok) {
-          const ragData = await ragRes.json();
-          return res.json({
-            success: true,
-            result: ragData.ai_answer || ragData.answer || 'No response'
-          });
-        }
-      } catch (e) {
-        return res.json({ success: false, error: e.message });
-      }
-    }
-    
-// For screenshot analysis - pass image to multimodal LLM
-    let imageBase64 = '';
-    let imageUrl = '';
-    
-    if (image.startsWith('data:')) {
-      // Keep full base64 for multimodal model
-      imageBase64 = image;
-    } else {
-      imageUrl = image;
-    }
-    
-    let legalAnalysis = '';
-    
-    // Use multimodal model with image
-    const userPrompt = question 
-      ? `Based on this screenshot, answer: ${question}`
-      : `Analyze this screenshot and provide:\n1. Summary\n2. Key legal points\n3. Any concerns\n4. Recommendations`;
-    
-    console.log('[E-Bench Backend] 🤖 Calling NVIDIA LLM with vision...');
-    
-    // Build messages - with image base64 as content
-    const messages = [
-      { role: 'system', content: LEGAL_SYSTEM_PROMPT }
-    ];
-    
-    if (imageBase64) {
-      messages.push({
-        role: 'user',
-        content: [
-          { type: 'text', text: userPrompt },
-          { type: 'image_url', image_url: { url: imageBase64 } }
-        ]
+      const ragRes = await fetch(`${process.env.RAG_URL || 'http://localhost:8000'}/ask`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ question: question.slice(0, 2000), top_k: 5 })
       });
-    } else {
-      messages.push({ role: 'user', content: userPrompt });
+      if (ragRes.ok) {
+        const ragData = await ragRes.json();
+        return res.json({ success: true, result: ragData.ai_answer || ragData.answer || 'No response' });
+      }
+      return res.json({ success: false, error: 'RAG server unavailable' });
     }
-    
-    const llmResponse = await fetch('https://integrate.api.nvidia.com/v1/chat/completions', {
+
+    // Step 1: OCR — extract text from image
+    const buffer = base64ToBuffer(image);
+    if (!buffer) return res.json({ success: false, error: 'Invalid image data' });
+
+    const { data: { text: ocrText } } = await Tesseract.recognize(buffer, 'eng');
+
+    if (!ocrText.trim()) {
+      return res.json({ success: true, result: 'No readable text could be extracted from this image.' });
+    }
+
+    // Step 2: Send extracted text to NVIDIA LLM for legal analysis
+    const userPrompt = question
+      ? `The user uploaded a screenshot of a legal document. Extracted text:\n${ocrText.slice(0, 8000)}\n\nAnswer this question: ${question}`
+      : `The user uploaded a screenshot of a legal document. Extracted text:\n${ocrText.slice(0, 8000)}\n\nAnalyze this document and provide:\n1. Summary\n2. Key legal points\n3. Any concerns\n4. Recommendations`;
+
+    const llmRes = await fetch('https://integrate.api.nvidia.com/v1/chat/completions', {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${NVIDIA_API_KEY}`
-      },
+      headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${NVIDIA_API_KEY}` },
       body: JSON.stringify({
         model: 'nvidia/nemotron-3-super-120b-a12b',
-        messages: messages,
-        temperature: 0.7,
-        max_tokens: 1024,
-        extra_body: {
-          chat_template_kwargs: { enable_thinking: true },
-          reasoning_budget: 16384
-        }
+        messages: [
+          { role: 'system', content: LEGAL_SYSTEM_PROMPT },
+          { role: 'user', content: userPrompt }
+        ],
+        temperature: 0.1,
+        max_tokens: 2048,
       })
     });
-    
-    if (llmResponse.ok) {
-      const llmData = await llmResponse.json();
-      legalAnalysis = llmData.choices?.[0]?.message?.content || '';
-      console.log('✅ Analysis complete');
-    } else {
-      // Fallback to RAG
-      console.log('📚 Falling back to RAG...');
-      try {
-        const ragRes = await fetch(`${RAG_URL}/ask`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ question: textToAnalyze.slice(0, 2000), top_k: 3 })
-        });
-        if (ragRes.ok) {
-          const ragData = await ragRes.json();
-          legalAnalysis = ragData.ai_answer || ragData.answer || '';
-        }
-      } catch (e) {
-        console.log('RAG also failed');
-      }
+
+    if (llmRes.ok) {
+      const llmData = await llmRes.json();
+      const analysis = llmData.choices?.[0]?.message?.content || '';
+      return res.json({ success: true, result: analysis });
     }
-    
-    if (!legalAnalysis) {
-      legalAnalysis = 'Could not analyze this content. Please try again.';
-    }
-    
-    res.json({
-      success: true,
-      result: legalAnalysis
-    });
-    
+
+    // Fallback: return OCR text if LLM fails
+    res.json({ success: true, result: `[OCR Extracted Text]\n${ocrText.slice(0, 2000)}\n\n(NVIDIA analysis unavailable — showing raw extracted text.)` });
+
   } catch (error) {
-    console.error('❌ Analyze error:', error.message);
     res.json({ success: false, error: error.message });
   }
 });

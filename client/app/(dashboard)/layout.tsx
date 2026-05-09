@@ -248,8 +248,26 @@ const makeStyle = (dark :boolean) => `
   .eb-tool-link { display:flex; align-items:center; gap:4px; font-size:11.5px; font-weight:600; color:var(--gold); margin-top:2px; transition:gap 0.18s; }
   .eb-tool-card:hover .eb-tool-link { gap:8px; }
 
-  /* ── BOTTOM ROW: daily law awareness (left) + legal news feed (right) ── */
-  .eb-bottom-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; min-height:360px; flex-shrink:0; }
+  /* ── BOTTOM ROW: streak (left) + law awareness (center) + news feed (right) ── */
+  .eb-bottom-grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:16px; min-height:360px; flex-shrink:0; }
+
+  /* streak card */
+  .eb-streak-card {
+    background:var(--surface); border-radius:16px; padding:20px 20px;
+    border:1.5px solid var(--border); display:flex; flex-direction:column; gap:12px;
+    transition:background 0.3s; height:360px;
+  }
+  .eb-streak-header { display:flex; align-items:center; justify-content:space-between; }
+  .eb-streak-icon-box { width:40px; height:40px; border-radius:12px; background:linear-gradient(135deg,#FF6B35,#FF8C42); display:flex; align-items:center; justify-content:center; color:#fff; flex-shrink:0; }
+  .eb-streak-title { font-family:'Playfair Display',serif; font-size:16px; font-weight:700; color:var(--navy); }
+  .eb-streak-sub { font-size:11px; color:var(--txt-light); }
+  .eb-streak-count { font-size:42px; font-weight:800; color:var(--navy); line-height:1; text-align:center; padding:16px 0 4px; }
+  .eb-streak-label { font-size:12px; color:var(--txt-light); text-align:center; text-transform:uppercase; letter-spacing:0.08em; }
+  .eb-streak-days { display:flex; justify-content:center; gap:6px; margin-top:auto; }
+  .eb-streak-day { width:32px; height:32px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:700; background:var(--border); color:var(--txt-light); }
+  .eb-streak-day.active { background:linear-gradient(135deg,#FF6B35,#FF8C42); color:#fff; }
+  .eb-streak-btn { display:flex; align-items:center; justify-content:center; gap:6px; width:100%; padding:10px; border-radius:10px; border:none; background:var(--navy); color:#fff; font-size:12px; font-weight:600; cursor:pointer; transition:opacity 0.18s; margin-top:8px; }
+  .eb-streak-btn:hover { opacity:0.88; }
 
   /* shared info card */
   .eb-info-card {

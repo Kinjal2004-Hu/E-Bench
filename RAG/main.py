@@ -1422,6 +1422,170 @@ def law_awareness_rights_detail(article_id: str):
     return LawAwarenessArticleDetail(**article)
 
 
+# ── Legal News + Microlearning Pipeline ──
+
+class LegalNewsItem(BaseModel):
+    id: str
+    headline: str
+    summary: str
+    date: str
+    category: str
+    source: str = "Indian Kanoon"
+
+class LegalNewsTrendingResponse(BaseModel):
+    news: List[LegalNewsItem]
+    total: int
+
+class NewsToLessonRequest(BaseModel):
+    news_id: str
+    headline: str
+    summary: str
+    category: str = "General"
+
+class NewsToLessonResponse(BaseModel):
+    news_id: str
+    headline: str
+    legal_topic: str
+    sections: List[SearchResult]
+    explanation: str
+    lesson_title: str
+    lesson_law_text: str
+    lesson_simple_explanation: str
+    lesson_scenario: str
+    lesson_quiz: List[dict]
+    case_references: List[str]
+    model_used: str
+
+TRENDING_QUERIES = [
+    "latest Supreme Court judgment India",
+    "recent High Court decision India landmark",
+    "Indian Supreme Court constitutional law ruling",
+    "recent judgment fundamental rights India",
+    "landmark Indian criminal law case latest",
+]
+
+WEEKDAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+
+@app.post("/legal-news/trending", response_model=LegalNewsTrendingResponse)
+def legal_news_trending():
+    """Fetch trending legal news from Indian Kanoon across multiple legal queries."""
+    from datetime import datetime, timedelta
+    seen_titles = set()
+    all_news = []
+    query_idx = 0
+
+    while len(all_news) < 8 and query_idx < len(TRENDING_QUERIES):
+        results = ik_search(TRENDING_QUERIES[query_idx], page=0, max_results=5)
+        query_idx += 1
+        today = datetime.now()
+        for i, r in enumerate(results):
+            title = r.get("title", "")
+            if not title or title in seen_titles:
+                continue
+            seen_titles.add(title)
+            day_offset = len(all_news) % 7
+            d = (today - timedelta(days=day_offset)).strftime("%b %d, %Y")
+            cats = ["Supreme Court", "Constitutional Law", "Criminal Law", "Civil Law", "Corporate Law", "Human Rights", "Cyber Law"]
+            all_news.append(LegalNewsItem(
+                id=f"ik_{r['doc_id']}",
+                headline=title[:200],
+                summary=_strip_html(r.get("headline", ""))[:300] or f"Recent judgment from Indian Kanoon (Doc ID: {r['doc_id']})",
+                date=d,
+                category=cats[len(all_news) % len(cats)],
+            ))
+
+    return LegalNewsTrendingResponse(news=all_news[:10], total=len(all_news))
+
+
+@app.post("/legal-news/to-lesson", response_model=NewsToLessonResponse)
+def legal_news_to_lesson(body: NewsToLessonRequest):
+    """Convert a legal news event into a full lesson flow: topic → sections → explanation → microlearning."""
+    composite = f"{body.headline} {body.summary} {body.category}"
+    ranked = retrieve(composite, 5)
+    sections = [r["section"] for r in ranked]
+
+    ik_raw = ik_search(f"{body.headline}", max_results=3)
+
+    # Identify legal topic via LLM
+    topic_prompt = (
+        f"Given this legal news headline and summary, identify the single most relevant legal topic "
+        f"(e.g., 'Bail', 'Right to Privacy', 'Contract Law', 'Criminal Procedure', 'Fundamental Rights'). "
+        f"Reply with just the topic name, 2-5 words.\n\nHeadline: {body.headline}\nSummary: {body.summary}"
+    )
+    topic_msg = [
+        {"role": "system", "content": "You are a legal topic classifier. Reply with only the topic name."},
+        {"role": "user", "content": topic_prompt}
+    ]
+    topic_resp = client.chat.completions.create(model=LLM_MODEL, messages=topic_msg, temperature=0, max_tokens=50)
+    legal_topic = (topic_resp.choices[0].message.content or "Legal Procedure").strip()
+
+    # Generate explanation
+    section_refs = "\n".join([f"- {s['document']} Section {s['section']}: {s['title']}" for s in sections[:5]])
+    ik_refs = "\n".join([f"- {r['title']}" for r in ik_raw[:3]])
+    explain_prompt = (
+        f"A user read this news:\n{body.headline}\n{body.summary}\n\n"
+        f"The identified legal topic is: {legal_topic}\n\n"
+        f"Relevant statute sections:\n{section_refs}\n\n"
+        f"Related case law:\n{ik_refs}\n\n"
+        f"Explain this legal topic in plain language. Cover:\n"
+        f"1. What this legal topic means\n"
+        f"2. Key laws/sections involved\n"
+        f"3. How it connects to the news event\n"
+        f"4. Practical rights and steps for an ordinary citizen"
+    )
+    explanation = ask_llm(explain_prompt, sections, ik_results=ik_raw)
+
+    # Generate microlearning lesson
+    lesson_title = f"Understanding {legal_topic}"
+    lesson_law_text = "\n\n".join([f"{s['document']} Section {s['section']} — {s['title']}\n{s['text'][:500]}" for s in sections[:3]])
+    lesson_simple = (
+        f"This lesson explains '{legal_topic}' in the context of recent legal news. "
+        f"Key statutes include relevant sections from the Bharatiya Nyaya Sanhita and related acts. "
+        f"Citizens should understand their rights and procedures under these provisions."
+    )
+    lesson_scenario = f"A person reads about '{body.headline[:100]}' and wants to understand how the law applies to their own situation. They need to identify the relevant legal provisions and understand their rights."
+
+    # Generate quiz questions using LLM
+    quiz_prompt = (
+        f"Based on this legal news and legal topic, generate 2 quiz questions (multiple choice with 4 options). "
+        f"Return valid JSON array only: [{{\"question\":\"...\",\"options\":[\"A. ...\",\"B. ...\",\"C. ...\",\"D. ...\"],\"correct\":\"A\"}}]\n\n"
+        f"News: {body.headline}\nTopic: {legal_topic}\nSections:\n{section_refs}"
+    )
+    quiz_msg = [
+        {"role": "system", "content": "You generate quiz questions as JSON arrays. Reply with only the JSON."},
+        {"role": "user", "content": quiz_prompt}
+    ]
+    quiz_resp = client.chat.completions.create(model=LLM_MODEL, messages=quiz_msg, temperature=0.3, max_tokens=1024)
+    quiz_text = quiz_resp.choices[0].message.content or "[]"
+    try:
+        import json as _json
+        quiz_data = _json.loads(re.search(r'\[[\s\S]*\]', quiz_text).group(0)) if re.search(r'\[[\s\S]*\]', quiz_text) else []
+    except Exception:
+        quiz_data = [
+            {"question": f"What is the primary legal topic in this news item?", "options": [f"A. {legal_topic}", "B. Contract Law", "C. Property Law", "D. Tax Law"], "correct": "A"},
+            {"question": "What should a citizen do first when facing a legal issue related to this topic?", "options": ["A. Ignore it", "B. Gather facts and seek legal advice", "C. Post on social media", "D. Pay immediately"], "correct": "B"},
+        ]
+
+    case_refs = [r["title"] for r in ik_raw[:3]]
+
+    search_results = to_search_results(ranked)
+
+    return NewsToLessonResponse(
+        news_id=body.news_id,
+        headline=body.headline,
+        legal_topic=legal_topic,
+        sections=search_results,
+        explanation=explanation,
+        lesson_title=lesson_title,
+        lesson_law_text=lesson_law_text,
+        lesson_simple_explanation=lesson_simple,
+        lesson_scenario=lesson_scenario,
+        lesson_quiz=quiz_data,
+        case_references=case_refs,
+        model_used=LLM_MODEL,
+    )
+
+
 @app.get("/stats")
 def stats():
 

@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from "react"
 import { useRouter } from "next/navigation"
 import {
-    Scale, FileText, AlertTriangle, Newspaper,
+    Scale, FileText, AlertTriangle, Newspaper, Flame,
     BookOpen, ChevronRight, Clock, Shield, Gavel,
     CheckCircle, Sparkles, MessageSquare, Maximize2, X, Landmark, LogOut
 } from "lucide-react"
@@ -11,6 +11,7 @@ import {
     fetchRightsLawArticle,
     fetchRightsLawAwareness,
     fetchUserProfile,
+    fetchLearningProgress,
     type LawAwarenessArticleDetail,
     type LawAwarenessArticleSummary,
 } from "@/lib/userApi"
@@ -90,6 +91,8 @@ export default function Dashboard() {
     const [selectedArticle, setSelectedArticle] = useState<LawAwarenessArticleDetail | null>(null)
     const [articleLoading, setArticleLoading] = useState(false)
     const [articleError, setArticleError] = useState("")
+    const [streakDays, setStreakDays] = useState(0)
+    const [streakLongest, setStreakLongest] = useState(0)
     const { display, cursor } = useTypewriter(TAGLINES)
     const router = useRouter()
     const showTypewriter = !isInputFocused && message.trim().length === 0
@@ -121,6 +124,13 @@ export default function Dashboard() {
             .then((p) => {
                 const first = p.fullName?.split(" ")[0]
                 if (first) setUserName(first)
+            })
+            .catch(() => { /* keep default */ })
+
+        fetchLearningProgress()
+            .then((data) => {
+                setStreakDays(data.dailyStreak?.current || 0)
+                setStreakLongest(data.dailyStreak?.longest || 0)
             })
             .catch(() => { /* keep default */ })
     }, [])
@@ -337,8 +347,30 @@ export default function Dashboard() {
 
             </div>
 
-            {/* BOTTOM ROW: daily law awareness (left) + legal news feed (right) */}
+            {/* BOTTOM ROW: streak (left) + law awareness (center) + news feed (right) */}
             <div className="eb-bottom-grid">
+
+                {/* DAILY STREAK */}
+                <div className="eb-streak-card">
+                    <div className="eb-streak-header">
+                        <div className="eb-streak-icon-box"><Flame size={20} /></div>
+                        <span className="eb-streak-title">Learning Streak</span>
+                    </div>
+                    <div className="eb-streak-sub">Keep learning daily to maintain your streak</div>
+                    <div className="eb-streak-count">{streakDays}</div>
+                    <div className="eb-streak-label">Day Streak</div>
+                    <div className="eb-streak-days">
+                        {["M","T","W","T","F","S","S"].map((d, i) => (
+                            <div key={i} className={`eb-streak-day ${i < (streakDays % 7) ? "active" : ""}`}>{d}</div>
+                        ))}
+                    </div>
+                    <div style={{ textAlign: "center", fontSize: 11, color: "var(--txt-light)", marginTop: 4 }}>
+                        Longest streak: {streakLongest} days
+                    </div>
+                    <button type="button" className="eb-streak-btn" onClick={() => router.push("/microlearning")}>
+                        <BookOpen size={14} /> Continue Learning
+                    </button>
+                </div>
 
                 {/* DAILY LAW AWARENESS */}
                 <div className="eb-info-card">

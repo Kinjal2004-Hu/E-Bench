@@ -11,6 +11,7 @@ import { Input } from "@/components/ui/input";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Progress } from "@/components/ui/progress";
 import { microLessons } from "@/lib/microlearning-data";
+import { saveLessonProgress, saveQuizProgress } from "@/lib/userApi";
 
 const COMPLETED_KEY = "ebench_microlearning_completed_lessons";
 const QUIZ_PROGRESS_KEY = "ebench_microlearning_quiz_progress";
@@ -130,6 +131,22 @@ export default function MicrolearningLessonPage() {
       setCompletionMsg("Course completion saved for this session.");
       setCompleted(true);
     }
+
+    saveLessonProgress({ lessonId: lesson.id, lessonTitle: lesson.title, source: "static" }).catch(() => {});
+    const quizEntries = defaultQuiz.map((q) => ({
+      questionId: q.id,
+      selectedOption: answers[q.id] || "",
+      correct: answers[q.id] === q.correctOptionId,
+    }));
+    const correctCount = quizEntries.filter(e => e.correct).length;
+    saveQuizProgress({
+      lessonId: lesson.id,
+      lessonTitle: lesson.title,
+      answers: quizEntries,
+      score: correctCount,
+      total: quizEntries.length,
+      source: "static",
+    }).catch(() => {});
   };
 
   const callMicrolearningAi = async (question: string) => {

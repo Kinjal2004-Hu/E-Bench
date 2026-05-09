@@ -10,6 +10,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input";
 import { Progress } from "@/components/ui/progress";
 import { lessonOfTheDayId, microLessons, type LessonStatus } from "@/lib/microlearning-data";
+import { fetchLearningProgress, type LearningProgress } from "@/lib/userApi";
 
 const COMPLETED_KEY = "ebench_microlearning_completed_lessons";
 const QUIZ_PROGRESS_KEY = "ebench_microlearning_quiz_progress";
@@ -46,6 +47,8 @@ export default function MicrolearningLibraryPage() {
   const [query, setQuery] = useState("");
   const [completedIds, setCompletedIds] = useState<string[]>([]);
   const [quizProgress, setQuizProgress] = useState<Record<string, Record<string, string>>>({});
+  const [backendProgress, setBackendProgress] = useState<LearningProgress | null>(null);
+  const [streakDays, setStreakDays] = useState(3);
 
   useEffect(() => {
     try {
@@ -60,6 +63,20 @@ export default function MicrolearningLibraryPage() {
       setCompletedIds([]);
       setQuizProgress({});
     }
+
+    fetchLearningProgress()
+      .then((data) => {
+        setBackendProgress(data);
+        setStreakDays(data.dailyStreak?.current || 0);
+        const backendCompleted = (data.lessons || [])
+          .filter(l => l.completed)
+          .map(l => l.lessonId);
+        setCompletedIds(prev => {
+          const merged = new Set([...prev, ...backendCompleted]);
+          return Array.from(merged);
+        });
+      })
+      .catch(() => { /* fallback to localStorage */ });
   }, []);
 
   const lessonsWithProgress = useMemo(() => {
@@ -97,7 +114,6 @@ export default function MicrolearningLibraryPage() {
   const completedLessons = lessonsWithProgress.filter((lesson) => lesson.status === "completed").length;
   const inProgressLessons = lessonsWithProgress.filter((lesson) => lesson.status === "in-progress").length;
   const totalLessons = lessonsWithProgress.length;
-  const streakDays = 3;
   const progressPercentage = Math.round((completedLessons / totalLessons) * 100);
 
   const lessonOfTheDay = lessonsWithProgress.find((lesson) => lesson.id === lessonOfTheDayId) || lessonsWithProgress[0];
