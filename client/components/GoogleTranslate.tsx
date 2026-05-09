@@ -9,6 +9,12 @@ declare global {
   }
 }
 
+const origRemoveChild = Node.prototype.removeChild;
+Node.prototype.removeChild = function (child: Node) {
+  if (child.parentNode !== this) return child;
+  return origRemoveChild.call(this, child);
+};
+
 export default function GoogleTranslate() {
   useEffect(() => {
     if (document.getElementById("google-translate-init")) return;
