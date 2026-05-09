@@ -8,6 +8,7 @@ import {
 } from "lucide-react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import LanguageSelector from "@/components/LanguageSelector"
 
 const makeStyle = (dark :boolean) => `
   @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap');
@@ -168,6 +169,8 @@ const makeStyle = (dark :boolean) => `
     cursor:pointer; transition:all 0.18s; position:relative;
   }
   .eb-theme-btn:hover { background:var(--gold); color:#fff; border-color:var(--gold); }
+
+
 
   /* notification icon-only btn */
   .eb-notif-btn {
@@ -382,6 +385,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
                             <Link href="/contact" className="eb-navbar-contact">
                                 <Mail size={14} /> Contact Us
                             </Link>
+                            <LanguageSelector variant="navbar" />
                             <button className="eb-theme-btn" onClick={() => setDark(!dark)}>
                                 {dark ? <Sun size={16} /> : <Moon size={16} />}
                             </button>

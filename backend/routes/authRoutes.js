@@ -3,9 +3,12 @@ const jwt = require('jsonwebtoken');
 const User = require('../models/UserModel');
 const Consultant = require('../models/ConsultantModel');
 const authMiddleware = require('../middleware/authMiddleware');
+const { t } = require('../i18n/i18n');
 const JWT_SECRET = process.env.JWT_SECRET || 'dev_jwt_secret_change_me';
 
 const router = express.Router();
+
+const getLocale = (req) => req.query.locale || req.body?.locale || 'en';
 
 // Generate JWT Token
 const generateToken = (id, email, userType) => {
@@ -20,22 +23,24 @@ const generateToken = (id, email, userType) => {
 
 // Register User
 router.post('/register-user', async (req, res) => {
+    const locale = getLocale(req);
+
     try {
         const { fullName, email, password } = req.body;
 
         // Validation
         if (!fullName || !email || !password) {
-            return res.status(400).json({ error: 'All fields are required' });
+            return res.status(400).json({ error: t('errors.required', locale) });
         }
 
         if (password.length < 6) {
-            return res.status(400).json({ error: 'Password must be at least 6 characters' });
+            return res.status(400).json({ error: t('errors.passwordTooShort', locale) });
         }
 
         // Check if user already exists
         const existingUser = await User.findOne({ email });
         if (existingUser) {
-            return res.status(409).json({ error: 'Email already registered' });
+            return res.status(409).json({ error: t('auth.emailAlreadyExists', locale) });
         }
 
         // Create new user
@@ -43,7 +48,8 @@ router.post('/register-user', async (req, res) => {
             fullName,
             email,
             password,
-            userType: 'user'
+            userType: 'user',
+            preferredLanguage: locale
         });
 
         await user.save();
@@ -51,48 +57,50 @@ router.post('/register-user', async (req, res) => {
         const token = generateToken(user._id, user.email, user.userType);
 
         res.status(201).json({
-            message: 'User registered successfully',
+            message: t('auth.registerSuccess', locale),
             user: user.toJSON(),
             token
         });
     } catch (error) {
         console.error('Registration error:', error);
-        res.status(500).json({ error: error.message || 'Registration failed' });
+        res.status(500).json({ error: error.message || t('errors.serverError', locale) });
     }
 });
 
 // Login User
 router.post('/login-user', async (req, res) => {
+    const locale = getLocale(req);
+
     try {
         const { email, password } = req.body;
 
         // Validation
         if (!email || !password) {
-            return res.status(400).json({ error: 'Email and password are required' });
+            return res.status(400).json({ error: t('errors.required', locale) });
         }
 
         // Find user
         const user = await User.findOne({ email });
         if (!user) {
-            return res.status(401).json({ error: 'Invalid email or password' });
+            return res.status(401).json({ error: t('auth.invalidCredentials', locale) });
         }
 
         // Check password
         const isMatch = await user.matchPassword(password);
         if (!isMatch) {
-            return res.status(401).json({ error: 'Invalid email or password' });
+            return res.status(401).json({ error: t('auth.invalidCredentials', locale) });
         }
 
         const token = generateToken(user._id, user.email, user.userType);
 
         res.json({
-            message: 'Login successful',
+            message: t('auth.loginSuccess', locale),
             user: user.toJSON(),
             token
         });
     } catch (error) {
         console.error('Login error:', error);
-        res.status(500).json({ error: error.message || 'Login failed' });
+        res.status(500).json({ error: error.message || t('errors.serverError', locale) });
     }
 });
 
@@ -100,6 +108,8 @@ router.post('/login-user', async (req, res) => {
 
 // Register Consultant
 router.post('/register-consultant', async (req, res) => {
+    const locale = getLocale(req);
+
     try {
         const { 
             fullName, 
@@ -108,29 +118,29 @@ router.post('/register-consultant', async (req, res) => {
             licenseNumber, 
             barRegistration, 
             specialization, 
-            professionalSummary 
+            professionalSummary
         } = req.body;
 
         // Validation
         if (!fullName || !email || !password || !licenseNumber || !barRegistration || !specialization) {
-            return res.status(400).json({ error: 'All fields are required' });
+            return res.status(400).json({ error: t('errors.required', locale) });
         }
 
         if (password.length < 6) {
-            return res.status(400).json({ error: 'Password must be at least 6 characters' });
+            return res.status(400).json({ error: t('errors.passwordTooShort', locale) });
         }
 
         // Check if email already exists in either collection
         const existingUser = await User.findOne({ email });
         const existingConsultant = await Consultant.findOne({ email });
         if (existingUser || existingConsultant) {
-            return res.status(409).json({ error: 'Email already registered' });
+            return res.status(409).json({ error: t('auth.emailAlreadyExists', locale) });
         }
 
         // Check if license number already exists
         const existingLicense = await Consultant.findOne({ licenseNumber });
         if (existingLicense) {
-            return res.status(409).json({ error: 'License number already registered' });
+            return res.status(409).json({ error: t('auth.licenseNumberAlreadyExists', locale) });
         }
 
         // Create new consultant
@@ -141,7 +151,8 @@ router.post('/register-consultant', async (req, res) => {
             licenseNumber,
             barRegistration,
             specialization,
-            professionalSummary
+            professionalSummary,
+            preferredLanguage: locale
         });
 
         await consultant.save();
@@ -149,48 +160,50 @@ router.post('/register-consultant', async (req, res) => {
         const token = generateToken(consultant._id, consultant.email, 'consultant');
 
         res.status(201).json({
-            message: 'Consultant registered successfully',
+            message: t('auth.registerSuccess', locale),
             consultant: consultant.toJSON(),
             token
         });
     } catch (error) {
         console.error('Consultant registration error:', error);
-        res.status(500).json({ error: error.message || 'Registration failed' });
+        res.status(500).json({ error: error.message || t('errors.serverError', locale) });
     }
 });
 
 // Login Consultant
 router.post('/login-consultant', async (req, res) => {
+    const locale = getLocale(req);
+
     try {
         const { email, password } = req.body;
 
         // Validation
         if (!email || !password) {
-            return res.status(400).json({ error: 'Email and password are required' });
+            return res.status(400).json({ error: t('errors.required', locale) });
         }
 
         // Find consultant
         const consultant = await Consultant.findOne({ email });
         if (!consultant) {
-            return res.status(401).json({ error: 'Invalid email or password' });
+            return res.status(401).json({ error: t('auth.invalidCredentials', locale) });
         }
 
         // Check password
         const isMatch = await consultant.matchPassword(password);
         if (!isMatch) {
-            return res.status(401).json({ error: 'Invalid email or password' });
+            return res.status(401).json({ error: t('auth.invalidCredentials', locale) });
         }
 
         const token = generateToken(consultant._id, consultant.email, 'consultant');
 
         res.json({
-            message: 'Login successful',
+            message: t('auth.loginSuccess', locale),
             consultant: consultant.toJSON(),
             token
         });
     } catch (error) {
         console.error('Consultant login error:', error);
-        res.status(500).json({ error: error.message || 'Login failed' });
+        res.status(500).json({ error: error.message || t('errors.serverError', locale) });
     }
 });
 
@@ -198,6 +211,8 @@ router.post('/login-consultant', async (req, res) => {
 
 // Get current user/consultant
 router.get('/me', authMiddleware, async (req, res) => {
+    const locale = getLocale(req);
+
     try {
         const { id, userType } = req.user;
 
@@ -209,18 +224,19 @@ router.get('/me', authMiddleware, async (req, res) => {
         }
 
         if (!data) {
-            return res.status(404).json({ error: 'User not found' });
+            return res.status(404).json({ error: userType === 'consultant' ? t('auth.consultantNotFound', locale) : t('auth.userNotFound', locale) });
         }
 
         res.json(data.toJSON());
     } catch (error) {
-        res.status(500).json({ error: error.message });
+        res.status(500).json({ error: error.message || t('errors.serverError', locale) });
     }
 });
 
 // Logout (client-side token removal)
 router.post('/logout', authMiddleware, (req, res) => {
-    res.json({ message: 'Logged out successfully' });
+    const locale = getLocale(req);
+    res.json({ message: t('auth.logoutSuccess', locale) });
 });
 
 // Get all consultants
@@ -245,17 +261,19 @@ router.get('/consultants', async (req, res) => {
 
 // Get consultant by ID
 router.get('/consultant/:id', async (req, res) => {
+    const locale = getLocale(req);
+
     try {
         const consultant = await Consultant.findById(req.params.id)
             .select('-password');
 
         if (!consultant) {
-            return res.status(404).json({ error: 'Consultant not found' });
+            return res.status(404).json({ error: t('auth.consultantNotFound', locale) });
         }
 
         res.json(consultant);
     } catch (error) {
-        res.status(500).json({ error: error.message });
+        res.status(500).json({ error: error.message || t('errors.serverError', locale) });
     }
 });
 

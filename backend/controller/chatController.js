@@ -1,8 +1,11 @@
 const Chat = require('../models/ChatModel');
 const Consultant = require('../models/ConsultantModel');
 const User = require('../models/UserModel');
+const { t } = require('../i18n/i18n');
 
 const toParticipantModel = (userType) => (userType === 'consultant' ? 'Consultant' : 'User');
+
+const getLocale = (req) => req.query.locale || req.body?.locale || 'en';
 
 const isValidParticipantModel = (model) => model === 'User' || model === 'Consultant';
 
@@ -23,6 +26,8 @@ const ensureRequesterInChat = (chat, requesterId, requesterModel) => {
 
 // GET /api/chats/lawyers
 const getAvailableLawyers = async (req, res) => {
+  const locale = getLocale(req);
+
   try {
     const { specialization, search, verifiedOnly } = req.query;
 
@@ -49,15 +54,17 @@ const getAvailableLawyers = async (req, res) => {
     return res.json(lawyers);
   } catch (error) {
     console.error('getAvailableLawyers error:', error);
-    return res.status(500).json({ error: 'Failed to fetch lawyers' });
+    return res.status(500).json({ error: t('errors.serverError', locale) });
   }
 };
 
 // GET /api/chats/clients
 const getAvailableClients = async (req, res) => {
+  const locale = getLocale(req);
+
   try {
     if (req.user.userType !== 'consultant') {
-      return res.status(403).json({ error: 'Only consultants can access clients list' });
+      return res.status(403).json({ error: t('errors.unauthorized', locale) });
     }
 
     const { search } = req.query;
@@ -78,27 +85,29 @@ const getAvailableClients = async (req, res) => {
     return res.json(clients);
   } catch (error) {
     console.error('getAvailableClients error:', error);
-    return res.status(500).json({ error: 'Failed to fetch clients' });
+    return res.status(500).json({ error: t('errors.serverError', locale) });
   }
 };
 
 // POST /api/chats
 const createOrGetDirectChat = async (req, res) => {
+  const locale = getLocale(req);
+
   try {
     const requesterId = req.user.id;
     const requesterModel = toParticipantModel(req.user.userType);
     const { participantId, participantModel, initialMessage } = req.body;
 
     if (!participantId || !participantModel) {
-      return res.status(400).json({ error: 'participantId and participantModel are required' });
+      return res.status(400).json({ error: t('errors.required', locale) });
     }
 
     if (!isValidParticipantModel(participantModel)) {
-      return res.status(400).json({ error: 'participantModel must be User or Consultant' });
+      return res.status(400).json({ error: t('errors.badRequest', locale) });
     }
 
     if (participantId === requesterId && participantModel === requesterModel) {
-      return res.status(400).json({ error: 'Cannot create a chat with yourself' });
+      return res.status(400).json({ error: t('errors.badRequest', locale) });
     }
 
     let chat = await Chat.findOne({
@@ -158,12 +167,14 @@ const createOrGetDirectChat = async (req, res) => {
     return res.status(200).json(chat);
   } catch (error) {
     console.error('createOrGetDirectChat error:', error);
-    return res.status(500).json({ error: 'Failed to create or fetch chat' });
+    return res.status(500).json({ error: t('errors.serverError', locale) });
   }
 };
 
 // GET /api/chats
 const getMyChats = async (req, res) => {
+  const locale = getLocale(req);
+
   try {
     const requesterId = req.user.id;
     const requesterModel = toParticipantModel(req.user.userType);
@@ -182,12 +193,14 @@ const getMyChats = async (req, res) => {
     return res.json(chats);
   } catch (error) {
     console.error('getMyChats error:', error);
-    return res.status(500).json({ error: 'Failed to fetch chats' });
+    return res.status(500).json({ error: t('errors.serverError', locale) });
   }
 };
 
 // GET /api/chats/:chatId
 const getChatById = async (req, res) => {
+  const locale = getLocale(req);
+
   try {
     const requesterId = req.user.id;
     const requesterModel = toParticipantModel(req.user.userType);
@@ -195,7 +208,7 @@ const getChatById = async (req, res) => {
 
     // Reject non-ObjectID strings (e.g. localStorage keys like chat_1234567890)
     if (!/^[a-f\d]{24}$/i.test(chatId)) {
-      return res.status(404).json({ error: 'Chat not found' });
+      return res.status(404).json({ error: t('chat.noChatFound', locale) });
     }
 
     const chat = await Chat.findById(chatId)
@@ -203,22 +216,24 @@ const getChatById = async (req, res) => {
       .populate('messages.sender', 'fullName email');
 
     if (!chat) {
-      return res.status(404).json({ error: 'Chat not found' });
+      return res.status(404).json({ error: t('chat.noChatFound', locale) });
     }
 
     if (!ensureRequesterInChat(chat, requesterId, requesterModel)) {
-      return res.status(403).json({ error: 'Access denied for this chat' });
+      return res.status(403).json({ error: t('errors.unauthorized', locale) });
     }
 
     return res.json(chat);
   } catch (error) {
     console.error('getChatById error:', error);
-    return res.status(500).json({ error: 'Failed to fetch chat' });
+    return res.status(500).json({ error: t('errors.serverError', locale) });
   }
 };
 
 // POST /api/chats/:chatId/messages
 const sendMessage = async (req, res) => {
+  const locale = getLocale(req);
+
   try {
     const requesterId = req.user.id;
     const requesterModel = toParticipantModel(req.user.userType);
@@ -226,16 +241,16 @@ const sendMessage = async (req, res) => {
     const { content } = req.body;
 
     if (!content || typeof content !== 'string' || !content.trim()) {
-      return res.status(400).json({ error: 'Message content is required' });
+      return res.status(400).json({ error: t('errors.required', locale) });
     }
 
     const chat = await Chat.findById(chatId);
     if (!chat) {
-      return res.status(404).json({ error: 'Chat not found' });
+      return res.status(404).json({ error: t('chat.noChatFound', locale) });
     }
 
     if (!ensureRequesterInChat(chat, requesterId, requesterModel)) {
-      return res.status(403).json({ error: 'Access denied for this chat' });
+      return res.status(403).json({ error: t('errors.unauthorized', locale) });
     }
 
     const message = {
@@ -257,12 +272,14 @@ const sendMessage = async (req, res) => {
     return res.status(201).json(newMessage);
   } catch (error) {
     console.error('sendMessage error:', error);
-    return res.status(500).json({ error: 'Failed to send message' });
+    return res.status(500).json({ error: t('errors.serverError', locale) });
   }
 };
 
 // DELETE /api/chats/:chatId
 const deleteChat = async (req, res) => {
+  const locale = getLocale(req);
+
   try {
     const requesterId = req.user.id;
     const requesterModel = toParticipantModel(req.user.userType);
@@ -270,18 +287,18 @@ const deleteChat = async (req, res) => {
 
     const chat = await Chat.findById(chatId);
     if (!chat) {
-      return res.status(404).json({ error: 'Chat not found' });
+      return res.status(404).json({ error: t('chat.noChatFound', locale) });
     }
 
     if (!ensureRequesterInChat(chat, requesterId, requesterModel)) {
-      return res.status(403).json({ error: 'Access denied for this chat' });
+      return res.status(403).json({ error: t('errors.unauthorized', locale) });
     }
 
     await Chat.findByIdAndDelete(chatId);
-    return res.json({ message: 'Chat deleted successfully' });
+    return res.json({ message: t('chat.chatDeleted', locale) });
   } catch (error) {
     console.error('deleteChat error:', error);
-    return res.status(500).json({ error: 'Failed to delete chat' });
+    return res.status(500).json({ error: t('errors.serverError', locale) });
   }
 };
 

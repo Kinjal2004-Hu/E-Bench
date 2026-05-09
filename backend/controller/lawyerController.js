@@ -3,12 +3,15 @@ const Consultant = require('../models/ConsultantModel');
 const Appointment = require('../models/AppointmentModel');
 const ConsultationRequest = require('../models/ConsultationRequestModel');
 const Chat = require('../models/ChatModel');
+const { t } = require('../i18n/i18n');
 
 // ── helpers ──────────────────────────────────────────────────────────────────
 
+const getLocale = (req) => req.query.locale || req.body?.locale || 'en';
+
 const requireConsultant = (req, res) => {
   if (req.user.userType !== 'consultant') {
-    res.status(403).json({ error: 'Consultant access required' });
+    res.status(403).json({ error: t('errors.unauthorized', getLocale(req)) });
     return false;
   }
   return true;
@@ -16,6 +19,8 @@ const requireConsultant = (req, res) => {
 
 // ── GET /api/lawyer/stats ─────────────────────────────────────────────────────
 const getDashboardStats = async (req, res) => {
+  const locale = getLocale(req);
+
   try {
     if (!requireConsultant(req, res)) return;
     const consultantId = req.user.id;
@@ -37,25 +42,29 @@ const getDashboardStats = async (req, res) => {
     });
   } catch (err) {
     console.error('getDashboardStats error:', err);
-    return res.status(500).json({ error: 'Failed to fetch stats' });
+    return res.status(500).json({ error: t('errors.serverError', locale) });
   }
 };
 
 // ── GET /api/lawyer/profile ───────────────────────────────────────────────────
 const getProfile = async (req, res) => {
+  const locale = getLocale(req);
+
   try {
     if (!requireConsultant(req, res)) return;
     const consultant = await Consultant.findById(req.user.id).select('-password');
-    if (!consultant) return res.status(404).json({ error: 'Profile not found' });
+    if (!consultant) return res.status(404).json({ error: t('errors.notFound', locale) });
     return res.json(consultant);
   } catch (err) {
     console.error('getProfile error:', err);
-    return res.status(500).json({ error: 'Failed to fetch profile' });
+    return res.status(500).json({ error: t('errors.serverError', locale) });
   }
 };
 
 // ── PUT /api/lawyer/profile ───────────────────────────────────────────────────
 const updateProfile = async (req, res) => {
+  const locale = getLocale(req);
+
   try {
     if (!requireConsultant(req, res)) return;
     const allowed = [
@@ -76,12 +85,14 @@ const updateProfile = async (req, res) => {
     return res.json(consultant);
   } catch (err) {
     console.error('updateProfile error:', err);
-    return res.status(500).json({ error: 'Failed to update profile' });
+    return res.status(500).json({ error: t('errors.serverError', locale) });
   }
 };
 
 // ── GET /api/lawyer/appointments ──────────────────────────────────────────────
 const getAppointments = async (req, res) => {
+  const locale = getLocale(req);
+
   try {
     if (!requireConsultant(req, res)) return;
     const { date } = req.query;
@@ -92,17 +103,19 @@ const getAppointments = async (req, res) => {
     return res.json(appointments);
   } catch (err) {
     console.error('getAppointments error:', err);
-    return res.status(500).json({ error: 'Failed to fetch appointments' });
+    return res.status(500).json({ error: t('errors.serverError', locale) });
   }
 };
 
 // ── POST /api/lawyer/appointments ─────────────────────────────────────────────
 const createAppointment = async (req, res) => {
+  const locale = getLocale(req);
+
   try {
     if (!requireConsultant(req, res)) return;
     const { clientName, consultationType, caseType, date, time, clientId } = req.body;
     if (!clientName || !consultationType || !caseType || !date || !time) {
-      return res.status(400).json({ error: 'All fields are required' });
+      return res.status(400).json({ error: t('errors.required', locale) });
     }
     const apt = await Appointment.create({
       consultantId: req.user.id,
@@ -116,46 +129,52 @@ const createAppointment = async (req, res) => {
     return res.status(201).json(apt);
   } catch (err) {
     console.error('createAppointment error:', err);
-    return res.status(500).json({ error: 'Failed to create appointment' });
+    return res.status(500).json({ error: t('errors.serverError', locale) });
   }
 };
 
 // ── PATCH /api/lawyer/appointments/:id/status ─────────────────────────────────
 const updateAppointmentStatus = async (req, res) => {
+  const locale = getLocale(req);
+
   try {
     if (!requireConsultant(req, res)) return;
     const { status } = req.body;
     if (!['confirmed', 'rescheduled', 'pending'].includes(status)) {
-      return res.status(400).json({ error: 'Invalid status' });
+      return res.status(400).json({ error: t('errors.badRequest', locale) });
     }
     const apt = await Appointment.findOneAndUpdate(
       { _id: req.params.id, consultantId: req.user.id },
       { $set: { status } },
       { new: true }
     );
-    if (!apt) return res.status(404).json({ error: 'Appointment not found' });
+    if (!apt) return res.status(404).json({ error: t('lawyer.appointmentNotFound', locale) });
     return res.json(apt);
   } catch (err) {
     console.error('updateAppointmentStatus error:', err);
-    return res.status(500).json({ error: 'Failed to update appointment' });
+    return res.status(500).json({ error: t('errors.serverError', locale) });
   }
 };
 
 // ── DELETE /api/lawyer/appointments/:id ───────────────────────────────────────
 const deleteAppointment = async (req, res) => {
+  const locale = getLocale(req);
+
   try {
     if (!requireConsultant(req, res)) return;
     const apt = await Appointment.findOneAndDelete({ _id: req.params.id, consultantId: req.user.id });
-    if (!apt) return res.status(404).json({ error: 'Appointment not found' });
-    return res.json({ message: 'Appointment deleted' });
+    if (!apt) return res.status(404).json({ error: t('lawyer.appointmentNotFound', locale) });
+    return res.json({ message: t('lawyer.appointmentDeleted', locale) });
   } catch (err) {
     console.error('deleteAppointment error:', err);
-    return res.status(500).json({ error: 'Failed to delete appointment' });
+    return res.status(500).json({ error: t('errors.serverError', locale) });
   }
 };
 
 // ── GET /api/lawyer/consultation-requests ─────────────────────────────────────
 const getConsultationRequests = async (req, res) => {
+  const locale = getLocale(req);
+
   try {
     if (!requireConsultant(req, res)) return;
     const { status } = req.query;
@@ -166,17 +185,19 @@ const getConsultationRequests = async (req, res) => {
     return res.json(requests);
   } catch (err) {
     console.error('getConsultationRequests error:', err);
-    return res.status(500).json({ error: 'Failed to fetch consultation requests' });
+    return res.status(500).json({ error: t('errors.serverError', locale) });
   }
 };
 
 // ── POST /api/lawyer/consultation-requests ────────────────────────────────────
 // Called by a user (client) to request a consultation with a specific lawyer
 const createConsultationRequest = async (req, res) => {
+  const locale = getLocale(req);
+
   try {
     const { consultantId, legalCategory, requestedDate, message, clientName } = req.body;
     if (!consultantId || !legalCategory || !requestedDate || !message) {
-      return res.status(400).json({ error: 'All fields are required' });
+      return res.status(400).json({ error: t('errors.required', locale) });
     }
     const name = clientName || req.user?.name || 'Client';
     const createdRequest = await ConsultationRequest.create({
@@ -190,33 +211,37 @@ const createConsultationRequest = async (req, res) => {
     return res.status(201).json(createdRequest);
   } catch (err) {
     console.error('createConsultationRequest error:', err);
-    return res.status(500).json({ error: 'Failed to create consultation request' });
+    return res.status(500).json({ error: t('errors.serverError', locale) });
   }
 };
 
 // ── PATCH /api/lawyer/consultation-requests/:id/status ────────────────────────
 const updateConsultationStatus = async (req, res) => {
+  const locale = getLocale(req);
+
   try {
     if (!requireConsultant(req, res)) return;
     const { status } = req.body;
     if (!['accepted', 'rejected'].includes(status)) {
-      return res.status(400).json({ error: 'Invalid status' });
+      return res.status(400).json({ error: t('errors.badRequest', locale) });
     }
     const updated = await ConsultationRequest.findOneAndUpdate(
       { _id: req.params.id, consultantId: req.user.id },
       { $set: { status } },
       { new: true }
     );
-    if (!updated) return res.status(404).json({ error: 'Request not found' });
+    if (!updated) return res.status(404).json({ error: t('errors.notFound', locale) });
     return res.json(updated);
   } catch (err) {
     console.error('updateConsultationStatus error:', err);
-    return res.status(500).json({ error: 'Failed to update status' });
+    return res.status(500).json({ error: t('errors.serverError', locale) });
   }
 };
 
 // ── GET /api/lawyer/case-files ────────────────────────────────────────────────
 const getCaseFiles = async (req, res) => {
+  const locale = getLocale(req);
+
   try {
     if (!requireConsultant(req, res)) return;
     // Files are stored with consultantId stamped into filename via multer
@@ -245,7 +270,7 @@ const getCaseFiles = async (req, res) => {
     return res.json(files);
   } catch (err) {
     console.error('getCaseFiles error:', err);
-    return res.status(500).json({ error: 'Failed to fetch case files' });
+    return res.status(500).json({ error: t('errors.serverError', locale) });
   }
 };
 
@@ -254,43 +279,47 @@ const getCaseFiles = async (req, res) => {
 
 // ── GET /api/lawyer/case-files/:id/download ───────────────────────────────────
 const downloadCaseFile = async (req, res) => {
+  const locale = getLocale(req);
+
   try {
     if (!requireConsultant(req, res)) return;
     const fileId = req.params.id;
     // Security: ensure file belongs to this consultant
     if (!fileId.startsWith(`${req.user.id}_`)) {
-      return res.status(403).json({ error: 'Access denied' });
+      return res.status(403).json({ error: t('errors.unauthorized', locale) });
     }
     const fs = require('fs');
     const filePath = path.join(__dirname, '..', 'uploads', fileId);
     if (!fs.existsSync(filePath)) {
-      return res.status(404).json({ error: 'File not found' });
+      return res.status(404).json({ error: t('lawyer.fileNotFound', locale) });
     }
     return res.download(filePath);
   } catch (err) {
     console.error('downloadCaseFile error:', err);
-    return res.status(500).json({ error: 'Failed to download file' });
+    return res.status(500).json({ error: t('errors.serverError', locale) });
   }
 };
 
 // ── DELETE /api/lawyer/case-files/:id ─────────────────────────────────────────
 const deleteCaseFile = async (req, res) => {
+  const locale = getLocale(req);
+
   try {
     if (!requireConsultant(req, res)) return;
     const fileId = req.params.id;
     if (!fileId.startsWith(`${req.user.id}_`)) {
-      return res.status(403).json({ error: 'Access denied' });
+      return res.status(403).json({ error: t('errors.unauthorized', locale) });
     }
     const fs = require('fs');
     const filePath = path.join(__dirname, '..', 'uploads', fileId);
     if (!fs.existsSync(filePath)) {
-      return res.status(404).json({ error: 'File not found' });
+      return res.status(404).json({ error: t('lawyer.fileNotFound', locale) });
     }
     fs.unlinkSync(filePath);
-    return res.json({ message: 'File deleted' });
+    return res.json({ message: t('lawyer.fileDeleted', locale) });
   } catch (err) {
     console.error('deleteCaseFile error:', err);
-    return res.status(500).json({ error: 'Failed to delete file' });
+    return res.status(500).json({ error: t('errors.serverError', locale) });
   }
 };
 

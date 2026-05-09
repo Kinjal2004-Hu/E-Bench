@@ -1,6 +1,9 @@
 const CaseAnalysis = require('../models/CaseAnalysisModel');
+const { t } = require('../i18n/i18n');
 
 const RAG_BASE = process.env.RAG_BASE_URL || 'http://localhost:8000';
+
+const getLocale = (req) => req.query.locale || req.body?.locale || 'en';
 
 // ── Helper: forward to RAG and return data ──────────────────────────────────
 
@@ -25,10 +28,12 @@ async function ragPost(path, body) {
 
 // ── POST /api/tools/case-analyzer ────────────────────────────────────────────
 const caseAnalyzer = async (req, res) => {
+  const locale = getLocale(req);
+
   try {
     const { case_text, top_k = 7 } = req.body;
     if (!case_text || !case_text.trim()) {
-      return res.status(400).json({ error: 'case_text is required' });
+      return res.status(400).json({ error: t('errors.required', locale) });
     }
 
     // Forward to RAG
@@ -60,16 +65,18 @@ const caseAnalyzer = async (req, res) => {
     });
   } catch (err) {
     console.error('caseAnalyzer error:', err);
-    return res.status(500).json({ error: err.message || 'Case analysis failed' });
+    return res.status(500).json({ error: err.message || t('tools.analysisFailed', locale) });
   }
 };
 
 // ── POST /api/tools/contract-risk ────────────────────────────────────────────
 const contractRisk = async (req, res) => {
+  const locale = getLocale(req);
+
   try {
     const { contract_text, top_k = 7 } = req.body;
     if (!contract_text || !contract_text.trim()) {
-      return res.status(400).json({ error: 'contract_text is required' });
+      return res.status(400).json({ error: t('errors.required', locale) });
     }
 
     // Forward to RAG
@@ -101,16 +108,18 @@ const contractRisk = async (req, res) => {
     });
   } catch (err) {
     console.error('contractRisk error:', err);
-    return res.status(500).json({ error: err.message || 'Contract risk analysis failed' });
+    return res.status(500).json({ error: err.message || t('tools.analysisFailed', locale) });
   }
 };
 
 // ── POST /api/tools/case-summarizer ──────────────────────────────────────────
 const caseSummarizer = async (req, res) => {
+  const locale = getLocale(req);
+
   try {
     const { document_text, top_k = 7 } = req.body;
     if (!document_text || !document_text.trim()) {
-      return res.status(400).json({ error: 'document_text is required' });
+      return res.status(400).json({ error: t('errors.required', locale) });
     }
 
     // Forward to RAG
@@ -142,7 +151,7 @@ const caseSummarizer = async (req, res) => {
     });
   } catch (err) {
     console.error('caseSummarizer error:', err);
-    return res.status(500).json({ error: err.message || 'Case summarization failed' });
+    return res.status(500).json({ error: err.message || t('tools.analysisFailed', locale) });
   }
 };
 

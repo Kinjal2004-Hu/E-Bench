@@ -1,12 +1,15 @@
 const User = require('../models/UserModel');
 const CaseAnalysis = require('../models/CaseAnalysisModel');
 const Chat = require('../models/ChatModel');
+const { t } = require('../i18n/i18n');
 
 // ── helpers ──────────────────────────────────────────────────────────────────
 
+const getLocale = (req) => req.query.locale || req.body?.locale || 'en';
+
 const requireUser = (req, res) => {
   if (req.user.userType !== 'user' && req.user.userType !== 'consultant') {
-    res.status(403).json({ error: 'Authenticated user required' });
+    res.status(403).json({ error: t('errors.unauthorized', getLocale(req)) });
     return false;
   }
   return true;
@@ -14,18 +17,22 @@ const requireUser = (req, res) => {
 
 // ── GET /api/user/profile ─────────────────────────────────────────────────────
 const getProfile = async (req, res) => {
+  const locale = getLocale(req);
+
   try {
     const user = await User.findById(req.user.id).select('-password');
-    if (!user) return res.status(404).json({ error: 'User not found' });
+    if (!user) return res.status(404).json({ error: t('auth.userNotFound', locale) });
     return res.json(user);
   } catch (err) {
     console.error('getProfile error:', err);
-    return res.status(500).json({ error: 'Failed to fetch profile' });
+    return res.status(500).json({ error: t('errors.serverError', locale) });
   }
 };
 
 // ── PUT /api/user/profile ─────────────────────────────────────────────────────
 const updateProfile = async (req, res) => {
+  const locale = getLocale(req);
+
   try {
     const allowed = ['fullName', 'phone', 'organization', 'location', 'bio', 'role', 'barId'];
     const update = {};
@@ -39,16 +46,18 @@ const updateProfile = async (req, res) => {
       { new: true, runValidators: true }
     ).select('-password');
 
-    if (!user) return res.status(404).json({ error: 'User not found' });
+    if (!user) return res.status(404).json({ error: t('auth.userNotFound', locale) });
     return res.json(user);
   } catch (err) {
     console.error('updateProfile error:', err);
-    return res.status(500).json({ error: 'Failed to update profile' });
+    return res.status(500).json({ error: t('errors.serverError', locale) });
   }
 };
 
 // ── GET /api/user/stats ───────────────────────────────────────────────────────
 const getDashboardStats = async (req, res) => {
+  const locale = getLocale(req);
+
   try {
     const userId = req.user.id;
     const [totalCases, totalContracts, totalSummaries, totalChats] = await Promise.all([
@@ -63,12 +72,14 @@ const getDashboardStats = async (req, res) => {
     return res.json({ totalCases, totalContracts, totalSummaries, totalChats });
   } catch (err) {
     console.error('getDashboardStats error:', err);
-    return res.status(500).json({ error: 'Failed to fetch stats' });
+    return res.status(500).json({ error: t('errors.serverError', locale) });
   }
 };
 
 // ── GET /api/user/analyses ─────────────────────────────────────────────────────
 const getAnalyses = async (req, res) => {
+  const locale = getLocale(req);
+
   try {
     const { type } = req.query;
     const query = { userId: req.user.id };
@@ -80,30 +91,34 @@ const getAnalyses = async (req, res) => {
     return res.json(analyses);
   } catch (err) {
     console.error('getAnalyses error:', err);
-    return res.status(500).json({ error: 'Failed to fetch analyses' });
+    return res.status(500).json({ error: t('errors.serverError', locale) });
   }
 };
 
 // ── GET /api/user/analyses/:id ────────────────────────────────────────────────
 const getAnalysisById = async (req, res) => {
+  const locale = getLocale(req);
+
   try {
     const analysis = await CaseAnalysis.findOne({
       _id: req.params.id,
       userId: req.user.id,
     });
-    if (!analysis) return res.status(404).json({ error: 'Analysis not found' });
+    if (!analysis) return res.status(404).json({ error: t('user.analysisNotFound', locale) });
     return res.json(analysis);
   } catch (err) {
     console.error('getAnalysisById error:', err);
-    return res.status(500).json({ error: 'Failed to fetch analysis' });
+    return res.status(500).json({ error: t('errors.serverError', locale) });
   }
 };
 
 // ── POST /api/user/analyses ───────────────────────────────────────────────────
 const saveAnalysis = async (req, res) => {
+  const locale = getLocale(req);
+
   try {
     const { type, title, description, aiAnswer, sections, userRights, legalSteps, riskScore } = req.body;
-    if (!title) return res.status(400).json({ error: 'Title is required' });
+    if (!title) return res.status(400).json({ error: t('errors.required', locale) });
 
     const analysis = await CaseAnalysis.create({
       userId: req.user.id,
@@ -120,22 +135,24 @@ const saveAnalysis = async (req, res) => {
     return res.status(201).json(analysis);
   } catch (err) {
     console.error('saveAnalysis error:', err);
-    return res.status(500).json({ error: 'Failed to save analysis' });
+    return res.status(500).json({ error: t('errors.serverError', locale) });
   }
 };
 
 // ── DELETE /api/user/analyses/:id ─────────────────────────────────────────────
 const deleteAnalysis = async (req, res) => {
+  const locale = getLocale(req);
+
   try {
     const analysis = await CaseAnalysis.findOneAndDelete({
       _id: req.params.id,
       userId: req.user.id,
     });
-    if (!analysis) return res.status(404).json({ error: 'Analysis not found' });
-    return res.json({ message: 'Analysis deleted' });
+    if (!analysis) return res.status(404).json({ error: t('user.analysisNotFound', locale) });
+    return res.json({ message: t('user.analysisDeleted', locale) });
   } catch (err) {
     console.error('deleteAnalysis error:', err);
-    return res.status(500).json({ error: 'Failed to delete analysis' });
+    return res.status(500).json({ error: t('errors.serverError', locale) });
   }
 };
 

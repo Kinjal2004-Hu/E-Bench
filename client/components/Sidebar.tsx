@@ -16,21 +16,7 @@ import {
     LogOut,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
-
-const navItems = [
-    { name: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
-    { name: "Cases", href: "/cases", icon: Scale },
-    { name: "Contracts", href: "/contracts", icon: FileText },
-    { name: "Consultation", href: "/chats/new", icon: Users },
-    { name: "Microlearning", href: "/microlearning", icon: GraduationCap },
-    { name: "Community", href: "/community", icon: Users },
-    { name: "Downloads", href: "/downloads", icon: Download },
-];
-
-const bottomNavItems = [
-    { name: "Settings", href: "/settings", icon: Settings },
-    { name: "User Profile", href: "/profile", icon: User },
-];
+import LanguageSelector from "./LanguageSelector";
 
 export default function Sidebar({
     isOpen,
@@ -41,6 +27,21 @@ export default function Sidebar({
 }) {
     const pathname = usePathname();
     const router = useRouter();
+
+    const navItems = [
+        { name: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
+        { name: "Cases", href: "/cases", icon: Scale },
+        { name: "Contracts", href: "/contracts", icon: FileText },
+        { name: "Consultation", href: "/chats/new", icon: Users },
+        { name: "Microlearning", href: "/microlearning", icon: GraduationCap },
+        { name: "Community", href: "/community", icon: Users },
+        { name: "Downloads", href: "/downloads", icon: Download },
+    ];
+
+    const bottomNavItems = [
+        { name: "Settings", href: "/settings", icon: Settings },
+        { name: "Profile", href: "/profile", icon: User },
+    ];
 
     function handleLogout() {
         localStorage.removeItem("token");
@@ -100,6 +101,13 @@ export default function Sidebar({
                     );
                 })}
             </nav>
+
+            {/* Language Selector */}
+            {isOpen && (
+                <div className="py-3 px-3 border-t border-[#1C4D8D]/50">
+                    <LanguageSelector />
+                </div>
+            )}
 
             {/* Bottom Nav */}
             <div className="py-4 px-3 border-t border-[#1C4D8D]/50 flex flex-col gap-1">
