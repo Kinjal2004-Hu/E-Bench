@@ -1,9 +1,13 @@
 import json
 import re
 import html
+import sys
 import numpy as np
 from pathlib import Path
 from typing import List, Optional
+
+if sys.stdout.encoding != 'utf-8':
+    sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 
 import httpx
 import pdfplumber
@@ -24,7 +28,7 @@ DOCUMENTS = {
     "BSA": "BSA2023.pdf",
     "Motor Vehicles Act": "MotorVehicleAct.pdf",
     "Corporate Laws": "CorporateLaws.pdf",
-    "Secuirities Laws": "SecuritiesLaws.pdf"
+    "Securities Laws": "SecurityLaw.pdf"
 }
 
 LLM_MODEL = "nvidia/nemotron-3-super-120b-a12b"
@@ -72,16 +76,31 @@ app.add_middleware(
 )
 
 SECTIONS = []
+CORPUS_META = []
 INDEX = None
 
 
 # ── Pydantic Models ──
+
+class SubClause(BaseModel):
+    id: str
+    text: str
+    type: str
+    level: int
+
+
+class Example(BaseModel):
+    id: str
+    text: str
+
 
 class SearchResult(BaseModel):
     document: str
     section_number: int
     title: str
     snippet: str
+    sub_clause: Optional[SubClause] = None
+    example: Optional[Example] = None
     punishment_summary: Optional[str] = None
     rights_summary: Optional[str] = None
     page: int
@@ -397,6 +416,122 @@ def chunk_text(text, chunk_size=220, overlap=40):
     return chunks
 
 
+def parse_sub_clauses(text):
+    """Parse section text into structured sub-clauses with numbered/lettered/roman nesting."""
+    if not text or len(text.strip()) < 5:
+        return []
+
+    clause_re = re.compile(r'(?:\s+|^)\((\d{1,3}|[a-z]|[ivxlcdm]{1,4})\)(?:\s+|$)')
+    matches = []
+    for m in clause_re.finditer(text):
+        cid = m.group(1)
+        if cid.isdigit() and 1 <= int(cid) <= 999:
+            matches.append((m, "numbered", 0))
+        elif cid.isalpha() and all(c in "ivxlcdm" for c in cid) and cid in ("i", "ii", "iii", "iv", "v", "vi", "vii", "viii", "ix", "x"):
+            matches.append((m, "roman", 2))
+        elif len(cid) == 1 and cid.isalpha() and cid >= 'a' and cid <= 'z' and cid not in ("i", "v", "x"):
+            matches.append((m, "lettered", 1))
+
+    if not matches:
+        return [{"id": "main", "text": text.strip(), "type": "text", "level": 0}]
+
+    sub_clauses = []
+    for i, (m, ctype, level) in enumerate(matches):
+        if i == 0:
+            preamble = text[:m.start()].strip()
+            if preamble:
+                sub_clauses.append({"id": "preamble", "text": preamble, "type": "preamble", "level": 0})
+        sc_start = m.end()
+        sc_end = matches[i + 1][0].start() if i + 1 < len(matches) else len(text)
+        sc_text = text[sc_start:sc_end].strip()
+        sub_clauses.append({"id": m.group(1), "text": sc_text, "type": ctype, "level": level})
+
+    return sub_clauses
+
+
+def parse_examples(text):
+    """Extract Illustration/Example blocks from section text."""
+    if not text:
+        return []
+
+    illus_match = re.search(r'Illustrations?\.', text)
+    if not illus_match:
+        return []
+
+    illus_text = text[illus_match.end():].strip()
+    ex_re = re.compile(r'\s*\(([a-z])\)\s+')
+    matches = list(ex_re.finditer(illus_text))
+
+    if not matches:
+        return [{"id": "illus", "text": illus_text}]
+
+    examples = []
+    for i, m in enumerate(matches):
+        ex_start = m.end()
+        ex_end = matches[i + 1].start() if i + 1 < len(matches) else len(illus_text)
+        examples.append({"id": f"illus_{m.group(1)}", "text": illus_text[ex_start:ex_end].strip()})
+
+    return examples
+
+
+def extract_sub_clauses_and_examples(text):
+    """Parse full section text into (sub_clauses, examples) tuples.
+
+    Handles: section preamble, (1)(2) numbered, (a)(b) lettered,
+             (i)(ii) roman, Explanation., Provided that, and Illustrations.
+    """
+    if not text or len(text.strip()) < 10:
+        return [], []
+
+    illus_match = re.search(r'Illustrations?\.', text)
+    main_text = text[:illus_match.start()].strip() if illus_match else text.strip()
+    illus_section = text[illus_match.start():] if illus_match else ""
+
+    expl_pattern = re.compile(r'Explanation\s*(\d*)\.\s*')
+
+    def _split_at_explanations(txt):
+        """Split text at Explanation boundaries, return list of (text, is_explanation, expl_number)."""
+        segments = []
+        matches = list(expl_pattern.finditer(txt))
+        if not matches:
+            if txt.strip():
+                segments.append((txt.strip(), False, None))
+            return segments
+        pos = 0
+        for i, m in enumerate(matches):
+            if pos < m.start():
+                before = txt[pos:m.start()].strip()
+                if before:
+                    segments.append((before, False, None))
+            expl_num = m.group(1) if m.group(1) else "1"
+            pos = m.end()
+            if i + 1 < len(matches):
+                expl_text = txt[pos:matches[i+1].start()].strip()
+            else:
+                expl_text = txt[pos:].strip() if pos < len(txt) else ""
+            if expl_text:
+                segments.append((expl_text, True, expl_num))
+            if i + 1 < len(matches):
+                pos = matches[i+1].start()
+        return segments
+
+    main_segments = _split_at_explanations(main_text)
+
+    sub_clauses = []
+    for seg_text, is_expl, expl_num in main_segments:
+        parsed = parse_sub_clauses(seg_text)
+        for sc in parsed:
+            if is_expl:
+                sc["type"] = "explanation"
+                sc["level"] = 0
+                sc["id"] = f"expl_{expl_num}"
+            sub_clauses.append(sc)
+
+    examples = parse_examples(illus_section)
+
+    return sub_clauses, examples
+
+
 def extract_sections():
 
     sections = []
@@ -426,16 +561,17 @@ def extract_sections():
                             if current:
 
                                 full_text = " ".join(text_buf)
+                                sub_clauses, examples = extract_sub_clauses_and_examples(full_text)
 
-                                for c in chunk_text(full_text):
-
-                                    sections.append({
-                                        "document": current["document"],
-                                        "section": current["section"],
-                                        "title": current["title"],
-                                        "text": c,
-                                        "page": current["page"]
-                                    })
+                                sections.append({
+                                    "document": current["document"],
+                                    "section": current["section"],
+                                    "title": current["title"],
+                                    "page": current["page"],
+                                    "full_text": full_text,
+                                    "sub_clauses": sub_clauses,
+                                    "examples": examples
+                                })
 
                             current = {
                                 "document": doc_name,
@@ -444,7 +580,7 @@ def extract_sections():
                                 "page": page_num + 1
                             }
 
-                            text_buf = [line]
+                            text_buf = []
 
                         else:
                             text_buf.append(line)
@@ -452,16 +588,17 @@ def extract_sections():
                 if current:
 
                     full_text = " ".join(text_buf)
+                    sub_clauses, examples = extract_sub_clauses_and_examples(full_text)
 
-                    for c in chunk_text(full_text):
-
-                        sections.append({
-                            "document": current["document"],
-                            "section": current["section"],
-                            "title": current["title"],
-                            "text": c,
-                            "page": current["page"]
-                        })
+                    sections.append({
+                        "document": current["document"],
+                        "section": current["section"],
+                        "title": current["title"],
+                        "page": current["page"],
+                        "full_text": full_text,
+                        "sub_clauses": sub_clauses,
+                        "examples": examples
+                    })
 
         except Exception as e:
             print("PDF parse error:", pdf_path, e)
@@ -469,26 +606,69 @@ def extract_sections():
     return sections
 
 
+def build_corpus(sections):
+    """Build flat corpus entries and metadata mapping from structured sections."""
+    corpus = []
+    meta = []
+
+    for sec_idx, sec in enumerate(sections):
+        doc_prefix = f"{sec['document']} Section {sec['section']} {sec['title']}"
+
+        sc_list = sec.get("sub_clauses", [])
+        is_purely_structural = (
+            len(sc_list) <= 1
+            and (len(sc_list) == 0 or sc_list[0].get("id") == "main")
+            and not sec.get("examples")
+        )
+
+        if is_purely_structural:
+            text = sec.get("full_text", "")
+            if text:
+                corpus.append(f"{doc_prefix}: {text}")
+                meta.append({"section_idx": sec_idx, "sub_clause_id": None, "example_id": None, "type": "section"})
+            continue
+
+        for sc in sec.get("sub_clauses", []):
+            if sc["id"] == "preamble":
+                prefix = doc_prefix
+            elif sc["type"] in ("numbered", "lettered", "roman"):
+                prefix = f"{doc_prefix} ({sc['id']})"
+            else:
+                prefix = doc_prefix
+
+            text = sc["text"]
+            if text and len(text) > 3:
+                corpus.append(f"{prefix}: {text}")
+                meta.append({"section_idx": sec_idx, "sub_clause_id": sc["id"], "example_id": None, "type": "sub_clause"})
+
+        for ex in sec.get("examples", []):
+            text = ex["text"]
+            if text and len(text) > 3:
+                corpus.append(f"{doc_prefix} - {ex['id']}: {text}")
+                meta.append({"section_idx": sec_idx, "sub_clause_id": None, "example_id": ex["id"], "type": "example"})
+
+    return corpus, meta
+
+
 def build_index():
 
-    global SECTIONS
+    global SECTIONS, CORPUS_META
 
     if SECTION_CACHE.exists():
 
         with open(SECTION_CACHE) as f:
             SECTIONS = json.load(f)
 
+        corpus, CORPUS_META = build_corpus(SECTIONS)
+
     else:
 
         SECTIONS = extract_sections()
 
         with open(SECTION_CACHE, "w") as f:
-            json.dump(SECTIONS, f)
+            json.dump(SECTIONS, f, indent=2)
 
-    corpus = [
-        f"{s['document']} Section {s['section']} {s['title']}: {s['text']}"
-        for s in SECTIONS
-    ]
+        corpus, CORPUS_META = build_corpus(SECTIONS)
 
     if EMBED_CACHE.exists():
 
@@ -499,7 +679,8 @@ def build_index():
         embeddings = embed_model.encode(
             corpus,
             normalize_embeddings=True,
-            show_progress_bar=True
+            show_progress_bar=True,
+            batch_size=128
         )
 
         np.save(EMBED_CACHE, embeddings)
@@ -516,6 +697,7 @@ def build_index():
         index.add(embeddings)
         faiss.write_index(index, str(FAISS_CACHE))
 
+    print(f"[build_index] {len(SECTIONS)} sections, {len(corpus)} corpus entries indexed", flush=True)
     return index
 
 
@@ -527,9 +709,22 @@ def retrieve(query, top_k=TOP_K_FINAL):
 
     vector_scores = raw_scores[0]
 
-    candidates = [SECTIONS[i] for i in ids[0]]
-
-    pairs = [(query, c["text"][:RERANK_TEXT_LEN]) for c in candidates]
+    pairs = []
+    valid_indices = []
+    for i in ids[0]:
+        meta = CORPUS_META[i]
+        sec = SECTIONS[meta["section_idx"]]
+        text = sec.get("full_text", "")
+        if meta["sub_clause_id"] and meta["sub_clause_id"] != "main":
+            match = [sc for sc in sec.get("sub_clauses", []) if sc["id"] == meta["sub_clause_id"]]
+            if match:
+                text = match[0]["text"]
+        elif meta["example_id"]:
+            match = [ex for ex in sec.get("examples", []) if ex["id"] == meta["example_id"]]
+            if match:
+                text = match[0]["text"]
+        pairs.append((query, text[:RERANK_TEXT_LEN]))
+        valid_indices.append(i)
 
     rerank_raw = reranker.predict(pairs)
 
@@ -546,7 +741,7 @@ def retrieve(query, top_k=TOP_K_FINAL):
     hybrid = VECTOR_WEIGHT * vector_norm + RERANK_WEIGHT * rerank_norm
 
     ranked = sorted(
-        zip(hybrid, vector_norm, rerank_norm, candidates),
+        zip(hybrid, vector_norm, rerank_norm, valid_indices),
         reverse=True
     )
 
@@ -554,7 +749,28 @@ def retrieve(query, top_k=TOP_K_FINAL):
 
     results = []
 
-    for h_score, v_score, r_score, sec in ranked:
+    for h_score, v_score, r_score, idx in ranked:
+
+        meta = CORPUS_META[idx]
+        sec = SECTIONS[meta["section_idx"]]
+
+        sub_clause = None
+        if meta["sub_clause_id"]:
+            match = [sc for sc in sec.get("sub_clauses", []) if sc["id"] == meta["sub_clause_id"]]
+            if match:
+                sub_clause = match[0]
+
+        example = None
+        if meta["example_id"]:
+            match = [ex for ex in sec.get("examples", []) if ex["id"] == meta["example_id"]]
+            if match:
+                example = match[0]
+
+        snippet_text = sec.get("full_text", "")[:400]
+        if sub_clause:
+            snippet_text = sub_clause["text"][:400]
+        elif example:
+            snippet_text = example["text"][:400]
 
         results.append({
             "score": float(h_score),
@@ -563,7 +779,10 @@ def retrieve(query, top_k=TOP_K_FINAL):
                 "vector_similarity": round(float(v_score), 4),
                 "reranker_relevance": round(float(r_score), 4)
             },
-            "section": sec
+            "section": sec,
+            "snippet": snippet_text,
+            "sub_clause": sub_clause,
+            "example": example
         })
 
     return results
@@ -819,7 +1038,8 @@ def ask_llm(question, sections, ik_results=None):
     context = ""
 
     for s in sections:
-        context += f"\n{s['document']} Section {s['section']} — {s['title']}\n{s['text']}\n"
+        sec_text = s.get("full_text") or " ".join(sc["text"] for sc in s.get("sub_clauses", []))
+        context += f"\n{s['document']} Section {s['section']} — {s['title']}\n{sec_text}\n"
 
     if ik_results:
         context += "\n--- Indian Kanoon Case Law ---\n"
@@ -836,29 +1056,15 @@ def ask_llm(question, sections, ik_results=None):
 
     print(f"[ask_llm] sending to LLM: question='{question[:100]}' sections={len(sections)} ik_results={len(ik_results or [])}", flush=True)
     try:
+        # Use non-streaming for faster response
         completion = client.chat.completions.create(
             model=LLM_MODEL,
             messages=messages,
-            temperature=0,
-            max_tokens=16384,
-            extra_body={"chat_template_kwargs": {"enable_thinking": True}, "reasoning_budget": 16384},
-            stream=True
+            temperature=0.7,
+            max_tokens=4096
         )
-        full_content = []
-        full_reasoning = []
-        for chunk in completion:
-            if not chunk.choices:
-                continue
-            reasoning = getattr(chunk.choices[0].delta, "reasoning_content", None)
-            if reasoning:
-                full_reasoning.append(reasoning)
-                print(reasoning, end="", flush=True)
-            if chunk.choices[0].delta.content is not None:
-                full_content.append(chunk.choices[0].delta.content)
-                print(chunk.choices[0].delta.content, end="", flush=True)
-        print("\n", flush=True)
-        answer = "".join(full_content)
-        print(f"[ask_llm] done: content_len={len(answer)} reasoning_len={len(''.join(full_reasoning))}", flush=True)
+        answer = completion.choices[0].message.content
+        print(f"[ask_llm] done: content_len={len(answer)}", flush=True)
         return answer
     except Exception as e:
         print(f"[ask_llm] ERROR: {e}", flush=True)
@@ -892,13 +1098,27 @@ def to_search_results(ranked):
 
     for r in ranked:
         sec = r["section"]
+        text_for_punishment = sec.get("full_text", "")
+        if r.get("sub_clause"):
+            text_for_punishment = r["sub_clause"]["text"]
+
+        sub_clause_model = None
+        if r.get("sub_clause"):
+            sub_clause_model = SubClause(**r["sub_clause"])
+
+        example_model = None
+        if r.get("example"):
+            example_model = Example(**r["example"])
+
         results.append(
             SearchResult(
                 document=sec["document"],
                 section_number=sec["section"],
                 title=sec["title"],
-                snippet=sec["text"][:400],
-                punishment_summary=extract_punishment(sec["text"]),
+                snippet=r.get("snippet", sec.get("full_text", "")[:400]),
+                sub_clause=sub_clause_model,
+                example=example_model,
+                punishment_summary=extract_punishment(text_for_punishment),
                 page=sec["page"],
                 score=r["score"],
                 score_breakdown=r["score_breakdown"]
@@ -995,7 +1215,8 @@ def ask_stream(body: AskRequest):
 
     context = ""
     for s in sections:
-        context += f"\n{s['document']} Section {s['section']} — {s['title']}\n{s['text']}\n"
+        sec_text = s.get("full_text") or " ".join(sc["text"] for sc in s.get("sub_clauses", []))
+        context += f"\n{s['document']} Section {s['section']} — {s['title']}\n{sec_text}\n"
     if ik_raw:
         context += "\n--- Indian Kanoon Case Law ---\n"
         for ik in ik_raw:
@@ -1006,7 +1227,7 @@ def ask_stream(body: AskRequest):
         {"role": "user", "content": f"Question: {body.question}\n\nRelevant law:\n{context}"}
     ]
 
-    sections_meta = [{"document": s["document"], "section_number": s["section"], "title": s["title"], "snippet": s["text"][:400]} for s in sections]
+    sections_meta = [{"document": s["document"], "section_number": s["section"], "title": s["title"], "snippet": (s.get("full_text") or "")[:400]} for s in sections]
     ik_meta = [{"doc_id": d["doc_id"], "title": d["title"], "headline": d.get("headline", "")} for d in ik_raw]
 
     def event_stream():
@@ -1229,13 +1450,17 @@ def section(number: int):
         [s]
     )
 
+    text_for_punishment = s.get("full_text") or " ".join(sc["text"] for sc in s.get("sub_clauses", []))
+
     return {
         "document": s["document"],
         "section": s["section"],
         "title": s["title"],
         "page": s["page"],
-        "text": s["text"],
-        "punishment_summary": extract_punishment(s["text"]),
+        "full_text": s.get("full_text", ""),
+        "sub_clauses": s.get("sub_clauses", []),
+        "examples": s.get("examples", []),
+        "punishment_summary": extract_punishment(text_for_punishment),
         "ai_explanation": explanation
     }
 
@@ -1247,7 +1472,7 @@ def list_sections(keyword: Optional[str] = None, limit: int = 20):
 
     for s in SECTIONS:
 
-        if keyword and keyword.lower() not in (s["text"] + s["title"]).lower():
+        if keyword and keyword.lower() not in ((s.get("full_text") or "") + s["title"]).lower():
             continue
 
         out.append({
@@ -1274,7 +1499,8 @@ def punishment(offense: str):
 
         sec = r["section"]
 
-        p = extract_punishment(sec["text"])
+        text_for_pun = sec.get("full_text") or " ".join(sc["text"] for sc in sec.get("sub_clauses", []))
+        p = extract_punishment(text_for_pun)
 
         if p:
 
@@ -1537,7 +1763,7 @@ def legal_news_to_lesson(body: NewsToLessonRequest):
 
     # Generate microlearning lesson
     lesson_title = f"Understanding {legal_topic}"
-    lesson_law_text = "\n\n".join([f"{s['document']} Section {s['section']} — {s['title']}\n{s['text'][:500]}" for s in sections[:3]])
+    lesson_law_text = "\n\n".join([f"{s['document']} Section {s['section']} — {s['title']}\n{(s.get('full_text') or '')[:500]}" for s in sections[:3]])
     lesson_simple = (
         f"This lesson explains '{legal_topic}' in the context of recent legal news. "
         f"Key statutes include relevant sections from the Bharatiya Nyaya Sanhita and related acts. "
@@ -1590,15 +1816,24 @@ def legal_news_to_lesson(body: NewsToLessonRequest):
 def stats():
 
     doc_counts = {}
+    sub_clause_counts = {}
+    example_counts = {}
+    corpus_entries = len(CORPUS_META) if CORPUS_META else 0
 
     for s in SECTIONS:
-
-        doc_counts[s["document"]] = doc_counts.get(s["document"], 0) + 1
+        doc = s["document"]
+        doc_counts[doc] = doc_counts.get(doc, 0) + 1
+        sub_clause_counts[doc] = sub_clause_counts.get(doc, 0) + len(s.get("sub_clauses", []))
+        example_counts[doc] = example_counts.get(doc, 0) + len(s.get("examples", []))
 
     return {
         "sections_indexed": len(SECTIONS),
+        "corpus_entries": corpus_entries,
         "documents": list(DOCUMENTS.keys()),
         "sections_per_document": doc_counts,
+        "sub_clauses_per_document": sub_clause_counts,
+        "examples_per_document": example_counts,
+        "index_type": "semantic_rag_sub_clause",
         "vector_model": "bge-base-en-v1.5",
         "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2",
         "llm": LLM_MODEL,
