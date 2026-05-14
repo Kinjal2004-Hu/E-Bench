@@ -270,6 +270,7 @@ export default function CasesPage() {
           ))}
         </div>
       </div>
+      </div>
 
       {statusMsg ? <p className="text-sm text-emerald-700 bg-emerald-50 border border-emerald-200 rounded-lg px-4 py-2">{statusMsg}</p> : null}
 

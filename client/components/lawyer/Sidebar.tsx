@@ -20,6 +20,10 @@ import {
   PanelLeftClose,
   PanelLeftOpen,
   LogOut,
+  Brain,
+  Newspaper,
+  ShieldCheck,
+  MessageSquareText,
 } from "lucide-react";
 import { useState } from "react";
 
@@ -29,8 +33,11 @@ const NAV = [
   { label: "Appointments",           href: "/lawyer-dashboard/appointments",  icon: CalendarDays },
   { label: "Client Chat",            href: "/lawyer-dashboard/chat",          icon: MessageSquare },
   { label: "Case Files",             href: "/lawyer-dashboard/case-files",    icon: FolderOpen },
+  { label: "AI Legal Chat",          href: "/chat",                           icon: MessageSquareText },
+  { label: "Case Analyzer",          href: "/tools/case-analyzer",            icon: Brain },
+  { label: "Risk Analyzer",          href: "/tools/risk-analyzer",            icon: ShieldCheck },
   { label: "Contracts",              href: "/contracts",                      icon: FileText },
-  { label: "Microlearning",          href: "/microlearning",                  icon: GraduationCap },
+  { label: "Legal News",             href: "/free-tools/news",               icon: Newspaper },
   { label: "Community Forum",        href: "/community",                      icon: Users },
   { label: "Downloads",              href: "/downloads",                      icon: Download },
 ];
