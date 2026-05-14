@@ -31,7 +31,7 @@
             ┌───────────────────────────────────────────────────────────┐
             │          Python FastAPI RAG Server  :8000                 │
             │  FAISS + BGE embeddings + CrossEncoder +                 │
-            │  Qwen2.5-7B-Instruct via Bytez + Indian Kanoon API       │
+            │  Nemotron-3 120B via NVIDIA NIM + Indian Kanoon API      │
             └───────────────────────────────────────────────────────────┘
 ```
 
@@ -84,14 +84,16 @@ The frontend calls **both** the Express backend (for auth / CRUD / chat) and the
 ### RAG AI Server (`/RAG`)
 | Layer | Technology |
 |---|---|
-| Framework | FastAPI (Python) |
-| Embeddings | sentence-transformers — BAAI/bge-base-en-v1.5 (768-dim) |
-| Vector Search | FAISS (IndexFlatIP, inner product) |
-| Reranker | CrossEncoder ms-marco-MiniLM-L-6-v2 |
-| LLM | Qwen/Qwen2.5-7B-Instruct via Bytez API |
+| Framework | FastAPI (Python) — async endpoints with `asyncio.gather` for parallel IO |
+| Embeddings | sentence-transformers — BAAI/bge-large-en-v1.5 (1024-dim) |
+| Vector Search | FAISS (IndexFlatIP, inner product), top-30 retrieval |
+| Reranker | CrossEncoder ms-marco-MiniLM-L-12-v2 |
+| LLM | NVIDIA Nemotron-3 Super 120B (via NVIDIA NIM API) |
 | Case Law | Indian Kanoon REST API (api.indiankanoon.org) |
 | PDF Extraction | pdfplumber |
 | **Semantic RAG** | **Structured extraction: section → sub-clause → example** |
+| **Diversity** | MMR (Max Marginal Relevance, λ=0.5) via FAISS reconstruct |
+| **Caching** | `@lru_cache(maxsize=256)` on retrieval for frequent queries |
 
 ---
 
@@ -186,7 +188,7 @@ E-Bench/
 │   │   ├── downloadHistory.ts        # localStorage PDF download history manager
 │   │   ├── documentText.ts           # Extract text from PDF/DOCX/TXT files
 │   │   ├── forum-data.ts             # Static fallback forum data + TypeScript types
-│   │   ├── microlearning-data.ts     # Static microlearning lesson data
+│   │   ├── microlearning-data.ts     # Static microlearning lesson data + per-lesson quiz questions
 │   │   ├── utils.ts                  # cn() className helper
 │   │   └── useReveal.ts             # Scroll reveal animation hook
 │   │
@@ -495,12 +497,13 @@ Register/Login → POST /api/auth/register-user (or login-user)
 User types question in chat/page.tsx
   → POST http://localhost:8000/ask { question, top_k: 7 }
   → RAG Server (main.py):
-    1. Embed query with BAAI/bge-base-en-v1.5
-    2. FAISS top-60 vector search across statute sections
+    1. Embed query with BAAI/bge-large-en-v1.5
+    2. FAISS top-30 vector search across statute sections
     3. CrossEncoder reranks to top-7 with hybrid score: 0.35×vector + 0.65×rerank
-    4. Relevant sections → context window
+    4. MMR diversity selects diverse sections
+    5. Relevant sections → context window
     5. Retrieve top Indian Kanoon results for supplementary case law
-    6. Qwen2.5-7B-Instruct generates grounded answer with citations
+    6. Nemotron-3 generates grounded answer with citations
   → Response { ai_answer, supporting_sections[], user_rights[], legal_steps[], indian_kanoon_results[] }
   → FormattedAiText renders markdown (headings, bold, bullets, numbers, blockquotes)
 ```
@@ -646,9 +649,9 @@ REST-based community forum:
 | Consultation (Chat + Video) | `/chats/new` | Select lawyer → Pay → Real-time chat or WebRTC video call |
 | Community Forum | `/community` | Posts, replies, upvotes, categories, reputation |
 | Know Your Rights | `/free-tools/law-awareness` | 5 constitutional rights guides (Art 14, 19, 21, 22, 32) |
-| Microlearning | `/microlearning` | Bite-sized legal lessons by topic; progress saved to backend |
+| Microlearning | `/microlearning` | Bite-sized legal lessons by topic; per-lesson AI-generated RAG Q&A; lesson-specific quiz questions; progress synced with backend API |
 | Legal News | `/free-tools/news` | Curated legal news headlines (live from Indian Kanoon via RAG) |
-| News Detail | `/free-tools/news/[id]` | Full news → legal topic → sections → explanation → microlearning lesson pipeline |
+| News Detail | `/free-tools/news/[id]` | Full news → legal topic → sections → explanation → microlearning lesson pipeline; completed news lessons appear in microlearning library |
 | Profile | `/profile` | Edit personal details |
 | Settings | `/settings` | Account settings |
 
@@ -697,7 +700,7 @@ REST-based community forum:
    - Each sub-clause becomes an independent corpus entry prefixed with full context: `"Document Section N(ID) Title: text"`
    - Each illustration becomes a separate corpus entry: `"Document Section N Title - illus_id: text"`
    - Sections with no sub-clauses use full text as a single entry
-4. Embed each corpus entry with `BAAI/bge-base-en-v1.5` SentenceTransformer
+4. Embed each corpus entry with `BAAI/bge-large-en-v1.5` SentenceTransformer
 5. Store in FAISS `IndexFlatIP` (inner product / cosine similarity)
 6. Maintain a `CORPUS_META` mapping to trace each embedding back to its parent section + sub-clause/example
 7. Cache artifacts to disk: `law_sections.json` (structured), `law_embeddings.npy`, `law_faiss.index`
@@ -748,16 +751,17 @@ class SearchResult(BaseModel):
 
 **Retrieval:**
 1. Embed query with same model
-2. FAISS retrieves top 60 candidates by vector similarity (searches sub-clause-level corpus)
+2. FAISS retrieves top 30 candidates by vector similarity (searches sub-clause-level corpus)
 3. Map each candidate back to parent section + specific sub-clause/example via `CORPUS_META`
-4. CrossEncoder reranks all 60 pairs (query, sub-clause text)
+4. CrossEncoder reranks all 30 pairs (query, sub-clause text)
 5. Hybrid score = `0.35 × vector_norm + 0.65 × reranker_sigmoid`
 6. Filter: keep only hybrid score > 0.35
-7. Return top `top_k` (default 7) results with both section-level and sub-clause-level metadata
+7. MMR diversity (λ=0.5) selects top `top_k` results with diverse section coverage
+8. Return top `top_k` (default 7) results with both section-level and sub-clause-level metadata
 
 **Generation:**
 - Context: retrieved sub-clause/section texts + Indian Kanoon results
-- LLM: `Qwen/Qwen2.5-7B-Instruct` via Bytez SDK
+- LLM: `nvidia/nemotron-3-super-120b-a12b` via NVIDIA NIM API
 - System prompt: cites Act names, section numbers, and specific sub-clauses
 - Returns: `ai_answer`, `supporting_sections[]` (with sub_clause/example), `user_rights[]`, `legal_steps[]`, `indian_kanoon_results[]`
 
@@ -855,14 +859,14 @@ class SearchResult(BaseModel):
 5. **Hybrid retrieval** — FAISS + CrossEncoder combination outperforms pure vector search for legal queries
 6. **WebRTC peer-to-peer** — video calls don't route through server; backend only handles signaling
 7. **localStorage persistence** — chat history (`ebench_chats`), PDF downloads (`ebench_pdf_downloads`), video call history, AI chat IDs
-8. **Static mock data** — Forum and microlearning use static data from `lib/forum-data.ts` and `lib/microlearning-data.ts`; API routes exist but aren't fully wired
+8. **Static mock data** — Forum uses static data from `lib/forum-data.ts`. Microlearning lessons live in `lib/microlearning-data.ts` with per-lesson quiz questions and can be supplemented by news-generated lessons from the `POST /legal-news/to-lesson` RAG pipeline, tracked via the progress API with `source: "news"`.
 9. **Live legal news** — News page fetches from RAG POST /legal-news/trending (Indian Kanoon API); news detail dynamically generates microlearning lessons
 10. **Backend learning progress** — `LearningProgressModel` persists lesson completions and daily streak server-side; frontend falls back to localStorage if backend unreachable
 11. **Dark/light theme** — inline CSS-in-JS with CSS custom properties, toggle stored in sidebar layout
 12. **Socket.IO in lawyer layout** — persistent listener across all lawyer pages for incoming call notifications
 13. **Google Translate widget** — on-page translation via `googtrans` cookie approach; available in English, Hindi, Marathi in both sidebar and navbar
 14. **Chrome Extension as standalone product** — T&C Analyzer and IndianLegal Chat work independently of the main web app, calling backend NVIDIA API directly
-15. **Semantic RAG (sub-clause level indexing)** — Instead of blind 220-word chunking, the pipeline parses legal PDFs into structured components (section → sub-clause → example). Each sub-clause and illustration becomes an independent corpus entry, enabling precise retrieval of specific legal provisions. The embedding corpus includes the full hierarchical context (`Section 4(1)(a) Punishments`) for accurate semantic matching, and retrieved results carry structured metadata down to the individual clause level.
+15. **Semantic RAG (sub-clause level indexing)** — Instead of blind 220-word chunking, the pipeline parses legal PDFs into structured components (section → sub-clause → example). Each sub-clause and illustration becomes an independent corpus entry, enabling precise retrieval of specific legal provisions. The embedding corpus includes the full hierarchical context (`Section 4(1)(a) Punishments`) for accurate semantic matching, and retrieved results carry structured metadata down to the individual clause level. MMR diversity (λ=0.5) ensures section diversity in results, and LRU caching (256 entries) speeds up repeated queries.
 
 ---
 
@@ -873,9 +877,12 @@ class SearchResult(BaseModel):
 The Semantic RAG pipeline is fully operational with the following components:
 - **757 sections** indexed across 4 legal documents
 - **3,188 corpus entries** (sub-clauses + examples as separate entries)
-- **768-dimensional embeddings** via BAAI/bge-base-en-v1.5
+- **1024-dimensional embeddings** via BAAI/bge-large-en-v1.5
 - **FAISS IndexFlatIP** for vector search
 - **CrossEncoder reranking** with hybrid scores (0.35×vector + 0.65×rerank)
+- **MMR diversity** (λ=0.5) for diverse section coverage
+- **LRU query cache** (maxsize=256) for frequent queries
+- **Async endpoints** with parallel IO via `asyncio.gather`
 
 **Indexed Documents:**
 - BNS2023.pdf (Bharatiya Nyaya Sanhita 2023) - slow extraction due to Devanagari text
@@ -885,8 +892,8 @@ The Semantic RAG pipeline is fully operational with the following components:
 
 **Cache Files Generated:**
 - `law_sections.json` (3.1 MB) - structured sections with sub_clauses[] and examples[]
-- `law_embeddings.npy` (9.8 MB) - 3188 × 768 embeddings
-- `law_faiss.index` (9.8 MB) - FAISS index
+- `law_embeddings.npy` (13 MB) - 3188 × 1024 embeddings
+- `law_faiss.index` (13 MB) - FAISS index
 
 **Retrieval Test Results:**
 ```

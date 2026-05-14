@@ -3,25 +3,19 @@
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
-import { BarChart3, BookOpen, Flame, GraduationCap, Lock, PlayCircle, Search, Sparkles } from "lucide-react";
+import { BarChart3, BookOpen, ExternalLink, Flame, GraduationCap, Lock, PlayCircle, Search, Sparkles } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Progress } from "@/components/ui/progress";
 import { lessonOfTheDayId, microLessons, type LessonStatus } from "@/lib/microlearning-data";
-import { fetchLearningProgress, type LearningProgress } from "@/lib/userApi";
+import { fetchLearningProgress } from "@/lib/userApi";
 
 const COMPLETED_KEY = "ebench_microlearning_completed_lessons";
 const QUIZ_PROGRESS_KEY = "ebench_microlearning_quiz_progress";
 
-const statusMeta: Record<
-  LessonStatus,
-  {
-    label: string;
-    className: string;
-  }
-> = {
+const statusMeta: Record<LessonStatus, { label: string; className: string }> = {
   completed: { label: "Completed", className: "bg-emerald-50 text-emerald-700" },
   "in-progress": { label: "In Progress", className: "bg-amber-50 text-amber-700" },
   locked: { label: "Locked", className: "bg-slate-100 text-slate-600" },
@@ -33,12 +27,8 @@ const difficultyMeta = {
 } as const;
 
 function LessonCardIcon({ status }: { status: LessonStatus }) {
-  if (status === "completed") {
-    return <BookOpen className="h-5 w-5 text-emerald-700" />;
-  }
-  if (status === "locked") {
-    return <Lock className="h-5 w-5 text-slate-500" />;
-  }
+  if (status === "completed") return <BookOpen className="h-5 w-5 text-emerald-700" />;
+  if (status === "locked") return <Lock className="h-5 w-5 text-slate-500" />;
   return <PlayCircle className="h-5 w-5 text-[#C49A10]" />;
 }
 
@@ -47,88 +37,91 @@ export default function MicrolearningLibraryPage() {
   const [query, setQuery] = useState("");
   const [completedIds, setCompletedIds] = useState<string[]>([]);
   const [quizProgress, setQuizProgress] = useState<Record<string, Record<string, string>>>({});
-  const [backendProgress, setBackendProgress] = useState<LearningProgress | null>(null);
-  const [streakDays, setStreakDays] = useState(3);
+  const [streakDays, setStreakDays] = useState(0);
+  const [newsLessonIds, setNewsLessonIds] = useState<string[]>([]);
+  const [dataLoaded, setDataLoaded] = useState(false);
 
   useEffect(() => {
-    try {
-      const completedRaw = localStorage.getItem(COMPLETED_KEY);
-      const completed = completedRaw ? (JSON.parse(completedRaw) as string[]) : [];
-      setCompletedIds(Array.isArray(completed) ? completed : []);
+    let cancelled = false;
 
-      const progressRaw = localStorage.getItem(QUIZ_PROGRESS_KEY);
-      const progress = progressRaw ? (JSON.parse(progressRaw) as Record<string, Record<string, string>>) : {};
-      setQuizProgress(progress && typeof progress === "object" ? progress : {});
-    } catch {
-      setCompletedIds([]);
-      setQuizProgress({});
-    }
+    const loadProgress = async () => {
+      let localCompleted: string[] = [];
+      let localQuiz: Record<string, Record<string, string>> = {};
+      try {
+        const completedRaw = localStorage.getItem(COMPLETED_KEY);
+        localCompleted = completedRaw ? (JSON.parse(completedRaw) as string[]) : [];
+        const progressRaw = localStorage.getItem(QUIZ_PROGRESS_KEY);
+        localQuiz = progressRaw ? (JSON.parse(progressRaw) as Record<string, Record<string, string>>) : {};
+      } catch {}
 
-    fetchLearningProgress()
-      .then((data) => {
-        setBackendProgress(data);
-        setStreakDays(data.dailyStreak?.current || 0);
-        const backendCompleted = (data.lessons || [])
+      try {
+        const backend = await fetchLearningProgress();
+        if (cancelled) return;
+
+        setStreakDays(backend.dailyStreak?.current || 0);
+
+        const backendCompleted = (backend.lessons || [])
           .filter(l => l.completed)
           .map(l => l.lessonId);
-        setCompletedIds(prev => {
-          const merged = new Set([...prev, ...backendCompleted]);
-          return Array.from(merged);
-        });
-      })
-      .catch(() => { /* fallback to localStorage */ });
+
+        const newsLessons = (backend.lessons || [])
+          .filter(l => l.source === "news" && l.completed)
+          .map(l => l.lessonId);
+        setNewsLessonIds(newsLessons);
+
+        const merged = new Set([...localCompleted, ...backendCompleted]);
+        setCompletedIds(Array.from(merged));
+      } catch {
+        if (cancelled) return;
+        setCompletedIds(Array.isArray(localCompleted) ? localCompleted : []);
+      }
+
+      setQuizProgress(localQuiz && typeof localQuiz === "object" ? localQuiz : {});
+      setDataLoaded(true);
+    };
+
+    loadProgress();
+    return () => { cancelled = true; };
   }, []);
 
   const lessonsWithProgress = useMemo(() => {
     return microLessons.map((lesson) => {
       const storedAnswers = quizProgress[lesson.id] || {};
       const answeredCount = Object.keys(storedAnswers).length;
-      const quizPercent = Math.min(100, Math.round((answeredCount / 2) * 100));
+      const totalQuiz = lesson.quiz?.length || 2;
+      const quizPercent = Math.min(100, Math.round((answeredCount / totalQuiz) * 100));
 
-      const isCompleted = lesson.status === "completed" || completedIds.includes(lesson.id);
+      const isCompleted = completedIds.includes(lesson.id);
+      const progress = lesson.status === "locked" ? 0 : isCompleted ? 100 : quizPercent > 0 ? quizPercent : lesson.status === "in-progress" ? 40 : 0;
+      const status: LessonStatus = lesson.status === "locked" ? "locked" : isCompleted ? "completed" : "in-progress";
 
-      const progress = lesson.status === "locked"
-        ? 0
-        : isCompleted
-          ? 100
-          : quizPercent > 0
-            ? quizPercent
-            : lesson.status === "in-progress"
-              ? 40
-              : 0;
-
-      const status: LessonStatus = lesson.status === "locked"
-        ? "locked"
-        : isCompleted
-          ? "completed"
-          : "in-progress";
-
-      return {
-        ...lesson,
-        status,
-        progress,
-      };
+      return { ...lesson, status, progress };
     });
   }, [completedIds, quizProgress]);
 
-  const completedLessons = lessonsWithProgress.filter((lesson) => lesson.status === "completed").length;
-  const inProgressLessons = lessonsWithProgress.filter((lesson) => lesson.status === "in-progress").length;
+  const completedLessons = lessonsWithProgress.filter((l) => l.status === "completed").length;
+  const inProgressLessons = lessonsWithProgress.filter((l) => l.status === "in-progress").length;
   const totalLessons = lessonsWithProgress.length;
-  const progressPercentage = Math.round((completedLessons / totalLessons) * 100);
+  const totalWithNews = totalLessons + newsLessonIds.length;
+  const progressPercentage = Math.round((completedLessons / Math.max(totalLessons, 1)) * 100);
 
-  const lessonOfTheDay = lessonsWithProgress.find((lesson) => lesson.id === lessonOfTheDayId) || lessonsWithProgress[0];
+  const lessonOfTheDay = lessonsWithProgress.find((l) => l.id === lessonOfTheDayId) || lessonsWithProgress[0];
 
   const filteredLessons = useMemo(() => {
     const normalized = query.trim().toLowerCase();
-    if (!normalized) {
-      return lessonsWithProgress;
-    }
-
-    return lessonsWithProgress.filter((lesson) => {
-      const haystack = `${lesson.title} ${lesson.description} ${lesson.difficulty}`.toLowerCase();
-      return haystack.includes(normalized);
-    });
+    if (!normalized) return lessonsWithProgress;
+    return lessonsWithProgress.filter((l) =>
+      `${l.title} ${l.description} ${l.difficulty}`.toLowerCase().includes(normalized)
+    );
   }, [query, lessonsWithProgress]);
+
+  if (!dataLoaded) {
+    return (
+      <div className="min-h-screen bg-[#EDE8DF] flex items-center justify-center">
+        <p className="text-slate-500 text-sm">Loading lessons...</p>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-[#EDE8DF]">
@@ -198,6 +191,31 @@ export default function MicrolearningLibraryPage() {
             <p className="text-xs text-slate-500">{inProgressLessons} lesson(s) currently in progress.</p>
           </CardContent>
         </Card>
+
+        {newsLessonIds.length > 0 && (
+          <Card className="rounded-xl border p-0 shadow-sm border-l-4 border-l-[#C49A10]">
+            <CardContent className="p-5 flex items-center justify-between gap-3">
+              <div className="flex items-center gap-3">
+                <Sparkles className="h-5 w-5 text-[#C49A10]" />
+                <div>
+                  <p className="text-sm font-semibold text-[#1C2333]">
+                    {newsLessonIds.length} News-Backed Lesson{newsLessonIds.length > 1 ? "s" : ""} Completed
+                  </p>
+                  <p className="text-xs text-slate-500">Lessons generated from live legal news via AI</p>
+                </div>
+              </div>
+              <Button
+                type="button"
+                variant="outline"
+                className="rounded-lg"
+                onClick={() => router.push("/free-tools/news")}
+              >
+                <ExternalLink className="h-4 w-4" />
+                Browse News
+              </Button>
+            </CardContent>
+          </Card>
+        )}
 
         <Card className="rounded-xl border p-0 shadow-sm hover:shadow-md transition-all duration-200">
           <CardHeader>

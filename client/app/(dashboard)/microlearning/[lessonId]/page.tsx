@@ -1,9 +1,9 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
-import { ArrowLeft, BookOpen, Brain, HelpCircle, Lightbulb, Loader2, Scale, CheckCircle2 } from "lucide-react";
+import { ArrowLeft, BookOpen, Brain, CheckCircle2, HelpCircle, Lightbulb, Loader2, Scale } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -11,50 +11,11 @@ import { Input } from "@/components/ui/input";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Progress } from "@/components/ui/progress";
 import { microLessons } from "@/lib/microlearning-data";
-import { saveLessonProgress, saveQuizProgress } from "@/lib/userApi";
+import { fetchLearningProgress, saveLessonProgress, saveQuizProgress } from "@/lib/userApi";
+import type { QuizQuestion } from "@/lib/microlearning-data";
 
 const COMPLETED_KEY = "ebench_microlearning_completed_lessons";
 const QUIZ_PROGRESS_KEY = "ebench_microlearning_quiz_progress";
-
-type QuizOption = {
-  id: string;
-  label: string;
-};
-
-type QuizQuestion = {
-  id: string;
-  question: string;
-  options: QuizOption[];
-  correctOptionId: string;
-  explanation: string;
-};
-
-const defaultQuiz: QuizQuestion[] = [
-  {
-    id: "q1",
-    question: "Which legal concept is the core focus of this lesson?",
-    options: [
-      { id: "a", label: "Tax filing compliance" },
-      { id: "b", label: "Fundamental rights and legal procedure" },
-      { id: "c", label: "International trade tariffs" },
-      { id: "d", label: "Company share allotment" },
-    ],
-    correctOptionId: "b",
-    explanation: "This lesson focuses on core legal rights/procedure concepts in practical scenarios.",
-  },
-  {
-    id: "q2",
-    question: "What is the best first action after identifying a potential rights violation?",
-    options: [
-      { id: "a", label: "Ignore and wait" },
-      { id: "b", label: "Collect facts and seek legal remedy promptly" },
-      { id: "c", label: "Share only on social media" },
-      { id: "d", label: "Sign unrelated settlement immediately" },
-    ],
-    correctOptionId: "b",
-    explanation: "Timely documentation and proper legal steps improve outcomes significantly.",
-  },
-];
 
 export default function MicrolearningLessonPage() {
   const router = useRouter();
@@ -72,32 +33,62 @@ export default function MicrolearningLessonPage() {
   const [completionMsg, setCompletionMsg] = useState("");
 
   const lesson = useMemo(() => microLessons.find((item) => item.id === lessonId), [lessonId]);
+  const quizQuestions: QuizQuestion[] = lesson?.quiz || [];
 
   const score = useMemo(() => {
-    return defaultQuiz.reduce((acc, question) => {
+    return quizQuestions.reduce((acc, question) => {
       return answers[question.id] === question.correctOptionId ? acc + 1 : acc;
     }, 0);
-  }, [answers]);
+  }, [answers, quizQuestions]);
 
   const answeredCount = useMemo(() => Object.keys(answers).length, [answers]);
-  const allQuestionsAnswered = answeredCount === defaultQuiz.length;
-  const quizProgress = Math.round((answeredCount / defaultQuiz.length) * 100);
+  const allQuestionsAnswered = answeredCount === quizQuestions.length;
+  const quizProgress = Math.round((answeredCount / Math.max(quizQuestions.length, 1)) * 100);
 
   useEffect(() => {
     if (!lesson) return;
-    try {
-      const progressRaw = localStorage.getItem(QUIZ_PROGRESS_KEY);
-      const progress = progressRaw ? (JSON.parse(progressRaw) as Record<string, Record<string, string>>) : {};
-      const savedAnswers = progress[lesson.id] || {};
-      setAnswers(savedAnswers);
 
-      const completedRaw = localStorage.getItem(COMPLETED_KEY);
-      const completedLessons = completedRaw ? (JSON.parse(completedRaw) as string[]) : [];
-      setCompleted(lesson.status === "completed" || completedLessons.includes(lesson.id));
-    } catch {
-      setAnswers({});
-      setCompleted(lesson.status === "completed");
-    }
+    const loadProgress = async () => {
+      try {
+        const backend = await fetchLearningProgress();
+        const backendLesson = (backend.lessons || []).find(l => l.lessonId === lesson.id);
+        if (backendLesson) {
+          if (backendLesson.completed) setCompleted(true);
+          if (backendLesson.quizAnswers?.length) {
+            const restored: Record<string, string> = {};
+            for (const qa of backendLesson.quizAnswers) {
+              restored[qa.questionId] = qa.selectedOption;
+            }
+            if (Object.keys(restored).length > 0) {
+              setAnswers(restored);
+              try {
+                const progressRaw = localStorage.getItem(QUIZ_PROGRESS_KEY);
+                const progress = progressRaw ? JSON.parse(progressRaw) : {};
+                progress[lesson.id] = restored;
+                localStorage.setItem(QUIZ_PROGRESS_KEY, JSON.stringify(progress));
+              } catch { }
+              return;
+            }
+          }
+        }
+      } catch { }
+
+      try {
+        const progressRaw = localStorage.getItem(QUIZ_PROGRESS_KEY);
+        const progress = progressRaw ? (JSON.parse(progressRaw) as Record<string, Record<string, string>>) : {};
+        const savedAnswers = progress[lesson.id] || {};
+        setAnswers(savedAnswers);
+
+        const completedRaw = localStorage.getItem(COMPLETED_KEY);
+        const completedLessons = completedRaw ? (JSON.parse(completedRaw) as string[]) : [];
+        setCompleted(completedLessons.includes(lesson.id));
+      } catch {
+        setAnswers({});
+        setCompleted(false);
+      }
+    };
+
+    loadProgress();
   }, [lesson]);
 
   const handleSelectAnswer = (questionId: string, optionId: string) => {
@@ -110,9 +101,7 @@ export default function MicrolearningLessonPage() {
       const progress = progressRaw ? (JSON.parse(progressRaw) as Record<string, Record<string, string>>) : {};
       progress[lesson.id] = next;
       localStorage.setItem(QUIZ_PROGRESS_KEY, JSON.stringify(progress));
-    } catch {
-      // no-op
-    }
+    } catch { }
   };
 
   const markCourseCompleted = () => {
@@ -128,12 +117,12 @@ export default function MicrolearningLessonPage() {
       setCompleted(true);
       setCompletionMsg("Course marked as completed.");
     } catch {
-      setCompletionMsg("Course completion saved for this session.");
+      setCompletionMsg("Course completion saved.");
       setCompleted(true);
     }
 
     saveLessonProgress({ lessonId: lesson.id, lessonTitle: lesson.title, source: "static" }).catch(() => {});
-    const quizEntries = defaultQuiz.map((q) => ({
+    const quizEntries = quizQuestions.map((q) => ({
       questionId: q.id,
       selectedOption: answers[q.id] || "",
       correct: answers[q.id] === q.correctOptionId,
@@ -149,11 +138,8 @@ export default function MicrolearningLessonPage() {
     }).catch(() => {});
   };
 
-  const callMicrolearningAi = async (question: string) => {
-    if (!lesson) {
-      return;
-    }
-
+  const callMicrolearningAi = useCallback(async (question: string) => {
+    if (!lesson) return;
     setAiLoading(true);
     setAiError(null);
 
@@ -170,11 +156,9 @@ export default function MicrolearningLessonPage() {
         }),
       });
 
-      if (!response.ok) {
-        throw new Error("AI request failed");
-      }
+      if (!response.ok) throw new Error("AI request failed");
 
-      const json = (await response.json()) as {
+      const json = await response.json() as {
         ai_answer: string;
         case_studies: Array<{ title: string; facts: string; legal_issue: string; key_learning: string; related_sections: string[] }>;
         supporting_sections: Array<{ document: string; section_number: number; title: string; snippet: string }>;
@@ -188,7 +172,7 @@ export default function MicrolearningLessonPage() {
     } finally {
       setAiLoading(false);
     }
-  };
+  }, [lesson, ragBaseUrl]);
 
   const handleSimplify = () => {
     const prompt = `Explain ${lesson?.title} in very simple language with 5 short bullet points and one practical caution.`;
@@ -290,14 +274,14 @@ export default function MicrolearningLessonPage() {
                         Quiz Score
                       </div>
                       <div className="text-sm font-semibold text-[#1C2333]">
-                        {score} / {defaultQuiz.length} Correct
+                        {score} / {quizQuestions.length} Correct
                       </div>
                     </div>
 
                     <div className="space-y-1.5">
                       <div className="flex items-center justify-between text-xs text-slate-600">
                         <span>Questions Answered</span>
-                        <span>{answeredCount}/{defaultQuiz.length}</span>
+                        <span>{answeredCount}/{quizQuestions.length}</span>
                       </div>
                       <Progress value={quizProgress} />
                     </div>
@@ -320,7 +304,7 @@ export default function MicrolearningLessonPage() {
                   </CardContent>
                 </Card>
 
-                {defaultQuiz.map((question) => {
+                {quizQuestions.map((question) => {
                   const selectedOptionId = answers[question.id];
                   const answered = Boolean(selectedOptionId);
                   const isCorrect = selectedOptionId === question.correctOptionId;
