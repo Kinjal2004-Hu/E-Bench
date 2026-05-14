@@ -3,13 +3,13 @@
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
-import { BarChart3, BookOpen, ExternalLink, Flame, GraduationCap, Lock, PlayCircle, Search, Sparkles } from "lucide-react";
+import { BarChart3, BookOpen, ExternalLink, Flame, GraduationCap, PlayCircle, Search, Sparkles } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Progress } from "@/components/ui/progress";
-import { lessonOfTheDayId, microLessons, type LessonStatus } from "@/lib/microlearning-data";
+import { lessonOfTheDayId, microLessonTopics, type LessonStatus } from "@/lib/microlearning-data";
 import { fetchLearningProgress } from "@/lib/userApi";
 
 const COMPLETED_KEY = "ebench_microlearning_completed_lessons";
@@ -18,7 +18,7 @@ const QUIZ_PROGRESS_KEY = "ebench_microlearning_quiz_progress";
 const statusMeta: Record<LessonStatus, { label: string; className: string }> = {
   completed: { label: "Completed", className: "bg-emerald-50 text-emerald-700" },
   "in-progress": { label: "In Progress", className: "bg-amber-50 text-amber-700" },
-  locked: { label: "Locked", className: "bg-slate-100 text-slate-600" },
+  locked: { label: "Available", className: "bg-slate-100 text-slate-600" },
 };
 
 const difficultyMeta = {
@@ -28,7 +28,6 @@ const difficultyMeta = {
 
 function LessonCardIcon({ status }: { status: LessonStatus }) {
   if (status === "completed") return <BookOpen className="h-5 w-5 text-emerald-700" />;
-  if (status === "locked") return <Lock className="h-5 w-5 text-slate-500" />;
   return <PlayCircle className="h-5 w-5 text-[#C49A10]" />;
 }
 
@@ -85,15 +84,14 @@ export default function MicrolearningLibraryPage() {
   }, []);
 
   const lessonsWithProgress = useMemo(() => {
-    return microLessons.map((lesson) => {
+    return microLessonTopics.map((lesson) => {
       const storedAnswers = quizProgress[lesson.id] || {};
       const answeredCount = Object.keys(storedAnswers).length;
-      const totalQuiz = lesson.quiz?.length || 2;
-      const quizPercent = Math.min(100, Math.round((answeredCount / totalQuiz) * 100));
+      const quizPercent = Math.min(100, Math.round((answeredCount / 5) * 100));
 
       const isCompleted = completedIds.includes(lesson.id);
-      const progress = lesson.status === "locked" ? 0 : isCompleted ? 100 : quizPercent > 0 ? quizPercent : lesson.status === "in-progress" ? 40 : 0;
-      const status: LessonStatus = lesson.status === "locked" ? "locked" : isCompleted ? "completed" : "in-progress";
+      const progress = isCompleted ? 100 : quizPercent > 0 ? quizPercent : 0;
+      const status: LessonStatus = isCompleted ? "completed" : "in-progress";
 
       return { ...lesson, status, progress };
     });
@@ -257,7 +255,6 @@ export default function MicrolearningLibraryPage() {
           <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
             {filteredLessons.map((lesson) => {
               const status = statusMeta[lesson.status];
-              const isLocked = lesson.status === "locked";
 
               return (
                 <Card
@@ -292,11 +289,10 @@ export default function MicrolearningLibraryPage() {
                     <Button
                       type="button"
                       onClick={() => router.push(`/microlearning/${lesson.id}`)}
-                      variant={isLocked ? "secondary" : "outline"}
+                      variant="outline"
                       className="w-full rounded-lg sm:opacity-0 sm:group-hover:opacity-100 sm:transition-opacity"
-                      disabled={isLocked}
                     >
-                      {isLocked ? "Locked" : lesson.progress > 0 && lesson.progress < 100 ? "Resume Lesson" : lesson.progress === 100 ? "Review Lesson" : "Start Lesson"}
+                      {lesson.progress > 0 && lesson.progress < 100 ? "Resume Lesson" : lesson.progress === 100 ? "Review Lesson" : "Start Lesson"}
                     </Button>
                   </CardContent>
                 </Card>

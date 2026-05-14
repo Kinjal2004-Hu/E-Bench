@@ -8,3 +8,4 @@ faiss-cpu>=1.8.0
 pdfplumber>=0.11.0,<1.0.0
 sentence-transformers>=3.0.0,<4.0.0
 python-dotenv>=1.0.0
+pymongo>=4.6.0

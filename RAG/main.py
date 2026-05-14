@@ -26,6 +26,7 @@ from pydantic import BaseModel
 
 from sentence_transformers import SentenceTransformer, CrossEncoder
 from openai import OpenAI
+from pymongo import MongoClient
 
 
 DOCUMENTS = {
@@ -88,6 +89,7 @@ app.add_middleware(
 SECTIONS = []
 CORPUS_META = []
 INDEX = None
+MONGO_DB = None
 
 
 # ── Pydantic Models ──
@@ -174,6 +176,44 @@ class MicrolearningAskResponse(BaseModel):
     supporting_sections: List[SearchResult]
     case_studies: List[CaseStudy]
     model_used: str
+
+
+class LessonQuizOption(BaseModel):
+    id: str
+    label: str
+
+class LessonQuizQuestion(BaseModel):
+    id: str
+    question: str
+    options: List[LessonQuizOption]
+    correctOptionId: str
+    explanation: str
+
+class LessonScenario(BaseModel):
+    prompt: str
+    question: str
+
+class GenerateLessonRequest(BaseModel):
+    lesson_id: str
+    lesson_title: str
+    lesson_description: str
+
+class GenerateLessonResponse(BaseModel):
+    lesson_id: str
+    title: str
+    description: str
+    difficulty: str
+    minutes: int
+    law_text: str
+    simple_explanation: str
+    important_case: LawAwarenessCaseReference
+    scenario: LessonScenario
+    quiz: List[LessonQuizQuestion]
+    supporting_sections: List[SearchResult]
+
+
+# In-memory lesson cache
+_lesson_cache: dict = {}
 
 
 class ToolCaseAnalyzerRequest(BaseModel):
@@ -1213,9 +1253,21 @@ def build_case_studies(question, sections, ik_results=None):
 @app.on_event("startup")
 def startup():
 
-    global INDEX
+    global INDEX, MONGO_DB
 
     INDEX = build_index()
+
+    mongodb_uri = os.getenv("MONGODB_URI", "")
+    if mongodb_uri:
+        try:
+            mongo_client = MongoClient(mongodb_uri)
+            MONGO_DB = mongo_client.get_database()
+            print(f"[startup] MongoDB connected: {MONGO_DB.name}", flush=True)
+        except Exception as e:
+            print(f"[startup] MongoDB connection failed: {e}", flush=True)
+            MONGO_DB = None
+    else:
+        print("[startup] MONGODB_URI not set, skipping MongoDB", flush=True)
 
 
 @app.get("/", response_class=HTMLResponse)
@@ -1374,6 +1426,140 @@ async def microlearning_ask(body: MicrolearningAskRequest):
         case_studies=case_studies,
         model_used=LLM_MODEL,
     )
+
+
+GENERATE_LESSON_PROMPT = """You are an expert Indian legal educator. Generate a detailed, practical legal lesson.
+
+Return ONLY valid JSON with this exact structure:
+{
+  "law_text": "Detailed legal text with section references (2-3 paragraphs)",
+  "simple_explanation": "Easy to understand plain-language explanation (2-3 paragraphs)",
+  "important_case": {"case_name": "Full case name with year", "year": "YYYY", "principle": "Key legal principle established"},
+  "scenario": {"prompt": "Real-world scenario description (2-3 sentences)", "question": "What legal question arises from this scenario?"},
+  "quiz": [
+    {"id": "q1", "question": "Question text", "options": [{"id": "a", "label": "Option A"}, {"id": "b", "label": "Option B"}, {"id": "c", "label": "Option C"}, {"id": "d", "label": "Option D"}], "correctOptionId": "a", "explanation": "Why this answer is correct"},
+    {"id": "q2", ...},
+    {"id": "q3", ...},
+    {"id": "q4", ...},
+    {"id": "q5", ...}
+  ]
+}
+
+Requirements:
+- Base the lesson on the provided legal sections from Indian statutes (BNS, BNSS, BSA, etc.)
+- Include specific section numbers and act names
+- Make the scenario practical and relatable
+- Quiz questions must test understanding, not just memorization
+- Each quiz question must have 4 options with exactly one correct
+- Explanations should teach why the answer is right"""
+
+
+@app.post("/microlearning/generate", response_model=GenerateLessonResponse)
+def microlearning_generate(body: GenerateLessonRequest):
+    """Generate a detailed lesson dynamically using LLM + RAG retrieval. Persists to MongoDB."""
+
+    cached = _lesson_cache.get(body.lesson_id)
+    if cached:
+        return cached
+
+    if MONGO_DB is not None:
+        try:
+            existing = MONGO_DB.lessons.find_one({"lesson_id": body.lesson_id})
+            if existing:
+                existing.pop("_id", None)
+                _lesson_cache[body.lesson_id] = GenerateLessonResponse(**existing)
+                return _lesson_cache[body.lesson_id]
+        except Exception as e:
+            print(f"[microlearning_generate] MongoDB read error: {e}", flush=True)
+
+    ranked = retrieve(body.lesson_title, top_k=5)
+    sections = [r["section"] for r in ranked]
+
+    context = ""
+    for s in sections:
+        sec_text = s.get("full_text") or " ".join(sc["text"] for sc in s.get("sub_clauses", []))
+        context += f"\n{s['document']} Section {s['section']} — {s['title']}\n{sec_text[:1000]}\n"
+
+    messages = [
+        {"role": "system", "content": GENERATE_LESSON_PROMPT},
+        {"role": "user", "content": (
+            f"Generate a detailed legal lesson about: {body.lesson_title}\n"
+            f"Description: {body.lesson_description}\n\n"
+            f"Relevant Indian law sections found:\n{context[:12000]}"
+        )}
+    ]
+
+    response = client.chat.completions.create(
+        model=LLM_MODEL,
+        messages=messages,
+        temperature=0.3,
+        max_tokens=8192,
+    )
+    output = response.choices[0].message.content or "{}"
+
+    import json as _json
+    parsed = {}
+    m = re.search(r"\{[\s\S]*\}", output)
+    if m:
+        try:
+            parsed = _json.loads(m.group(0))
+        except Exception:
+            parsed = {}
+
+    case_name = "Relevant Indian legal precedent"
+    case_year = "2023"
+    case_principle = "This case established important legal principles related to the topic."
+    ic = parsed.get("important_case", {})
+    if isinstance(ic, dict):
+        case_name = ic.get("case_name", case_name)
+        case_year = ic.get("year", case_year)
+        case_principle = ic.get("principle", case_principle)
+
+    raw_scenario = parsed.get("scenario", {})
+    if not isinstance(raw_scenario, dict):
+        raw_scenario = {}
+
+    raw_quiz = parsed.get("quiz", [])
+    if not isinstance(raw_quiz, list):
+        raw_quiz = []
+
+    difficulty = "Beginner" if body.lesson_description and len(body.lesson_description) < 60 else "Intermediate"
+
+    result = GenerateLessonResponse(
+        lesson_id=body.lesson_id,
+        title=body.lesson_title,
+        description=body.lesson_description,
+        difficulty=difficulty,
+        minutes=8,
+        law_text=str(parsed.get("law_text", "Legal provisions related to this topic.")),
+        simple_explanation=str(parsed.get("simple_explanation", "Understanding this legal concept helps citizens protect their rights.")),
+        important_case=LawAwarenessCaseReference(
+            case_name=case_name,
+            year=case_year,
+            principle=case_principle,
+        ),
+        scenario=LessonScenario(
+            prompt=str(raw_scenario.get("prompt", "A citizen faces a legal situation related to this topic.")),
+            question=str(raw_scenario.get("question", "What legal steps should be taken?")),
+        ),
+        quiz=[LessonQuizQuestion(**q) for q in raw_quiz if isinstance(q, dict) and q.get("id") and q.get("question")],
+        supporting_sections=to_search_results(ranked),
+    )
+
+    _lesson_cache[body.lesson_id] = result
+    if len(_lesson_cache) > 64:
+        oldest = next(iter(_lesson_cache))
+        del _lesson_cache[oldest]
+
+    if MONGO_DB is not None:
+        try:
+            doc = result.model_dump()
+            doc["_id"] = doc["lesson_id"]
+            MONGO_DB.lessons.replace_one({"lesson_id": body.lesson_id}, doc, upsert=True)
+        except Exception as e:
+            print(f"[microlearning_generate] MongoDB write error: {e}", flush=True)
+
+    return result
 
 
 @app.post("/tools/case-analyzer", response_model=ToolCaseAnalyzerResponse)

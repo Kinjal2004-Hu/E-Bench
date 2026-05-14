@@ -384,6 +384,40 @@ export async function fetchNewsToLesson(payload: {
   return res.json();
 }
 
+export type GeneratedLesson = {
+  lesson_id: string;
+  title: string;
+  description: string;
+  difficulty: string;
+  minutes: number;
+  law_text: string;
+  simple_explanation: string;
+  important_case: { case_name: string; year: string; principle: string };
+  scenario: { prompt: string; question: string };
+  quiz: Array<{
+    id: string;
+    question: string;
+    options: Array<{ id: string; label: string }>;
+    correctOptionId: string;
+    explanation: string;
+  }>;
+  supporting_sections: Array<{ document: string; section_number: number; title: string; snippet: string }>;
+};
+
+export async function fetchGeneratedLesson(lessonId: string, lessonTitle: string, lessonDescription: string): Promise<GeneratedLesson> {
+  const res = await fetch(`${RAG_BASE}/microlearning/generate`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ lesson_id: lessonId, lesson_title: lessonTitle, lesson_description: lessonDescription }),
+  });
+  if (!res.ok) {
+    let msg = `RAG request failed (${res.status})`;
+    try { const d = await res.json(); msg = d.detail || msg; } catch { /* no-op */ }
+    throw new Error(msg);
+  }
+  return res.json();
+}
+
 export async function fetchLearningProgress(): Promise<LearningProgress> {
   return userFetch('/api/user/microlearning/progress');
 }
