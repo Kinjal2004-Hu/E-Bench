@@ -245,6 +245,30 @@ export async function fetchRightsLawAwareness(): Promise<LawAwarenessListRespons
   return res.json();
 }
 
+export type DailyLawSection = {
+  document: string;
+  section: number;
+  title: string;
+  snippet: string;
+  page: number;
+};
+
+export type DailyLawResponse = {
+  date: string;
+  law_title: string;
+  sections: DailyLawSection[];
+};
+
+export async function fetchDailyLawSections(): Promise<DailyLawResponse> {
+  const res = await fetch(`${RAG_BASE}/law-awareness/daily`);
+  if (!res.ok) {
+    let msg = `RAG request failed (${res.status})`;
+    try { const d = await res.json(); msg = d.detail || msg; } catch { /* no-op */ }
+    throw new Error(msg);
+  }
+  return res.json();
+}
+
 // ── Legal News & Microlearning Progress ──────────────────────────────────
 
 export type LegalNewsItem = {

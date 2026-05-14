@@ -1706,6 +1706,67 @@ def law_awareness_rights_detail(article_id: str):
     return LawAwarenessArticleDetail(**article)
 
 
+class DailyLawSection(BaseModel):
+    document: str
+    section: int
+    title: str
+    snippet: str
+    page: int
+
+class DailyLawResponse(BaseModel):
+    date: str
+    law_title: str
+    sections: List[DailyLawSection]
+
+
+DAILY_DOCUMENTS = ["BNS", "BNSS", "BSA", "Corporate Laws", "Motor Vehicles Act"]
+
+@app.get("/law-awareness/daily", response_model=DailyLawResponse)
+def law_awareness_daily():
+    """Return a few random sections from each legal code, selected deterministically by date."""
+    from datetime import date as dt_date
+    today = dt_date.today()
+    date_str = today.isoformat()
+    seed_base = int(today.year * 10000 + today.month * 100 + today.day)
+
+    sections_out = []
+    for doc in DAILY_DOCUMENTS:
+        doc_sections = [s for s in SECTIONS if s["document"] == doc]
+        if not doc_sections:
+            continue
+
+        doc_hash = (seed_base + sum(ord(c) for c in doc)) % len(doc_sections)
+        chosen_idx = doc_hash
+        chosen = doc_sections[chosen_idx]
+
+        sections_out.append(DailyLawSection(
+            document=doc,
+            section=chosen["section"],
+            title=chosen["title"],
+            snippet=(chosen.get("full_text", "")[:300] or
+                     " ".join(sc["text"] for sc in chosen.get("sub_clauses", []) if sc.get("text")))[:300],
+            page=chosen["page"],
+        ))
+
+        second_idx = (doc_hash + 7) % len(doc_sections)
+        if second_idx != doc_hash and len(sections_out) < 12:
+            second = doc_sections[second_idx]
+            sections_out.append(DailyLawSection(
+                document=doc,
+                section=second["section"],
+                title=second["title"],
+                snippet=(second.get("full_text", "")[:300] or
+                         " ".join(sc["text"] for sc in second.get("sub_clauses", []) if sc.get("text")))[:300],
+                page=second["page"],
+            ))
+
+    return DailyLawResponse(
+        date=date_str,
+        law_title="Daily Legal Code Sections",
+        sections=sections_out,
+    )
+
+
 # ── Legal News + Microlearning Pipeline ──
 
 class LegalNewsItem(BaseModel):
