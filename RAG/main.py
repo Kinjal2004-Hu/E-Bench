@@ -2,14 +2,18 @@ import json
 import re
 import html
 import sys
+import os
 import asyncio
 import numpy as np
 from pathlib import Path
 from functools import lru_cache
 from typing import List, Optional
+from dotenv import load_dotenv
 
 if sys.stdout.encoding != 'utf-8':
     sys.stdout.reconfigure(encoding='utf-8', errors='replace')
+
+load_dotenv()
 
 import httpx
 import pdfplumber
@@ -36,7 +40,7 @@ DOCUMENTS = {
 LLM_MODEL = "nvidia/nemotron-3-super-120b-a12b"
 
 # ── Indian Kanoon API ──
-IK_API_TOKEN = "13b60931108de83810d7b4e1509dfb3f8e2b55b3"
+IK_API_TOKEN = os.getenv("IK_API_TOKEN", "")
 IK_BASE_URL = "https://api.indiankanoon.org"
 IK_HEADERS = {
     "Authorization": f"Token {IK_API_TOKEN}",
@@ -44,7 +48,7 @@ IK_HEADERS = {
 }
 
 # ── NewsAPI ──
-NEWSAPI_KEY = "149c150f491743398252de661d4b7ce7"
+NEWSAPI_KEY = os.getenv("NEWSAPI_KEY", "")
 NEWSAPI_BASE = "https://newsapi.org/v2"
 
 SECTION_CACHE = Path("law_sections.json")
@@ -64,7 +68,7 @@ reranker = CrossEncoder("cross-encoder/ms-marco-MiniLM-L-12-v2")
 
 client = OpenAI(
     base_url="https://integrate.api.nvidia.com/v1",
-    api_key="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"
+    api_key=os.getenv("NVIDIA_API_KEY", "")
 )
 
 app = FastAPI(

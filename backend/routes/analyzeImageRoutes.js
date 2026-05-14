@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const Tesseract = require('tesseract.js');
 
-const NVIDIA_API_KEY = process.env.NVIDIA_API_KEY || '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';
+const NVIDIA_API_KEY = process.env.NVIDIA_API_KEY || '';
 
 const LEGAL_SYSTEM_PROMPT = `You are a professional legal document analyzer. 
 Analyze any text from a webpage or document and provide:

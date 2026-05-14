@@ -7,8 +7,6 @@ const mongoose = require('mongoose');
 const jwt = require('jsonwebtoken');
 require('dotenv').config({ path: './.env' });
 
-console.log('🔑 NVIDIA_API_KEY:', process.env.NVIDIA_API_KEY);
-
 const authRoutes = require('./routes/authRoutes');
 const chatRoutes = require('./routes/chatRoutes');
 const lawyerRoutes = require('./routes/lawyerRoutes');
@@ -45,9 +43,9 @@ app.use('/twilio-voice', voiceRouter);
 
 // ── Twilio Phone Call Setup ──
 const twilio = require('twilio');
-const TWILIO_ACCOUNT_SID = 'AC88f86fd497f66c2105342f249f40ee52';
-const TWILIO_AUTH_TOKEN = '344dc86b3a3571ad1a53d321c57d70ae';
-const TWILIO_PHONE_NUMBER = '+13366007937';
+const TWILIO_ACCOUNT_SID = process.env.TWILIO_ACCOUNT_SID || '';
+const TWILIO_AUTH_TOKEN = process.env.TWILIO_AUTH_TOKEN || '';
+const TWILIO_PHONE_NUMBER = process.env.TWILIO_PHONE_NUMBER || '';
 
 const twilioClient = twilio(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN);
 

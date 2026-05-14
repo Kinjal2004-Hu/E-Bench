@@ -1,9 +1,17 @@
-const API_BASE = 'http://localhost:4000/api/extension';
+let API_BASE = 'http://localhost:4000/api/extension';
+
+// Load API URL from storage
+chrome.storage.local.get('apiUrl', (data) => {
+  if (data.apiUrl) {
+    API_BASE = data.apiUrl + '/api/extension';
+  }
+});
 
 // ── State ──
 let chatHistory = [];
 let ocrText = '';
 let ocrImageFile = null;
+const MAX_HISTORY = 50;
 
 // ── DOM refs ──
 const tabs = document.querySelectorAll('.tab-btn');
@@ -17,6 +25,12 @@ const ocrTextEl = document.getElementById('ocr-text');
 const ocrRemoveBtn = document.getElementById('ocr-remove-btn');
 const analyzeNowBtn = document.getElementById('analyze-now-btn');
 const analyzeResult = document.getElementById('analyze-result');
+const settingsBtn = document.getElementById('settings-btn');
+const settingsModal = document.getElementById('settings-modal');
+const settingsClose = document.getElementById('settings-close');
+const settingsUrl = document.getElementById('settings-url');
+const settingsSave = document.getElementById('settings-save');
+const settingsStatus = document.getElementById('settings-status');
 
 // ── Tab switching ──
 tabs.forEach(btn => {
@@ -72,6 +86,7 @@ async function sendMessage() {
         history: chatHistory.slice(-10)
       })
     });
+
     const data = await res.json();
 
     typingDiv.remove();
@@ -79,14 +94,17 @@ async function sendMessage() {
     if (data.reply) {
       addMessage('ai', data.reply);
       chatHistory.push({ role: 'assistant', content: data.reply });
-      // Save to storage
-      chrome.storage.local.set({ chatHistory: chatHistory.slice(-50) });
+      // Save
+      if (chatHistory.length > MAX_HISTORY) {
+        chatHistory = chatHistory.slice(-MAX_HISTORY);
+      }
+      chrome.storage.local.set({ chatHistory });
     } else {
       addMessage('ai', 'Sorry, I could not process your request. Error: ' + (data.error || 'Unknown'));
     }
   } catch (e) {
     typingDiv.remove();
-    addMessage('ai', 'Connection error. Make sure the backend server is running on localhost:4000.');
+    addMessage('ai', 'Connection error. Make sure the backend server is running.');
   }
 }
 
@@ -104,41 +122,36 @@ uploadBtn.addEventListener('click', () => {
 
     ocrImageFile = file;
 
-    // Upload to Cloudinary
     const formData = new FormData();
     formData.append('image', file);
 
-    // Show OCR extracting
     ocrPreview.classList.remove('hidden');
     ocrTextEl.textContent = 'Extracting text from image...';
 
     try {
-      // Send image to backend for OCR + Cloudinary upload
-      ocrTextEl.textContent = 'Extracting text via server...';
-
       const res = await fetch(`${API_BASE}/ocr`, {
         method: 'POST',
-        body: formData
+        body: formData,
       });
+
       const data = await res.json();
 
       if (data.text) {
         ocrText = data.text;
         ocrTextEl.textContent = ocrText || '(No text could be extracted)';
+
+        // Only upload to Cloudinary if OCR succeeded
+        try {
+          await fetch(`${API_BASE}/upload-image`, {
+            method: 'POST',
+            body: formData,
+          });
+        } catch (cloudErr) {
+          // Non-critical
+        }
       } else {
         ocrTextEl.textContent = 'OCR failed: ' + (data.error || 'Unknown error');
       }
-
-      // Upload to Cloudinary for storage
-      try {
-        await fetch(`${API_BASE}/upload-image`, {
-          method: 'POST',
-          body: formData
-        });
-      } catch (cloudErr) {
-        console.log('Cloudinary upload optional:', cloudErr.message);
-      }
-
     } catch (err) {
       ocrTextEl.textContent = 'OCR failed: ' + err.message;
     }
@@ -159,9 +172,8 @@ analyzeNowBtn.addEventListener('click', async () => {
 
   try {
     const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
-    const result = await chrome.tabs.sendMessage(tab.id, { action: 'analyzeNow' });
-    // Wait for content script to inject banner — result is just confirmation
-    analyzeResult.innerHTML = '<div class="analyze-success">✅ Analysis banner injected on the page. Check the bottom-right corner.</div>';
+    await chrome.tabs.sendMessage(tab.id, { action: 'analyzeNow' });
+    analyzeResult.innerHTML = '<div class="analyze-success">✅ Analysis banner injected. Check the bottom-right corner.</div>';
   } catch (e) {
     analyzeResult.innerHTML = `<div class="analyze-error">⚠️ Could not analyze. Try reloading the page and clicking again.<br><small>${e.message}</small></div>`;
   }
@@ -171,7 +183,6 @@ analyzeNowBtn.addEventListener('click', async () => {
 chrome.storage.local.get('chatHistory', (data) => {
   if (data.chatHistory && data.chatHistory.length > 0) {
     chatHistory = data.chatHistory;
-    // Re-render last messages
     chatMessages.innerHTML = '';
     for (const msg of chatHistory) {
       addMessage(msg.role === 'user' ? 'user' : 'ai', msg.content);
@@ -179,9 +190,50 @@ chrome.storage.local.get('chatHistory', (data) => {
   }
 });
 
-// ── Handle messages from content script (T&C analysis results) ──
+// ── Handle messages from content script ──
 chrome.runtime.onMessage.addListener((msg) => {
   if (msg.action === 'tcAnalysisDone') {
     // Could show badge or notification
   }
+});
+
+// ── Settings modal ──
+chrome.runtime.sendMessage({ action: 'getApiUrl' }, (response) => {
+  if (response?.apiUrl) {
+    const base = response.apiUrl.replace(/\/api\/extension\/?$/, '');
+    settingsUrl.value = base || 'http://localhost:4000';
+    API_BASE = base + '/api/extension';
+  }
+});
+
+settingsBtn.addEventListener('click', () => {
+  settingsModal.classList.remove('hidden');
+});
+
+settingsClose.addEventListener('click', () => {
+  settingsModal.classList.add('hidden');
+});
+
+settingsModal.addEventListener('click', (e) => {
+  if (e.target === settingsModal) settingsModal.classList.add('hidden');
+});
+
+settingsSave.addEventListener('click', () => {
+  const url = settingsUrl.value.trim();
+  if (!url) {
+    settingsStatus.textContent = 'Please enter a URL.';
+    settingsStatus.style.color = '#dc2626';
+    return;
+  }
+  const cleanUrl = url.replace(/\/api\/extension\/?$/, '').replace(/\/+$/, '');
+  chrome.runtime.sendMessage({ action: 'setApiUrl', apiUrl: cleanUrl }, (response) => {
+    if (response?.success) {
+      settingsStatus.textContent = 'Saved! Restart popup to apply.';
+      settingsStatus.style.color = '#16a34a';
+      API_BASE = cleanUrl + '/api/extension';
+    } else {
+      settingsStatus.textContent = 'Failed to save.';
+      settingsStatus.style.color = '#dc2626';
+    }
+  });
 });

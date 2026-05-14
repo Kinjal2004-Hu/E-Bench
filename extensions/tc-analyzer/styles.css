@@ -40,6 +40,18 @@ body {
 
 .tab-btn:hover { color: rgba(255,255,255,0.8); }
 
+.settings-btn {
+  padding: 10px 8px;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: rgba(255,255,255,0.4);
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.settings-btn:hover { color: rgba(255,255,255,0.8); }
+
 /* ── Tab Content ── */
 .tab-content { display: none; flex: 1; flex-direction: column; }
 .tab-content.active { display: flex; }
@@ -270,3 +282,42 @@ body {
 
 /* ── Hidden ── */
 .hidden { display: none !important; }
+
+/* ── Settings Modal ── */
+.settings-overlay {
+  position: fixed; inset: 0; z-index: 1000;
+  background: rgba(0,0,0,0.4);
+  display: flex; align-items: center; justify-content: center;
+  padding: 20px;
+}
+.settings-box {
+  background: #fff; border-radius: 12px; padding: 20px;
+  width: 100%; max-width: 340px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+}
+.settings-header {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 16px;
+  font-size: 15px; font-weight: 700; color: #1a1a2e;
+}
+.settings-close {
+  background: none; border: none; font-size: 22px; cursor: pointer;
+  color: #999; padding: 0 4px;
+}
+.settings-close:hover { color: #333; }
+.settings-label {
+  display: block; font-size: 12px; font-weight: 600;
+  color: #555; margin-bottom: 4px;
+}
+.settings-input {
+  width: 100%; padding: 10px 12px; border: 1px solid #d5d0c6;
+  border-radius: 8px; font-size: 13px; outline: none;
+  font-family: inherit; box-sizing: border-box;
+}
+.settings-input:focus { border-color: #8D7A55; }
+.settings-hint {
+  font-size: 11px; color: #999; margin: 6px 0 14px; line-height: 1.4;
+}
+.settings-status {
+  font-size: 12px; margin-top: 8px; font-weight: 500;
+}

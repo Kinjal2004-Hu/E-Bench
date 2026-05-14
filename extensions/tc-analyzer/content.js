@@ -1,13 +1,20 @@
 // Auto-detect T&C and analyze on page load
-const EXTENSION_API_URL = "http://localhost:4000";
+
+let EXTENSION_API_URL = "http://localhost:4000";
+
+chrome.storage.local.get("apiUrl", (data) => {
+  if (data.apiUrl) EXTENSION_API_URL = data.apiUrl;
+});
+
+const TC_KEYWORDS = ["terms", "conditions", "privacy", "policy", "agreement", "consent", "cookies"];
 
 function isTermsPage(text) {
-  const lower = text.toLowerCase();
-  return ['terms', 'conditions', 'privacy', 'policy', 'agreement', 'consent', 'cookies'].some(k => lower.includes(k));
+  const lower = text.slice(0, 1000).toLowerCase();
+  return TC_KEYWORDS.some(k => lower.includes(k));
 }
 
 function extractPageText() {
-  const selectors = ['article', 'main', '.terms', '#terms', '.privacy-policy', '.terms-conditions', 'section.legal', '[role="main"]'];
+  const selectors = ["article", "main", ".terms", "#terms", ".privacy-policy", ".terms-conditions", "section.legal", '[role="main"]'];
   for (const sel of selectors) {
     const el = document.querySelector(sel);
     if (el && el.innerText?.length > 200) return el.innerText.slice(0, 20000);
@@ -15,52 +22,79 @@ function extractPageText() {
   return document.body.innerText?.slice(0, 20000);
 }
 
+function closeBanner() {
+  const banner = document.getElementById("tc-analyzer-banner");
+  if (banner) banner.remove();
+}
+
 async function analyzeAndShow() {
+  closeBanner();
+
   const text = extractPageText();
   if (!text || !isTermsPage(text)) return;
 
-  const banner = document.getElementById('tc-analyzer-banner');
-  if (banner) banner.remove();
-
-  const newBanner = document.createElement('div');
-  newBanner.id = 'tc-analyzer-banner';
-  newBanner.innerHTML = '<div class="tc-analyzing">⚖️ Analyzing Terms & Conditions...</div>';
-  document.body.appendChild(newBanner);
+  const banner = document.createElement("div");
+  banner.id = "tc-analyzer-banner";
+  banner.innerHTML = `
+    <div class="tc-header">
+      <span class="tc-icon">⚖️</span>
+      <span class="tc-title">T&C Analysis</span>
+      <button id="tc-close-btn" class="tc-close-btn" title="Dismiss">&times;</button>
+    </div>
+    <div class="tc-analyzing">Analyzing Terms & Conditions...</div>
+  `;
+  document.body.appendChild(banner);
   injectStyles();
+
+  document.getElementById("tc-close-btn").addEventListener("click", closeBanner);
 
   try {
     const res = await fetch(`${EXTENSION_API_URL}/api/extension/analyze-tc`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ documentText: text })
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ documentText: text }),
     });
+
     const data = await res.json();
 
     if (data.error) {
-      newBanner.innerHTML = `<div class="tc-error">${data.error}</div>`;
-    } else {
-      newBanner.innerHTML = `
-        <div class="tc-results">
-          <div class="tc-header">
-            <span class="tc-icon">⚖️</span>
-            <span class="tc-title">T&C Analysis</span>
-          </div>
-          <div class="tc-risk" data-level="${data.riskLevel}">${data.riskLevel} Risk</div>
-          <div class="tc-summary">${data.summary}</div>
-          <div class="tc-flags">${data.redFlags?.map(f => `<div class="tc-flag">⚠️ ${f}</div>`).join('') || ''}</div>
-          <div class="tc-rec" data-rec="${data.recommendation}">${data.recommendation}</div>
+      banner.innerHTML = `
+        <div class="tc-header">
+          <span class="tc-icon">⚖️</span>
+          <span class="tc-title">T&C Analysis</span>
+          <button class="tc-close-btn" onclick="document.getElementById('tc-analyzer-banner').remove()">&times;</button>
         </div>
+        <div class="tc-error">${data.error}</div>
+      `;
+    } else {
+      banner.innerHTML = `
+        <div class="tc-header">
+          <span class="tc-icon">⚖️</span>
+          <span class="tc-title">T&C Analysis</span>
+          <button class="tc-close-btn" onclick="document.getElementById('tc-analyzer-banner').remove()">&times;</button>
+        </div>
+        <div class="tc-risk" data-level="${data.riskLevel}">${data.riskLevel} Risk</div>
+        <div class="tc-summary">${data.summary}</div>
+        <div class="tc-flags">${data.redFlags?.map(f => `<div class="tc-flag">⚠️ ${f}</div>`).join("") || ""}</div>
+        <div class="tc-rec" data-rec="${data.recommendation}">${data.recommendation}</div>
       `;
     }
   } catch (e) {
-    newBanner.innerHTML = `<div class="tc-error">Error: ${e.message}</div>`;
+    banner.innerHTML = `
+      <div class="tc-header">
+        <span class="tc-icon">⚖️</span>
+        <span class="tc-title">T&C Analysis</span>
+        <button class="tc-close-btn" onclick="document.getElementById('tc-analyzer-banner').remove()">&times;</button>
+      </div>
+      <div class="tc-error">Error: ${e.message}</div>
+    `;
   }
 }
 
 function injectStyles() {
-  if (document.getElementById('tc-analyzer-styles')) return;
-  const style = document.createElement('style');
-  style.id = 'tc-analyzer-styles';
+  if (document.getElementById("tc-analyzer-styles")) return;
+  const style = document.createElement("style");
+  style.id = "tc-analyzer-styles";
   style.textContent = `
     #tc-analyzer-banner {
       position: fixed; bottom: 20px; right: 20px; z-index: 2147483647;
@@ -74,10 +108,18 @@ function injectStyles() {
     #tc-analyzer-banner::-webkit-scrollbar-track { background: #1a1a2e; }
     #tc-analyzer-banner::-webkit-scrollbar-thumb { background: #C8B48A; border-radius: 3px; }
     @keyframes tcSlideIn { from{transform:translateY(30px);opacity:0} }
+    .tc-close-btn {
+      background: rgba(255,255,255,0.1); border: none; color: #fff; cursor: pointer;
+      font-size: 20px; width: 28px; height: 28px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      margin-left: auto;
+    }
+    .tc-close-btn:hover { background: rgba(255,255,255,0.2); }
     .tc-analyzing { color: #C8B48A; animation: tcPulse 1.5s infinite; }
     @keyframes tcPulse { 0%,100%{opacity:1} 50%{opacity:0.5} }
     .tc-results { font-size: 13px; line-height: 1.5; }
     .tc-header { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; }
+    .tc-header .tc-title:last-child { margin-left: 0; }
     .tc-icon { font-size: 24px; }
     .tc-title { font-size: 18px; font-weight: 700; }
     .tc-risk {
@@ -100,16 +142,22 @@ function injectStyles() {
   document.head.appendChild(style);
 }
 
-// Auto-run on page load
-const pageText = extractPageText();
-if (pageText && isTermsPage(pageText)) {
-  analyzeAndShow();
+// Quick check before full extraction — bail early if page has no keywords
+const bodyText = document.body.innerText || "";
+const quickCheck = bodyText.slice(0, 1000).toLowerCase();
+const hasKeywords = TC_KEYWORDS.some(k => quickCheck.includes(k));
+
+if (hasKeywords) {
+  const fullText = extractPageText();
+  if (fullText && isTermsPage(fullText)) {
+    analyzeAndShow();
+  }
 }
 
 // Handle popup messages
 chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
-  if (msg.action === 'analyzeNow') {
-    analyzeAndShow().then(() => sendResponse({ message: 'Analysis complete!' }));
+  if (msg.action === "analyzeNow") {
+    analyzeAndShow().then(() => sendResponse({ message: "Analysis complete!" }));
     return true;
   }
 });

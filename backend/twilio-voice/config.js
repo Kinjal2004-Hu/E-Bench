@@ -3,15 +3,15 @@
 
 const CONFIG = {
   // Twilio credentials
-  ACCOUNT_SID: process.env.TWILIO_ACCOUNT_SID || 'AC88f86fd497f66c2105342f249f40ee52',
-  AUTH_TOKEN: process.env.TWILIO_AUTH_TOKEN || '344dc86b3a3571ad1a53d321c57d70ae',
-  PHONE_NUMBER: process.env.TWILIO_PHONE_NUMBER || '+13366007937',
+  ACCOUNT_SID: process.env.TWILIO_ACCOUNT_SID || '',
+  AUTH_TOKEN: process.env.TWILIO_AUTH_TOKEN || '',
+  PHONE_NUMBER: process.env.TWILIO_PHONE_NUMBER || '',
   
   // RAG Server (your existing legal AI)
   RAG_URL: process.env.RAG_URL || 'http://localhost:8000',
   
   // Gemini (fallback)
-  GOOGLE_API_KEY: process.env.GOOGLE_API_KEY || 'AIzaSyC4D8sZruZsKZKYJGOX4O8BoF9yFZfm6hU',
+  GOOGLE_API_KEY: process.env.GOOGLE_API_KEY || '',
   
   // Call settings
   GATHER_TIMEOUT: 5,

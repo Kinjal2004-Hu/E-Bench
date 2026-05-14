@@ -3,8 +3,8 @@
 
 exports.handler = function(context, event, callback) {
   const twiml = require('twilio').twiml;
-  const GOOGLE_API_KEY = context.GOOGLE_API_KEY || 'AIzaSyC4D8sZruZsKZKYJGOX4O8BoF9yFZfm6hU';
-  const RAG_URL = context.RAG_URL || 'https://your-rag-server.com';
+  const GOOGLE_API_KEY = context.GOOGLE_API_KEY || '';
+  const RAG_URL = context.RAG_URL || 'http://localhost:8000';
   
   // In-memory conversation (use Redis for production)
   const conversations = new Map();

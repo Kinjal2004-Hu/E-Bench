@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "IndianLegal Chat & T&C Analyzer",
-  "version": "1.1",
-  "description": "AI-powered legal chat for Indian law + auto T&C analyzer — ask questions and upload document screenshots",
+  "version": "1.2",
+  "description": "AI-powered legal chat for Indian law + auto T&C analyzer — ask questions, upload screenshots, configurable backend URL",
   "permissions": ["activeTab", "storage"],
   "host_permissions": ["<all_urls>"],
   "action": {
