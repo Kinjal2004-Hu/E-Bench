@@ -2,8 +2,10 @@ import json
 import re
 import html
 import sys
+import asyncio
 import numpy as np
 from pathlib import Path
+from functools import lru_cache
 from typing import List, Optional
 
 if sys.stdout.encoding != 'utf-8':
@@ -45,7 +47,7 @@ SECTION_CACHE = Path("law_sections.json")
 EMBED_CACHE = Path("law_embeddings.npy")
 FAISS_CACHE = Path("law_faiss.index")
 
-TOP_K_VECTOR = 60
+TOP_K_VECTOR = 30
 TOP_K_FINAL = 7
 RERANK_TEXT_LEN = 2000
 
@@ -53,8 +55,8 @@ VECTOR_WEIGHT = 0.35
 RERANK_WEIGHT = 0.65
 
 
-embed_model = SentenceTransformer("BAAI/bge-base-en-v1.5")
-reranker = CrossEncoder("cross-encoder/ms-marco-MiniLM-L-6-v2")
+embed_model = SentenceTransformer("BAAI/bge-large-en-v1.5")
+reranker = CrossEncoder("cross-encoder/ms-marco-MiniLM-L-12-v2")
 
 client = OpenAI(
     base_url="https://integrate.api.nvidia.com/v1",
@@ -701,6 +703,46 @@ def build_index():
     return index
 
 
+def mmr_diversify(ranked_entries, top_k, lambda_mmr=0.5):
+    """Maximum Marginal Relevance to diversify results by source section.
+
+    MMR = lambda * relevance - (1-lambda) * max_similarity_to_selected
+    Uses FAISS index reconstruction for embedding similarity.
+    """
+    if len(ranked_entries) <= top_k:
+        return ranked_entries[:top_k]
+
+    entry_list = list(ranked_entries)
+    selected = []
+    pool = list(enumerate(entry_list))
+
+    pool_emb = []
+    for _, (_, _, _, idx) in pool:
+        pool_emb.append(INDEX.reconstruct(int(idx)))
+    pool_emb = np.array(pool_emb)
+
+    sel_emb = [pool_emb[0]]
+    selected.append(pool.pop(0))
+    pool_emb = pool_emb[1:]
+
+    while len(selected) < top_k and len(pool) > 0:
+        sim_matrix = np.dot(pool_emb, np.array(sel_emb).T)
+        max_sim = sim_matrix.max(axis=1) if sim_matrix.ndim > 1 else sim_matrix
+
+        mmr_vals = []
+        for i, (_, (h, _, _, _)) in enumerate(pool):
+            mmr = lambda_mmr * h - (1 - lambda_mmr) * float(max_sim[i])
+            mmr_vals.append(mmr)
+
+        best = int(np.argmax(mmr_vals))
+        sel_emb.append(pool_emb[best])
+        selected.append(pool.pop(best))
+        pool_emb = np.delete(pool_emb, best, axis=0)
+
+    return [item for _, item in selected]
+
+
+@lru_cache(maxsize=256)
 def retrieve(query, top_k=TOP_K_FINAL):
 
     qvec = embed_model.encode([query], normalize_embeddings=True)
@@ -745,7 +787,8 @@ def retrieve(query, top_k=TOP_K_FINAL):
         reverse=True
     )
 
-    ranked = [r for r in ranked if r[0] > 0.35][:top_k]
+    ranked = [r for r in ranked if r[0] > 0.35]
+    ranked = mmr_diversify(ranked, top_k)
 
     results = []
 
@@ -1060,7 +1103,7 @@ def ask_llm(question, sections, ik_results=None):
         completion = client.chat.completions.create(
             model=LLM_MODEL,
             messages=messages,
-            temperature=0.7,
+            temperature=0,
             max_tokens=4096
         )
         answer = completion.choices[0].message.content
@@ -1178,18 +1221,21 @@ def home():
 
 
 @app.post("/ask", response_model=AskResponse)
-def ask(body: AskRequest):
+async def ask(body: AskRequest):
 
     print(f"[ask] question='{body.question}' top_k={body.top_k}", flush=True)
 
-    ranked = retrieve(body.question, body.top_k)
-    print(f"[ask] retrieved {len(ranked)} sections", flush=True)
+    loop = asyncio.get_event_loop()
+
+    ranked_task = loop.run_in_executor(None, retrieve, body.question, body.top_k)
+    ik_task = loop.run_in_executor(None, ik_search, body.question, 0, 5)
+
+    ranked, ik_raw = await asyncio.gather(ranked_task, ik_task)
+    print(f"[ask] retrieved {len(ranked)} sections, {len(ik_raw)} ik results", flush=True)
+
     sections = [r["section"] for r in ranked]
 
-    ik_raw = ik_search(body.question, max_results=5)
-    print(f"[ask] indian kanoon returned {len(ik_raw)} results", flush=True)
-
-    ai_answer = ask_llm(body.question, sections, ik_results=ik_raw)
+    ai_answer = await loop.run_in_executor(None, ask_llm, body.question, sections, ik_raw)
     print(f"[ask] ai_answer length={len(ai_answer)} preview='{ai_answer[:200]}'", flush=True)
 
     results = to_search_results(ranked)
@@ -1256,14 +1302,17 @@ def ask_stream(body: AskRequest):
 
 
 @app.get("/query", response_model=QueryResponse)
-def query(q: str = Query(...), top_k: int = 7):
+async def query(q: str = Query(...), top_k: int = 7):
 
-    ranked = retrieve(q, top_k)
+    loop = asyncio.get_event_loop()
+
+    ranked_task = loop.run_in_executor(None, retrieve, q, top_k)
+    ik_task = loop.run_in_executor(None, ik_search, q, 0, 5)
+
+    ranked, ik_raw = await asyncio.gather(ranked_task, ik_task)
     sections = [r["section"] for r in ranked]
 
-    ik_raw = ik_search(q, max_results=5)
-
-    ai_answer = ask_llm(q, sections, ik_results=ik_raw)
+    ai_answer = await loop.run_in_executor(None, ask_llm, q, sections, ik_raw)
 
     results = to_search_results(ranked)
 
@@ -1281,7 +1330,7 @@ def query(q: str = Query(...), top_k: int = 7):
 
 
 @app.post("/microlearning/ask", response_model=MicrolearningAskResponse)
-def microlearning_ask(body: MicrolearningAskRequest):
+async def microlearning_ask(body: MicrolearningAskRequest):
 
     composite_query = (
         f"Lesson: {body.lesson_title}. "
@@ -1289,16 +1338,21 @@ def microlearning_ask(body: MicrolearningAskRequest):
         f"User Question: {body.question}"
     )
 
-    ranked = retrieve(composite_query, body.top_k)
+    loop = asyncio.get_event_loop()
+
+    ranked_task = loop.run_in_executor(None, retrieve, composite_query, body.top_k)
+    ik_task = loop.run_in_executor(None, ik_search, f"{body.lesson_title} {body.question}", 0, 3)
+
+    ranked, ik_raw = await asyncio.gather(ranked_task, ik_task)
     sections = [r["section"] for r in ranked]
 
-    ik_raw = ik_search(f"{body.lesson_title} {body.question}", max_results=3)
-
-    ai_answer = ask_llm(
+    ai_answer = await loop.run_in_executor(
+        None,
+        ask_llm,
         f"Microlearning lesson '{body.lesson_title}'. Question: {body.question}. "
         f"Explain in concise, learner-friendly steps with practical legal caution.",
         sections,
-        ik_results=ik_raw,
+        ik_raw,
     )
 
     results = to_search_results(ranked)
@@ -1693,25 +1747,27 @@ TRENDING_QUERIES = [
 WEEKDAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 
 @app.post("/legal-news/trending", response_model=LegalNewsTrendingResponse)
-def legal_news_trending():
+async def legal_news_trending():
     """Fetch trending legal news from Indian Kanoon across multiple legal queries."""
     from datetime import datetime, timedelta
+
+    loop = asyncio.get_event_loop()
+    tasks = [loop.run_in_executor(None, ik_search, q, 0, 5) for q in TRENDING_QUERIES]
+    all_query_results = await asyncio.gather(*tasks)
+
     seen_titles = set()
     all_news = []
-    query_idx = 0
+    today = datetime.now()
+    cats = ["Supreme Court", "Constitutional Law", "Criminal Law", "Civil Law", "Corporate Law", "Human Rights", "Cyber Law"]
 
-    while len(all_news) < 8 and query_idx < len(TRENDING_QUERIES):
-        results = ik_search(TRENDING_QUERIES[query_idx], page=0, max_results=5)
-        query_idx += 1
-        today = datetime.now()
-        for i, r in enumerate(results):
+    for results in all_query_results:
+        for r in results:
             title = r.get("title", "")
             if not title or title in seen_titles:
                 continue
             seen_titles.add(title)
             day_offset = len(all_news) % 7
             d = (today - timedelta(days=day_offset)).strftime("%b %d, %Y")
-            cats = ["Supreme Court", "Constitutional Law", "Criminal Law", "Civil Law", "Corporate Law", "Human Rights", "Cyber Law"]
             all_news.append(LegalNewsItem(
                 id=f"ik_{r['doc_id']}",
                 headline=title[:200],
@@ -1719,18 +1775,26 @@ def legal_news_trending():
                 date=d,
                 category=cats[len(all_news) % len(cats)],
             ))
+            if len(all_news) >= 10:
+                break
+        if len(all_news) >= 10:
+            break
 
     return LegalNewsTrendingResponse(news=all_news[:10], total=len(all_news))
 
 
 @app.post("/legal-news/to-lesson", response_model=NewsToLessonResponse)
-def legal_news_to_lesson(body: NewsToLessonRequest):
+async def legal_news_to_lesson(body: NewsToLessonRequest):
     """Convert a legal news event into a full lesson flow: topic → sections → explanation → microlearning."""
     composite = f"{body.headline} {body.summary} {body.category}"
-    ranked = retrieve(composite, 5)
-    sections = [r["section"] for r in ranked]
 
-    ik_raw = ik_search(f"{body.headline}", max_results=3)
+    loop = asyncio.get_event_loop()
+
+    ranked_task = loop.run_in_executor(None, retrieve, composite, 5)
+    ik_task = loop.run_in_executor(None, ik_search, body.headline, 0, 3)
+
+    ranked, ik_raw = await asyncio.gather(ranked_task, ik_task)
+    sections = [r["section"] for r in ranked]
 
     # Identify legal topic via LLM
     topic_prompt = (
@@ -1742,7 +1806,9 @@ def legal_news_to_lesson(body: NewsToLessonRequest):
         {"role": "system", "content": "You are a legal topic classifier. Reply with only the topic name."},
         {"role": "user", "content": topic_prompt}
     ]
-    topic_resp = client.chat.completions.create(model=LLM_MODEL, messages=topic_msg, temperature=0, max_tokens=50)
+    topic_resp = await loop.run_in_executor(
+        None, lambda: client.chat.completions.create(model=LLM_MODEL, messages=topic_msg, temperature=0, max_tokens=50)
+    )
     legal_topic = (topic_resp.choices[0].message.content or "Legal Procedure").strip()
 
     # Generate explanation
@@ -1759,7 +1825,7 @@ def legal_news_to_lesson(body: NewsToLessonRequest):
         f"3. How it connects to the news event\n"
         f"4. Practical rights and steps for an ordinary citizen"
     )
-    explanation = ask_llm(explain_prompt, sections, ik_results=ik_raw)
+    explanation = await loop.run_in_executor(None, ask_llm, explain_prompt, sections, ik_raw)
 
     # Generate microlearning lesson
     lesson_title = f"Understanding {legal_topic}"
@@ -1781,7 +1847,9 @@ def legal_news_to_lesson(body: NewsToLessonRequest):
         {"role": "system", "content": "You generate quiz questions as JSON arrays. Reply with only the JSON."},
         {"role": "user", "content": quiz_prompt}
     ]
-    quiz_resp = client.chat.completions.create(model=LLM_MODEL, messages=quiz_msg, temperature=0.3, max_tokens=1024)
+    quiz_resp = await loop.run_in_executor(
+        None, lambda: client.chat.completions.create(model=LLM_MODEL, messages=quiz_msg, temperature=0.3, max_tokens=1024)
+    )
     quiz_text = quiz_resp.choices[0].message.content or "[]"
     try:
         import json as _json
