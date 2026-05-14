@@ -257,7 +257,7 @@ export default function RiskAnalyzerPage() {
                         <input
                             ref={fileInputRef}
                             type="file"
-                            accept=".pdf,.docx,.txt,.md"
+                            accept=".pdf,.docx,.txt,.md,.png,.jpg,.jpeg"
                             className="hidden"
                             onChange={(e) => onFileSelected(e.target.files?.[0])}
                         />
@@ -270,7 +270,7 @@ export default function RiskAnalyzerPage() {
                                 <FileText size={24} />
                             </div>
                             <p className="text-sm font-bold text-[#0F2854] mb-1">{uploading ? "Extracting text..." : "Upload Contract PDF / Word Doc"}</p>
-                            <p className="text-xs text-gray-500">PDF, DOCX, TXT, MD (Max 20MB)</p>
+                            <p className="text-xs text-gray-500">PDF, DOCX, TXT, MD, PNG, JPG (Max 20MB)</p>
                             {uploadedFileName ? <p className="mt-2 text-xs text-emerald-700 font-medium">Loaded: {uploadedFileName}</p> : null}
                         </button>
                         {uploadError ? <p className="mt-2 text-xs text-red-600">{uploadError}</p> : null}

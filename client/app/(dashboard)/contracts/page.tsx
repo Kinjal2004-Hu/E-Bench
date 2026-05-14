@@ -1,7 +1,8 @@
 "use client";
 
-import { FileText, AlertTriangle, Search, Trash2, Eye, Highlighter, X } from "lucide-react";
+import { FileText, AlertTriangle, Search, Trash2, Eye, Highlighter, X, Plus } from "lucide-react";
 import { useState, useEffect, useMemo } from "react";
+import { useRouter } from "next/navigation";
 import { fetchAnalyses, deleteAnalysis, fetchAnalysisById } from "@/lib/userApi";
 import type { SavedAnalysis, FullAnalysis } from "@/lib/userApi";
 import FormattedAiText from "@/components/FormattedAiText";
@@ -82,6 +83,7 @@ function highlightContractText(text: string, clauses: string[]) {
 }
 
 export default function ContractsPage() {
+    const router = useRouter();
     const [contracts, setContracts] = useState<SavedAnalysis[]>([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState("");
@@ -159,6 +161,13 @@ export default function ContractsPage() {
                 </div>
 
                 <div className="flex items-center gap-3">
+                    <button
+                        type="button"
+                        onClick={() => router.push("/tools/risk-analyzer")}
+                        className="flex items-center gap-2 px-4 py-2 bg-[#0F2854] text-white rounded-xl text-sm font-medium hover:bg-[#1C4D8D] transition-colors shadow-sm"
+                    >
+                        <Plus size={16} /> New Analysis
+                    </button>
                     <div className="relative group">
                         <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-4 h-4" />
                         <input

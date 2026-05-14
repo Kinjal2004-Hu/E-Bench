@@ -1,7 +1,8 @@
 "use client";
 
-import { Scale, Search, Trash2, Loader2, Save, X, Download } from "lucide-react";
+import { Scale, Search, Trash2, Loader2, Save, X, Download, Plus } from "lucide-react";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 import { fetchAnalyses, deleteAnalysis, saveAnalysis, fetchAnalysisById } from "@/lib/userApi";
 import type { SavedAnalysis, FullAnalysis } from "@/lib/userApi";
 import FormattedAiText from "@/components/FormattedAiText";
@@ -16,6 +17,7 @@ interface IKSearchResult {
 }
 
 export default function CasesPage() {
+  const router = useRouter();
   const [cases, setCases] = useState<SavedAnalysis[]>([]);
   const [casesLoading, setCasesLoading] = useState(true);
   const [casesError, setCasesError] = useState("");
@@ -235,18 +237,26 @@ export default function CasesPage() {
 
   return (
     <div className="flex flex-col gap-5 h-full">
-      <div className="flex justify-between items-center flex-wrap gap-3">
-        <div className="flex items-center gap-3">
-          <div className="p-2.5 bg-white border border-gray-200 rounded-xl text-[#0F2854] shadow-sm">
-            <Scale size={24} />
+        <div className="flex justify-between items-center flex-wrap gap-3">
+          <div className="flex items-center gap-3">
+            <div className="p-2.5 bg-white border border-gray-200 rounded-xl text-[#0F2854] shadow-sm">
+              <Scale size={24} />
+            </div>
+            <div>
+              <h1 className="text-2xl font-bold text-[#0F2854] font-serif">Cases</h1>
+              <p className="text-sm text-gray-500">Search Indian Kanoon and save cases directly.</p>
+            </div>
           </div>
-          <div>
-            <h1 className="text-2xl font-bold text-[#0F2854] font-serif">Cases</h1>
-            <p className="text-sm text-gray-500">Search Indian Kanoon and save cases directly.</p>
-          </div>
-        </div>
 
-        <div className="flex bg-gray-100 rounded-xl p-1 gap-1">
+          <div className="flex items-center gap-3">
+            <button
+              type="button"
+              onClick={() => router.push("/tools/case-analyzer")}
+              className="flex items-center gap-2 px-4 py-2 bg-[#0F2854] text-white rounded-xl text-sm font-medium hover:bg-[#1C4D8D] transition-colors shadow-sm"
+            >
+              <Plus size={16} /> New Case Analysis
+            </button>
+            <div className="flex bg-gray-100 rounded-xl p-1 gap-1">
           {(["my", "search"] as const).map((tab) => (
             <button
               key={tab}

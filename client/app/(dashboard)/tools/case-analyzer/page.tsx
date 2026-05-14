@@ -152,7 +152,7 @@ export default function CaseAnalyzerPage() {
                         <input
                             ref={fileInputRef}
                             type="file"
-                            accept=".pdf,.docx,.txt,.md"
+                            accept=".pdf,.docx,.txt,.md,.png,.jpg,.jpeg"
                             className="hidden"
                             onChange={(e) => onFileSelected(e.target.files?.[0])}
                         />
@@ -165,7 +165,7 @@ export default function CaseAnalyzerPage() {
                                 <FileText size={24} />
                             </div>
                             <p className="text-sm font-semibold text-[#0F2854] mb-1">{uploading ? "Extracting text..." : "Click to upload case file"}</p>
-                            <p className="text-xs text-gray-500">Supported formats: PDF, DOCX, TXT, MD (Max 20MB)</p>
+                            <p className="text-xs text-gray-500">Supported formats: PDF, DOCX, TXT, MD, PNG, JPG (Max 20MB)</p>
                             {uploadedFileName ? <p className="mt-2 text-xs text-emerald-700 font-medium">Loaded: {uploadedFileName}</p> : null}
                         </button>
                         {uploadError ? <p className="mt-2 text-xs text-red-600">{uploadError}</p> : null}
