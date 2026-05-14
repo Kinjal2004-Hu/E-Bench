@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { useParams, useRouter, useSearchParams } from "next/navigation";
 import {
   ArrowLeft, BookOpen, Brain, CheckCircle2, Gavel, HelpCircle,
@@ -8,6 +8,7 @@ import {
 } from "lucide-react";
 import {
   fetchNewsToLesson,
+  getStoredNewsItem,
   saveLessonProgress,
   saveQuizProgress,
   type NewsToLessonResponse,
@@ -18,9 +19,30 @@ export default function NewsDetailPage() {
   const params = useParams<{ id: string }>();
   const searchParams = useSearchParams();
   const newsId = params?.id || "";
-  const headline = searchParams?.get("headline") || "";
-  const summary = searchParams?.get("summary") || "";
-  const category = searchParams?.get("category") || "General";
+
+  const [headline, setHeadline] = useState("");
+  const [summary, setSummary] = useState("");
+  const [category, setCategory] = useState("General");
+  const [paramsReady, setParamsReady] = useState(false);
+
+  useEffect(() => {
+    const stored = getStoredNewsItem(newsId);
+    if (stored) {
+      setHeadline(stored.headline);
+      setSummary(stored.summary);
+      setCategory(stored.category);
+      setParamsReady(true);
+      return;
+    }
+
+    const h = searchParams?.get("headline");
+    const s = searchParams?.get("summary");
+    const c = searchParams?.get("category");
+    if (h) setHeadline(h);
+    if (s) setSummary(s);
+    if (c) setCategory(c);
+    setParamsReady(true);
+  }, [newsId, searchParams]);
 
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
@@ -30,7 +52,7 @@ export default function NewsDetailPage() {
   const [completed, setCompleted] = useState(false);
 
   useEffect(() => {
-    if (!newsId || !headline) return;
+    if (!paramsReady || !newsId || !headline) return;
     let active = true;
     setLoading(true);
     fetchNewsToLesson({ news_id: newsId, headline, summary, category })
@@ -38,7 +60,7 @@ export default function NewsDetailPage() {
       .catch((err: Error) => { if (active) setError(err.message || "Failed to analyze news."); })
       .finally(() => { if (active) setLoading(false); });
     return () => { active = false; };
-  }, [newsId, headline, summary, category]);
+  }, [paramsReady, newsId, headline, summary, category]);
 
   const handleSelectAnswer = (qIdx: number, option: string) => {
     setQuizAnswers(prev => ({ ...prev, [`q${qIdx}`]: option }));
@@ -70,6 +92,14 @@ export default function NewsDetailPage() {
     } catch { /* no-op */ }
   };
 
+  if (!paramsReady) {
+    return (
+      <div className="min-h-screen bg-[#EDE8DF] flex items-center justify-center p-6">
+        <Loader2 size={24} className="animate-spin text-[#C49A10]" />
+      </div>
+    );
+  }
+
   if (!newsId || !headline) {
     return (
       <div className="min-h-screen bg-[#EDE8DF] flex items-center justify-center p-6">
@@ -99,7 +129,6 @@ export default function NewsDetailPage() {
           </div>
         ) : lesson ? (
           <>
-            {/* Headline Card */}
             <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-6">
               <div className="flex items-center gap-2 text-xs font-bold text-[#4988C4] uppercase tracking-widest mb-2">{lesson.legal_topic}</div>
               <h1 className="text-2xl font-bold text-[#0F2854] leading-snug mb-2">{lesson.headline}</h1>
@@ -111,7 +140,6 @@ export default function NewsDetailPage() {
               )}
             </div>
 
-            {/* Tab Navigation */}
             <div className="flex flex-wrap gap-2">
               {[
                 { key: "explain", label: "Explanation", icon: Brain },
@@ -132,7 +160,6 @@ export default function NewsDetailPage() {
               ))}
             </div>
 
-            {/* Explanation Tab */}
             {activeTab === "explain" && (
               <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 space-y-4">
                 <div className="flex items-center gap-2 text-lg font-bold text-[#0F2854]"><Brain size={20} /> Legal Explanation</div>
@@ -140,7 +167,6 @@ export default function NewsDetailPage() {
               </div>
             )}
 
-            {/* Sections Tab */}
             {activeTab === "sections" && (
               <div className="space-y-3">
                 <div className="flex items-center gap-2 text-lg font-bold text-[#0F2854]"><BookOpen size={20} /> Relevant Legal Sections</div>
@@ -166,7 +192,6 @@ export default function NewsDetailPage() {
               </div>
             )}
 
-            {/* Micro Lesson Tab */}
             {activeTab === "lesson" && (
               <div className="space-y-4">
                 <div className="flex items-center gap-2 text-lg font-bold text-[#0F2854]"><Lightbulb size={20} /> {lesson.lesson_title}</div>
@@ -185,7 +210,6 @@ export default function NewsDetailPage() {
               </div>
             )}
 
-            {/* Quiz Tab */}
             {activeTab === "quiz" && (
               <div className="space-y-4">
                 <div className="flex items-center gap-2 text-lg font-bold text-[#0F2854]"><HelpCircle size={20} /> Quick Quiz</div>

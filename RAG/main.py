@@ -43,6 +43,10 @@ IK_HEADERS = {
     "Accept": "application/json",
 }
 
+# ── NewsAPI ──
+NEWSAPI_KEY = "149c150f491743398252de661d4b7ce7"
+NEWSAPI_BASE = "https://newsapi.org/v2"
+
 SECTION_CACHE = Path("law_sections.json")
 EMBED_CACHE = Path("law_embeddings.npy")
 FAISS_CACHE = Path("law_faiss.index")
@@ -1781,6 +1785,48 @@ async def legal_news_trending():
             break
 
     return LegalNewsTrendingResponse(news=all_news[:10], total=len(all_news))
+
+
+class NewsApiRequest(BaseModel):
+    query: str = "law court India"
+    page_size: int = 10
+
+
+@app.post("/legal-news/newsapi", response_model=LegalNewsTrendingResponse)
+async def legal_news_newsapi(body: NewsApiRequest = NewsApiRequest()):
+    """Fetch legal/world news from NewsAPI.org as supplementary source."""
+    try:
+        async with httpx.AsyncClient() as client:
+            resp = await client.get(
+                f"{NEWSAPI_BASE}/everything",
+                params={
+                    "q": body.query,
+                    "pageSize": body.page_size,
+                    "sortBy": "publishedAt",
+                    "apiKey": NEWSAPI_KEY,
+                    "language": "en",
+                },
+                timeout=15,
+            )
+            resp.raise_for_status()
+            data = resp.json()
+            articles = data.get("articles", [])
+            news_items = []
+            for i, article in enumerate(articles[:body.page_size]):
+                url = article.get("url", str(i))
+                source_name = article.get("source", {}).get("name", "News")
+                news_items.append(LegalNewsItem(
+                    id=f"newsapi_{i}_{abs(hash(url)) % 100000}",
+                    headline=(article.get("title") or "")[:200],
+                    summary=((article.get("description") or "")[:300] or (article.get("content") or "")[:300]),
+                    date=(article.get("publishedAt") or "")[:10],
+                    category="Legal News",
+                    source=source_name,
+                ))
+            return LegalNewsTrendingResponse(news=news_items, total=len(news_items))
+    except Exception as e:
+        print(f"[newsapi] error: {e}", flush=True)
+        return LegalNewsTrendingResponse(news=[], total=0)
 
 
 @app.post("/legal-news/to-lesson", response_model=NewsToLessonResponse)

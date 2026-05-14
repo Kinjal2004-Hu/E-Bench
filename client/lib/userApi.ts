@@ -312,6 +312,35 @@ export async function fetchTrendingNews(): Promise<{ news: LegalNewsItem[]; tota
   return res.json();
 }
 
+export async function fetchNewsApiNews(query: string = "law court India", pageSize: number = 10): Promise<{ news: LegalNewsItem[]; total: number }> {
+  const res = await fetch(`${RAG_BASE}/legal-news/newsapi`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ query, page_size: pageSize }),
+  });
+  if (!res.ok) {
+    let msg = `NewsAPI request failed (${res.status})`;
+    try { const d = await res.json(); msg = d.detail || msg; } catch { /* no-op */ }
+    throw new Error(msg);
+  }
+  return res.json();
+}
+
+const NEWS_STORAGE_KEY = "ebench_news_items";
+
+export function storeNewsItems(items: LegalNewsItem[]): void {
+  try { localStorage.setItem(NEWS_STORAGE_KEY, JSON.stringify(items)); } catch { }
+}
+
+export function getStoredNewsItem(id: string): LegalNewsItem | null {
+  try {
+    const raw = localStorage.getItem(NEWS_STORAGE_KEY);
+    if (!raw) return null;
+    const items = JSON.parse(raw) as LegalNewsItem[];
+    return items.find(i => i.id === id) || null;
+  } catch { return null; }
+}
+
 export async function fetchNewsToLesson(payload: {
   news_id: string;
   headline: string;
