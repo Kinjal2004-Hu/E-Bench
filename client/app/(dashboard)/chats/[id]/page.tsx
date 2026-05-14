@@ -32,6 +32,7 @@ export default function ChatConversationPage() {
     const [input, setInput] = useState("");
     const [isTyping, setIsTyping] = useState(false);
     const messagesEndRef = useRef<HTMLDivElement>(null);
+    const nextMsgId = useRef(2);
 
     // Load saved chat from localStorage on mount
     useEffect(() => {
@@ -43,6 +44,8 @@ export default function ChatConversationPage() {
                 const chat = allChats.find((c: { id: string }) => c.id === id);
                 if (chat?.messages?.length) {
                     setMessages(chat.messages);
+                    const maxId = chat.messages.reduce((max: number, m: Message) => Math.max(max, m.id), 0);
+                    nextMsgId.current = maxId + 1;
                 }
             }
         } catch { /* ignore */ }
@@ -94,7 +97,8 @@ export default function ChatConversationPage() {
 
         const userMsg = input.trim();
         setInput("");
-        setMessages(prev => [...prev, { id: Date.now(), sender: "user", text: userMsg }]);
+        const userMsgId = nextMsgId.current++;
+        setMessages(prev => [...prev, { id: userMsgId, sender: "user", text: userMsg }]);
         setIsTyping(true);
 
         try {
@@ -118,8 +122,9 @@ export default function ChatConversationPage() {
 
             const ikSourceStrings = ikSources.map(ik => `[Case Law] ${ik.title}`);
 
+            const aiMsgId = nextMsgId.current++;
             setMessages(prev => [...prev, {
-                id: Date.now() + 1,
+                id: aiMsgId,
                 sender: "ai",
                 text: data.ai_answer || "I couldn't generate a response. Please try rephrasing your question.",
                 sources: [...sources, ...ikSourceStrings],
@@ -127,8 +132,9 @@ export default function ChatConversationPage() {
             }]);
         } catch (err) {
             console.error("Chat API error:", err);
+            const errMsgId = nextMsgId.current++;
             setMessages(prev => [...prev, {
-                id: Date.now() + 1,
+                id: errMsgId,
                 sender: "ai",
                 text: "Sorry, I couldn't reach the legal AI service. Please make sure the RAG server is running and try again.",
             }]);
