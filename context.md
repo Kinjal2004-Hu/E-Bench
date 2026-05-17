@@ -144,6 +144,15 @@ E-Bench/
 │   │   │   ├── case-files/page.tsx     # Upload/manage case documents
 │   │   │   ├── chat/page.tsx           # Client chat interface
 │   │   │   ├── new-consultation/page.tsx  # New consultation page
+│   │   │   ├── legal-chat/page.tsx     # AI Legal Chat (wrapper around AiLegalChatPage)
+│   │   │   ├── case-analyzer/page.tsx  # AI Case Analyzer (wrapper around CaseAnalyzerPage)
+│   │   │   ├── risk-analyzer/page.tsx  # Contract Risk Analyzer (wrapper around RiskAnalyzerPage)
+│   │   │   ├── contracts/page.tsx      # Saved contracts (wrapper around ContractsPage)
+│   │   │   ├── legal-news/page.tsx     # Legal news feed (wrapper around LegalNewsPage)
+│   │   │   ├── community/              # Community forum
+│   │   │   │   ├── page.tsx            # Forum listing (wrapper around CommunityForumPage)
+│   │   │   │   ├── ask/page.tsx        # Ask question (wrapper around AskQuestionPage)
+│   │   │   │   └── post/[id]/page.tsx  # Post detail (wrapper around PostDetailPage)
 │   │   │   └── profile/page.tsx        # Lawyer profile editor
 │   │   └── session/[roomId]/page.tsx   # Video call room (WebRTC)
 │   │
@@ -154,7 +163,7 @@ E-Bench/
 │   │   ├── Sidebar.tsx                # User dashboard sidebar
 │   │   ├── TopNav.tsx                 # User dashboard top bar
 │   │   ├── FormattedAiText.tsx        # Markdown renderer for AI responses
-│   │   ├── PaymentModal.tsx           # Consultation payment flow (demo)
+│   │   ├── PaymentModal.tsx           # Slot booking + consultation payment flow (demo)
 │   │   ├── LawyerPickerModal.tsx     # Lawyer selection modal
 │   │   ├── lawyer/                    # Lawyer dashboard components
 │   │   │   ├── Sidebar.tsx
@@ -166,6 +175,15 @@ E-Bench/
 │   │   │   ├── ChatInterface.tsx
 │   │   │   ├── OverviewCards.tsx
 │   │   │   └── ProfileForm.tsx
+│   │   ├── tools/                     # Shared dashboard tool pages
+│   │   │   ├── AiLegalChatPage.tsx
+│   │   │   ├── CaseAnalyzerPage.tsx
+│   │   │   ├── RiskAnalyzerPage.tsx
+│   │   │   ├── ContractsPage.tsx
+│   │   │   ├── LegalNewsPage.tsx
+│   │   │   ├── CommunityForumPage.tsx
+│   │   │   ├── AskQuestionPage.tsx
+│   │   │   └── PostDetailPage.tsx
 │   │   ├── forum/                     # Forum components
 │   │   │   ├── ForumHeader.tsx
 │   │   │   ├── PostCard.tsx
@@ -312,7 +330,7 @@ E-Bench/
 
 ### ConsultationRequest (`ConsultationRequestModel.js`)
 - **Collection**: `consultationrequests`
-- **Fields**: `consultantId` (ref Consultant), `clientId` (ref User), `clientName`, `legalCategory`, `requestedDate`, `message`, `status` (pending|accepted|rejected)
+- **Fields**: `consultantId` (ref Consultant), `clientId` (ref User), `clientName`, `legalCategory`, `requestedDate` (YYYY-MM-DD), `requestedTime` (HH:MM), `consultationType` (Chat|Video|Office Meeting|Phone Call), `message`, `status` (pending|accepted|rejected)
 - **Indexes**: `consultantId + status`
 
 ### ForumPost (`ForumPostModel.js`)
@@ -619,6 +637,22 @@ User clicks a news item → /free-tools/news/[id] page
   → Daily streak auto-updated on lesson completion
 ```
 
+### Slot Booking (User → Lawyer Consultation Request)
+```
+User selects lawyer in /chats/new
+  → Clicks "Book Consultation"
+  → PaymentModal opens with date picker, time slots (9AM–5PM, 30-min intervals), case type, notes
+  → User selects date/time/case-type/notes and chooses Video or Chat session type
+  → "Pay &amp; Book Slot" click:
+    1. POST /api/lawyer/consultation-requests { consultantId, legalCategory, requestedDate, requestedTime, consultationType, message }
+    2. Backend creates ConsultationRequest document in MongoDB with status: "pending"
+    3. Demo payment simulation (1.8s timeout)
+    4. On success: creates chat room or video call room
+  → Lawyer sees it in lawyer-dashboard under "Pending Consultation Requests"
+  → Table columns: Client Name, Type (Video/Chat), Date, Time, Legal Category, Message, Status, Actions (Accept/Reject)
+  → Lawyer accepts → status changes to "accepted" in DB
+```
+
 ### Forum
 ```
 REST-based community forum:
@@ -648,7 +682,7 @@ REST-based community forum:
 | Saved Contracts | `/contracts` | Full-view + harmful-clause-view per saved contract |
 | Saved Summaries | `/summaries` | All document summaries |
 | Downloads | `/downloads` | PDF download history (localStorage, max 15 entries) |
-| Consultation (Chat + Video) | `/chats/new` | Select lawyer → Pay → Real-time chat or WebRTC video call |
+| Consultation (Chat + Video) | `/chats/new` | Select lawyer → book date/time slot + case type + notes → Pay → Real-time chat or WebRTC video call; slot saved to ConsultationRequests in MongoDB |
 | Community Forum | `/community` | Posts, replies, upvotes, categories, reputation |
 | Know Your Rights | `/free-tools/law-awareness` | 5 constitutional rights guides (Art 14, 19, 21, 22, 32) |
 | Microlearning | `/microlearning` | Bite-sized legal lessons by topic; per-lesson AI-generated RAG Q&A; lesson-specific quiz questions; progress synced with backend API |
@@ -665,6 +699,12 @@ REST-based community forum:
 | Consultation Requests | `/lawyer-dashboard/consultations` | Accept/reject with notes |
 | Client Chat | `/lawyer-dashboard/chat` | Real-time text chat with clients |
 | Case Files | `/lawyer-dashboard/case-files` | Upload, list, download, delete |
+| AI Legal Chat | `/lawyer-dashboard/legal-chat` | AI legal chat (shared component with user dashboard) |
+| Case Analyzer | `/lawyer-dashboard/case-analyzer` | AI case analysis (shared component) |
+| Risk Analyzer | `/lawyer-dashboard/risk-analyzer` | Contract risk analysis (shared component) |
+| Contracts | `/lawyer-dashboard/contracts` | Saved contracts (shared component) |
+| Legal News | `/lawyer-dashboard/legal-news` | Legal news feed (shared component) |
+| Community Forum | `/lawyer-dashboard/community` | Community forum (shared component, includes ask + post detail) |
 | Profile | `/lawyer-dashboard/profile` | Edit specialization, fee, languages |
 | Incoming Call | (layout-level) | Animated toast with Accept/Decline (60s timeout) |
 
@@ -857,18 +897,19 @@ class SearchResult(BaseModel):
 1. **Separate User and Consultant models** — distinct schemas for citizens vs. lawyers, though auth routes in `authRoutes.js` use separate endpoints for each
 2. **Polymorphic chat** — single `ChatModel` handles User↔Consultant via `refPath` in Mongoose
 3. **Backend proxies AI tools** — `/api/tools/*` routes forward to RAG + auto-save results to `CaseAnalysis` collection, avoiding separate save calls from frontend
-4. **Frontend calls RAG directly** for `/ask` (AI legal chat) — no backend proxy needed for real-time Q&A
-5. **Hybrid retrieval** — FAISS + CrossEncoder combination outperforms pure vector search for legal queries
-6. **WebRTC peer-to-peer** — video calls don't route through server; backend only handles signaling
-7. **localStorage persistence** — chat history (`ebench_chats`), PDF downloads (`ebench_pdf_downloads`), video call history, AI chat IDs
-8. **Static mock data** — Forum uses static data from `lib/forum-data.ts`. Microlearning lessons live in `lib/microlearning-data.ts` with per-lesson quiz questions and can be supplemented by news-generated lessons from the `POST /legal-news/to-lesson` RAG pipeline, tracked via the progress API with `source: "news"`.
-9. **Live legal news** — News page fetches from RAG POST /legal-news/trending (Indian Kanoon API); news detail dynamically generates microlearning lessons
-10. **Backend learning progress** — `LearningProgressModel` persists lesson completions and daily streak server-side; frontend falls back to localStorage if backend unreachable
-11. **Dark/light theme** — inline CSS-in-JS with CSS custom properties, toggle stored in sidebar layout
-12. **Socket.IO in lawyer layout** — persistent listener across all lawyer pages for incoming call notifications
-13. **Google Translate widget** — on-page translation via `googtrans` cookie approach; available in English, Hindi, Marathi in both sidebar and navbar
-14. **Chrome Extension as standalone product** — T&C Analyzer and IndianLegal Chat work independently of the main web app, calling backend NVIDIA API directly
-15. **Semantic RAG (sub-clause level indexing)** — Instead of blind 220-word chunking, the pipeline parses legal PDFs into structured components (section → sub-clause → example). Each sub-clause and illustration becomes an independent corpus entry, enabling precise retrieval of specific legal provisions. The embedding corpus includes the full hierarchical context (`Section 4(1)(a) Punishments`) for accurate semantic matching, and retrieved results carry structured metadata down to the individual clause level. MMR diversity (λ=0.5) ensures section diversity in results, and LRU caching (256 entries) speeds up repeated queries.
+4. **Shared tool components** — Tool pages (AI Legal Chat, Case Analyzer, Risk Analyzer, Contracts, Legal News, Community Forum) are extracted to `components/tools/*.tsx` and reused by both user dashboard and lawyer dashboard via thin wrapper pages, keeping a single source of truth
+5. **Frontend calls RAG directly** for `/ask` (AI legal chat) — no backend proxy needed for real-time Q&A
+6. **Hybrid retrieval** — FAISS + CrossEncoder combination outperforms pure vector search for legal queries
+7. **WebRTC peer-to-peer** — video calls don't route through server; backend only handles signaling
+8. **localStorage persistence** — chat history (`ebench_chats`), PDF downloads (`ebench_pdf_downloads`), video call history, AI chat IDs
+9. **Static mock data** — Forum uses static data from `lib/forum-data.ts`. Microlearning lessons live in `lib/microlearning-data.ts` with per-lesson quiz questions and can be supplemented by news-generated lessons from the `POST /legal-news/to-lesson` RAG pipeline, tracked via the progress API with `source: "news"`.
+10. **Live legal news** — News page fetches from RAG POST /legal-news/trending (Indian Kanoon API); news detail dynamically generates microlearning lessons
+11. **Backend learning progress** — `LearningProgressModel` persists lesson completions and daily streak server-side; frontend falls back to localStorage if backend unreachable
+12. **Dark/light theme** — inline CSS-in-JS with CSS custom properties, toggle stored in sidebar layout
+13. **Socket.IO in lawyer layout** — persistent listener across all lawyer pages for incoming call notifications
+14. **Google Translate widget** — on-page translation via `googtrans` cookie approach; available in English, Hindi, Marathi in both sidebar and navbar
+15. **Chrome Extension as standalone product** — T&C Analyzer and IndianLegal Chat work independently of the main web app, calling backend NVIDIA API directly
+16. **Semantic RAG (sub-clause level indexing)** — Instead of blind 220-word chunking, the pipeline parses legal PDFs into structured components (section → sub-clause → example). Each sub-clause and illustration becomes an independent corpus entry, enabling precise retrieval of specific legal provisions. The embedding corpus includes the full hierarchical context (`Section 4(1)(a) Punishments`) for accurate semantic matching, and retrieved results carry structured metadata down to the individual clause level. MMR diversity (λ=0.5) ensures section diversity in results, and LRU caching (256 entries) speeds up repeated queries.
 
 ---
 

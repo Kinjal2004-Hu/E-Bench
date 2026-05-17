@@ -13,6 +13,12 @@ const consultationRequestSchema = new mongoose.Schema({
   clientName: { type: String, required: true },
   legalCategory: { type: String, required: true },
   requestedDate: { type: String, required: true },  // YYYY-MM-DD
+  requestedTime: { type: String, default: '' },      // HH:MM
+  consultationType: {
+    type: String,
+    enum: ['Chat', 'Video', 'Office Meeting', 'Phone Call'],
+    default: 'Video',
+  },
   message: { type: String, required: true },
   status: {
     type: String,

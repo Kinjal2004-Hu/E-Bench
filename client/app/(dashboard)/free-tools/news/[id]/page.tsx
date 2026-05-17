@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 import { useParams, useRouter, useSearchParams } from "next/navigation";
+import FormattedAiText from "@/components/FormattedAiText";
 import {
   ArrowLeft, BookOpen, Brain, CheckCircle2, Gavel, HelpCircle,
   Landmark, Lightbulb, Loader2, Scale, Sparkles, X,
@@ -89,6 +90,19 @@ export default function NewsDetailPage() {
         source: "news",
       });
       setCompleted(true);
+      try {
+        const STREAK_KEY = "ebench_streak";
+        const stored = JSON.parse(localStorage.getItem(STREAK_KEY) || '{}');
+        const today = new Date().toDateString();
+        const lastActive = stored.lastActive || '';
+        let current = stored.current || 0;
+        if (lastActive !== today) {
+          const yesterday = new Date(Date.now() - 86400000).toDateString();
+          current = lastActive === yesterday ? (current || 0) + 1 : 1;
+        }
+        const longest = Math.max(current, stored.longest || 0);
+        localStorage.setItem(STREAK_KEY, JSON.stringify({ current, longest, lastActive: today }));
+      } catch { /* ignore */ }
     } catch { /* no-op */ }
   };
 
@@ -163,7 +177,7 @@ export default function NewsDetailPage() {
             {activeTab === "explain" && (
               <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 space-y-4">
                 <div className="flex items-center gap-2 text-lg font-bold text-[#0F2854]"><Brain size={20} /> Legal Explanation</div>
-                <p className="text-sm text-gray-700 leading-relaxed whitespace-pre-wrap">{lesson.explanation}</p>
+                <FormattedAiText text={lesson.explanation} />
               </div>
             )}
 

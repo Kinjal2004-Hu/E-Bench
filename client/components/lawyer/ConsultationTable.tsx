@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { updateConsultationStatus } from "@/lib/lawyerApi";
 import type { ConsultationRequest } from "@/lib/lawyerApi";
 
@@ -14,8 +14,19 @@ const STATUS_COLORS: Record<string, string> = {
   rejected: "bg-red-100 text-red-800",
 };
 
+const CONSULT_ICONS: Record<string, string> = {
+  Video: "🎥",
+  Chat: "💬",
+  "Office Meeting": "🏢",
+  "Phone Call": "📞",
+};
+
 export default function ConsultationTable({ requests }: ConsultationTableProps) {
-  const [rows, setRows] = useState(requests);
+  const [rows, setRows] = useState<ConsultationRequest[]>(() => requests);
+
+  useEffect(() => {
+    setRows(requests);
+  }, [requests]);
   const [busy, setBusy] = useState<string | null>(null);
 
   const update = async (id: string, status: "accepted" | "rejected") => {
@@ -40,8 +51,10 @@ export default function ConsultationTable({ requests }: ConsultationTableProps) 
           <thead>
             <tr style={{ background: "#d4c88a", color: "#2f3e24" }}>
               <th className="text-left px-4 py-3 font-semibold">Client Name</th>
+              <th className="text-left px-4 py-3 font-semibold">Type</th>
+              <th className="text-left px-4 py-3 font-semibold">Date</th>
+              <th className="text-left px-4 py-3 font-semibold">Time</th>
               <th className="text-left px-4 py-3 font-semibold">Legal Category</th>
-              <th className="text-left px-4 py-3 font-semibold">Requested Date</th>
               <th className="text-left px-4 py-3 font-semibold">Message</th>
               <th className="text-left px-4 py-3 font-semibold">Status</th>
               <th className="text-left px-4 py-3 font-semibold">Actions</th>
@@ -50,7 +63,7 @@ export default function ConsultationTable({ requests }: ConsultationTableProps) 
           <tbody>
             {rows.length === 0 ? (
               <tr>
-                <td colSpan={6} className="px-4 py-6 text-center text-sm" style={{ color: "#7a7040" }}>
+                <td colSpan={8} className="px-4 py-6 text-center text-sm" style={{ color: "#7a7040" }}>
                   No consultation requests found.
                 </td>
               </tr>
@@ -58,8 +71,14 @@ export default function ConsultationTable({ requests }: ConsultationTableProps) 
               rows.map((req) => (
                 <tr key={req._id} className="border-t align-top" style={{ borderColor: "#c1b77a" }}>
                   <td className="px-4 py-3 font-semibold" style={{ color: "#2f3e24" }}>{req.clientName}</td>
-                  <td className="px-4 py-3" style={{ color: "#5a5920" }}>{req.legalCategory}</td>
+                  <td className="px-4 py-3" style={{ color: "#5a5920" }}>
+                    <span className="flex items-center gap-1">
+                      {CONSULT_ICONS[req.consultationType] || "📋"} {req.consultationType}
+                    </span>
+                  </td>
                   <td className="px-4 py-3" style={{ color: "#5a5920" }}>{req.requestedDate}</td>
+                  <td className="px-4 py-3" style={{ color: "#5a5920" }}>{req.requestedTime || "—"}</td>
+                  <td className="px-4 py-3" style={{ color: "#5a5920" }}>{req.legalCategory}</td>
                   <td className="px-4 py-3 max-w-xs" style={{ color: "#5a5920" }}>{req.message}</td>
                   <td className="px-4 py-3">
                     <span className={`text-xs px-2 py-1 rounded-full capitalize font-medium ${STATUS_COLORS[req.status]}`}>

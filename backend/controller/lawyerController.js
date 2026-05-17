@@ -195,7 +195,7 @@ const createConsultationRequest = async (req, res) => {
   const locale = getLocale(req);
 
   try {
-    const { consultantId, legalCategory, requestedDate, message, clientName } = req.body;
+    const { consultantId, legalCategory, requestedDate, requestedTime, consultationType, message, clientName } = req.body;
     if (!consultantId || !legalCategory || !requestedDate || !message) {
       return res.status(400).json({ error: t('errors.required', locale) });
     }
@@ -206,6 +206,8 @@ const createConsultationRequest = async (req, res) => {
       clientName: name,
       legalCategory,
       requestedDate,
+      requestedTime: requestedTime || '',
+      consultationType: consultationType || 'Video',
       message,
     });
     return res.status(201).json(createdRequest);

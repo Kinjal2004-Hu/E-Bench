@@ -37,7 +37,7 @@ export default function MicrolearningLibraryPage() {
   const [completedIds, setCompletedIds] = useState<string[]>([]);
   const [quizProgress, setQuizProgress] = useState<Record<string, Record<string, string>>>({});
   const [streakDays, setStreakDays] = useState(0);
-  const [newsLessonIds, setNewsLessonIds] = useState<string[]>([]);
+  const [newsLessons, setNewsLessons] = useState<{ id: string; title: string }[]>([]);
   const [dataLoaded, setDataLoaded] = useState(false);
 
   useEffect(() => {
@@ -63,10 +63,10 @@ export default function MicrolearningLibraryPage() {
           .filter(l => l.completed)
           .map(l => l.lessonId);
 
-        const newsLessons = (backend.lessons || [])
+        const newsIds = (backend.lessons || [])
           .filter(l => l.source === "news" && l.completed)
-          .map(l => l.lessonId);
-        setNewsLessonIds(newsLessons);
+          .map(l => ({ id: l.lessonId, title: l.lessonTitle }));
+        setNewsLessons(newsIds);
 
         const merged = new Set([...localCompleted, ...backendCompleted]);
         setCompletedIds(Array.from(merged));
@@ -84,7 +84,7 @@ export default function MicrolearningLibraryPage() {
   }, []);
 
   const lessonsWithProgress = useMemo(() => {
-    return microLessonTopics.map((lesson) => {
+    const staticLessons = microLessonTopics.map((lesson) => {
       const storedAnswers = quizProgress[lesson.id] || {};
       const answeredCount = Object.keys(storedAnswers).length;
       const quizPercent = Math.min(100, Math.round((answeredCount / 5) * 100));
@@ -95,12 +95,23 @@ export default function MicrolearningLibraryPage() {
 
       return { ...lesson, status, progress };
     });
-  }, [completedIds, quizProgress]);
+
+    const newsCards = newsLessons.map((nl) => ({
+      id: nl.id,
+      title: nl.title,
+      description: "AI-generated lesson from legal news",
+      minutes: 10,
+      difficulty: "Beginner" as const,
+      status: "completed" as LessonStatus,
+      progress: 100,
+    }));
+
+    return [...staticLessons, ...newsCards];
+  }, [completedIds, quizProgress, newsLessons]);
 
   const completedLessons = lessonsWithProgress.filter((l) => l.status === "completed").length;
   const inProgressLessons = lessonsWithProgress.filter((l) => l.status === "in-progress").length;
   const totalLessons = lessonsWithProgress.length;
-  const totalWithNews = totalLessons + newsLessonIds.length;
   const progressPercentage = Math.round((completedLessons / Math.max(totalLessons, 1)) * 100);
 
   const lessonOfTheDay = lessonsWithProgress.find((l) => l.id === lessonOfTheDayId) || lessonsWithProgress[0];
@@ -190,14 +201,14 @@ export default function MicrolearningLibraryPage() {
           </CardContent>
         </Card>
 
-        {newsLessonIds.length > 0 && (
+        {newsLessons.length > 0 && (
           <Card className="rounded-xl border p-0 shadow-sm border-l-4 border-l-[#C49A10]">
             <CardContent className="p-5 flex items-center justify-between gap-3">
               <div className="flex items-center gap-3">
                 <Sparkles className="h-5 w-5 text-[#C49A10]" />
                 <div>
                   <p className="text-sm font-semibold text-[#1C2333]">
-                    {newsLessonIds.length} News-Backed Lesson{newsLessonIds.length > 1 ? "s" : ""} Completed
+                    {newsLessons.length} News-Backed Lesson{newsLessons.length > 1 ? "s" : ""} Completed
                   </p>
                   <p className="text-xs text-slate-500">Lessons generated from live legal news via AI</p>
                 </div>

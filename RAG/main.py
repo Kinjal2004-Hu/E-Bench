@@ -7,7 +7,7 @@ import asyncio
 import numpy as np
 from pathlib import Path
 from functools import lru_cache
-from typing import List, Optional
+from typing import Dict, List, Optional
 from dotenv import load_dotenv
 
 if sys.stdout.encoding != 'utf-8':
@@ -141,6 +141,7 @@ class QueryResponse(BaseModel):
 class AskRequest(BaseModel):
     question: str
     top_k: int = 7
+    history: Optional[List[Dict[str, str]]] = None
 
 
 class AskResponse(BaseModel):
@@ -1328,10 +1329,12 @@ def ask_stream(body: AskRequest):
         for ik in ik_raw:
             context += f"\n[{ik['title']}]\n{ik.get('headline', '')}\n"
 
-    messages = [
-        {"role": "system", "content": SYSTEM_PROMPT},
-        {"role": "user", "content": f"Question: {body.question}\n\nRelevant law:\n{context}"}
-    ]
+    history = body.history or []
+    messages = [{"role": "system", "content": SYSTEM_PROMPT}]
+    for h in history:
+        role = "user" if h.get("role") == "user" else "assistant"
+        messages.append({"role": role, "content": h.get("content", "")})
+    messages.append({"role": "user", "content": f"Question: {body.question}\n\nRelevant law:\n{context}"})
 
     sections_meta = [{"document": s["document"], "section_number": s["section"], "title": s["title"], "snippet": (s.get("full_text") or "")[:400]} for s in sections]
     ik_meta = [{"doc_id": d["doc_id"], "title": d["title"], "headline": d.get("headline", "")} for d in ik_raw]
@@ -2083,6 +2086,16 @@ async def legal_news_newsapi(body: NewsApiRequest = NewsApiRequest()):
 @app.post("/legal-news/to-lesson", response_model=NewsToLessonResponse)
 async def legal_news_to_lesson(body: NewsToLessonRequest):
     """Convert a legal news event into a full lesson flow: topic → sections → explanation → microlearning."""
+
+    if MONGO_DB is not None:
+        try:
+            existing = MONGO_DB.news_lessons.find_one({"news_id": body.news_id})
+            if existing:
+                existing.pop("_id", None)
+                return NewsToLessonResponse(**existing)
+        except Exception as e:
+            print(f"[legal_news_to_lesson] MongoDB read error: {e}", flush=True)
+
     composite = f"{body.headline} {body.summary} {body.category}"
 
     loop = asyncio.get_event_loop()
@@ -2161,7 +2174,7 @@ async def legal_news_to_lesson(body: NewsToLessonRequest):
 
     search_results = to_search_results(ranked)
 
-    return NewsToLessonResponse(
+    result = NewsToLessonResponse(
         news_id=body.news_id,
         headline=body.headline,
         legal_topic=legal_topic,
@@ -2175,6 +2188,16 @@ async def legal_news_to_lesson(body: NewsToLessonRequest):
         case_references=case_refs,
         model_used=LLM_MODEL,
     )
+
+    if MONGO_DB is not None:
+        try:
+            doc = result.model_dump()
+            doc["_id"] = doc["news_id"]
+            MONGO_DB.news_lessons.replace_one({"news_id": body.news_id}, doc, upsert=True)
+        except Exception as e:
+            print(f"[legal_news_to_lesson] MongoDB write error: {e}", flush=True)
+
+    return result
 
 
 @app.get("/stats")

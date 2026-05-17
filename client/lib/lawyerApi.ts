@@ -65,6 +65,8 @@ export type ConsultationRequest = {
   clientName: string;
   legalCategory: string;
   requestedDate: string;
+  requestedTime: string;
+  consultationType: string;
   message: string;
   status: "pending" | "accepted" | "rejected";
 };

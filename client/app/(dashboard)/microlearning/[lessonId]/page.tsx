@@ -134,6 +134,21 @@ export default function MicrolearningLessonPage() {
       questionId: q.id, selectedOption: answers[q.id] || "", correct: answers[q.id] === q.correctOptionId,
     }));
     saveQuizProgress({ lessonId, lessonTitle: lesson.title, answers: qe, score, total: quizQuestions.length, source: "rag" }).catch(() => {});
+
+    // Update localStorage streak for dashboard widget
+    try {
+      const STREAK_KEY = "ebench_streak";
+      const stored = JSON.parse(localStorage.getItem(STREAK_KEY) || '{}');
+      const today = new Date().toDateString();
+      const lastActive = stored.lastActive || '';
+      let current = stored.current || 0;
+      if (lastActive !== today) {
+        const yesterday = new Date(Date.now() - 86400000).toDateString();
+        current = lastActive === yesterday ? (current || 0) + 1 : 1;
+      }
+      const longest = Math.max(current, stored.longest || 0);
+      localStorage.setItem(STREAK_KEY, JSON.stringify({ current, longest, lastActive: today }));
+    } catch { /* ignore */ }
   };
 
   const callMicrolearningAi = useCallback(async (question: string) => {

@@ -4,18 +4,17 @@ import { useState, useEffect, useRef } from "react"
 import { useRouter } from "next/navigation"
 import {
     Scale, FileText, AlertTriangle, Newspaper, Flame,
-    BookOpen, ChevronRight, Clock, Shield, Gavel,
-    CheckCircle, Sparkles, MessageSquare, Maximize2, X, Landmark, LogOut
+    BookOpen, ChevronRight, Clock, Gavel,
+    CheckCircle, Sparkles, MessageSquare, Maximize2, X, LogOut
 } from "lucide-react"
 import {
-    fetchRightsLawArticle,
-    fetchRightsLawAwareness,
+    fetchDailyLawSections,
+    fetchTrendingNews,
     fetchUserProfile,
     fetchLearningProgress,
-    type LawAwarenessArticleDetail,
-    type LawAwarenessArticleSummary,
+    type DailyLawSection,
+    type LegalNewsItem,
 } from "@/lib/userApi"
-import { mockLegalNews } from "@/data/mockLegalNews"
 
 /* ─── typewriter taglines ─── */
 const TAGLINES = [
@@ -69,8 +68,6 @@ function useTypewriter(lines: string[], typingSpeed = 60, pauseMs = 1800, delete
     return { display, cursor }
 }
 
-const categories = ["Rights Guide"]
-
 const DASHBOARD_SUGGESTED = [
     { q: "What is Section 302 BNS and its punishment?", icon: Scale },
     { q: "Explain bail provisions under BNSS 2023", icon: Gavel },
@@ -81,18 +78,20 @@ const DASHBOARD_SUGGESTED = [
 ]
 
 export default function Dashboard() {
-    const [activeCat, setActiveCat] = useState("All")
     const [message, setMessage] = useState("")
     const [isInputFocused, setIsInputFocused] = useState(false)
     const [userName, setUserName] = useState("there")
-    const [rightsArticles, setRightsArticles] = useState<LawAwarenessArticleSummary[]>([])
-    const [rightsLoading, setRightsLoading] = useState(true)
-    const [rightsError, setRightsError] = useState("")
-    const [selectedArticle, setSelectedArticle] = useState<LawAwarenessArticleDetail | null>(null)
-    const [articleLoading, setArticleLoading] = useState(false)
-    const [articleError, setArticleError] = useState("")
+    const [dailySections, setDailySections] = useState<DailyLawSection[]>([])
+    const [dailyLawTitle, setDailyLawTitle] = useState("")
+    const [dailyDate, setDailyDate] = useState("")
+    const [sectionsLoading, setSectionsLoading] = useState(true)
+    const [sectionsError, setSectionsError] = useState("")
+    const [selectedSection, setSelectedSection] = useState<DailyLawSection | null>(null)
+    const [newsItems, setNewsItems] = useState<LegalNewsItem[]>([])
+    const [newsLoading, setNewsLoading] = useState(true)
     const [streakDays, setStreakDays] = useState(0)
     const [streakLongest, setStreakLongest] = useState(0)
+    const STREAK_KEY = "ebench_streak"
     const { display, cursor } = useTypewriter(TAGLINES)
     const router = useRouter()
     const showTypewriter = !isInputFocused && message.trim().length === 0
@@ -100,18 +99,30 @@ export default function Dashboard() {
     useEffect(() => {
         let active = true
 
-        fetchRightsLawAwareness()
+        fetchDailyLawSections()
             .then((data) => {
                 if (!active) return
-                setRightsArticles(data.articles)
-                setRightsError("")
+                setDailySections(data.sections)
+                setDailyLawTitle(data.law_title)
+                setDailyDate(data.date)
+                setSectionsError("")
             })
             .catch((err: Error) => {
                 if (!active) return
-                setRightsError(err.message || "Unable to load rights law content.")
+                setSectionsError(err.message || "Unable to load daily law sections.")
             })
             .finally(() => {
-                if (active) setRightsLoading(false)
+                if (active) setSectionsLoading(false)
+            })
+
+        fetchTrendingNews()
+            .then((data) => {
+                if (!active) return
+                setNewsItems(data.news.slice(0, 5))
+            })
+            .catch(() => { /* keep empty */ })
+            .finally(() => {
+                if (active) setNewsLoading(false)
             })
 
         return () => {
@@ -127,12 +138,28 @@ export default function Dashboard() {
             })
             .catch(() => { /* keep default */ })
 
+        // Load streak from localStorage first
+        try {
+            const stored = localStorage.getItem(STREAK_KEY)
+            if (stored) {
+                const parsed = JSON.parse(stored)
+                if (parsed.current) setStreakDays(parsed.current)
+                if (parsed.longest) setStreakLongest(parsed.longest)
+            }
+        } catch { /* ignore */ }
+
+        // Then try backend — overwrite local if it succeeds
         fetchLearningProgress()
             .then((data) => {
-                setStreakDays(data.dailyStreak?.current || 0)
-                setStreakLongest(data.dailyStreak?.longest || 0)
+                const current = data.dailyStreak?.current || 0
+                const longest = data.dailyStreak?.longest || 0
+                setStreakDays(current)
+                setStreakLongest(longest)
+                try {
+                    localStorage.setItem(STREAK_KEY, JSON.stringify({ current, longest, lastActive: data.dailyStreak?.lastActive }))
+                } catch { /* ignore */ }
             })
-            .catch(() => { /* keep default */ })
+            .catch(() => { /* keep local fallback */ })
     }, [])
 
     const handleAskClick = () => {
@@ -171,33 +198,22 @@ export default function Dashboard() {
         router.push("/auth")
     }
 
-    const openRightsArticle = async (articleId: string) => {
-        setArticleLoading(true)
-        setArticleError("")
-        setSelectedArticle(null)
-        try {
-            const detail = await fetchRightsLawArticle(articleId)
-            setSelectedArticle(detail)
-        } catch (err) {
-            setArticleError(err instanceof Error ? err.message : "Unable to load article details.")
-        } finally {
-            setArticleLoading(false)
-        }
+    const openSectionDetail = (section: DailyLawSection) => {
+        setSelectedSection(section)
     }
 
     useEffect(() => {
-        if (!selectedArticle && !articleError && !articleLoading) return
+        if (!selectedSection) return
 
         const onKeyDown = (event: KeyboardEvent) => {
             if (event.key === "Escape") {
-                setSelectedArticle(null)
-                setArticleError("")
+                setSelectedSection(null)
             }
         }
 
         window.addEventListener("keydown", onKeyDown)
         return () => window.removeEventListener("keydown", onKeyDown)
-    }, [selectedArticle, articleError, articleLoading])
+    }, [selectedSection])
 
     return (
         <>
@@ -377,40 +393,35 @@ export default function Dashboard() {
                     <div className="eb-info-header">
                         <div className="eb-info-icon"><BookOpen size={17} /></div>
                         <div>
-                            <div className="eb-info-title">Daily Law Awareness</div>
-                            <div className="eb-info-sub">Fundamental rights guide · open article details</div>
+                            <div className="eb-info-title">{dailyLawTitle || "Daily Law Awareness"}</div>
+                            <div className="eb-info-sub">{dailyDate ? `${dailyDate} · Tap a section to read` : "Legal sections that change daily"}</div>
                         </div>
                         <button className="eb-fullscreen-btn" title="Open full guide" onClick={openLawAwarenessPage}><Maximize2 size={13} /></button>
                     </div>
-                    <div className="eb-law-chips">
-                        {categories.map(c => (
-                            <div key={c} className={`eb-chip ${activeCat === c ? "active" : ""}`} onClick={() => setActiveCat(c)}>{c}</div>
-                        ))}
-                    </div>
                     <div className="eb-law-list">
-                        {rightsLoading ? (
+                        {sectionsLoading ? (
                             <div className="eb-awareness-item">
                                 <CheckCircle size={13} />
-                                <div className="eb-awareness-text">Loading rights articles...</div>
+                                <div className="eb-awareness-text">Loading today's sections...</div>
                                 <span className="eb-awareness-badge eb-badge-update">Loading</span>
                             </div>
-                        ) : rightsError ? (
+                        ) : sectionsError ? (
                             <div className="eb-awareness-item">
                                 <CheckCircle size={13} />
-                                <div className="eb-awareness-text">{rightsError}</div>
+                                <div className="eb-awareness-text">{sectionsError}</div>
                                 <span className="eb-awareness-badge eb-badge-new">Error</span>
                             </div>
-                        ) : rightsArticles.map((item) => (
+                        ) : dailySections.slice(0, 6).map((item, i) => (
                             <button
                                 type="button"
                                 className="eb-awareness-item"
-                                key={item.article_id}
-                                onClick={() => openRightsArticle(item.article_id)}
+                                key={`${item.document}-${item.section}-${i}`}
+                                onClick={() => openSectionDetail(item)}
                                 style={{ width: "100%", border: "none", textAlign: "left" }}
                             >
                                 <CheckCircle size={13} />
                                 <div className="eb-awareness-text">
-                                    <strong>{item.article_number}</strong> - {item.title}
+                                    <strong>{item.document} §{item.section}</strong> — {item.title}
                                 </div>
                                 <span className="eb-awareness-badge eb-badge-update">Open</span>
                             </button>
@@ -424,13 +435,23 @@ export default function Dashboard() {
                         <div className="eb-info-icon"><Newspaper size={17} /></div>
                         <div>
                             <div className="eb-info-title">Legal News Feed</div>
-                            <div className="eb-info-sub">Dummy legal updates · curated preview</div>
+                            <div className="eb-info-sub">Live from Indian Kanoon · tap to explore</div>
                         </div>
                         <button className="eb-fullscreen-btn" title="Open news section" onClick={openNewsPage}><Maximize2 size={13} /></button>
                     </div>
                     <div className="eb-news-scroll">
-                        {mockLegalNews.slice(0, 5).map((item) => (
-                            <button type="button" className="eb-news-item" key={item.id} onClick={openNewsPage} style={{ width: "100%", border: "none", textAlign: "left" }}>
+                        {newsLoading ? (
+                            <div className="eb-news-item" style={{ opacity: 0.5 }}>
+                                <div className="eb-news-dot" />
+                                <div className="eb-news-text">Loading latest legal news...</div>
+                            </div>
+                        ) : newsItems.length === 0 ? (
+                            <div className="eb-news-item" style={{ opacity: 0.5 }}>
+                                <div className="eb-news-dot" />
+                                <div className="eb-news-text">No news available right now.</div>
+                            </div>
+                        ) : newsItems.map((item) => (
+                            <button type="button" className="eb-news-item" key={item.id} onClick={() => router.push(`/free-tools/news/${item.id}?headline=${encodeURIComponent(item.headline)}&summary=${encodeURIComponent(item.summary)}&category=${encodeURIComponent(item.category)}`)} style={{ width: "100%", border: "none", textAlign: "left" }}>
                                 <div className="eb-news-dot" />
                                 <div>
                                     <div className="eb-news-text">{item.headline}</div>
@@ -446,7 +467,7 @@ export default function Dashboard() {
 
             </div>
 
-            {(articleLoading || articleError || selectedArticle) ? (
+            {selectedSection ? (
                 <div
                     style={{
                         position: "fixed",
@@ -461,7 +482,7 @@ export default function Dashboard() {
                 >
                     <div
                         style={{
-                            width: "min(880px, 100%)",
+                            width: "min(720px, 100%)",
                             maxHeight: "90vh",
                             overflow: "hidden",
                             borderRadius: 24,
@@ -482,18 +503,15 @@ export default function Dashboard() {
                         >
                             <div>
                                 <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--gold)" }}>
-                                    {selectedArticle?.article_number || "Rights Article"}
+                                    {selectedSection.document} · Section {selectedSection.section}
                                 </div>
-                                <div style={{ fontFamily: "'Playfair Display', serif", fontSize: 27, fontWeight: 700, color: "var(--navy)", marginTop: 6 }}>
-                                    {selectedArticle?.title || "Loading article..."}
+                                <div style={{ fontFamily: "'Playfair Display', serif", fontSize: 22, fontWeight: 700, color: "var(--navy)", marginTop: 6 }}>
+                                    {selectedSection.title}
                                 </div>
                             </div>
                             <button
                                 type="button"
-                                onClick={() => {
-                                    setSelectedArticle(null)
-                                    setArticleError("")
-                                }}
+                                onClick={() => setSelectedSection(null)}
                                 style={{
                                     width: 40,
                                     height: 40,
@@ -513,60 +531,14 @@ export default function Dashboard() {
                         </div>
 
                         <div style={{ maxHeight: "calc(90vh - 96px)", overflowY: "auto", padding: 24, display: "grid", gap: 18 }}>
-                            {articleLoading ? (
-                                <div style={{ background: "#FBF8F1", border: "1px dashed rgba(196,154,16,0.25)", borderRadius: 18, padding: 18, color: "var(--text-mid)", fontSize: 14 }}>
-                                    Loading article details...
+                            <div style={{ background: "#FBF8F1", border: "1px solid rgba(196,154,16,0.18)", borderRadius: 18, padding: 20 }}>
+                                <div style={{ fontSize: 14, lineHeight: 1.8, color: "var(--text-mid)", whiteSpace: "pre-wrap" }}>
+                                    {selectedSection.snippet || "Full text not available."}
                                 </div>
-                            ) : articleError ? (
-                                <div style={{ background: "#FFF6F6", border: "1px solid #F1CFCF", borderRadius: 18, padding: 18, color: "#9B3A3A", fontSize: 14 }}>
-                                    {articleError}
-                                </div>
-                            ) : selectedArticle ? (
-                                <>
-                                    <div style={{ background: "#FFFEFB", border: "1px solid rgba(196,154,16,0.18)", borderRadius: 22, padding: 20 }}>
-                                        <div style={{ display: "flex", alignItems: "center", gap: 8, color: "var(--navy)", marginBottom: 10 }}>
-                                            <BookOpen size={18} />
-                                            <div style={{ fontWeight: 700 }}>What this article protects</div>
-                                        </div>
-                                        <div style={{ fontSize: 14, lineHeight: 1.8, color: "var(--text-mid)" }}>{selectedArticle.rights_explained}</div>
-                                    </div>
-
-                                    <div style={{ background: "#FFFEFB", border: "1px solid rgba(196,154,16,0.18)", borderRadius: 22, padding: 20 }}>
-                                        <div style={{ display: "flex", alignItems: "center", gap: 8, color: "var(--navy)", marginBottom: 12 }}>
-                                            <Scale size={18} />
-                                            <div style={{ fontWeight: 700 }}>Practical use</div>
-                                        </div>
-                                        <div style={{ display: "grid", gap: 10 }}>
-                                            {selectedArticle.practical_use.map((item) => (
-                                                <div key={item} style={{ display: "flex", gap: 10, background: "#F8F2E5", borderRadius: 16, padding: "12px 14px", fontSize: 14, color: "var(--text-mid)", lineHeight: 1.7 }}>
-                                                    <span style={{ width: 8, height: 8, borderRadius: 999, background: "var(--gold)", marginTop: 8, flexShrink: 0 }} />
-                                                    <span>{item}</span>
-                                                </div>
-                                            ))}
-                                        </div>
-                                    </div>
-
-                                    <div style={{ background: "#FFFEFB", border: "1px solid rgba(196,154,16,0.18)", borderRadius: 22, padding: 20 }}>
-                                        <div style={{ display: "flex", alignItems: "center", gap: 8, color: "var(--navy)", marginBottom: 12 }}>
-                                            <Landmark size={18} />
-                                            <div style={{ fontWeight: 700 }}>Past case references</div>
-                                        </div>
-                                        <div style={{ display: "grid", gap: 12 }}>
-                                            {selectedArticle.case_references.map((caseItem) => (
-                                                <div key={`${caseItem.case_name}-${caseItem.year}`} style={{ background: "#FCF8F0", border: "1px solid rgba(196,154,16,0.18)", borderRadius: 18, padding: 16 }}>
-                                                    <div style={{ display: "flex", justifyContent: "space-between", gap: 12, alignItems: "center", flexWrap: "wrap" }}>
-                                                        <div style={{ fontSize: 14, fontWeight: 700, color: "var(--navy)" }}>{caseItem.case_name}</div>
-                                                        <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.16em", textTransform: "uppercase", color: "var(--text-light)", background: "#fff", borderRadius: 999, padding: "6px 10px" }}>
-                                                            {caseItem.year}
-                                                        </div>
-                                                    </div>
-                                                    <div style={{ fontSize: 13.5, lineHeight: 1.7, color: "var(--text-mid)", marginTop: 8 }}>{caseItem.principle}</div>
-                                                </div>
-                                            ))}
-                                        </div>
-                                    </div>
-                                </>
-                            ) : null}
+                            </div>
+                            <div style={{ fontSize: 12, color: "var(--text-light)", textAlign: "center" }}>
+                                Page {selectedSection.page} · Updated daily
+                            </div>
                         </div>
                     </div>
                 </div>
