@@ -1,0 +1,128 @@
+[
+  {
+    "law_id": "bns_2023",
+    "provision_count": 46,
+    "embed_seconds": 36.55,
+    "faiss_seconds": 0.0,
+    "faiss_size_kb": 138.0
+  },
+  {
+    "law_id": "bnss_2023",
+    "provision_count": 68,
+    "embed_seconds": 45.55,
+    "faiss_seconds": 0.0,
+    "faiss_size_kb": 204.0
+  },
+  {
+    "law_id": "bsa_2023",
+    "provision_count": 46,
+    "embed_seconds": 29.78,
+    "faiss_seconds": 0.0,
+    "faiss_size_kb": 138.0
+  },
+  {
+    "law_id": "constitution",
+    "provision_count": 459,
+    "embed_seconds": 71.65,
+    "faiss_seconds": 0.0,
+    "faiss_size_kb": 1377.0
+  },
+  {
+    "law_id": "corporate",
+    "provision_count": 1217,
+    "embed_seconds": 357.84,
+    "faiss_seconds": 0.01,
+    "faiss_size_kb": 3651.0
+  },
+  {
+    "law_id": "cpa_2019",
+    "provision_count": 212,
+    "embed_seconds": 61.83,
+    "faiss_seconds": 0.0,
+    "faiss_size_kb": 636.0
+  },
+  {
+    "law_id": "dv_act_2005",
+    "provision_count": 70,
+    "embed_seconds": 34.34,
+    "faiss_seconds": 0.0,
+    "faiss_size_kb": 210.0
+  },
+  {
+    "law_id": "family_laws",
+    "provision_count": 46,
+    "embed_seconds": 29.0,
+    "faiss_seconds": 0.0,
+    "faiss_size_kb": 138.0
+  },
+  {
+    "law_id": "gdr_rules_2014",
+    "provision_count": 4,
+    "embed_seconds": 1.78,
+    "faiss_seconds": 0.0,
+    "faiss_size_kb": 12.0
+  },
+  {
+    "law_id": "ica_1872",
+    "provision_count": 317,
+    "embed_seconds": 89.39,
+    "faiss_seconds": 0.0,
+    "faiss_size_kb": 951.0
+  },
+  {
+    "law_id": "it_act_2000",
+    "provision_count": 214,
+    "embed_seconds": 77.29,
+    "faiss_seconds": 0.0,
+    "faiss_size_kb": 642.0
+  },
+  {
+    "law_id": "labour_employment",
+    "provision_count": 251,
+    "embed_seconds": 84.41,
+    "faiss_seconds": 0.0,
+    "faiss_size_kb": 753.0
+  },
+  {
+    "law_id": "motor_vehicles",
+    "provision_count": 453,
+    "embed_seconds": 123.6,
+    "faiss_seconds": 0.0,
+    "faiss_size_kb": 1359.0
+  },
+  {
+    "law_id": "rera",
+    "provision_count": 180,
+    "embed_seconds": 59.53,
+    "faiss_seconds": 0.0,
+    "faiss_size_kb": 540.0
+  },
+  {
+    "law_id": "securities",
+    "provision_count": 104,
+    "embed_seconds": 53.1,
+    "faiss_seconds": 0.0,
+    "faiss_size_kb": 312.0
+  },
+  {
+    "law_id": "sra_1963",
+    "provision_count": 94,
+    "embed_seconds": 44.47,
+    "faiss_seconds": 0.0,
+    "faiss_size_kb": 282.0
+  },
+  {
+    "law_id": "taxation",
+    "provision_count": 1581,
+    "embed_seconds": 3284.79,
+    "faiss_seconds": 0.0,
+    "faiss_size_kb": 4743.0
+  },
+  {
+    "law_id": "tpa_1882",
+    "provision_count": 279,
+    "embed_seconds": 75.4,
+    "faiss_seconds": 0.0,
+    "faiss_size_kb": 837.0
+  }
+]

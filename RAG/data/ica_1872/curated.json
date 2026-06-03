@@ -1,0 +1,5159 @@
+{
+  "law_id": "ica_1872",
+  "domain_field": null,
+  "curated": [
+    {
+      "provision_number": "1",
+      "summary": "Section 1: Short title",
+      "plain_english": "Extent. Commencement. Saving. 2. Interpretation-clause. OF THE COMMUNICATION, ACCEPTANCE AND REVOCATION OF PROPOSALS",
+      "keywords": [
+        "Short",
+        "Title",
+        "Extent",
+        "Commencement",
+        "Saving",
+        "Interpretation"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "3",
+      "summary": "Section 3: Communication, acceptance and revocation of proposals",
+      "plain_english": "Section 3: Communication, acceptance and revocation of proposals",
+      "keywords": [
+        "Communication",
+        "Acceptance",
+        "Revocation",
+        "Proposals"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "4",
+      "summary": "Section 4: Communication when complete",
+      "plain_english": "Section 4: Communication when complete",
+      "keywords": [
+        "Communication",
+        "When",
+        "Complete"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "5",
+      "summary": "Section 5: Revocation of proposals and acceptances",
+      "plain_english": "Section 5: Revocation of proposals and acceptances",
+      "keywords": [
+        "Revocation",
+        "Proposals",
+        "Acceptances"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "6",
+      "summary": "Section 6: Revocation how made",
+      "plain_english": "Section 6: Revocation how made",
+      "keywords": [
+        "Revocation",
+        "Made"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "7",
+      "summary": "Section 7: Acceptance must be absolute",
+      "plain_english": "Section 7: Acceptance must be absolute",
+      "keywords": [
+        "Acceptance",
+        "Must",
+        "Absolute"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "8",
+      "summary": "Section 8: Acceptance by performing conditions, or receiving consideration",
+      "plain_english": "Section 8: Acceptance by performing conditions, or receiving consideration",
+      "keywords": [
+        "Acceptance",
+        "Performing",
+        "Conditions",
+        "Receiving",
+        "Consideration"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "9",
+      "summary": "Section 9: Promises, express and implied",
+      "plain_english": "OF CONTRACTS, VOIDABLE CONTRACTS AND VOID AGREEMENTS",
+      "keywords": [
+        "Contracts",
+        "Promises",
+        "Express",
+        "Implied",
+        "Voidable",
+        "Void"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "10",
+      "summary": "Section 10: What agreements are contracts",
+      "plain_english": "Section 10: What agreements are contracts",
+      "keywords": [
+        "What",
+        "Agreements",
+        "Contracts"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "11",
+      "summary": "Section 11: Who are competent to contract",
+      "plain_english": "Section 11: Who are competent to contract",
+      "keywords": [
+        "Competent",
+        "Contract"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "12",
+      "summary": "Section 12: What is a sound mind for the purposes of contracting",
+      "plain_english": "13. “Consent” defined. 14. “Free consent” defined. 15. “Coercion” defined. 16. “Undue influence” defined. 17. “Fraud” defined. 18. “Misrepresentation” defined.",
+      "keywords": [
+        "Defined",
+        "Consent",
+        "What",
+        "Sound",
+        "Mind",
+        "Purposes"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "19",
+      "summary": "Section 19: Voidability of agreements without free consent",
+      "plain_english": "Section 19: Voidability of agreements without free consent",
+      "keywords": [
+        "Voidability",
+        "Agreements",
+        "Free",
+        "Consent"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "19A",
+      "summary": "Section 19A: Power to set aside contract induced by undue influence",
+      "plain_english": "Section 19A: Power to set aside contract induced by undue influence",
+      "keywords": [
+        "Power",
+        "Aside",
+        "Contract",
+        "Induced",
+        "Undue",
+        "Influence"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "20",
+      "summary": "Section 20: Agreement void where both parties are under mistake as to matter of fact",
+      "plain_english": "Section 20: Agreement void where both parties are under mistake as to matter of fact",
+      "keywords": [
+        "Agreement",
+        "Void",
+        "Where",
+        "Both",
+        "Parties",
+        "Mistake"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "21",
+      "summary": "Section 21: Effect of mistakes as to law",
+      "plain_english": "Section 21: Effect of mistakes as to law",
+      "keywords": [
+        "Effect",
+        "Mistakes"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "22",
+      "summary": "Section 22: Contract caused by mistake of one party as to matter of fact",
+      "plain_english": "1 SECTIONS",
+      "keywords": [
+        "Contract",
+        "Caused",
+        "Mistake",
+        "Party",
+        "Matter",
+        "Fact"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "23",
+      "summary": "Section 23: What considerations and objects are lawful, and what not",
+      "plain_english": "Void agreements",
+      "keywords": [
+        "What",
+        "Considerations",
+        "Objects",
+        "Lawful",
+        "Void",
+        "Agreements"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "24",
+      "summary": "Section 24: Agreement void, if considerations and objects unlawful in part",
+      "plain_english": "Section 24: Agreement void, if considerations and objects unlawful in part",
+      "keywords": [
+        "Agreement",
+        "Void",
+        "Considerations",
+        "Objects",
+        "Unlawful",
+        "Part"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "25",
+      "summary": "Section 25: Agreement without consideration, void, unless it is in writing and registered, or is a promise to",
+      "plain_english": "compensate for something done, or is a promise to pay a debt barred by limitation law.",
+      "keywords": [
+        "Promise",
+        "Agreement",
+        "Consideration",
+        "Void",
+        "Unless",
+        "Writing"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "26",
+      "summary": "Section 26: Agreement in restraint of marriage, void",
+      "plain_english": "Section 26: Agreement in restraint of marriage, void",
+      "keywords": [
+        "Agreement",
+        "Restraint",
+        "Marriage",
+        "Void"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "27",
+      "summary": "Section 27: Agreement in restraint of trade, void",
+      "plain_english": "Saving of agreement not to carry on business of which good-will is sold.",
+      "keywords": [
+        "Agreement",
+        "Restraint",
+        "Trade",
+        "Void",
+        "Saving",
+        "Carry"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "28",
+      "summary": "Section 28: Agreements in restraint of legal proceeding void",
+      "plain_english": "Saving of contract to refer to arbitration dispute that may arise. Saving of contract to refer questions that have already arisen. Saving of a guarantee agreement of a bank or a financial institution.",
+      "keywords": [
+        "Saving",
+        "Contract",
+        "Refer",
+        "Agreements",
+        "Restraint",
+        "Legal"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "29",
+      "summary": "Section 29: Agreements void for uncertainty",
+      "plain_english": "Section 29: Agreements void for uncertainty",
+      "keywords": [
+        "Agreements",
+        "Void",
+        "Uncertainty"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "30",
+      "summary": "Section 30: Agreements by way of wager, void",
+      "plain_english": "Exception in favour of certain prizes for horse-racing. Section 294A of the Indian Penal Code not affected. OF CONTINGENT CONTRACTS 31. “Contingent contract” defined.",
+      "keywords": [
+        "Contingent",
+        "Agreements",
+        "Wager",
+        "Void",
+        "Exception",
+        "Favour"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "32",
+      "summary": "Section 32: Enforcement of contracts contingent on an event happening",
+      "plain_english": "Section 32: Enforcement of contracts contingent on an event happening",
+      "keywords": [
+        "Enforcement",
+        "Contracts",
+        "Contingent",
+        "Event",
+        "Happening"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "33",
+      "summary": "Section 33: Enforcement of contracts contingent on an event not happening",
+      "plain_english": "Section 33: Enforcement of contracts contingent on an event not happening",
+      "keywords": [
+        "Enforcement",
+        "Contracts",
+        "Contingent",
+        "Event",
+        "Happening"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "34",
+      "summary": "Section 34: When event on which contract is contingent to be deemed impossible, if it is the future conduct of",
+      "plain_english": "a living person.",
+      "keywords": [
+        "When",
+        "Event",
+        "Which",
+        "Contract",
+        "Contingent",
+        "Deemed"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "35",
+      "summary": "Section 35: When contracts become void which are contingent on happening of specified event within fixed",
+      "plain_english": "time. When contracts may be enforced, which are contingent on specified event not happening within fixed time.",
+      "keywords": [
+        "When",
+        "Contracts",
+        "Which",
+        "Contingent",
+        "Happening",
+        "Specified"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "36",
+      "summary": "Section 36: Agreement contingent on impossible events void",
+      "plain_english": "OF THE PERFORMANCE OF CONTRACTS Contracts which must be performed",
+      "keywords": [
+        "Contracts",
+        "Agreement",
+        "Contingent",
+        "Impossible",
+        "Events",
+        "Void"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "37",
+      "summary": "Section 37: Obligation of parties to contracts",
+      "plain_english": "Section 37: Obligation of parties to contracts",
+      "keywords": [
+        "Obligation",
+        "Parties",
+        "Contracts"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "38",
+      "summary": "Section 38: Effect of refusal to accept offer of performance",
+      "plain_english": "Section 38: Effect of refusal to accept offer of performance",
+      "keywords": [
+        "Effect",
+        "Refusal",
+        "Accept",
+        "Offer",
+        "Performance"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "39",
+      "summary": "Section 39: Effect of refusal of party to perform promise wholly",
+      "plain_english": "By whom contracts must be performed",
+      "keywords": [
+        "Effect",
+        "Refusal",
+        "Party",
+        "Perform",
+        "Promise",
+        "Wholly"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "40",
+      "summary": "Section 40: Person by whom promise is to be performed",
+      "plain_english": "Section 40: Person by whom promise is to be performed",
+      "keywords": [
+        "Person",
+        "Whom",
+        "Promise",
+        "Performed"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "41",
+      "summary": "Section 41: Effect of accepting performance from third person",
+      "plain_english": "2 SECTIONS",
+      "keywords": [
+        "Effect",
+        "Accepting",
+        "Performance",
+        "Third",
+        "Person",
+        "Sections"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "42",
+      "summary": "Section 42: Devolution of joint liabilities",
+      "plain_english": "Section 42: Devolution of joint liabilities",
+      "keywords": [
+        "Devolution",
+        "Joint",
+        "Liabilities"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "43",
+      "summary": "Section 43: Any one of joint promisors may be compelled to perform",
+      "plain_english": "Each promisor may compel contribution. Sharing of loss by default in contribution.",
+      "keywords": [
+        "Contribution",
+        "Joint",
+        "Promisors",
+        "Compelled",
+        "Perform",
+        "Each"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "44",
+      "summary": "Section 44: Effect of release of one joint promisor",
+      "plain_english": "Section 44: Effect of release of one joint promisor",
+      "keywords": [
+        "Effect",
+        "Release",
+        "Joint",
+        "Promisor"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "45",
+      "summary": "Section 45: Devolution of joint rights",
+      "plain_english": "Time and place for performance",
+      "keywords": [
+        "Devolution",
+        "Joint",
+        "Rights",
+        "Time",
+        "Place",
+        "Performance"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "46",
+      "summary": "Section 46: Time for performance of promise, when no application is to be made and no time is specified",
+      "plain_english": "Section 46: Time for performance of promise, when no application is to be made and no time is specified",
+      "keywords": [
+        "Time",
+        "Performance",
+        "Promise",
+        "When",
+        "Application",
+        "Made"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "47",
+      "summary": "Section 47: Time and place for performance of promise, where time is specified and no application to be",
+      "plain_english": "made.",
+      "keywords": [
+        "Time",
+        "Place",
+        "Performance",
+        "Promise",
+        "Where",
+        "Specified"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "48",
+      "summary": "Section 48: Application for performance on certain day to be at proper time and place",
+      "plain_english": "Section 48: Application for performance on certain day to be at proper time and place",
+      "keywords": [
+        "Application",
+        "Performance",
+        "Certain",
+        "Proper",
+        "Time",
+        "Place"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "49",
+      "summary": "Section 49: Place for performance of promise, where no application to be made and no place fixed for",
+      "plain_english": "performance.",
+      "keywords": [
+        "Place",
+        "Performance",
+        "Promise",
+        "Where",
+        "Application",
+        "Made"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "50",
+      "summary": "Section 50: Performance in manner or at time prescribed or sanctioned by promisee",
+      "plain_english": "Performance of reciprocal promises",
+      "keywords": [
+        "Performance",
+        "Manner",
+        "Time",
+        "Prescribed",
+        "Sanctioned",
+        "Promisee"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "51",
+      "summary": "Section 51: Promisor not bound to perform, unless reciprocal promisee ready and willing to perform",
+      "plain_english": "Section 51: Promisor not bound to perform, unless reciprocal promisee ready and willing to perform",
+      "keywords": [
+        "Perform",
+        "Promisor",
+        "Bound",
+        "Unless",
+        "Reciprocal",
+        "Promisee"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "52",
+      "summary": "Section 52: Order of performance of reciprocal promises",
+      "plain_english": "Section 52: Order of performance of reciprocal promises",
+      "keywords": [
+        "Order",
+        "Performance",
+        "Reciprocal",
+        "Promises"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "53",
+      "summary": "Section 53: Liability of party preventing event on which the contract is to take effect",
+      "plain_english": "Section 53: Liability of party preventing event on which the contract is to take effect",
+      "keywords": [
+        "Liability",
+        "Party",
+        "Preventing",
+        "Event",
+        "Which",
+        "Contract"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "54",
+      "summary": "Section 54: Effect of default as to that promise which should be first performed, in contract consisting of",
+      "plain_english": "reciprocal promises.",
+      "keywords": [
+        "Effect",
+        "Default",
+        "Promise",
+        "Which",
+        "Should",
+        "First"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "55",
+      "summary": "Section 55: Effect of failure to perform at fixed time, in contract in which time is essential",
+      "plain_english": "Effect of such failure when time is not essential. Effect of acceptance of performance at time other than that agreed upon.",
+      "keywords": [
+        "Time",
+        "Effect",
+        "Failure",
+        "Essential",
+        "Perform",
+        "Fixed"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "56",
+      "summary": "Section 56: Agreement to do impossible act",
+      "plain_english": "Contract to do an act afterwards becoming impossible or unlawful. Compensation for loss through non-performance of act known to be impossible or unlawful.",
+      "keywords": [
+        "Impossible",
+        "Unlawful",
+        "Agreement",
+        "Contract",
+        "Afterwards",
+        "Becoming"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "57",
+      "summary": "Section 57: Reciprocal promise to do things legal, and also other things illegal",
+      "plain_english": "Section 57: Reciprocal promise to do things legal, and also other things illegal",
+      "keywords": [
+        "Things",
+        "Reciprocal",
+        "Promise",
+        "Legal",
+        "Also",
+        "Other"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "58",
+      "summary": "Section 58: Alternative promise, one branch being illegal",
+      "plain_english": "Appropriation of payments",
+      "keywords": [
+        "Alternative",
+        "Promise",
+        "Branch",
+        "Being",
+        "Illegal",
+        "Appropriation"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "59",
+      "summary": "Section 59: Application of payment where debt to be discharged is indicated",
+      "plain_english": "Section 59: Application of payment where debt to be discharged is indicated",
+      "keywords": [
+        "Application",
+        "Payment",
+        "Where",
+        "Debt",
+        "Discharged",
+        "Indicated"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "60",
+      "summary": "Section 60: Application of payment where debt to be discharged is not indicated",
+      "plain_english": "Section 60: Application of payment where debt to be discharged is not indicated",
+      "keywords": [
+        "Application",
+        "Payment",
+        "Where",
+        "Debt",
+        "Discharged",
+        "Indicated"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "61",
+      "summary": "Section 61: Application of payment where neither party appropriates",
+      "plain_english": "Contracts which need not be performed",
+      "keywords": [
+        "Application",
+        "Payment",
+        "Where",
+        "Neither",
+        "Party",
+        "Appropriates"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "62",
+      "summary": "Section 62: Effect of novation, rescission, and alteration of contract",
+      "plain_english": "Section 62: Effect of novation, rescission, and alteration of contract",
+      "keywords": [
+        "Effect",
+        "Novation",
+        "Rescission",
+        "Alteration",
+        "Contract"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "63",
+      "summary": "Section 63: Promisee may dispense with or remit performance of promise",
+      "plain_english": "Section 63: Promisee may dispense with or remit performance of promise",
+      "keywords": [
+        "Promisee",
+        "Dispense",
+        "Remit",
+        "Performance",
+        "Promise"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "64",
+      "summary": "Section 64: Consequences of rescission of voidable contract",
+      "plain_english": "Section 64: Consequences of rescission of voidable contract",
+      "keywords": [
+        "Consequences",
+        "Rescission",
+        "Voidable",
+        "Contract"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "65",
+      "summary": "Section 65: Obligation of person who has received advantage under void agreement, or contract that becomes",
+      "plain_english": "void.",
+      "keywords": [
+        "Void",
+        "Obligation",
+        "Person",
+        "Received",
+        "Advantage",
+        "Agreement"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "66",
+      "summary": "Section 66: Mode of communicating or revoking rescission of voidable contract",
+      "plain_english": "Section 66: Mode of communicating or revoking rescission of voidable contract",
+      "keywords": [
+        "Mode",
+        "Communicating",
+        "Revoking",
+        "Rescission",
+        "Voidable",
+        "Contract"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "67",
+      "summary": "Section 67: Effect of neglect of promisee to afford promisor reasonable facilities for performance",
+      "plain_english": "3 OF CERTAIN RELATIONS RESEMBLING THOSE CREATED BY CONTRACT SECTIONS",
+      "keywords": [
+        "Effect",
+        "Neglect",
+        "Promisee",
+        "Afford",
+        "Promisor",
+        "Reasonable"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "68",
+      "summary": "Section 68: Claim for necessaries supplied to person incapable of contracting, or on his account",
+      "plain_english": "Section 68: Claim for necessaries supplied to person incapable of contracting, or on his account",
+      "keywords": [
+        "Claim",
+        "Necessaries",
+        "Supplied",
+        "Person",
+        "Incapable",
+        "Contracting"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "69",
+      "summary": "Section 69: Reimbursement of person paying money due by another, in payment of which he is interested",
+      "plain_english": "Section 69: Reimbursement of person paying money due by another, in payment of which he is interested",
+      "keywords": [
+        "Reimbursement",
+        "Person",
+        "Paying",
+        "Money",
+        "Another",
+        "Payment"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "70",
+      "summary": "Section 70: Obligation of person enjoying benefit of non-gratuitous act",
+      "plain_english": "Section 70: Obligation of person enjoying benefit of non-gratuitous act",
+      "keywords": [
+        "Obligation",
+        "Person",
+        "Enjoying",
+        "Benefit",
+        "Gratuitous"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "71",
+      "summary": "Section 71: Responsibility of finder of goods",
+      "plain_english": "Section 71: Responsibility of finder of goods",
+      "keywords": [
+        "Responsibility",
+        "Finder",
+        "Goods"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "72",
+      "summary": "Section 72: Liability of person to whom money is paid, or thing delivered, by mistake or under coercion",
+      "plain_english": "OF THE CONSEQUENCES OF BREACH OF CONTRACT",
+      "keywords": [
+        "Liability",
+        "Person",
+        "Whom",
+        "Money",
+        "Paid",
+        "Thing"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "73",
+      "summary": "Section 73: Compensation for loss or damage caused by breach of contract",
+      "plain_english": "Compensation for failure to discharge obligation resembling those created by contract.",
+      "keywords": [
+        "Compensation",
+        "Contract",
+        "Loss",
+        "Damage",
+        "Caused",
+        "Breach"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "74",
+      "summary": "Section 74: Compensation for breach of contract where penalty stipulated for",
+      "plain_english": "Section 74: Compensation for breach of contract where penalty stipulated for",
+      "keywords": [
+        "Compensation",
+        "Breach",
+        "Contract",
+        "Where",
+        "Penalty",
+        "Stipulated"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "75",
+      "summary": "Section 75: Party rightfully rescinding contract, entitled to compensation",
+      "plain_english": "[CHAPTER VII SALE OF GOODS.][Repealed.]. 76. [Repealed.]. 77. [Repealed.]. 78. [Repealed.]. 79. [Repealed.]. 80. [Repealed.]. 81. [Repealed.]. 82. [Repealed.]. 83. [Repealed.]. 84. [Repealed.]. 85. [Repealed.]. 86. [Repealed.]. 87. [Repealed.]. 88. [Repealed.]. 89. [Repealed.]. [DELIVERY.][Repealed.]. 90. Repealed.]. 91. [Repealed.]. 92. [Repealed.]. 93. [Repealed.]. 94. [Repealed.] [SELLER’S LIEN.][Repealed.]. 95. [Repealed.]. 96. [Repealed.]. 97. [Repealed.]. 98. [Repealed.] [STOPPAGE IN TRANS",
+      "keywords": [
+        "Repealed",
+        "Party",
+        "Rightfully",
+        "Rescinding",
+        "Contract",
+        "Entitled"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "125",
+      "summary": "Section 125: Rights of indemnity-holder when sued",
+      "plain_english": "126. “Contract of guarantee”, “surety”, “principal debtor” and “creditor”.",
+      "keywords": [
+        "Rights",
+        "Indemnity",
+        "Holder",
+        "When",
+        "Sued",
+        "Contract"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "127",
+      "summary": "Section 127: Consideration for guarantee",
+      "plain_english": "Section 127: Consideration for guarantee",
+      "keywords": [
+        "Consideration",
+        "Guarantee"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "128",
+      "summary": "Section 128: Surety’s liability",
+      "plain_english": "129. “Continuing guarantee”.",
+      "keywords": [
+        "Surety",
+        "Liability",
+        "Continuing",
+        "Guarantee"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "130",
+      "summary": "Section 130: Revocation of continuing guarantee",
+      "plain_english": "Section 130: Revocation of continuing guarantee",
+      "keywords": [
+        "Revocation",
+        "Continuing",
+        "Guarantee"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "131",
+      "summary": "Section 131: Revocation of continuing guarantee by surety’s death",
+      "plain_english": "Section 131: Revocation of continuing guarantee by surety’s death",
+      "keywords": [
+        "Revocation",
+        "Continuing",
+        "Guarantee",
+        "Surety",
+        "Death"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "132",
+      "summary": "Section 132: Liability of two persons, primarily liable, not affected by arrangement between them that one shall be",
+      "plain_english": "surety on other’s default.",
+      "keywords": [
+        "Liability",
+        "Persons",
+        "Primarily",
+        "Liable",
+        "Affected",
+        "Arrangement"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "133",
+      "summary": "Section 133: Discharge of surety by variance in terms of contract",
+      "plain_english": "Section 133: Discharge of surety by variance in terms of contract",
+      "keywords": [
+        "Discharge",
+        "Surety",
+        "Variance",
+        "Terms",
+        "Contract"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "134",
+      "summary": "Section 134: Discharge of surety by release or discharge of principal debtor",
+      "plain_english": "Section 134: Discharge of surety by release or discharge of principal debtor",
+      "keywords": [
+        "Discharge",
+        "Surety",
+        "Release",
+        "Principal",
+        "Debtor"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "135",
+      "summary": "Section 135: Discharge of surety when creditor compounds with, gives time to, or agrees not to sue, principal debtor",
+      "plain_english": "Section 135: Discharge of surety when creditor compounds with, gives time to, or agrees not to sue, principal debtor",
+      "keywords": [
+        "Discharge",
+        "Surety",
+        "When",
+        "Creditor",
+        "Compounds",
+        "Gives"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "136",
+      "summary": "Section 136: Surety not discharged when agreement made with third person to give time to principal debtor",
+      "plain_english": "Section 136: Surety not discharged when agreement made with third person to give time to principal debtor",
+      "keywords": [
+        "Surety",
+        "Discharged",
+        "When",
+        "Agreement",
+        "Made",
+        "Third"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "137",
+      "summary": "Section 137: Creditor’s forbearance to sue does not discharge surety",
+      "plain_english": "Section 137: Creditor’s forbearance to sue does not discharge surety",
+      "keywords": [
+        "Creditor",
+        "Forbearance",
+        "Does",
+        "Discharge",
+        "Surety"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "138",
+      "summary": "Section 138: Release of one co-surety does not discharge others",
+      "plain_english": "5 SECTIONS",
+      "keywords": [
+        "Release",
+        "Surety",
+        "Does",
+        "Discharge",
+        "Others",
+        "Sections"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "139",
+      "summary": "Section 139: Discharge of surety of creditor’s act or omission impairing surety’s eventual remedy",
+      "plain_english": "Section 139: Discharge of surety of creditor’s act or omission impairing surety’s eventual remedy",
+      "keywords": [
+        "Surety",
+        "Discharge",
+        "Creditor",
+        "Omission",
+        "Impairing",
+        "Eventual"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "140",
+      "summary": "Section 140: Rights of surety on payment or performance",
+      "plain_english": "Section 140: Rights of surety on payment or performance",
+      "keywords": [
+        "Rights",
+        "Surety",
+        "Payment",
+        "Performance"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "141",
+      "summary": "Section 141: Surety’s right to benefit of creditor’s securities",
+      "plain_english": "Section 141: Surety’s right to benefit of creditor’s securities",
+      "keywords": [
+        "Surety",
+        "Right",
+        "Benefit",
+        "Creditor",
+        "Securities"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "142",
+      "summary": "Section 142: Guarantee obtained by misrepresentation invalid",
+      "plain_english": "Section 142: Guarantee obtained by misrepresentation invalid",
+      "keywords": [
+        "Guarantee",
+        "Obtained",
+        "Misrepresentation",
+        "Invalid"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "143",
+      "summary": "Section 143: Guarantee obtained by concealment invalid",
+      "plain_english": "Section 143: Guarantee obtained by concealment invalid",
+      "keywords": [
+        "Guarantee",
+        "Obtained",
+        "Concealment",
+        "Invalid"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "144",
+      "summary": "Section 144: Guarantee on contract that creditor shall not act on it until co-surety joins",
+      "plain_english": "Section 144: Guarantee on contract that creditor shall not act on it until co-surety joins",
+      "keywords": [
+        "Guarantee",
+        "Contract",
+        "Creditor",
+        "Until",
+        "Surety",
+        "Joins"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "145",
+      "summary": "Section 145: Implied promise to indemnify surety",
+      "plain_english": "Section 145: Implied promise to indemnify surety",
+      "keywords": [
+        "Implied",
+        "Promise",
+        "Indemnify",
+        "Surety"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "146",
+      "summary": "Section 146: Co-sureties liable to contribute equally",
+      "plain_english": "Section 146: Co-sureties liable to contribute equally",
+      "keywords": [
+        "Sureties",
+        "Liable",
+        "Contribute",
+        "Equally"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "147",
+      "summary": "Section 147: Liability of co-sureties bound in different sums",
+      "plain_english": "OF BAILMENT 148. “Bailment”, “bailor” and “bailee” defined.",
+      "keywords": [
+        "Bailment",
+        "Liability",
+        "Sureties",
+        "Bound",
+        "Different",
+        "Sums"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "149",
+      "summary": "Section 149: Delivery to bailee how made",
+      "plain_english": "Section 149: Delivery to bailee how made",
+      "keywords": [
+        "Delivery",
+        "Bailee",
+        "Made"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "150",
+      "summary": "Section 150: Bailor’s duty to disclose faults in goods bailed",
+      "plain_english": "Section 150: Bailor’s duty to disclose faults in goods bailed",
+      "keywords": [
+        "Bailor",
+        "Duty",
+        "Disclose",
+        "Faults",
+        "Goods",
+        "Bailed"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "151",
+      "summary": "Section 151: Care to be taken by bailee",
+      "plain_english": "Section 151: Care to be taken by bailee",
+      "keywords": [
+        "Care",
+        "Taken",
+        "Bailee"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "152",
+      "summary": "Section 152: Bailee when not liable for loss, etc., of thing bailed",
+      "plain_english": "Section 152: Bailee when not liable for loss, etc., of thing bailed",
+      "keywords": [
+        "Bailee",
+        "When",
+        "Liable",
+        "Loss",
+        "Thing",
+        "Bailed"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "153",
+      "summary": "Section 153: Termination of bailment by bailee’s act inconsistent with conditions",
+      "plain_english": "Section 153: Termination of bailment by bailee’s act inconsistent with conditions",
+      "keywords": [
+        "Termination",
+        "Bailment",
+        "Bailee",
+        "Inconsistent",
+        "Conditions"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "154",
+      "summary": "Section 154: Liability of bailee making unauthorized use of goods bailed",
+      "plain_english": "Section 154: Liability of bailee making unauthorized use of goods bailed",
+      "keywords": [
+        "Liability",
+        "Bailee",
+        "Making",
+        "Unauthorized",
+        "Goods",
+        "Bailed"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "155",
+      "summary": "Section 155: Effect of mixture, with bailor’s consent, of his goods with bailee’s",
+      "plain_english": "Section 155: Effect of mixture, with bailor’s consent, of his goods with bailee’s",
+      "keywords": [
+        "Effect",
+        "Mixture",
+        "Bailor",
+        "Consent",
+        "Goods",
+        "Bailee"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "156",
+      "summary": "Section 156: Effect of mixture, without bailor’s consent, when the goods can be separated",
+      "plain_english": "Section 156: Effect of mixture, without bailor’s consent, when the goods can be separated",
+      "keywords": [
+        "Effect",
+        "Mixture",
+        "Bailor",
+        "Consent",
+        "When",
+        "Goods"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "157",
+      "summary": "Section 157: Effect of mixture, without bailor’s consent, when the goods cannot be separated",
+      "plain_english": "Section 157: Effect of mixture, without bailor’s consent, when the goods cannot be separated",
+      "keywords": [
+        "Effect",
+        "Mixture",
+        "Bailor",
+        "Consent",
+        "When",
+        "Goods"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "158",
+      "summary": "Section 158: Repayment, by bailor, of necessary expenses",
+      "plain_english": "Section 158: Repayment, by bailor, of necessary expenses",
+      "keywords": [
+        "Repayment",
+        "Bailor",
+        "Necessary",
+        "Expenses"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "159",
+      "summary": "Section 159: Restoration of goods lent gratuitously",
+      "plain_english": "Section 159: Restoration of goods lent gratuitously",
+      "keywords": [
+        "Restoration",
+        "Goods",
+        "Lent",
+        "Gratuitously"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "160",
+      "summary": "Section 160: Return of goods bailed on expiration of time or accomplishment of purpose",
+      "plain_english": "Section 160: Return of goods bailed on expiration of time or accomplishment of purpose",
+      "keywords": [
+        "Return",
+        "Goods",
+        "Bailed",
+        "Expiration",
+        "Time",
+        "Accomplishment"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "161",
+      "summary": "Section 161: Bailee’s responsibility when goods are not duly returned",
+      "plain_english": "Section 161: Bailee’s responsibility when goods are not duly returned",
+      "keywords": [
+        "Bailee",
+        "Responsibility",
+        "When",
+        "Goods",
+        "Duly",
+        "Returned"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "162",
+      "summary": "Section 162: Termination of gratuitous bailment by death",
+      "plain_english": "Section 162: Termination of gratuitous bailment by death",
+      "keywords": [
+        "Termination",
+        "Gratuitous",
+        "Bailment",
+        "Death"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "163",
+      "summary": "Section 163: Bailor entitled to increase or profit from goods bailed",
+      "plain_english": "Section 163: Bailor entitled to increase or profit from goods bailed",
+      "keywords": [
+        "Bailor",
+        "Entitled",
+        "Increase",
+        "Profit",
+        "Goods",
+        "Bailed"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "164",
+      "summary": "Section 164: Bailor’s responsibility to bailee",
+      "plain_english": "Section 164: Bailor’s responsibility to bailee",
+      "keywords": [
+        "Bailor",
+        "Responsibility",
+        "Bailee"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "165",
+      "summary": "Section 165: Bailment by several joint owners",
+      "plain_english": "Section 165: Bailment by several joint owners",
+      "keywords": [
+        "Bailment",
+        "Several",
+        "Joint",
+        "Owners"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "166",
+      "summary": "Section 166: Bailee not responsible on re-delivery to bailor without title",
+      "plain_english": "Section 166: Bailee not responsible on re-delivery to bailor without title",
+      "keywords": [
+        "Bailee",
+        "Responsible",
+        "Delivery",
+        "Bailor",
+        "Title"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "167",
+      "summary": "Section 167: Right of third person claiming goods bailed",
+      "plain_english": "Section 167: Right of third person claiming goods bailed",
+      "keywords": [
+        "Right",
+        "Third",
+        "Person",
+        "Claiming",
+        "Goods",
+        "Bailed"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "168",
+      "summary": "Section 168: Right of finder of goods",
+      "plain_english": "May sue for specific reward offered.",
+      "keywords": [
+        "Right",
+        "Finder",
+        "Goods",
+        "Specific",
+        "Reward",
+        "Offered"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "169",
+      "summary": "Section 169: When finder of thing commonly on sale may sell it",
+      "plain_english": "Section 169: When finder of thing commonly on sale may sell it",
+      "keywords": [
+        "When",
+        "Finder",
+        "Thing",
+        "Commonly",
+        "Sale",
+        "Sell"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "170",
+      "summary": "Section 170: Bailee’s particular lien",
+      "plain_english": "Section 170: Bailee’s particular lien",
+      "keywords": [
+        "Bailee",
+        "Particular",
+        "Lien"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "171",
+      "summary": "Section 171: General lien of bankers, factors, wharfingers, attorneys and policy-brokers",
+      "plain_english": "Bailments of pledges 172. “Pledge”, “Pawnor” and “Pawnee” defined.",
+      "keywords": [
+        "General",
+        "Lien",
+        "Bankers",
+        "Factors",
+        "Wharfingers",
+        "Attorneys"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "173",
+      "summary": "Section 173: Pawnee’s right of retainer",
+      "plain_english": "6 SECTIONS",
+      "keywords": [
+        "Pawnee",
+        "Right",
+        "Retainer",
+        "Sections"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "174",
+      "summary": "Section 174: Pawnee not to retain for debt or promise other than that for which goods pledged",
+      "plain_english": "Presumption in case of subsequent advances.",
+      "keywords": [
+        "Pawnee",
+        "Retain",
+        "Debt",
+        "Promise",
+        "Other",
+        "Than"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "175",
+      "summary": "Section 175: Pawnee’s right as to extraordinary expenses incurred",
+      "plain_english": "Section 175: Pawnee’s right as to extraordinary expenses incurred",
+      "keywords": [
+        "Pawnee",
+        "Right",
+        "Extraordinary",
+        "Expenses",
+        "Incurred"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "176",
+      "summary": "Section 176: Pawnee’s right where pawnor makes default",
+      "plain_english": "Section 176: Pawnee’s right where pawnor makes default",
+      "keywords": [
+        "Pawnee",
+        "Right",
+        "Where",
+        "Pawnor",
+        "Makes",
+        "Default"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "177",
+      "summary": "Section 177: Defaulting pawnor’s right to redeem",
+      "plain_english": "Section 177: Defaulting pawnor’s right to redeem",
+      "keywords": [
+        "Defaulting",
+        "Pawnor",
+        "Right",
+        "Redeem"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "178",
+      "summary": "Section 178: Pledge by mercantile agent",
+      "plain_english": "Section 178: Pledge by mercantile agent",
+      "keywords": [
+        "Pledge",
+        "Mercantile",
+        "Agent"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "178A",
+      "summary": "Section 178A: Pledge by person in possession under voidable contract",
+      "plain_english": "Section 178A: Pledge by person in possession under voidable contract",
+      "keywords": [
+        "Pledge",
+        "Person",
+        "Possession",
+        "Voidable",
+        "Contract"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "179",
+      "summary": "Section 179: Pledge where pawnor has only a limited interest",
+      "plain_english": "Suits by bailees or bailors against wrong-doers",
+      "keywords": [
+        "Pledge",
+        "Where",
+        "Pawnor",
+        "Only",
+        "Limited",
+        "Interest"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "180",
+      "summary": "Section 180: Suit by bailor or bailee against wrong-doer",
+      "plain_english": "Section 180: Suit by bailor or bailee against wrong-doer",
+      "keywords": [
+        "Suit",
+        "Bailor",
+        "Bailee",
+        "Against",
+        "Wrong",
+        "Doer"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "181",
+      "summary": "Section 181: Apportionment of relief or compensation obtained by such suits",
+      "plain_english": "AGENCY Appointment and authority of agents 182. “Agent” and “principal” defined.",
+      "keywords": [
+        "Apportionment",
+        "Relief",
+        "Compensation",
+        "Obtained",
+        "Suits",
+        "Agency"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "183",
+      "summary": "Section 183: Who may employ agent",
+      "plain_english": "Section 183: Who may employ agent",
+      "keywords": [
+        "Employ",
+        "Agent"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "184",
+      "summary": "Section 184: Who may be an agent",
+      "plain_english": "Section 184: Who may be an agent",
+      "keywords": [
+        "Agent"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "185",
+      "summary": "Section 185: Consideration not necessary",
+      "plain_english": "Section 185: Consideration not necessary",
+      "keywords": [
+        "Consideration",
+        "Necessary"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "186",
+      "summary": "Section 186: Agent’s authority may be expressed or implied",
+      "plain_english": "Section 186: Agent’s authority may be expressed or implied",
+      "keywords": [
+        "Agent",
+        "Authority",
+        "Expressed",
+        "Implied"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "187",
+      "summary": "Section 187: Definitions of express and implied authority",
+      "plain_english": "Section 187: Definitions of express and implied authority",
+      "keywords": [
+        "Definitions",
+        "Express",
+        "Implied",
+        "Authority"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "188",
+      "summary": "Section 188: Extent of agent’s authority",
+      "plain_english": "Section 188: Extent of agent’s authority",
+      "keywords": [
+        "Extent",
+        "Agent",
+        "Authority"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "189",
+      "summary": "Section 189: Agent’s authority in an emergency",
+      "plain_english": "Sub-agents",
+      "keywords": [
+        "Agent",
+        "Authority",
+        "Emergency",
+        "Agents"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "190",
+      "summary": "Section 190: When agent cannot delegate",
+      "plain_english": "191. “Sub-agent” defined.",
+      "keywords": [
+        "Agent",
+        "When",
+        "Cannot",
+        "Delegate",
+        "Defined"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "192",
+      "summary": "Section 192: Representation of principal by sub-agent properly appointed",
+      "plain_english": "Agent’s responsibility for sub-agent. Sub-agent’s responsibility.",
+      "keywords": [
+        "Agent",
+        "Responsibility",
+        "Representation",
+        "Principal",
+        "Properly",
+        "Appointed"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "193",
+      "summary": "Section 193: Agent’s responsibility for sub-agent appointed without authority",
+      "plain_english": "Section 193: Agent’s responsibility for sub-agent appointed without authority",
+      "keywords": [
+        "Agent",
+        "Responsibility",
+        "Appointed",
+        "Authority"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "194",
+      "summary": "Section 194: Relation between principal and person duly appointed by agent to act in business of agency",
+      "plain_english": "Section 194: Relation between principal and person duly appointed by agent to act in business of agency",
+      "keywords": [
+        "Relation",
+        "Between",
+        "Principal",
+        "Person",
+        "Duly",
+        "Appointed"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "195",
+      "summary": "Section 195: Agent’s duty in naming such person",
+      "plain_english": "Ratification",
+      "keywords": [
+        "Agent",
+        "Duty",
+        "Naming",
+        "Person",
+        "Ratification"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "196",
+      "summary": "Section 196: Right of person as to acts done for him without his authority",
+      "plain_english": "Effect of ratification.",
+      "keywords": [
+        "Right",
+        "Person",
+        "Acts",
+        "Done",
+        "Authority",
+        "Effect"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "197",
+      "summary": "Section 197: Ratification may be expressed or implied",
+      "plain_english": "Section 197: Ratification may be expressed or implied",
+      "keywords": [
+        "Ratification",
+        "Expressed",
+        "Implied"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "198",
+      "summary": "Section 198: Knowledge requisite for valid ratification",
+      "plain_english": "Section 198: Knowledge requisite for valid ratification",
+      "keywords": [
+        "Knowledge",
+        "Requisite",
+        "Valid",
+        "Ratification"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "199",
+      "summary": "Section 199: Effect of ratifying unauthorized act forming part of a transaction",
+      "plain_english": "Section 199: Effect of ratifying unauthorized act forming part of a transaction",
+      "keywords": [
+        "Effect",
+        "Ratifying",
+        "Unauthorized",
+        "Forming",
+        "Part",
+        "Transaction"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "200",
+      "summary": "Section 200: Ratification of unauthorized act cannot injure third person",
+      "plain_english": "7 Revocation of authority SECTIONS",
+      "keywords": [
+        "Ratification",
+        "Unauthorized",
+        "Cannot",
+        "Injure",
+        "Third",
+        "Person"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "201",
+      "summary": "Section 201: Termination of agency",
+      "plain_english": "Section 201: Termination of agency",
+      "keywords": [
+        "Termination",
+        "Agency"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "202",
+      "summary": "Section 202: Termination of agency, where agent has an interest in subject-matter",
+      "plain_english": "Section 202: Termination of agency, where agent has an interest in subject-matter",
+      "keywords": [
+        "Termination",
+        "Agency",
+        "Where",
+        "Agent",
+        "Interest",
+        "Subject"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "203",
+      "summary": "Section 203: When principal may revoke agent’s authority",
+      "plain_english": "Section 203: When principal may revoke agent’s authority",
+      "keywords": [
+        "When",
+        "Principal",
+        "Revoke",
+        "Agent",
+        "Authority"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "204",
+      "summary": "Section 204: Revocation where authority has been partly exercised",
+      "plain_english": "Section 204: Revocation where authority has been partly exercised",
+      "keywords": [
+        "Revocation",
+        "Where",
+        "Authority",
+        "Been",
+        "Partly",
+        "Exercised"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "205",
+      "summary": "Section 205: Compensation for revocation by principal, or renunciation by agent",
+      "plain_english": "Section 205: Compensation for revocation by principal, or renunciation by agent",
+      "keywords": [
+        "Compensation",
+        "Revocation",
+        "Principal",
+        "Renunciation",
+        "Agent"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "206",
+      "summary": "Section 206: Notice of revocation or renunciation",
+      "plain_english": "Section 206: Notice of revocation or renunciation",
+      "keywords": [
+        "Notice",
+        "Revocation",
+        "Renunciation"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "207",
+      "summary": "Section 207: Revocation and renunciation may be expressed or implied",
+      "plain_english": "Section 207: Revocation and renunciation may be expressed or implied",
+      "keywords": [
+        "Revocation",
+        "Renunciation",
+        "Expressed",
+        "Implied"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "208",
+      "summary": "Section 208: When termination of agent’s authority takes effect as to agent, and as to third persons",
+      "plain_english": "Section 208: When termination of agent’s authority takes effect as to agent, and as to third persons",
+      "keywords": [
+        "Agent",
+        "When",
+        "Termination",
+        "Authority",
+        "Takes",
+        "Effect"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "209",
+      "summary": "Section 209: Agent’s duty on termination of agency by principal’s death or insanity",
+      "plain_english": "Section 209: Agent’s duty on termination of agency by principal’s death or insanity",
+      "keywords": [
+        "Agent",
+        "Duty",
+        "Termination",
+        "Agency",
+        "Principal",
+        "Death"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "210",
+      "summary": "Section 210: Termination of sub-agent’s authority",
+      "plain_english": "Agent’s duty to principal",
+      "keywords": [
+        "Agent",
+        "Termination",
+        "Authority",
+        "Duty",
+        "Principal"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "211",
+      "summary": "Section 211: Agent’s duty in conducting principal’s business",
+      "plain_english": "Section 211: Agent’s duty in conducting principal’s business",
+      "keywords": [
+        "Agent",
+        "Duty",
+        "Conducting",
+        "Principal",
+        "Business"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "212",
+      "summary": "Section 212: Skill and diligence required from agent",
+      "plain_english": "Section 212: Skill and diligence required from agent",
+      "keywords": [
+        "Skill",
+        "Diligence",
+        "Required",
+        "Agent"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "213",
+      "summary": "Section 213: Agent’s accounts",
+      "plain_english": "Section 213: Agent’s accounts",
+      "keywords": [
+        "Agent",
+        "Accounts"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "214",
+      "summary": "Section 214: Agent’s duty to communicate with principal",
+      "plain_english": "Section 214: Agent’s duty to communicate with principal",
+      "keywords": [
+        "Agent",
+        "Duty",
+        "Communicate",
+        "Principal"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "215",
+      "summary": "Section 215: Right of principal when agent deals, on his own account, in business of agency without",
+      "plain_english": "principal’s consent.",
+      "keywords": [
+        "Principal",
+        "Right",
+        "When",
+        "Agent",
+        "Deals",
+        "Account"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "216",
+      "summary": "Section 216: Principal’s right to benefit gained by agent dealing on his own account in business of agency",
+      "plain_english": "Section 216: Principal’s right to benefit gained by agent dealing on his own account in business of agency",
+      "keywords": [
+        "Principal",
+        "Right",
+        "Benefit",
+        "Gained",
+        "Agent",
+        "Dealing"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "217",
+      "summary": "Section 217: Agent’s right of retainer out of sums received on principal’s account",
+      "plain_english": "Section 217: Agent’s right of retainer out of sums received on principal’s account",
+      "keywords": [
+        "Agent",
+        "Right",
+        "Retainer",
+        "Sums",
+        "Received",
+        "Principal"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "218",
+      "summary": "Section 218: Agent’s duty to pay sums received for principal",
+      "plain_english": "Section 218: Agent’s duty to pay sums received for principal",
+      "keywords": [
+        "Agent",
+        "Duty",
+        "Sums",
+        "Received",
+        "Principal"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "219",
+      "summary": "Section 219: When agent’s remuneration becomes due",
+      "plain_english": "Section 219: When agent’s remuneration becomes due",
+      "keywords": [
+        "When",
+        "Agent",
+        "Remuneration",
+        "Becomes"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "220",
+      "summary": "Section 220: Agent not entitled to remuneration for business misconducted",
+      "plain_english": "Section 220: Agent not entitled to remuneration for business misconducted",
+      "keywords": [
+        "Agent",
+        "Entitled",
+        "Remuneration",
+        "Business",
+        "Misconducted"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "221",
+      "summary": "Section 221: Agent’s lien on principal’s property",
+      "plain_english": "Principal’s duty to agent",
+      "keywords": [
+        "Agent",
+        "Principal",
+        "Lien",
+        "Property",
+        "Duty"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "222",
+      "summary": "Section 222: Agent to be indemnified against consequences of lawful acts",
+      "plain_english": "Section 222: Agent to be indemnified against consequences of lawful acts",
+      "keywords": [
+        "Agent",
+        "Indemnified",
+        "Against",
+        "Consequences",
+        "Lawful",
+        "Acts"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "223",
+      "summary": "Section 223: Agent to be indemnified against consequences of acts done in good faith",
+      "plain_english": "Section 223: Agent to be indemnified against consequences of acts done in good faith",
+      "keywords": [
+        "Agent",
+        "Indemnified",
+        "Against",
+        "Consequences",
+        "Acts",
+        "Done"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "224",
+      "summary": "Section 224: Non-liability of employer of agent to do a criminal act",
+      "plain_english": "Section 224: Non-liability of employer of agent to do a criminal act",
+      "keywords": [
+        "Liability",
+        "Employer",
+        "Agent",
+        "Criminal"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "225",
+      "summary": "Section 225: Compensation to agent for injury caused by principal’s neglect",
+      "plain_english": "Effect of agency on contracts with third persons",
+      "keywords": [
+        "Compensation",
+        "Agent",
+        "Injury",
+        "Caused",
+        "Principal",
+        "Neglect"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "226",
+      "summary": "Section 226: Enforcement and consequences of agent’s contracts",
+      "plain_english": "Section 226: Enforcement and consequences of agent’s contracts",
+      "keywords": [
+        "Enforcement",
+        "Consequences",
+        "Agent",
+        "Contracts"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "227",
+      "summary": "Section 227: Principal how far bound, when agent exceeds authority",
+      "plain_english": "Section 227: Principal how far bound, when agent exceeds authority",
+      "keywords": [
+        "Principal",
+        "Bound",
+        "When",
+        "Agent",
+        "Exceeds",
+        "Authority"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "228",
+      "summary": "Section 228: Principal not bound when excess of agent’s authority is not separable",
+      "plain_english": "Section 228: Principal not bound when excess of agent’s authority is not separable",
+      "keywords": [
+        "Principal",
+        "Bound",
+        "When",
+        "Excess",
+        "Agent",
+        "Authority"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "229",
+      "summary": "Section 229: Consequences of notice given to agent",
+      "plain_english": "Section 229: Consequences of notice given to agent",
+      "keywords": [
+        "Consequences",
+        "Notice",
+        "Given",
+        "Agent"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "230",
+      "summary": "Section 230: Agent cannot personally enforce, nor be bound by, contracts on behalf of principal",
+      "plain_english": "Presumption of contract to contrary.",
+      "keywords": [
+        "Agent",
+        "Cannot",
+        "Personally",
+        "Enforce",
+        "Bound",
+        "Contracts"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "231",
+      "summary": "Section 231: Rights of parties to a contract made by agent not disclosed",
+      "plain_english": "Section 231: Rights of parties to a contract made by agent not disclosed",
+      "keywords": [
+        "Rights",
+        "Parties",
+        "Contract",
+        "Made",
+        "Agent",
+        "Disclosed"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "232",
+      "summary": "Section 232: Performance of contract with agent supposed to be principal",
+      "plain_english": "Section 232: Performance of contract with agent supposed to be principal",
+      "keywords": [
+        "Performance",
+        "Contract",
+        "Agent",
+        "Supposed",
+        "Principal"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "233",
+      "summary": "Section 233: Right of person dealing with agent personally liable",
+      "plain_english": "8 SECTIONS",
+      "keywords": [
+        "Right",
+        "Person",
+        "Dealing",
+        "Agent",
+        "Personally",
+        "Liable"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "234",
+      "summary": "Section 234: Consequence of inducing agent or principal to act on belief that principal or agent will be held",
+      "plain_english": "exclusively liable.",
+      "keywords": [
+        "Agent",
+        "Principal",
+        "Consequence",
+        "Inducing",
+        "Belief",
+        "Will"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "235",
+      "summary": "Section 235: Liability of pretended agent",
+      "plain_english": "Section 235: Liability of pretended agent",
+      "keywords": [
+        "Liability",
+        "Pretended",
+        "Agent"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "236",
+      "summary": "Section 236: Person falsely contracting as agent not entitled to performance",
+      "plain_english": "Section 236: Person falsely contracting as agent not entitled to performance",
+      "keywords": [
+        "Person",
+        "Falsely",
+        "Contracting",
+        "Agent",
+        "Entitled",
+        "Performance"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "237",
+      "summary": "Section 237: Liability of principal inducing belief that agent’s unauthorized acts were authorized",
+      "plain_english": "Section 237: Liability of principal inducing belief that agent’s unauthorized acts were authorized",
+      "keywords": [
+        "Liability",
+        "Principal",
+        "Inducing",
+        "Belief",
+        "Agent",
+        "Unauthorized"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "238",
+      "summary": "Section 238: Effect, on agreement, of misrepresentation or fraud by agent",
+      "plain_english": "OF PARTNERSHIP 239. [Repealed.]. 240. [Repealed.]. 241. [Repealed.]. 242. [Repealed.]. 243. [Repealed.]. 244. [Repealed.]. 245. [Repealed.]. 246. [Repealed.]. 247. [Repealed.]. 248. [Repealed.]. 249. [Repealed.]. 250. [Repealed.]. 251. [Repealed.]. 252. [Repealed.]. 253. [Repealed.]. 254. [Repealed.]. 255. [Repealed.]. 256. [Repealed.]. 257. [Repealed.]. 258. [Repealed.]. 259. [Repealed.]. 260. [Repealed.]. 261. [Repealed.]. 262. [Repealed.]. 263. [Repealed.]. 264. [Repealed.]. 265. [Repealed.].",
+      "keywords": [
+        "Repealed",
+        "Effect",
+        "Agreement",
+        "Misrepresentation",
+        "Fraud",
+        "Agent"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "1",
+      "summary": "Section 1: Short title.—This Act may be called the Indian Contract Act, 1872",
+      "plain_english": "Extent, Commencement.—It extends to the whole of India 2[ 3***]; and it shall come into force on the first day of September, 1872. Saving—4*** Nothing herein contained shall affect the provisions of any Statute, Act or Regulation not hereby expressly repealed, nor any usage or custom of trade, nor any incident of any contract, not inconsistent with the provisions of this Act.",
+      "keywords": [
+        "Contract",
+        "Provisions",
+        "Short",
+        "Title",
+        "Called",
+        "Indian"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "2",
+      "summary": "Section 2: Interpretation-clause.—In this Act the following words and expressions are used in the following",
+      "plain_english": "senses, unless a contrary intention appears from the context:— (a) When one person signifies to another his willingness to do or to abstain from doing anything, with a view to obtaining the assent of that other to such act or abstinence, he is said to make a proposal;",
+      "keywords": [
+        "Following",
+        "Interpretation",
+        "Clause",
+        "Words",
+        "Expressions",
+        "Used"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "1",
+      "summary": "Section 1: For the Statement of Objects and Reasons for the Bill which was based on a a report of Her Majesty’s Commissioners",
+      "plain_english": "appointed to prepare a body of substantive law for India, dated 6th July, 1866, see Gazette of India, 1867 Extraordinary, p. 34; for the Report of the Select Committee, see ibid., Extraordinary, dated 28th March, 1872; for discussions in Council, see ibid., 1867, Supplement, p. 1064; ibid., 1871, p. 313, and ibid., 1872, p. 527. It has been amended in C.P. by C.P. Act 1 of 1915 and in C.P. and Berar by C.P. and Berar Act 15 of 1938. The Chapters and sections of the Transfer of Property Act, 1882",
+      "keywords": [
+        "Ibid",
+        "Report",
+        "India",
+        "Dated",
+        "Extraordinary",
+        "Berar"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "3",
+      "summary": "Section 3: The words “except the State of Jammu and Kashmir” omitted by Act 34 of 2019, s. 95 and the Fifth Schedule",
+      "plain_english": "(w.e.f. 31-10- 2019).",
+      "keywords": [
+        "Words",
+        "Except",
+        "State",
+        "Jammu",
+        "Kashmir",
+        "Omitted"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "4",
+      "summary": "Section 4: The words “The enactments mentioned in the Schedule hereto are repealed to the extent specified in the third column thereof",
+      "plain_english": "but” rep. by Act 10 of 1914, s. 3 and the Second Schedule. 10 (b) When the person to whom the proposal is made signifies his assent thereto, the proposal is said to be accepted. A proposal, when accepted, becomes a promise; (c) The person making the proposal is called the “promisor”, and the person accepting the proposal is called the “promisee”; (d) When, at the desire of the promisor, the promisee or any other person has done or abstained from doing, or does or abstains from doing, or promises",
+      "keywords": [
+        "Proposal",
+        "Person",
+        "When",
+        "Schedule",
+        "Accepted",
+        "Called"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "4",
+      "summary": "Section 4: Communication when complete.—The communication of a proposal is complete when it comes",
+      "plain_english": "to the knowledge of the person to whom it is made. The communication of an acceptance is complete,— as against the proposer, when it is put in a course of transmission to him, so as to be out of the power of the acceptor; as against the acceptor, when it comes to the knowledge of the proposer. The communication of a revocation is complete,— as against the person who makes it, when it is put into a course of transmission to the person to whom it is made, so as to be out of the power of the person",
+      "keywords": [
+        "When",
+        "Communication",
+        "Complete",
+        "Person",
+        "Against",
+        "Comes"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "5",
+      "summary": "Section 5: Revocation of proposals and acceptances.—A proposal may be revoked at any time before the",
+      "plain_english": "communication of its acceptance is complete as against the proposer, but not afterwards. An acceptance may be revoked at any time before the communication of the acceptance is complete as against the acceptor, but not afterwards. Illustration A proposes, by a letter sent by post, to sell his house to B. B accepts the proposal by a letter sent by post. A may revoke his proposal at any time before or at the moment when B posts his letter of acceptance, but not afterwards. B may revoke his acceptan",
+      "keywords": [
+        "Acceptance",
+        "Proposal",
+        "Time",
+        "Afterwards",
+        "Letter",
+        "Revoked"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "6",
+      "summary": "Section 6: Revocation how made.—A proposal is revoked—",
+      "plain_english": "(1) by the communication of notice of revocation by the proposer to the other party; (2) by the lapse of the time prescribed in such proposal for its acceptance, or, if no time is so prescribed, by the lapse of a reasonable time, without communication of the acceptance; (3) by the failure of the acceptor to fulfil a condition precedent to acceptance; or (4) by the death or insanity of the proposer, if the fact of his death or insanity comes to the knowledge of the acceptor before acceptance.",
+      "keywords": [
+        "Acceptance",
+        "Time",
+        "Revocation",
+        "Proposal",
+        "Communication",
+        "Proposer"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "7",
+      "summary": "Section 7: Acceptance must be absolute.—In order to convert a proposal into a promise, the acceptance",
+      "plain_english": "must— (1) be absolute and unqualified; (2) be expressed in some usual and reasonable manner, unless the proposal prescribes the manner in which it is to be accepted. If the proposal prescribes a manner in which it is to be accepted, and the acceptance is not made in such manner, the proposer may, within a reasonable time after the acceptance is communicated to him, insist that his proposal shall be accepted in the prescribed manner, and not otherwise; but if he fails to do so, he accepts the acc",
+      "keywords": [
+        "Manner",
+        "Acceptance",
+        "Proposal",
+        "Accepted",
+        "Must",
+        "Absolute"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "8",
+      "summary": "Section 8: Acceptance by performing conditions, or receiving consideration.—Performance of the",
+      "plain_english": "conditions of a proposal, or the acceptance of any consideration for a reciprocal promise which may be offered with a proposal, is an acceptance of the proposal.",
+      "keywords": [
+        "Acceptance",
+        "Proposal",
+        "Conditions",
+        "Consideration",
+        "Performing",
+        "Receiving"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "9",
+      "summary": "Section 9: Promises, express and implied.—In so far as the proposal or acceptance of any promise is made",
+      "plain_english": "in words, the promise is said to be express. In so far as such proposal or acceptance is made otherwise than in words, the promise is said to be implied. 12 OF CONTRACTS, VOIDABLE CONTRACTS AND VOID AGREEMENTS",
+      "keywords": [
+        "Promise",
+        "Express",
+        "Implied",
+        "Proposal",
+        "Acceptance",
+        "Made"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "10",
+      "summary": "Section 10: What agreements are contracts.—All agreements are contracts if they are made by the free",
+      "plain_english": "consent of parties competent to contract, for a lawful consideration and with a lawful object, and are not hereby expressly declared to be void. Nothing herein contained shall affect any law in force in 1[India] and not hereby expressly repealed by which any contract is required to be made in writing2 or in the presence of witnesses, or any law relating to the registration of documents.",
+      "keywords": [
+        "Agreements",
+        "Contracts",
+        "Made",
+        "Contract",
+        "Lawful",
+        "Hereby"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "11",
+      "summary": "Section 11: Who are competent to contract.—Every person is competent to contract who is of the age of",
+      "plain_english": "majority according to the law to which he is subject3, and who is of sound mind, and is not disqualified from contracting by any law to which he is subject.",
+      "keywords": [
+        "Competent",
+        "Contract",
+        "Which",
+        "Subject",
+        "Person",
+        "Majority"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "12",
+      "summary": "Section 12: What is a sound mind for the purposes of contracting.—A person is said to be of sound mind",
+      "plain_english": "for the purpose of making a contract, if, at the time when he makes it, he is capable of understanding it and of forming a rational judgment as to its effect upon his interests. A person who is usually of unsound mind, but occasionally of sound mind, may make a contract when he is of sound mind. A person who is usually of sound mind, but occasionally of unsound mind, may not make a contract when he is of unsound mind. Illustrations (a) A patient in a lunatic asylum, who is at intervals of sound",
+      "keywords": [
+        "Mind",
+        "Sound",
+        "Person",
+        "Contract",
+        "When",
+        "Unsound"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "2",
+      "summary": "Section 2: See e.g., s. 25, infra; the Copyright Act, 1957 (14 of 1957), s. 19; the Carriers Act, 1865 (3 of 1865) ss. 6 and 7;",
+      "plain_english": "the Companies Act, 1956 (1 of 1956), ss. 12, 30, 46 and 109.",
+      "keywords": [
+        "Infra",
+        "Copyright",
+        "Carriers",
+        "Companies"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "3",
+      "summary": "Section 3: See the Indian Majority Act, 1875 (9 of 1875)",
+      "plain_english": "13 Explanation.—It is immaterial whether the Indian Penal Code (45 of 1860) is or is not in force in the place where the coercion is employed. Illustration A, on board an English ship on the high seas, causes B to enter into an agreement by an act amounting to criminal intimidation under the Indian Penal Code (45 of 1860). A afterwards sues B for breach of contract at Calcutta. A has employed coercion, although his act is not an offence by the law of England, and although section 506 of the Indi",
+      "keywords": [
+        "Indian",
+        "Penal",
+        "Code",
+        "Coercion",
+        "Employed",
+        "Although"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "2",
+      "summary": "Section 2: Cf. s. 238, infra",
+      "plain_english": "Section 2: Cf. s. 238, infra",
+      "keywords": [
+        "Infra"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "3",
+      "summary": "Section 3: See s. 143, infra",
+      "plain_english": "14 Illustrations (a) A sells, by auction, to B, a horse which A knows to be unsound. A says nothing to B about the horse’s unsoundness. This is not fraud in A. (b) B is A’s daughter and has just come of age. Here, the relation between the parties would make it A’s duty to tell B if the horse is unsound. (c) B says to A—“If you do not deny it, I shall assume that the horse is sound.” A says nothing. Here, A’s silence is equivalent to speech. (d) A and B, being traders, enter upon a contract. A ha",
+      "keywords": [
+        "Horse",
+        "Says",
+        "Unsound",
+        "Nothing",
+        "Here",
+        "Infra"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "19",
+      "summary": "Section 19: Voidability of agreements without free consent.—When consent to an agreement is caused by",
+      "plain_english": "coercion,1*** fraud or misrepresentation, the agreement is a contract voidable at the option of the party whose consent was so caused. A party to a contract whose consent was caused by fraud or misrepresentation, may, if he thinks fit, insist that the contract shall be performed, and that he shall be put in the position in which he would have been if the representations made had been true. Exception.—If such consent was caused by misrepresentation or by silence, fraudulent within the meaning of",
+      "keywords": [
+        "Consent",
+        "Caused",
+        "Misrepresentation",
+        "Contract",
+        "Agreement",
+        "Fraud"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "1",
+      "summary": "Section 1: The words “undue influence” rep. by Act 6 of 1899, s. 3",
+      "plain_english": "2. Ins. by Act 6 of 1899, s. 3. 15 Any such contract may be set aside either absolutely or, if the party who was entitled to avoid it has received any benefit thereunder, upon such terms and conditions as to the Court may seem just. Illustrations (a) A’s son has forged B’s name to a promissory note. B under threat of prosecuting A’s son, obtains a bond from A for the amount of the forged note. If B sues on this bond, the Court may set the bond aside. (b) A, a money-lender, advances Rs. 100 to B,",
+      "keywords": [
+        "Bond",
+        "Aside",
+        "Court",
+        "Forged",
+        "Note",
+        "Words"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "21",
+      "summary": "Section 21: Effect of mistakes as to law.—A contract is not voidable because it was caused by a mistake as",
+      "plain_english": "to any law in force in 1[India]; but a mistake as to a law not in force in 1[India] has the same effect as a mistake of fact. 2* * * * * Illustration A and B make a contract grounded on the erroneous belief that a particular debt is barred by the Indian Law of Limitation: the contract is not voidable. 3* * * * *",
+      "keywords": [
+        "Contract",
+        "Mistake",
+        "Effect",
+        "Voidable",
+        "Force",
+        "India"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "22",
+      "summary": "Section 22: Contract caused by mistake of one party as to matter of fact.—A contract is not voidable",
+      "plain_english": "merely because it was caused by one of the parties to it being under a mistake as to a matter of fact.",
+      "keywords": [
+        "Contract",
+        "Caused",
+        "Mistake",
+        "Matter",
+        "Fact",
+        "Party"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "23",
+      "summary": "Section 23: What considerations and objects are lawful, and what not.—The consideration or object of an",
+      "plain_english": "agreement is lawful, unless— it is forbidden by law4; or is of such a nature that if permitted, it would defeat the provisions of any law; or is fraudulent ; or involves or implies injury to the person or property of another; or the Court regards it as immoral, or opposed to public policy.",
+      "keywords": [
+        "What",
+        "Lawful",
+        "Considerations",
+        "Objects",
+        "Consideration",
+        "Object"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "1",
+      "summary": "Section 1: The original words ‘British India” have successively been amended by the A.O. 1948 and the A.O. 1950 to read as above",
+      "plain_english": "2. Paragraph 2, ins. by the A.O. 1937, and as amended by the A. O. 1948 was Rep. by the A. O. 1950.",
+      "keywords": [
+        "Amended",
+        "Original",
+        "Words",
+        "British",
+        "India",
+        "Have"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "3",
+      "summary": "Section 3: The second Illustration to s. 21 rep. by Act 24 of 1917, s. 3 and the Second Schedule",
+      "plain_english": "Section 3: The second Illustration to s. 21 rep. by Act 24 of 1917, s. 3 and the Second Schedule",
+      "keywords": [
+        "Second",
+        "Illustration",
+        "Schedule"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "4",
+      "summary": "Section 4: See ss. 26, 27, 28 and 30, infra",
+      "plain_english": "16 In each of these cases, the consideration or object of an agreement is said to be unlawful. Every agreement of which the object or consideration is unlawful is void. Illustrations (a) A agrees to sell his house to B for 10,000 rupees. Here B’s promise to pay the sum of 10,000 rupees is the consideration for A’s promise to sell the house, and A’s promise to sell the house is the consideration for B’s promise to pay the 10,000 rupees. These are lawful considerations. (b) A promises to pay B 1,0",
+      "keywords": [
+        "Consideration",
+        "Promise",
+        "Sell",
+        "House",
+        "Rupees",
+        "These"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "25",
+      "summary": "Section 25: Agreement without consideration, void, unless it is in writing and registered,or is a promise",
+      "plain_english": "to compensate for something done or is a promise to pay a debt barred by limitation law.—An agreement made without consideration is void, unless— (1) it is expressed in writing and registered under the law for the time being in force for the registration of 1[documents], and is made on account of natural love and affection between parties standing in a near relation to each other ; or unless (2) it is a promise to compensate, wholly or in part, a person who has already voluntarily done something",
+      "keywords": [
+        "Unless",
+        "Promise",
+        "Agreement",
+        "Consideration",
+        "Void",
+        "Writing"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "26",
+      "summary": "Section 26: Agreement in restraint of marriage, void.—Every agreement in restraint of the marriage of any",
+      "plain_english": "person, other than a minor, is void.",
+      "keywords": [
+        "Agreement",
+        "Restraint",
+        "Marriage",
+        "Void",
+        "Person",
+        "Other"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "27",
+      "summary": "Section 27: Agreement in restraint of trade, void.—Every agreement by which any one is restrained from",
+      "plain_english": "exercising a lawful profession, trade or business of any kind, is to that extent void. Exception 1.—Saving of agreement not to carry on business of which good-will is sold.—One who sells the good-will of a business may agree with the buyer to refrain from carrying on a similar business, within specified local limits, so long as the buyer, or any person deriving title to the good-will from him, carries on a like business therein, provided that such limits appear to the Court reasonable, regard be",
+      "keywords": [
+        "Business",
+        "Agreement",
+        "Good",
+        "Will",
+        "Trade",
+        "Void"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "1",
+      "summary": "Section 1: Exceptions 2 and 3 rep. by Act 9 of 1932, s. 73 and the Second Schedule",
+      "plain_english": "2. Subs. by Act 1 of 1997, s. 2, for certain words (w.e.f. 8-1-1997).",
+      "keywords": [
+        "Exceptions",
+        "Second",
+        "Schedule",
+        "Subs",
+        "Certain",
+        "Words"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "3",
+      "summary": "Section 3: The second clause of Exception 1 to section 28 rep. by Act 1 of 1877, s. 2 and Sch",
+      "plain_english": "Section 3: The second clause of Exception 1 to section 28 rep. by Act 1 of 1877, s. 2 and Sch",
+      "keywords": [
+        "Second",
+        "Clause",
+        "Exception",
+        "Section"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "4",
+      "summary": "Section 4: Cf. the Arbitration Act, 1940 (10 of 1940) and the Companies Act, 1956 (1 of 1956), s. 389",
+      "plain_english": "18 1[Exception 3.—Saving of a guarantee agreement of a bank or a financial institution.—This section shall not render illegal a contract in writing by which any bank or financial institution stipulate a term in a guarantee or any agreement making a provision for guarantee for extinguishment of the rights or discharge of any party thereto from any liability under or in respect of such guarantee or agreement on the expiry of a specified period which is not less than one year from the date of occur",
+      "keywords": [
+        "Guarantee",
+        "Agreement",
+        "Bank",
+        "Financial",
+        "Institution",
+        "Which"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "29",
+      "summary": "Section 29: Agreements void for uncertainty.—Agreements, the meaning of which is not certain, or capable",
+      "plain_english": "of being made certain, are void. Illustrations (a) A agrees to sell to B “a hundred tons of oil”. There is nothing whatever to show what kind of oil was intended. The agreement is void for uncertainty. (b) A agrees to sell to B one hundred tons of oil of a specified description, known as an article of commerce. There is no uncertainty here to make the agreement void. (c) A, who is a dealer in cocoanut-oil only, agrees to sell to B “one hundred tons of oil”. The nature of A’s trade affords an ind",
+      "keywords": [
+        "Void",
+        "Uncertainty",
+        "Agrees",
+        "Sell",
+        "Hundred",
+        "Tons"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "30",
+      "summary": "Section 30: Agreements by way of wager void.—Agreements by way of wager are void; and no suit shall be",
+      "plain_english": "brought for recovering anything alleged to be won on any wager, or entrusted to any person to abide the result of any game or other uncertain event on which any wager is made. 1. Ins. by Act 4 of 2013, s. 17 and the Schedule (w.e.f. 18-1-2013). 19 Exception in favour of certain prizes for horse-racing.—This section shall not be deemed to render unlawful a subscription or contribution, or agreement to subscribe or contribute, made or entered into for or toward any plate, prize or sum of money, of",
+      "keywords": [
+        "Wager",
+        "Agreements",
+        "Void",
+        "Made",
+        "Suit",
+        "Brought"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "32",
+      "summary": "Section 32: Enforcement of contracts contingent on an event happening.—Contingent contracts to do or",
+      "plain_english": "not to do anything if an uncertain future event happens cannot be enforced by law unless and until that event has happened. If the event becomes impossible, such contracts become void. Illustrations (a) A makes a contract with B to buy B’s horse if A survives C. This contract cannot be enforced by law unless and until C dies in A’s lifetime. (b) A makes a contract with B to sell a horse to B at a specified price, if C, to whom the horse has been offered, refuses to buy him. The contract cannot b",
+      "keywords": [
+        "Event",
+        "Contract",
+        "Contracts",
+        "Cannot",
+        "Horse",
+        "Contingent"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "33",
+      "summary": "Section 33: Enforcement of contracts contingent on an event not happening.—Contingent contracts to do",
+      "plain_english": "or not to do anything if an uncertain future event does not happen can be enforced when the happening of that event becomes impossible, and not before. Illustration A agrees to pay B a sum of money if a certain ship does not return. The ship is sunk. The contract can be enforced when the ship sinks. 34.When event on which contract is contingent to be deemed impossible, if it is the future conduct of a living person.—If the future event on which a contract is contingent is the way in which a pers",
+      "keywords": [
+        "Event",
+        "Contingent",
+        "Future",
+        "When",
+        "Ship",
+        "Contract"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "36",
+      "summary": "Section 36: Agreement contingent on impossible events void.—Contingent agreements to do or not to do",
+      "plain_english": "anything, if an impossible event happens, are void, whether the impossibility of the event is known or not to the parties to the agreement at the time when it is made. Illustrations (a) A agrees to pay B 1,000 rupees if two straight lines should enclose a space. The agreement is void. (b) A agrees to pay B 1,000 rupees if B will marry A’s daughter C. C was dead at the time of the agreement. The agreement is void. OF THE PERFORMANCE OF CONTRACTS Contracts which must be performed",
+      "keywords": [
+        "Agreement",
+        "Void",
+        "Contingent",
+        "Impossible",
+        "Event",
+        "Time"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "37",
+      "summary": "Section 37: Obligation of parties to contracts.—The parties to a contract must either perform, or offer to",
+      "plain_english": "perform, their respective promises, unless such performance is dispensed with or excused under the provisions of this Act, or of any other law. Promises bind the representatives of the promisors in case of the death of such promisors before performance, unless a contrary intention appears from the contract. Illustrations (a) A promises to deliver goods to B on a certain day on payment of Rs. 1,000. A dies before that day. A’s representatives are bound to deliver the goods to B, and B is bound to",
+      "keywords": [
+        "Promises",
+        "Parties",
+        "Contract",
+        "Perform",
+        "Unless",
+        "Performance"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "38",
+      "summary": "Section 38: Effect of refusal to accept offer of performance.—Where a promisor has made an offer of",
+      "plain_english": "performance to the promisee, and the offer has not been accepted, the promisor is not responsible for non-performance, nor does he thereby lose his rights under the contract. Every such offer must fulfil the following conditions:— (1) it must be unconditional; (2) it must be made at a proper time and place, and under such circumstances that the person to whom it is made may have a reasonable opportunity of ascertaining that the person by whom it is made is able and willing there and then to do t",
+      "keywords": [
+        "Offer",
+        "Made",
+        "Performance",
+        "Must",
+        "Promisor",
+        "Person"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "39",
+      "summary": "Section 39: Effect of refusal of party to perform promise wholly.—When a party to a contract has refused",
+      "plain_english": "to perform, or disabled himself from performing, his promise in its entirety, the promisee may put an end to the contract, unless he has signified, by words or conduct, his acquiescence in its continuance. Illustrations (a) A, a singer, enters into a contract with B, the manager of a theatre, to sing at his theatre two nights in every week during the next two months, and B engages to pay her 100 rupees for each night’s performance. On the sixth night A wilfully absents herself from the theatre.",
+      "keywords": [
+        "Contract",
+        "Theatre",
+        "Party",
+        "Perform",
+        "Promise",
+        "Night"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "41",
+      "summary": "Section 41: Effect of accepting performance from third person.—When a promisee accepts performance",
+      "plain_english": "of the promise from a third person, he cannot afterwards enforce it against the promisor.",
+      "keywords": [
+        "Performance",
+        "Third",
+        "Person",
+        "Effect",
+        "Accepting",
+        "When"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "42",
+      "summary": "Section 42: Devolution of joint liabilities.—When two or more persons have made a joint promise, then",
+      "plain_english": "unless a contrary intention appears by the contract, all such persons, during their joint lives, and, after the death of any of them, his representative jointly with the survivor or survivors, and, after the death of the last survivor, the representatives of all jointly, must fulfil the promise. 43.Any one of joint promisors may be compelled to perform.—When two or more persons make a joint promise, the promisee may, in the absence of express agreement to the contrary, compel any 1[one or more]",
+      "keywords": [
+        "Joint",
+        "More",
+        "Persons",
+        "Promise",
+        "When",
+        "Contrary"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "45",
+      "summary": "Section 45: Devolution of joint rights.—When a person has made a promise to two or more persons jointly",
+      "plain_english": "then, unless a contrary intention appears from the contract, the right to claim performance rests, as between him and them, with them during their joint lives, and, after the death of any of them, with the representative of such deceased person jointly with the survivor or survivors, and, after the death of the last survivor, with the representatives of all jointly.2 Illustration A, in consideration of 5,000 rupees, lent to him by B and C, promises B and C jointly to repay them that sum with int",
+      "keywords": [
+        "Jointly",
+        "Them",
+        "Joint",
+        "Person",
+        "Death",
+        "Survivor"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "46",
+      "summary": "Section 46: Time for performance of promise, when no application is to be made and no time is",
+      "plain_english": "specified.—Where, by the contract, a promisor is to perform his promise without application by the promisee, and no time for performance is specified, the engagement must be performed within a reasonable time. Explanation.—The question “what is a reasonable time” is, in each particular case, a question of fact. 47.Time and place for performance of promise, where time is specified and no application to be made.—When a promise is to be performed on a certain day, and the promisor has undertaken to",
+      "keywords": [
+        "Time",
+        "Promise",
+        "Performance",
+        "Application",
+        "Specified",
+        "When"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "48",
+      "summary": "Section 48: Application for performance on certain day to be at proper time and place.—When a",
+      "plain_english": "promise is to be performed on a certain day, and the promisor has not undertaken to perform it without application by the promisee, it is the duty of the promisee to apply for performance at a proper place and within the usual hours of business.",
+      "keywords": [
+        "Application",
+        "Performance",
+        "Certain",
+        "Proper",
+        "Place",
+        "Promisee"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "1",
+      "summary": "Section 1: See s. 138, infra",
+      "plain_english": "Section 1: See s. 138, infra",
+      "keywords": [
+        "Infra"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "2",
+      "summary": "Section 2: For an Exception to s. 45 in case of Government securities, see the Public Debt Act, 1944 (18 of 1944), s. 8",
+      "plain_english": "23 Explanation.—The question “what is a proper time and place” is, in each particular case, a question of fact.",
+      "keywords": [
+        "Case",
+        "Question",
+        "Exception",
+        "Government",
+        "Securities",
+        "Public"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "49",
+      "summary": "Section 49: Place for performance of promise, where no application to be made and no place fixed for",
+      "plain_english": "performance.—When a promise is to be performed without application by the promisee, and no place is fixed for the performance of it, it is the duty of the promisor to apply to the promisee to appoint a reasonable place for the performance of the promise, and to perform it at such place. Illustration A undertakes to deliver a thousand maunds of jute to B on a fixed day. A must apply to B to appoint a reasonable place for the purpose of receiving it, and must deliver it to him at such place.",
+      "keywords": [
+        "Place",
+        "Performance",
+        "Promise",
+        "Fixed",
+        "Application",
+        "Promisee"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "50",
+      "summary": "Section 50: Performance in manner or at time prescribed or sanctioned by promisee.—The performance",
+      "plain_english": "of any promise may be made in any manner, or at any time which the promisee prescribes or sanctions. Illustrations (a) B owes A 2,000 rupees. A desires B to pay the amount to A’s account with C, a banker. B, who also banks with C, orders the amount to be transferred from his account to A’s credit, and this is done by C. Afterwards, and before A knows of the transfer, C fails. There has been a good payment by B. (b) A and B are mutually indebted. A and B settle an account by setting off one item",
+      "keywords": [
+        "Account",
+        "Performance",
+        "Manner",
+        "Time",
+        "Promisee",
+        "Amount"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "53",
+      "summary": "Section 53: Liability of party preventing event on which the contract is to take effect.—When a contract",
+      "plain_english": "contains reciprocal promises, and one party to the contract prevents the other from performing his promise, the contract becomes voidable at the option of the party so prevented; and he is entitled to compensation 1from the other party for any loss which he may sustain in consequence of the non- performance of the contract. Illustration A and B contract that B shall execute certain work for A for a thousand rupees. B is ready and willing to execute the work accordingly, but A prevents him from d",
+      "keywords": [
+        "Contract",
+        "Party",
+        "Which",
+        "Prevents",
+        "Other",
+        "Execute"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "54",
+      "summary": "Section 54: Effect of default as to that promise which should be first performed, in contract consisting",
+      "plain_english": "of reciprocal promises.—When a contract consists of reciprocal promises, such that one of them cannot be performed, or that its performance cannot be claimed till the other has been performed, and the promisor of the promise last mentioned fails to perform it, such promisor cannot claim the performance of the reciprocal promise, and must make compensation to the other party to the contract for any loss which such other party may sustain by the non-performance of the contract. Illustrations (a) A",
+      "keywords": [
+        "Contract",
+        "Promise",
+        "Performed",
+        "Reciprocal",
+        "Cannot",
+        "Performance"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "55",
+      "summary": "Section 55: Effect of failure to perform at fixed time, in contract in which time is essential.—When a",
+      "plain_english": "party to a contract promises to do a certain thing at or before a specified time, or certain things at or before specified times, and fails to do any such thing at or before the specified time, the contract, or so much of it as has not been performed, becomes voidable at the option of the promisee, if the intention of the parties was that time should be of the essence of the contract. Effect of such failure when time is not essential.—If it was not the intention of the parties that time should b",
+      "keywords": [
+        "Time",
+        "Contract",
+        "Specified",
+        "Effect",
+        "Failure",
+        "Essential"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "1",
+      "summary": "Section 1: See s. 73, infra",
+      "plain_english": "Section 1: See s. 73, infra",
+      "keywords": [
+        "Infra"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "2",
+      "summary": "Section 2: C.f. ss. 62 and 63, infra",
+      "plain_english": "25",
+      "keywords": [
+        "Infra"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "56",
+      "summary": "Section 56: Agreement to do impossible act.—An agreement to do an act impossible in itself is void",
+      "plain_english": "Contract to do an act afterwards becoming impossible or unlawful.—A contract to do an act which, after the contract is made, becomes impossible, or, by reason of some event which the promisor could not prevent, unlawful, becomes void when the act becomes impossible or unlawful.1 Compensation for loss through non-performance of act known to be impossible or unlawful.— Where one person has promised to do something which he knew, or, with reasonable diligence, might have known, and which the promis",
+      "keywords": [
+        "Impossible",
+        "Unlawful",
+        "Which",
+        "Contract",
+        "Becomes",
+        "Agreement"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "58",
+      "summary": "Section 58: Alternative promise, one branch being illegal.—In the case of an alternative promise, one",
+      "plain_english": "branch of which is legal and the other illegal, the legal branch alone can be enforced. Illustration A and B agree that A shall pay B 1,000 rupees, for which B shall afterwards deliver to A either rice or smuggled opium. This is a valid contract to deliver rice, and a void agreement as to the opium. Appropriation of payments 59.Application of payment where debt to be discharged is indicated.—Where a debtor, owing several distinct debts to one person, makes a payment to him, either with express i",
+      "keywords": [
+        "Branch",
+        "Alternative",
+        "Promise",
+        "Illegal",
+        "Which",
+        "Legal"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "1",
+      "summary": "Section 1: See s. 65, infra",
+      "plain_english": "26 Illustrations (a) A owes B, among other debts, 1,000 rupees upon a promissory note which falls due on the first June. He owes B no other debt of that amount. On the first June, A pays to B 1,000 rupees. The payment is to be applied to the discharge of the promissory note. (b) A owes to B, among other debts, the sum of 567 rupees. B writes to A and demands payment of this sum. A sends to B 567 rupees. This payment is to be applied to the discharge of the debt of which B had demanded payment.",
+      "keywords": [
+        "Rupees",
+        "Payment",
+        "Owes",
+        "Other",
+        "Among",
+        "Debts"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "60",
+      "summary": "Section 60: Application of payment where debt to be discharged is not indicated.—Where the debtor has",
+      "plain_english": "omitted to intimate and there are no other circumstances indicating to which debt the payment is to be applied, the creditor may apply it at his discretion to any lawful debt actually due and payable to him from the debtor, whether its recovery is or is not barred by the law in force for the time being as to the limitation of suits.",
+      "keywords": [
+        "Debt",
+        "Payment",
+        "Where",
+        "Debtor",
+        "Application",
+        "Discharged"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "61",
+      "summary": "Section 61: Application of payment where neither party appropriates.—Where neither party makes any",
+      "plain_english": "appropriation, the payment shall be applied in discharge of the debts in order of time, whether they are or are not barred by the law in force for the time being as to the limitation of suits. If the debts are of equal standing, the payment shall be applied in discharge of each proportionably. Contracts which need not be performed",
+      "keywords": [
+        "Payment",
+        "Where",
+        "Neither",
+        "Party",
+        "Applied",
+        "Discharge"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "62",
+      "summary": "Section 62: Effect of novation, rescission, and alteration of contract.—If the parties to a contract agree to",
+      "plain_english": "substitute a new contract for it, or to rescind or alter it, the original contract, need not be performed. Illustrations (a) A owes money to B under a contract. It is agreed between A, B and C that B shall thenceforth accept C as his debtor, instead of A. The old debt of A to B is at an end, and a new debt from C to B has been contracted. (b) A owes B 10,000 rupees. A enters into an arrangement with B and gives B a mortgage of his (A’s) estate for 5,000 rupees in place of the debt of 10,000 rupe",
+      "keywords": [
+        "Contract",
+        "Debt",
+        "Owes",
+        "Rupees",
+        "Effect",
+        "Novation"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "63",
+      "summary": "Section 63: Promisee may dispense with or remit performance of promisee.—Every promisee may",
+      "plain_english": "dispense with or remit, wholly or in part, the performance of the promisee made to him, or may extend the time for such performance1,or may accept instead of it any satisfaction which he thinks fit. Illustrations (a) A promises to paint a picture for B. B afterwards forbids him to do so. A is no longer bound to perform the promise. (b) A owes B 5,000 rupees. A pays to B, and B accepts, in satisfaction of the whole debt, 2,000 rupees paid at the time and place at which the 5,000 rupees were payab",
+      "keywords": [
+        "Promisee",
+        "Performance",
+        "Rupees",
+        "Dispense",
+        "Remit",
+        "Time"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "64",
+      "summary": "Section 64: Consequences of rescission of voidable contract.—When a person at whose option a contract is",
+      "plain_english": "voidable rescinds it, the other party thereto need not perform any promise therein contained in which he is promisor. The party rescinding a voidable contract shall, if he have received any benefit thereunder from another party to such contract, restore such benefit, so far as may be, to the person from whom it was received.4",
+      "keywords": [
+        "Contract",
+        "Voidable",
+        "Party",
+        "Person",
+        "Received",
+        "Benefit"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "1",
+      "summary": "Section 1: But see s. 135, infra",
+      "plain_english": "Section 1: But see s. 135, infra",
+      "keywords": [
+        "Infra"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "2",
+      "summary": "Section 2: See s. 41, supra",
+      "plain_english": "3. Subs. by Act 12 of 1891, s. 2 and the Second Schedule, Pt. I, for “compensation”.",
+      "keywords": [
+        "Supra",
+        "Subs",
+        "Second",
+        "Schedule",
+        "Compensation"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "4",
+      "summary": "Section 4: See s. 75, infra",
+      "plain_english": "27",
+      "keywords": [
+        "Infra"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "65",
+      "summary": "Section 65: Obligation of person who has received advantage under void agreement, or contract that",
+      "plain_english": "becomes void.—When an agreement is discovered to be void, or when a contract becomes void, any person who has received any advantage under such agreement or contract is bound to restore it, or to make compensation for it to the person from whom he received it. Illustrations (a) A pays B 1,000 rupees in consideration of B’s promising to marry C, A’s daughter. C is dead at the time of the promise. The agreement is void, but B must repay A the 1,000 rupees. (b) A contracts with B to deliver to him",
+      "keywords": [
+        "Void",
+        "Agreement",
+        "Person",
+        "Received",
+        "Contract",
+        "Advantage"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "66",
+      "summary": "Section 66: Mode of communicating or revoking rescission of voidable contract.—The rescission of a",
+      "plain_english": "voidable contract may be communicated or revoked in the same manner, and subject to the same rules, as apply to the communication or revocation of a proposal1.",
+      "keywords": [
+        "Rescission",
+        "Voidable",
+        "Contract",
+        "Same",
+        "Mode",
+        "Communicating"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "67",
+      "summary": "Section 67: Effect of neglect of promisee to afford promisor reasonable facilities for performance.—If",
+      "plain_english": "any promisee neglects or refuses to afford the promisor reasonable facilities for the performance of his promise, the promisor is excused by such neglect or refusal as to any non-performance caused thereby. Illustration A contracts with B to repair B’s house. B neglects or refuses to point out to A the places in which his house requires repair. A is excused for the non-performance of the contract if it is caused by such neglector refusal. OF CERTAIN RELATIONS RESEMBLING THOSE CREATED BY CONTRACT",
+      "keywords": [
+        "Performance",
+        "Promisor",
+        "Neglect",
+        "Promisee",
+        "Afford",
+        "Reasonable"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "68",
+      "summary": "Section 68: Claim for necessaries supplied to person incapable of contracting, or on his account.—If a",
+      "plain_english": "person, incapable of entering into a contract, or any one whom he is legally bound to support, is supplied by another person with necessaries suited to his condition in life, the person who has furnished such supplies is entitled to be reimbursed from the property of such incapable person.2 Illustrations (a) A supplies B, a lunatic, with necessaries suitable to his condition in life. A is entitled to be reimbursed from B’s property. (b) A supplies the wife and children of B, a lunatic, with nece",
+      "keywords": [
+        "Person",
+        "Necessaries",
+        "Incapable",
+        "Supplies",
+        "Supplied",
+        "Condition"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "1",
+      "summary": "Section 1: See ss. 3 and 5, supra",
+      "plain_english": "Section 1: See ss. 3 and 5, supra",
+      "keywords": [
+        "Supra"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "2",
+      "summary": "Section 2: The property of a Government ward in Madhya Pradesh is not liable under this section, see the C.P. Court of Wards Act, 1899",
+      "plain_english": "(24 of 1899), s. 31(1). 28 Illustration B holds land in Bengal, on a lease granted by A, the zamindar. The revenue payable by A to the Government being in arrear, his land is advertised for sale by the Government. Under the revenue law, the consequence of such sale will be the annulment of B’s lease. B, to prevent the sale and the consequent annulment of his own lease, pays to the Government the sum due from A. A is bound to make good to B the amount so paid. 70.Obligation of person enjoying ben",
+      "keywords": [
+        "Government",
+        "Lease",
+        "Sale",
+        "Land",
+        "Revenue",
+        "Annulment"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "72",
+      "summary": "Section 72: Liability of person to whom money is paid, or thing delivered, by mistake or under",
+      "plain_english": "coercion.—A person to whom money has been paid, or anything delivered, by mistake or under coercion, must repay or return it. Illustrations (a)A and B jointly owe 100 rupees to C, A alone pays the amount to C, and B, not knowing this fact, pays 100 rupees over again to C. C is bound to repay the amount to B. (b)A railway company refuses to deliver up certain goods to the consignee, except upon the payment of an illegal charge for carriage. The consignee pays the sum charged in order to obtain th",
+      "keywords": [
+        "Pays",
+        "Person",
+        "Whom",
+        "Money",
+        "Paid",
+        "Delivered"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "1",
+      "summary": "Section 1: As to suits by minors under s. 70 in Presidency Small Cause Courts, see the Presidency Small Cause Courts Act, 1882",
+      "plain_english": "(15 of 1882), s. 32.",
+      "keywords": [
+        "Presidency",
+        "Small",
+        "Cause",
+        "Courts",
+        "Suits",
+        "Minors"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "2",
+      "summary": "Section 2: See ss. 151 and 152, infra",
+      "plain_english": "29 Illustrations (a)A contracts to sell and deliver 50 maunds of saltpetre to B, at a certain price to be paid on delivery. A breaks his promise. B is entitled to receive from A, by way of compensation, the sum, if any, by which the contract price falls short of the price for which B might have obtained 50 maunds of saltpetre of like quality at the time when the saltpetre ought to have been delivered. (b)A hires B’s ship to go to Bombay, and there take on board, on the first of January, a cargo,",
+      "keywords": [
+        "Saltpetre",
+        "Price",
+        "Maunds",
+        "Which",
+        "Have",
+        "Infra"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "74",
+      "summary": "Section 74: Compensation for breach of contract where penalty stipulated for.—1[When a contract has",
+      "plain_english": "been broken, if a sum is named in the contract as the amount to be paid in case of such breach, or if the contract contains any other stipulation by way of penalty, the party complaining of the breach is entitled, whether or not actual damage or loss is proved to have been caused thereby, to receive from the party who has broken the contract reasonable compensation not exceeding the amount so named or, as the case may be, the penalty stipulated for. Explanation.—A stipulation for increased inter",
+      "keywords": [
+        "Contract",
+        "Breach",
+        "Penalty",
+        "Compensation",
+        "Stipulated",
+        "Been"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "127",
+      "summary": "Section 127: Consideration for guarantee.—Anything done, or any promise made, for the benefit of the",
+      "plain_english": "principal debtor, may be a sufficient consideration to the surety for giving the guarantee. Illustrations (a) B requests A to sell and deliver to him goods on credit. A agrees to do so, provided C will guarantee the payment of the price of the goods. C promises to guarantee the payment in consideration of A’s promise to deliver the goods. This is a sufficient consideration for C’s promise. (b) A sells and delivers goods to B. C afterwards requests A to forbear to sue B for the debt for a year, a",
+      "keywords": [
+        "Consideration",
+        "Guarantee",
+        "Goods",
+        "Promise",
+        "Sufficient",
+        "Requests"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "128",
+      "summary": "Section 128: Surety’s liability.—The liability of the surety is co- extensive with that of the principal debtor",
+      "plain_english": "unless it is otherwise provided by the contract. Illustration A guarantees to B the payment of a bill of exchange by C, the acceptor. The bill is dishonoured by C. A is liable, not only for the amount of the bill, but also for any interest and charges which may have become due on it. 129. “Continuing guarantee”.—A guarantee which extends to a series of transactions, is called a “continuing guarantee”. Illustrations (a) A, in consideration that B will employ C in collecting the rent of B’s zamind",
+      "keywords": [
+        "Bill",
+        "Guarantee",
+        "Surety",
+        "Liability",
+        "Which",
+        "Continuing"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "132",
+      "summary": "Section 132: Liability of two persons, primarily liable, not affected by arrangement between them that",
+      "plain_english": "one shall be surety on other’s default.—Where two persons contract with a third person to undertake a certain liability, and also contract with each other that one of them shall be liable only on the default of the other, the third person not being a party to such contract, the liability of each of such two persons to the third person under the first contract is not affected by the existence of the second contract, although such third person may have been aware of its existence. Illustration A a",
+      "keywords": [
+        "Contract",
+        "Third",
+        "Person",
+        "Liability",
+        "Persons",
+        "Other"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "135",
+      "summary": "Section 135: Discharge of surety when creditor compounds with, gives time to, or agrees not to sue",
+      "plain_english": "principal debtor.—A contract between the creditor and the principal debtor, by which the creditor makes a composition with, or promises to give time to, or not to sue, the principal debtor, discharges the surety, unless the surety assents to such contract.",
+      "keywords": [
+        "Surety",
+        "Creditor",
+        "Principal",
+        "Debtor",
+        "Time",
+        "Contract"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "136",
+      "summary": "Section 136: Surety not discharged when agreement made with third person to give time to principal",
+      "plain_english": "debtor.—Where a contract to give time to the principal debtor is made by the creditor with a third person, and not with the principal debtor, the surety is not discharged. Illustration C, the holder of an overdue bill of exchange drawn by A as surety for B, and accepted by B, contracts with M to give time to B. A is not discharged.",
+      "keywords": [
+        "Surety",
+        "Discharged",
+        "Give",
+        "Time",
+        "Principal",
+        "Debtor"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "137",
+      "summary": "Section 137: Creditor’s forbearance to sue does not discharge surety.—Mere forbearance on the part of",
+      "plain_english": "the creditor to sue the principal debtor or to enforce any other remedy against him does not, in the absence of any provision in the guarantee to the contrary, discharge the surety. Illustration B owes to C a debt guaranteed by A. The debt becomes payable. C does not sue B for a year after the debt has become payable. A is not discharged from his suretyship. 36 138.Release of one co-surety does not discharge others.—Where there are co-sureties, a release by the creditor of one of them does not d",
+      "keywords": [
+        "Does",
+        "Creditor",
+        "Discharge",
+        "Surety",
+        "Debt",
+        "Forbearance"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "139",
+      "summary": "Section 139: Discharge of surety by creditor’s act or omission impairing surety’s eventual remedy.—If",
+      "plain_english": "the creditor does any act which is inconsistent with the rights of the surety, or omits to do any act which his duty to the surety requires him to do, and the eventual remedy of the surety himself against the principal debtor is thereby impaired, the surety is discharged. Illustrations (a) B contracts to build a ship for C for a given sum, to be paid by instalments as the work reaches certain stages. A becomes surety to C for B’s due performance of the contract. C, without the knowledge of A, pr",
+      "keywords": [
+        "Surety",
+        "Creditor",
+        "Eventual",
+        "Remedy",
+        "Which",
+        "Discharge"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "142",
+      "summary": "Section 142: Guarantee obtained by misrepresentation invalid.—Any guarantee which has been obtained",
+      "plain_english": "by means of misrepresentation made by the creditor, or with his knowledge and assent, concerning a material part of the transaction, is invalid.",
+      "keywords": [
+        "Guarantee",
+        "Obtained",
+        "Misrepresentation",
+        "Invalid",
+        "Which",
+        "Been"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "143",
+      "summary": "Section 143: Guarantee obtained by concealment invalid.—Any guarantee which the creditor has obtained",
+      "plain_english": "by means of keeping silence as to material circumstances, is invalid. Illustrations (a)A engages B as clerk to collect money for him. B fails to account for some of his receipts, and A in consequence calls upon him to furnish security for his duly accounting. C gives his guarantee for B’s duly accounting. A does not acquaint C with B’s previous conduct. B afterwards makes default. The guarantee is invalid.",
+      "keywords": [
+        "Guarantee",
+        "Invalid",
+        "Obtained",
+        "Duly",
+        "Accounting",
+        "Concealment"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "1",
+      "summary": "Section 1: See s. 44, supra",
+      "plain_english": "37 (b)A guarantees to C payment for iron to be supplied by him to B to the amount of 2,000 tons. B and C have privately agreed that B should pay five rupees per ton beyond the market price, such excess to be applied in liquidation of an old debt. This agreement is concealed from A. A is not liable as a surety.",
+      "keywords": [
+        "Supra",
+        "Guarantees",
+        "Payment",
+        "Iron",
+        "Supplied",
+        "Amount"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "144",
+      "summary": "Section 144: Guarantee on contract that creditor shall not act on it until co-surety joins.—Where a",
+      "plain_english": "person gives a guarantee upon a contract that the creditor shall not act upon it until another person has joined in it as co-surety, the guarantee is not valid if that other person does not join. 145.Implied promise to indemnify surety.—In every contract of guarantee there is an implied promise by the principal debtor to indemnify the surety, and the surety is entitled to recover from the principal debtor whatever sum he has rightfully paid under the guarantee, but, no sums which he has paid wro",
+      "keywords": [
+        "Guarantee",
+        "Surety",
+        "Contract",
+        "Person",
+        "Creditor",
+        "Until"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "146",
+      "summary": "Section 146: Co-sureties liable to contribute equally.—Where two or more persons are co-sureties for the",
+      "plain_english": "same debt or duty, either jointly or severally, and whether under the same or different contracts, and whether with or without the knowledge of each other, the co-sureties, in the absence of any contract to the contrary, are liable, as between themselves, to pay each an equal share of the whole debt, or of that part of it which remains unpaid by the principal debtor1. Illustrations (a)A, B and C are sureties to D for the sum of 3,000 rupees lent to E. E makes default in payment. A, B and C are l",
+      "keywords": [
+        "Sureties",
+        "Liable",
+        "Same",
+        "Debt",
+        "Whether",
+        "Each"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "1",
+      "summary": "Section 1: See s. 43, supra",
+      "plain_english": "38 OF BAILMENT 148.“Bailment”“bailor” and “bailee” defined.—A “bailment” is the delivery of goods by one person to another for some purpose, upon a contract that they shall, when the purpose is accomplished, be returned or otherwise disposed of according to the directions of the person delivering them. The person delivering the goods is called the “bailor”. The person to whom they are delivered is called, the “bailee”. Explanation.—If a person already in possession of the goods of another contra",
+      "keywords": [
+        "Person",
+        "Bailment",
+        "Goods",
+        "Bailor",
+        "Bailee",
+        "Another"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "149",
+      "summary": "Section 149: Delivery to bailee how made.—The delivery to the bailee may be made by doing anything",
+      "plain_english": "which has the effect of putting the goods in the possession of the intended bailee or of any person authorized to hold them on his behalf. 150.Bailor’s duty to disclose faults in goods bailed.—The bailor is bound to disclose to the bailee faults in the goods bailed, of which the bailor is aware, and which materially interfere with the use of them, or expose the bailee to extraordinary risks; and if he does not make such disclosure, he is responsible for damage arising to the bailee directly from",
+      "keywords": [
+        "Bailee",
+        "Which",
+        "Goods",
+        "Bailor",
+        "Delivery",
+        "Made"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "1151",
+      "summary": "Section 1151: Care to be taken by bailee.—In all cases of bailment the bailee is bound to take as much care",
+      "plain_english": "of the goods bailed to him as a man of ordinary prudence would, under similar circumstances, take of his own goods of the same bulk, quality and value as the goods bailed2. 152.Bailee when not liable for loss, etc., of thing bailed.—The bailee, in the absence of any special contract, is not responsible for the loss, destruction or deterioration of the thing bailed, if he has taken the amount of care of it described in section 151.",
+      "keywords": [
+        "Bailee",
+        "Bailed",
+        "Care",
+        "Goods",
+        "Taken",
+        "Take"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "153",
+      "summary": "Section 153: Termination of bailment by bailee’s act inconsistent with conditions.—A contract of",
+      "plain_english": "bailment is avoidable at the option of the bailor, if the bailee does any act with regard to the goods bailed, inconsistent with the conditions of the bailment. Illustration A lets to B, for hire, a horse for his own riding. B drives the horse in his carriage. This is, at the ‘option of A, a termination of the bailment.",
+      "keywords": [
+        "Bailment",
+        "Termination",
+        "Bailee",
+        "Inconsistent",
+        "Conditions",
+        "Option"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "154",
+      "summary": "Section 154: Liability of bailee making unauthorized use of goods bailed.—If the bailee makes any use of",
+      "plain_english": "the goods bailed which is not according to the conditions of the bailment, he is liable to make compensation to the bailor for any damage arising to the goods from or during such use of them.",
+      "keywords": [
+        "Goods",
+        "Bailee",
+        "Bailed",
+        "Liability",
+        "Making",
+        "Unauthorized"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "1",
+      "summary": "Section 1: The responsibility of the Trustees of the Port of Madras constituted under the Madras Port Trust Act, 1905 (Madras Act",
+      "plain_english": "2 of 1905), in regard to goods has been declared to be that of a bailee under these sections, without the qualifying words “in the absence of any special contract” in s. 152, see s. 40(1) of that Act. 2.As to railway contracts see the Indian Railways Act, 1890 (9 of 1890), s. 72. As to the liability of common carriers, see the Carriers Act, 1865 (3 of 1865), s. 8. 39 Illustrations (a)A lends a horse to B for his own riding only. B allows C, a member of his family, to ride the horse. C rides with",
+      "keywords": [
+        "Madras",
+        "Port",
+        "Carriers",
+        "Horse",
+        "Responsibility",
+        "Trustees"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "155",
+      "summary": "Section 155: Effect of mixture, with bailor’s consent, of his goods with bailee’s.—If the bailee, with the",
+      "plain_english": "consent of the bailor, mixes the goods of the bailor with his own goods, the bailor and the bailee shall have an interest, in proportion to their respective shares, in the mixture thus produced. 156.Effect of mixture without bailor’s consent, when the goods can be separated.—If the bailee, without the consent of the bailor, mixes the goods of the bailor with his own goods, and the goods can be separated or divided, the property in the goods remains in the parties respectively; but the bailee is",
+      "keywords": [
+        "Goods",
+        "Bailor",
+        "Bailee",
+        "Consent",
+        "Mixture",
+        "Effect"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "157",
+      "summary": "Section 157: Effect of mixture, without bailor’s consent, when the goods cannot be separated.—If the",
+      "plain_english": "bailee, without the consent of the bailor, mixes the goods of the bailor with his own goods, in such a manner that it is impossible to separate the goods bailed from the other goods, and deliver them back, the bailor is entitled to be compensated by the bailee for the loss of the goods. Illustration A bails a barrel of Cape flour worth Rs. 45 to B. B, without A’s consent, mixes the flour with country flour of his own, worth only Rs. 25 a barrel. B must compensate A for the loss of his flour.",
+      "keywords": [
+        "Goods",
+        "Bailor",
+        "Flour",
+        "Consent",
+        "Bailee",
+        "Mixes"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "158",
+      "summary": "Section 158: Repayment, by bailor, of necessary expenses.—Where, by the conditions of the bailment, the",
+      "plain_english": "goods are to be kept or to be carried, or to have work done upon them by the bailee for the bailor, and the bailee is to receive no remuneration, the bailor shall repay to the bailee the necessary expenses incurred by him for the purpose of the bailment. 159.Restoration of goods lent gratuitously.—The lender of a thing for use may at any time require its return, if the loan was gratuitous, even though he lent it for a specified time or purpose. But if, on the faith of such loan made for a specif",
+      "keywords": [
+        "Bailor",
+        "Bailee",
+        "Necessary",
+        "Expenses",
+        "Bailment",
+        "Goods"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "1161",
+      "summary": "Section 1161: Bailee’s responsibility when goods are not duly returned.—If, by the default of the bailee",
+      "plain_english": "the goods are not returned, delivered or tendered at the proper time, he is responsible to the bailor for any loss, destruction or deterioration of the goods from that time.2",
+      "keywords": [
+        "Goods",
+        "Bailee",
+        "Returned",
+        "Time",
+        "Responsibility",
+        "When"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "1",
+      "summary": "Section 1: S. 161 has been declared to apply to the responsibility of the Trustees of the Port of Madras as to goods in their possession",
+      "plain_english": "seethe Madras Port Trust Act, 1905 (Madras Act 2 of 1905).",
+      "keywords": [
+        "Madras",
+        "Port",
+        "Been",
+        "Declared",
+        "Apply",
+        "Responsibility"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "2",
+      "summary": "Section 2: As to Railway contracts, see the Indian Railways Act, 1890 (9 of 1890), s. 72",
+      "plain_english": "40",
+      "keywords": [
+        "Railway",
+        "Contracts",
+        "Indian",
+        "Railways"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "162",
+      "summary": "Section 162: Termination of gratuitous bailment by death.—A gratuitous bailment is terminated by the",
+      "plain_english": "death either of the bailor or of the bailee.",
+      "keywords": [
+        "Gratuitous",
+        "Bailment",
+        "Death",
+        "Termination",
+        "Terminated",
+        "Either"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "163",
+      "summary": "Section 163: Bailor entitled to increase or profit from goods bailed.—In the absence of any contract to the",
+      "plain_english": "contrary, the bailee is bound to deliver to the bailor, or according to his directions, any increase or profit which may have accrued from the goods bailed. Illustration A leaves a cow in the custody of B to be taken care of. The cow has a calf. B is bound to deliver the calf as well as the cow to A.",
+      "keywords": [
+        "Bailor",
+        "Increase",
+        "Profit",
+        "Goods",
+        "Bailed",
+        "Bound"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "164",
+      "summary": "Section 164: Bailor’s responsibility to bailee.—The bailor is responsible to the bailee for any loss which the",
+      "plain_english": "bailee may sustain by reason that the bailor was not entitled to make the bailment, or to receive back the goods, or to give directions respecting them. 165.Bailment by several joint owners.—If several joint owners of goods bail them, the bailee may deliver them back to, or according to the directions of, one joint owner without the consent of all in the absence of any agreement to the contrary. 166.Bailee not responsible on re-delivery to bailor without title.—If the bailor has no title to the",
+      "keywords": [
+        "Bailor",
+        "Bailee",
+        "Them",
+        "Joint",
+        "Responsible",
+        "Bailment"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "170",
+      "summary": "Section 170: Bailee’s particular lien.—Where the bailee has, in accordance with the purpose of the",
+      "plain_english": "bailment, rendered any service involving the exercise of labour or skill in respect of the goods bailed, he has, in the absence of a contract to the contrary, a right to retain such goods until he receives due remuneration for the services he has rendered in respect of them. Illustrations (a) A delivers a rough diamond to B, a jeweller, to be cut and polished, which is accordingly done. B is entitled to retain the stone till he is paid for the services he has rendered. (b) A gives, cloth to B, a",
+      "keywords": [
+        "Rendered",
+        "Bailee",
+        "Respect",
+        "Goods",
+        "Retain",
+        "Services"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "1",
+      "summary": "Section 1: See the Indian Evidence Act, 1872 (1 of 1872), s. 117",
+      "plain_english": "41 171.General lien of bankers, factors, wharfingers, attorneys and policy-brokers.—Bankers, factors, wharfingers, attorneys of a High Court and policy-brokers may, in the absence of a contract to the contrary, retain as a security for a general balance of account, any goods bailed to them; but no other persons have a right to retain, as a security for such balance, goods bailed to them, unless there is an express contract to that effect1. Bailments of Pledges 172.“Pledge”“pawnor”,and “pawnee” d",
+      "keywords": [
+        "General",
+        "Bankers",
+        "Factors",
+        "Wharfingers",
+        "Attorneys",
+        "Policy"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "175",
+      "summary": "Section 175: Pawnee’s right as to extraordinary expenses incurred.—Thepawnee is entitled to receive",
+      "plain_english": "from the pawnor extraordinary expenses incurred by him for the preservation of the goods pledged.",
+      "keywords": [
+        "Extraordinary",
+        "Expenses",
+        "Incurred",
+        "Pawnee",
+        "Right",
+        "Thepawnee"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "176",
+      "summary": "Section 176: Pawnee’s right where pawnor makes default.—If the pawnor makes default in payment of the",
+      "plain_english": "debt, or performance, at the stipulated time of the promise, in respect of which the goods were pledged, the pawnee may bring a suit against the pawnor upon the debt or promise, and retain the goods pledged as a collateral security; or he may sell the thing pledged, on giving the pawnor reasonable notice of the sale. If the proceeds of such sale are less than the amount due in respect of the debt or promise, the pawnor is still liable to pay the balance. If the proceeds of the sale are greater t",
+      "keywords": [
+        "Pawnor",
+        "Debt",
+        "Promise",
+        "Pledged",
+        "Sale",
+        "Pawnee"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "177",
+      "summary": "Section 177: Defaulting pawner’s right to redeem.—If a time is stipulated for the payment of the debt, or",
+      "plain_english": "performance of the promise, for which the pledge is made, and the pawnor makes default in payment of the debt or performance of the promise at the stipulated time, he may redeem the goods pledged at any subsequent time before the actual sale of them2; but he must, in that case, pay, in addition, any expenses which have arisen from his default. 3[178. Pledge by mercantile agent.—Where a mercantile agent is, with the consent of the owner, in possession of goods or the document of title to goods, a",
+      "keywords": [
+        "Time",
+        "Goods",
+        "Redeem",
+        "Stipulated",
+        "Payment",
+        "Debt"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "178A",
+      "summary": "Section 178A: Pledge by person in possession under voidable contract.—When the pawnor has obtained",
+      "plain_english": "possession of the goods pledged by him under a contract voidable under section 19 or section 19A, but",
+      "keywords": [
+        "Possession",
+        "Voidable",
+        "Contract",
+        "Section",
+        "Pledge",
+        "Person"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "1",
+      "summary": "Section 1: As to lien of an agent, see s. 221, infra. As to lien of a Railway Administration, see the Indian Railways Act, 1890 (9 of 1890)",
+      "plain_english": "s. 55.",
+      "keywords": [
+        "Lien",
+        "Agent",
+        "Infra",
+        "Railway",
+        "Administration",
+        "Indian"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "2",
+      "summary": "Section 2: For limitation, see the Limitation Act, 1963 (36 of 1963), the Second Schedule",
+      "plain_english": "Section 2: For limitation, see the Limitation Act, 1963 (36 of 1963), the Second Schedule",
+      "keywords": [
+        "Limitation",
+        "Second",
+        "Schedule"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "3",
+      "summary": "Section 3: Ss. 178 and 178A subs. by Act 4 of 1930, s. 2, for the original s. 178",
+      "plain_english": "42 the contract has not been rescinded at the time of the pledge, the pawnee acquires a good title to the goods, provided he acts in good faith and without notice of the pawnor’s defect of title.]",
+      "keywords": [
+        "Good",
+        "Title",
+        "Subs",
+        "Original",
+        "Contract",
+        "Been"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "179",
+      "summary": "Section 179: Pledge where pawnor has only a limited interest.—Where a person pledges goods in which",
+      "plain_english": "he has only a limited interest, the pledge is valid to the extent of that interest. Suits by bailees or bailors against wrong-doers 180.Suit by bailor or bailee against wrong-doer.—If a third person wrongfully deprives the bailee of the use or possession of the goods bailed, or does them any injury, the bailee is entitled to use such remedies as the owner might have used in the like case if no bailment had been made; and either the bailor or the bailee may bring a suit against a third person for",
+      "keywords": [
+        "Bailee",
+        "Interest",
+        "Person",
+        "Against",
+        "Pledge",
+        "Where"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "181",
+      "summary": "Section 181: Apportionment of relief or compensation obtained by such suits.—Whatever is obtained by",
+      "plain_english": "way of relief or compensation in any such suit shall, as between the bailor and the bailee, be dealt with according to their respective interests. AGENCY Appointment and authority of agents 182.“Agent” and “principal” defined.—An “agent” is a person employed to do any act for another, or to represent another in dealings with third persons. The person for whom such act is done, or who is so represented, is called the “principal”.",
+      "keywords": [
+        "Relief",
+        "Compensation",
+        "Obtained",
+        "Agent",
+        "Principal",
+        "Person"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "183",
+      "summary": "Section 183: Who may employ agent.—Any person who is of the age of majority according to the law to",
+      "plain_english": "which he is subject, and who is of sound mind, may employ an agent.",
+      "keywords": [
+        "Employ",
+        "Agent",
+        "Person",
+        "Majority",
+        "According",
+        "Which"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "184",
+      "summary": "Section 184: Who may be an agent.—As between the principal and third persons, any person may become",
+      "plain_english": "an agent, but no person who is not of the age of majority and of sound mind can become an agent, so as to be responsible to his principal according to the provisions in that behalf herein contained.",
+      "keywords": [
+        "Agent",
+        "Principal",
+        "Person",
+        "Become",
+        "Between",
+        "Third"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "185",
+      "summary": "Section 185: Consideration not necessary.—No consideration is necessary to create an agency",
+      "plain_english": "Section 185: Consideration not necessary.—No consideration is necessary to create an agency",
+      "keywords": [
+        "Consideration",
+        "Necessary",
+        "Create",
+        "Agency"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "186",
+      "summary": "Section 186: Agent’s authority may be expressed or implied.—The authority of an agent may be expressed",
+      "plain_english": "or implied1.",
+      "keywords": [
+        "Agent",
+        "Authority",
+        "Expressed",
+        "Implied"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "187",
+      "summary": "Section 187: Definitions of express and implied authority.—An authority is said to be express when it is",
+      "plain_english": "given by words spoken or written. An authority is said to be implied when it is to be inferred from the circumstances of the case; and things spoken or written, or the ordinary course of dealing, may be accounted circumstances of the case. Illustration A owns a shop in Serampore, living himself in Calcutta, and visiting the shop occasionally. The shop is managed by B, and he is in the habit of ordering goods from C in the name of A for the purposes of the shop, and of paying for them out of A’s",
+      "keywords": [
+        "Shop",
+        "Authority",
+        "Express",
+        "Implied",
+        "Said",
+        "When"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "188",
+      "summary": "Section 188: Extent of agent’s authority.—An agent, having an authority to do an act, has authority to do",
+      "plain_english": "every lawful thing which is necessary in order to do such act. An agent having an authority to carry on a business, has authority to do every lawful thing necessary for the purpose, or usually done in the course, of conducting such business.",
+      "keywords": [
+        "Authority",
+        "Agent",
+        "Having",
+        "Lawful",
+        "Thing",
+        "Necessary"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "1",
+      "summary": "Section 1: See, however, the Registration Act, 1908 (16 of 1908), s. 33; see also the Code of Civil Procedure, 1908 (5 of 1908), Sch. I",
+      "plain_english": "Order III, rule 4. 43 Illustrations (a) A is employed by B, residing in London, to recover at Bombay a debt due to B. A may adopt any legal process necessary for the purpose of recovering the debt, and may give a valid discharge for the same. (b) A constitutes B his agent to carry on his business of a ship-builder. B may purchase timber and other materials, and hire workmen, for the purpose of carrying on the business. 189.Agent’s authority in an emergency.—An agent has authority, in an emergenc",
+      "keywords": [
+        "Agent",
+        "Debt",
+        "Purpose",
+        "Business",
+        "Authority",
+        "However"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "190",
+      "summary": "Section 190: When agent cannot delegate.—An agent cannot lawfully employ another to perform acts",
+      "plain_english": "which he has expressly or impliedly undertaken to perform personally, unless by the ordinary custom of trade a sub-agent may, or, from the nature of the agency, a sub-agent must, be employed. 191. “Sub-agent” defined.—A “sub-agent” is a person employed by, and acting under the control of, the original agent in the business of the agency.",
+      "keywords": [
+        "Agent",
+        "Cannot",
+        "Perform",
+        "Agency",
+        "Employed",
+        "When"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "192",
+      "summary": "Section 192: Representation of principal by sub-agent properly appointed.—Where a sub-agent is",
+      "plain_english": "properly appointed, the principal is, so far as regards third persons, represented by the sub-agent, and is bound by and responsible for his acts, as if he were an agent originally appointed by the principal. Agent’s responsibility for sub-agent.—The agent is responsible to the principal for the acts of the sub-agent. Sub-agent’s responsibility.—The sub-agent is responsible for his acts to the agent, but not tothe principal, except in cases of fraud or wilful wrong.",
+      "keywords": [
+        "Agent",
+        "Principal",
+        "Appointed",
+        "Responsible",
+        "Acts",
+        "Properly"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "193",
+      "summary": "Section 193: Agent’s responsibility for sub-agent appointed without authority.—Where an agent, without",
+      "plain_english": "having authority to do so, has appointed a person to act as a sub-agent, the agent stands towards such person in the relation of a principal to an agent, and is responsible for his acts both to the principal and to third persons; the principal is not represented, by or responsible for the acts of the person so employed, nor is that person responsible to the principal. 194.Relation between principal and person duly appointed by agent to act in business of agency.—Where an agent, holding an expres",
+      "keywords": [
+        "Agent",
+        "Person",
+        "Principal",
+        "Appointed",
+        "Responsible",
+        "Authority"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "195",
+      "summary": "Section 195: Agent’s duty in naming such person.—In selecting such agent for his principal, an agent is",
+      "plain_english": "bound to exercise the same amount of discretion as a man of ordinary prudence would exercise in his own case; and, if he does this, he is not responsible to the principal for the acts or negligence of the agent so selected. 44 Illustrations (a)A instructs B, a merchant, to buy a ship for him. B employs a ship-surveyor of good reputation to choose a ship for A. The surveyor makes the choice negligently and the ship turns out to be unseaworthy and is lost. B is not, but the surveyor is, responsibl",
+      "keywords": [
+        "Agent",
+        "Ship",
+        "Surveyor",
+        "Principal",
+        "Exercise",
+        "Duty"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "196",
+      "summary": "Section 196: Right of person as to acts done for him without his authority. Effect of ratification.—",
+      "plain_english": "Where acts are done by one person on behalf of another, but without his knowledge or authority, he may elect to ratify or to disown such acts. If he ratify them, the same effects will follow as if they had been performed by his authority. 197.Ratification may be expressed or implied.—Ratification may be expressed or may be implied in the conduct of the person on whose behalf the acts are done. Illustrations (a)A, without authority, buys goods for B. Afterwards B sells them to C on his own accoun",
+      "keywords": [
+        "Acts",
+        "Authority",
+        "Person",
+        "Done",
+        "Ratification",
+        "Behalf"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "201",
+      "summary": "Section 201: Termination of agency.—An agency is terminated by the principal revoking his authority; or",
+      "plain_english": "by the agent renouncing the business of the agency; or by the business of the agency being completed; or by either the principal or agent dying or becoming of unsound mind; or by the principal being adjudicated an insolvent under the provisions of any Act for the time being in force for the relief of insolvent debtors. 202.Termination of agency, where agent has an interest in subject-matter.—Where the agent has himself an interest in the property which forms the subject-matter of the agency, the",
+      "keywords": [
+        "Agency",
+        "Agent",
+        "Principal",
+        "Being",
+        "Termination",
+        "Business"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "206",
+      "summary": "Section 206: Notice of revocation or renunciation.—Reasonable notice must be given of such revocation or",
+      "plain_english": "renunciation, otherwise the damage thereby resulting to the principal or the agent, as the case may be, must be made good to the one by the other. 207.Revocation and renunciation may be expressed or implied.—Revocation and renunciation may be expressed or may be implied in the conduct of the principal or agent respectively. Illustration A empowers B to let A’s house. Afterwards A lets it himself. This is an implied revocation of B’s authority. 208.When termination of agent’s authority takes effe",
+      "keywords": [
+        "Revocation",
+        "Renunciation",
+        "Agent",
+        "Implied",
+        "Notice",
+        "Must"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "210",
+      "summary": "Section 210: Termination of sub-agent’s authority.—The termination of the authority of an agent causes",
+      "plain_english": "the termination (subject to the rules herein contained regarding the termination of an agent’s authority) of the authority of all sub-agents appointed by him. Agent’s duty to principal 211.Agent’s duty in conducting principal’s business.—An agent is bound to conduct the business of his principal according to the directions given by the principal, or, in the absence of any such directions, according to the custom which prevails in doing business of the same kind at the place where the agent condu",
+      "keywords": [
+        "Agent",
+        "Termination",
+        "Authority",
+        "Principal",
+        "Business",
+        "Duty"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "212",
+      "summary": "Section 212: Skill and diligence required from agent.—An agent is bound to conduct the business of the",
+      "plain_english": "agency with as much skill as is generally possessed by persons engaged in similar business, unless the principal has notice of his want of skill. The agent is always bound to act with reasonable diligence, and to use such skill as he possesses; and to make compensation to his principal in respect of the direct consequences of his own neglect, want of skill, or misconduct, but not in respect of loss or damage which are indirectly or remotely caused by such neglect, want of skill, or misconduct. I",
+      "keywords": [
+        "Skill",
+        "Agent",
+        "Want",
+        "Diligence",
+        "Bound",
+        "Business"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "216",
+      "summary": "Section 216: Principal’s right to benefit gained by agent dealing on his own account in business of",
+      "plain_english": "agency.—If an agent, without the knowledge of his principal, deals in the business of the agency on his own account instead of on account of his principal, the principal is entitled to claim from the agent any benefit which may have resulted to him from the transaction. Illustration A directs B, his agent, to buy a certain house for him. B tells A it cannot be bought, and buys the house for himself. A may, on discovering that B has bought the house, compel him to sell it to A at the price he gav",
+      "keywords": [
+        "Principal",
+        "Agent",
+        "Account",
+        "House",
+        "Benefit",
+        "Business"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "218",
+      "summary": "Section 218: Agent’s duty to pay sums received for principal.—Subject to such deductions, the agent is",
+      "plain_english": "bound to pay to his principal all sums received on his account. 219.When agent’s remuneration becomes due.—In the absence of any special contract, payment for the performance of any act is not due to the agent until the completion of such act; but an agent may detain moneys received by him on account of goods sold, although the whole of the goods consigned to him for sale may not have been sold, or although the sale may not be actually complete. 220.Agent not entitled to remuneration for busines",
+      "keywords": [
+        "Agent",
+        "Received",
+        "Sums",
+        "Principal",
+        "Account",
+        "Remuneration"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "221",
+      "summary": "Section 221: Agent’s lien on principal’s property.—In the absence of any contract to the contrary, an agent",
+      "plain_english": "is entitled to retain goods, papers and other property, whether movable or immovable of the principal received by him, until the amount due to himself for commission, disbursements and services in respect of the same has been paid or accounted for to him. Principal’s duty to agent 222.Agent to be indemnified against consequences of lawful acts.—The employer of an agent is bound to indemnify him against the consequences of all lawful acts done by such agent in exercise of the authority conferred",
+      "keywords": [
+        "Agent",
+        "Principal",
+        "Property",
+        "Against",
+        "Consequences",
+        "Lawful"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "226",
+      "summary": "Section 226: Enforcement and consequences of agent’s contracts.—Contracts entered into through an",
+      "plain_english": "agent, and obligations arising from acts done by an agent, may be enforced in the same manner, and will have the same legal consequences, as if the contracts had been entered into and the acts done by the principal in person. Illustrations (a)A buys goods from B, knowing that he is an agent for their sale, but not knowing who is the principal. B’s principal is the person entitled to claim from A the price of the goods, and A cannot, in a suit by the principal, set-off against that claim a debt d",
+      "keywords": [
+        "Agent",
+        "Principal",
+        "Contracts",
+        "Consequences",
+        "Entered",
+        "Acts"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "1",
+      "summary": "Section 1: See s. 24, supra",
+      "plain_english": "Section 1: See s. 24, supra",
+      "keywords": [
+        "Supra"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "2",
+      "summary": "Section 2: Cf. the Indian Fatal Accidents Act, 1855 (13 of 1855)",
+      "plain_english": "49 (b)A, being B’s agent, with authority to receive money on his behalf, receives from C a sum of money due to B. C is discharged of his obligation to pay the sum in question to B.",
+      "keywords": [
+        "Money",
+        "Indian",
+        "Fatal",
+        "Accidents",
+        "Being",
+        "Agent"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "227",
+      "summary": "Section 227: Principal how far bound, when agent exceeds authority.—When an agent does more than he",
+      "plain_english": "is authorized to do, and when the part of what he does, which is within his authority, can be separated from the part which is beyond his authority, so much only of what he does as is within his authority is binding as between him and his principal. Illustration A, being owner of a ship and cargo, authorizes B to procure an insurance for 4,000 rupees on the ship. B procures a policy for 4,000 rupees on the ship, and another for the like sum on the cargo. A is bound to pay the premium for the pol",
+      "keywords": [
+        "Authority",
+        "When",
+        "Does",
+        "Ship",
+        "Principal",
+        "Bound"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "232",
+      "summary": "Section 232: Performance of contract with agent supposed to be principal.—Where one man makes a",
+      "plain_english": "contract with another, neither knowing nor having reasonable ground to suspect that the other is an agent, the principal, if he requires the performance of the contract, can only obtain such performance subject to the rights and obligations subsisting between the agent and the other party to the contract. Illustration A, who owes 500 rupees to B, sells 1,000 rupees worth of rice to B. A is acting as agent for C in the transaction, but B has no knowledge nor reasonable ground of suspicion that su",
+      "keywords": [
+        "Contract",
+        "Agent",
+        "Performance",
+        "Principal",
+        "Reasonable",
+        "Ground"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "234",
+      "summary": "Section 234: Consequence of inducing agent or principal to act on belief that principal or agent will be",
+      "plain_english": "held exclusively liable.—When a person who has made a contract with an agent induces the agent to act upon the belief that the principal only will be held liable, or induces the principal to act upon the belief that the agent only will be held liable, he cannot afterwards hold liable the agent or principal respectively.",
+      "keywords": [
+        "Agent",
+        "Principal",
+        "Liable",
+        "Belief",
+        "Will",
+        "Held"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "235",
+      "summary": "Section 235: Liability of pretended agent.—A person untruly representing himself to be the authorized",
+      "plain_english": "agent of another, and thereby inducing a third person to deal with him as such agent, is liable, if his alleged employer does not ratify his acts, to make compensation to the other in respect of any loss or damage which he has incurred by so dealing. 236.Person falsely contracting as agent not entitled to performance.—A person with whom a contract has been entered into in the character of agent, is not entitled to require the performance of it, if he was in reality acting, not as agent, but on h",
+      "keywords": [
+        "Agent",
+        "Person",
+        "Entitled",
+        "Performance",
+        "Liability",
+        "Pretended"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "238",
+      "summary": "Section 238: Effect, on agreement, of misrepresentation of fraud, by agent.—Misrepresentation made, or",
+      "plain_english": "frauds committed, by agents acting in the course of their business for their principals, have the same effect on agreements made by such agents as if such misrepresentations or frauds had been made or committed by the principals; but misrepresentations made, or frauds committed, by agents, in matters which do not fall within their authority, do not affect their principals. Illustrations (a) A, being B’s agent for the sale of goods, induces C to buy them by a misrepresentation, which he was not a",
+      "keywords": [
+        "Made",
+        "Their",
+        "Misrepresentation",
+        "Frauds",
+        "Committed",
+        "Agents"
+      ],
+      "legal_topics": [
+        "Contract Law"
+      ],
+      "related": []
+    }
+  ]
+}

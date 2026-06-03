@@ -1,0 +1,626 @@
+[
+  {
+    "idx": 0,
+    "number": "1",
+    "title": "Short title, extent and commencement",
+    "page": 1
+  },
+  {
+    "idx": 1,
+    "number": "3",
+    "title": "Establishment and incorporation of Board",
+    "page": 1
+  },
+  {
+    "idx": 2,
+    "number": "4",
+    "title": "Management of the Board",
+    "page": 1
+  },
+  {
+    "idx": 3,
+    "number": "5",
+    "title": "Term of office and conditions of service of Chairman and members of the Board",
+    "page": 1
+  },
+  {
+    "idx": 4,
+    "number": "6",
+    "title": "Removal of member from office",
+    "page": 1
+  },
+  {
+    "idx": 5,
+    "number": "7A",
+    "title": "Member not to participate in meetings in certain cases",
+    "page": 1
+  },
+  {
+    "idx": 6,
+    "number": "8",
+    "title": "Vacancies, etc., not to invalidate proceedings of Board",
+    "page": 1
+  },
+  {
+    "idx": 7,
+    "number": "9",
+    "title": "Officers and employees of the Board",
+    "page": 1
+  },
+  {
+    "idx": 8,
+    "number": "10",
+    "title": "Transfer of assets, liabilities, etc., of existing Securities and Exchange Board to the",
+    "page": 1
+  },
+  {
+    "idx": 9,
+    "number": "11",
+    "title": "Functions of Board",
+    "page": 1
+  },
+  {
+    "idx": 10,
+    "number": "11A",
+    "title": "Board to regulate or prohibit issue of prospectus, offer document or advertisement",
+    "page": 1
+  },
+  {
+    "idx": 11,
+    "number": "11B",
+    "title": "Power to issue directions",
+    "page": 1
+  },
+  {
+    "idx": 12,
+    "number": "11D",
+    "title": "Cease and desist proceedings",
+    "page": 1
+  },
+  {
+    "idx": 13,
+    "number": "12",
+    "title": "Registration of stock brokers, sub-brokers, share transfer agents, etc",
+    "page": 1
+  },
+  {
+    "idx": 14,
+    "number": "12A",
+    "title": "Prohibition of manipulative and deceptive devices, insider trading and substantial",
+    "page": 2
+  },
+  {
+    "idx": 15,
+    "number": "13",
+    "title": "Grants by the Central Government",
+    "page": 2
+  },
+  {
+    "idx": 16,
+    "number": "15",
+    "title": "Accounts and audit",
+    "page": 2
+  },
+  {
+    "idx": 17,
+    "number": "15A",
+    "title": "Penalty for failure to furnish information, return, etc",
+    "page": 2
+  },
+  {
+    "idx": 18,
+    "number": "15B",
+    "title": "Penalty for failure by any person to enter into agreement with clients",
+    "page": 2
+  },
+  {
+    "idx": 19,
+    "number": "15C",
+    "title": "Penalty for failure to redress investors‘ grievances",
+    "page": 2
+  },
+  {
+    "idx": 20,
+    "number": "15D",
+    "title": "Penalty for certain defaults in case of mutual funds",
+    "page": 2
+  },
+  {
+    "idx": 21,
+    "number": "15E",
+    "title": "Penalty for failure to observe rules and regulations by an asset management company",
+    "page": 2
+  },
+  {
+    "idx": 22,
+    "number": "15F",
+    "title": "Penalty for default in case of stock brokers",
+    "page": 2
+  },
+  {
+    "idx": 23,
+    "number": "15G",
+    "title": "Penalty for insider trading",
+    "page": 2
+  },
+  {
+    "idx": 24,
+    "number": "15H",
+    "title": "Penalty for non-disclosure of acquisition of shares and takeovers",
+    "page": 2
+  },
+  {
+    "idx": 25,
+    "number": "15J",
+    "title": "Factors to be taken into account by the Adjudicating Officer",
+    "page": 2
+  },
+  {
+    "idx": 26,
+    "number": "15K",
+    "title": "Establishment of Securities Appellate Tribunals",
+    "page": 2
+  },
+  {
+    "idx": 27,
+    "number": "15L",
+    "title": "Composition of Securities Appellate Tribunal",
+    "page": 2
+  },
+  {
+    "idx": 28,
+    "number": "15M",
+    "title": "Qualification for appointment as Presiding Officer or Member of Securities Appellate",
+    "page": 2
+  },
+  {
+    "idx": 29,
+    "number": "15N",
+    "title": "Tenure of office of Presiding Officer and other members of Securities Appellate",
+    "page": 2
+  },
+  {
+    "idx": 30,
+    "number": "15P",
+    "title": "Filling up of vacancies",
+    "page": 3
+  },
+  {
+    "idx": 31,
+    "number": "15Q",
+    "title": "Resignation and removal",
+    "page": 3
+  },
+  {
+    "idx": 32,
+    "number": "15R",
+    "title": "Orders constituting Appellate Tribunal to be final and not to invalidate its",
+    "page": 3
+  },
+  {
+    "idx": 33,
+    "number": "15S",
+    "title": "Staff of the Securities Appellate Tribunal",
+    "page": 3
+  },
+  {
+    "idx": 34,
+    "number": "15T",
+    "title": "Appeal to the Securities Appellate Tribunal",
+    "page": 3
+  },
+  {
+    "idx": 35,
+    "number": "15U",
+    "title": "Procedure and powers of the Securities Appellate Tribunal",
+    "page": 3
+  },
+  {
+    "idx": 36,
+    "number": "15V",
+    "title": "Right to legal representation",
+    "page": 3
+  },
+  {
+    "idx": 37,
+    "number": "15X",
+    "title": "Presiding Officer, members and staff of Securities Appellate Tribunals to be public",
+    "page": 3
+  },
+  {
+    "idx": 38,
+    "number": "15Y",
+    "title": "Civil Court not to have jurisdiction",
+    "page": 3
+  },
+  {
+    "idx": 39,
+    "number": "15Z",
+    "title": "Appeal to Supreme Court",
+    "page": 3
+  },
+  {
+    "idx": 40,
+    "number": "16",
+    "title": "Power of Central Government to issue directions",
+    "page": 3
+  },
+  {
+    "idx": 41,
+    "number": "17",
+    "title": "Power of Central Government to supersede the Board",
+    "page": 3
+  },
+  {
+    "idx": 42,
+    "number": "18",
+    "title": "Returns and reports",
+    "page": 3
+  },
+  {
+    "idx": 43,
+    "number": "20A",
+    "title": "Bar of jurisdiction",
+    "page": 3
+  },
+  {
+    "idx": 44,
+    "number": "22",
+    "title": "Members, officers and employees of the Board to be public servants",
+    "page": 3
+  },
+  {
+    "idx": 45,
+    "number": "23",
+    "title": "Protection of action taken in good faith",
+    "page": 3
+  },
+  {
+    "idx": 46,
+    "number": "24A",
+    "title": "Composition of certain offences",
+    "page": 3
+  },
+  {
+    "idx": 47,
+    "number": "24B",
+    "title": "Power to grant immunity",
+    "page": 3
+  },
+  {
+    "idx": 48,
+    "number": "25",
+    "title": "Exemption from tax on wealth and income",
+    "page": 3
+  },
+  {
+    "idx": 49,
+    "number": "26",
+    "title": "Cognizance of offences by Courts",
+    "page": 3
+  },
+  {
+    "idx": 50,
+    "number": "26A",
+    "title": "Establishment of Special Courts",
+    "page": 3
+  },
+  {
+    "idx": 51,
+    "number": "26B",
+    "title": "Offences triable by Special Courts",
+    "page": 3
+  },
+  {
+    "idx": 52,
+    "number": "26C",
+    "title": "Appeal and revision",
+    "page": 3
+  },
+  {
+    "idx": 53,
+    "number": "26D",
+    "title": "Application of Code to proceedings before Special Court",
+    "page": 3
+  },
+  {
+    "idx": 54,
+    "number": "26E",
+    "title": "Transitional Provisions",
+    "page": 3
+  },
+  {
+    "idx": 55,
+    "number": "27",
+    "title": "Offences by companies",
+    "page": 3
+  },
+  {
+    "idx": 56,
+    "number": "28A",
+    "title": "Recovery of amounts",
+    "page": 3
+  },
+  {
+    "idx": 57,
+    "number": "29",
+    "title": "Power to make rules",
+    "page": 3
+  },
+  {
+    "idx": 58,
+    "number": "30",
+    "title": "Power to make regulations",
+    "page": 3
+  },
+  {
+    "idx": 59,
+    "number": "31",
+    "title": "Rules and regulations to be laid before Parliament",
+    "page": 3
+  },
+  {
+    "idx": 60,
+    "number": "32",
+    "title": "Application of other laws not barred",
+    "page": 4
+  },
+  {
+    "idx": 61,
+    "number": "34",
+    "title": "Power to remove difficulties",
+    "page": 4
+  },
+  {
+    "idx": 62,
+    "number": "34A",
+    "title": "Validation of certain acts",
+    "page": 4
+  },
+  {
+    "idx": 63,
+    "number": "35",
+    "title": "Repeal and saving",
+    "page": 4
+  },
+  {
+    "idx": 64,
+    "number": "7A",
+    "title": "Any member, who is a director of a company and who as such director has any direct or",
+    "page": 1
+  },
+  {
+    "idx": 65,
+    "number": "8",
+    "title": "No act or proceeding of the Board shall be invalid merely by reason of—",
+    "page": 1
+  },
+  {
+    "idx": 66,
+    "number": "11B",
+    "title": "Save as otherwise provided in section 11, if after making or causing to be made an enquiry",
+    "page": 1
+  },
+  {
+    "idx": 67,
+    "number": "11D",
+    "title": "If the Board finds, after causing an inquiry to be made, that any person has violated, or is",
+    "page": 1
+  },
+  {
+    "idx": 68,
+    "number": "6",
+    "title": "Validation- Notwithstanding anything contained in any judgment, decree or order of any court, tribunal or other",
+    "page": 1
+  },
+  {
+    "idx": 69,
+    "number": "7",
+    "title": "Repeal and savings - (1) The Securities and Insurance Laws (Amendment and Validation) Ordinance, 2010",
+    "page": 16
+  },
+  {
+    "idx": 70,
+    "number": "12A",
+    "title": "No person shall directly or indirectly—",
+    "page": 2
+  },
+  {
+    "idx": 71,
+    "number": "13",
+    "title": "The Central Government may, after due appropriation made by Parliament by law in this",
+    "page": 2
+  },
+  {
+    "idx": 72,
+    "number": "15A",
+    "title": "If any person, who is required under this Act or any rules or regulations made",
+    "page": 2
+  },
+  {
+    "idx": 73,
+    "number": "15B",
+    "title": "If any person, who is registered as an intermediary and is required under this Act or any",
+    "page": 2
+  },
+  {
+    "idx": 74,
+    "number": "15C",
+    "title": "If any listed company or any person who is registered as an intermediary, after having",
+    "page": 2
+  },
+  {
+    "idx": 75,
+    "number": "15D",
+    "title": "If any person, who is—",
+    "page": 2
+  },
+  {
+    "idx": 76,
+    "number": "15E",
+    "title": "Where any asset management company of a mutual fund registered under this Act, fails to",
+    "page": 2
+  },
+  {
+    "idx": 77,
+    "number": "15F",
+    "title": "If any person, who is registered as a stock broker under this Act,—",
+    "page": 2
+  },
+  {
+    "idx": 78,
+    "number": "15G",
+    "title": "If any insider who,—",
+    "page": 2
+  },
+  {
+    "idx": 79,
+    "number": "15H",
+    "title": "If any person, who is required under this Act or any rules or regulations made thereunder",
+    "page": 2
+  },
+  {
+    "idx": 80,
+    "number": "15J",
+    "title": "While adjudging quantum of penalty under section 15-I, the adjudicating officer shall",
+    "page": 2
+  },
+  {
+    "idx": 81,
+    "number": "15L",
+    "title": "A Securities Appellate Tribunal shall consist of a Presiding Officer and two other",
+    "page": 2
+  },
+  {
+    "idx": 82,
+    "number": "15M",
+    "title": "Qualifications for appointment as Presiding Officer of the Securities Appellate Tribunal. – A person",
+    "page": 2
+  },
+  {
+    "idx": 83,
+    "number": "15N",
+    "title": "The Presiding Officer and every other Member of a Securities Appellate Tribunal shall",
+    "page": 2
+  },
+  {
+    "idx": 84,
+    "number": "15P",
+    "title": "If, for reason other than temporary absence, any vacancy occurs in the 97[office of the",
+    "page": 3
+  },
+  {
+    "idx": 85,
+    "number": "15R",
+    "title": "No order of the Central Government appointing any person as the 103[Presiding Officer or a",
+    "page": 3
+  },
+  {
+    "idx": 86,
+    "number": "15V",
+    "title": "The appellant may either appear in person or authorise one or more chartered accountants",
+    "page": 3
+  },
+  {
+    "idx": 87,
+    "number": "15W",
+    "title": "The provisions of the Limitation Act, 1963 (36 of 1963), shall, as far as may be, apply to",
+    "page": 29
+  },
+  {
+    "idx": 88,
+    "number": "15X",
+    "title": "The Presiding Officer, Members and other officers and employees of a Securities Appellate",
+    "page": 3
+  },
+  {
+    "idx": 89,
+    "number": "15Y",
+    "title": "No civil court shall have jurisdiction to entertain any suit or proceeding in respect of any",
+    "page": 3
+  },
+  {
+    "idx": 90,
+    "number": "15Z",
+    "title": "Any person aggrieved by any decision or order of the Securities Appellate Tribunal may",
+    "page": 3
+  },
+  {
+    "idx": 91,
+    "number": "19",
+    "title": "The Board may, by general or special order in writing delegate to any member, officer of the",
+    "page": 31
+  },
+  {
+    "idx": 92,
+    "number": "20A",
+    "title": "No order passed by the Board 115[or the Adjudicating Officer] under this Act shall be",
+    "page": 3
+  },
+  {
+    "idx": 93,
+    "number": "21",
+    "title": "Nothing in this Act shall exempt any person from any suit or other proceedings which",
+    "page": 32
+  },
+  {
+    "idx": 94,
+    "number": "22",
+    "title": "All members, officers and other employees of the Board shall be deemed, when acting or",
+    "page": 3
+  },
+  {
+    "idx": 95,
+    "number": "23",
+    "title": "No suit, prosecution or other legal proceedings shall lie against the Central Government",
+    "page": 3
+  },
+  {
+    "idx": 96,
+    "number": "24A",
+    "title": "Notwithstanding anything contained in the Code of Criminal Procedure, 1973 (2 of 1974)",
+    "page": 3
+  },
+  {
+    "idx": 97,
+    "number": "25",
+    "title": "Notwithstanding anything contained in the Wealth-tax Act, 1957 (27 of 1957), the Income",
+    "page": 3
+  },
+  {
+    "idx": 98,
+    "number": "26B",
+    "title": "Notwithstanding anything contained in the Code of Criminal Procedure, 1973, all offences",
+    "page": 3
+  },
+  {
+    "idx": 99,
+    "number": "26C",
+    "title": "The High Court may exercise, so far as may be applicable, all the powers conferred by",
+    "page": 3
+  },
+  {
+    "idx": 100,
+    "number": "26E",
+    "title": "Any offence committed under this Act, which is triable by a Special Court shall, until a",
+    "page": 3
+  },
+  {
+    "idx": 101,
+    "number": "31",
+    "title": "Every rule and every regulation made under this Act shall be laid, as soon as may be after it",
+    "page": 3
+  },
+  {
+    "idx": 102,
+    "number": "32",
+    "title": "The provisions of this Act shall be in addition to, and not in derogation of, the provisions of",
+    "page": 4
+  },
+  {
+    "idx": 103,
+    "number": "34A",
+    "title": "Any act or thing done or purporting to have been done under the principal Act, in respect",
+    "page": 4
+  }
+]

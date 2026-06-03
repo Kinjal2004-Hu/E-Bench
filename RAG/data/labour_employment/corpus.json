@@ -1,0 +1,2021 @@
+{
+  "law_id": "labour_employment",
+  "law_name": "Labour & Employment Laws",
+  "domain": "Labour Law",
+  "provision_label": "Section",
+  "strategy": "multi_act_compilation",
+  "has_schedules": false,
+  "pdf_path": "Labour & Employment Laws.pdf",
+  "provision_count": 251,
+  "extraction_seconds": 30.51,
+  "provisions": [
+    {
+      "number": "2",
+      "chapter": null,
+      "act": null,
+      "title": "List of Labour laws in India 9",
+      "full_text": "",
+      "page": 1
+    },
+    {
+      "number": "3",
+      "chapter": null,
+      "act": null,
+      "title": "Classification of labour laws in India 27",
+      "full_text": "",
+      "page": 1
+    },
+    {
+      "number": "4",
+      "chapter": null,
+      "act": null,
+      "title": "Overview of important labour laws in India",
+      "full_text": "a) Apprentices Act, 1961 29 b) Employees State Insurance Act, 1948 36 c) Employees Provident Fund And Misc. Provisions Act, 1952 51 d) The Employment Exchanges (Compulsory Notification of 55",
+      "page": 1
+    },
+    {
+      "number": "ACT-HEADER",
+      "chapter": null,
+      "act": "Vacancies) Act, 1959",
+      "title": "Vacancies) Act, 1959 (Act header)",
+      "full_text": "",
+      "page": 1
+    },
+    {
+      "number": "ACT-HEADER",
+      "chapter": null,
+      "act": "Registers By Certain Establishments) Act, 1988",
+      "title": "Registers By Certain Establishments) Act, 1988 (Act header)",
+      "full_text": "",
+      "page": 1
+    },
+    {
+      "number": "5",
+      "chapter": null,
+      "act": "Registers By Certain Establishments) Act, 1988",
+      "title": "Checklist of labour law compliance 135",
+      "full_text": "",
+      "page": 2
+    },
+    {
+      "number": "6",
+      "chapter": null,
+      "act": "Registers By Certain Establishments) Act, 1988",
+      "title": "Unfair labour practice 144",
+      "full_text": "",
+      "page": 2
+    },
+    {
+      "number": "7",
+      "chapter": null,
+      "act": "Registers By Certain Establishments) Act, 1988",
+      "title": "Labour laws in the unorganized sector 147",
+      "full_text": "",
+      "page": 2
+    },
+    {
+      "number": "8",
+      "chapter": null,
+      "act": "Registers By Certain Establishments) Act, 1988",
+      "title": "Women labour and the Law 151",
+      "full_text": "",
+      "page": 2
+    },
+    {
+      "number": "9",
+      "chapter": null,
+      "act": "Registers By Certain Establishments) Act, 1988",
+      "title": "Industrial relations 157",
+      "full_text": "",
+      "page": 2
+    },
+    {
+      "number": "10",
+      "chapter": null,
+      "act": "Registers By Certain Establishments) Act, 1988",
+      "title": "Special points to be noted while drafting Employment Agreement 172",
+      "full_text": "",
+      "page": 2
+    },
+    {
+      "number": "11",
+      "chapter": null,
+      "act": "Registers By Certain Establishments) Act, 1988",
+      "title": "Important case laws under various labour legislations 177",
+      "full_text": "",
+      "page": 2
+    },
+    {
+      "number": "12",
+      "chapter": null,
+      "act": "Registers By Certain Establishments) Act, 1988",
+      "title": "Important organizations 179",
+      "full_text": "",
+      "page": 2
+    },
+    {
+      "number": "13",
+      "chapter": null,
+      "act": "Registers By Certain Establishments) Act, 1988",
+      "title": "Authorities under the labour law in India 180",
+      "full_text": "",
+      "page": 2
+    },
+    {
+      "number": "14",
+      "chapter": null,
+      "act": "Registers By Certain Establishments) Act, 1988",
+      "title": "Labour legislations across the world 186",
+      "full_text": "",
+      "page": 2
+    },
+    {
+      "number": "15",
+      "chapter": null,
+      "act": "Registers By Certain Establishments) Act, 1988",
+      "title": "Bibliography 190",
+      "full_text": "16. Annexure a) Agreements between employee and employer 192 b) Agreement for reference of disputes to arbitration 196 2 1. INTRODUCTION Labour law also known as employment law is the body of laws, administrative rulings, and precedents which address the legal rights of, and restrictions on, working people and their organizations. As such, it mediates many aspects of the relationship between trade unions, employers and employees. In other words, Labour law defines the rights and obligations as workers, union members and employers in the workplace. Generally, labour law covers:  Industrial relations – certification of unions, labour-management relations, collective bargaining and unfair labour practices;  Workplace health and safety;  Employment standards, including general holidays, annual leave, working hours, unfair dismissals, minimum wage, layoff procedures and severance pay. There are two broad categories of labour law. First, collective labour law relates to the tripartite relationship between employee, employer and union. Second, individual labour law concerns employees' rights at work and through the contract for work. The labour movement has been instrumental in the enacting of laws protecting labour rights in the 19th and 20th centuries. Labour rights have been integral to the social and economic development since the industrial revolution. 1.1. History of Labour laws Labour law arose due to the demands of workers for better conditions, the right to organize, and the simultaneous demands of employers to restrict the powers of workers in many organizations and to keep labour costs low. Employers' costs can increase due to workers organizing to win higher wages, or by laws imposing costly requirements, such as health and safety or equal opportunities conditions. Workers' organizations, such as trade unions, can also transcend purely industrial disputes, and gain political power - which some employers may oppose. The state of labour law at any one time is therefore both the product of, and a component of, struggles between different interests in society. International Labour Organisation (ILO) was one of the first organisations to deal with labour issues. The ILO was established as an agency of the League of Nations following the Treaty of Versailles, which ended World War I. Post-war reconstruction and the protection of labour unions occupied the attention of many nations during and immediately after World War I. In Great Britain, the Whitley 3 Commission, a subcommittee of the Reconstruction Commission, recommended in its July 1918 Final Report that \"industrial councils\" be established throughout the world. The British Labour Party had issued its own reconstruction programme in the document titled Labour and the New Social Order. In February 1918, the third Inter-Allied Labour and Socialist Conference (representing delegates from Great Britain, France, Belgium and Italy) issued its report, advocating an international labour rights body, an end to secret diplomacy, and other goals. And in December 1918, the American Federation of Labor (AFL) issued its own distinctively apolitical report, which called for the achievement of numerous incremental improvements via the collective bargaining process. As the war drew to a close, two competing visions for the post-war world emerged. The first was offered by the International Federation of Trade Unions (IFTU), which called for a meeting in Berne in July 1919. The Berne meeting would consider both the future of the IFTU and the various proposals which had been made in the previous few years. The IFTU also proposed including delegates from the Central Powers as equals. Samuel Gompers, president of the AFL, boycotted the meeting, wanting the Central Powers delegates in a subservient role as an admission of guilt for their countries' role in the bringing about war. Instead, Gompers favored a meeting in Paris which would only consider President Woodrow Wilson's Fourteen Points as a platform. Despite the American boycott, the Berne meeting went ahead as scheduled. In its final report, the Berne Conference demanded an end to wage labour and the establishment of socialism. If these ends could not be immediately achieved, then an international body attached to the League of Nations should enact and enforce legislation to protect workers and trade unions. The British proposed establishing an international parliament to enact labour laws which each member of the League would be required to implement. Each nation would have two delegates to the parliament, one each from labour and management. An international labour office would collect statistics on labour issues and enforce the new international laws. Philosophically opposed to the concept of an international parliament and convinced that international standards would lower the few protections achieved in the United States, Gompers proposed that the international labour body be authorized only to make recommendations, and that enforcement be left up to the League of Nations. Despite vigorous opposition from the British, the American proposal was adopted. The Americans made 10 proposals. Three were adopted without change: That labour should not be treated as a commodity; that all workers had the right to a wage sufficient to live on; and that women should receive equal pay for equal work. A proposal protecting the freedom of speech, press, assembly, and association was amended to include only freedom of association. A proposed ban on the international shipment of goods made by children under the age of 16 was amended to 4 ban goods made by children under the age of 14. A proposal to require an eight-hour work day was amended to require the eight-hour work day or the 40-hour work week (an exception was made for countries where productivity was low). Four other American proposals were rejected. Meanwhile, international delegates proposed three additional clauses, which were adopted: One or more days for weekly rest; equality of laws for foreign workers; and regular and frequent inspection of factory conditions. The Commission issued its final report on 4 March 1919, and the Peace Conference adopted it without amendment on 11 April. The report became Part XIII of the Treaty of Versailles. (The Treaty of Versailles was one of the peace treaties at the end of World War I. It ended the state of war between Germany and the Allied Powers. It was signed on 28 June 1919.) The first annual conference (referred to as the International Labour Conference, or ILC) began on 29th October 1919 in Washington DC and adopted the first six International Labour Conventions, which dealt with hours of work in industry, unemployment, maternity protection, night work for women, minimum age and night work for young persons in industry. The prominent French socialist Albert Thomas became its first Director General. The ILO became a member of the United Nations system after the demise of the League in 1946. 1.2. Purpose of labour legislation Labour legislation that is adapted to the economic and social challenges of the modern world of work fulfils three crucial roles:  it establishes a legal system that facilitates productive individual and collective employment relationships, and therefore a productive economy;  by providing a framework within which employers, workers and their representatives can interact with regard to work-related issues, it serves as an important vehicle for achieving harmonious industrial relations based on workplace democracy;  it provides a clear and constant reminder and guarantee of fundamental principles and rights at work which have received broad social acceptance and establishes the processes through which these principles and rights can be implemented and enforced. But experience shows that labour legislation can only fulfills these functions effectively if it is responsive to the conditions on the labour market and the needs of the parties involved. The most efficient way of ensuring that these conditions and needs are taken fully into account is if those concerned are closely involved in the formulation of the legislation through processes of social 5 dialogue. The involvement of stakeholders in this way is of great importance in developing a broad basis of support for labour legislation and in facilitating its application within and beyond the formal structured sectors of the economy. 1.3. Evolution of Labour law in India The law relating to labour and employment is also known as Industrial law in India. The history of labour legislation in India is interwoven with the history of British colonialism. The industrial/labour legislations enacted by the British were primarily intended to protect the interests of the British employers. Considerations of British political economy were naturally paramount in shaping some of these early laws. Thus came the Factories Act. It is well known that Indian textile goods offered stiff competition to British textiles in the export market and hence in order to make India labour costlier the Factories Act was first introduced in 1883 because of the pressure brought on the British parliament by the textile magnates of Manchester and Lancashire. Thus India received the first stipulation of eight hours of work, the abolition of child labour, and the restriction of women in night employment, and the introduction of overtime wages for work beyond eight hours. While the impact of this measure was clearly welfarist the real motivation was undoubtedly protectionist. The earliest Indian statute to regulate the relationship between employer and his workmen was the Trade Dispute Act, 1929 (Act 7 of 1929). Provisions were made in this Act for restraining the rights of strike and lock out but no machinery was provided to take care of disputes. The original colonial legislation underwent substantial modifications in the post-colonial era because independent India called for a clear partnership between labour and capital. The content of this partnership was unanimously approved in a tripartite conference in December 1947 in which it was agreed that labour would be given a fair wage and fair working conditions and in return capital would receive the fullest co-operation of labour for uninterrupted production and higher productivity as part of the strategy for national economic development and that all concerned would observe a truce period of three years free from strikes and lockouts. Ultimately the Industrial Disputes Act (the Act) brought into force on 01.04.1947 repealing the Trade Disputes Act 1929 has since remained on statute book. 1.4. Constitutional provisions with regard to labour laws The relevance of the dignity of human labour and the need for protecting and safeguarding the interest of labour as human beings has been enshrined in Chapter-III (Articles 16, 19, 23 & 24) and 6 Chapter IV (Articles 39, 41, 42, 43, 43A & 54) of the Constitution of India keeping in line with Fundamental Rights and Directive Principles of State Policy. Labour is a concurrent subject in the Constitution of India implying that both the Union and the state governments are competent to legislate on labour matters and administer the same. The bulk of important legislative acts have been enacted by the Parliament. Constitutional Status Union List Concurrent List The legislations can be categorized as follows: 1) Labour laws enacted by the Central Government, where the Central Government has the sole responsibility for enforcement. 2) Labour laws enacted by Central Government and enforced both by Central and State Governments. 3) Labour laws enacted by Central Government and enforced by the State Governments. 4) Labour laws enacted and enforced by the various State Governments which apply to respective States. The Constitution of India provides detailed provisions for the rights of the citizens and also lays down the Directive Principles of State Policy which set an aim to which the activities of the state are to be guided. These Directive Principles provide: 7 a. for securing the health and strength of employees, men and women; b. that the tender age of children are not abused; c. that citizens are not forced by economic necessity to enter avocations unsuited to their age or strength; d. just and humane conditions of work and maternity relief are provided; and e. that the Government shall take steps, by suitable legislation or in any other way, to secure the participation of employee in the management of undertakings, establishments or other organisations engaged in any industry. 1.5 Labour Policy of India Labour policy in India has been evolving in response to specific needs of the situation to suit requirements of planned economic development and social justice and has two fold objectives, namely maintaining industrial peace and promoting the welfare of labour. Labour Policy Highlights  Creative measures to attract public and private investment.  Creating new jobs  New Social security schemes for workers in the unorganized sector.  Social security cards for workers.  Unified and beneficial management of funds of Welfare Boards.  Reprioritization of allocation of funds to benefit vulnerable workers.  Model employee-employer relationships.  Long term settlements based on productivity.  Vital industries and establishments declared as `public utilities`.  Special conciliation mechanism for projects with investments of Rs.150 crores or more.  Industrial Relations committees in more sectors. 8  Labour Law reforms in tune with the times. Empowered body of experts to suggest required changes.  Statutory amendments for expediting and streamlining the mechanism of Labour Judiciary.  Amendments to Industrial Disputes Act in tune with the times.  Efficient functioning of Labour Department.  More labour sectors under Minimum Wages Act.  Child labour act to be aggressively enforced.  Modern medical facilities for workers.  Rehabilitation packages for displaced workers.  Restructuring in functioning of employment exchanges. Computerization and updating of data base.  Revamping of curriculum and course content in industrial training.  Joint cell of labour department and industries department to study changes in laws and rules.",
+      "page": 2
+    },
+    {
+      "number": "2",
+      "chapter": null,
+      "act": "Registers By Certain Establishments) Act, 1988",
+      "title": "LABOUR LAWS IN INDIA",
+      "full_text": "The term ‘labour’ means productive work especially physical work done for wages. Labour law also known as employment law is the body of laws, administrative rulings, and precedents which address the legal rights of, and restrictions on, working people and their organizations. There are two broad categories of labour law. First, collective labour law relates to the tripartite relationship between employee, employer and union. Second, individual labour law concerns employees' rights at work and through the contract for work. The law relating to labour and employment in India is primarily known under the broad category of \"Industrial Law\". The prevailing social and economic conditions have been largely influential in shaping the Indian labour legislation, which regulate various aspects of work such as the number of hours of work, wages, social security and facilities provided. 9 The labour laws of independent India derive their origin, inspiration and strength partly from the views expressed by important nationalist leaders during the days of national freedom struggle, partly from the debates of the Constituent Assembly and partly from the provisions of the Constitution and the International Conventions and Recommendations. The relevance of the dignity of human labour and the need for protecting and safeguarding the interest of labour as human beings has been enshrined in Chapter-III (Articles 16, 19, 23 & 24) and Chapter IV (Articles 39, 41, 42, 43, 43A & 54) of the Constitution of India keeping in line with Fundamental Rights and Directive Principles of State Policy. The Labour Laws were also influenced by important human rights and the conventions and standards that have emerged from the United Nations. These include right to work of one’s choice, right against discrimination, prohibition of child labour, just and humane conditions of work, social security, protection of wages, redress of grievances, right to organize and form trade unions, collective bargaining and participation in management. The labour laws have also been significantly influenced by the deliberations of the various Sessions of the Indian Labour Conference and the International Labour Conference. Labour legislations have also been shaped and influenced by the recommendations of the various National Committees and Commissions such as First National Commission on Labour (1969) under the Chairmanship of Justice Gajendragadkar, National Commission on Rural Labour (1991), Second National Commission on Labour (2002) under the Chairmanship of Shri Ravindra Varma etc. and judicial pronouncements on labour related matters specifically pertaining to minimum wages, bonded labour, child labour, contract labour etc. Under the Constitution of India, Labour is a subject in the concurrent list where both the Central and State Governments are competent to enact legislations. As a result , a large number of labour laws have been enacted catering to different aspects of labour namely, occupational health, safety, employment, training of apprentices, fixation, review and revision of minimum wages, mode of payment of wages, payment of compensation to workmen who suffer injuries as a result of accidents or causing death or disablement, bonded labour, contract labour, women labour and child labour, resolution and adjudication of industrial disputes, provision of social security such as provident fund, employees’ state insurance, gratuity, provision for payment of bonus, regulating the working conditions of certain specific categories of workmen such as plantation labour, beedi workers etc. The legislations can be categorized as follows: 10 1) Labour laws enacted by the Central Government, where the Central Government has the sole responsibility for enforcement. 2) Labour laws enacted by Central Government and enforced both by Central and State Governments. 3) Labour laws enacted by Central Government and enforced by the State Governments. 4) Labour laws enacted and enforced by the various State Governments which apply to respective States. (a) Labour laws enacted by the Central Government, where the Central Government has the sole responsibility for enforcement",
+      "page": 9
+    },
+    {
+      "number": "1",
+      "chapter": null,
+      "act": "Registers By Certain Establishments) Act, 1988",
+      "title": "The Employees’ State Insurance Act, 1948",
+      "full_text": "",
+      "page": 11
+    },
+    {
+      "number": "3",
+      "chapter": null,
+      "act": "Registers By Certain Establishments) Act, 1988",
+      "title": "The Dock Workers (Safety, Health and Welfare) Act, 1986",
+      "full_text": "",
+      "page": 11
+    },
+    {
+      "number": "4",
+      "chapter": null,
+      "act": "Registers By Certain Establishments) Act, 1988",
+      "title": "The Mines Act, 1952",
+      "full_text": "",
+      "page": 11
+    },
+    {
+      "number": "16",
+      "chapter": null,
+      "act": "Registers By Certain Establishments) Act, 1988",
+      "title": "The Equal Remuneration Act, 1976",
+      "full_text": "",
+      "page": 11
+    },
+    {
+      "number": "17",
+      "chapter": null,
+      "act": "Registers By Certain Establishments) Act, 1988",
+      "title": "The Industrial Disputes Act, 1947",
+      "full_text": "11",
+      "page": 11
+    },
+    {
+      "number": "18",
+      "chapter": null,
+      "act": "Registers By Certain Establishments) Act, 1988",
+      "title": "The Industrial Employment (Standing Orders) Act, 1946",
+      "full_text": "",
+      "page": 12
+    },
+    {
+      "number": "19",
+      "chapter": null,
+      "act": "Registers By Certain Establishments) Act, 1988",
+      "title": "The Inter-State Migrant Workmen (Regulation of Employment and Conditions of Service)",
+      "full_text": "Act, 1979.",
+      "page": 12
+    },
+    {
+      "number": "20",
+      "chapter": null,
+      "act": "Registers By Certain Establishments) Act, 1988",
+      "title": "The Labour Laws (Exemption from Furnishing Returns and Maintaining Registers by Certain",
+      "full_text": "",
+      "page": 12
+    },
+    {
+      "number": "ACT-HEADER",
+      "chapter": null,
+      "act": "Establishments) Act, 1988",
+      "title": "Establishments) Act, 1988 (Act header)",
+      "full_text": "",
+      "page": 12
+    },
+    {
+      "number": "21",
+      "chapter": null,
+      "act": "Establishments) Act, 1988",
+      "title": "The Maternity Benefit Act, 1961",
+      "full_text": "",
+      "page": 12
+    },
+    {
+      "number": "22",
+      "chapter": null,
+      "act": "Establishments) Act, 1988",
+      "title": "The Minimum Wages Act, 1948",
+      "full_text": "",
+      "page": 12
+    },
+    {
+      "number": "23",
+      "chapter": null,
+      "act": "Establishments) Act, 1988",
+      "title": "The Payment of Bonus Act, 1965",
+      "full_text": "",
+      "page": 12
+    },
+    {
+      "number": "24",
+      "chapter": null,
+      "act": "Establishments) Act, 1988",
+      "title": "The Payment of Gratuity Act, 1972",
+      "full_text": "",
+      "page": 12
+    },
+    {
+      "number": "25",
+      "chapter": null,
+      "act": "Establishments) Act, 1988",
+      "title": "The Payment of Wages Act, 1936",
+      "full_text": "",
+      "page": 12
+    },
+    {
+      "number": "26",
+      "chapter": null,
+      "act": "Establishments) Act, 1988",
+      "title": "The Cine Workers and Cinema Theatre Workers (Regulation of Employment) Act, 1981",
+      "full_text": "",
+      "page": 12
+    },
+    {
+      "number": "27",
+      "chapter": null,
+      "act": "Establishments) Act, 1988",
+      "title": "The Building and Other Construction Workers Cess Act, 1996",
+      "full_text": "",
+      "page": 12
+    },
+    {
+      "number": "28",
+      "chapter": null,
+      "act": "Establishments) Act, 1988",
+      "title": "The Apprentices Act, 1961",
+      "full_text": "",
+      "page": 12
+    },
+    {
+      "number": "29",
+      "chapter": null,
+      "act": "Establishments) Act, 1988",
+      "title": "Unorganized Workers Social Security Act, 2008",
+      "full_text": "",
+      "page": 12
+    },
+    {
+      "number": "30",
+      "chapter": null,
+      "act": "Establishments) Act, 1988",
+      "title": "Working Journalists (Fixation of Rates of Wages Act, 1958",
+      "full_text": "",
+      "page": 12
+    },
+    {
+      "number": "31",
+      "chapter": null,
+      "act": "Establishments) Act, 1988",
+      "title": "Merchant Shipping Act, 1958",
+      "full_text": "",
+      "page": 12
+    },
+    {
+      "number": "32",
+      "chapter": null,
+      "act": "Establishments) Act, 1988",
+      "title": "Sales Promotion Employees Act, 1976",
+      "full_text": "",
+      "page": 12
+    },
+    {
+      "number": "33",
+      "chapter": null,
+      "act": "Establishments) Act, 1988",
+      "title": "Dangerous Machines (Regulation) Act, 1983",
+      "full_text": "",
+      "page": 12
+    },
+    {
+      "number": "34",
+      "chapter": null,
+      "act": "Establishments) Act, 1988",
+      "title": "Dock Workers (Regulation of Employment) Act, 1948",
+      "full_text": "",
+      "page": 12
+    },
+    {
+      "number": "35",
+      "chapter": null,
+      "act": "Establishments) Act, 1988",
+      "title": "Dock Workers (Regulation of Employment) (Inapplicability to Major Ports) Act, 1997",
+      "full_text": "",
+      "page": 12
+    },
+    {
+      "number": "36",
+      "chapter": null,
+      "act": "Establishments) Act, 1988",
+      "title": "Private Security Agencies (Regulation) Act, 2005",
+      "full_text": "(c) Labour laws enacted by Central Government and enforced by the State Governments",
+      "page": 12
+    },
+    {
+      "number": "37",
+      "chapter": null,
+      "act": "Establishments) Act, 1988",
+      "title": "The Employers’ Liability Act, 1938",
+      "full_text": "",
+      "page": 12
+    },
+    {
+      "number": "38",
+      "chapter": null,
+      "act": "Establishments) Act, 1988",
+      "title": "The Factories Act, 1948",
+      "full_text": "",
+      "page": 12
+    },
+    {
+      "number": "39",
+      "chapter": null,
+      "act": "Establishments) Act, 1988",
+      "title": "The Motor Transport Workers Act, 1961",
+      "full_text": "",
+      "page": 12
+    },
+    {
+      "number": "40",
+      "chapter": null,
+      "act": "Establishments) Act, 1988",
+      "title": "The Personal Injuries (Compensation Insurance) Act, 1963",
+      "full_text": "",
+      "page": 12
+    },
+    {
+      "number": "41",
+      "chapter": null,
+      "act": "Establishments) Act, 1988",
+      "title": "The Personal Injuries (Emergency Provisions) Act, 1962",
+      "full_text": "",
+      "page": 12
+    },
+    {
+      "number": "42",
+      "chapter": null,
+      "act": "Establishments) Act, 1988",
+      "title": "The Plantation Labour Act, 1951",
+      "full_text": "",
+      "page": 12
+    },
+    {
+      "number": "43",
+      "chapter": null,
+      "act": "Establishments) Act, 1988",
+      "title": "The Sales Promotion Employees (Conditions of Service) Act, 1976",
+      "full_text": "",
+      "page": 12
+    },
+    {
+      "number": "44",
+      "chapter": null,
+      "act": "Establishments) Act, 1988",
+      "title": "The Trade Unions Act, 1926",
+      "full_text": "",
+      "page": 12
+    },
+    {
+      "number": "45",
+      "chapter": null,
+      "act": "Establishments) Act, 1988",
+      "title": "The Weekly Holidays Act, 1942",
+      "full_text": "12",
+      "page": 12
+    },
+    {
+      "number": "46",
+      "chapter": null,
+      "act": "Establishments) Act, 1988",
+      "title": "The Working Journalists and Other Newspapers Employees (Conditions of Service) and",
+      "full_text": "",
+      "page": 13
+    },
+    {
+      "number": "ACT-HEADER",
+      "chapter": null,
+      "act": "Miscellaneous Provisions Act, 1955",
+      "title": "Miscellaneous Provisions Act, 1955 (Act header)",
+      "full_text": "",
+      "page": 13
+    },
+    {
+      "number": "47",
+      "chapter": null,
+      "act": "Miscellaneous Provisions Act, 1955",
+      "title": "The Workmen’s Compensation Act, 1923",
+      "full_text": "",
+      "page": 13
+    },
+    {
+      "number": "48",
+      "chapter": null,
+      "act": "Miscellaneous Provisions Act, 1955",
+      "title": "The Employment Exchange (Compulsory Notification of Vacancies) Act, 1959",
+      "full_text": "",
+      "page": 13
+    },
+    {
+      "number": "49",
+      "chapter": null,
+      "act": "Miscellaneous Provisions Act, 1955",
+      "title": "The Children (Pledging of Labour) Act 1938",
+      "full_text": "",
+      "page": 13
+    },
+    {
+      "number": "50",
+      "chapter": null,
+      "act": "Miscellaneous Provisions Act, 1955",
+      "title": "The Bonded Labour System (Abolition) Act, 1976",
+      "full_text": "",
+      "page": 13
+    },
+    {
+      "number": "51",
+      "chapter": null,
+      "act": "Miscellaneous Provisions Act, 1955",
+      "title": "The Beedi and Cigar Workers (Conditions of Employment) Act, 1966",
+      "full_text": "State Labour Laws 1. Maharashtra Sl.No. Name of the labour legislation Central Rules State Rules 1 Apprentices Act , 1961 Apprentices Rules, 1961 Nil 2 The Beedi and Cigar Workers (Conditions of Employment) Act, 1966 3 Beedi Workers Welfare Fund Act, 1976 4 The Beedi Workers Welfare Cess The Beedi Worker's Act, 1976 Welfare Cess Rules, 1977 5 The Building & Other Construction Workers (Regulation of Employment &",
+      "page": 13
+    },
+    {
+      "number": "ACT-HEADER",
+      "chapter": null,
+      "act": "Conditions of Service) Act, 1996",
+      "title": "Conditions of Service) Act, 1996 (Act header)",
+      "full_text": "",
+      "page": 13
+    },
+    {
+      "number": "ACT-HEADER",
+      "chapter": null,
+      "act": "Abolition) Rules, 1971",
+      "title": "Abolition) Rules, 1971 (Act header)",
+      "full_text": "",
+      "page": 13
+    },
+    {
+      "number": "ACT-HEADER",
+      "chapter": null,
+      "act": "And Regulation) Act, 1986",
+      "title": "And Regulation) Act, 1986 (Act header)",
+      "full_text": "",
+      "page": 14
+    },
+    {
+      "number": "ACT-HEADER",
+      "chapter": null,
+      "act": "Employment) Act, 1948",
+      "title": "Employment) Act, 1948 (Act header)",
+      "full_text": "",
+      "page": 14
+    },
+    {
+      "number": "ACT-HEADER",
+      "chapter": null,
+      "act": "Health & Welfare) Act, 1986",
+      "title": "Health & Welfare) Act, 1986 (Act header)",
+      "full_text": "",
+      "page": 14
+    },
+    {
+      "number": "ACT-HEADER",
+      "chapter": null,
+      "act": "to Major Ports) Act, 1997",
+      "title": "to Major Ports) Act, 1997 (Act header)",
+      "full_text": "",
+      "page": 14
+    },
+    {
+      "number": "ACT-HEADER",
+      "chapter": null,
+      "act": "Relations Act, 1946",
+      "title": "Relations Act, 1946 (Act header)",
+      "full_text": "",
+      "page": 15
+    },
+    {
+      "number": "ACT-HEADER",
+      "chapter": null,
+      "act": "Labour Welfare Fund Act, 1976",
+      "title": "Labour Welfare Fund Act, 1976 (Act header)",
+      "full_text": "",
+      "page": 15
+    },
+    {
+      "number": "ACT-HEADER",
+      "chapter": null,
+      "act": "Labour Welfare Cess Act, 1976",
+      "title": "Labour Welfare Cess Act, 1976 (Act header)",
+      "full_text": "",
+      "page": 15
+    },
+    {
+      "number": "ACT-HEADER",
+      "chapter": null,
+      "act": "Welfare Fund Act, 1953",
+      "title": "Welfare Fund Act, 1953 (Act header)",
+      "full_text": "",
+      "page": 16
+    },
+    {
+      "number": "ACT-HEADER",
+      "chapter": null,
+      "act": "Benefit Rules, 1965",
+      "title": "Benefit Rules, 1965 (Act header)",
+      "full_text": "",
+      "page": 16
+    },
+    {
+      "number": "ACT-HEADER",
+      "chapter": null,
+      "act": "Wages Rules 1963",
+      "title": "Wages Rules 1963 (Act header)",
+      "full_text": "",
+      "page": 16
+    },
+    {
+      "number": "ACT-HEADER",
+      "chapter": null,
+      "act": "Fund Act, 1946",
+      "title": "Fund Act, 1946 (Act header)",
+      "full_text": "",
+      "page": 16
+    },
+    {
+      "number": "ACT-HEADER",
+      "chapter": null,
+      "act": "wages Rules, 1963",
+      "title": "wages Rules, 1963 (Act header)",
+      "full_text": "",
+      "page": 16
+    },
+    {
+      "number": "ACT-HEADER",
+      "chapter": null,
+      "act": "Establishment Act, 1948",
+      "title": "Establishment Act, 1948 (Act header)",
+      "full_text": "",
+      "page": 16
+    },
+    {
+      "number": "ACT-HEADER",
+      "chapter": null,
+      "act": "Service) Rules, 1976",
+      "title": "Service) Rules, 1976 (Act header)",
+      "full_text": "",
+      "page": 17
+    },
+    {
+      "number": "ACT-HEADER",
+      "chapter": null,
+      "act": "Labour Practices Act, 1971",
+      "title": "Labour Practices Act, 1971 (Act header)",
+      "full_text": "",
+      "page": 17
+    },
+    {
+      "number": "ACT-HEADER",
+      "chapter": null,
+      "act": "Insurance) Act, 1943",
+      "title": "Insurance) Act, 1943 (Act header)",
+      "full_text": "",
+      "page": 17
+    },
+    {
+      "number": "ACT-HEADER",
+      "chapter": null,
+      "act": "of Rates of Wages) Act, 1958",
+      "title": "of Rates of Wages) Act, 1958 (Act header)",
+      "full_text": "",
+      "page": 17
+    },
+    {
+      "number": "ACT-HEADER",
+      "chapter": null,
+      "act": "Provisions) Rules, 1957",
+      "title": "Provisions) Rules, 1957 (Act header)",
+      "full_text": "",
+      "page": 18
+    },
+    {
+      "number": "ACT-HEADER",
+      "chapter": null,
+      "act": "Procedure) Rules, 1975",
+      "title": "Procedure) Rules, 1975 (Act header)",
+      "full_text": "",
+      "page": 18
+    },
+    {
+      "number": "ACT-HEADER",
+      "chapter": null,
+      "act": "Gujarat Rules, 1972",
+      "title": "Gujarat Rules, 1972 (Act header)",
+      "full_text": "",
+      "page": 18
+    },
+    {
+      "number": "ACT-HEADER",
+      "chapter": null,
+      "act": "Act and Rules, 1982",
+      "title": "Act and Rules, 1982 (Act header)",
+      "full_text": "",
+      "page": 20
+    },
+    {
+      "number": "3",
+      "chapter": null,
+      "act": "Act and Rules, 1982",
+      "title": "Madhya Pradesh",
+      "full_text": "Sl.No. Name of the labour legislation Central Rules State Rules 1 Apprentices Act , 1961 Apprentices Rules, 1961 2 The Beedi and Cigar Workers (Conditions of Employment) Act, 1966 3 Beedi Workers Welfare Fund Act, 1976 4 The Beedi Workers Welfare Cess The Beedi Worker's Act, 1976 Welfare Cess Rules, 1977 5 The Building & Other Construction Workers (Regulation of Employment &",
+      "page": 23
+    },
+    {
+      "number": "ACT-HEADER",
+      "chapter": null,
+      "act": "Dry latrines Prohibition Act, 1993",
+      "title": "Dry latrines Prohibition Act, 1993 (Act header)",
+      "full_text": "",
+      "page": 24
+    },
+    {
+      "number": "ACT-HEADER",
+      "chapter": null,
+      "act": "Relations Rules, 1961",
+      "title": "Relations Rules, 1961 (Act header)",
+      "full_text": "",
+      "page": 25
+    },
+    {
+      "number": "ACT-HEADER",
+      "chapter": null,
+      "act": "Orders) Act, 1961",
+      "title": "Orders) Act, 1961 (Act header)",
+      "full_text": "",
+      "page": 25
+    },
+    {
+      "number": "ACT-HEADER",
+      "chapter": null,
+      "act": "of Wages Rules, 1962",
+      "title": "of Wages Rules, 1962 (Act header)",
+      "full_text": "",
+      "page": 26
+    },
+    {
+      "number": "ACT-HEADER",
+      "chapter": null,
+      "act": "Establishment Act, 1958",
+      "title": "Establishment Act, 1958 (Act header)",
+      "full_text": "",
+      "page": 26
+    },
+    {
+      "number": "3",
+      "chapter": null,
+      "act": "Establishment Act, 1958",
+      "title": "Classification of LABOUR LAWS in India",
+      "full_text": "Labour Laws may be classified under the following heads: I. Laws related to Industrial Relations such as:",
+      "page": 27
+    },
+    {
+      "number": "1",
+      "chapter": null,
+      "act": "Establishment Act, 1958",
+      "title": "Trade Unions Act, 1926",
+      "full_text": "",
+      "page": 27
+    },
+    {
+      "number": "2",
+      "chapter": null,
+      "act": "Establishment Act, 1958",
+      "title": "Industrial Employment Standing Order Act, 1946",
+      "full_text": "",
+      "page": 27
+    },
+    {
+      "number": "4",
+      "chapter": null,
+      "act": "Establishment Act, 1958",
+      "title": "Payment of Wages Act, 1936",
+      "full_text": "",
+      "page": 27
+    },
+    {
+      "number": "5",
+      "chapter": null,
+      "act": "Establishment Act, 1958",
+      "title": "Minimum Wages Act, 1948",
+      "full_text": "",
+      "page": 27
+    },
+    {
+      "number": "6",
+      "chapter": null,
+      "act": "Establishment Act, 1958",
+      "title": "Payment of Bonus Act, 1965",
+      "full_text": "",
+      "page": 27
+    },
+    {
+      "number": "7",
+      "chapter": null,
+      "act": "Establishment Act, 1958",
+      "title": "Working Journalists (Fixation of Rates of Wages Act, 1958",
+      "full_text": "III. Laws related to Working Hours, Conditions of Service and Employment such as:",
+      "page": 27
+    },
+    {
+      "number": "8",
+      "chapter": null,
+      "act": "Establishment Act, 1958",
+      "title": "Factories Act, 1948",
+      "full_text": "",
+      "page": 27
+    },
+    {
+      "number": "9",
+      "chapter": null,
+      "act": "Establishment Act, 1958",
+      "title": "Plantation Labour Act, 1951",
+      "full_text": "",
+      "page": 27
+    },
+    {
+      "number": "10",
+      "chapter": null,
+      "act": "Establishment Act, 1958",
+      "title": "Mines Act, 1952",
+      "full_text": "",
+      "page": 27
+    },
+    {
+      "number": "11",
+      "chapter": null,
+      "act": "Establishment Act, 1958",
+      "title": "Working Journalists and other Newspaper Employees’ (Conditions of Service",
+      "full_text": "and Misc. Provisions) Act, 1955.",
+      "page": 27
+    },
+    {
+      "number": "12",
+      "chapter": null,
+      "act": "Establishment Act, 1958",
+      "title": "Merchant Shipping Act, 1958",
+      "full_text": "",
+      "page": 27
+    },
+    {
+      "number": "13",
+      "chapter": null,
+      "act": "Establishment Act, 1958",
+      "title": "Motor Transport Workers Act, 1961",
+      "full_text": "27",
+      "page": 27
+    },
+    {
+      "number": "14",
+      "chapter": null,
+      "act": "Establishment Act, 1958",
+      "title": "Beedi & Cigar Workers (Conditions of Employment) Act, 1966",
+      "full_text": "",
+      "page": 28
+    },
+    {
+      "number": "15",
+      "chapter": null,
+      "act": "Establishment Act, 1958",
+      "title": "Contract Labour (Regulation & Abolition) Act, 1970",
+      "full_text": "",
+      "page": 28
+    },
+    {
+      "number": "16",
+      "chapter": null,
+      "act": "Establishment Act, 1958",
+      "title": "Sales Promotion Employees Act, 1976",
+      "full_text": "",
+      "page": 28
+    },
+    {
+      "number": "17",
+      "chapter": null,
+      "act": "Establishment Act, 1958",
+      "title": "Inter-State Migrant Workmen (Regulation of Employment and Conditions of",
+      "full_text": "Service) Act, 1979.",
+      "page": 28
+    },
+    {
+      "number": "18",
+      "chapter": null,
+      "act": "Establishment Act, 1958",
+      "title": "Dock Workers (Safety, Health & Welfare) Act, 1986",
+      "full_text": "",
+      "page": 28
+    },
+    {
+      "number": "19",
+      "chapter": null,
+      "act": "Establishment Act, 1958",
+      "title": "Building & Other Construction Workers (Regulation of Employment &",
+      "full_text": "Conditions of Service) Act, 1996.",
+      "page": 28
+    },
+    {
+      "number": "20",
+      "chapter": null,
+      "act": "Establishment Act, 1958",
+      "title": "Building and Other Construction Workers Welfare Cess Act, 1996",
+      "full_text": "",
+      "page": 28
+    },
+    {
+      "number": "21",
+      "chapter": null,
+      "act": "Establishment Act, 1958",
+      "title": "Cine-Workers and Cinema Theatre Workers (Regulation of Employment) Act",
+      "full_text": "1981",
+      "page": 28
+    },
+    {
+      "number": "22",
+      "chapter": null,
+      "act": "Establishment Act, 1958",
+      "title": "Dangerous Machines (Regulation) Act, 1983",
+      "full_text": "",
+      "page": 28
+    },
+    {
+      "number": "23",
+      "chapter": null,
+      "act": "Establishment Act, 1958",
+      "title": "Dock Workers (Regulation of Employment) Act, 1948",
+      "full_text": "",
+      "page": 28
+    },
+    {
+      "number": "24",
+      "chapter": null,
+      "act": "Establishment Act, 1958",
+      "title": "Dock Workers (Regulation of Employment) (Inapplicability to Major Ports)",
+      "full_text": "Act, 1997",
+      "page": 28
+    },
+    {
+      "number": "25",
+      "chapter": null,
+      "act": "Establishment Act, 1958",
+      "title": "Employment of Manual Scavengers and Construction of Dry Latrines",
+      "full_text": "(Prohibition) Act, 1993",
+      "page": 28
+    },
+    {
+      "number": "26",
+      "chapter": null,
+      "act": "Establishment Act, 1958",
+      "title": "Industrial Employment (Standing Orders) Act, 1946",
+      "full_text": "",
+      "page": 28
+    },
+    {
+      "number": "27",
+      "chapter": null,
+      "act": "Establishment Act, 1958",
+      "title": "Mines and Mineral (Development and Regulation Act, 1957",
+      "full_text": "",
+      "page": 28
+    },
+    {
+      "number": "28",
+      "chapter": null,
+      "act": "Establishment Act, 1958",
+      "title": "Plantation Labour Act, 1951",
+      "full_text": "",
+      "page": 28
+    },
+    {
+      "number": "29",
+      "chapter": null,
+      "act": "Establishment Act, 1958",
+      "title": "Private Security Agencies (Regulation) Act, 2005",
+      "full_text": "IV. Laws related to Equality and Empowerment of Women such as:",
+      "page": 28
+    },
+    {
+      "number": "30",
+      "chapter": null,
+      "act": "Establishment Act, 1958",
+      "title": "Maternity Benefit Act, 1961",
+      "full_text": "",
+      "page": 28
+    },
+    {
+      "number": "31",
+      "chapter": null,
+      "act": "Establishment Act, 1958",
+      "title": "Equal Remuneration Act, 1976",
+      "full_text": "V. Laws related to Deprived and Disadvantaged Sections of the Society such as:",
+      "page": 28
+    },
+    {
+      "number": "32",
+      "chapter": null,
+      "act": "Establishment Act, 1958",
+      "title": "Bonded Labour System (Abolition) Act, 1976",
+      "full_text": "",
+      "page": 28
+    },
+    {
+      "number": "33",
+      "chapter": null,
+      "act": "Establishment Act, 1958",
+      "title": "Child Labour (Prohibition & Regulation) Act, 1986",
+      "full_text": "",
+      "page": 28
+    },
+    {
+      "number": "34",
+      "chapter": null,
+      "act": "Establishment Act, 1958",
+      "title": "Children (Pledging of Labour) Act, 1933",
+      "full_text": "VI. Laws related to Social Security such as:",
+      "page": 28
+    },
+    {
+      "number": "35",
+      "chapter": null,
+      "act": "Establishment Act, 1958",
+      "title": "Workmen’s Compensation Act, 1923",
+      "full_text": "",
+      "page": 28
+    },
+    {
+      "number": "36",
+      "chapter": null,
+      "act": "Establishment Act, 1958",
+      "title": "Employees’ State Insurance Act, 1948",
+      "full_text": "",
+      "page": 28
+    },
+    {
+      "number": "37",
+      "chapter": null,
+      "act": "Establishment Act, 1958",
+      "title": "Employees’ Provident Fund & Miscellaneous Provisions Act, 1952",
+      "full_text": "",
+      "page": 28
+    },
+    {
+      "number": "38",
+      "chapter": null,
+      "act": "Establishment Act, 1958",
+      "title": "Payment of Gratuity Act, 1972",
+      "full_text": "",
+      "page": 28
+    },
+    {
+      "number": "39",
+      "chapter": null,
+      "act": "Establishment Act, 1958",
+      "title": "Employers’ Liability Act, 1938",
+      "full_text": "",
+      "page": 28
+    },
+    {
+      "number": "40",
+      "chapter": null,
+      "act": "Establishment Act, 1958",
+      "title": "Beedi Workers Welfare Cess Act, 1976",
+      "full_text": "",
+      "page": 28
+    },
+    {
+      "number": "41",
+      "chapter": null,
+      "act": "Establishment Act, 1958",
+      "title": "Beedi Workers Welfare Fund Act, 1976",
+      "full_text": "",
+      "page": 28
+    },
+    {
+      "number": "42",
+      "chapter": null,
+      "act": "Establishment Act, 1958",
+      "title": "Cine workers Welfare Cess Act, 1981",
+      "full_text": "",
+      "page": 28
+    },
+    {
+      "number": "43",
+      "chapter": null,
+      "act": "Establishment Act, 1958",
+      "title": "Cine Workers Welfare Fund Act, 1981",
+      "full_text": "",
+      "page": 28
+    },
+    {
+      "number": "44",
+      "chapter": null,
+      "act": "Establishment Act, 1958",
+      "title": "Fatal Accidents Act, 1855",
+      "full_text": "",
+      "page": 28
+    },
+    {
+      "number": "45",
+      "chapter": null,
+      "act": "Establishment Act, 1958",
+      "title": "Iron Ore Mines, Manganese Ore Mines and Chrome Ore Mines Labour",
+      "full_text": "",
+      "page": 28
+    },
+    {
+      "number": "ACT-HEADER",
+      "chapter": null,
+      "act": "Welfare Cess Act, 1976",
+      "title": "Welfare Cess Act, 1976 (Act header)",
+      "full_text": "",
+      "page": 28
+    },
+    {
+      "number": "46",
+      "chapter": null,
+      "act": "Welfare Cess Act, 1976",
+      "title": "Iron Ore Mines, Manganese Ore Mines and Chrome Ore Mines Labour",
+      "full_text": "",
+      "page": 28
+    },
+    {
+      "number": "ACT-HEADER",
+      "chapter": null,
+      "act": "Welfare Fund Act, 1976",
+      "title": "Welfare Fund Act, 1976 (Act header)",
+      "full_text": "",
+      "page": 28
+    },
+    {
+      "number": "47",
+      "chapter": null,
+      "act": "Welfare Fund Act, 1976",
+      "title": "Limestone and Dolomite Mines Labour Welfare Fund Act, 1972",
+      "full_text": "",
+      "page": 28
+    },
+    {
+      "number": "48",
+      "chapter": null,
+      "act": "Welfare Fund Act, 1976",
+      "title": "Mica Mines Labour Welfare Fund Act, 1946",
+      "full_text": "28",
+      "page": 28
+    },
+    {
+      "number": "49",
+      "chapter": null,
+      "act": "Welfare Fund Act, 1976",
+      "title": "Personal Injuries (Compensation Insurance) Act, 1963",
+      "full_text": "",
+      "page": 29
+    },
+    {
+      "number": "50",
+      "chapter": null,
+      "act": "Welfare Fund Act, 1976",
+      "title": "Personal Injuries (Emergency Provisions) Act, 1962",
+      "full_text": "",
+      "page": 29
+    },
+    {
+      "number": "51",
+      "chapter": null,
+      "act": "Welfare Fund Act, 1976",
+      "title": "Unorganised Workers’ Social Security Act, 2008",
+      "full_text": "4a. APPRENTICES ACT, 1961 The main purpose of the Act is to provide practical training to technically qualified persons in various trades. The objective is promotion of new skilled manpower. The scheme is also extended to engineers and diploma holders. The Act applies to areas and industries as notified by Central government. [Section 1(4)]. Scheme of the Act There are 38 Sections in total and 1 Schedule. This Schedule is about modifications in the Workmen’s Compensation Act, 1923 with regard to its application to apprentices under the Apprentices Act, 1961. Obligation of Employer  Every employer is under obligation to provide the apprentice with the training in his trade in accordance with the provisions of this Act and the rules made there under.  If the employer is not himself qualified in the trade, he has to ensure that a person who possesses the prescribed qualification is placed in charge of the training of the apprentice.  Every employer has to provide adequate instructional staff, possessing such qualifications as may be prescribed for imparting practical and theoretical training and facilities for trade test of apprentices; and  Every employer is under obligation to take apprentices in prescribed ratio of the skilled workers in his employment in different trades. [Section 11].  In every trade, there will be reserved places for scheduled castes and schedules tribes. [Section 3A]. Ratio of trade apprentices to workers shall be determined by Central Government.  Employer can engage more number of apprentices than prescribed minimum. [Section 8(1)].  The employer has to make arrangements for practical training of apprentice [Section 9(1)].  Employer will pay stipends to apprentices at prescribed rates. If the employees are less than 250, 50% of cost is shared by Government. If employer is employing more than 250 workers, he has to bear full cost of training. 29 Obligations of Apprentices Every trade apprentice undergoing apprenticeship training shall have the following obligations, namely:  To learn his trade conscientiously and diligently and endeavour to qualify himself as a skilled craftsman before the expiry of the period of training;  To attend practical and instructional classes regularly;  To carry out all lawful orders of his employer and superiors in the establishments; and  To carry out his obligations under the contract of apprenticeship. In case of graduate or technician apprentice or technician (vocational) apprentice, apart from the afore stated obligations, the Act imposes further obligation to learn his subject in Engineering or Technology or Vocational Course. (Section 12) Who can be an Apprentice - Apprentice should be of minimum age of 14 years and he should satisfy the standard of education and physical fitness as prescribed. [Section 3]. Reservation of training places for scheduled castes Section 3A provides that in every designated trade, training places shall be reserved by the employer for the Scheduled Castes and Scheduled Tribes (as defined in clauses (24) and (25) of Article 366 of the Constitution) and where there is more than one designated trade in an establishment, such training places shall be reserved on the basis on the total number of apprentices in all the designated trades in such establishment. The reservation shall be such as may be prescribed having regard to the population of the Scheduled Castes and Scheduled Tribes in the State concerned. Duration of Training - Duration of training period and ratio of apprentices to skilled workers for different trades has been prescribed in Apprenticeship Rules, 1991. Duration of Apprenticeship may be from 6 months to 4 years depending on the trade, as prescribed in Rules. Period of training is determined by National Council for training in Vocational Trades (established by Government of India)-(Section 6). Contract with Apprentice – Apprentice appointed has to execute a contract of apprenticeship with employer. The contract has to be registered with Apprenticeship Adviser. If apprentice is minor, agreement should be signed by his guardian. [Section 4(1)] Apprentice is entitled to casual leave of 12 days, medical leave of 15 days and extraordinary leave of 10 days in a year. 30 Date of commencement of apprenticeship training The apprenticeship training shall be deemed to have commenced on the date on which the contract of apprenticeship has been entered into. Registration  The employer shall send the contract to the Apprenticeship adviser for registration within three months of the date on which it was signed (Rule 6).  The contract shall be registered by the Apprenticeship Adviser on being satisfied that the person described as an apprentice in the said contract is qualified under this Act.  Registration of contract of apprenticeship under Section 4(4) is not a necessary ingredient of definition of apprentice. (Bhaskaran v. KSEB (1986) 1 LLN 869). Terms and conditions of contract The contract may contain such terms and conditions as may be agreed to by the parties to the contract. In case, the Central Government after consulting the Central Apprenticeship Council makes any rule varying the terms and conditions of apprenticeship training of any category of apprentices undergoing such training then the terms and conditions of every contract relating to that category of apprentices and subsisting immediately before the making of such rule shall be deemed to have been modified accordingly. Novation of contract of apprenticeship: Where an employer is for any reason unable to fulfill his obligations under the contract and with approval of the Apprenticeship Adviser it is agreed between the employer, the apprentice or his guardian and any other employer that the apprentice shall be engaged as an apprentice under the other employer for the unexpired portion of the period of apprenticeship training, the agreement, on registration with the Apprenticeship Adviser shall be deemed to be the contract of apprenticeship between the apprentice or his guardian and other employer. Such contract on and from the date of such registration shall be terminated with the first employer and no obligation under that contract shall be enforceable (Section 5). Payment to apprentices 31 This is a contractual as well as statutory obligation imposed under Section 13 of the Act that an employer pays to every apprentice during the period of training such stipend at a rate not less than the prescribed minimum rate and this rate will be specified in the contract. An employer shall pay such stipend at such intervals and subject to such conditions as may be prescribed. However, an apprentice shall not be paid on the basis of piece-work nor he shall take part in any output bonus or other incentive scheme. Termination of contract The contract of apprenticeship training shall terminate on the expiry of the period of apprenticeship training. Either party can make application for termination of contract to the Apprenticeship Adviser and thereafter send a copy of the same to the other party, who on being satisfied that the parties have failed to carry out the terms and conditions of the contract and it is desirable in the interests of the parties or any of them to terminate the contract, shall register the same. However, the employer shall pay the prescribed amount of compensation to the apprentice where the contract is terminated for failure on the part of the employer to honour the contract. Where the contract is terminated for failure on the part of the apprentice, he or his guardian shall refund the cost of the training to the employer. (Section 7) Legal Position of Apprentices - An apprentice is not a workman during apprentice training. [Section 18] Provisions of labour law like Bonus, PF, ESI. Act, gratuity, Industrial Disputes Act etc. are not applicable to him. However, provisions of Factories Act regarding health, safety and welfare will apply to him. Apprentice is also entitled to get compensation from employer for employment injury. [Section 16]. An employer is under no obligation to employ the apprentice after completion of apprenticeship. [Section 22(1)]. However, in UP State Road Transport Corpn v. UP Parivahan Nigam Shishukh Berozgar Sangh AIR 1995 SC 1114 = (1995) 2 SCC 1 , it was held that other things being equal, a trained apprentice should be given preference over direct recruits. It was also held that he need not be sponsored by the employment exchange. Age bar may also be relaxed, to the extent of training period. The concerned institute should maintain a list of persons already trained and in between trained apprentices, preference should be given to those who are senior. – same view in UP Rajya Vidyut Parishad v. State of UP 2000 LLR 869 (SC). 32 Stipend payable- The minimum rate of stipend payable per month is as follows - (a) Engineering graduates - Rs 1,970 p.m. for post-institutional training (b) Sandwich course students for degree examination - Rs 1,400 p.m. (c) diploma holders - Rs 1,400 p.m. for post-institutional training (d) Sandwich course students for degree examination - Rs 1,140 p.m. (e) Vocational certificate holder - Rs 1,090 p.m. [w.e.f. May 2001] In case of 4 year training, the stipend is as follows – first year – Rs 820 pm. Second year – Rs 940 pm. Third year – Rs 1,090 pm. Fourth year – Rs 1,230 pm. [From May 2001]. Test and Proficiency certificate - On completion of training, every trade apprentice has to appear for a test conducted by National Council. If he passes, he gets a certificate of proficiency. Apprenticeship Adviser - Government is empowered to appoint Apprenticeship Adviser, Dy Apprenticeship Adviser etc. to supervise the scheme. Various powers have been conferred on them under the Act. Disputes under contract and settlement thereof Section 20 of the Act provides that if out of the terms and conditions of the contract any dispute arises, it will be referred to Apprenticeship Adviser for decision. An appeal can be preferred by the aggrieved party within 30 days of the communication of the Adviser’s decision to the Apprenticeship Council and such appeal shall be heard and determined by the Committee of that Council appointed for the purpose, and such decision of the Committee shall be final. Holding of Test and Grant of Certificate and Conclusion of Training (Section 21) - (1) Every trade apprentice who has completed the period of training shall appear for a test to be conducted by the National Council to determine his proficiency in the designated trade in which he has undergone his apprenticeship training. (2) Every trade apprentice who passes the test referred to in sub-Section (1) shall be granted a certificate of proficiency in the trade by the National Council. (3) The progress in apprenticeship training of every graduate or technician apprentice, technician (vocational) apprentice shall be assessed by the employer from time to time. 33 (4) Every graduate or technician apprentice or technician (vocational) apprentice, who completes his apprenticeship training to the satisfaction of the concerned Regional Board, shall be granted a certificate of proficiency by that Board. (2) Notwithstanding anything in sub-Section (1), where there is a condition in a contract of apprenticeship shall, after the successful completion of the apprenticeship training, serve the employer, the employer shall, on such completion, be bound to offer suitable employment to the apprentice, and the apprentice shall be bound to serve the employer in that capacity for such period and on such remuneration as may be specified in the contract: Provided that where such period or remuneration is not, in the opinion of the Apprenticeship Adviser, reasonable, he may revise such period or remuneration so as to make it reasonable, and the period or remuneration so revised shall be deemed to be the period or remuneration agreed to between the apprentice and the employer. Offences and Penalties (Section 30) (1) If any employer - (a) engages as an apprentice a person who is not qualified for being so engaged, or (b) fails to carry out the terms and conditions of a contract of apprenticeship, or (c) contravenes the provisions of this Act relating to the number of apprentices which he is required to engage under those provisions, he shall be punishable with imprisonment for a term which may extend to six months or with fine or with both. (2) If any employer or any other person - (a) required to furnish any information or return - (i) refuses or neglects to furnish such information or return, or (ii) furnishes or causes to be furnished any information or return which is false and which he either knows or believes to be false or does not believe to be true, or 34 (iii) refuses to answer, or gives a false answer to any question necessary for obtaining any information required to be furnished by him, or (b) refuses or willfully neglects to afford the Central or the State Apprenticeship Adviser or such other person, not below the rank of an Assistant Apprenticeship Adviser, as may be authorised by the Central or the State Apprenticeship Adviser in writing in this behalf any reasonable facility for making any entry, inspection, examination or inquiry authorised by or under this Act, or (c) requires an apprentice to work overtime without the approval of the Apprenticeship Adviser, or (d) employs an apprentice on any work which is not connected with his training, or (e) makes payment to an apprentice on the basis of piecework, or (f) requires an apprentice to take part in any output bonus or incentive scheme, he shall be punishable with imprisonment for a term which may extend to six months or with fine or with both. Penalty where no specific penalty is specified (Section 31) - If any employer or any other person contravenes any provision of this Act for which no punishment is provided in Section 30, he shall be punishable with fine which shall not be less than one thousand rupees but may extend to three thousand rupees. Offences by Companies (Section 32) (1) If the person committing an offence under this Act is a company, every person who, at the time the offence was committed was in charge of, and was responsible to, the company for the conduct of business of the company, as well as the company, shall be deemed to be guilty of the offence and shall be liable to be proceeded against and punished accordingly: Provided that nothing contained in this sub-Section shall render any such person liable to such punishment provided in this Act if he proves that the offence was committed without his knowledge or that he exercised all due diligence to prevent the commission of such offence. (2) Notwithstanding anything contained in sub-Section (1), where an offence under this Act has been committed by a company and it is proved that the offence has been committed with the consent or connivance of, or is attributable to any negligence on the part of, any director, manager, secretary or other officer of the company, such director, manager, secretary, or other officer shall also be 35 deemed to be guilty of that offence and shall be liable to be proceeded against and punished accordingly. Explanation: For the purposes of this Section, - (a) \"company\" means a body corporate and includes a firm or other association of individuals; and (b) \"director\" in relation to a firm means a partner in the firm. Cognizance of Offences (Section 33) No court shall take cognizance of any offence under this Act or the rules made there under except on a complaint thereof in writing made by the Apprenticeship Adviser or the officer of the rank of Deputy Apprenticeship Adviser and above within six months from the date on which the offence is alleged to have been committed. 4b. Employee State Insurance Act, 1948 Introduction The Employee State Insurance Act, [ESIC] 1948, is a piece of social welfare legislation enacted primarily with the object of providing certain benefits to employees in case of sickness, maternity and employment injury and also to make provision for certain others matters incidental thereto. The Act in fact tries to attain the goal of socio-economic justice enshrined in the Directive principles of state policy under part 4 of our constitution, in particular articles 41, 42 and 43 which enjoin the state to make effective provision for securing, the right to work, to education and public assistance in cases of unemployment, old age, sickness and disablement. The act strives to materialize these avowed objects through only to a limited extent. This act becomes a wider spectrum than factory act. In the sense that while the factory act concerns with the health, safety, welfare, leave etc of the workers employed in the factory premises only. But the benefits of this act extend to employees whether working inside the factory or establishment or elsewhere or they are directly employed by the principal employee or through an intermediate agency, if the employment is incidental or in connection with the factory or establishment. Related Legislations: ESI (Central) Rules, 1950 and ESI (General) Regulations, 1950 36 Origin The Employee State Insurance act was promulgated by the Parliament of India in the year 1948.To begin with the ESIC scheme was initially launched on 2nd February 1952 at just two industrial centers in the country namely Kanpur and Delhi with a total coverage of about 1.20 lakh workers. There after the scheme was implemented in a phased manner across the country with the active involvement of the state governments. Objectives: The ESI Act is a social welfare legislation enacted with the object of providing certain benefits to employees in case of sickness, maternity and employment injury. Under the Act, employees will receive medical relief, cash benefits, maternity benefits, pension to dependents of deceased workers and compensation for fatal or other injuries and diseases. Definitions According to Section 2 (m) of Factories Act, 1948, Factory means any premises including the precints thereof - (a) whereon ten or more persons are employed or were employed for wages on any day of the preceding twelve months, and in any part of which a manufacturing process is being carried on with the aid of power or is ordinarily so carried on, or (b) whereon twenty or more persons are employed or were employed for wages on any day of the preceding twelve months, and in any part of which a manufacturing process is being carried on without the aid of power or is ordinarily so carried on. but does not include a mine subject to the operation of Mines Act, 1952 or a railway running shed; According to Section 2 (k) of Factories Act, \"manufacturing process\" means any process for - (i) making, altering, repairing, ornamenting, finishing, packing, oiling, washing, cleaning, breaking up, demolishing, or otherwise treating or adapting any article or substance with a view to its use, sale, transport, delivery or disposal, or (ii) pumping oil, water, sewage or any other substance; or; (iii) generating, transforming or transmitting power; or 37 (iv) composing types for printing, printing by letter press, lithography, photogravure or other similar process or book binding; lra-6 ] [ lra-7 or lra-7 ] (v) constructing, reconstructing, repairing, refitting, finishing or breaking up ships or vessels; (vi) preserving or storing any article in cold storage; According to Section 2 (h) of The Minimum Wages Act, \"wages\"- means all remuneration capable of being expressed in terms of money which would if the terms of the contract of employment express or implied were fulfilled be payable to a person employed in respect of his employment or of work done in such employment and includes house rent allowance but does not include - (i) the value of - (a) any house accommodation supply of light water medical attendance or (b) any other amenity or any service excluded by general or special order of the appropriate government; (ii) any contribution paid by the employer to any person fund or provident fund or under any scheme of social insurance; (iii) any traveling allowance or the value of any traveling concession; (iv) any sum paid to the person employed to defray special expenses entailed on him by the nature of his employment; or (v) any gratuity payable on discharge Applicability:  The ESI Act extends to the whole of India.  It applies to all the factories including Government factories (excluding seasonal factories), which employ 10 or more employees and carry on a manufacturing process with the aid of power and 20 employees where manufacturing process is carried out without the aid of power.  The act also applies to shops and establishments. Generally, shops and establishments employing more than 20 employees are covered by the Act. “Shop” according to the Delhi Shops and Establishment Act, 1954 means any premises where goods are sold either by 38 retail or wholesale or where services are rendered to customers, and includes an office, a store-room, godown, warehouse or workhouse or work place, whether in the same premises or otherwise, used in or in connection with such trade or business but does not include a factory or a commercial establishment. “Establishment” means a shop, a commercial establishment, residential hotel, restaurant, eating-house, theatre or other places of public amusement or entertainment to which this Act applies and includes such other establishment as Government may, by notification in the Official Gazette, declare to be an establishment for the purpose of this Act. According to the Delhi Shops and Establishment Act, 1954, “Commercial Establishment” means any premises wherein any trade, business or profession or any work in connection with, or incidental or ancillary thereto is carried on and includes a society registered under the Societies Registration Act, 1860, and charitable or other trust, whether registered or not, which carries on any business, trade or profession or work in connection with, or incidental or ancillary thereto, journalistic and printing establishments, contractors and auditors establishments, quarries and mines not governed by the Mines Act, 1952, educational or other institutions run for private gain, and premises in which business of banking, insurance, stocks and shares, brokerage or produce exchange is carried on, but does not include a shop or a factory registered under the Factories Act, 1948, or theatres, cinemas, restaurants, eating houses, residential hotels, clubs or other places of public amusements or entertainment. Form 01 – Employers’ Registration Form also requires a copy of the registration certificate or licence obtained under the Shops and Establishment Act to be attached along with this form. From this it is quite evident that ESI Act will be applicable to shops and establishments. Again the definition of shops and establishment will vary from state to state depending on the shops and establishment act of that particular state.  The act does not apply to any member of Indian Naval, Military or Air Forces.  All employees including casual, temporary or contract employees drawing wages less than Rs 10,000 per month are covered. The ceiling limit has been raised from Rs.7500 to Rs.10000 with effect from 01.10.06.  Apprentices covered under the Apprenticeship Act are not covered under this Act. According to Apprenticeship Act 1961, “apprentice” means a person who is undergoing apprenticeship training in pursuance of a contract of apprenticeship. o The apprentices under any scheme as the name suggests come to learn the tricks of the trade and may not count much so far as the output of the factory is concerned, with that end in view, the apprentices are exempted from the operation of laws 39 relating to labour unless the State Government thought otherwise.-- Regional Director ESIC v. M/s Arudyog 1987 (1) LLJ 292.  A factory or establishment, to which this Act applies, shall continue to be governed by its provisions even if the number of workers employed falls below the specified limit or the manufacturing process therein ceases to be carried on with the aid of power subsequently.  Where a workman is covered under the ESI scheme, o Compensation under the Workmen's Compensation Act cannot be claimed in respect of employment injury. o No benefits can be claimed under the Maternity Benefits Act. Important Case laws",
+      "page": 29
+    },
+    {
+      "number": "1",
+      "chapter": null,
+      "act": "Welfare Fund Act, 1976",
+      "title": "Where by some club not only sporting facilities but a kitchen is also maintained, wherein a",
+      "full_text": "big number of members come, it is not necessary that they are participating only in sports activities, they are also entertaining themselves and their guests by partaking beverages and tea served by the club. Activity in the kitchen has a direct connection with the activities carried on in the rest of the club premises. It is necessary that the club be registered under ESI Act as regards all the employees engaged by the club irrespective of the fact in which department they are working. Cricket Club of India satisfies the definition of the term `factory' under s. 2(12) of the Act hence covered by it.-- Cricket Club of India v. ESI Corporation 1994 (69) FLR 19.",
+      "page": 40
+    },
+    {
+      "number": "2",
+      "chapter": null,
+      "act": "Welfare Fund Act, 1976",
+      "title": "Where in an establishment activities like that of clearing and forwarding is going on, it would",
+      "full_text": "fall within the expression \"shop\" even though clearing of documents is done in customs house meant for export and import of goods. Person involved in such business is catering to the needs of exporters and importers and others wanting to carry the goods further. -- AIR 1993 SC 252 .",
+      "page": 40
+    },
+    {
+      "number": "3",
+      "chapter": null,
+      "act": "Welfare Fund Act, 1976",
+      "title": "Anyone having product may approach advertising agency. The advertising agency will",
+      "full_text": "prepare an advertising campaign for him utilising the services of the experts it employs in this behalf. It sells the campaign to the client and receives the price thereof. Indubitably, the price will depend upon the nature of the campaign but that does not make any great difference. Essentially, the advertising agency sells its expert services to a client to enable the client to launch an effective campaign of his products without staining the language, the premises of an advertising agency can be said to be a \"shop\"--ESI Corporation v. R.K. Swamy 1993 (67) FLR 1145 : 1993 (2) CLR 1068.",
+      "page": 40
+    },
+    {
+      "number": "4",
+      "chapter": null,
+      "act": "Welfare Fund Act, 1976",
+      "title": "Where a laid-off employee after signing the lay-off register was coming out of the factory",
+      "full_text": "premises and when crossing the road was hit by a scooter, injuries sustained by him were 40 taken as covered during the course of employment on the basis of theory of notional extension.-- Satya Sharma v. ESI Corporation 1991 (63) FLR 339 .",
+      "page": 40
+    },
+    {
+      "number": "5",
+      "chapter": null,
+      "act": "Welfare Fund Act, 1976",
+      "title": "If the work by the employee is conducted under the immediate gaze or overseeing of the",
+      "full_text": "principal employer or his agent, subject to other conditions as envisaged being fulfilled he would be an employee for the purpose of s. 2(9).-- CES Corporation Ltd. v. Subash Chandra Bose 1992 (1) LLJ 475.",
+      "page": 41
+    },
+    {
+      "number": "6",
+      "chapter": null,
+      "act": "Welfare Fund Act, 1976",
+      "title": "A work that is conducive to the work of the factory or establishment or that is necessary for",
+      "full_text": "the augmentation of the work of the factory or establishment will be incidental or preliminary to or connected with the work of the factory or establishment. The casual employees shall also be brought within it and are entitled to the benefits which the Act grants. The casual labour employed to construct additional buildings for expansion of the factory are the employees under the Act.-- Regional Director, ESIC v. South India Flour Mills Ltd. 1986 (53) FLR 178.",
+      "page": 41
+    },
+    {
+      "number": "7",
+      "chapter": null,
+      "act": "Welfare Fund Act, 1976",
+      "title": "Employees engaged for repairs, site clearing, construction of buildings, etc. of the principal",
+      "full_text": "employer are employees within the meaning of s. 2(9) of the Act. --Kirloskar Pneumatic Co. Ltd. v. ESI Corporation 1987 (70) FJR 199.",
+      "page": 41
+    },
+    {
+      "number": "8",
+      "chapter": null,
+      "act": "Welfare Fund Act, 1976",
+      "title": "The expression \"employed for wages or in connection with the work of a factory or",
+      "full_text": "establishment\" is of very wide amplitude and its generality is not in any way prejudiced by the expression and includes any person employed for wages or any work connected with the administration of the factory or establishment or in connection with sale or distribution of the products of the factory or establishments. The word \"includes\" in the statutory definition of a term is generally used to enlarge the meaning of the preceding words and it is by way of extension and not with restriction. In order to determine whether the employees of the company working at its branch sales offices and carrying on acts of sale and distribution of goods manufactured by the company as well as the goods produced by the foreign company are \"employees\" what is pertinent is not whether they are \"principally\" and primarily engaged in sale and distribution of the products of the company but whether the business of sale and distribution either \"principally\" or \"marginally\" of the products of the foreign company is being done on behalf of the company. If the main business of the company itself at the branch sales offices, is to sell and distribute products of foreign company and the employees working have been employed by the company basically in connection with this work, it would be difficult to hold that the employees at branch sales offices are not \"employees\" within the meaning of the term defined in s. 2(9) of the Act notwithstanding the fact that the sale and distribution of the products of the company at 41 such offices are only marginal.-- Director General, ESI Corporation v. Scientific Instrument Co. Ltd. 1995 Lab. IC 651 .",
+      "page": 41
+    },
+    {
+      "number": "9",
+      "chapter": null,
+      "act": "Welfare Fund Act, 1976",
+      "title": "Where the work of fixing the marble is extended to a contractor by a marble manufacturing",
+      "full_text": "company, duty of the contractor is only to complete the work while marble, cement etc., is supplied by the manufacturing company, workers employed by the contractor would be the employees of the factory as under s. 2(9) of the Act.-- 1992 (2) CLR 881.",
+      "page": 42
+    },
+    {
+      "number": "10",
+      "chapter": null,
+      "act": "Welfare Fund Act, 1976",
+      "title": "There is no such difference as that of casual or temporary or permanent employee for the",
+      "full_text": "expression \"employee\" as defined under s. 2(9) of the Act. It is so wide as to include even a casual employee who is employed just for a day for wages. The test being whether the person is employed for wages on any work which is connected with the work of a factory or establishment which bears the application of the Act except those exempted by the definition.-- ESI Corporation v. Suvarna Saw Mills 1980 (57) FJR 154.",
+      "page": 42
+    },
+    {
+      "number": "11",
+      "chapter": null,
+      "act": "Welfare Fund Act, 1976",
+      "title": "Where a department of publication and press run by the university concerned is engaged in",
+      "full_text": "the printing of text books, journals, registers, forms, etc., that would amount to manufacturing process.-- Osmania University v. ESI Corporation 1986 (1) LLN 72 .",
+      "page": 42
+    },
+    {
+      "number": "12",
+      "chapter": null,
+      "act": "Welfare Fund Act, 1976",
+      "title": "Where there was no manufacturing of articles nor the hotel was manufacturing any article",
+      "full_text": "with the aid of power except maintaining one refrigerator to preserve milk and curd, and as there was no using of power in the kitchen for making the eatables and the refrigerator had been kept only for preservation of milk and curd, there was no manufacturing process.-- Ritz Hotel v. ESI Corpn. 1995 (1) Mah. LJ 63.",
+      "page": 42
+    },
+    {
+      "number": "13",
+      "chapter": null,
+      "act": "Welfare Fund Act, 1976",
+      "title": "Wages paid for the holidays are wages as defined.-- R.D., ESI Corporation v. Raj Keshaw Co",
+      "full_text": "1991 Lab. IC 1991 Lab. IC 1989.",
+      "page": 42
+    },
+    {
+      "number": "14",
+      "chapter": null,
+      "act": "Welfare Fund Act, 1976",
+      "title": "Overtime wages could not be treated as \"wages\" for the purpose of contribution under the",
+      "full_text": "Act.-- Hind Art Press v. ESI Corporation 1990 (1) LLJ 195.",
+      "page": 42
+    },
+    {
+      "number": "15",
+      "chapter": null,
+      "act": "Welfare Fund Act, 1976",
+      "title": "The ESI Corporation is conferred with the power to recover arrears of contributions from the",
+      "full_text": "employer along with damages/interest on the contribution that remained due. Correspondingly it is under an obligation to pay with interest the arrears of benefits to the insured employees or his dependents.-- ESI Corporation v. Bhag Singh 1989 (2) LLJ 126. 16. Section 53 of the ESI Act (Bar against receiving or recovery of compensation or damages under any other law) does not bar the remedy under s. 110A of the Motor Vehicles Act, 1939.-- Deputy General Manager KSRTC v. Gopal Mudaliar 1983 (46) FLR 194. Areas Covered 42 The ESI Scheme is being implemented area-wise by stages. The Scheme is being implemented in almost all union territories and states except Nagaland, Manipur, Tripura, Sikkim, Arunachal Pradesh and Mizoram. Administration of the Act The provisions of the Act are administered by the Employees State Insurance Corporation. It comprises members representing employees, employers, the central and state government, besides, representatives of parliament and medical profession. A standing committee constituted from amongst the members of the corporation, acts as an executive body. The medical benefit council, constituted by the central government, is another statutory body that advises the corporation on matters regarding administration of medical benefit, the certification for purposes of the grant of benefits and other connected matters. Registration The employer should get his factory or establishment registered with the ESI Corporation within 15 days after the Act becomes applicable to it and also obtain the employer’s code number. Application should be made in Form 01 and after having being satisfied with the application form, the regional office will allot a code number to the employer, which must be quoted in all documents and correspondence. Identity Card An employee is required to file a declaration form upon employment in factory or establishment to show that he is covered under the Act. On registration every insured person is provided with a ‘temporary identification certificate’ which is valid ordinarily for a period of three months but may be extended, if necessary, for a further period of 3 months. Within this period, the insured person is given a permanent ‘family photo identity card’ in exchange for the certificate. The identity card serves as a means of identification and has to be produced at the time of claiming medical care at the dispensary / clinic and cash benefit at the local office of the corporation. In the event of change of employment, it should be produced before the new employer as evidence of registration under the scheme to prevent any duplicate registration. The identity card bears the signature/thumb impression of the insured person. Since medical benefit is also available to the families of Insured persons, the particulars of family members entitled to medical benefit are also given in the identity card affixed with a postcard size family photo. If the identity card is lost, a duplicate card is issued on payment as prescribed. 43 Employers’ / Employees’ Contribution Like most of the social security schemes, the world over, ESI scheme is a self-financing health insurance scheme. Contributions are raised from covered employees and their employers as a fixed percentage of wages. Presently covered employees contribute 1.75% of the wages, whereas as the employers contribute 4.75% of the wages, payable to the insured persons. Employees earning less than and up to Rs. 50 per day are exempted from payment of contribution. The contribution is deposited by the employer in cash or by cheque at the designated branches of some nationalized banks. The responsibility for payment of all contributions is that of the employer with a right to deduct the employees share of contribution from employees’ wages relating to the period in respect of which the contribution is payable. There are two contribution periods each of six months duration and two corresponding benefit periods. Cash benefits under the scheme are generally linked with contribution paid. Contribution period - 1st April to 30th September, its corresponding Cash Benefit period is 1st January to 30th June of the following year. Contribution period - 1st October to 31st March, its corresponding Cash Benefit period is 1st July to 31st December of the following year. Certification of Return of Contribution by Auditor Regulation 26 of Employees’ State Insurance (General) Regulations, 1950 was amended by Notification No.N-12/13/1/2008-P&D to include certain details to be mentioned in the Return of Contribution to be submitted by employers. The salient features of amendments made in the Returns of Contribution are as under:-",
+      "page": 42
+    },
+    {
+      "number": "16",
+      "chapter": null,
+      "act": "Welfare Fund Act, 1976",
+      "title": "Electro-plating Industries",
+      "full_text": "",
+      "page": 64
+    },
+    {
+      "number": "17",
+      "chapter": null,
+      "act": "Welfare Fund Act, 1976",
+      "title": "Chemical Industries",
+      "full_text": "- Coke Oven by-products and Coaltar Distillation Products - Industrial Gases (nitrogen, oxygen, acetylene, argon, carbon-dioxide, hydrogen, sulphur-dioxide, nitrous oxide, halogenated hydro-carbon, ozone etc.) - Industrial Carbon - Alkalies and Acids - Chromates and dichromates - Leads and its compounds - Electrochemicals (metallic sodium, potassium and magnesium, chlorates, perchlorates and peroxides) - Electrothermal produces (artificial abrasive, calcium carbide) - Nitrogenous compounds (cyanides, cyanamides and other nitrogenous compounds) - Phosphorous and its compounds - Halogens and Halogenated compounds (Chlorine, Fluorine, Bromine and Iodine) - Explosives (including industrial explosives and detonators and fuses)",
+      "page": 64
+    },
+    {
+      "number": "18",
+      "chapter": null,
+      "act": "Welfare Fund Act, 1976",
+      "title": "Insecticides, Fungicides, herbicides and other Pesticides Industries",
+      "full_text": "",
+      "page": 64
+    },
+    {
+      "number": "19",
+      "chapter": null,
+      "act": "Welfare Fund Act, 1976",
+      "title": "Synthetic Resin and Plastics",
+      "full_text": "",
+      "page": 64
+    },
+    {
+      "number": "20",
+      "chapter": null,
+      "act": "Welfare Fund Act, 1976",
+      "title": "Man-made Fibre (Cellulosic and non-cellulosic) Industry",
+      "full_text": "",
+      "page": 64
+    },
+    {
+      "number": "21",
+      "chapter": null,
+      "act": "Welfare Fund Act, 1976",
+      "title": "Manufacture and repair of electrical accumulators",
+      "full_text": "",
+      "page": 64
+    },
+    {
+      "number": "22",
+      "chapter": null,
+      "act": "Welfare Fund Act, 1976",
+      "title": "Glass and Ceramics",
+      "full_text": "",
+      "page": 64
+    },
+    {
+      "number": "23",
+      "chapter": null,
+      "act": "Welfare Fund Act, 1976",
+      "title": "Grinding or glazing of metals",
+      "full_text": "",
+      "page": 64
+    },
+    {
+      "number": "24",
+      "chapter": null,
+      "act": "Welfare Fund Act, 1976",
+      "title": "Manufacture, handling and processing of asbestos and its products",
+      "full_text": "",
+      "page": 64
+    },
+    {
+      "number": "25",
+      "chapter": null,
+      "act": "Welfare Fund Act, 1976",
+      "title": "Extraction of oils and fats from vegetable and animal sources",
+      "full_text": "64",
+      "page": 64
+    },
+    {
+      "number": "26",
+      "chapter": null,
+      "act": "Welfare Fund Act, 1976",
+      "title": "Manufacture, handling and use of benzene and substances containing benzene",
+      "full_text": "",
+      "page": 65
+    },
+    {
+      "number": "27",
+      "chapter": null,
+      "act": "Welfare Fund Act, 1976",
+      "title": "Manufacturing processes and operations involving carbon disulphide",
+      "full_text": "",
+      "page": 65
+    },
+    {
+      "number": "28",
+      "chapter": null,
+      "act": "Welfare Fund Act, 1976",
+      "title": "Dyes and Dyestuff including their intermediates",
+      "full_text": "",
+      "page": 65
+    },
+    {
+      "number": "29",
+      "chapter": null,
+      "act": "Welfare Fund Act, 1976",
+      "title": "Highly flammable liquids and gases",
+      "full_text": "PERMISSIBLE LEVELS OF CERTAIN CHEMICAL SUBSTANCES IN WORK ENVIRONMENT - THE SECOND SCHEDULE Sl. Substance Permissible limits of exposure No. Time-Weighted Short-term average exposure r e (TWA) (STEL) concentration limits (15 (TWA) min.) a A PPm mg/m3 PPm mg/m3 1 2 3 4 5 6 1 Acetaldehyde 100 180 150 270 2 Acetic Acid 10 25 15 37 3 Acetone 750 1780 1000 2375 4 Acrolein 01 0.25 0.3 0.8 5 Acrylonitrile-skin (S.C) 2 4.5 - - 6 Aldrin-skin - 0.25 - - 7 Allyl Chloride 1 3 2 6 65 8 Ammonia 0.25 18 35 27 9 Aniline-skin 2 10 - - Anisidine (O.P.isomers)- 10 0.1 0.5 - - skin Arsenic & Soluble 11 - 0.2 - - compounds (as As) 12 Benzene (S.C) 10 30 - - Beryllium & Compounds 13 - 0.002 - - (as Be) (S.C) 14 Boron trifluoride C 1 3 - - 15 Bromine 0.1 0.7 0.3 2 16 Butane 800 1900 - - 2-Butanone (Methyle 17 200 590 300 885 ethyle Ketone MEK) 18 N-Butyl acetate 150 710 200 950 19 N-Butyl alcohol-skin-C 50 150 - - 20 Sce/tert, Butyl acetate 200 950 - - 21 Butyl Mercaptan 0.5 1.5 - - Cadmium-dust and salts 22 - 0.05 - - (as Cd) 23 Calcium oxide - 2 - - 24 Carbaryl (Sevin) - 5 - - 66 25 Carbofuran (Furadan) - 0.1 - - 26 Carbon disulphide-skin 10 30 - - 27 Carbon monoxide 50 55 400 440 Carbon tetrachloride-skin 28 5 30 - - (S.C.) 29 Chlordane-skin - 0.5 - 2 30 Chlorine 1 3 3 9 Chlorobenzene 31 75 350 - - (monochlorobenzene) 32 Chloroform (S.C.) 10 50 - - bis-(Chloromethyl) ether 33 0.001 0.005 - - (H.C.) Chromic acid and 34 chromates (as Cr) (Water - 0.05 - - soluble) 35 Chromous Salts (as Cr) - 0.5 - - 36 Copper fume - 0.2 - - 37 Cotton dust, raw - 0.2 - - 38 Cresoal, all isomers-skin 5 22 - - 39 Cyanides (as Cn)-skin - 5 - - 40 Cyanogen 10 20 - - 41 - 1 - - DDT (Dichlorodiphenyl 67 Trichloroethane) 42 Demeton-skin 0.01 0.1 - - 43 Diazinon-skin - 0.1 - - 44 Dibutyl Phythalate - 5 - - 45 Dichlorous (DDVP)-skin - 1 - - 46 Dieldrin-skin - 0.25 - - Dinitrobenzene (all 47 0.15 1 - - isomers)-skin 48 Dinitrotoluene-skin - 1.5 - - 49 Diphenyl (Biphenyl) 0.2 1.5 - - Endosulfan (Thiodan)- 50 - 0.1 - - skin 51 Endrin-skin - 0.1 - - 52 Ethyl acetate 400 1400 - - 53 Ethyl alcohol 1000 1900 - - 54 Ethylamin 10 18 - - 55 Fluorides (as F) - 2.5 - - 56 Fluorine 1 2 2 4 57 Formaldehyde (S.C.) 1.0 1.5 2 3 58 Formic Acid 5 9 - - 68 59 Gasoline 300 900 500 1500 60 Hydrazine-skin (S.C.) 0.1 0.1 - - 61 Hydrogen Chloride-C 5 7 a a 62 Hydrogen Cyanide skin-C 10 10 - - Hydrogen Fluoride (as F)- 63 3 2.5 - - C 64 Hydrogen Peroxide 1 1.5 - - 65 Hydrogen Sulphide 10 14 15 21 66 Iodine-C 0.1 1 - - Iron Oxide Fume (F0203) 67 - 5 - - (as Fe) 68 Isoamyl acetate 100 525 - - 69 Isoamyl alcohol 100 360 125 450 70 Isobutyl alcohol 50 150 - - Lead, inorg, dusts, dusts 71 - 0.15 - - and fumes (as Pb) 72 Lindane-skin - 0.5 - - 73 Malathion-skin - 10 - - Manganese dust and 74 - 5 - - compounds (as (Mn)-C Manganese Fume (as 75 - 1 - 3 Mn) 69 76 Mercury (as Hg)-skin a a a a a (i) Alkyle compounds - 0.01 - 0.03 (ii) All forms except alkyle a - 0.05 - - vapour (iii) Aryle and inorganic a - 0.1 - - compounds Methyl alcohol 77 200 260 250 310 (Methanol)-skin Methyl cellosolve (2- 78 5 16 - - methoxyethanol)-skin 79 Methyl isobutyl Ketone 50 205 75 300 80 Methyl Isocyanate-skin 0.02 0.05 - - 81 Naphthalene 10 50 15 75 82 Nickel carbonyl (as Ni) 0.05 0.35 - - 83 Nitric acid 2 5 4 10 84 Nitric Oxide 25 30 - - 85 Nitrobenzene-skin 1 5 - - 86 Nitrogen dioxide 3 6 5 10 87 Oil mist mineral - 5 - 10 88 Ozone 0.1 0.2 0.3 0.6 89 Parathion-skin - 0.1 - - 70 90 Phenol-skin 5 19 a a 91 Phorate (Thimet)-skin - 0.05 0.2 - Phosgene (Carbonyl 92 0.1 0.4 - - Chloride) 93 Phosphine 0.3 0.4 1 1 94 Phosphoric acid - 1 - 3 95 Phosphorus (yellow) - 0.1 - - Phosphorus penta- 96 0.1 1 - - chloride 97 Phosphorus trichloride 0.2 1.5 0.5 3 98 Picric acid-skin - 0.1 - 0.3 99 Pyridine 5 15 - - Silans (silicon 100 5 7 - - tetrahydride) 101 Sodium hydroxide-C - 2 - - Styrene, monomer 102 50 215 100 425 (phanylethlene) 103 Sulphur dioxide 2 5 5 10 104 Sulphur hexafluoride 1000 6000 - - 105 Sulphuric acid - 1 - - Tetraethyl lead (as Pb) - 106 - 0.1 - - Skin 71 107 Toluene (Toluol) 100 375 150 560 108 O-Toluidine-skin (S.C.) 2 9 - - 109 Tributylphosohate 0.2 2.5 - - 110 Trichloroethylene 50 270 200 1080 111 Uranium natural (as U) - 0.2 - 0.6 112 Vinyl Chloride (H.C.) 5 10 - - 113 Welding fumes - 5 - - 114 Xylene (O-m-P-isomers) 100 435 150 655 115 Zinc oxide d a a a f (i) Fume - 5.0 - 10 d (ii) Dust (Total dust) - 10.00 - - Zirconium compounds 116 - 5 - 10 (as Zr) THE THIRD SCHEDULE - LIST OF NOTIFIABLE DISEASES",
+      "page": 65
+    },
+    {
+      "number": "ACT-HEADER",
+      "chapter": null,
+      "act": "CERTAIN ESTABLISHMENTS) ACT, 1988",
+      "title": "CERTAIN ESTABLISHMENTS) ACT, 1988 (Act header)",
+      "full_text": "",
+      "page": 80
+    },
+    {
+      "number": "1",
+      "chapter": null,
+      "act": "CERTAIN ESTABLISHMENTS) ACT, 1988",
+      "title": "Calculate the gross profit in the manner specified in",
+      "full_text": "a. First Schedule, in case of a banking company, or b. Second Schedule, in any other case.",
+      "page": 85
+    },
+    {
+      "number": "2",
+      "chapter": null,
+      "act": "CERTAIN ESTABLISHMENTS) ACT, 1988",
+      "title": "Calculate the Available Surplus",
+      "full_text": "Available Surplus = A+B, where A = Gross Profit – Depreciation admissible u/s 32 of the Income tax Act - Development allowance - Direct taxes payable for the accounting year (calculated as per Sec.7) – Sums specified in the Third Schedule. B = Direct Taxes (calculated as per Sec. 7) in respect of gross profits for the immediately preceding accounting year – Direct Taxes in respect of such gross profits as reduced by the amount of bonus, for the immediately preceding accounting year.",
+      "page": 85
+    },
+    {
+      "number": "3",
+      "chapter": null,
+      "act": "CERTAIN ESTABLISHMENTS) ACT, 1988",
+      "title": "Calculate Allocable Surplus",
+      "full_text": "Allocable Surplus = 60% of Available Surplus, 67% in case of foreign companies.",
+      "page": 85
+    },
+    {
+      "number": "4",
+      "chapter": null,
+      "act": "CERTAIN ESTABLISHMENTS) ACT, 1988",
+      "title": "Make adjustment for ‘Set-on’ and ‘Set-off’. For calculating the amount of bonus in respect of",
+      "full_text": "an accounting year, allocable surplus is computed after considering the amount of set on and set off from the previous years, as illustrated in Fourth Schedule.",
+      "page": 85
+    },
+    {
+      "number": "5",
+      "chapter": null,
+      "act": "CERTAIN ESTABLISHMENTS) ACT, 1988",
+      "title": "The allocable surplus so computed is distributed amongst the employees in proportion to",
+      "full_text": "salary or wages received by them during the relevant accounting year. In case of an employee receiving salary or wages above Rs. 3,500 the bonus payable is to be calculated as if the salary or wages were Rs. 3,500 p.m. only. Duties / Rights of Employer Duties  To calculate and pay the annual bonus as required under the Act 85  To submit an annul return of bonus paid to employees during the year, in Form D, to the Inspector, within 30 days of the expiry of the time limit specified for payment of bonus.  To co-operate with the Inspector, produce before him the registers/records maintained, and such other information as may be required by them.  To get his account audited as per the directions of a Labour Court/Tribunal or of any such other authority. Rights An employer has the following rights:  Right to forfeit bonus of an employee, who has been dismissed from service for fraud, riotous or violent behaviour, or theft, misappropriation or sabotage of any property of the establishment.  Right to make permissible deductions from the bonus payable to an employee, such as, festival/interim bonus paid and financial loss caused by misconduct of the employee.  Right to refer any disputes relating to application or interpretation of any provision of the Act, to the Labour Court or Labour Tribunal. Rights of Employees  Right to claim bonus payable under the Act and to make an application to the Government, for the recovery of bonus due and unpaid, within one year of its becoming due.  Right to refer any dispute to the Labour Court/Tribunal Employees, to whom the Payment of Bonus Act does not apply, cannot raise a dispute regarding bonus under the Industrial Disputes Act.  Right to seek clarification and obtain information, on any item in the accounts of the establishment. Recovery of Bonus Due 86  Where any bonus is due to an employee by way of bonus, employee or any other person authorised by him can make an application to the appropriate government for recovery of the money due.  If the government is satisfied that money is due to an employee by way of bonus, it shall issue a certificate for that amount to the collector who then recovers the money.  Such application shall be made within one year from the date on which the money became due to the employee.  However the application may be entertained after a year if the applicant shows that there was sufficient cause for not making the application within time. Offences and Penalties For contravention of the provisions of the Act or rules the penalty is imprisonment upto 6 months or fine up to Rs.1000, or both. For failure to comply with the directions or requisitions made the penalty is imprisonment upto 6 months or fine up to Rs.1000, or both. In case of offences by companies, firms, body corporate or association of individuals, its director, partner or a principal officer responsible for the conduct of its business, as the case may be, shall be deemed to be guilty of that offence and punished accordingly, unless the person concerned proves that the offence was committed without his knowledge or that he exercised all due diligence. 4i. Payment of Gratuity Act, 1972 Applicability of the Act The Act provides for a scheme for the payment of gratuity to employees engaged in factories, mines, oilfields, plantations, ports, railway companies, shops or other establishments. The Act enforces the payment of 'gratuity', a reward for long service, as a statutory retiral benefit. Every employee irrespective of his wages is entitled to receive gratuity if he has rendered continuous service of 5 years or more than 5 years. It is not paid to an employee gratuitously or merely as a matter of boon. It is paid for the service rendered by him to the employer (Delhi Cloth and General Mills Co; Ltd Vs the Workmen). 87 Gratuity is payable to an employee on termination of his employment after he has rendered continuous service for not less than five years:  on his superannuation  on his resignation  on his death or disablement due to employment injury or disease The Working Journalists and Other Newspaper Employees (Conditions of service) and Miscellaneous Provisions Act, 1955, provides for payment of gratuity. As such, three years of continuous service is required for eligibility for Gratuity. The payment of gratuity shall be forfeited:  to the extent of the damage or loss caused by the employee to the property of the employer  where the service of the employee is terminated due to misconduct According to Sec.2(e) \"employee\" means any person (other than an apprentice) employed on wages, in any establishment, factory, mine, oilfield, plantation, port, railway company or shop, to do any skilled, semi-skilled, or unskilled, manual, supervisory, technical or clerical work, whether the terms of such employment are express or implied,[and whether or not such person is employed in a managerial or administrative capacity, but does not include any such person who holds a post under the Central Government or a State Government and is governed by any other Act or by any rules providing for payment of gratuity]. According to Sec.2A (1) an employee shall be said to be in continuous service for a period if he has, for that period, been in uninterrupted service, including service which may be interrupted on account of sickness, accident, leave, absence from duty without leave (not being absence in respect of which an order treating the absence as break in service has been passed in accordance with the standing order, rules or regulations governing the employees of the establishment), lay off, strike or a lock-out or cessation of work not due to any fault of the employee, whether such uninterrupted or interrupted service was rendered before or after the commencement of the Act. (2) where an employee (not being an employee employed in a seasonal establishment) is not in continuous service within the meaning of clause (1), for any period of one year or six months, he shall be deemed to be in continuous service under the employer - 88 (a) for the said period of one year, if the employee during the period of twelve calendar months preceding the date with reference to which calculation is to be made, has actually worked under the employer for not less than - (i) one hundred and ninety days, in the case of an employee employed below the ground in a mine or in an establishment which works for less than six days in a week; and (ii) two hundred and forty days, in any other case; (b) for the said period of six months, if the employee during the period of six calendar months preceding the date with reference to which the calculation is to be made, has actually worked under the employer for not less than - (i) ninety-five days, in the case of an employee employed below the ground in a mine or in an establishment which works for less than six days in a week; and (ii) one hundred and twenty days, in any other case; Explanation: For the purpose of clause (2), the number of days on which an employee has actually worked under an employer shall include the days on which - (i) he has been laid-off under an agreement or as permitted by standing orders made under the Industrial Employment (Standing Orders) Act, 1946 (20 of 1946), or under the Industrial Disputes Act, 1947 (14 of 1947), or under any other law applicab1c to the establishment; (ii) he has been on leave with full wages, earned in the previous year; (iii) he has been absent due to temporary disablement caused by accident arising out of and in the course of his employment and (iv) in the case of a female, she has been on maternity leave; so, however, that the total period of such maternity leave does not exceed twelve weeks. (3) where an employee employed in a seasonal establishment, is not in continuous service within the meaning of clause (1), for any period of one year or six months, he shall be deemed to be in continuous service under the employer for such period if he has actually worked for not less than seventy-five per cent of the number of days on which the establishment was in operation during such period. 89 Rate of gratuity For every completed year of service or part thereof in excess of six months, the employer shall pay gratuity to an employee at the rate of fifteen days wages based on the rate of wages last drawn by the employee concerned. In the case of a piece-rated employee, daily wages shall be computed on the average of the total wages received by him for a period of three months immediately preceding the termination of his employment, and, for this purpose, the wages paid for any overtime work shall not be taken into account. In the case of an employee who is employed in a seasonal establishment and who is not so employed throughout the year, the employer shall pay the gratuity at the rate of seven days wages for each season. In the case of a monthly rated employee, the fifteen days wages shall be calculated by dividing the monthly rate of wages last drawn by him by twenty-six and multiplying the quotient by fifteen. The amount of gratuity payable to an employee shall not exceed three lakhs and fifty thousand rupees. Responsibility of the Employer: Every employer, other than an employer or an establishment belonging to, or under the control of, the Central Government or a State Government, shall, subject to the provisions of sub-section (2), obtain an insurance in the manner prescribed, for his liability for payment towards the gratuity under this Act, from the Life Insurance Corporation of India established under the Life Insurance Corporation of India Act, 1956 (31 of 1956) or any other prescribed insurer: The appropriate Government may, subject to such conditions as may be prescribed, exempt every employer who had already established an approved gratuity fund in respect of his employees and who desires to continue such arrangement and every employer employing five hundred or more persons who establishes an approved gratuity fund in the manner prescribed. Where an employer fails to make any payment by way of premium to the insurance or by way of 'contribution to all approved gratuity fund, he shall be liable to pay the amount of gratuity due 90 under this Act (including interest, if any, for delayed payments) forthwith to the controlling authority. Whoever contravenes the provision above shall be punishable with fine which may extend to Rs 10,000/- and in the case of a continuing offence with a further fine which may extend to Rs 1000/- for each day during which the offence continues. 4j. THE WORKMEN'S COMPENSATION ACT, 1923 The Workmen’s Compensation Act, aims to provide workmen and/or their dependents some relief in case of accidents arising out of and in the course of employment and causing either death or disablement of workmen. It provides for payment by certain classes of employers to their workmen compensation for injury by accident. Act does not apply where workman covered under ESI Act - Since a workman is entitled to get compensation from Employees State Insurance Corporation, a workman covered under ESI Act is not entitled to get compensation under Workmen’s Compensation Act, as per section 53 of ESI Act, 1948. Meaning of Workman (Sec.2 (n)) \"Workman\" means any person (other than a person whose employment is of a casual nature and who is employed otherwise than for the purposes of the employer's trade or business) who is - (i) a railway servant as defined in clause (34) of section 2 of the Railways Act, 1989 (24 of 1989), not permanently employed in any administrative, district or sub-divisional office of a railway and not employed in any such capacity as is specified in Schedule II, or (ia) (a) a master, seaman or other member of the crew of a ship, (b) a captain or other member of the crew of an aircraft, (c) a person recruited as driver, helper, mechanic, cleaner or in any other capacity in connection with a motor vehicle, 91 (d) a person recruited for work abroad by a company, and who is employed outside India in any such capacity as is specified in Schedule II and the ship, aircraft or motor vehicle, or company, as the case may be, is registered in India, or (ii) employed in any such capacity as is specified in Schedule II, whether the contract of employment was made before or after the passing of this Act and whether such contract is expressed or implied, oral or in writing; but does not include any person working in the capacity of a member of the Armed Forces of the Union; and any reference to a workman who has been injured shall, where the workman is dead, include a reference to his dependants or any of them. The provisions of the Act have been extended to cooks employed in hotels, restaurants using power, liquefied petroleum gas or any other mechanical device in the process of cooking. Employees Entitled To Compensation: Every employee (including those employed through a contractor but excluding casual employees), who is engaged for the purposes of employers business and who suffers an injury in any accident arising out of and in the course of his employment, shall be entitled for compensation under the Act. Employers Liability for Compensation (Accidents) The employer of any establishment covered under this Act, is required to compensate an employee: a. Who has suffered an accident arising out of and in the course of his employment, resulting into (i) death, (ii) permanent total disablement, (iii) permanent partial disablement, or (iv) temporary disablement whether total or partial, or b. Who has contracted an occupational disease. Employer Shall Not Be Liable: a. In respect of any injury which does not result in the total or partial disablement of the workmen for a period exceeding three days; b. In respect of any injury not resulting in death, caused by an accident which is directly attributable to- i. the workmen having been at the time thereof under the influence or drugs, or 92 ii. the wilful disobedience of the workman to an order expressly given, or to a rule expressly framed, for the purpose of securing the safety of workmen, or iii. the wilful removal or disregard by the workmen of any safeguard or other device which he knew to have been provided for the purpose of securing the safety of workmen. The burden of proving intentional disobedience on the part of the employee shall lie upon the employer. iv. when the employee has contacted a disease which is not directly attributable to a specific injury caused by the accident or to the occupation; or v. when the employee has filed a suit for damages against the employer or any other person, in a Civil Court. Contracting Out: Any contract or agreement which makes the workman give up or reduce his right to compensation from the employer is null and void insofar as it aims at reducing or removing the liability of the employer to pay compensation under the Act. Definition of Disablement Disablement is the loss of the earning capacity resulting from injury caused to a workman by an accident.  Disablements can be classified as (a) Total, and (b) Partial. It can further be classified into (i) Permanent, and (ii) Temporary, Disablement, whether permanent or temporary is said to be total when it incapacitates a worker for all work he was capable of doing at the time of the accident resulting in such disablement.  Total disablement is considered to be permanent if a workman, as a result of an accident, suffers from the injury specified in Part I of Schedule I or suffers from such combination of injuries specified in Part II of Schedule I as would be the loss of earning capacity when totalled to one hundred per cent or more. Disablement is said to be permanent partial when it reduces for all times, the earning capacity of a workman in every employment, which he was capable of undertaking at the time of the accident. Every injury specified in Part II of Schedule I is deemed to result in permanent partial disablement. 93  Temporary disablement reduces the earning capacity of a workman in the employment in which he was engaged at the time of the accident. Accident Arising Out Of And In The Course Of Employment An accident arising out of employment implies a casual connection between the injury and the accident and the work done in the course of employment. Employment should be the distinctive and the proximate cause of the injury. The three tests for determining whether an accident arose out of employment are:",
+      "page": 85
+    },
+    {
+      "number": "ACT-HEADER",
+      "chapter": null,
+      "act": "Bombay Shops & Establishment Act, 1948",
+      "title": "Bombay Shops & Establishment Act, 1948 (Act header)",
+      "full_text": "",
+      "page": 102
+    },
+    {
+      "number": "2",
+      "chapter": null,
+      "act": "Bombay Shops & Establishment Act, 1948",
+      "title": "This Act applies to wages payable to an employed person in respect of a wage period if such",
+      "full_text": "wages for that wage period do not exceed Rs 6500/- per month or such other higher sum which, on the basis of figures of the Consumer Expenditure Survey published by the National Sample Survey Organisation, the Central Government may, after every five years, by notification in the Official Gazette, specify.\". Meaning of wages \"Wages\" means all remuneration (whether by way of salary, allowances, or otherwise) expressed in terms of money or capable of being so expressed which would, if the terms of employment, express or implied, were fulfilled, be payable to a person employed in respect of his employment or of work done in such employment, and includes- (a) Any remuneration payable under any award or settlement between the parties or order of a court; (b) Any remuneration to which the person employed is entitled in respect of overtime work or holidays or any leave period; (c) Any additional remuneration payable under the terms of employment (whether called a bonus or by any other name); (d) Any sum which by reason of the termination of employment of the person employed is payable under any law, contract or instrument which provides for the payment of such sum, whether with or without deductions, but does not provide for the time within which the payment is to be made; (e) Any sum to which the person employed is entitled under any scheme framed under any law for the time being in force, But does not include- 105 (1) any bonus (whether under a scheme of profit sharing or otherwise) which does not form part of the remuneration payable under the terms of employment or which is not payable under any award or settlement between the parties or order of a court; (2) the value of any house-accommodation, or of the supply of light, water, medical attendance or other amenity or of any service excluded from the computation of wages by a general or special order of the State Government; (3) Any contribution paid by the employer to any pension or provident fund, and the interest which may have accrued thereon; (4) Any traveling allowance or the value of any traveling concession; (5) Any sum paid to the employed person to defray special expenses entailed on him by the nature of his employment; or (6) Any sum as gratuity payable on the termination of employment in cases other than those specified in sub-clause (d).] Responsibility for Payment of wages Every employer shall be responsible for the payment of all wages required to be paid under this Act to persons employed by him and in case of persons employed,- (a) In factories, if a person has been named as the manager of the factory under clause (f) of sub- section (1) of section 7 of the Factories Act, 1948 (63 of 1948); (b) In industrial or other establishments, if there is a person responsible to the employer for the supervision and control of the industrial or other establishments; (c) Upon railways (other than in factories), if the employer is the railway administration and the railway administration has nominated a person in this behalf for the local area concerned; (d) In the case of contractor, a person designated by such contractor who is directly under his charge; and (e) In any other case, a person designated by the employer as a person responsible for complying with the provisions of the Act, the person so named, the person responsible to the employer, the person so nominated or the person so designated, as the case may be, shall be responsible for such payment. 106 It shall be the responsibility of the employer to make payment of all wages required to be made under this Act in case the contractor or the person designated by the employer fails to make such payment. Wage period for payment of wages The person responsible for payment of wages shall decide the wage period. But the period shall not exceed one month. The wages of every person employed upon or in any railway, factory or industrial or other establishment upon or in which less than 1000 persons are employed, shall be paid before the expiry of the 7th day after the last day of the wage-period in respect of which the wages are payable Any other railway, factory or industrial or other establishment that is where more than 1000 people are employed, shall be paid before the expiry of the 10th day, after the last day of the wage-period in respect of which the wages are payable. In the case of persons employed on a dock, wharf or jetty or in a mine, the balance of wages found due on completion of the final tonnage account of the ship or wagons loaded or unloaded, as the case may be, shall be paid before the expiry of the 7th day from the day of such completion. Where the employment of any person is terminated by or on behalf of the employer, the wages, earned by him shall be paid before the expiry of the 2nd working day from the day on which his employment is terminated. But where the employment of any person in an establishment is terminated due to the closure of the establishment for any reason other than a weekly or other recognized holiday, the wages earned by him shall be paid before the expiry of the 2nd day from the day on which his employment is so terminated. Deductions from Wages allowable under the Act Deductions from the wages of an employed person shall be made only in accordance with the provisions of this Act, and may be of the following kinds only, namely: 107 (a) Fines: The total amount of fine which may be imposed in any one wage-period on any employed person shall not exceed an amount equal to 3% of the wages payable to him in respect of that wage-period. No fine shall be imposed on any employed person who is under the age of fifteen years. Every fine shall be deemed to have been imposed on the day of the act or omission in respect of which it was imposed. No fine imposed on any employed person shall be recovered from him by instalments or after the expiry of 90 days from the day on which it was imposed (b) Deductions for absence from duty; (c) Deductions for damage to or loss of goods expressly entrusted to the employed person for custody, or for loss of money for which he is required to account, where such damage or loss is directly attributable to his neglect or default; (d) Deductions for house-accommodation supplied by the employer or by government or any housing board set up under any law for the time being in force (whether the government or the board is the employer or not) or any other authority engaged in the business of subsidizing house- accommodation which may be specified in this behalf by the State Government by notification in the Official Gazette; (e) Deductions for such amenities and services supplied by the employer as the State Government or any officer specified by it in this behalf may, by general or special order, authorize. Explanation: The word \"services\" in 23[this clause] does not include the supply of tools and raw materials required for the purposes of employment; (f) Deductions for recovery of advances of whatever nature (including advances for traveling allowance or conveyance allowance), and the interest due in respect thereof, or for adjustment of over-payments of wages. Recovery of an advance of money given before employment began shall be made from the first payment of wages in respect of a complete wage-period, but no recovery shall be made of such advances given for traveling-expenses. (ff) deductions for recovery of loans made from any fund constituted for the welfare of labour in accordance with the rules approved by the State Government, and the interest due in respect thereof; (fff) deductions for recovery of loans granted for house-building or other purposes approved by the State Government and the interest due in respect thereof;] (g) Deductions of income-tax payable by the employed person; (h) Deductions required to be made by order of a court or other authority competent to make such order; 108 (i) Deductions for subscriptions to, and for repayment of advances from any provident fund to which the Provident Funds Act, 1925 (19 of 1925), applies or any recognized provident fund as defined or any provident fund approved in this behalf by the State Government, during the continuance of such approval; (j) deductions for payments to co-operative societies approved by the State Government or any officer specified by it in this behalf or to a scheme of insurance maintained by the Indian Post Office, and (k) deductions, made with the written authorization of the person employed for payment of any premium on his life insurance policy to the Life Insurance Corporation Act of India established under the Life Insurance Corporation Act, 1956 (31 of 1956), or for the purchase of securities of the Government of India or of any State Government or for being deposited in any Post Office Savings Bank in furtherance of any savings scheme of any such government.]] (kk) deductions, made with the written authorization of the employed person, for the payment of his contribution to any fund constituted by the employer or a trade union registered under the Trade Union Act, 1926 (16 of 1926), for the welfare of the employed persons or the members of their families, or both, and approved by the State Government or any officer specified by it in this behalf, during the continuance of such approval; (kkk) deductions, made with the written authorization of the employed person, for payment of the fees payable by him for the membership of any trade union registered under the Trade Union Act, 1926 (16 of 1926); (l) Deductions, for payment of insurance premium on Fidelity Guarantee Bonds; (m) Deductions for recovery of losses sustained by a railway administration on account of acceptance by the employed person of counterfeit or base coins or mutilated or forged currency notes; (n) Deductions for recovery of losses sustained by a railway administration on account of the failure of the employed person to invoice, to bill, to collect or to account for the appropriate charges due to that administration whether in respect of fares, freight, demurrage, wharfage and carnage or in respect of sale of food in catering establishments or in respect of sale of commodities in grain shops or otherwise; (o) Deductions for recovery of losses sustained by a railway administration on account of any rebates or refunds incorrectly granted by the employed person where such loss is directly attributable to his neglect or default;] 109 (p) Deductions, made with the written authorization of the employed person, for contribution to the Prime Minister’s National Relief Fund or to such other Fund as the Central Government may, by notification in the Official Gazette, specify;] (q) Deductions for contributions to any insurance scheme framed by the Central Government for the benefit of its employees. The total amount of deductions which may be made above in any wage-period from the wages of any employed person shall not exceed- (i) in cases where such deductions are wholly or partly made for payments to co-operative societies under clause (j) above, 75% of such wages, and (ii) in any other case, 50% of such wages: Where the total deductions authorized exceed 75% or, as the case may be, 50% of the wages, the excess may be recovered in such manner as may be prescribed. Maintenance of registers and records It is the responsibility of the employer to maintain such registers and records giving particulars of persons employed by him, the work performed by them, the wages paid to them, the deductions made from their wages and such other particulars. Every record and register maintained shall be preserved for a period of 3 years after the date of last entry made therein. Rights of employees Where contrary to the provisions of this Act any deduction has been made from the wages of an employed person, or any payment of wages has been delayed, than following persons may apply to such authority: (1) Such person himself, (2) Any legal practitioner or (3) Any official of a registered trade union authorized in writing to act on his behalf, or (4) Any Inspector under this Act, or (5) Any other person acting with the permission of the authority appointed by the state government. Every such application shall be presented within 12 months from the date on which the deduction from the wages was made or from the date on which the payment of the wages was due to be made, as the case may be: 110 Any application may be admitted after the said period of 12 months when the applicant satisfies the authority that he had sufficient cause for not making the application within such period. When any application made is entertained, the authority shall hear the applicant and the employer or other person responsible for the payment of wages, or give them an opportunity of being heard, and, after such further enquiry, if any, as may be necessary, may, without prejudice to any other penalty to which such employer or other person is liable under this Act, direct the refund to the employed person of the amount: (1) Deducted, or (2) The payment of the delayed wages, together with the payment of such compensation as the authority may think fit. The amount of such compensation shall: a) Not exceeding 10 times the amount deducted in the case where deduction has been wrongly made from the wages and; b) Not exceeding Rs 3000/- but not less than Rs 1500/- in the case where there is delay in payment of wages. Even if the amount deducted or delayed wages are paid before the disposal of the application, direct the payment of such compensation, as the authority may think fit, not exceeding Rs 2000/-. A claim under this Act shall be disposed of as far as practicable within a period of 3 months from the date of registration of the claim by the authority. Also no direction for the payment of compensation shall be made in the case of delayed wages if the authority is satisfied that the delay was due to- (a) A bona fide error or bona fide dispute as to the amount payable to the employed person; or (b) The occurrence of an emergency, or the existence of exceptional circumstances, the person responsible for the payment of the wages was unable, in spite of exercising reasonable diligence. If the authority hearing an application under this section is satisfied- (a) That the application was either malicious or vexatious, the authority may direct that a penalty not exceeding Rs 375/-to be paid to the employer or other person responsible for the payment of wages by the person presenting the application; or (b) That in any case in which compensation is directed to be paid under the applicant ought not to have been compelled to seek redress under this section, the authority may direct that a penalty not exceeding Rs 375/- to be paid to the State Government by the employer or other person responsible for the payment of wages. 111 A single application can also be made by the unpaid group of the employed persons. Employed persons can be said to belong to Unpaid Group: (1) If they are borne by the same establishment, and a. If deductions have been made from their wages for the same wage period in contravention of the Act, or b. Their wages for the same wage period have remained unpaid after the day fixed by the Act. An appeal can be made against an order dismissing either wholly or part of an application made. The appeal can be made within 30 days of the date on which the order or direction was made. The appeal has to be made before the court of small causes or the District Court by following persons: (1) By an employed person or any legal practitioner or any official of a registered trade union authorized in writing to act on his behalf or any Inspector under this Act, if the total amount of wages claimed to have been withheld from the employed person exceeds Rs 20/- or from the unpaid group to which the employed person belongs or belonged exceeds Rs 50, or (2) By the employer or other person responsible for the payment of wages, if the total sum directed to be paid by way of wages and compensation exceeds Rs 300/- or such direction has the effect of imposing on the employer or the other person a financial liability exceeding Rs 1000/-, or (3) By any person directed to pay a penalty. Penalties (1) Whoever being required under this Act to maintain any records or registers or to furnish any information or return- (a) Fails to maintain such register or record; or (b) Willfully refuses or without lawful excuse neglects to furnish such information or return; or (c) Willfully furnishes or causes to be furnished any information or return which he knows to be false; or (d) refuses to answer or willfully gives a false answer to any question necessary for obtaining any information required to be furnished under this Act, 112 shall, for each such offence, be punishable with fine which shall not be less than Rs 1500/- one but which may extend to Rs 7500/-. (2) Whoever- (a) Willfully obstructs an Inspector in the discharge of his duties under this Act; or (b) refuses or willfully neglects to afford an Inspector any reasonable facility for making any entry, inspection, examination, supervision, or inquiry authorized by or under this Act in relation to any railway, factory or industrial or other establishment; or (c) Willfully refuses to produce on the demand of an Inspector any register or other document kept in pursuance of this Act; or (d) prevents or attempts to prevent or does anything which he has any reason to believe is likely to prevent any person from appearing before or being examined by an Inspector acting in pursuance of his duties under this Act; shall be punishable with fine which shall not be less than Rs 1500/-one but which may extend to Rs 7500/-. (3) If any person who has been convicted of any offence punishable under this Act is again guilty of an offence involving contravention of the same provision, he shall be punishable on a subsequent conviction with imprisonment for a term which shall not be less than one month but which may extend to six months and with fine which shall not be less than Rs 3750/- but which may extend to Rs 22500/-. (4) If any person fails or willfully neglects to pay the wages of any employed person by the date fixed by the authority in this behalf, he shall, without prejudice to any other action that may be taken against him, be punishable with an additional fine which may extend to Rs 750/- for each day for which such failure or neglect continues. Payment in case of death of the employed person whose wages are not disbursed Where the amount payable to an employed person as wages could not be paid on account of his death before payment or on account of his whereabouts not being known; (a) Be paid to the person nominated by him in this behalf. (b) Where no such nomination has been made or where for any reasons such amount cannot be aid to the person nominated, be deposited with the prescribed authority. 113 4m. MINIMUM WAGES ACT, 1948 The concept of Minimum Wages was first evolved by ILO in 1928 with reference to remuneration of workers in those industries where the, level of wages was substantially low and the labour was vulnerable to exploitation, being not well organised and having less effective bargaining power. The need for a legislation for fixation of minimum wages in India received boost after World War – II when a draft bill was considered by the Indian Labour Conference in 1945. On the recommendation of the 8th Standing Labour Committee, the Minimum Wages Bill was introduced in the Central Legislative assembly on 11.4.1946 to provide for fixation of minimum wages in certain employments. The Minimum Wages Bill was passed by the Indian Dominion Legislature and came into force on 15th March, 1948. Under the Act both State and Central Government are “Appropriate Governments” for fixation/revision of minimum rates of wages for employments covered by the Schedule to the Act. The minimum rates of wages also include Special Allowance (Variable Dearness Allowance) linked to Consumer Price Index Number which are revised twice a year effective from April and October. The rates of wages once fixed are revised at an interval not exceeding of five years. The National Minimum Wage has been considered at various for a in the past. However, State/UT Governments are not unanimous on the need of a National Minimum Wage as socioeconomic conditions vary from state to state, region to region and also from industry to industry due to different geographical, topographical and agro-climatic factors. The Six Regional Minimum Wages Advisory Committees set up in 1987 to reduce regional disparities among States have been broadened and renamed as Regional Labour Ministers’ Conferences. Employer’s Checklist for Minimum Wages The employer must pay every employee wages as fixed by the Government. (a) Wages must be paid in cash. (b) For the fixation of minimum wages, the employment must have been in Schedule originally or added to the Schedule by a notification under Section 27 of the Act. (c) The employer can take actual work on any day up to 9 hours in a 12 hours shift, but he must pay double the rate for any hour or part of an hour of actual work in excess of 9 hours or for more than 48 hours in any week. 114 (d) Once a minimum wage is fixed according to the provisions of the Act, the employer must pay to every employee engaged in a Scheduled employment, minimum wages notification for that class of employees. (e) The employer should fix wage-period for the payment of wages at intervals not exceeding one month or such other larger period as may be prescribed. (f) The employer should pay wages on a working day within seven days of the end of wage period or within 10 days if 1000 or more persons are employed in an establishment. (g) The employer should pay the wages to a person discharged not later than the second working day after his discharge. (h) Every employer should maintain a register of wages at workplace specifying the following particulars for each wage period in respect of each employed person: i. Minimum rate of wages payable; ii. The number of days in which overtime was worked; iii. The gross wages; iv. The wages actually paid and the date of payment. (i) Every employer should get the signature or the thumb impression of every person employed on the wage book and the wage slips. (j) The employer should exhibit at main entrance to the establishment and its offices, a notice in respect of the following in English and local language: i. Minimum rates of wages; ii. Abstracts of the Acts and rules made there under; iii. Name and address of the Labour Inspector/ Asst. Commissioner of Labour etc. The minimum wages covers all workers in the sectors agricultural, industrial and small-scale sectors. 115 This means:  farm labourers  landless labourers  factory workers  people working in cottage industries  Construction workers etc. The issue of fixation of minimum wages is of primary importance in a country like India where 300 million people are employed in the informal sector with no collective bargaining power. This is 93 percent of the workers. The enactment of the Minimum Wages Act in 1948 is a landmark in the labour history of India. The Act provides for fixation of minimum wages for notified scheduled employment. As per Government of India, for all the States, the minimum wages have been fixed at about Rs 40 to 60 per day per person, average about Rs 50 per day for 25 days per month. There are 45 scheduled employments in the Central sphere and 1232 in the state sphere for which minimum wages have been fixed. To protect the wages against inflation they were linked to rise in the Consumer Price Index. The variable dearness allowance (VDA) came into being in 1991 and the allowance is revised twice a year. At present 22 states /Union Territories have these provisions. The states and Union Territories were further directed to ensure that minimum wages are not below Rs 45 per day for any scheduled employment. Fixation of Minimum Wage Rate in India: Minimum rate of the wages fixed or revised consists of the following:  A basic rate of wages and a special allowance, viz., cost of living allowance ;  A basic rate of wages with or without cost of living allowance and cash value of concessions for supplies of essential commodities ;  An all inclusive rate, i.e. basic rate, cost of living allowance and cash value of concessions. 116 The Government may fix the minimum rates of wages either by the hour, by the day, by the month or by such wage period as may be prescribed. The minimum wage rate may be fixed at a) Time rate, b) Piece rate, c) Guaranteed time rate and d) Overtime rate. The Act provides that different minimum wage rate may be fixed for a) Different scheduled employments, b) Different works in the same employment, c) Adult, adolescent and children, d) Different locations or e) Male and Female. Also, such minimum wage may be fixed by a) An hour, b) Day, c) Month, or d) Any other period as may be prescribed by the notified authority. Norms for fixing minimum wage:  Three consumption units per earner,  Minimum food requirement of 2700 calories per average Indian adult,  Cloth requirement of 72 yards per annum per family, 117  Rent corresponding to the minimum area provided under the government's Industrial Housing Scheme and  Fuel, lighting and other miscellaneous items of expenditure to constitute 20 per cent of the total minimum wage  Fuel, lighting and other miscellaneous items of expenditure to constitute 20% of the total Minimum Wages,  Children education, medical requirement, minimum recreation including festivals/ceremonies and provision for old age, marriage etc. should further constitute 25% of the total minimum wage. Cost of Living Allowance: The minimum basic wages fixed are linked to consumer price index as a counter measure against inflation. The cost of living is set twice in a year. The Commissioner of Labour notifies the rate 1st of April and 1st of October. The rates are fixed on the basis of the average rise in the State industrial workers consumer price index numbers for half year ending December and June respectively. Variable Dearness Allowance: Dearness Allowance is payable to monthly, daily and piece rate earners. Every six months the respective State Governments issues the Cost of Living Index number for each and every scheduled employment. For checking the minimum wage rate log on to http://www.paycheck.in/main/officialminimumwages. It gives state wise updated minimum wage rate with their effective date. 4n. LAWS RELATED TO CHILD LABOUR Background The problem of child labour continues to pose a challenge before the nation. Government has been taking various pro-active measures to tackle this problem. Way back in 1979, Government formed the first committee called Gurupadswamy Committee to study the issue of child labour and to suggest measures to tackle it. The Committee made some far-reaching recommendations. It observed that as long as poverty continued, it would be difficult to totally eliminate child labour and 118 hence, any attempt to abolish it through legal recourse would not be a practical proposition. The Committee felt that in the circumstances, the only alternative left was to ban child labour in hazardous areas and to regulate and ameliorate the conditions of work in other areas. It recommended that a multiple policy approach was required in dealing with the problems of working children. Based on the recommendations of Gurupadaswamy Committee, the Child Labour (Prohibition & Regulation) Act was enacted in 1986. The Act prohibits employment of children in certain specified hazardous occupations and processes and regulates the working conditions in others. The list of hazardous occupations and processes is progressively being expanded on the recommendation of Child Labour Technical Advisory Committee constituted under the Act. In consonance with the above approach, a National Policy on Child Labour was formulated in",
+      "page": 105
+    },
+    {
+      "number": "1987",
+      "chapter": null,
+      "act": "Bombay Shops & Establishment Act, 1948",
+      "title": "The Policy seeks to adopt a gradual & sequential approach with a focus on rehabilitation of",
+      "full_text": "children working in hazardous occupations & processes in the first instance. The Action Plan outlined in the Policy for tackling this problem is as follows: o Legislative Action Plan for strict enforcement of Child Labour Act and other labour laws to ensure that children are not employed in hazardous employments, and that the working conditions of children working in non-hazardous areas are regulated in accordance with the provisions of the Child Labour Act. It also entails further identification of additional occupations and processes, which are detrimental to the health and safety of the children. o Focusing of General Developmental Programmes for Benefiting Child Labour - As poverty is the root cause of child labour, the action plan emphasizes the need to cover these children and their families also under various poverty alleviation and employment generation schemes of the Government. o Project Based Plan of Action envisages starting of projects in areas of high concentration of child labour. Pursuant to this, in 1988, the National Child Labour Project (NCLP) Scheme was launched in 9 districts of high child labour endemicity in the country. The Scheme envisages running of special schools for child labour withdrawn from work. In the special schools, these children are provided formal/non-formal education along with vocational training, a stipend of Rs.100 119 per month, supplementary nutrition and regular health check ups so as to prepare them to join regular mainstream schools. Under the Scheme, funds are given to the District Collectors for running special schools for child labour. Most of these schools are run by the NGOs in the district. Commission for protection of rights The National Commission for Protection of Child Rights (NCPCR) was set up in March 2007 under the Commission for Protection of Child Rights Act, 2005, an Act of Parliament (December 2005). The Commission's Mandate is to ensure that all Laws, Policies, Programmes, and Administrative Mechanisms are in consonance with the Child Rights perspective as enshrined in the Constitution of India and also the UN Convention on the Rights of the Child. The Child is defined as a person in the 0 to 18 years age group. The Commission visualises a rights-based perspective flowing into National Policies and Programmes, along with nuanced responses at the State, District and Block levels, taking care of specificities and strengths of each region. In order to touch every child, it seeks a deeper penetration to communities and households and expects that the ground experiences inform the support the field receives from all the authorities at the higher level. Thus the Commission sees an indispensable role for the State, sound institution-building processes, respect for decentralization at the level of the local bodies at the community level and larger societal concern for children and their well-being. Website: http://ncpcr.gov.in/index.htm CHILD LABOUR (PROHIBITION AND REGULATION) ACT, 1986 & THE CHILD LABOUR (PROHIBITION",
+      "page": 119
+    },
+    {
+      "number": "ACT-HEADER",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "AND REGULATION) RULES, 1988 (Act header)",
+      "full_text": "",
+      "page": 120
+    },
+    {
+      "number": "2",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Repeat offence under section 3 is punishable with imprisonment for a term which shall not",
+      "full_text": "be less than six months but which may extend to two years.",
+      "page": 123
+    },
+    {
+      "number": "3",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Whoever –",
+      "full_text": "a. fails to give notice as required by Sec. 9, or b. fails to maintain a register as required by Sec. 11 or makes any false entry in any such register; or c. fails to display a notice containing an abstract of Sec. 3 and this section as required by Sec. 12; or d. fails to comply with or contravenes any other provisions of this Act or the rules made there under, shall be punishable with simple imprisonment which may extend to one month or with fine which may extend to ten thousand rupees or with both. Other major provisions: Hours and Period of Work: No child shall be required or permitted to work in any establishment in excess of such number of hours, as may be prescribed for such establishment or class of establishments. The period of work on each day shall be so fixed with no period exceeding three hours and no child shall work for more than three hours before he has had an interval for rest for at least one hour. The period of work of a child shall be so arranged that inclusive of his interval for rest, it shall not be spread over more than six hours, including the time spent in waiting for work on any day. No child shall be permitted or required to work between 7 p.m. and 8 a.m. and no child shall be required or permitted to work overtime. No child shall be required or permitted to work in, any establishment on any day on which he has already been working in another establishment. 123 Weekly Holidays: Every child employed in an establishment shall be allowed in each week, a holiday of one whole day, which day shall be specified by the occupier in a notice permanently exhibited in a conspicuous place in the establishment and the day so specified shall not be altered by the occupier more than once in three months. Prohibition of Employment of Children in Certain Occupations and Processes No child shall be employed or permitted to work in any of the occupations stated in Part A of the Schedule or in any workshop where the processes mentioned in Part B of the Schedule is carried on. however, this prohibition is not applicable to any workshop where any process is carried on by the occupier with the aid of his family or to any school established by, or receiving assistance or recognition from, Government.[Section 3] Prohibited occupations as per PART A Any occupation concerned with: -",
+      "page": 123
+    },
+    {
+      "number": "1",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Transport of passengers, goods or mails by railways;",
+      "full_text": "",
+      "page": 124
+    },
+    {
+      "number": "4",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Work relating to the construction of a railway station or with any other work where",
+      "full_text": "such work is done in close proximity to or between the railway lines;",
+      "page": 124
+    },
+    {
+      "number": "5",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "A port authority within the limits of any port;",
+      "full_text": "",
+      "page": 124
+    },
+    {
+      "number": "6",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Work relating to selling of crackers and fireworks in shops with temporary licenses;",
+      "full_text": "",
+      "page": 124
+    },
+    {
+      "number": "7",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Abattoirs/Slaughter House;",
+      "full_text": "",
+      "page": 124
+    },
+    {
+      "number": "8",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Automobile workshops and garages;",
+      "full_text": "9. Foundries;",
+      "page": 124
+    },
+    {
+      "number": "10",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Handling of toxic or inflammable substances or explosives;",
+      "full_text": "",
+      "page": 124
+    },
+    {
+      "number": "11",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Handloom and power loom industry;",
+      "full_text": "",
+      "page": 124
+    },
+    {
+      "number": "12",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Mines (underground and under water) and collieries;",
+      "full_text": "",
+      "page": 124
+    },
+    {
+      "number": "13",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Plastic units and fiberglass workshops;",
+      "full_text": "124 Prohibited processes as per PART B 1. Beedi-making.",
+      "page": 124
+    },
+    {
+      "number": "20",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Automobile repairs and maintenance including processes incidental thereto",
+      "full_text": "namely, welding, lathe work, dent beating and painting.",
+      "page": 126
+    },
+    {
+      "number": "21",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Brick kilns and Roof tiles units",
+      "full_text": "",
+      "page": 126
+    },
+    {
+      "number": "22",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Cotton ginning and processing and production of hosiery goods",
+      "full_text": "",
+      "page": 126
+    },
+    {
+      "number": "23",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Detergent manufacturing",
+      "full_text": "",
+      "page": 126
+    },
+    {
+      "number": "24",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Fabrication workshops (ferrous and non ferrous)",
+      "full_text": "",
+      "page": 126
+    },
+    {
+      "number": "25",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Gem cutting and polishing",
+      "full_text": "",
+      "page": 126
+    },
+    {
+      "number": "26",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Handling of chromite and manganese ores",
+      "full_text": "",
+      "page": 126
+    },
+    {
+      "number": "27",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Jute textile manufacture and coir making",
+      "full_text": "",
+      "page": 126
+    },
+    {
+      "number": "28",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Lime Kilns and Manufacture of Lime",
+      "full_text": "",
+      "page": 126
+    },
+    {
+      "number": "29",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Lock Making",
+      "full_text": "",
+      "page": 126
+    },
+    {
+      "number": "30",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Manufacturing processes having exposure to lead such as primary and secondary",
+      "full_text": "smelting, welding and cutting of lead-painted metal constructions, welding of galvanized orzinc silicate, polyvinyl chloride, mixing (by hand) of crystal glass mass, sanding or scraping of lead paint, burning of lead in enameling workshops, lead mining, plumbing, cable making, wiring patenting, lead casting, type founding in printing shops. Store type setting, assembling of cars, shot making and lead glass blowing.",
+      "page": 126
+    },
+    {
+      "number": "31",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Manufacture of cement pipes, cement products and other related work",
+      "full_text": "",
+      "page": 126
+    },
+    {
+      "number": "32",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Manufacture of glass, glass ware including bangles, florescent tubes, bulbs and",
+      "full_text": "other similar glass products.",
+      "page": 126
+    },
+    {
+      "number": "33",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Manufacture of dyes and dye stuff",
+      "full_text": "",
+      "page": 126
+    },
+    {
+      "number": "34",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Manufacturing or handling of pesticides and insecticides",
+      "full_text": "",
+      "page": 126
+    },
+    {
+      "number": "35",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Manufacturing or processing and handling of corrosive and toxic substances, metal",
+      "full_text": "cleaning and photo engraving and soldering processes in electronic industry.",
+      "page": 126
+    },
+    {
+      "number": "36",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Manufacturing of burning coal and coal briquettes",
+      "full_text": "",
+      "page": 126
+    },
+    {
+      "number": "37",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Manufacturing of sports goods involving exposure to synthetic materials, chemicals",
+      "full_text": "and leather.",
+      "page": 126
+    },
+    {
+      "number": "38",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Moulding and processing of fiberglass and plastic",
+      "full_text": "",
+      "page": 126
+    },
+    {
+      "number": "39",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Oil expelling and refinery",
+      "full_text": "",
+      "page": 126
+    },
+    {
+      "number": "40",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Paper making",
+      "full_text": "",
+      "page": 126
+    },
+    {
+      "number": "41",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Potteries and ceramic industry",
+      "full_text": "",
+      "page": 126
+    },
+    {
+      "number": "42",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Polishing, moulding, cutting, welding and manufacturing of brass goods in all",
+      "full_text": "forms. 126",
+      "page": 126
+    },
+    {
+      "number": "43",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Processes in agriculture where tractors, threshing and harvesting machines are",
+      "full_text": "used and chaff cutting.",
+      "page": 127
+    },
+    {
+      "number": "44",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Saw mill – all processes",
+      "full_text": "",
+      "page": 127
+    },
+    {
+      "number": "45",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Sericulture processing",
+      "full_text": "",
+      "page": 127
+    },
+    {
+      "number": "46",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Skinning, dyeing and processes for manufacturing of leather and leather products",
+      "full_text": "",
+      "page": 127
+    },
+    {
+      "number": "47",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Stone breaking and stone crushing",
+      "full_text": "",
+      "page": 127
+    },
+    {
+      "number": "48",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Tobacco processing including manufacturing of tobacco, tobacco paste and",
+      "full_text": "handling of tobacco in any form.",
+      "page": 127
+    },
+    {
+      "number": "49",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Tyre making, repairing, re-treading and graphite benefication",
+      "full_text": "",
+      "page": 127
+    },
+    {
+      "number": "50",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Utensils making, polishing and metal buffing",
+      "full_text": "51. ‘Zari’ making (all processes)’. (52) Electroplating;",
+      "page": 127
+    },
+    {
+      "number": "53",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Graphite powdering and incidental processing;",
+      "full_text": "",
+      "page": 127
+    },
+    {
+      "number": "54",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Grinding or glazing of metals;",
+      "full_text": "",
+      "page": 127
+    },
+    {
+      "number": "55",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Diamond cutting and polishing;",
+      "full_text": "",
+      "page": 127
+    },
+    {
+      "number": "56",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Extraction of slate from mines;",
+      "full_text": "",
+      "page": 127
+    },
+    {
+      "number": "57",
+      "chapter": null,
+      "act": "AND REGULATION) RULES, 1988",
+      "title": "Rag picking and scavenging",
+      "full_text": "Ban on employment of children Ban on employment of children as domestic servants or in dhabas (roadside eateries), restaurants, hotels, motels, teashops, resorts, spas or in other recreational centers is now in force from 10th October 2006 under the Child Labour (Prohibition & Regulation) Act, 1986. The Union Ministry of Labour had earlier issued a notification giving three-month mandatory notice. The Ministry has warned that anyone employing children in these categories would be liable to prosecution and other penal action under the Act. Rehabilitating Children The Labour Ministry has sought necessary support from the State Governments in enforcing the ban on employment of children as domestic servants and also in eateries etc. In a letter to the Chief Ministers, the Minister for Labour and Employment has also sought their support in rehabilitating 127 children withdrawn from work due to this ban. The Ministry is holding zonal level meetings to sensitize the concerned state level officials, civil society organisations, NGOs and other stakeholders. The Secretary, Labour and Employment, has also written to his counterparts in several Central Government Ministries requesting them for infrastructure support by the concerned departments towards rehabilitation of the released children from work and their families as an immediate objective. He has also urged them to make specific provisions in the schemes of their Ministries for working children and their families as a long term measure. The Secretaries who have been approached include those from the Ministries of Women and Child Development, Human Resource Development, Rural Development, Urban Development and Poverty Alleviation, Social Justice and Empowerment. The views and cooperation of industrial associations and NGOs are also sought in providing necessary support towards rehabilitation as a consequence of ban. Government servants have already been prohibited from employing children as domestic servants. Child Helpline A toll free 24-hour telephone help line 1098 for children in distress can be accessed in 72 cities of the country. This number can be available by any child or concerned adult on his or her behalf. This helpline, easily remembered in Hindi as “Dus, Nau, Aath”, is presently working in the following 72 cities: Agartala, Aurangabad, Chennai, Guwahati, Kanchipuram, Kozhikode, Nadia, Pune, South 24 Paraganas, Varanasi, Shimla, Ahmedabad, Bangalore, Coimbatore, Hyderabad, Kanyakumari, Kutch, Nagapattinam, Puri, Thiruvananthapuram, Vijayawada, Ludhiana, Ahmednagar, Baroda, Cuddalore, Imphal, Karaikal, Lucknow, Nagpur, Rourkela, Thirunelveli, Vishakhapatnam, Akola, Bhopal, Delhi, Indore, Kochi, Mangalore, Nasik, Ranchi, Thrissur, Waynad, Allahabad, Bhubaneshwar, East Midanapore Jammu, Kolkata, Madurai, New Jalpaiguri, Salem, Tiruchirapalli, West Midnapore, Alwar, Chandigarh, Goa, Jaipur, Kollam, Mumbai, Patna, Shillong, Udaipur, Agra, Amarawati, Cuddalore, Gorakhpur, Kalyan, Kota, Murshidabad Port Blair, Sholapur, Ujjain and Gurgaon. National Child Labour Project (NCLP) The ban is expected to go a long way in ameliorating the condition of hapless working children. The Labour Ministry is also contemplating to strengthen and expand its rehabilitative Scheme of National Child Labour Project (NCLP), which already covers 250 child labour endemic districts in the country. 128 4o. THE CONTRACT LABOUR (REGULATION AND ABOLITION) ACT, 1970 This legislation regulates the employment of contract labourers in establishments and by contractors. The Rules for implementing the provisions of the Act vary from state to state. Applicability of the Act An establishment which engages 20 or more persons or engaged on any day of the preceding 12 months as contract labourers come under the purview of the legislation. The legislation is also applicable to contractors who employ workmen as contract labourers, or who employed on any day of the preceding 12 months. Authorities under the Act i. Registering officer of the area – The Registering Officer of the area is the person to whom application shall be made for the grant of certificate of registration, for the purpose of engaging contract labourers. Any change in the establishment shall be intimated to the Registering officer within 30 days of change, and an amendment to the certificate shall be made by applying to him. ii. Licensing officer of the area – The Licensing officer is the person from whom a contractor shall obtain licence for the purpose of engaging contractors. He is entitled to make such investigation as required in respect of the application received from a contractor. (Section 12) iii. Inspectors - Under Section 28 Inspectors shall be appointed for a particular area the local limits for which shall be defined. He has the power to enter at all reasonable hours any place where contract labour takes place, for the purpose of verifying registers, records or notices, to examine persons, to collect information, to seize or take copies of registers, records of wages, or notices, and to exercise such other powers as is prescribed. Important definitions \"Contractor\" : with relation to an establishment a contractor is a person who undertakes to do some work for the establishment through contract labour, not being a mere supply of goods or articles of manufacture to the establishment or one who supplies contract labour for any work of the establishment and includes a sub-contractor. 129 \"Principal employer”: in a factory is the owner or occupier of the factory and where a person has been named as the manager of the factories under the Factories Act, 1948, such person is the principal employer. In any other establishment any person responsible for the supervision and control of the establishment. \"Workman\" means any person employed in or in connection with the work of any establishment to do any skilled, semi-skilled, or unskilled manual, supervisory, technical or clerical work for hire or reward whether the terms of employment be empress or implied but does not include any person : (1) who is employed mainly in a managerial or administrative capacity, (2) who, being employed in a supervisory capacity draws wages exceeding Rs.500/- per month or exercises either by virtue of powers vested on him or by the nature of the duties attached to the office functions which are of managerial nature or (3) who is an outworker to whom any article or materials are given out by or on behalf of the principal employer for being processed.",
+      "page": 127
+    },
+    {
+      "number": "ACT-HEADER",
+      "chapter": null,
+      "act": "Important provisions of the Contract Labour Act, 1971",
+      "title": "Important provisions of the Contract Labour Act, 1971 (Act header)",
+      "full_text": "",
+      "page": 130
+    },
+    {
+      "number": "5",
+      "chapter": null,
+      "act": "Important provisions of the Contract Labour Act, 1971",
+      "title": "CHECKLIST OF LABOUR LAW COMPLIANCE",
+      "full_text": "Statutory compliance under various labour laws has to be ensured by establishments. It is not just limited to the statutory deposits, returns and records to be maintained by the employer under various labour laws, but also to represent them in case of prosecution under various statutes. Hence, it hardly needs to be emphasized that the labour related laws cast an obligation on the employer for meticulous, impeccable and timely compliances. In the event of violation or delay in complying with the statutory requirements, the consequences in terms of levy of damages, prosecution is inevitable. A specimen checklist to check compliance of labour laws is given hereunder. A detailed checklist to check compliance of labour laws is given hereunder. Legislation Objective & Applicability Compliance requirements Apprentices Act , 1961 This Act provides for the regulation  Appointment of apprentices if and control of training of the company falls under the apprentices, and to supplement the notified industry. availability of trained technical 135 employees for the industry. The Act  Submission of returns as requires employers to hire stipulated under the Act. apprentices in certain designated  Maintenance of registers as trades as notified by the required under the Act. Government. Contract Labour This Act regulates the employment  Working conditions of (Regulation & of Contract Labour in certain workmen. Abolition) Act , 1970 establishments and provides for its  Adequate facilities like and Rules abolition in certain circumstances. It drinking water, canteen etc for applies to every establishment or workmen. contractor wherein 20 or more workmen are or were employed on  Adequate facilities for women any day of the preceding 12 months workers also. as contract labour.  Maintenance of registers as required under the Act.  Submission of returns. Employee State This Act provides for the provision of  Remittance of contribution Insurance Act , 1948 benefits to employees in case of every month. sickness, maternity and employment  Maintenance of registers. injury. All employees including casual, temporary or contract  Submission of returns as per employees drawing wages less than the provisions of the Act. Rs 10000 per month are covered. Employee's Provident The PF Act provides for the  Payment of contribution every Fund and compulsory institution of month. Miscellaneous contributory provident funds,  Maintenance of registers. Provisions Act , 1952 pension funds and deposit linked insurance funds for employees. This  Submission of returns as per Act applies to industries specified in the provisions of the Act. Schedule I employing 20 or more persons and any other class of 136 establishments employing 20 or more persons notified by the Government. Employment Exchanges The Employment Exchanges Act aims  Intimation of vacancy to the (Compulsory to provide for compulsory local employment exchange Notification of notification of vacancies to when vacancy arises. Vacancies) Act , 1959 employment exchanges. It applies to  Submission of returns. all establishments in the public sector and to establishments in the private sector ordinarily employing more than 25 employees. Equal Remuneration This Act provides for payment of  No discrimination with regard Act , 1976 equal remuneration to men and to payment for the same work women workers, for the same work done by men and women and prevents discrimination on the workers. grounds of sex against women in the  Maintenance of register. matter of employment, recruitment and for matters connected therewith or incidental thereto. This Act is applicable to almost every kind of establishments. Factories Act , 1948 The Factories Act provides for the  Licensing and renewal of health, safety, welfare, service licence under the Act. conditions and other aspects of  Provision of adequate safety workers in factories. It applies to all measures within the factory factories employing more than 10 premises. people and working with the aid of power or employing 20 people and  Provision of adequate welfare working without the aid of power. It measures like creche, canteen, covers all workers employed in the wash room etc for the factory premises or precincts directly workers. or through an agency including a  Payment of wages as per the contractor, involved in any 137 manufacture. Some provisions of the provisions of the Act. Act will vary according to the nature  Payment of overtime wages. of work of the establishment.  Maintenance of registers.  Submission of returns. Industrial Disputes Act , The objective of the Industrial  Prevention of unfair labour 1947 Disputes Act is to secure industrial practices. peace and harmony by providing  Prior permission of machinery and procedure for the appropriate Government / investigation and settlement of concerned labour authority for industrial disputes by negotiations. laying off or retrenching the This Act applies to every industrial workers or closing down the establishment carrying on any industrial establishment. business, trade, manufacture or distribution of goods and services  Payment of compensation to irrespective of the number of workers on account of closure workmen employed therein. Every or lay off or retrenchment. person employed in an establishment for hire or reward including contract labour, apprentices and part time employees to do any manual, clerical, skilled, unskilled, technical, operational or supervisory work, is covered by the Act. Industrial Employment The Standing Orders Act requires  Formulation of service rules and Standing Orders employers to clearly define and and obtain its approval from Act , 1946 publish standing orders (service the concerned Labour rules) and to make them known to authority. the workmen employed by them.  Display of standing orders in a It applies to every industrial prominent place for the establishment where 100 or more 138 workmen are/were employed on any knowledge of workers. day of the preceding 12 months. Maternity Benefit Act , The Maternity Benefit Act aims to  Grant of leave along with 1961 regulate the employment of women payment of wages after child in certain establishments for certain birth or any other maternity periods before and after child-birth related problems like abortion and to provide for maternity benefits etc. including maternity leave, wages,  Submission of returns. bonus, nursing breaks etc. It is applicable to every factory, mine or plantation including those belonging to Government, irrespective of the number of employees, and to every shop or establishment wherein 10 or more persons are employed or were employed on any day of the preceding 12 months. Minimum Wages Act , This Act was formulated to provide  Provision of minimum rate of 1948 for fixing minimum rates of wages in wages as prescribed by the certain employments. It applies to all government. establishments employing one or  Maintenance of registers as more persons and engaged in any of prescribed under the Act. the scheduled employments.  Submission of returns. Payment of Bonus Act , The object of the Payment of Bonus  Payment of bonus in 1965 Act is to provide for the payment of accordance with the provisions bonus (linked with profit or of the Act. productivity) to persons employed in  Submission of returns. certain establishments and matters connected therewith. This Act is applicable to every factory and to 139 every establishment wherein 20 or more workers are employed on any day during an accounting year. Payment of Gratuity The Act provides for a scheme for  Payment of gratuity to Act , 1972 the payment of gratuity to employees leaving the employees engaged in factories, establishment after mines, oilfields, plantations, ports, completion of 5 years. railway companies, shops or other  Notice of opening to establishments. concerned labour authority. The Act enforces the payment of 'gratuity', a reward for long service,  Displays required under the as a statutory retiral benefit. Every Act. employee irrespective of his wages is  Maintenance of registers of entitled to receive gratuity if he has allocable surplus, bonus etc. rendered continuous service of 5 years or more than 5 years.  Submission of annual returns. Payment of Wages Act, The Act ensures payment of wages in  Payment of wages without any 1936 a particular form at regular intervals unauthorised deductions. without unauthorised deductions. It  Maintenance of registers of is applicable to any factory, any fines, deductions, advance, railway establishment and any wages etc. industrial or other establishment like tramway service, motor transport  Displays as per the provisions service, air, oilfied, plantation, of the Act. workshop, or other establishment  Submission of annual returns. producing, adapting or manufacturing any article, establishments engaged in construction, development and maintenance of buildings, roads, bridges or canals, navigation, irrigation or water supply,transmission, generation and 140 distribution of electricity/power and any other establishment notified by the Central or a State Government. The Indian Boilers Act , The Act aims to regulate the  Licensing of boilers 1923 licencing and use of boilers in the  Adequate safety precautions Industry. It applies to all establishments using a boiler.  Appointment of trained personnel to handle the boilers.  Maintenance of registers as per the provisions of the Act. The Weekly Holidays The Weekly Holidays Act provides for  Provision of weekly holidays. Act , 1942 grant of weekly holidays to persons employed in shops, restaurants and theatres. Trade Unions Act , 1926 This Act provides for registration of  Registration of trade unions in trade unions (including association of accordance with the provisions employers) with a view to render of the Act. lawful organisation of labour to enable collective bargaining. The act also confers certain protection and privileges on a registered trade union. It applies to all kinds of unions of workers and associations of employers which aim at regularising labour-management relations. Workmen’s The act aims to provide workmen  Provision of compensation in Compensation Act , and their dependents, compensatory case of accident. 1923 payment, in case of accidents arising  Submission of returns as out of and in course of employment stipulated under the Act. and causing either death or 141 disablement of workmen. The act applies to factories, mines, docks, construction establishments, plantations, oilfields and other establishments listed in Schedule II and III of the act but excludes establishments covered by the ESI Act. To facilitate day-to-day functioning, a sample checklist of periodic Returns and Informations to be filed with the concerned authority, which could be effectively followed to ensure compliance of various employment laws, is given below. Monthwise Month Legislation Form Return Authority January Employment ER - I Quarterly return Local Employment Exchanges Exchange (Compulsory Notification of Vacancies) Act , 1959 January The Factories act, Vary according to Annual return Chief Inspector of 1948 State Rules Factories February The Minimum Form III Annual return Regional labour Wages Act, 1948 inspector July Employment ER - I Quarterly return Local Employment Exchanges for quarter ended Exchange (Compulsory June Notification of 142 Vacancies) Act , 1959 December Payment of Bonus Form D Annual Return Regional labour Act, 1965 and inspector Rules Every month Legislation Form Compliance Authority Employee State Challans Remittance of Regional ESI office Insurance Act , 1948 contributions Employee's Provident Challans Remittance of Regional ESI office Fund and contributions Miscellaneous",
+      "page": 135
+    },
+    {
+      "number": "ACT-HEADER",
+      "chapter": null,
+      "act": "Provisions Act , 1952",
+      "title": "Provisions Act , 1952 (Act header)",
+      "full_text": "",
+      "page": 143
+    },
+    {
+      "number": "6",
+      "chapter": null,
+      "act": "Provisions Act , 1952",
+      "title": "UNFAIR LABOUR PRACTICES",
+      "full_text": "According to Sec.2 (ra) of the Industrial Disputes Act, 1947, unfair labour practices refer to “any of the practices specified in the Fifth Schedule to the Industrial Disputes Act, 1947. According to Section 25T of the Industrial Disputes Act, 1947 no employer or workman or a trade union, whether registered under the Trade Unions Act, 1926 or not, shall commit any unfair labour practice. Fifth Schedule to the Industrial Disputes Act, 1947 provides a list as to what constitutes an unfair labour practices: Unfair labour practices on the part of employers and trade union of employers",
+      "page": 144
+    },
+    {
+      "number": "1",
+      "chapter": null,
+      "act": "Provisions Act , 1952",
+      "title": "To interfere with, restrain from or coerce workmen in the exercise of their rights to organize",
+      "full_text": "from, join or assist a trade union, or to engage in concerted activities for the purposes of collective bargaining or other mutual aid or protection, i.e. a. Threatening workmen with discharge or dismissal, if they join a trade union, b. Threatening a lock out or closure if a trade union is organized, c. Granting wage increase to workmen at crucial periods of the union organisation, with a view to undermining the efforts of the trade union organization 144",
+      "page": 144
+    },
+    {
+      "number": "2",
+      "chapter": null,
+      "act": "Provisions Act , 1952",
+      "title": "To dominate, interfere with or contribute, support, financially or otherwise to any trade union",
+      "full_text": "that is to say: - a. An employer taking an active interest in organizing a trade union of his workmen and b. An employer showing partiality or granting favor to one of several trade unions attempting to organize his workmen or to its members where such a trade union is not a recognized trade union.",
+      "page": 145
+    },
+    {
+      "number": "3",
+      "chapter": null,
+      "act": "Provisions Act , 1952",
+      "title": "To establish employer sponsored trade unions of workmen",
+      "full_text": "",
+      "page": 145
+    },
+    {
+      "number": "4",
+      "chapter": null,
+      "act": "Provisions Act , 1952",
+      "title": "To encourage or discourage membership in any trade unions by discriminating against workman",
+      "full_text": "that is to say:-. a. Discharging or punishing a workman, because he urged other workmen to join or organize a trade union. b. Discharging or dismissing a workman for taking part in strike (not being a strike which is deemed to be an illegal strike under this act) c. Changing seniority rating of workmen because of trade union activities d. Refusing to promote workmen to hire posts on account of their trade union activities e. Giving unmerited promotions to certain workmen with a view to creating discord between other workmen or to undermine the strength of their trade union f. Discharging office bearers or active members of the trade union on account of their trade union activities",
+      "page": 145
+    },
+    {
+      "number": "5",
+      "chapter": null,
+      "act": "Provisions Act , 1952",
+      "title": "To discharge or dismiss workmen",
+      "full_text": "a. By way of victimization b. Not in good faith but in the colorable exercise of the employer’s right c. By falsely implicating a workman in a criminal case on false evidence or concocted evidence d. For patently false reasons e. On untrue or trumped up allegations of absence without leave 145 f. In utter disregard of the principles of natural justice. g. For misconduct of minor or technical character, without having any regard to the nature of the particular misconduct or the past record of service of the workman, thereby leading to disproportionate punishment.",
+      "page": 145
+    },
+    {
+      "number": "7",
+      "chapter": null,
+      "act": "Provisions Act , 1952",
+      "title": "To transfer a workman malafide from one place to another under the guise of following",
+      "full_text": "management policy.",
+      "page": 146
+    },
+    {
+      "number": "8",
+      "chapter": null,
+      "act": "Provisions Act , 1952",
+      "title": "To insist upon individual workman who are on a legal strike to sign a conduct bond as a",
+      "full_text": "precondition to allowing them to resume work",
+      "page": 146
+    },
+    {
+      "number": "9",
+      "chapter": null,
+      "act": "Provisions Act , 1952",
+      "title": "To show favoritism or partiality to one set of workers regardless of merit",
+      "full_text": "",
+      "page": 146
+    },
+    {
+      "number": "10",
+      "chapter": null,
+      "act": "Provisions Act , 1952",
+      "title": "To employ workmen as ‘badlis’, casuals or temporaries and to continue them as such for the",
+      "full_text": "years with the object of depriving them of the status and privileges of permanent workmen.",
+      "page": 146
+    },
+    {
+      "number": "11",
+      "chapter": null,
+      "act": "Provisions Act , 1952",
+      "title": "To discharge or discriminate against any workmen for filing charges or testifying against",
+      "full_text": "employer in any enquiry or proceeding relating to any industrial dispute.",
+      "page": 146
+    },
+    {
+      "number": "12",
+      "chapter": null,
+      "act": "Provisions Act , 1952",
+      "title": "To recruit workmen during a strike which is not an illegal strike",
+      "full_text": "",
+      "page": 146
+    },
+    {
+      "number": "13",
+      "chapter": null,
+      "act": "Provisions Act , 1952",
+      "title": "Failure to implement award, settlement or agreement",
+      "full_text": "",
+      "page": 146
+    },
+    {
+      "number": "14",
+      "chapter": null,
+      "act": "Provisions Act , 1952",
+      "title": "To indulge in acts of force or violence",
+      "full_text": "",
+      "page": 146
+    },
+    {
+      "number": "15",
+      "chapter": null,
+      "act": "Provisions Act , 1952",
+      "title": "To refuse to bargain collectively, in good faith with the recognized trade unions",
+      "full_text": "",
+      "page": 146
+    },
+    {
+      "number": "16",
+      "chapter": null,
+      "act": "Provisions Act , 1952",
+      "title": "Proposing or continuing a lock out deemed to be illegal under this act",
+      "full_text": "If the employer of any establishment commits any of these acts then he will be liable for an offence of unfair labour practice. Unfair labour practices on the part of workmen and trade unions of workmen 146",
+      "page": 146
+    },
+    {
+      "number": "17",
+      "chapter": null,
+      "act": "Provisions Act , 1952",
+      "title": "Disciplinary Action",
+      "full_text": "Where the conduct of an employee amounts to misconduct in employment as defined in the relevant service rules the employer should initiate appropriate disciplinary action in accordance with the relevant rules.",
+      "page": 156
+    },
+    {
+      "number": "18",
+      "chapter": null,
+      "act": "Provisions Act , 1952",
+      "title": "Worker’s Initiative",
+      "full_text": "Employees should be allowed to raise issues of sexual harassment at worker’s meeting and in other appropriate fora and it should be affirmatively discussed in periodical employer-employee meetings.",
+      "page": 156
+    },
+    {
+      "number": "19",
+      "chapter": null,
+      "act": "Provisions Act , 1952",
+      "title": "Third Party harassment",
+      "full_text": "Where sexual harassment occurs as a result of an act or omission by any third party or outsider the employer and the persons in charge shall take all steps necessary and reasonable to assist the affected person in terms of support and preventive action.",
+      "page": 156
+    },
+    {
+      "number": "20",
+      "chapter": null,
+      "act": "Provisions Act , 1952",
+      "title": "Annual Report",
+      "full_text": "The Complaints Committee shall prepare an Annual Report giving a full account of its activities during the previous year and forward a copy thereof to the Head of the Organisation concerned who shall forward the same to the government department concerned with its comments. Savings:- Nothing contained in this code shall prejudice any right available to the employee or prevent any person from seeking any legal remedy under the National Commission for Women Act 1990, Protection of Human Rights Commission Act 1993 or under any other law for the time being in force. Where such conduct amounts to a specific offence under the Indian Penal Code or under any other law, the employer shall initiate appropriate action in accordance with law by making a complaint with the appropriate authority. In particular, it should ensure that victims or witnesses are not victimized or discriminated against while dealing with complaints of sexual harassment. The victims of sexual harassment should have the option to seek transfer of the perpetrator or their own transfer. 156",
+      "page": 156
+    },
+    {
+      "number": "1946",
+      "chapter": null,
+      "act": "Provisions Act , 1952",
+      "title": "Its constitution, as amended, includes the Declaration of Philadelphia (1944) on the",
+      "full_text": "aims and purposes of the organisation. As of April 2009, the current director-general is Juan Somavia (since 1999). Unlike other United Nations specialized agencies, the International Labour Organization has a tripartite governing structure — representing governments, employers and workers. Presently there are 181 members. The International Labour Organization (ILO) is devoted to advancing opportunities for women and men to obtain decent and productive work in conditions of freedom, equity, security and human dignity. Its main aims are to promote rights at work, encourage decent employment opportunities, enhance social protection and strengthen dialogue in handling work-related issues. In promoting social justice and internationally recognized human and labour rights, the organization continues to pursue its founding mission that labour peace is essential to prosperity. Today, the ILO helps advance the creation of decent jobs and the kinds of economic and working conditions that give working people and business people a stake in lasting peace, prosperity and progress. The Governing Body is the executive of the International Labour Office. It meets three times a year, in March, June and November. It takes decisions on ILO policy, decides the agenda of the International Labour Conference, adopts the draft programme and budget of the organisation for submission to the conference, and elects the director-general. The Governing Body is composed of 28 government representatives, 14 workers' group representatives, and 14 employers' group representatives. Ten of the government seats are held permanently by Brazil, China, France, Germany, India, Italy, Japan, the Russian Federation, the United Kingdom, and the United States. The remaining government representatives are elected by government delegates every three years.",
+      "page": 180
+    }
+  ]
+}

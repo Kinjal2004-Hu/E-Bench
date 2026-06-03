@@ -1,0 +1,3409 @@
+{
+  "law_id": "cpa_2019",
+  "domain_field": null,
+  "curated": [
+    {
+      "provision_number": "1",
+      "summary": "Section 1: Short title, extent, commencement and application",
+      "plain_english": "2. Definitions. CONSUMER PROTECTION COUNCILS.",
+      "keywords": [
+        "Short",
+        "Title",
+        "Extent",
+        "Commencement",
+        "Application",
+        "Definitions"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "3",
+      "summary": "Section 3: Central Consumer Protection Council",
+      "plain_english": "Section 3: Central Consumer Protection Council",
+      "keywords": [
+        "Central",
+        "Consumer",
+        "Protection",
+        "Council"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "4",
+      "summary": "Section 4: Procedure for meetings of Central Council",
+      "plain_english": "Section 4: Procedure for meetings of Central Council",
+      "keywords": [
+        "Procedure",
+        "Meetings",
+        "Central",
+        "Council"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "5",
+      "summary": "Section 5: Objects of Central Council",
+      "plain_english": "Section 5: Objects of Central Council",
+      "keywords": [
+        "Objects",
+        "Central",
+        "Council"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "6",
+      "summary": "Section 6: State Consumer Protection Councils",
+      "plain_english": "Section 6: State Consumer Protection Councils",
+      "keywords": [
+        "State",
+        "Consumer",
+        "Protection",
+        "Councils"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "7",
+      "summary": "Section 7: Objects of State Council",
+      "plain_english": "Section 7: Objects of State Council",
+      "keywords": [
+        "Objects",
+        "State",
+        "Council"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "8",
+      "summary": "Section 8: District Consumer Protection Council",
+      "plain_english": "Section 8: District Consumer Protection Council",
+      "keywords": [
+        "District",
+        "Consumer",
+        "Protection",
+        "Council"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "9",
+      "summary": "Section 9: Objects of District Council",
+      "plain_english": "CENTRAL CONSUMER PROTECTION AUTHORITY",
+      "keywords": [
+        "Objects",
+        "District",
+        "Council",
+        "Central",
+        "Consumer",
+        "Protection"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "10",
+      "summary": "Section 10: Establishment of Central Consumer Protection Authority",
+      "plain_english": "Section 10: Establishment of Central Consumer Protection Authority",
+      "keywords": [
+        "Establishment",
+        "Central",
+        "Consumer",
+        "Protection",
+        "Authority"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "11",
+      "summary": "Section 11: Qualifications, method of recruitment, etc., of Chief Commissioner and Commissioners",
+      "plain_english": "Section 11: Qualifications, method of recruitment, etc., of Chief Commissioner and Commissioners",
+      "keywords": [
+        "Qualifications",
+        "Method",
+        "Recruitment",
+        "Chief",
+        "Commissioner",
+        "Commissioners"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "12",
+      "summary": "Section 12: Vacancy, etc., not to invalidate proceedings of Central Authority",
+      "plain_english": "Section 12: Vacancy, etc., not to invalidate proceedings of Central Authority",
+      "keywords": [
+        "Vacancy",
+        "Invalidate",
+        "Proceedings",
+        "Central",
+        "Authority"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "13",
+      "summary": "Section 13: Appointment of officers, experts, professionals and other employees of Central Authority",
+      "plain_english": "Section 13: Appointment of officers, experts, professionals and other employees of Central Authority",
+      "keywords": [
+        "Appointment",
+        "Officers",
+        "Experts",
+        "Professionals",
+        "Other",
+        "Employees"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "14",
+      "summary": "Section 14: Procedure of Central Authority",
+      "plain_english": "Section 14: Procedure of Central Authority",
+      "keywords": [
+        "Procedure",
+        "Central",
+        "Authority"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "15",
+      "summary": "Section 15: Investigation Wing",
+      "plain_english": "Section 15: Investigation Wing",
+      "keywords": [
+        "Investigation",
+        "Wing"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "16",
+      "summary": "Section 16: Power of District Collector",
+      "plain_english": "Section 16: Power of District Collector",
+      "keywords": [
+        "Power",
+        "District",
+        "Collector"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "17",
+      "summary": "Section 17: Complaints to authorities",
+      "plain_english": "Section 17: Complaints to authorities",
+      "keywords": [
+        "Complaints",
+        "Authorities"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "18",
+      "summary": "Section 18: Powers and functions of Central Authority",
+      "plain_english": "Section 18: Powers and functions of Central Authority",
+      "keywords": [
+        "Powers",
+        "Functions",
+        "Central",
+        "Authority"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "19",
+      "summary": "Section 19: Power of Central Authority to refer matter for investigation or to other Regulator",
+      "plain_english": "Section 19: Power of Central Authority to refer matter for investigation or to other Regulator",
+      "keywords": [
+        "Power",
+        "Central",
+        "Authority",
+        "Refer",
+        "Matter",
+        "Investigation"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "20",
+      "summary": "Section 20: Power of Central Authority to recall goods, etc",
+      "plain_english": "Section 20: Power of Central Authority to recall goods, etc",
+      "keywords": [
+        "Power",
+        "Central",
+        "Authority",
+        "Recall",
+        "Goods"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "21",
+      "summary": "Section 21: Power of Central Authority to issue directions and penalties against false or misleading",
+      "plain_english": "advertisements.",
+      "keywords": [
+        "Power",
+        "Central",
+        "Authority",
+        "Issue",
+        "Directions",
+        "Penalties"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "22",
+      "summary": "Section 22: Search and seizure",
+      "plain_english": "Section 22: Search and seizure",
+      "keywords": [
+        "Search",
+        "Seizure"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "23",
+      "summary": "Section 23: Designation of any statutory authority or body to function as Central Authority",
+      "plain_english": "24. Appeal.",
+      "keywords": [
+        "Authority",
+        "Designation",
+        "Statutory",
+        "Body",
+        "Function",
+        "Central"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "25",
+      "summary": "Section 25: Grants by Central Government",
+      "plain_english": "Section 25: Grants by Central Government",
+      "keywords": [
+        "Grants",
+        "Central",
+        "Government"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "26",
+      "summary": "Section 26: Accounts and audit",
+      "plain_english": "Section 26: Accounts and audit",
+      "keywords": [
+        "Accounts",
+        "Audit"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "27",
+      "summary": "Section 27: Furnishing of annual reports, etc",
+      "plain_english": "CONSUMER DISPUTES REDRESSAL COMMISSION",
+      "keywords": [
+        "Furnishing",
+        "Annual",
+        "Reports",
+        "Consumer",
+        "Disputes",
+        "Redressal"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "28",
+      "summary": "Section 28: Establishment of District Consumer Disputes Redressal Commission",
+      "plain_english": "Section 28: Establishment of District Consumer Disputes Redressal Commission",
+      "keywords": [
+        "Establishment",
+        "District",
+        "Consumer",
+        "Disputes",
+        "Redressal",
+        "Commission"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "29",
+      "summary": "Section 29: Qualifications, etc., of President and members of District Commission",
+      "plain_english": "1 SECTIONS",
+      "keywords": [
+        "Qualifications",
+        "President",
+        "Members",
+        "District",
+        "Commission",
+        "Sections"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "30",
+      "summary": "Section 30: Salaries, allowances and other terms and conditions of service of President and members of",
+      "plain_english": "District Commission.",
+      "keywords": [
+        "Salaries",
+        "Allowances",
+        "Other",
+        "Terms",
+        "Conditions",
+        "Service"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "31",
+      "summary": "Section 31: Transitional provision",
+      "plain_english": "Section 31: Transitional provision",
+      "keywords": [
+        "Transitional",
+        "Provision"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "32",
+      "summary": "Section 32: Vacancy in office of member of District Commission",
+      "plain_english": "Section 32: Vacancy in office of member of District Commission",
+      "keywords": [
+        "Vacancy",
+        "Office",
+        "Member",
+        "District",
+        "Commission"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "33",
+      "summary": "Section 33: Officers and other employees of District Commission",
+      "plain_english": "Section 33: Officers and other employees of District Commission",
+      "keywords": [
+        "Officers",
+        "Other",
+        "Employees",
+        "District",
+        "Commission"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "34",
+      "summary": "Section 34: Jurisdiction of District Commission",
+      "plain_english": "Section 34: Jurisdiction of District Commission",
+      "keywords": [
+        "Jurisdiction",
+        "District",
+        "Commission"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "35",
+      "summary": "Section 35: Manner in which complaint shall be made",
+      "plain_english": "Section 35: Manner in which complaint shall be made",
+      "keywords": [
+        "Manner",
+        "Which",
+        "Complaint",
+        "Made"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "36",
+      "summary": "Section 36: Proceedings before District Commission",
+      "plain_english": "Section 36: Proceedings before District Commission",
+      "keywords": [
+        "Proceedings",
+        "District",
+        "Commission"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "37",
+      "summary": "Section 37: Reference to mediation",
+      "plain_english": "Section 37: Reference to mediation",
+      "keywords": [
+        "Reference",
+        "Mediation"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "38",
+      "summary": "Section 38: Procedure on admission of complaint",
+      "plain_english": "Section 38: Procedure on admission of complaint",
+      "keywords": [
+        "Procedure",
+        "Admission",
+        "Complaint"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "39",
+      "summary": "Section 39: Findings of District Commission",
+      "plain_english": "Section 39: Findings of District Commission",
+      "keywords": [
+        "Findings",
+        "District",
+        "Commission"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "40",
+      "summary": "Section 40: Review by District Commission in certain cases",
+      "plain_english": "Section 40: Review by District Commission in certain cases",
+      "keywords": [
+        "Review",
+        "District",
+        "Commission",
+        "Certain",
+        "Cases"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "41",
+      "summary": "Section 41: Appeal against order of District Commission",
+      "plain_english": "Section 41: Appeal against order of District Commission",
+      "keywords": [
+        "Appeal",
+        "Against",
+        "Order",
+        "District",
+        "Commission"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "42",
+      "summary": "Section 42: Establishment of State Consumer Disputes Redressal Commission",
+      "plain_english": "Section 42: Establishment of State Consumer Disputes Redressal Commission",
+      "keywords": [
+        "Establishment",
+        "State",
+        "Consumer",
+        "Disputes",
+        "Redressal",
+        "Commission"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "43",
+      "summary": "Section 43: Qualifications, etc., of President and members of State Commission",
+      "plain_english": "Section 43: Qualifications, etc., of President and members of State Commission",
+      "keywords": [
+        "Qualifications",
+        "President",
+        "Members",
+        "State",
+        "Commission"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "44",
+      "summary": "Section 44: Salaries, allowances and other terms and conditions of service of President and members of State",
+      "plain_english": "Commission.",
+      "keywords": [
+        "Salaries",
+        "Allowances",
+        "Other",
+        "Terms",
+        "Conditions",
+        "Service"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "45",
+      "summary": "Section 45: Transitional provision",
+      "plain_english": "Section 45: Transitional provision",
+      "keywords": [
+        "Transitional",
+        "Provision"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "46",
+      "summary": "Section 46: Officers and employees of State Commission",
+      "plain_english": "Section 46: Officers and employees of State Commission",
+      "keywords": [
+        "Officers",
+        "Employees",
+        "State",
+        "Commission"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "47",
+      "summary": "Section 47: Jurisdiction of State Commission",
+      "plain_english": "Section 47: Jurisdiction of State Commission",
+      "keywords": [
+        "Jurisdiction",
+        "State",
+        "Commission"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "48",
+      "summary": "Section 48: Transfer of cases",
+      "plain_english": "Section 48: Transfer of cases",
+      "keywords": [
+        "Transfer",
+        "Cases"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "49",
+      "summary": "Section 49: Procedure applicable to State Commission",
+      "plain_english": "Section 49: Procedure applicable to State Commission",
+      "keywords": [
+        "Procedure",
+        "Applicable",
+        "State",
+        "Commission"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "50",
+      "summary": "Section 50: Review by State Commission in certain cases",
+      "plain_english": "Section 50: Review by State Commission in certain cases",
+      "keywords": [
+        "Review",
+        "State",
+        "Commission",
+        "Certain",
+        "Cases"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "51",
+      "summary": "Section 51: Appeal to National Commission",
+      "plain_english": "Section 51: Appeal to National Commission",
+      "keywords": [
+        "Appeal",
+        "National",
+        "Commission"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "52",
+      "summary": "Section 52: Hearing of appeal",
+      "plain_english": "Section 52: Hearing of appeal",
+      "keywords": [
+        "Hearing",
+        "Appeal"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "53",
+      "summary": "Section 53: Establishment of National Consumer Disputes Redressal Commission",
+      "plain_english": "Section 53: Establishment of National Consumer Disputes Redressal Commission",
+      "keywords": [
+        "Establishment",
+        "National",
+        "Consumer",
+        "Disputes",
+        "Redressal",
+        "Commission"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "54",
+      "summary": "Section 54: Composition of National Commission",
+      "plain_english": "Section 54: Composition of National Commission",
+      "keywords": [
+        "Composition",
+        "National",
+        "Commission"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "55",
+      "summary": "Section 55: Qualifications, etc., of President and members of National Commission",
+      "plain_english": "Section 55: Qualifications, etc., of President and members of National Commission",
+      "keywords": [
+        "Qualifications",
+        "President",
+        "Members",
+        "National",
+        "Commission"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "56",
+      "summary": "Section 56: Transitional provision",
+      "plain_english": "Section 56: Transitional provision",
+      "keywords": [
+        "Transitional",
+        "Provision"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "57",
+      "summary": "Section 57: Other officers and employees of National Commission",
+      "plain_english": "Section 57: Other officers and employees of National Commission",
+      "keywords": [
+        "Other",
+        "Officers",
+        "Employees",
+        "National",
+        "Commission"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "58",
+      "summary": "Section 58: Jurisdiction of National Commission",
+      "plain_english": "Section 58: Jurisdiction of National Commission",
+      "keywords": [
+        "Jurisdiction",
+        "National",
+        "Commission"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "59",
+      "summary": "Section 59: Procedure applicable to National Commission",
+      "plain_english": "Section 59: Procedure applicable to National Commission",
+      "keywords": [
+        "Procedure",
+        "Applicable",
+        "National",
+        "Commission"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "60",
+      "summary": "Section 60: Review by National Commission in certain cases",
+      "plain_english": "Section 60: Review by National Commission in certain cases",
+      "keywords": [
+        "Review",
+        "National",
+        "Commission",
+        "Certain",
+        "Cases"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "61",
+      "summary": "Section 61: Power to set aside ex parte orders",
+      "plain_english": "Section 61: Power to set aside ex parte orders",
+      "keywords": [
+        "Power",
+        "Aside",
+        "Parte",
+        "Orders"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "62",
+      "summary": "Section 62: Transfer of cases",
+      "plain_english": "Section 62: Transfer of cases",
+      "keywords": [
+        "Transfer",
+        "Cases"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "63",
+      "summary": "Section 63: Vacancy in office of President of National Commission",
+      "plain_english": "Section 63: Vacancy in office of President of National Commission",
+      "keywords": [
+        "Vacancy",
+        "Office",
+        "President",
+        "National",
+        "Commission"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "64",
+      "summary": "Section 64: Vacancies or defects in appointment not to invalidate orders",
+      "plain_english": "Section 64: Vacancies or defects in appointment not to invalidate orders",
+      "keywords": [
+        "Vacancies",
+        "Defects",
+        "Appointment",
+        "Invalidate",
+        "Orders"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "65",
+      "summary": "Section 65: Service of notice, etc",
+      "plain_english": "Section 65: Service of notice, etc",
+      "keywords": [
+        "Service",
+        "Notice"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "66",
+      "summary": "Section 66: Experts to assist National Commission or State Commission",
+      "plain_english": "Section 66: Experts to assist National Commission or State Commission",
+      "keywords": [
+        "Commission",
+        "Experts",
+        "Assist",
+        "National",
+        "State"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "67",
+      "summary": "Section 67: Appeal against order of National Commission",
+      "plain_english": "Section 67: Appeal against order of National Commission",
+      "keywords": [
+        "Appeal",
+        "Against",
+        "Order",
+        "National",
+        "Commission"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "68",
+      "summary": "Section 68: Finality of orders",
+      "plain_english": "Section 68: Finality of orders",
+      "keywords": [
+        "Finality",
+        "Orders"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "69",
+      "summary": "Section 69: Limitation period",
+      "plain_english": "Section 69: Limitation period",
+      "keywords": [
+        "Limitation",
+        "Period"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "70",
+      "summary": "Section 70: Administrative control",
+      "plain_english": "Section 70: Administrative control",
+      "keywords": [
+        "Administrative",
+        "Control"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "71",
+      "summary": "Section 71: Enforcement of orders of District Commission, State Commission and National Commission",
+      "plain_english": "Section 71: Enforcement of orders of District Commission, State Commission and National Commission",
+      "keywords": [
+        "Commission",
+        "Enforcement",
+        "Orders",
+        "District",
+        "State",
+        "National"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "72",
+      "summary": "Section 72: Penalty for non-compliance of order",
+      "plain_english": "Section 72: Penalty for non-compliance of order",
+      "keywords": [
+        "Penalty",
+        "Compliance",
+        "Order"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "73",
+      "summary": "Section 73: Appeal against order passed under section 72",
+      "plain_english": "2 MEDIATION SECTIONS",
+      "keywords": [
+        "Appeal",
+        "Against",
+        "Order",
+        "Passed",
+        "Section",
+        "Mediation"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "74",
+      "summary": "Section 74: Establishment of consumer mediation cell",
+      "plain_english": "Section 74: Establishment of consumer mediation cell",
+      "keywords": [
+        "Establishment",
+        "Consumer",
+        "Mediation",
+        "Cell"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "75",
+      "summary": "Section 75: Empanelment of mediators",
+      "plain_english": "Section 75: Empanelment of mediators",
+      "keywords": [
+        "Empanelment",
+        "Mediators"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "76",
+      "summary": "Section 76: Nomination of mediators from panel",
+      "plain_english": "Section 76: Nomination of mediators from panel",
+      "keywords": [
+        "Nomination",
+        "Mediators",
+        "Panel"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "77",
+      "summary": "Section 77: Duty of mediator to disclose certain facts",
+      "plain_english": "Section 77: Duty of mediator to disclose certain facts",
+      "keywords": [
+        "Duty",
+        "Mediator",
+        "Disclose",
+        "Certain",
+        "Facts"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "78",
+      "summary": "Section 78: Replacement of mediator in certain cases",
+      "plain_english": "Section 78: Replacement of mediator in certain cases",
+      "keywords": [
+        "Replacement",
+        "Mediator",
+        "Certain",
+        "Cases"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "79",
+      "summary": "Section 79: Procedure for mediation",
+      "plain_english": "Section 79: Procedure for mediation",
+      "keywords": [
+        "Procedure",
+        "Mediation"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "80",
+      "summary": "Section 80: Settlement through mediation",
+      "plain_english": "Section 80: Settlement through mediation",
+      "keywords": [
+        "Settlement",
+        "Through",
+        "Mediation"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "81",
+      "summary": "Section 81: Recording settlement and passing of order",
+      "plain_english": "PRODUCT LIABILLITY",
+      "keywords": [
+        "Recording",
+        "Settlement",
+        "Passing",
+        "Order",
+        "Product",
+        "Liabillity"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "82",
+      "summary": "Section 82: Application of Chapter",
+      "plain_english": "Section 82: Application of Chapter",
+      "keywords": [
+        "Application",
+        "Chapter"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "83",
+      "summary": "Section 83: Product liability action",
+      "plain_english": "Section 83: Product liability action",
+      "keywords": [
+        "Product",
+        "Liability",
+        "Action"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "84",
+      "summary": "Section 84: Liability of product manufacturer",
+      "plain_english": "Section 84: Liability of product manufacturer",
+      "keywords": [
+        "Liability",
+        "Product",
+        "Manufacturer"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "85",
+      "summary": "Section 85: Liability of product service provider",
+      "plain_english": "Section 85: Liability of product service provider",
+      "keywords": [
+        "Liability",
+        "Product",
+        "Service",
+        "Provider"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "86",
+      "summary": "Section 86: Liability of product sellers",
+      "plain_english": "Section 86: Liability of product sellers",
+      "keywords": [
+        "Liability",
+        "Product",
+        "Sellers"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "87",
+      "summary": "Section 87: Exceptions to product liability action",
+      "plain_english": "OFFENCES AND PENALTIES",
+      "keywords": [
+        "Exceptions",
+        "Product",
+        "Liability",
+        "Action",
+        "Offences",
+        "Penalties"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "88",
+      "summary": "Section 88: Penalty for non-compliance of direction of Central Authority",
+      "plain_english": "Section 88: Penalty for non-compliance of direction of Central Authority",
+      "keywords": [
+        "Penalty",
+        "Compliance",
+        "Direction",
+        "Central",
+        "Authority"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "89",
+      "summary": "Section 89: Punishment for false or misleading advertisement",
+      "plain_english": "Section 89: Punishment for false or misleading advertisement",
+      "keywords": [
+        "Punishment",
+        "False",
+        "Misleading",
+        "Advertisement"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "90",
+      "summary": "Section 90: Punishment for manufacturing for sale or storing, selling or distributing or importing products",
+      "plain_english": "containing adulterant.",
+      "keywords": [
+        "Punishment",
+        "Manufacturing",
+        "Sale",
+        "Storing",
+        "Selling",
+        "Distributing"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "91",
+      "summary": "Section 91: Punishment for manufacturing for sale or for storing or selling or distributing or importing",
+      "plain_english": "spurious goods.",
+      "keywords": [
+        "Punishment",
+        "Manufacturing",
+        "Sale",
+        "Storing",
+        "Selling",
+        "Distributing"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "92",
+      "summary": "Section 92: Cognizance of offence by court",
+      "plain_english": "Section 92: Cognizance of offence by court",
+      "keywords": [
+        "Cognizance",
+        "Offence",
+        "Court"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "93",
+      "summary": "Section 93: Vexatious search",
+      "plain_english": "MISCELLANEOUS",
+      "keywords": [
+        "Vexatious",
+        "Search",
+        "Miscellaneous"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "94",
+      "summary": "Section 94: Measures to prevent unfair trade practices in e-commerce, direct selling, etc",
+      "plain_english": "Section 94: Measures to prevent unfair trade practices in e-commerce, direct selling, etc",
+      "keywords": [
+        "Measures",
+        "Prevent",
+        "Unfair",
+        "Trade",
+        "Practices",
+        "Commerce"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "95",
+      "summary": "Section 95: Presidents, members, Chief Commissioner, Commissioner and certain officers to be public",
+      "plain_english": "servants.",
+      "keywords": [
+        "Commissioner",
+        "Presidents",
+        "Members",
+        "Chief",
+        "Certain",
+        "Officers"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "96",
+      "summary": "Section 96: Compounding of offences",
+      "plain_english": "Section 96: Compounding of offences",
+      "keywords": [
+        "Compounding",
+        "Offences"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "97",
+      "summary": "Section 97: Manner of crediting penalty",
+      "plain_english": "Section 97: Manner of crediting penalty",
+      "keywords": [
+        "Manner",
+        "Crediting",
+        "Penalty"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "98",
+      "summary": "Section 98: Protection of action taken in good faith",
+      "plain_english": "Section 98: Protection of action taken in good faith",
+      "keywords": [
+        "Protection",
+        "Action",
+        "Taken",
+        "Good",
+        "Faith"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "99",
+      "summary": "Section 99: Power to give directions by Central Government",
+      "plain_english": "Section 99: Power to give directions by Central Government",
+      "keywords": [
+        "Power",
+        "Give",
+        "Directions",
+        "Central",
+        "Government"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "100",
+      "summary": "Section 100: Act not in derogation of any other",
+      "plain_english": "Section 100: Act not in derogation of any other",
+      "keywords": [
+        "Derogation",
+        "Other"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "101",
+      "summary": "Section 101: Power of Central Government to make rules",
+      "plain_english": "Section 101: Power of Central Government to make rules",
+      "keywords": [
+        "Power",
+        "Central",
+        "Government",
+        "Make",
+        "Rules"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "102",
+      "summary": "Section 102: Power of State Government to make rules",
+      "plain_english": "Section 102: Power of State Government to make rules",
+      "keywords": [
+        "Power",
+        "State",
+        "Government",
+        "Make",
+        "Rules"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "103",
+      "summary": "Section 103: Power of National Commission to make regulations",
+      "plain_english": "Section 103: Power of National Commission to make regulations",
+      "keywords": [
+        "Power",
+        "National",
+        "Commission",
+        "Make",
+        "Regulations"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "104",
+      "summary": "Section 104: Power of Central Authority to make regulations",
+      "plain_english": "Section 104: Power of Central Authority to make regulations",
+      "keywords": [
+        "Power",
+        "Central",
+        "Authority",
+        "Make",
+        "Regulations"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "105",
+      "summary": "Section 105: Rules and regulations to be laid before each House of Parliament",
+      "plain_english": "Section 105: Rules and regulations to be laid before each House of Parliament",
+      "keywords": [
+        "Rules",
+        "Regulations",
+        "Laid",
+        "Each",
+        "House",
+        "Parliament"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "106",
+      "summary": "Section 106: Power to Remove Difficulties",
+      "plain_english": "Section 106: Power to Remove Difficulties",
+      "keywords": [
+        "Power",
+        "Remove",
+        "Difficulties"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "107",
+      "summary": "Section 107: Repeal and savings",
+      "plain_english": "3 THE CONSUMER PROTECTION ACT, 2019 ACT NO. 35 OF 2019 [9th August, 2019.] An Act to provide for protection of the interests of consumers and for the said purpose, to establish authorities for timely and effective administration and settlement of consumers' disputes and for matters connected therewith or incidental thereto. BE it enacted by Parliament in the Seventieth Year of the Republic of India as follows:— PRELIMINARY",
+      "keywords": [
+        "Protection",
+        "Consumers",
+        "Repeal",
+        "Savings",
+        "Consumer",
+        "August"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "1",
+      "summary": "Section 1: Short title, extent, commencement and application.—(1) This Act may be called the Consumer",
+      "plain_english": "Protection Act, 2019. (2) It extends to the whole of India except the State of Jammu and Kashmir*. (3) It shall come into force on such date1 as the Central Government may, by notification, appoint and different dates may be appointed for different States and for different provisions of this Act and any reference in any such provision to the commencement of this Act shall be construed as a reference to the coming into force of that provision. (4) Save as otherwise expressly provided by the Centr",
+      "keywords": [
+        "Different",
+        "Commencement",
+        "Force",
+        "Reference",
+        "Provision",
+        "Short"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "2",
+      "summary": "Section 2: Definitions.—In this Act, unless the context otherwise requires,—",
+      "plain_english": "(1) “advertisement” means any audio or visual publicity, representation, endorsement or pronouncement made by means of light, sound, smoke, gas, print, electronic media, internet or website and includes any notice, circular, label, wrapper, invoice or such other documents; (2) “appropriate laboratory” means a laboratory or an organisation— (i) recognised by the Central Government; or (ii) recognised by a State Government, subject to such guidelines as may be issued by the Central Government in t",
+      "keywords": [
+        "Means",
+        "Government",
+        "Laboratory",
+        "Recognised",
+        "Central",
+        "Definitions"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "3",
+      "summary": "Section 3: Central Consumer Protection Council.—(1) The Central Government shall, by notification",
+      "plain_english": "establish with effect from such date as it may specify in that notification, the Central Consumer Protection Council to be known as the Central Council. (2) The Central Council shall be an advisory council and consist of the following members, namely:— (a) the Minister-in-charge of the Department of Consumer Affairs in the Central Government, who shall be the Chairperson; and (b) such number of other official or non-official members representing such interests as may be prescribed.",
+      "keywords": [
+        "Central",
+        "Council",
+        "Consumer",
+        "Protection",
+        "Government",
+        "Notification"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "4",
+      "summary": "Section 4: Procedure for meetings of Central Council.—(1) The Central Council shall meet as and when",
+      "plain_english": "necessary, but at least one meeting of the Council shall be held every year. (2) The Central Council shall meet at such time and place as the Chairperson may think fit and shall observe such procedure in regard to the transaction of its business as may be prescribed.",
+      "keywords": [
+        "Council",
+        "Central",
+        "Procedure",
+        "Meet",
+        "Meetings",
+        "When"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "5",
+      "summary": "Section 5: Objects of Central Council.—The objects of the Central Council shall be to render advice on",
+      "plain_english": "promotion and protection of the consumers' rights under this Act.",
+      "keywords": [
+        "Objects",
+        "Central",
+        "Council",
+        "Render",
+        "Advice",
+        "Promotion"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "6",
+      "summary": "Section 6: State Consumer Protection Councils.—(1) Every State Government shall, by notification",
+      "plain_english": "establish with effect from such date as it may specify in such notification, a State Consumer Protection Council for such State to be known as the State Council. (2) The State Council shall be an advisory council and consist of the following members, namely:— (a) the Minister-in-charge of Consumer Affairs in the State Government who shall be the Chairperson; (b) such number of other official or non-official members representing such interests as may be prescribed; (c) such number of other offici",
+      "keywords": [
+        "State",
+        "Council",
+        "Consumer",
+        "Protection",
+        "Government",
+        "Notification"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "7",
+      "summary": "Section 7: Objects of State Council.—The objects of every State Council shall be to render advice on",
+      "plain_english": "promotion and protection of consumer rights under this Act within the State.",
+      "keywords": [
+        "State",
+        "Objects",
+        "Council",
+        "Render",
+        "Advice",
+        "Promotion"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "8",
+      "summary": "Section 8: District Consumer Protection Council.—(1) The State Government shall, by notification",
+      "plain_english": "establish for every District with effect from such date as it may specify in such notification, a District Consumer Protection Council to be known as the District Council. 12 (2) The District Council shall be an advisory council and consist of the following members, namely:— (a) the Collector of the district (by whatever name called), who shall be the Chairperson; and (b) such number of other official and non-official members representing such interests as may be prescribed. (3) The District Cou",
+      "keywords": [
+        "District",
+        "Council",
+        "Consumer",
+        "Protection",
+        "Notification",
+        "Members"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "9",
+      "summary": "Section 9: Objects of District Council.—The objects of every District Council shall be to render advice on",
+      "plain_english": "promotion and protection of consumer rights under this Act within the district. CENRAL CONSUMER PROTECTION AUTHORITY",
+      "keywords": [
+        "District",
+        "Objects",
+        "Council",
+        "Protection",
+        "Consumer",
+        "Render"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "10",
+      "summary": "Section 10: Establishment of Central Consumer Protection Authority.—(1) The Central Government",
+      "plain_english": "shall, by notification, establish with effect from such date as it may specify in that notification, a Central Consumer Protection Authority to be known as the Central Authority to regulate matters relating to violation of rights of consumers, unfair trade practices and false or misleading advertisements which are prejudicial to the interests of public and consumers and to promote, protect and enforce the rights of consumers as a class. (2) The Central Authority shall consist of a Chief Commissi",
+      "keywords": [
+        "Central",
+        "Authority",
+        "Consumers",
+        "Consumer",
+        "Protection",
+        "Notification"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "11",
+      "summary": "Section 11: Qualifications, method of recruitment, etc., of Chief Commissioner and Commissioners.—",
+      "plain_english": "The Central Government may, by notification, make rules to provide for the qualifications for appointment, method of recruitment, procedure for appointment, term of office, salaries and allowances, resignation, removal and other terms and conditions of the service of the Chief Commissioner and Commissioners of the Central Authority.",
+      "keywords": [
+        "Qualifications",
+        "Method",
+        "Recruitment",
+        "Chief",
+        "Commissioner",
+        "Commissioners"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "12",
+      "summary": "Section 12: Vacancy, etc., not to invalidate proceedings of Central Authority.—No act or proceeding of",
+      "plain_english": "the Central Authority shall be invalid merely by reason of— (a) any vacancy in, or any defect in the constitution of, the Central Authority; or (b) any defect in the appointment of a person acting as the Chief Commissioner or as a Commissioner; or (c) any irregularity in the procedure of the Central Authority not affecting the merits of the case.",
+      "keywords": [
+        "Central",
+        "Authority",
+        "Vacancy",
+        "Defect",
+        "Commissioner",
+        "Invalidate"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "13",
+      "summary": "Section 13: Appointment of officers, experts, professionals and other employees of Central Authority.—",
+      "plain_english": "(1) The Central Government shall provide the Central Authority such number of officers and other employees as it considers necessary for the efficient performance of its functions under this Act. (2) The salaries and allowances payable to, and the other terms and conditions of service of, the officers and other employees of the Central Authority appointed under this Act shall be such as may be prescribed. (3) The Central Authority may engage, in accordance with the procedure specified by regulat",
+      "keywords": [
+        "Central",
+        "Other",
+        "Authority",
+        "Officers",
+        "Employees",
+        "Appointment"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "14",
+      "summary": "Section 14: Procedure of Central Authority. —(1) The Central Authority shall regulate the procedure for",
+      "plain_english": "transaction of its business and allocation of its business amongst the Chief Commissioner and Commissioners as may be specified by regulations. (2) The Chief Commissioner shall have the powers of general superintendence, direction and control in respect of all administrative matters of the Central Authority: Provided that the Chief Commissioner may delegate such of his powers relating to administrative matters of the Central Authority, as he may think fit, to any Commissioner (including Commissi",
+      "keywords": [
+        "Central",
+        "Authority",
+        "Commissioner",
+        "Chief",
+        "Procedure",
+        "Business"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "15",
+      "summary": "Section 15: Investigation Wing.—(1) The Central Authority shall have an Investigation Wing headed by a",
+      "plain_english": "Director-General for the purpose of conducting inquiry or investigation under this Act as may be directed by the Central Authority. (2) The Central Government may appoint a Director-General and such number of Additional Director-General, Director, Joint Director, Deputy Director and Assistant Director, from amongst persons who have experience in investigation and possess such qualifications, in such manner, as may be prescribed. (3) Every Additional Director-General, Director, Joint Director, De",
+      "keywords": [
+        "Director",
+        "Investigation",
+        "General",
+        "Central",
+        "Wing",
+        "Authority"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "16",
+      "summary": "Section 16: Power of District Collector.—The District Collector (by whatever name called) may, on a",
+      "plain_english": "complaint or on a reference made to him by the Central Authority or the Commissioner of a regional office, inquire into or investigate complaints regarding violation of rights of consumers as a class, on matters relating to violations of consumer rights, unfair trade practices and false or misleading advertisements, within his jurisdiction and submit his report to the Central Authority or to the Commissioner of a regional office, as the case may be.",
+      "keywords": [
+        "District",
+        "Collector",
+        "Central",
+        "Authority",
+        "Commissioner",
+        "Regional"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "17",
+      "summary": "Section 17: Complaints to authorities.—A complaint relating to violation of consumer rights or unfair trade",
+      "plain_english": "practices or false or misleading advertisements which are prejudicial to the interests of consumers as a class, may be forwarded either in writing or in electronic mode, to any one of the authorities, namely, the District Collector or the Commissioner of regional office or the Central Authority.",
+      "keywords": [
+        "Authorities",
+        "Complaints",
+        "Complaint",
+        "Relating",
+        "Violation",
+        "Consumer"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "18",
+      "summary": "Section 18: Powers and functions of Central Authority.—(1) The Central Authority shall—",
+      "plain_english": "(a) protect, promote and enforce the rights of consumers as a class, and prevent violation of consumers rights under this Act; (b) prevent unfair trade practices and ensure that no person engages himself in unfair trade practices; (c) ensure that no false or misleading advertisement is made of any goods or services which contravenes the provisions of this Act or the rules or regulations made thereunder; (d) ensure that no person takes part in the publication of any advertisement which is false o",
+      "keywords": [
+        "Ensure",
+        "Central",
+        "Authority",
+        "Rights",
+        "Consumers",
+        "Prevent"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "19",
+      "summary": "Section 19: Power of Central Authority to refer matter for investigation or to other Regulator.—(1) The",
+      "plain_english": "Central Authority may, after receiving any information or complaint or directions from the Central Government or of its own motion, conduct or cause to be conducted a preliminary inquiry as to whether there exists a prima facie case of violation of consumer rights or any unfair trade practice or any false or misleading advertisement, by any person, which is prejudicial to the public interest or to the interests of consumers and if it is satisfied that there exists a prima facie case, it shall ca",
+      "keywords": [
+        "Central",
+        "Authority",
+        "There",
+        "Exists",
+        "Prima",
+        "Facie"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "20",
+      "summary": "Section 20: Power of Central Authority to recall goods, etc.—Where the Central Authority is satisfied on",
+      "plain_english": "the basis of investigation that there is sufficient evidence to show violation of consumer rights or unfair trade practice by a person, it may pass such order as may be necessary, including— (a) recalling of goods or withdrawal of services which are dangerous, hazardous or unsafe; (b) reimbursement of the prices of goods or services so recalled to purchasers of such goods or services; and (c) discontinuation of practices which are unfair and prejudicial to consumers' interest: Provided that the",
+      "keywords": [
+        "Goods",
+        "Services",
+        "Central",
+        "Authority",
+        "Unfair",
+        "Which"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "21",
+      "summary": "Section 21: Power of Central Authority to issue directions and penalties against false or misleading",
+      "plain_english": "advertisements.—(1) Where the Central Authority is satisfied after investigation that any advertisement is false or misleading and is prejudicial to the interest of any consumer or is in contravention of consumer rights, it may, by order, issue directions to the concerned trader or manufacturer or endorser or advertiser or publisher, as the case may be, to discontinue such advertisement or to modify the same in such manner and within such time as may be specified in that order. (2) Notwithstandi",
+      "keywords": [
+        "Central",
+        "Authority",
+        "Issue",
+        "Directions",
+        "False",
+        "Misleading"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "22",
+      "summary": "Section 22: Search and seizure.—(1) For the purpose of conducting an investigation after preliminary",
+      "plain_english": "inquiry under sub-section (1) of section 19, the Director-General or any other officer authorised by him in this behalf, or the District Collector, as the case may be, may, if he has any reason to believe that any person has violated any consumer rights or committed unfair trade practice or causes any false or misleading advertisement to be made, shall,-- (a) enter at any reasonable time into any such premises and search for any document or record or article or any other form of evidence and sei",
+      "keywords": [
+        "Search",
+        "Section",
+        "Other",
+        "Seizure",
+        "Purpose",
+        "Conducting"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "23",
+      "summary": "Section 23: Designation of any statutory authority or body to function as Central Authority.—The",
+      "plain_english": "Central Government may, if it considers necessary, by notification, designate any statutory authority or body to exercise the powers and perform the functions of the Central Authority referred to in section 10.",
+      "keywords": [
+        "Authority",
+        "Central",
+        "Statutory",
+        "Body",
+        "Designation",
+        "Function"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "24",
+      "summary": "Section 24: Appeal.—A person aggrieved by any order passed by the Central Authority under sections 20 and",
+      "plain_english": "21 may file an appeal to the National Commission within a period of thirty days from the date of receipt of such order.",
+      "keywords": [
+        "Appeal",
+        "Order",
+        "Person",
+        "Aggrieved",
+        "Passed",
+        "Central"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "25",
+      "summary": "Section 25: Grants by Central Government.—The Central Government may, after due appropriation made",
+      "plain_english": "by Parliament by law in this behalf, make to the Central Authority grants of such sums of money as that Government may think fit for being utilised for the purposes of this Act.",
+      "keywords": [
+        "Central",
+        "Government",
+        "Grants",
+        "Appropriation",
+        "Made",
+        "Parliament"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "26",
+      "summary": "Section 26: Accounts and audit.—(1) The Central Authority shall maintain proper accounts and other",
+      "plain_english": "relevant records and prepare an annual statement of accounts in such form and manner as may be prescribed in consultation with the Comptroller and Auditor-General of India. (2) The accounts of the Central Authority shall be audited by the Comptroller and Auditor-General of India at such intervals as may be specified by him and any expenditure incurred in connection with such audit shall be payable by the Central Authority to the Comptroller and Auditor-General of India. (3) The Comptroller and A",
+      "keywords": [
+        "Accounts",
+        "Comptroller",
+        "Central",
+        "Authority",
+        "Auditor",
+        "General"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "27",
+      "summary": "Section 27: Furnishing of annual reports, etc.—(1) The Central Authority shall prepare once in every year",
+      "plain_english": "in such form, manner and at such time as may be prescribed, an annual report giving full account of its activities during the previous year and such other reports and returns, as may be directed, and copies of such report and returns shall be forwarded to the Central Government. (2) A copy of the annual report received under sub-section (1) shall be laid, as soon as may be after it is received, before each House of Parliament. CONSUMER DISPUTER REDRESSAL COMMISSION",
+      "keywords": [
+        "Annual",
+        "Report",
+        "Reports",
+        "Central",
+        "Year",
+        "Returns"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "28",
+      "summary": "Section 28: Establishment of District Consumer Disputes Redressal Commission.—(1) The State",
+      "plain_english": "Government shall, by notification, establish a District Consumer Disputes Redressal Commission, to be known as the District Commission, in each district of the State: Provided that the State Government may, if it deems fit, establish more than one District Commission in a district. 17 (2) Each District Commission shall consist of— (a) a President; and (b) not less than two and not more than such number of members as may be prescribed, in consultation with the Central Government.",
+      "keywords": [
+        "District",
+        "Commission",
+        "State",
+        "Government",
+        "Than",
+        "Consumer"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "29",
+      "summary": "Section 29: Qualifications, etc., of President and members of District Commission.—The Central",
+      "plain_english": "Government may, by notification, make rules to provide for the qualifications, method of recruitment, procedure for appointment, term of office, resignation and removal of the President and members of the District Commission.",
+      "keywords": [
+        "Qualifications",
+        "President",
+        "Members",
+        "District",
+        "Commission",
+        "Central"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "30",
+      "summary": "Section 30: Salaries, allowances and other terms and conditions of service of President and members of",
+      "plain_english": "District Commission.—The State Government may, by notification, make rules to provide for salaries and allowances and other terms and conditions of service of the President, and members of the District Commission.",
+      "keywords": [
+        "Salaries",
+        "Allowances",
+        "Other",
+        "Terms",
+        "Conditions",
+        "Service"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "31",
+      "summary": "Section 31: Transitional provision.—Any person appointed as President or, as the case may be, a member of",
+      "plain_english": "the District Commission immediately before the commencement of this Act shall hold office as such as President or, as the case may be, as member till the completion of his term for which he has been appointed.",
+      "keywords": [
+        "Appointed",
+        "President",
+        "Case",
+        "Member",
+        "Transitional",
+        "Provision"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "32",
+      "summary": "Section 32: Vacancy in office of member of District Commission.—If, at any time, there is a vacancy in the",
+      "plain_english": "office of the President or member of a District Commission, the State Government may, by notification, direct— (a) any other District Commission specified in that notification to exercise the jurisdiction in respect of that district also; or (b) the President or a member of any other District Commission specified in that notification to exercise the powers and discharge the functions of the President or member of that District Commission also.",
+      "keywords": [
+        "District",
+        "Commission",
+        "Member",
+        "President",
+        "Notification",
+        "Vacancy"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "33",
+      "summary": "Section 33: Officers and other employees of District Commission.—(1) The State Government shall",
+      "plain_english": "provide the District Commission with such officers and other employees as may be required to assist the District Commission in the discharge of its functions. (2) The officers and other employees of the District Commission shall discharge their functions under the general superintendence of the President of the District Commission. (3) The salaries and allowances payable to, and the other terms and conditions of service of, the officers and other employees of the District Commission shall be suc",
+      "keywords": [
+        "District",
+        "Commission",
+        "Other",
+        "Officers",
+        "Employees",
+        "Discharge"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "34",
+      "summary": "Section 34: Jurisdiction of District Commission.—(1) Subject to the other provisions of this Act, the",
+      "plain_english": "District Commission shall have jurisdiction to entertain complaints where the value of the goods or services paid as consideration does not exceed one crore rupees: Provided that where the Central Government deems it necessary so to do, it may prescribe such other value, as it deems fit. (2) A complaint shall be instituted in a District Commission within the local limits of whose jurisdiction,— (a) the opposite party or each of the opposite parties, where there are more than one, at the time of",
+      "keywords": [
+        "Jurisdiction",
+        "District",
+        "Commission",
+        "Where",
+        "Other",
+        "Value"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "35",
+      "summary": "Section 35: Manner in which complaint shall be made.—(1) A complaint, in relation to any goods sold or",
+      "plain_english": "delivered or agreed to be sold or delivered or any service provided or agreed to be provided, may be filed with a District Commission by— (a) the consumer,— (i) to whom such goods are sold or delivered or agreed to be sold or delivered or such service is provided or agreed to be provided; or (ii) who alleges unfair trade practice in respect of such goods or service; (b) any recognised consumer association, whether the consumer to whom such goods are sold or delivered or agreed to be sold or deli",
+      "keywords": [
+        "Sold",
+        "Delivered",
+        "Agreed",
+        "Goods",
+        "Provided",
+        "Service"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "36",
+      "summary": "Section 36: Proceedings before District Commission.—(1) Every proceeding before the District",
+      "plain_english": "Commission shall be conducted by the President of that Commission and atleast one member thereof, sitting together: Provided that where a member, for any reason, is unable to conduct a proceeding till it is completed, the President and the other member shall continue the proceeding from the stage at which it was last heard by the previous member. (2) On receipt of a complaint made under section 35, the District Commission may, by order, admit the complaint for being proceeded with or reject the",
+      "keywords": [
+        "Commission",
+        "Member",
+        "District",
+        "Proceeding",
+        "President",
+        "Complaint"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "37",
+      "summary": "Section 37: Reference to mediation.—(1) At the first hearing of the complaint after its admission, or at any",
+      "plain_english": "later stage, if it appears to the District Commission that there exists elements of a settlement which may be acceptable to the parties, except in such cases as may be prescribed, it may direct the parties to give in writing, within five days, consent to have their dispute settled by mediation in accordance with the provisions of Chapter V. 19 (2) Where the parties agree for settlement by mediation and give their consent in writing, the District Commission shall, within five days of receipt of s",
+      "keywords": [
+        "Mediation",
+        "Parties",
+        "District",
+        "Commission",
+        "Settlement",
+        "Give"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "38",
+      "summary": "Section 38: Procedure on admission of complaint.—(1) The District Commission shall, on admission of a",
+      "plain_english": "complaint, or in respect of cases referred for mediation on failure of settlement by mediation, proceed with such complaint. (2) Where the complaint relates to any goods, the District Commission shall,— (a) refer a copy of the admitted complaint, within twenty-one days from the date of its admission to the opposite party mentioned in the complaint directing him to give his version of the case within a period of thirty days or such extended period not exceeding fifteen days as may be granted by i",
+      "keywords": [
+        "Complaint",
+        "Admission",
+        "Days",
+        "District",
+        "Commission",
+        "Mediation"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "39",
+      "summary": "Section 39: Findings of District Commission.—(1) Where the District Commission is satisfied that the",
+      "plain_english": "goods complained against suffer from any of the defects specified in the complaint or that any of the allegations contained in the complaint about the services or any unfair trade practices, or claims for compensation under product liability are proved, it shall issue an order to the opposite party directing him to do one or more of the following, namely:— (a) to remove the defect pointed out by the appropriate laboratory from the goods in question; (b) to replace the goods with new goods of sim",
+      "keywords": [
+        "Goods",
+        "District",
+        "Commission",
+        "Complaint",
+        "Findings",
+        "Where"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "40",
+      "summary": "Section 40: Review by District Commission in certain cases.—The District Commission shall have the",
+      "plain_english": "power to review any of the order passed by it if there is an error apparent on the face of the record, either of its own motion or on an application made by any of the parties within thirty days of such order.",
+      "keywords": [
+        "Review",
+        "District",
+        "Commission",
+        "Order",
+        "Certain",
+        "Cases"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "41",
+      "summary": "Section 41: Appeal against order of District Commission.—Any person aggrieved by an order made by the",
+      "plain_english": "District Commission may prefer an appeal against such order to the State Commission on the grounds of facts or law within a period of forty-five days from the date of the order, in such form and manner, as may be prescribed: Provided that the State Commission may entertain an appeal after the expiry of the said period of forty-five days, if it is satisfied that there was sufficient cause for not filing it within that period: Provided further that no appeal by a person, who is required to pay any",
+      "keywords": [
+        "Appeal",
+        "Order",
+        "Commission",
+        "Period",
+        "Against",
+        "District"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "42",
+      "summary": "Section 42: Establishment of State Consumer Disputes Redressal Commission.—(1) The State",
+      "plain_english": "Government shall, by notification, establish a State Consumer Disputes Redressal Commission, to be known as the State Commission, in the State. (2) The State Commission shall ordinarily function at the State capital and perform its functions at such other places as the State Government may in consultation with the State Commission notify in the Official Gazette: Provided that the State Government may, by notification, establish regional benches of the State Commission, at such places, as it deem",
+      "keywords": [
+        "State",
+        "Commission",
+        "Government",
+        "Consumer",
+        "Disputes",
+        "Redressal"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "43",
+      "summary": "Section 43: Qualifications, etc., of President and members of State Commission.—The Central",
+      "plain_english": "Government may, by notification, make rules to provide for the qualification for appointment, method of recruitment, procedure of appointment, term of office, resignation and removal of the President and members of the State Commission.",
+      "keywords": [
+        "President",
+        "Members",
+        "State",
+        "Commission",
+        "Appointment",
+        "Qualifications"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "44",
+      "summary": "Section 44: Salaries, allowances and other terms and conditions of service of President and members of",
+      "plain_english": "State Commission.—The State Government may, by notification, make rules to provide for salaries and allowances and other terms and conditions of service of the President and members of the State Commission.",
+      "keywords": [
+        "State",
+        "Salaries",
+        "Allowances",
+        "Other",
+        "Terms",
+        "Conditions"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "45",
+      "summary": "Section 45: Transitional provision.—Any person appointed as President or, as the case may be, a member of",
+      "plain_english": "the State Commission immediately before the commencement of this Act shall hold office as such, as President or member, as the case may be, till the completion of his term.",
+      "keywords": [
+        "President",
+        "Case",
+        "Member",
+        "Transitional",
+        "Provision",
+        "Person"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "46",
+      "summary": "Section 46: Officers and employees of State Commission.—(1) The State Government shall determine the",
+      "plain_english": "nature and categories of the officers and other employees required to assist the State Commission in the discharge of its functions and provide the Commission with such officers and other employees as it may think fit. (2) The officers and other employees of the State Commission shall discharge their functions under the general superintendence of the President. 23 (3) The salaries and allowances payable to and the other terms and conditions of service of, the officers and other employees of the",
+      "keywords": [
+        "Officers",
+        "Employees",
+        "Other",
+        "State",
+        "Commission",
+        "Discharge"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "47",
+      "summary": "Section 47: Jurisdiction of State Commission.—(1) Subject to the other provisions of this Act, the State",
+      "plain_english": "Commission shall have jurisdiction— (a) to entertain— (i) complaints where the value of the goods or services paid as consideration, exceeds rupees one crore, but does not exceed rupees ten crore: Provided that where the Central Government deems it necessary so to do, it may prescribe such other value, as it deems fit; (ii) complaints against unfair contracts, where the value of goods or services paid as consideration does not exceed ten crore rupees; (iii) appeals against the orders of any Dist",
+      "keywords": [
+        "Where",
+        "Value",
+        "Rupees",
+        "Crore",
+        "Jurisdiction",
+        "State"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "48",
+      "summary": "Section 48: Transfer of cases.—On the application of the complainant or of its own motion, the State",
+      "plain_english": "Commission may, at any stage of the proceeding, transfer any complaint pending before a District Commission to another District Commission within the State if the interest of justice so requires.",
+      "keywords": [
+        "Commission",
+        "Transfer",
+        "State",
+        "District",
+        "Cases",
+        "Application"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "49",
+      "summary": "Section 49: Procedure applicable to State Commission.—(1) The provisions relating to complaints under",
+      "plain_english": "sections 35, 36, 37, 38 and 39 shall, with such modifications as may be necessary, be applicable to the disposal of complaints by the State Commission. 24 (2) Without prejudice to the provisions of sub-section (1), the State Commission may also declare any terms of contract, which is unfair to any consumer, to be null and void.",
+      "keywords": [
+        "State",
+        "Commission",
+        "Applicable",
+        "Provisions",
+        "Complaints",
+        "Procedure"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "50",
+      "summary": "Section 50: Review by State Commission in certain cases.—The State Commission shall have the power to",
+      "plain_english": "review any of the order passed by it if there is an error apparent on the face of the record, either of its own motion or on an application made by any of the parties within thirty days of such order.",
+      "keywords": [
+        "Review",
+        "State",
+        "Commission",
+        "Order",
+        "Certain",
+        "Cases"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "51",
+      "summary": "Section 51: Appeal to National Commission.—(1) Any person aggrieved by an order made by the State",
+      "plain_english": "Commission in exercise of its powers conferred by sub-clause (i) or (ii) of clause (a) of sub-section (1) of section 47 may prefer an appeal against such order to the National Commission within a period of thirty days from the date of the order in such form and manner as may be prescribed: Provided that the National Commission shall not entertain the appeal after the expiry of the said period of thirty days unless it is satisfied that there was sufficient cause for not filing it within that peri",
+      "keywords": [
+        "Commission",
+        "Appeal",
+        "National",
+        "Order",
+        "Clause",
+        "Section"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "52",
+      "summary": "Section 52: Hearing of appeal.—An appeal filed before the State Commission or the National Commission",
+      "plain_english": "as the case may be, shall be heard as expeditiously as possible and every endeavour shall be made to dispose of the appeal within a period of ninety days from the date of its admission: Provided that no adjournment shall ordinarily be granted by the State Commission or the National Commission, as the case may be, unless sufficient cause is shown and the reasons for grant of adjournment have been recorded in writing by such Commission: Provided further that the State Commission or the National Co",
+      "keywords": [
+        "Commission",
+        "Appeal",
+        "State",
+        "National",
+        "Case",
+        "Provided"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "53",
+      "summary": "Section 53: Establishment of National Consumer Disputes Redressal Commission.—(1) The Central",
+      "plain_english": "Government shall, by notification, establish a National Consumer Disputes Redressal Commission, to be known as the National Commission. (2) The National Commission shall ordinarily function at the National Capital Region and perform its functions at such other places as the Central Government may in consultation with the National Commission notify in the Official Gazette: Provided that the Central Government may, by notification, establish regional Benches of the National Commission, at such pla",
+      "keywords": [
+        "National",
+        "Commission",
+        "Central",
+        "Government",
+        "Consumer",
+        "Disputes"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "54",
+      "summary": "Section 54: Composition of National Commission.—The National Commission shall consist of—",
+      "plain_english": "25 (a) a President; and (b) not less than four and not more than such number of members as may be prescribed.",
+      "keywords": [
+        "National",
+        "Commission",
+        "Than",
+        "Composition",
+        "Consist",
+        "President"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "55",
+      "summary": "Section 55: Qualifications, etc., of President and members of National Commission.—(1) The Central",
+      "plain_english": "Government may, by notification, make rules to provide for qualifications, appointment, term of office, salaries and allowances, resignation, removal and other terms and conditions of service of the President and members of the National Commission: Provided that the President and members of the National Commission shall hold office for such term as specified in the rules made by the Central Government but not exceeding five years from the date on which he enters upon his office and shall be elig",
+      "keywords": [
+        "President",
+        "Members",
+        "National",
+        "Commission",
+        "Office",
+        "Qualifications"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "56",
+      "summary": "Section 56: Transitional provision.—The President and every other member appointed immediately before",
+      "plain_english": "the commencement of section 177 of the Finance Act, 2017 (7 of 2017) shall continue to be governed by the provisions of the Consumer Protection Act, 1986 (68 of 1986) and the rules made there under as if this Act had not come into force.",
+      "keywords": [
+        "Transitional",
+        "Provision",
+        "President",
+        "Other",
+        "Member",
+        "Appointed"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "57",
+      "summary": "Section 57: Other officers and employees of National Commission.—(1) The Central Government shall",
+      "plain_english": "provide, in consultation with the President of the National Commission, such number of officers and other employees to assist the National Commission in the discharge of its functions as it may think fit. (2) The officers and other employees of the National Commission shall discharge their functions under the general superintendence of the President of the National Commission. (3) The salaries and allowances payable to, and the other terms and conditions of service of, the officers and other emp",
+      "keywords": [
+        "Other",
+        "National",
+        "Commission",
+        "Officers",
+        "Employees",
+        "President"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "58",
+      "summary": "Section 58: Jurisdiction of National Commission.—(1) Subject to the other provisions of this Act, the",
+      "plain_english": "National Commission shall have jurisdiction— (a) to entertain— (i) complaints where the value of the goods or services paid as consideration exceeds rupees ten crore: Provided that where the Central Government deems it necessary so to do, it may prescribe such other value, as it deems fit; (ii) complaints against unfair contracts, where the value of goods or services paid as consideration exceeds ten crore rupees; (iii) appeals against the orders of any State Commission; (iv) appeals against the",
+      "keywords": [
+        "Commission",
+        "Where",
+        "Value",
+        "Against",
+        "Jurisdiction",
+        "National"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "59",
+      "summary": "Section 59: Procedure applicable to National Commission.—(1) The provisions relating to complaints",
+      "plain_english": "under sections 35, 36, 37, 38 and 39 shall, with such modifications as may be considered necessary, be applicable to the disposal of complaints by the National Commission. (2) Without prejudice to sub-section (1), the National Commission may also declare any terms of contract, which is unfair to any consumer to be null and void.",
+      "keywords": [
+        "National",
+        "Commission",
+        "Applicable",
+        "Complaints",
+        "Procedure",
+        "Provisions"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "60",
+      "summary": "Section 60: Review by National Commission in certain cases.—The National Commission shall have the",
+      "plain_english": "power to review any of the order passed by it if there is an error apparent on the face of the record, either of its own motion or on an application made by any of the parties within thirty days of such order.",
+      "keywords": [
+        "Review",
+        "National",
+        "Commission",
+        "Order",
+        "Certain",
+        "Cases"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "61",
+      "summary": "Section 61: Power to set aside ex parte orders.—Where an order is passed by the National Commission ex",
+      "plain_english": "parte, the aggrieved party may make an application to the Commission for setting aside such order.",
+      "keywords": [
+        "Aside",
+        "Parte",
+        "Order",
+        "Commission",
+        "Power",
+        "Orders"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "62",
+      "summary": "Section 62: Transfer of cases.—On the application of the complainant or of its own motion, the National",
+      "plain_english": "Commission may, at any stage of the proceeding, in the interest of justice, transfer any complaint pending before the District Commission of one State to a District Commission of another State or before one State Commission to another State Commission.",
+      "keywords": [
+        "Commission",
+        "State",
+        "Transfer",
+        "District",
+        "Another",
+        "Cases"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "63",
+      "summary": "Section 63: Vacancy in office of President of National Commission.—When the office of President of the",
+      "plain_english": "National Commission is vacant or a person occupying such office is, by reason of absence or otherwise, unable to perform the duties of his office, these shall be performed by the senior-most member of the National Commission: Provided that where a retired Judge of a High Court or a person who has been a Judicial Member is a member of the National Commission, such member or where the number of such members is more than one, the senior-most person amongst such members, shall preside over the Natio",
+      "keywords": [
+        "Office",
+        "National",
+        "Commission",
+        "Member",
+        "Person",
+        "President"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "64",
+      "summary": "Section 64: Vacancies or defects in appointment not to invalidate orders.—No act or proceeding of the",
+      "plain_english": "District Commission, the State Commission or the National Commission shall be invalid by reason only of the existence of any vacancy amongst its members or any defect in the constitution thereof.",
+      "keywords": [
+        "Commission",
+        "Vacancies",
+        "Defects",
+        "Appointment",
+        "Invalidate",
+        "Orders"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "65",
+      "summary": "Section 65: Service of notice, etc.—(1) All notices, required by this Act to be served, shall be served by",
+      "plain_english": "delivering or transmitting a copy thereof by registered post acknowledgment due addressed to opposite party against whom complaint is made or to the complainant by speed post or by such courier service, approved by the District Commission, the State Commission or the National Commission, as the case may be, or by any other mode of transmission of documents including electronic means. (2) Without prejudice to the provisions contained in sub-section (1), the notice required by this Act may be serv",
+      "keywords": [
+        "Commission",
+        "Service",
+        "Notice",
+        "Required",
+        "Served",
+        "Post"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "66",
+      "summary": "Section 66: Experts to assist National Commission or State Commission.—Where the National",
+      "plain_english": "Commission or the State Commission, as the case may be, on an application by a complainant or otherwise, is of the opinion that it involves the larger interest of consumers, it may direct any individual or organisation or expert to assist the National Commission or the State Commission, as the case may be.",
+      "keywords": [
+        "Commission",
+        "National",
+        "State",
+        "Assist",
+        "Case",
+        "Experts"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "67",
+      "summary": "Section 67: Appeal against order of National Commission.—Any person, aggrieved by an order made by",
+      "plain_english": "the National Commission in exercise of its powers conferred by sub-clause (i) or (ii) of clause (a) of sub-section (1) of section 58, may prefer an appeal against such order to the Supreme Court within a period of thirty days from the date of the order: Provided that the Supreme Court may entertain an appeal after the expiry of the said period of thirty days if it is satisfied that there was sufficient cause for not filing it within that period: Provided further that no appeal by a person who is",
+      "keywords": [
+        "Appeal",
+        "Order",
+        "Period",
+        "Against",
+        "National",
+        "Commission"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "68",
+      "summary": "Section 68: Finality of orders.—Every order of a District Commission or the State Commission or the",
+      "plain_english": "National Commission, as the case may be, shall, if no appeal has been preferred against such order under the provisions of this Act, be final.",
+      "keywords": [
+        "Commission",
+        "Order",
+        "Finality",
+        "Orders",
+        "District",
+        "State"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "69",
+      "summary": "Section 69: Limitation period.—(1) The District Commission, the State Commission or the National",
+      "plain_english": "Commission shall not admit a complaint unless it is filed within two years from the date on which the cause of action has arisen. (2) Notwithstanding anything contained in sub-section (1), a complaint may be entertained after the period specified in sub-section (1), if the complainant satisfies the District Commission, the State Commission or the National Commission, as the case may be, that he had sufficient cause for not filing the complaint within such period: Provided that no such complaint",
+      "keywords": [
+        "Commission",
+        "Complaint",
+        "Period",
+        "District",
+        "State",
+        "National"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "70",
+      "summary": "Section 70: Administrative control.—(1) The National Commission shall have the authority to lay down",
+      "plain_english": "such adequate standards in consultation with the Central Government from time to time, for better protection of the interests of consumers and for that purpose, shall have administrative control over all the State Commissions in the following matters, namely:— 28 (a) monitoring performance of the State Commissions in terms of their disposal by calling for periodical returns regarding the institution, disposal and pendency of cases; (b) investigating into any allegations against the President and",
+      "keywords": [
+        "Administrative",
+        "Control",
+        "Have",
+        "Time",
+        "State",
+        "Commissions"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "71",
+      "summary": "Section 71: Enforcement of orders of District Commission, State Commission and National",
+      "plain_english": "Commission.—Every order made by a District Commission, State Commission or the National Commission shall be enforced by it in the same manner as if it were a decree made by a Court in a suit before it and the provisions of Order XXI of the First Schedule to the Code of Civil Procedure, 1908 (5 of 1908) shall, as far as may be, applicable, subject to the modification that every reference therein to the decree shall be construed as reference to the order made under this Act.",
+      "keywords": [
+        "Commission",
+        "Order",
+        "Made",
+        "District",
+        "State",
+        "National"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "72",
+      "summary": "Section 72: Penalty for non-compliance of order.—(1) Whoever fails to comply with any order made by the",
+      "plain_english": "District Commission or the State Commission or the National Commission, as the case may be, shall be punishable with imprisonment for a term which shall not be less than one month, but which may extend to three years, or with fine, which shall not be less than twenty-five thousand rupees, but which may extend to one lakh rupees, or with both. (2) Notwithstanding anything contained in the Code of Criminal Procedure, 1973 (2 of 1974), the District Commission, the State Commission or the National C",
+      "keywords": [
+        "Commission",
+        "Which",
+        "Order",
+        "District",
+        "State",
+        "National"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "73",
+      "summary": "Section 73: Appeal against order passed under section 72.—(1) Notwithstanding anything contained in the",
+      "plain_english": "Code of Criminal Procedure, 1973 (2 of 1974), where an order is passed under sub-section (1) of section 72, an appeal shall lie, both on facts and on law from— (a) the order made by the District Commission to the State Commission; (b) the order made by the State Commission to the National Commission; and (c) the order made by the National Commission to the Supreme Court. 29 (2) Except as provided in sub-section (1), no appeal shall lie before any court, from any order of a District Commission or",
+      "keywords": [
+        "Order",
+        "Commission",
+        "Section",
+        "Appeal",
+        "Made",
+        "Passed"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "74",
+      "summary": "Section 74: Establishment of consumer mediation cell.—(1) The State Government shall establish, by",
+      "plain_english": "notification, a consumer mediation cell to be attached to each of the District Commissions and the State Commissions of that State. (2) The Central Government shall establish, by notification, a consumer mediation cell to be attached to the National Commission and each of the regional Benches. (3) A consumer mediation cell shall consist of such persons as may be prescribed. (4) Every consumer mediation cell shall maintain— (a) a list of empanelled mediators; (b) a list of cases handled by the ce",
+      "keywords": [
+        "Consumer",
+        "Mediation",
+        "Cell",
+        "State",
+        "Government",
+        "Establish"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "75",
+      "summary": "Section 75: Empanelment of mediators.—(1) For the purpose of mediation, the National Commission or the",
+      "plain_english": "State Commission or the District Commission, as the case may be, shall prepare a panel of the mediators to be maintained by the consumer mediation cell attached to it, on the recommendation of a selection committee consisting of the President and a member of that Commission. (2) The qualifications and experience required for empanelment as mediator, the procedure for empanelment, the manner of training empanelled mediators, the fee payable to empanelled mediator, the terms and conditions for emp",
+      "keywords": [
+        "Commission",
+        "Empanelment",
+        "Mediators",
+        "Mediation",
+        "Mediator",
+        "Empanelled"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "76",
+      "summary": "Section 76: Nomination of mediators from panel.—The District Commission, the State Commission or the",
+      "plain_english": "National Commission shall, while nominating any person from the panel of mediators referred to in section 75, consider his suitability for resolving the consumer dispute involved.",
+      "keywords": [
+        "Commission",
+        "Mediators",
+        "Panel",
+        "Nomination",
+        "District",
+        "State"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "77",
+      "summary": "Section 77: Duty of mediator to disclose certain facts.—It shall be the duty of the mediator to disclose—",
+      "plain_english": "(a) any personal, professional or financial interest in the outcome of the consumer dispute; (b) the circumstances which may give rise to a justifiable doubt as to his independence or impartiality; and (c) such other facts as may be specified by regulations.",
+      "keywords": [
+        "Duty",
+        "Mediator",
+        "Disclose",
+        "Facts",
+        "Certain",
+        "Personal"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "78",
+      "summary": "Section 78: Replacement of mediator in certain cases.—Where the District Commission or the State",
+      "plain_english": "Commission or the National Commission, as the case may be, is satisfied, on the information furnished by 30 the mediator or on the information received from any other person including parties to the complaint and after hearing the mediator, it shall replace such mediator by another mediator.",
+      "keywords": [
+        "Mediator",
+        "Commission",
+        "Information",
+        "Replacement",
+        "Certain",
+        "Cases"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "79",
+      "summary": "Section 79: Procedure for mediation.—(1) The mediation shall be held in the consumer mediation cell",
+      "plain_english": "attached to the District Commission, the State Commission or the National Commission, as the case may be. (2) Where a consumer dispute is referred for mediation by the District Commission or the State Commission or the National Commission, as the case may be, the mediator nominated by such Commission shall have regard to the rights and obligations of the parties, the usages of trade, if any, the circumstances giving rise to the consumer dispute and such other relevant factors, as he may deem nec",
+      "keywords": [
+        "Commission",
+        "Mediation",
+        "Consumer",
+        "District",
+        "State",
+        "National"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "80",
+      "summary": "Section 80: Settlement through mediation.—(1) Pursuant to mediation, if an agreement is reached between",
+      "plain_english": "the parties with respect to all of the issues involved in the consumer dispute or with respect to only some of the issues, the terms of such agreement shall be reduced to writing accordingly, and signed by the parties to such dispute or their authorised representatives. (2) The mediator shall prepare a settlement report of the settlement and forward the signed agreement along with such report to the concerned Commission. (3) Where no agreement is reached between the parties within the specified",
+      "keywords": [
+        "Agreement",
+        "Settlement",
+        "Parties",
+        "Mediation",
+        "Reached",
+        "Between"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "81",
+      "summary": "Section 81: Recording settlement and passing of order.—(1) The District Commission or the State",
+      "plain_english": "Commission or the National Commission, as the case may be, shall, within seven days of the receipt of the settlement report, pass suitable order recording such settlement of consumer dispute and dispose of the matter accordingly. (2) Where the consumer dispute is settled only in part, the District Commission or the State Commission or the National Commission, as the case may be, shall record settlement of the issues which have been so settled and continue to hear other issues involved in such co",
+      "keywords": [
+        "Commission",
+        "Settlement",
+        "Recording",
+        "Order",
+        "District",
+        "State"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "82",
+      "summary": "Section 82: Application of Chapter.—This Chapter shall apply to every claim for compensation under a",
+      "plain_english": "product liability action by a complainant for any harm caused by a defective product manufactured by a product manufacturer or serviced by a product service provider or sold by a product seller.",
+      "keywords": [
+        "Product",
+        "Chapter",
+        "Application",
+        "Apply",
+        "Claim",
+        "Compensation"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "83",
+      "summary": "Section 83: Product liability action.—A product liability action may be brought by a complainant against a",
+      "plain_english": "product manufacturer or a product service provider or a product seller, as the case may be, for any harm caused to him on account of a defective product.",
+      "keywords": [
+        "Product",
+        "Liability",
+        "Action",
+        "Brought",
+        "Complainant",
+        "Against"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "84",
+      "summary": "Section 84: Liability of product manufacturer.—(1) A product manufacturer shall be liable in a product",
+      "plain_english": "liability action, if— (a) the product contains a manufacturing defect; or (b) the product is defective in design; or (c) there is a deviation from manufacturing specifications; or (d) the product does not conform to the express warranty; or 31 (e) the product fails to contain adequate instructions of correct usage to prevent any harm or any warning regarding improper or incorrect usage. (2) A product manufacturer shall be liable in a product liability action even if he proves that he was not neg",
+      "keywords": [
+        "Product",
+        "Liability",
+        "Manufacturer",
+        "Liable",
+        "Action",
+        "Manufacturing"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "85",
+      "summary": "Section 85: Liability of product service provider.—A product service provider shall be liable in a product",
+      "plain_english": "liability action, if— (a) the service provided by him was faulty or imperfect or deficient or inadequate in quality, nature or manner of performance which is required to be provided by or under any law for the time being in force, or pursuant to any contract or otherwise; or (b) there was an act of omission or commission or negligence or conscious withholding any information which caused harm; or (c) the service provider did not issue adequate instructions or warnings to prevent any harm; or (d)",
+      "keywords": [
+        "Service",
+        "Product",
+        "Provider",
+        "Liability",
+        "Provided",
+        "Which"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "86",
+      "summary": "Section 86: Liability of product sellers.—A product seller who is not a product manufacturer shall be liable",
+      "plain_english": "in a product liability action, if— (a) he has exercised substantial control over the designing, testing, manufacturing, packaging or labelling of a product that caused harm; or (b) he has altered or modified the product and such alteration or modification was the substantial factor in causing the harm; or (c) he has made an express warranty of a product independent of any express warranty made by a manufacturer and such product failed to conform to the express warranty made by the product seller",
+      "keywords": [
+        "Product",
+        "Made",
+        "Express",
+        "Warranty",
+        "Liability",
+        "Seller"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "87",
+      "summary": "Section 87: Exceptions to product liability action.—(1) A product liability action cannot be brought against",
+      "plain_english": "the product seller if, at the time of harm, the product was misused, altered, or modified. (2) In any product liability action based on the failure to provide adequate warnings or instructions, the product manufacturer shall not be liable, if— (a) the product was purchased by an employer for use at the workplace and the product manufacturer had provided warnings or instructions to such employer; (b) the product was sold as a component or material to be used in another product and necessary warni",
+      "keywords": [
+        "Product",
+        "Liability",
+        "Action",
+        "Warnings",
+        "Instructions",
+        "Manufacturer"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "88",
+      "summary": "Section 88: Penalty for non-compliance of direction of Central Authority.—Whoever, fails to comply",
+      "plain_english": "with any direction of the Central Authority under sections 20 and 21, shall be punished with imprisonment for a term which may extend to six months or with fine which may extend to twenty lakh rupees, or with both.",
+      "keywords": [
+        "Direction",
+        "Central",
+        "Authority",
+        "Which",
+        "Extend",
+        "Penalty"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "89",
+      "summary": "Section 89: Punishment for false or misleading advertisement.—Any manufacturer or service provider",
+      "plain_english": "who causes a false or misleading advertisement to be made which is prejudicial to the interest of consumers shall be punished with imprisonment for a term which may extend to two years and with fine which may extend to ten lakh rupees; and for every subsequent offence, be punished with imprisonment for a term which may extend to five years and with fine which may extend to fifty lakh rupees.",
+      "keywords": [
+        "Which",
+        "Extend",
+        "False",
+        "Misleading",
+        "Advertisement",
+        "Punished"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "90",
+      "summary": "Section 90: Punishment for manufacturing for sale or storing, selling or distributing or importing",
+      "plain_english": "products containing adulterant.—(1) Whoever, by himself or by any other person on his behalf, manufactures for sale or stores or sells or distributes or imports any product containing an adulterant shall be punished, if such act— (a) does not result in any injury to the consumer, with imprisonment for a term which may extend to six months and with fine which may extend to one lakh rupees; (b) causing injury not amounting to grievous hurt to the consumer, with imprisonment for a term which may ex",
+      "keywords": [
+        "Which",
+        "Sale",
+        "Containing",
+        "Adulterant",
+        "Injury",
+        "Consumer"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "91",
+      "summary": "Section 91: Punishment for manufacturing for sale or for storing or selling or distributing or importing",
+      "plain_english": "spurious goods.—(1) Whoever, by himself or by any other person on his behalf, manufactures for sale or stores or sells or distributes or imports any spurious goods shall be punished, if such act— (a) causing injury not amounting to grievous hurt to the consumer, with imprisonment for a term which may extend to one year and with fine which may extend to three lakh rupees; (b) causing injury resulting in grievous hurt to the consumer, with imprisonment for a term which may extend to seven years an",
+      "keywords": [
+        "Which",
+        "Extend",
+        "Sale",
+        "Spurious",
+        "Goods",
+        "Causing"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "92",
+      "summary": "Section 92: Cognizance of offence by court.—No cognizance shall be taken by a competent court of any",
+      "plain_english": "offence under sections 88 and 89 except on a complaint filed by the Central Authority or any officer authorised by it in this behalf.",
+      "keywords": [
+        "Cognizance",
+        "Offence",
+        "Court",
+        "Taken",
+        "Competent",
+        "Sections"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "93",
+      "summary": "Section 93: Vexatious search.—The Director General or any other officer, exercising powers under section",
+      "plain_english": "22, who knows that there are no reasonable grounds for so doing, and yet— (a) searches, or causes to be searched any premises; or (b) seizes any record, register or other document or article, shall, for every such offence, be punished with imprisonment for a term which may extend to one year, or with fine which may extend to ten thousand rupees or with both. MISCELLANEOUS",
+      "keywords": [
+        "Other",
+        "Which",
+        "Extend",
+        "Vexatious",
+        "Search",
+        "Director"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "94",
+      "summary": "Section 94: Measures to prevent unfair trade practices in e-commerce, direct selling, etc.—For the",
+      "plain_english": "purposes of preventing unfair trade practices in e-commerce, direct selling and also to protect the interest and rights of consumers, the Central Government may take such measures in the manner as may be prescribed.",
+      "keywords": [
+        "Measures",
+        "Unfair",
+        "Trade",
+        "Practices",
+        "Commerce",
+        "Direct"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "95",
+      "summary": "Section 95: Presidents, members, Chief Commissioner, Commissioner and certain officers to be public",
+      "plain_english": "servants.—The Presidents and members of the District Commission, the State Commission and the National Commission, and officers and other employees thereof, the Chief Commissioner and the Commissioner of the Central Authority, the Director General, the Additional Director General, the Director, the Joint Director, the Deputy Director and the Assistant Director and all other officers and employees of the Central Authority and other persons performing any duty under this Act, while acting or purpo",
+      "keywords": [
+        "Director",
+        "Commissioner",
+        "Officers",
+        "Commission",
+        "Other",
+        "Presidents"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "96",
+      "summary": "Section 96: Compounding of offences.—(1) Any offence punishable under sections 88 and 89, may, either",
+      "plain_english": "before or after the institution of the prosecution, be compounded, on payment of such amount as may be prescribed: Provided that no compounding of such offence shall be made without the leave of the court before which a complaint has been filed under section 92: Provided further that such sum shall not, in any case, exceed the maximum amount of the fine, which may be imposed under this Act for the offence so compounded. (2) The Central Authority or any officer as may be specially authorised by h",
+      "keywords": [
+        "Offence",
+        "Compounding",
+        "Compounded",
+        "Amount",
+        "Provided",
+        "Which"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "97",
+      "summary": "Section 97: Manner of crediting penalty.—The penalty collected under section 21 and the amount collected",
+      "plain_english": "under section 96 shall be credited to such fund as may be prescribed.",
+      "keywords": [
+        "Penalty",
+        "Collected",
+        "Section",
+        "Manner",
+        "Crediting",
+        "Amount"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "98",
+      "summary": "Section 98: Protection of action taken in good faith.—No suit, prosecution or other legal proceeding shall",
+      "plain_english": "lie against the Presidents and members of the District Commission, the State Commission and the National Commission, the Chief Commissioner, the Commissioner, any officer or employee and other person performing any duty under this Act, for any act which is in good faith done or intended to be done in pursuance of this Act or under any rule or order made thereunder.",
+      "keywords": [
+        "Commission",
+        "Good",
+        "Faith",
+        "Other",
+        "Commissioner",
+        "Done"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "99",
+      "summary": "Section 99: Power to give directions by Central Government.—(1) Without prejudice to the foregoing",
+      "plain_english": "provisions of this Act, the Central Authority, shall, in exercise of its powers or the performance of its functions under this Act, be bound by such directions on questions of policy, as the Central Government may give in writing to it from time to time: Provided that the Central Authority shall, as far as practicable, be given an opportunity to express its views before any direction is given under this sub-section. (2) The decision of the Central Government whether a question is one of policy o",
+      "keywords": [
+        "Central",
+        "Government",
+        "Give",
+        "Directions",
+        "Authority",
+        "Policy"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "100",
+      "summary": "Section 100: Act not in derogation of any other law.—The provisions of this Act shall be in addition to and",
+      "plain_english": "not in derogation of the provisions of any other law for the time being in force.",
+      "keywords": [
+        "Derogation",
+        "Other",
+        "Provisions",
+        "Addition",
+        "Time",
+        "Being"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "101",
+      "summary": "Section 101: Power of Central Government to make rules.—(1) The Central Government may, by",
+      "plain_english": "notification, make rules for carrying out any of the provisions contained in this Act. (2) Without prejudice to the generality of the foregoing power, such rules may provide for, — (a) the other class or classes of persons including public utility entities under clause (19) of section 2; (b) the contest, lottery, game of chance or skill which are to be exempted under item (b) of sub- clause (iii) of clause (47) of section 2; (c) the manner of issuing bill or cash memo or receipt for goods sold o",
+      "keywords": [
+        "Rules",
+        "Clause",
+        "Power",
+        "Central",
+        "Government",
+        "Make"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "102",
+      "summary": "Section 102: Power of State Government to make rules.—(1) The State Governments may, by",
+      "plain_english": "notification, make rules for carrying out the provisions of this Act: Provided that the Central Government may, frame model rules in respect of all or any of the matters with respect to which the State Government may make rules under this section, and where any such model rules have been framed in respect of any such matter, they shall apply to the State until the rules in respect of that matter is made by the State Government and while making any such rules, so far as is practicable, they shall",
+      "keywords": [
+        "Rules",
+        "State",
+        "Government",
+        "Respect",
+        "Make",
+        "Model"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "103",
+      "summary": "Section 103: Power of National Commission to make regulations.—(1) The National Commission may",
+      "plain_english": "with the previous approval of the Central Government, by notification, make regulations not inconsistent with this Act to provide for all matters for which provision is necessary or expedient for the purpose of giving effect to the provisions of this Act. (2) In particular, and without prejudice to the generality of the foregoing power, such regulations may make provisions for— (a) the costs for adjournment to be imposed by the District Commission under the second proviso to sub-section (7) of s",
+      "keywords": [
+        "Commission",
+        "Make",
+        "Regulations",
+        "Power",
+        "National",
+        "Provisions"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "104",
+      "summary": "Section 104: Power of Central Authority to make regulations.—(1) The Central Authority may, with the",
+      "plain_english": "previous approval of the Central Government, by notification, make regulations not inconsistent with this Act, for the purpose of giving effect to the provisions of this Act. (2) In particular, and without prejudice to the generality of the foregoing power, such regulations may provide for all or any of the following matters, namely:— (a) the procedure for engaging experts and professionals and the number of such experts and professionals under sub-section (3) of section 13; (b) the procedure fo",
+      "keywords": [
+        "Central",
+        "Regulations",
+        "Power",
+        "Authority",
+        "Make",
+        "Procedure"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "105",
+      "summary": "Section 105: Rules and regulations to be laid before each House of Parliament.—(1) Every rule and every",
+      "plain_english": "regulation made under this Act shall be laid, as soon as may be after it is made, before each House of Parliament, while it is in session, for a total period of thirty days which may be comprised in one session or in two or more successive sessions, and if, before the expiry of the session immediately following the session or the successive sessions aforesaid, both Houses agree in making any modification in the rule or regulation or both Houses agree that the rule or regulation shall thereafter",
+      "keywords": [
+        "Session",
+        "Rule",
+        "Regulation",
+        "Laid",
+        "Each",
+        "House"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "106",
+      "summary": "Section 106: Power to Remove Difficulties.—If any difficulty arises in giving effect to the provisions of this",
+      "plain_english": "Act, the Central Government may, by order in the Official Gazette, make such provisions not inconsistent with the provisions of this Act as appear to it to be necessary or expedient for removing the difficulty: Provided that no such order shall be made after the expiry of a period of two years from the commencement of this Act.",
+      "keywords": [
+        "Provisions",
+        "Difficulty",
+        "Order",
+        "Power",
+        "Remove",
+        "Difficulties"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "107",
+      "summary": "Section 107: Repeal and savings.—(1) The Consumer Protection Act, 1986 (68 of 1986) is hereby repealed",
+      "plain_english": "(2) Notwithstanding such repeal, anything done or any action taken or purported to have been done or taken under the Act hereby repealed shall, in so far as it is not inconsistent with the provisions of this Act, be deemed to have been done or taken under the corresponding provisions of this Act. (3) The mention of particular matters in sub-section (2) shall not be held to prejudice or affect the general application of section 6 of the General Clauses Act, 1897 (10 of 1897) with regard to the ef",
+      "keywords": [
+        "Done",
+        "Taken",
+        "Repeal",
+        "Hereby",
+        "Repealed",
+        "Have"
+      ],
+      "legal_topics": [
+        "Consumer Law"
+      ],
+      "related": []
+    }
+  ]
+}

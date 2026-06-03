@@ -1,0 +1,3819 @@
+{
+  "law_id": "labour_employment",
+  "domain_field": null,
+  "curated": [
+    {
+      "provision_number": "2",
+      "summary": "Section 2: List of Labour laws in India 9",
+      "plain_english": "Section 2: List of Labour laws in India 9",
+      "keywords": [
+        "List",
+        "Labour",
+        "Laws",
+        "India"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "3",
+      "summary": "Section 3: Classification of labour laws in India 27",
+      "plain_english": "Section 3: Classification of labour laws in India 27",
+      "keywords": [
+        "Classification",
+        "Labour",
+        "Laws",
+        "India"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "4",
+      "summary": "Section 4: Overview of important labour laws in India",
+      "plain_english": "a) Apprentices Act, 1961 29 b) Employees State Insurance Act, 1948 36 c) Employees Provident Fund And Misc. Provisions Act, 1952 51 d) The Employment Exchanges (Compulsory Notification of 55",
+      "keywords": [
+        "Employees",
+        "Overview",
+        "Important",
+        "Labour",
+        "Laws",
+        "India"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "ACT-HEADER",
+      "summary": "Section ACT-HEADER: Vacancies) Act, 1959 (Act header)",
+      "plain_english": "Section ACT-HEADER: Vacancies) Act, 1959 (Act header)",
+      "keywords": [
+        "Vacancies",
+        "Header"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "ACT-HEADER",
+      "summary": "Section ACT-HEADER: Registers By Certain Establishments) Act, 1988 (Act header)",
+      "plain_english": "Section ACT-HEADER: Registers By Certain Establishments) Act, 1988 (Act header)",
+      "keywords": [
+        "Registers",
+        "Certain",
+        "Establishments",
+        "Header"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "5",
+      "summary": "Section 5: Checklist of labour law compliance 135",
+      "plain_english": "Section 5: Checklist of labour law compliance 135",
+      "keywords": [
+        "Checklist",
+        "Labour",
+        "Compliance"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "6",
+      "summary": "Section 6: Unfair labour practice 144",
+      "plain_english": "Section 6: Unfair labour practice 144",
+      "keywords": [
+        "Unfair",
+        "Labour",
+        "Practice"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "7",
+      "summary": "Section 7: Labour laws in the unorganized sector 147",
+      "plain_english": "Section 7: Labour laws in the unorganized sector 147",
+      "keywords": [
+        "Labour",
+        "Laws",
+        "Unorganized",
+        "Sector"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "8",
+      "summary": "Section 8: Women labour and the Law 151",
+      "plain_english": "Section 8: Women labour and the Law 151",
+      "keywords": [
+        "Women",
+        "Labour"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "9",
+      "summary": "Section 9: Industrial relations 157",
+      "plain_english": "Section 9: Industrial relations 157",
+      "keywords": [
+        "Industrial",
+        "Relations"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "10",
+      "summary": "Section 10: Special points to be noted while drafting Employment Agreement 172",
+      "plain_english": "Section 10: Special points to be noted while drafting Employment Agreement 172",
+      "keywords": [
+        "Special",
+        "Points",
+        "Noted",
+        "While",
+        "Drafting",
+        "Employment"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "11",
+      "summary": "Section 11: Important case laws under various labour legislations 177",
+      "plain_english": "Section 11: Important case laws under various labour legislations 177",
+      "keywords": [
+        "Important",
+        "Case",
+        "Laws",
+        "Various",
+        "Labour",
+        "Legislations"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "12",
+      "summary": "Section 12: Important organizations 179",
+      "plain_english": "Section 12: Important organizations 179",
+      "keywords": [
+        "Important",
+        "Organizations"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "13",
+      "summary": "Section 13: Authorities under the labour law in India 180",
+      "plain_english": "Section 13: Authorities under the labour law in India 180",
+      "keywords": [
+        "Authorities",
+        "Labour",
+        "India"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "14",
+      "summary": "Section 14: Labour legislations across the world 186",
+      "plain_english": "Section 14: Labour legislations across the world 186",
+      "keywords": [
+        "Labour",
+        "Legislations",
+        "Across",
+        "World"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "15",
+      "summary": "Section 15: Bibliography 190",
+      "plain_english": "16. Annexure a) Agreements between employee and employer 192 b) Agreement for reference of disputes to arbitration 196 2 1. INTRODUCTION Labour law also known as employment law is the body of laws, administrative rulings, and precedents which address the legal rights of, and restrictions on, working people and their organizations. As such, it mediates many aspects of the relationship between trade unions, employers and employees. In other words, Labour law defines the rights and obligations as w",
+      "keywords": [
+        "Between",
+        "Labour",
+        "Rights",
+        "Bibliography",
+        "Annexure",
+        "Agreements"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "2",
+      "summary": "Section 2: LABOUR LAWS IN INDIA",
+      "plain_english": "The term ‘labour’ means productive work especially physical work done for wages. Labour law also known as employment law is the body of laws, administrative rulings, and precedents which address the legal rights of, and restrictions on, working people and their organizations. There are two broad categories of labour law. First, collective labour law relates to the tripartite relationship between employee, employer and union. Second, individual labour law concerns employees' rights at work and th",
+      "keywords": [
+        "Labour",
+        "Work",
+        "Laws",
+        "Rights",
+        "India",
+        "Term"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "1",
+      "summary": "Section 1: The Employees’ State Insurance Act, 1948",
+      "plain_english": "Section 1: The Employees’ State Insurance Act, 1948",
+      "keywords": [
+        "Employees",
+        "State",
+        "Insurance"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "3",
+      "summary": "Section 3: The Dock Workers (Safety, Health and Welfare) Act, 1986",
+      "plain_english": "Section 3: The Dock Workers (Safety, Health and Welfare) Act, 1986",
+      "keywords": [
+        "Dock",
+        "Workers",
+        "Safety",
+        "Health",
+        "Welfare"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "4",
+      "summary": "Section 4: The Mines Act, 1952",
+      "plain_english": "Section 4: The Mines Act, 1952",
+      "keywords": [
+        "Mines"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "16",
+      "summary": "Section 16: The Equal Remuneration Act, 1976",
+      "plain_english": "Section 16: The Equal Remuneration Act, 1976",
+      "keywords": [
+        "Equal",
+        "Remuneration"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "17",
+      "summary": "Section 17: The Industrial Disputes Act, 1947",
+      "plain_english": "11",
+      "keywords": [
+        "Industrial",
+        "Disputes"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "18",
+      "summary": "Section 18: The Industrial Employment (Standing Orders) Act, 1946",
+      "plain_english": "Section 18: The Industrial Employment (Standing Orders) Act, 1946",
+      "keywords": [
+        "Industrial",
+        "Employment",
+        "Standing",
+        "Orders"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "19",
+      "summary": "Section 19: The Inter-State Migrant Workmen (Regulation of Employment and Conditions of Service)",
+      "plain_english": "Act, 1979.",
+      "keywords": [
+        "Inter",
+        "State",
+        "Migrant",
+        "Workmen",
+        "Regulation",
+        "Employment"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "20",
+      "summary": "Section 20: The Labour Laws (Exemption from Furnishing Returns and Maintaining Registers by Certain",
+      "plain_english": "Section 20: The Labour Laws (Exemption from Furnishing Returns and Maintaining Registers by Certain",
+      "keywords": [
+        "Labour",
+        "Laws",
+        "Exemption",
+        "Furnishing",
+        "Returns",
+        "Maintaining"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "ACT-HEADER",
+      "summary": "Section ACT-HEADER: Establishments) Act, 1988 (Act header)",
+      "plain_english": "Section ACT-HEADER: Establishments) Act, 1988 (Act header)",
+      "keywords": [
+        "Establishments",
+        "Header"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "21",
+      "summary": "Section 21: The Maternity Benefit Act, 1961",
+      "plain_english": "Section 21: The Maternity Benefit Act, 1961",
+      "keywords": [
+        "Maternity",
+        "Benefit"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "22",
+      "summary": "Section 22: The Minimum Wages Act, 1948",
+      "plain_english": "Section 22: The Minimum Wages Act, 1948",
+      "keywords": [
+        "Minimum",
+        "Wages"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "23",
+      "summary": "Section 23: The Payment of Bonus Act, 1965",
+      "plain_english": "Section 23: The Payment of Bonus Act, 1965",
+      "keywords": [
+        "Payment",
+        "Bonus"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "24",
+      "summary": "Section 24: The Payment of Gratuity Act, 1972",
+      "plain_english": "Section 24: The Payment of Gratuity Act, 1972",
+      "keywords": [
+        "Payment",
+        "Gratuity"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "25",
+      "summary": "Section 25: The Payment of Wages Act, 1936",
+      "plain_english": "Section 25: The Payment of Wages Act, 1936",
+      "keywords": [
+        "Payment",
+        "Wages"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "26",
+      "summary": "Section 26: The Cine Workers and Cinema Theatre Workers (Regulation of Employment) Act, 1981",
+      "plain_english": "Section 26: The Cine Workers and Cinema Theatre Workers (Regulation of Employment) Act, 1981",
+      "keywords": [
+        "Workers",
+        "Cine",
+        "Cinema",
+        "Theatre",
+        "Regulation",
+        "Employment"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "27",
+      "summary": "Section 27: The Building and Other Construction Workers Cess Act, 1996",
+      "plain_english": "Section 27: The Building and Other Construction Workers Cess Act, 1996",
+      "keywords": [
+        "Building",
+        "Other",
+        "Construction",
+        "Workers",
+        "Cess"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "28",
+      "summary": "Section 28: The Apprentices Act, 1961",
+      "plain_english": "Section 28: The Apprentices Act, 1961",
+      "keywords": [
+        "Apprentices"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "29",
+      "summary": "Section 29: Unorganized Workers Social Security Act, 2008",
+      "plain_english": "Section 29: Unorganized Workers Social Security Act, 2008",
+      "keywords": [
+        "Unorganized",
+        "Workers",
+        "Social",
+        "Security"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "30",
+      "summary": "Section 30: Working Journalists (Fixation of Rates of Wages Act, 1958",
+      "plain_english": "Section 30: Working Journalists (Fixation of Rates of Wages Act, 1958",
+      "keywords": [
+        "Working",
+        "Journalists",
+        "Fixation",
+        "Rates",
+        "Wages"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "31",
+      "summary": "Section 31: Merchant Shipping Act, 1958",
+      "plain_english": "Section 31: Merchant Shipping Act, 1958",
+      "keywords": [
+        "Merchant",
+        "Shipping"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "32",
+      "summary": "Section 32: Sales Promotion Employees Act, 1976",
+      "plain_english": "Section 32: Sales Promotion Employees Act, 1976",
+      "keywords": [
+        "Sales",
+        "Promotion",
+        "Employees"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "33",
+      "summary": "Section 33: Dangerous Machines (Regulation) Act, 1983",
+      "plain_english": "Section 33: Dangerous Machines (Regulation) Act, 1983",
+      "keywords": [
+        "Dangerous",
+        "Machines",
+        "Regulation"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "34",
+      "summary": "Section 34: Dock Workers (Regulation of Employment) Act, 1948",
+      "plain_english": "Section 34: Dock Workers (Regulation of Employment) Act, 1948",
+      "keywords": [
+        "Dock",
+        "Workers",
+        "Regulation",
+        "Employment"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "35",
+      "summary": "Section 35: Dock Workers (Regulation of Employment) (Inapplicability to Major Ports) Act, 1997",
+      "plain_english": "Section 35: Dock Workers (Regulation of Employment) (Inapplicability to Major Ports) Act, 1997",
+      "keywords": [
+        "Dock",
+        "Workers",
+        "Regulation",
+        "Employment",
+        "Inapplicability",
+        "Major"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "36",
+      "summary": "Section 36: Private Security Agencies (Regulation) Act, 2005",
+      "plain_english": "(c) Labour laws enacted by Central Government and enforced by the State Governments",
+      "keywords": [
+        "Private",
+        "Security",
+        "Agencies",
+        "Regulation",
+        "Labour",
+        "Laws"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "37",
+      "summary": "Section 37: The Employers’ Liability Act, 1938",
+      "plain_english": "Section 37: The Employers’ Liability Act, 1938",
+      "keywords": [
+        "Employers",
+        "Liability"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "38",
+      "summary": "Section 38: The Factories Act, 1948",
+      "plain_english": "Section 38: The Factories Act, 1948",
+      "keywords": [
+        "Factories"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "39",
+      "summary": "Section 39: The Motor Transport Workers Act, 1961",
+      "plain_english": "Section 39: The Motor Transport Workers Act, 1961",
+      "keywords": [
+        "Motor",
+        "Transport",
+        "Workers"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "40",
+      "summary": "Section 40: The Personal Injuries (Compensation Insurance) Act, 1963",
+      "plain_english": "Section 40: The Personal Injuries (Compensation Insurance) Act, 1963",
+      "keywords": [
+        "Personal",
+        "Injuries",
+        "Compensation",
+        "Insurance"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "41",
+      "summary": "Section 41: The Personal Injuries (Emergency Provisions) Act, 1962",
+      "plain_english": "Section 41: The Personal Injuries (Emergency Provisions) Act, 1962",
+      "keywords": [
+        "Personal",
+        "Injuries",
+        "Emergency",
+        "Provisions"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "42",
+      "summary": "Section 42: The Plantation Labour Act, 1951",
+      "plain_english": "Section 42: The Plantation Labour Act, 1951",
+      "keywords": [
+        "Plantation",
+        "Labour"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "43",
+      "summary": "Section 43: The Sales Promotion Employees (Conditions of Service) Act, 1976",
+      "plain_english": "Section 43: The Sales Promotion Employees (Conditions of Service) Act, 1976",
+      "keywords": [
+        "Sales",
+        "Promotion",
+        "Employees",
+        "Conditions",
+        "Service"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "44",
+      "summary": "Section 44: The Trade Unions Act, 1926",
+      "plain_english": "Section 44: The Trade Unions Act, 1926",
+      "keywords": [
+        "Trade",
+        "Unions"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "45",
+      "summary": "Section 45: The Weekly Holidays Act, 1942",
+      "plain_english": "12",
+      "keywords": [
+        "Weekly",
+        "Holidays"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "46",
+      "summary": "Section 46: The Working Journalists and Other Newspapers Employees (Conditions of Service) and",
+      "plain_english": "Section 46: The Working Journalists and Other Newspapers Employees (Conditions of Service) and",
+      "keywords": [
+        "Working",
+        "Journalists",
+        "Other",
+        "Newspapers",
+        "Employees",
+        "Conditions"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "ACT-HEADER",
+      "summary": "Section ACT-HEADER: Miscellaneous Provisions Act, 1955 (Act header)",
+      "plain_english": "Section ACT-HEADER: Miscellaneous Provisions Act, 1955 (Act header)",
+      "keywords": [
+        "Miscellaneous",
+        "Provisions",
+        "Header"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "47",
+      "summary": "Section 47: The Workmen’s Compensation Act, 1923",
+      "plain_english": "Section 47: The Workmen’s Compensation Act, 1923",
+      "keywords": [
+        "Workmen",
+        "Compensation"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "48",
+      "summary": "Section 48: The Employment Exchange (Compulsory Notification of Vacancies) Act, 1959",
+      "plain_english": "Section 48: The Employment Exchange (Compulsory Notification of Vacancies) Act, 1959",
+      "keywords": [
+        "Employment",
+        "Exchange",
+        "Compulsory",
+        "Notification",
+        "Vacancies"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "49",
+      "summary": "Section 49: The Children (Pledging of Labour) Act 1938",
+      "plain_english": "Section 49: The Children (Pledging of Labour) Act 1938",
+      "keywords": [
+        "Children",
+        "Pledging",
+        "Labour"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "50",
+      "summary": "Section 50: The Bonded Labour System (Abolition) Act, 1976",
+      "plain_english": "Section 50: The Bonded Labour System (Abolition) Act, 1976",
+      "keywords": [
+        "Bonded",
+        "Labour",
+        "System",
+        "Abolition"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "51",
+      "summary": "Section 51: The Beedi and Cigar Workers (Conditions of Employment) Act, 1966",
+      "plain_english": "State Labour Laws 1. Maharashtra Sl.No. Name of the labour legislation Central Rules State Rules 1 Apprentices Act , 1961 Apprentices Rules, 1961 Nil 2 The Beedi and Cigar Workers (Conditions of Employment) Act, 1966 3 Beedi Workers Welfare Fund Act, 1976 4 The Beedi Workers Welfare Cess The Beedi Worker's Act, 1976 Welfare Cess Rules, 1977 5 The Building & Other Construction Workers (Regulation of Employment &",
+      "keywords": [
+        "Beedi",
+        "Workers",
+        "Rules",
+        "Employment",
+        "Welfare",
+        "Cigar"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "ACT-HEADER",
+      "summary": "Section ACT-HEADER: Conditions of Service) Act, 1996 (Act header)",
+      "plain_english": "Section ACT-HEADER: Conditions of Service) Act, 1996 (Act header)",
+      "keywords": [
+        "Conditions",
+        "Service",
+        "Header"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "ACT-HEADER",
+      "summary": "Section ACT-HEADER: Abolition) Rules, 1971 (Act header)",
+      "plain_english": "Section ACT-HEADER: Abolition) Rules, 1971 (Act header)",
+      "keywords": [
+        "Abolition",
+        "Rules",
+        "Header"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "ACT-HEADER",
+      "summary": "Section ACT-HEADER: And Regulation) Act, 1986 (Act header)",
+      "plain_english": "Section ACT-HEADER: And Regulation) Act, 1986 (Act header)",
+      "keywords": [
+        "Regulation",
+        "Header"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "ACT-HEADER",
+      "summary": "Section ACT-HEADER: Employment) Act, 1948 (Act header)",
+      "plain_english": "Section ACT-HEADER: Employment) Act, 1948 (Act header)",
+      "keywords": [
+        "Employment",
+        "Header"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "ACT-HEADER",
+      "summary": "Section ACT-HEADER: Health & Welfare) Act, 1986 (Act header)",
+      "plain_english": "Section ACT-HEADER: Health & Welfare) Act, 1986 (Act header)",
+      "keywords": [
+        "Health",
+        "Welfare",
+        "Header"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "ACT-HEADER",
+      "summary": "Section ACT-HEADER: to Major Ports) Act, 1997 (Act header)",
+      "plain_english": "Section ACT-HEADER: to Major Ports) Act, 1997 (Act header)",
+      "keywords": [
+        "Major",
+        "Ports",
+        "Header"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "ACT-HEADER",
+      "summary": "Section ACT-HEADER: Relations Act, 1946 (Act header)",
+      "plain_english": "Section ACT-HEADER: Relations Act, 1946 (Act header)",
+      "keywords": [
+        "Relations",
+        "Header"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "ACT-HEADER",
+      "summary": "Section ACT-HEADER: Labour Welfare Fund Act, 1976 (Act header)",
+      "plain_english": "Section ACT-HEADER: Labour Welfare Fund Act, 1976 (Act header)",
+      "keywords": [
+        "Labour",
+        "Welfare",
+        "Fund",
+        "Header"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "ACT-HEADER",
+      "summary": "Section ACT-HEADER: Labour Welfare Cess Act, 1976 (Act header)",
+      "plain_english": "Section ACT-HEADER: Labour Welfare Cess Act, 1976 (Act header)",
+      "keywords": [
+        "Labour",
+        "Welfare",
+        "Cess",
+        "Header"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "ACT-HEADER",
+      "summary": "Section ACT-HEADER: Welfare Fund Act, 1953 (Act header)",
+      "plain_english": "Section ACT-HEADER: Welfare Fund Act, 1953 (Act header)",
+      "keywords": [
+        "Welfare",
+        "Fund",
+        "Header"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "ACT-HEADER",
+      "summary": "Section ACT-HEADER: Benefit Rules, 1965 (Act header)",
+      "plain_english": "Section ACT-HEADER: Benefit Rules, 1965 (Act header)",
+      "keywords": [
+        "Benefit",
+        "Rules",
+        "Header"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "ACT-HEADER",
+      "summary": "Section ACT-HEADER: Wages Rules 1963 (Act header)",
+      "plain_english": "Section ACT-HEADER: Wages Rules 1963 (Act header)",
+      "keywords": [
+        "Wages",
+        "Rules",
+        "Header"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "ACT-HEADER",
+      "summary": "Section ACT-HEADER: Fund Act, 1946 (Act header)",
+      "plain_english": "Section ACT-HEADER: Fund Act, 1946 (Act header)",
+      "keywords": [
+        "Fund",
+        "Header"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "ACT-HEADER",
+      "summary": "Section ACT-HEADER: wages Rules, 1963 (Act header)",
+      "plain_english": "Section ACT-HEADER: wages Rules, 1963 (Act header)",
+      "keywords": [
+        "Wages",
+        "Rules",
+        "Header"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "ACT-HEADER",
+      "summary": "Section ACT-HEADER: Establishment Act, 1948 (Act header)",
+      "plain_english": "Section ACT-HEADER: Establishment Act, 1948 (Act header)",
+      "keywords": [
+        "Establishment",
+        "Header"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "ACT-HEADER",
+      "summary": "Section ACT-HEADER: Service) Rules, 1976 (Act header)",
+      "plain_english": "Section ACT-HEADER: Service) Rules, 1976 (Act header)",
+      "keywords": [
+        "Service",
+        "Rules",
+        "Header"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "ACT-HEADER",
+      "summary": "Section ACT-HEADER: Labour Practices Act, 1971 (Act header)",
+      "plain_english": "Section ACT-HEADER: Labour Practices Act, 1971 (Act header)",
+      "keywords": [
+        "Labour",
+        "Practices",
+        "Header"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "ACT-HEADER",
+      "summary": "Section ACT-HEADER: Insurance) Act, 1943 (Act header)",
+      "plain_english": "Section ACT-HEADER: Insurance) Act, 1943 (Act header)",
+      "keywords": [
+        "Insurance",
+        "Header"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "ACT-HEADER",
+      "summary": "Section ACT-HEADER: of Rates of Wages) Act, 1958 (Act header)",
+      "plain_english": "Section ACT-HEADER: of Rates of Wages) Act, 1958 (Act header)",
+      "keywords": [
+        "Rates",
+        "Wages",
+        "Header"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "ACT-HEADER",
+      "summary": "Section ACT-HEADER: Provisions) Rules, 1957 (Act header)",
+      "plain_english": "Section ACT-HEADER: Provisions) Rules, 1957 (Act header)",
+      "keywords": [
+        "Provisions",
+        "Rules",
+        "Header"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "ACT-HEADER",
+      "summary": "Section ACT-HEADER: Procedure) Rules, 1975 (Act header)",
+      "plain_english": "Section ACT-HEADER: Procedure) Rules, 1975 (Act header)",
+      "keywords": [
+        "Procedure",
+        "Rules",
+        "Header"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "ACT-HEADER",
+      "summary": "Section ACT-HEADER: Gujarat Rules, 1972 (Act header)",
+      "plain_english": "Section ACT-HEADER: Gujarat Rules, 1972 (Act header)",
+      "keywords": [
+        "Gujarat",
+        "Rules",
+        "Header"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "ACT-HEADER",
+      "summary": "Section ACT-HEADER: Act and Rules, 1982 (Act header)",
+      "plain_english": "Section ACT-HEADER: Act and Rules, 1982 (Act header)",
+      "keywords": [
+        "Rules",
+        "Header"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "3",
+      "summary": "Section 3: Madhya Pradesh",
+      "plain_english": "Sl.No. Name of the labour legislation Central Rules State Rules 1 Apprentices Act , 1961 Apprentices Rules, 1961 2 The Beedi and Cigar Workers (Conditions of Employment) Act, 1966 3 Beedi Workers Welfare Fund Act, 1976 4 The Beedi Workers Welfare Cess The Beedi Worker's Act, 1976 Welfare Cess Rules, 1977 5 The Building & Other Construction Workers (Regulation of Employment &",
+      "keywords": [
+        "Rules",
+        "Beedi",
+        "Workers",
+        "Welfare",
+        "Apprentices",
+        "Employment"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "ACT-HEADER",
+      "summary": "Section ACT-HEADER: Dry latrines Prohibition Act, 1993 (Act header)",
+      "plain_english": "Section ACT-HEADER: Dry latrines Prohibition Act, 1993 (Act header)",
+      "keywords": [
+        "Latrines",
+        "Prohibition",
+        "Header"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "ACT-HEADER",
+      "summary": "Section ACT-HEADER: Relations Rules, 1961 (Act header)",
+      "plain_english": "Section ACT-HEADER: Relations Rules, 1961 (Act header)",
+      "keywords": [
+        "Relations",
+        "Rules",
+        "Header"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "ACT-HEADER",
+      "summary": "Section ACT-HEADER: Orders) Act, 1961 (Act header)",
+      "plain_english": "Section ACT-HEADER: Orders) Act, 1961 (Act header)",
+      "keywords": [
+        "Orders",
+        "Header"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "ACT-HEADER",
+      "summary": "Section ACT-HEADER: of Wages Rules, 1962 (Act header)",
+      "plain_english": "Section ACT-HEADER: of Wages Rules, 1962 (Act header)",
+      "keywords": [
+        "Wages",
+        "Rules",
+        "Header"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "ACT-HEADER",
+      "summary": "Section ACT-HEADER: Establishment Act, 1958 (Act header)",
+      "plain_english": "Section ACT-HEADER: Establishment Act, 1958 (Act header)",
+      "keywords": [
+        "Establishment",
+        "Header"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "3",
+      "summary": "Section 3: Classification of LABOUR LAWS in India",
+      "plain_english": "Labour Laws may be classified under the following heads: I. Laws related to Industrial Relations such as:",
+      "keywords": [
+        "Laws",
+        "Labour",
+        "Classification",
+        "India",
+        "Classified",
+        "Following"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "1",
+      "summary": "Section 1: Trade Unions Act, 1926",
+      "plain_english": "Section 1: Trade Unions Act, 1926",
+      "keywords": [
+        "Trade",
+        "Unions"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "2",
+      "summary": "Section 2: Industrial Employment Standing Order Act, 1946",
+      "plain_english": "Section 2: Industrial Employment Standing Order Act, 1946",
+      "keywords": [
+        "Industrial",
+        "Employment",
+        "Standing",
+        "Order"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "4",
+      "summary": "Section 4: Payment of Wages Act, 1936",
+      "plain_english": "Section 4: Payment of Wages Act, 1936",
+      "keywords": [
+        "Payment",
+        "Wages"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "5",
+      "summary": "Section 5: Minimum Wages Act, 1948",
+      "plain_english": "Section 5: Minimum Wages Act, 1948",
+      "keywords": [
+        "Minimum",
+        "Wages"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "6",
+      "summary": "Section 6: Payment of Bonus Act, 1965",
+      "plain_english": "Section 6: Payment of Bonus Act, 1965",
+      "keywords": [
+        "Payment",
+        "Bonus"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "7",
+      "summary": "Section 7: Working Journalists (Fixation of Rates of Wages Act, 1958",
+      "plain_english": "III. Laws related to Working Hours, Conditions of Service and Employment such as:",
+      "keywords": [
+        "Working",
+        "Journalists",
+        "Fixation",
+        "Rates",
+        "Wages",
+        "Laws"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "8",
+      "summary": "Section 8: Factories Act, 1948",
+      "plain_english": "Section 8: Factories Act, 1948",
+      "keywords": [
+        "Factories"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "9",
+      "summary": "Section 9: Plantation Labour Act, 1951",
+      "plain_english": "Section 9: Plantation Labour Act, 1951",
+      "keywords": [
+        "Plantation",
+        "Labour"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "10",
+      "summary": "Section 10: Mines Act, 1952",
+      "plain_english": "Section 10: Mines Act, 1952",
+      "keywords": [
+        "Mines"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "11",
+      "summary": "Section 11: Working Journalists and other Newspaper Employees’ (Conditions of Service",
+      "plain_english": "and Misc. Provisions) Act, 1955.",
+      "keywords": [
+        "Working",
+        "Journalists",
+        "Other",
+        "Newspaper",
+        "Employees",
+        "Conditions"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "12",
+      "summary": "Section 12: Merchant Shipping Act, 1958",
+      "plain_english": "Section 12: Merchant Shipping Act, 1958",
+      "keywords": [
+        "Merchant",
+        "Shipping"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "13",
+      "summary": "Section 13: Motor Transport Workers Act, 1961",
+      "plain_english": "27",
+      "keywords": [
+        "Motor",
+        "Transport",
+        "Workers"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "14",
+      "summary": "Section 14: Beedi & Cigar Workers (Conditions of Employment) Act, 1966",
+      "plain_english": "Section 14: Beedi & Cigar Workers (Conditions of Employment) Act, 1966",
+      "keywords": [
+        "Beedi",
+        "Cigar",
+        "Workers",
+        "Conditions",
+        "Employment"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "15",
+      "summary": "Section 15: Contract Labour (Regulation & Abolition) Act, 1970",
+      "plain_english": "Section 15: Contract Labour (Regulation & Abolition) Act, 1970",
+      "keywords": [
+        "Contract",
+        "Labour",
+        "Regulation",
+        "Abolition"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "16",
+      "summary": "Section 16: Sales Promotion Employees Act, 1976",
+      "plain_english": "Section 16: Sales Promotion Employees Act, 1976",
+      "keywords": [
+        "Sales",
+        "Promotion",
+        "Employees"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "17",
+      "summary": "Section 17: Inter-State Migrant Workmen (Regulation of Employment and Conditions of",
+      "plain_english": "Service) Act, 1979.",
+      "keywords": [
+        "Inter",
+        "State",
+        "Migrant",
+        "Workmen",
+        "Regulation",
+        "Employment"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "18",
+      "summary": "Section 18: Dock Workers (Safety, Health & Welfare) Act, 1986",
+      "plain_english": "Section 18: Dock Workers (Safety, Health & Welfare) Act, 1986",
+      "keywords": [
+        "Dock",
+        "Workers",
+        "Safety",
+        "Health",
+        "Welfare"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "19",
+      "summary": "Section 19: Building & Other Construction Workers (Regulation of Employment &",
+      "plain_english": "Conditions of Service) Act, 1996.",
+      "keywords": [
+        "Building",
+        "Other",
+        "Construction",
+        "Workers",
+        "Regulation",
+        "Employment"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "20",
+      "summary": "Section 20: Building and Other Construction Workers Welfare Cess Act, 1996",
+      "plain_english": "Section 20: Building and Other Construction Workers Welfare Cess Act, 1996",
+      "keywords": [
+        "Building",
+        "Other",
+        "Construction",
+        "Workers",
+        "Welfare",
+        "Cess"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "21",
+      "summary": "Section 21: Cine-Workers and Cinema Theatre Workers (Regulation of Employment) Act",
+      "plain_english": "1981",
+      "keywords": [
+        "Workers",
+        "Cine",
+        "Cinema",
+        "Theatre",
+        "Regulation",
+        "Employment"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "22",
+      "summary": "Section 22: Dangerous Machines (Regulation) Act, 1983",
+      "plain_english": "Section 22: Dangerous Machines (Regulation) Act, 1983",
+      "keywords": [
+        "Dangerous",
+        "Machines",
+        "Regulation"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "23",
+      "summary": "Section 23: Dock Workers (Regulation of Employment) Act, 1948",
+      "plain_english": "Section 23: Dock Workers (Regulation of Employment) Act, 1948",
+      "keywords": [
+        "Dock",
+        "Workers",
+        "Regulation",
+        "Employment"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "24",
+      "summary": "Section 24: Dock Workers (Regulation of Employment) (Inapplicability to Major Ports)",
+      "plain_english": "Act, 1997",
+      "keywords": [
+        "Dock",
+        "Workers",
+        "Regulation",
+        "Employment",
+        "Inapplicability",
+        "Major"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "25",
+      "summary": "Section 25: Employment of Manual Scavengers and Construction of Dry Latrines",
+      "plain_english": "(Prohibition) Act, 1993",
+      "keywords": [
+        "Employment",
+        "Manual",
+        "Scavengers",
+        "Construction",
+        "Latrines",
+        "Prohibition"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "26",
+      "summary": "Section 26: Industrial Employment (Standing Orders) Act, 1946",
+      "plain_english": "Section 26: Industrial Employment (Standing Orders) Act, 1946",
+      "keywords": [
+        "Industrial",
+        "Employment",
+        "Standing",
+        "Orders"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "27",
+      "summary": "Section 27: Mines and Mineral (Development and Regulation Act, 1957",
+      "plain_english": "Section 27: Mines and Mineral (Development and Regulation Act, 1957",
+      "keywords": [
+        "Mines",
+        "Mineral",
+        "Development",
+        "Regulation"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "28",
+      "summary": "Section 28: Plantation Labour Act, 1951",
+      "plain_english": "Section 28: Plantation Labour Act, 1951",
+      "keywords": [
+        "Plantation",
+        "Labour"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "29",
+      "summary": "Section 29: Private Security Agencies (Regulation) Act, 2005",
+      "plain_english": "IV. Laws related to Equality and Empowerment of Women such as:",
+      "keywords": [
+        "Private",
+        "Security",
+        "Agencies",
+        "Regulation",
+        "Laws",
+        "Related"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "30",
+      "summary": "Section 30: Maternity Benefit Act, 1961",
+      "plain_english": "Section 30: Maternity Benefit Act, 1961",
+      "keywords": [
+        "Maternity",
+        "Benefit"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "31",
+      "summary": "Section 31: Equal Remuneration Act, 1976",
+      "plain_english": "V. Laws related to Deprived and Disadvantaged Sections of the Society such as:",
+      "keywords": [
+        "Equal",
+        "Remuneration",
+        "Laws",
+        "Related",
+        "Deprived",
+        "Disadvantaged"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "32",
+      "summary": "Section 32: Bonded Labour System (Abolition) Act, 1976",
+      "plain_english": "Section 32: Bonded Labour System (Abolition) Act, 1976",
+      "keywords": [
+        "Bonded",
+        "Labour",
+        "System",
+        "Abolition"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "33",
+      "summary": "Section 33: Child Labour (Prohibition & Regulation) Act, 1986",
+      "plain_english": "Section 33: Child Labour (Prohibition & Regulation) Act, 1986",
+      "keywords": [
+        "Child",
+        "Labour",
+        "Prohibition",
+        "Regulation"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "34",
+      "summary": "Section 34: Children (Pledging of Labour) Act, 1933",
+      "plain_english": "VI. Laws related to Social Security such as:",
+      "keywords": [
+        "Children",
+        "Pledging",
+        "Labour",
+        "Laws",
+        "Related",
+        "Social"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "35",
+      "summary": "Section 35: Workmen’s Compensation Act, 1923",
+      "plain_english": "Section 35: Workmen’s Compensation Act, 1923",
+      "keywords": [
+        "Workmen",
+        "Compensation"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "36",
+      "summary": "Section 36: Employees’ State Insurance Act, 1948",
+      "plain_english": "Section 36: Employees’ State Insurance Act, 1948",
+      "keywords": [
+        "Employees",
+        "State",
+        "Insurance"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "37",
+      "summary": "Section 37: Employees’ Provident Fund & Miscellaneous Provisions Act, 1952",
+      "plain_english": "Section 37: Employees’ Provident Fund & Miscellaneous Provisions Act, 1952",
+      "keywords": [
+        "Employees",
+        "Provident",
+        "Fund",
+        "Miscellaneous",
+        "Provisions"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "38",
+      "summary": "Section 38: Payment of Gratuity Act, 1972",
+      "plain_english": "Section 38: Payment of Gratuity Act, 1972",
+      "keywords": [
+        "Payment",
+        "Gratuity"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "39",
+      "summary": "Section 39: Employers’ Liability Act, 1938",
+      "plain_english": "Section 39: Employers’ Liability Act, 1938",
+      "keywords": [
+        "Employers",
+        "Liability"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "40",
+      "summary": "Section 40: Beedi Workers Welfare Cess Act, 1976",
+      "plain_english": "Section 40: Beedi Workers Welfare Cess Act, 1976",
+      "keywords": [
+        "Beedi",
+        "Workers",
+        "Welfare",
+        "Cess"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "41",
+      "summary": "Section 41: Beedi Workers Welfare Fund Act, 1976",
+      "plain_english": "Section 41: Beedi Workers Welfare Fund Act, 1976",
+      "keywords": [
+        "Beedi",
+        "Workers",
+        "Welfare",
+        "Fund"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "42",
+      "summary": "Section 42: Cine workers Welfare Cess Act, 1981",
+      "plain_english": "Section 42: Cine workers Welfare Cess Act, 1981",
+      "keywords": [
+        "Cine",
+        "Workers",
+        "Welfare",
+        "Cess"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "43",
+      "summary": "Section 43: Cine Workers Welfare Fund Act, 1981",
+      "plain_english": "Section 43: Cine Workers Welfare Fund Act, 1981",
+      "keywords": [
+        "Cine",
+        "Workers",
+        "Welfare",
+        "Fund"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "44",
+      "summary": "Section 44: Fatal Accidents Act, 1855",
+      "plain_english": "Section 44: Fatal Accidents Act, 1855",
+      "keywords": [
+        "Fatal",
+        "Accidents"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "45",
+      "summary": "Section 45: Iron Ore Mines, Manganese Ore Mines and Chrome Ore Mines Labour",
+      "plain_english": "Section 45: Iron Ore Mines, Manganese Ore Mines and Chrome Ore Mines Labour",
+      "keywords": [
+        "Mines",
+        "Iron",
+        "Manganese",
+        "Chrome",
+        "Labour"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "ACT-HEADER",
+      "summary": "Section ACT-HEADER: Welfare Cess Act, 1976 (Act header)",
+      "plain_english": "Section ACT-HEADER: Welfare Cess Act, 1976 (Act header)",
+      "keywords": [
+        "Welfare",
+        "Cess",
+        "Header"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "46",
+      "summary": "Section 46: Iron Ore Mines, Manganese Ore Mines and Chrome Ore Mines Labour",
+      "plain_english": "Section 46: Iron Ore Mines, Manganese Ore Mines and Chrome Ore Mines Labour",
+      "keywords": [
+        "Mines",
+        "Iron",
+        "Manganese",
+        "Chrome",
+        "Labour"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "ACT-HEADER",
+      "summary": "Section ACT-HEADER: Welfare Fund Act, 1976 (Act header)",
+      "plain_english": "Section ACT-HEADER: Welfare Fund Act, 1976 (Act header)",
+      "keywords": [
+        "Welfare",
+        "Fund",
+        "Header"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "47",
+      "summary": "Section 47: Limestone and Dolomite Mines Labour Welfare Fund Act, 1972",
+      "plain_english": "Section 47: Limestone and Dolomite Mines Labour Welfare Fund Act, 1972",
+      "keywords": [
+        "Limestone",
+        "Dolomite",
+        "Mines",
+        "Labour",
+        "Welfare",
+        "Fund"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "48",
+      "summary": "Section 48: Mica Mines Labour Welfare Fund Act, 1946",
+      "plain_english": "28",
+      "keywords": [
+        "Mica",
+        "Mines",
+        "Labour",
+        "Welfare",
+        "Fund"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "49",
+      "summary": "Section 49: Personal Injuries (Compensation Insurance) Act, 1963",
+      "plain_english": "Section 49: Personal Injuries (Compensation Insurance) Act, 1963",
+      "keywords": [
+        "Personal",
+        "Injuries",
+        "Compensation",
+        "Insurance"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "50",
+      "summary": "Section 50: Personal Injuries (Emergency Provisions) Act, 1962",
+      "plain_english": "Section 50: Personal Injuries (Emergency Provisions) Act, 1962",
+      "keywords": [
+        "Personal",
+        "Injuries",
+        "Emergency",
+        "Provisions"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "51",
+      "summary": "Section 51: Unorganised Workers’ Social Security Act, 2008",
+      "plain_english": "4a. APPRENTICES ACT, 1961 The main purpose of the Act is to provide practical training to technically qualified persons in various trades. The objective is promotion of new skilled manpower. The scheme is also extended to engineers and diploma holders. The Act applies to areas and industries as notified by Central government. [Section 1(4)]. Scheme of the Act There are 38 Sections in total and 1 Schedule. This Schedule is about modifications in the Workmen’s Compensation Act, 1923 with regard to",
+      "keywords": [
+        "Scheme",
+        "Schedule",
+        "Unorganised",
+        "Workers",
+        "Social",
+        "Security"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "1",
+      "summary": "Section 1: Where by some club not only sporting facilities but a kitchen is also maintained, wherein a",
+      "plain_english": "big number of members come, it is not necessary that they are participating only in sports activities, they are also entertaining themselves and their guests by partaking beverages and tea served by the club. Activity in the kitchen has a direct connection with the activities carried on in the rest of the club premises. It is necessary that the club be registered under ESI Act as regards all the employees engaged by the club irrespective of the fact in which department they are working. Cricket",
+      "keywords": [
+        "Club",
+        "They",
+        "Only",
+        "Kitchen",
+        "Also",
+        "Necessary"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "2",
+      "summary": "Section 2: Where in an establishment activities like that of clearing and forwarding is going on, it would",
+      "plain_english": "fall within the expression \"shop\" even though clearing of documents is done in customs house meant for export and import of goods. Person involved in such business is catering to the needs of exporters and importers and others wanting to carry the goods further. -- AIR 1993 SC 252 .",
+      "keywords": [
+        "Clearing",
+        "Goods",
+        "Where",
+        "Establishment",
+        "Activities",
+        "Like"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "3",
+      "summary": "Section 3: Anyone having product may approach advertising agency. The advertising agency will",
+      "plain_english": "prepare an advertising campaign for him utilising the services of the experts it employs in this behalf. It sells the campaign to the client and receives the price thereof. Indubitably, the price will depend upon the nature of the campaign but that does not make any great difference. Essentially, the advertising agency sells its expert services to a client to enable the client to launch an effective campaign of his products without staining the language, the premises of an advertising agency can",
+      "keywords": [
+        "Advertising",
+        "Agency",
+        "Campaign",
+        "Client",
+        "Will",
+        "Services"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "4",
+      "summary": "Section 4: Where a laid-off employee after signing the lay-off register was coming out of the factory",
+      "plain_english": "premises and when crossing the road was hit by a scooter, injuries sustained by him were 40 taken as covered during the course of employment on the basis of theory of notional extension.-- Satya Sharma v. ESI Corporation 1991 (63) FLR 339 .",
+      "keywords": [
+        "Where",
+        "Laid",
+        "Employee",
+        "Signing",
+        "Register",
+        "Coming"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "5",
+      "summary": "Section 5: If the work by the employee is conducted under the immediate gaze or overseeing of the",
+      "plain_english": "principal employer or his agent, subject to other conditions as envisaged being fulfilled he would be an employee for the purpose of s. 2(9).-- CES Corporation Ltd. v. Subash Chandra Bose 1992 (1) LLJ 475.",
+      "keywords": [
+        "Employee",
+        "Work",
+        "Conducted",
+        "Immediate",
+        "Gaze",
+        "Overseeing"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "6",
+      "summary": "Section 6: A work that is conducive to the work of the factory or establishment or that is necessary for",
+      "plain_english": "the augmentation of the work of the factory or establishment will be incidental or preliminary to or connected with the work of the factory or establishment. The casual employees shall also be brought within it and are entitled to the benefits which the Act grants. The casual labour employed to construct additional buildings for expansion of the factory are the employees under the Act.-- Regional Director, ESIC v. South India Flour Mills Ltd. 1986 (53) FLR 178.",
+      "keywords": [
+        "Work",
+        "Factory",
+        "Establishment",
+        "Casual",
+        "Employees",
+        "Conducive"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "7",
+      "summary": "Section 7: Employees engaged for repairs, site clearing, construction of buildings, etc. of the principal",
+      "plain_english": "employer are employees within the meaning of s. 2(9) of the Act. --Kirloskar Pneumatic Co. Ltd. v. ESI Corporation 1987 (70) FJR 199.",
+      "keywords": [
+        "Employees",
+        "Engaged",
+        "Repairs",
+        "Site",
+        "Clearing",
+        "Construction"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "8",
+      "summary": "Section 8: The expression \"employed for wages or in connection with the work of a factory or",
+      "plain_english": "establishment\" is of very wide amplitude and its generality is not in any way prejudiced by the expression and includes any person employed for wages or any work connected with the administration of the factory or establishment or in connection with sale or distribution of the products of the factory or establishments. The word \"includes\" in the statutory definition of a term is generally used to enlarge the meaning of the preceding words and it is by way of extension and not with restriction. I",
+      "keywords": [
+        "Factory",
+        "Expression",
+        "Employed",
+        "Wages",
+        "Connection",
+        "Work"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "9",
+      "summary": "Section 9: Where the work of fixing the marble is extended to a contractor by a marble manufacturing",
+      "plain_english": "company, duty of the contractor is only to complete the work while marble, cement etc., is supplied by the manufacturing company, workers employed by the contractor would be the employees of the factory as under s. 2(9) of the Act.-- 1992 (2) CLR 881.",
+      "keywords": [
+        "Marble",
+        "Contractor",
+        "Work",
+        "Manufacturing",
+        "Company",
+        "Where"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "10",
+      "summary": "Section 10: There is no such difference as that of casual or temporary or permanent employee for the",
+      "plain_english": "expression \"employee\" as defined under s. 2(9) of the Act. It is so wide as to include even a casual employee who is employed just for a day for wages. The test being whether the person is employed for wages on any work which is connected with the work of a factory or establishment which bears the application of the Act except those exempted by the definition.-- ESI Corporation v. Suvarna Saw Mills 1980 (57) FJR 154.",
+      "keywords": [
+        "Employee",
+        "Casual",
+        "Employed",
+        "Wages",
+        "Work",
+        "Which"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "11",
+      "summary": "Section 11: Where a department of publication and press run by the university concerned is engaged in",
+      "plain_english": "the printing of text books, journals, registers, forms, etc., that would amount to manufacturing process.-- Osmania University v. ESI Corporation 1986 (1) LLN 72 .",
+      "keywords": [
+        "University",
+        "Where",
+        "Department",
+        "Publication",
+        "Press",
+        "Concerned"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "12",
+      "summary": "Section 12: Where there was no manufacturing of articles nor the hotel was manufacturing any article",
+      "plain_english": "with the aid of power except maintaining one refrigerator to preserve milk and curd, and as there was no using of power in the kitchen for making the eatables and the refrigerator had been kept only for preservation of milk and curd, there was no manufacturing process.-- Ritz Hotel v. ESI Corpn. 1995 (1) Mah. LJ 63.",
+      "keywords": [
+        "There",
+        "Manufacturing",
+        "Hotel",
+        "Power",
+        "Refrigerator",
+        "Milk"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "13",
+      "summary": "Section 13: Wages paid for the holidays are wages as defined.-- R.D., ESI Corporation v. Raj Keshaw Co",
+      "plain_english": "1991 Lab. IC 1991 Lab. IC 1989.",
+      "keywords": [
+        "Wages",
+        "Paid",
+        "Holidays",
+        "Defined",
+        "Corporation",
+        "Keshaw"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "14",
+      "summary": "Section 14: Overtime wages could not be treated as \"wages\" for the purpose of contribution under the",
+      "plain_english": "Act.-- Hind Art Press v. ESI Corporation 1990 (1) LLJ 195.",
+      "keywords": [
+        "Wages",
+        "Overtime",
+        "Could",
+        "Treated",
+        "Purpose",
+        "Contribution"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "15",
+      "summary": "Section 15: The ESI Corporation is conferred with the power to recover arrears of contributions from the",
+      "plain_english": "employer along with damages/interest on the contribution that remained due. Correspondingly it is under an obligation to pay with interest the arrears of benefits to the insured employees or his dependents.-- ESI Corporation v. Bhag Singh 1989 (2) LLJ 126. 16. Section 53 of the ESI Act (Bar against receiving or recovery of compensation or damages under any other law) does not bar the remedy under s. 110A of the Motor Vehicles Act, 1939.-- Deputy General Manager KSRTC v. Gopal Mudaliar 1983 (46)",
+      "keywords": [
+        "Corporation",
+        "Arrears",
+        "Damages",
+        "Interest",
+        "Conferred",
+        "Power"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "16",
+      "summary": "Section 16: Electro-plating Industries",
+      "plain_english": "Section 16: Electro-plating Industries",
+      "keywords": [
+        "Electro",
+        "Plating",
+        "Industries"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "17",
+      "summary": "Section 17: Chemical Industries",
+      "plain_english": "- Coke Oven by-products and Coaltar Distillation Products - Industrial Gases (nitrogen, oxygen, acetylene, argon, carbon-dioxide, hydrogen, sulphur-dioxide, nitrous oxide, halogenated hydro-carbon, ozone etc.) - Industrial Carbon - Alkalies and Acids - Chromates and dichromates - Leads and its compounds - Electrochemicals (metallic sodium, potassium and magnesium, chlorates, perchlorates and peroxides) - Electrothermal produces (artificial abrasive, calcium carbide) - Nitrogenous compounds (cyan",
+      "keywords": [
+        "Carbon",
+        "Products",
+        "Industrial",
+        "Dioxide",
+        "Compounds",
+        "Chemical"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "18",
+      "summary": "Section 18: Insecticides, Fungicides, herbicides and other Pesticides Industries",
+      "plain_english": "Section 18: Insecticides, Fungicides, herbicides and other Pesticides Industries",
+      "keywords": [
+        "Insecticides",
+        "Fungicides",
+        "Herbicides",
+        "Other",
+        "Pesticides",
+        "Industries"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "19",
+      "summary": "Section 19: Synthetic Resin and Plastics",
+      "plain_english": "Section 19: Synthetic Resin and Plastics",
+      "keywords": [
+        "Synthetic",
+        "Resin",
+        "Plastics"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "20",
+      "summary": "Section 20: Man-made Fibre (Cellulosic and non-cellulosic) Industry",
+      "plain_english": "Section 20: Man-made Fibre (Cellulosic and non-cellulosic) Industry",
+      "keywords": [
+        "Cellulosic",
+        "Made",
+        "Fibre",
+        "Industry"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "21",
+      "summary": "Section 21: Manufacture and repair of electrical accumulators",
+      "plain_english": "Section 21: Manufacture and repair of electrical accumulators",
+      "keywords": [
+        "Manufacture",
+        "Repair",
+        "Electrical",
+        "Accumulators"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "22",
+      "summary": "Section 22: Glass and Ceramics",
+      "plain_english": "Section 22: Glass and Ceramics",
+      "keywords": [
+        "Glass",
+        "Ceramics"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "23",
+      "summary": "Section 23: Grinding or glazing of metals",
+      "plain_english": "Section 23: Grinding or glazing of metals",
+      "keywords": [
+        "Grinding",
+        "Glazing",
+        "Metals"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "24",
+      "summary": "Section 24: Manufacture, handling and processing of asbestos and its products",
+      "plain_english": "Section 24: Manufacture, handling and processing of asbestos and its products",
+      "keywords": [
+        "Manufacture",
+        "Handling",
+        "Processing",
+        "Asbestos",
+        "Products"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "25",
+      "summary": "Section 25: Extraction of oils and fats from vegetable and animal sources",
+      "plain_english": "64",
+      "keywords": [
+        "Extraction",
+        "Oils",
+        "Fats",
+        "Vegetable",
+        "Animal",
+        "Sources"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "26",
+      "summary": "Section 26: Manufacture, handling and use of benzene and substances containing benzene",
+      "plain_english": "Section 26: Manufacture, handling and use of benzene and substances containing benzene",
+      "keywords": [
+        "Benzene",
+        "Manufacture",
+        "Handling",
+        "Substances",
+        "Containing"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "27",
+      "summary": "Section 27: Manufacturing processes and operations involving carbon disulphide",
+      "plain_english": "Section 27: Manufacturing processes and operations involving carbon disulphide",
+      "keywords": [
+        "Manufacturing",
+        "Processes",
+        "Operations",
+        "Involving",
+        "Carbon",
+        "Disulphide"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "28",
+      "summary": "Section 28: Dyes and Dyestuff including their intermediates",
+      "plain_english": "Section 28: Dyes and Dyestuff including their intermediates",
+      "keywords": [
+        "Dyes",
+        "Dyestuff",
+        "Including",
+        "Their",
+        "Intermediates"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "29",
+      "summary": "Section 29: Highly flammable liquids and gases",
+      "plain_english": "PERMISSIBLE LEVELS OF CERTAIN CHEMICAL SUBSTANCES IN WORK ENVIRONMENT - THE SECOND SCHEDULE Sl. Substance Permissible limits of exposure No. Time-Weighted Short-term average exposure r e (TWA) (STEL) concentration limits (15 (TWA) min.) a A PPm mg/m3 PPm mg/m3 1 2 3 4 5 6 1 Acetaldehyde 100 180 150 270 2 Acetic Acid 10 25 15 37 3 Acetone 750 1780 1000 2375 4 Acrolein 01 0.25 0.3 0.8 5 Acrylonitrile-skin (S.C) 2 4.5 - - 6 Aldrin-skin - 0.25 - - 7 Allyl Chloride 1 3 2 6 65 8 Ammonia 0.25 18 35 27",
+      "keywords": [
+        "Permissible",
+        "Limits",
+        "Exposure",
+        "Skin",
+        "Highly",
+        "Flammable"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "ACT-HEADER",
+      "summary": "Section ACT-HEADER: CERTAIN ESTABLISHMENTS) ACT, 1988 (Act header)",
+      "plain_english": "Section ACT-HEADER: CERTAIN ESTABLISHMENTS) ACT, 1988 (Act header)",
+      "keywords": [
+        "Certain",
+        "Establishments",
+        "Header"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "1",
+      "summary": "Section 1: Calculate the gross profit in the manner specified in",
+      "plain_english": "a. First Schedule, in case of a banking company, or b. Second Schedule, in any other case.",
+      "keywords": [
+        "Schedule",
+        "Case",
+        "Calculate",
+        "Gross",
+        "Profit",
+        "Manner"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "2",
+      "summary": "Section 2: Calculate the Available Surplus",
+      "plain_english": "Available Surplus = A+B, where A = Gross Profit – Depreciation admissible u/s 32 of the Income tax Act - Development allowance - Direct taxes payable for the accounting year (calculated as per Sec.7) – Sums specified in the Third Schedule. B = Direct Taxes (calculated as per Sec. 7) in respect of gross profits for the immediately preceding accounting year – Direct Taxes in respect of such gross profits as reduced by the amount of bonus, for the immediately preceding accounting year.",
+      "keywords": [
+        "Gross",
+        "Direct",
+        "Taxes",
+        "Accounting",
+        "Year",
+        "Available"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "3",
+      "summary": "Section 3: Calculate Allocable Surplus",
+      "plain_english": "Allocable Surplus = 60% of Available Surplus, 67% in case of foreign companies.",
+      "keywords": [
+        "Surplus",
+        "Allocable",
+        "Calculate",
+        "Available",
+        "Case",
+        "Foreign"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "4",
+      "summary": "Section 4: Make adjustment for ‘Set-on’ and ‘Set-off’. For calculating the amount of bonus in respect of",
+      "plain_english": "an accounting year, allocable surplus is computed after considering the amount of set on and set off from the previous years, as illustrated in Fourth Schedule.",
+      "keywords": [
+        "Amount",
+        "Make",
+        "Adjustment",
+        "Calculating",
+        "Bonus",
+        "Respect"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "5",
+      "summary": "Section 5: The allocable surplus so computed is distributed amongst the employees in proportion to",
+      "plain_english": "salary or wages received by them during the relevant accounting year. In case of an employee receiving salary or wages above Rs. 3,500 the bonus payable is to be calculated as if the salary or wages were Rs. 3,500 p.m. only. Duties / Rights of Employer Duties  To calculate and pay the annual bonus as required under the Act 85  To submit an annul return of bonus paid to employees during the year, in Form D, to the Inspector, within 30 days of the expiry of the time limit specified for payment o",
+      "keywords": [
+        "Salary",
+        "Wages",
+        "Bonus",
+        "Employees",
+        "During",
+        "Year"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "ACT-HEADER",
+      "summary": "Section ACT-HEADER: Bombay Shops & Establishment Act, 1948 (Act header)",
+      "plain_english": "Section ACT-HEADER: Bombay Shops & Establishment Act, 1948 (Act header)",
+      "keywords": [
+        "Bombay",
+        "Shops",
+        "Establishment",
+        "Header"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "2",
+      "summary": "Section 2: This Act applies to wages payable to an employed person in respect of a wage period if such",
+      "plain_english": "wages for that wage period do not exceed Rs 6500/- per month or such other higher sum which, on the basis of figures of the Consumer Expenditure Survey published by the National Sample Survey Organisation, the Central Government may, after every five years, by notification in the Official Gazette, specify.\". Meaning of wages \"Wages\" means all remuneration (whether by way of salary, allowances, or otherwise) expressed in terms of money or capable of being so expressed which would, if the terms of",
+      "keywords": [
+        "Wages",
+        "Wage",
+        "Period",
+        "Which",
+        "Survey",
+        "Expressed"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "1987",
+      "summary": "Section 1987: The Policy seeks to adopt a gradual & sequential approach with a focus on rehabilitation of",
+      "plain_english": "children working in hazardous occupations & processes in the first instance. The Action Plan outlined in the Policy for tackling this problem is as follows: o Legislative Action Plan for strict enforcement of Child Labour Act and other labour laws to ensure that children are not employed in hazardous employments, and that the working conditions of children working in non-hazardous areas are regulated in accordance with the provisions of the Child Labour Act. It also entails further identificatio",
+      "keywords": [
+        "Children",
+        "Working",
+        "Hazardous",
+        "Labour",
+        "Policy",
+        "Action"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "ACT-HEADER",
+      "summary": "Section ACT-HEADER: AND REGULATION) RULES, 1988 (Act header)",
+      "plain_english": "Section ACT-HEADER: AND REGULATION) RULES, 1988 (Act header)",
+      "keywords": [
+        "Regulation",
+        "Rules",
+        "Header"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "2",
+      "summary": "Section 2: Repeat offence under section 3 is punishable with imprisonment for a term which shall not",
+      "plain_english": "be less than six months but which may extend to two years.",
+      "keywords": [
+        "Which",
+        "Repeat",
+        "Offence",
+        "Section",
+        "Punishable",
+        "Imprisonment"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "3",
+      "summary": "Section 3: Whoever –",
+      "plain_english": "a. fails to give notice as required by Sec. 9, or b. fails to maintain a register as required by Sec. 11 or makes any false entry in any such register; or c. fails to display a notice containing an abstract of Sec. 3 and this section as required by Sec. 12; or d. fails to comply with or contravenes any other provisions of this Act or the rules made there under, shall be punishable with simple imprisonment which may extend to one month or with fine which may extend to ten thousand rupees or with",
+      "keywords": [
+        "Fails",
+        "Required",
+        "Notice",
+        "Register",
+        "Which",
+        "Extend"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "1",
+      "summary": "Section 1: Transport of passengers, goods or mails by railways;",
+      "plain_english": "Section 1: Transport of passengers, goods or mails by railways;",
+      "keywords": [
+        "Transport",
+        "Passengers",
+        "Goods",
+        "Mails",
+        "Railways"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "4",
+      "summary": "Section 4: Work relating to the construction of a railway station or with any other work where",
+      "plain_english": "such work is done in close proximity to or between the railway lines;",
+      "keywords": [
+        "Work",
+        "Railway",
+        "Relating",
+        "Construction",
+        "Station",
+        "Other"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "5",
+      "summary": "Section 5: A port authority within the limits of any port;",
+      "plain_english": "Section 5: A port authority within the limits of any port;",
+      "keywords": [
+        "Port",
+        "Authority",
+        "Limits"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "6",
+      "summary": "Section 6: Work relating to selling of crackers and fireworks in shops with temporary licenses;",
+      "plain_english": "Section 6: Work relating to selling of crackers and fireworks in shops with temporary licenses;",
+      "keywords": [
+        "Work",
+        "Relating",
+        "Selling",
+        "Crackers",
+        "Fireworks",
+        "Shops"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "7",
+      "summary": "Section 7: Abattoirs/Slaughter House;",
+      "plain_english": "Section 7: Abattoirs/Slaughter House;",
+      "keywords": [
+        "Abattoirs",
+        "Slaughter",
+        "House"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "8",
+      "summary": "Section 8: Automobile workshops and garages;",
+      "plain_english": "9. Foundries;",
+      "keywords": [
+        "Automobile",
+        "Workshops",
+        "Garages",
+        "Foundries"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "10",
+      "summary": "Section 10: Handling of toxic or inflammable substances or explosives;",
+      "plain_english": "Section 10: Handling of toxic or inflammable substances or explosives;",
+      "keywords": [
+        "Handling",
+        "Toxic",
+        "Inflammable",
+        "Substances",
+        "Explosives"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "11",
+      "summary": "Section 11: Handloom and power loom industry;",
+      "plain_english": "Section 11: Handloom and power loom industry;",
+      "keywords": [
+        "Handloom",
+        "Power",
+        "Loom",
+        "Industry"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "12",
+      "summary": "Section 12: Mines (underground and under water) and collieries;",
+      "plain_english": "Section 12: Mines (underground and under water) and collieries;",
+      "keywords": [
+        "Mines",
+        "Underground",
+        "Water",
+        "Collieries"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "13",
+      "summary": "Section 13: Plastic units and fiberglass workshops;",
+      "plain_english": "124 Prohibited processes as per PART B 1. Beedi-making.",
+      "keywords": [
+        "Plastic",
+        "Units",
+        "Fiberglass",
+        "Workshops",
+        "Prohibited",
+        "Processes"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "20",
+      "summary": "Section 20: Automobile repairs and maintenance including processes incidental thereto",
+      "plain_english": "namely, welding, lathe work, dent beating and painting.",
+      "keywords": [
+        "Automobile",
+        "Repairs",
+        "Maintenance",
+        "Including",
+        "Processes",
+        "Incidental"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "21",
+      "summary": "Section 21: Brick kilns and Roof tiles units",
+      "plain_english": "Section 21: Brick kilns and Roof tiles units",
+      "keywords": [
+        "Brick",
+        "Kilns",
+        "Roof",
+        "Tiles",
+        "Units"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "22",
+      "summary": "Section 22: Cotton ginning and processing and production of hosiery goods",
+      "plain_english": "Section 22: Cotton ginning and processing and production of hosiery goods",
+      "keywords": [
+        "Cotton",
+        "Ginning",
+        "Processing",
+        "Production",
+        "Hosiery",
+        "Goods"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "23",
+      "summary": "Section 23: Detergent manufacturing",
+      "plain_english": "Section 23: Detergent manufacturing",
+      "keywords": [
+        "Detergent",
+        "Manufacturing"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "24",
+      "summary": "Section 24: Fabrication workshops (ferrous and non ferrous)",
+      "plain_english": "Section 24: Fabrication workshops (ferrous and non ferrous)",
+      "keywords": [
+        "Ferrous",
+        "Fabrication",
+        "Workshops"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "25",
+      "summary": "Section 25: Gem cutting and polishing",
+      "plain_english": "Section 25: Gem cutting and polishing",
+      "keywords": [
+        "Cutting",
+        "Polishing"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "26",
+      "summary": "Section 26: Handling of chromite and manganese ores",
+      "plain_english": "Section 26: Handling of chromite and manganese ores",
+      "keywords": [
+        "Handling",
+        "Chromite",
+        "Manganese",
+        "Ores"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "27",
+      "summary": "Section 27: Jute textile manufacture and coir making",
+      "plain_english": "Section 27: Jute textile manufacture and coir making",
+      "keywords": [
+        "Jute",
+        "Textile",
+        "Manufacture",
+        "Coir",
+        "Making"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "28",
+      "summary": "Section 28: Lime Kilns and Manufacture of Lime",
+      "plain_english": "Section 28: Lime Kilns and Manufacture of Lime",
+      "keywords": [
+        "Lime",
+        "Kilns",
+        "Manufacture"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "29",
+      "summary": "Section 29: Lock Making",
+      "plain_english": "Section 29: Lock Making",
+      "keywords": [
+        "Lock",
+        "Making"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "30",
+      "summary": "Section 30: Manufacturing processes having exposure to lead such as primary and secondary",
+      "plain_english": "smelting, welding and cutting of lead-painted metal constructions, welding of galvanized orzinc silicate, polyvinyl chloride, mixing (by hand) of crystal glass mass, sanding or scraping of lead paint, burning of lead in enameling workshops, lead mining, plumbing, cable making, wiring patenting, lead casting, type founding in printing shops. Store type setting, assembling of cars, shot making and lead glass blowing.",
+      "keywords": [
+        "Lead",
+        "Welding",
+        "Glass",
+        "Making",
+        "Type",
+        "Manufacturing"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "31",
+      "summary": "Section 31: Manufacture of cement pipes, cement products and other related work",
+      "plain_english": "Section 31: Manufacture of cement pipes, cement products and other related work",
+      "keywords": [
+        "Cement",
+        "Manufacture",
+        "Pipes",
+        "Products",
+        "Other",
+        "Related"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "32",
+      "summary": "Section 32: Manufacture of glass, glass ware including bangles, florescent tubes, bulbs and",
+      "plain_english": "other similar glass products.",
+      "keywords": [
+        "Glass",
+        "Manufacture",
+        "Ware",
+        "Including",
+        "Bangles",
+        "Florescent"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "33",
+      "summary": "Section 33: Manufacture of dyes and dye stuff",
+      "plain_english": "Section 33: Manufacture of dyes and dye stuff",
+      "keywords": [
+        "Manufacture",
+        "Dyes",
+        "Stuff"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "34",
+      "summary": "Section 34: Manufacturing or handling of pesticides and insecticides",
+      "plain_english": "Section 34: Manufacturing or handling of pesticides and insecticides",
+      "keywords": [
+        "Manufacturing",
+        "Handling",
+        "Pesticides",
+        "Insecticides"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "35",
+      "summary": "Section 35: Manufacturing or processing and handling of corrosive and toxic substances, metal",
+      "plain_english": "cleaning and photo engraving and soldering processes in electronic industry.",
+      "keywords": [
+        "Manufacturing",
+        "Processing",
+        "Handling",
+        "Corrosive",
+        "Toxic",
+        "Substances"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "36",
+      "summary": "Section 36: Manufacturing of burning coal and coal briquettes",
+      "plain_english": "Section 36: Manufacturing of burning coal and coal briquettes",
+      "keywords": [
+        "Coal",
+        "Manufacturing",
+        "Burning",
+        "Briquettes"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "37",
+      "summary": "Section 37: Manufacturing of sports goods involving exposure to synthetic materials, chemicals",
+      "plain_english": "and leather.",
+      "keywords": [
+        "Manufacturing",
+        "Sports",
+        "Goods",
+        "Involving",
+        "Exposure",
+        "Synthetic"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "38",
+      "summary": "Section 38: Moulding and processing of fiberglass and plastic",
+      "plain_english": "Section 38: Moulding and processing of fiberglass and plastic",
+      "keywords": [
+        "Moulding",
+        "Processing",
+        "Fiberglass",
+        "Plastic"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "39",
+      "summary": "Section 39: Oil expelling and refinery",
+      "plain_english": "Section 39: Oil expelling and refinery",
+      "keywords": [
+        "Expelling",
+        "Refinery"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "40",
+      "summary": "Section 40: Paper making",
+      "plain_english": "Section 40: Paper making",
+      "keywords": [
+        "Paper",
+        "Making"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "41",
+      "summary": "Section 41: Potteries and ceramic industry",
+      "plain_english": "Section 41: Potteries and ceramic industry",
+      "keywords": [
+        "Potteries",
+        "Ceramic",
+        "Industry"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "42",
+      "summary": "Section 42: Polishing, moulding, cutting, welding and manufacturing of brass goods in all",
+      "plain_english": "forms. 126",
+      "keywords": [
+        "Polishing",
+        "Moulding",
+        "Cutting",
+        "Welding",
+        "Manufacturing",
+        "Brass"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "43",
+      "summary": "Section 43: Processes in agriculture where tractors, threshing and harvesting machines are",
+      "plain_english": "used and chaff cutting.",
+      "keywords": [
+        "Processes",
+        "Agriculture",
+        "Where",
+        "Tractors",
+        "Threshing",
+        "Harvesting"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "44",
+      "summary": "Section 44: Saw mill – all processes",
+      "plain_english": "Section 44: Saw mill – all processes",
+      "keywords": [
+        "Mill",
+        "Processes"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "45",
+      "summary": "Section 45: Sericulture processing",
+      "plain_english": "Section 45: Sericulture processing",
+      "keywords": [
+        "Sericulture",
+        "Processing"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "46",
+      "summary": "Section 46: Skinning, dyeing and processes for manufacturing of leather and leather products",
+      "plain_english": "Section 46: Skinning, dyeing and processes for manufacturing of leather and leather products",
+      "keywords": [
+        "Leather",
+        "Skinning",
+        "Dyeing",
+        "Processes",
+        "Manufacturing",
+        "Products"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "47",
+      "summary": "Section 47: Stone breaking and stone crushing",
+      "plain_english": "Section 47: Stone breaking and stone crushing",
+      "keywords": [
+        "Stone",
+        "Breaking",
+        "Crushing"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "48",
+      "summary": "Section 48: Tobacco processing including manufacturing of tobacco, tobacco paste and",
+      "plain_english": "handling of tobacco in any form.",
+      "keywords": [
+        "Tobacco",
+        "Processing",
+        "Including",
+        "Manufacturing",
+        "Paste",
+        "Handling"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "49",
+      "summary": "Section 49: Tyre making, repairing, re-treading and graphite benefication",
+      "plain_english": "Section 49: Tyre making, repairing, re-treading and graphite benefication",
+      "keywords": [
+        "Tyre",
+        "Making",
+        "Repairing",
+        "Treading",
+        "Graphite",
+        "Benefication"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "50",
+      "summary": "Section 50: Utensils making, polishing and metal buffing",
+      "plain_english": "51. ‘Zari’ making (all processes)’. (52) Electroplating;",
+      "keywords": [
+        "Making",
+        "Utensils",
+        "Polishing",
+        "Metal",
+        "Buffing",
+        "Zari"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "53",
+      "summary": "Section 53: Graphite powdering and incidental processing;",
+      "plain_english": "Section 53: Graphite powdering and incidental processing;",
+      "keywords": [
+        "Graphite",
+        "Powdering",
+        "Incidental",
+        "Processing"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "54",
+      "summary": "Section 54: Grinding or glazing of metals;",
+      "plain_english": "Section 54: Grinding or glazing of metals;",
+      "keywords": [
+        "Grinding",
+        "Glazing",
+        "Metals"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "55",
+      "summary": "Section 55: Diamond cutting and polishing;",
+      "plain_english": "Section 55: Diamond cutting and polishing;",
+      "keywords": [
+        "Diamond",
+        "Cutting",
+        "Polishing"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "56",
+      "summary": "Section 56: Extraction of slate from mines;",
+      "plain_english": "Section 56: Extraction of slate from mines;",
+      "keywords": [
+        "Extraction",
+        "Slate",
+        "Mines"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "57",
+      "summary": "Section 57: Rag picking and scavenging",
+      "plain_english": "Ban on employment of children Ban on employment of children as domestic servants or in dhabas (roadside eateries), restaurants, hotels, motels, teashops, resorts, spas or in other recreational centers is now in force from 10th October 2006 under the Child Labour (Prohibition & Regulation) Act, 1986. The Union Ministry of Labour had earlier issued a notification giving three-month mandatory notice. The Ministry has warned that anyone employing children in these categories would be liable to prose",
+      "keywords": [
+        "Children",
+        "Employment",
+        "Labour",
+        "Ministry",
+        "Picking",
+        "Scavenging"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "ACT-HEADER",
+      "summary": "Section ACT-HEADER: Important provisions of the Contract Labour Act, 1971 (Act header)",
+      "plain_english": "Section ACT-HEADER: Important provisions of the Contract Labour Act, 1971 (Act header)",
+      "keywords": [
+        "Important",
+        "Provisions",
+        "Contract",
+        "Labour",
+        "Header"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "5",
+      "summary": "Section 5: CHECKLIST OF LABOUR LAW COMPLIANCE",
+      "plain_english": "Statutory compliance under various labour laws has to be ensured by establishments. It is not just limited to the statutory deposits, returns and records to be maintained by the employer under various labour laws, but also to represent them in case of prosecution under various statutes. Hence, it hardly needs to be emphasized that the labour related laws cast an obligation on the employer for meticulous, impeccable and timely compliances. In the event of violation or delay in complying with the",
+      "keywords": [
+        "Labour",
+        "Various",
+        "Laws",
+        "Compliance",
+        "Statutory",
+        "Employer"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "ACT-HEADER",
+      "summary": "Section ACT-HEADER: Provisions Act , 1952 (Act header)",
+      "plain_english": "Section ACT-HEADER: Provisions Act , 1952 (Act header)",
+      "keywords": [
+        "Provisions",
+        "Header"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "6",
+      "summary": "Section 6: UNFAIR LABOUR PRACTICES",
+      "plain_english": "According to Sec.2 (ra) of the Industrial Disputes Act, 1947, unfair labour practices refer to “any of the practices specified in the Fifth Schedule to the Industrial Disputes Act, 1947. According to Section 25T of the Industrial Disputes Act, 1947 no employer or workman or a trade union, whether registered under the Trade Unions Act, 1926 or not, shall commit any unfair labour practice. Fifth Schedule to the Industrial Disputes Act, 1947 provides a list as to what constitutes an unfair labour p",
+      "keywords": [
+        "Unfair",
+        "Labour",
+        "Industrial",
+        "Disputes",
+        "Practices",
+        "According"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "1",
+      "summary": "Section 1: To interfere with, restrain from or coerce workmen in the exercise of their rights to organize",
+      "plain_english": "from, join or assist a trade union, or to engage in concerted activities for the purposes of collective bargaining or other mutual aid or protection, i.e. a. Threatening workmen with discharge or dismissal, if they join a trade union, b. Threatening a lock out or closure if a trade union is organized, c. Granting wage increase to workmen at crucial periods of the union organisation, with a view to undermining the efforts of the trade union organization 144",
+      "keywords": [
+        "Union",
+        "Trade",
+        "Workmen",
+        "Join",
+        "Threatening",
+        "Interfere"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "2",
+      "summary": "Section 2: To dominate, interfere with or contribute, support, financially or otherwise to any trade union",
+      "plain_english": "that is to say: - a. An employer taking an active interest in organizing a trade union of his workmen and b. An employer showing partiality or granting favor to one of several trade unions attempting to organize his workmen or to its members where such a trade union is not a recognized trade union.",
+      "keywords": [
+        "Trade",
+        "Union",
+        "Employer",
+        "Workmen",
+        "Dominate",
+        "Interfere"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "3",
+      "summary": "Section 3: To establish employer sponsored trade unions of workmen",
+      "plain_english": "Section 3: To establish employer sponsored trade unions of workmen",
+      "keywords": [
+        "Establish",
+        "Employer",
+        "Sponsored",
+        "Trade",
+        "Unions",
+        "Workmen"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "4",
+      "summary": "Section 4: To encourage or discourage membership in any trade unions by discriminating against workman",
+      "plain_english": "that is to say:-. a. Discharging or punishing a workman, because he urged other workmen to join or organize a trade union. b. Discharging or dismissing a workman for taking part in strike (not being a strike which is deemed to be an illegal strike under this act) c. Changing seniority rating of workmen because of trade union activities d. Refusing to promote workmen to hire posts on account of their trade union activities e. Giving unmerited promotions to certain workmen with a view to creating",
+      "keywords": [
+        "Trade",
+        "Workmen",
+        "Workman",
+        "Union",
+        "Strike",
+        "Discharging"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "5",
+      "summary": "Section 5: To discharge or dismiss workmen",
+      "plain_english": "a. By way of victimization b. Not in good faith but in the colorable exercise of the employer’s right c. By falsely implicating a workman in a criminal case on false evidence or concocted evidence d. For patently false reasons e. On untrue or trumped up allegations of absence without leave 145 f. In utter disregard of the principles of natural justice. g. For misconduct of minor or technical character, without having any regard to the nature of the particular misconduct or the past record of ser",
+      "keywords": [
+        "False",
+        "Evidence",
+        "Misconduct",
+        "Discharge",
+        "Dismiss",
+        "Workmen"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "7",
+      "summary": "Section 7: To transfer a workman malafide from one place to another under the guise of following",
+      "plain_english": "management policy.",
+      "keywords": [
+        "Transfer",
+        "Workman",
+        "Malafide",
+        "Place",
+        "Another",
+        "Guise"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "8",
+      "summary": "Section 8: To insist upon individual workman who are on a legal strike to sign a conduct bond as a",
+      "plain_english": "precondition to allowing them to resume work",
+      "keywords": [
+        "Insist",
+        "Individual",
+        "Workman",
+        "Legal",
+        "Strike",
+        "Sign"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "9",
+      "summary": "Section 9: To show favoritism or partiality to one set of workers regardless of merit",
+      "plain_english": "Section 9: To show favoritism or partiality to one set of workers regardless of merit",
+      "keywords": [
+        "Show",
+        "Favoritism",
+        "Partiality",
+        "Workers",
+        "Regardless",
+        "Merit"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "10",
+      "summary": "Section 10: To employ workmen as ‘badlis’, casuals or temporaries and to continue them as such for the",
+      "plain_english": "years with the object of depriving them of the status and privileges of permanent workmen.",
+      "keywords": [
+        "Workmen",
+        "Them",
+        "Employ",
+        "Badlis",
+        "Casuals",
+        "Temporaries"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "11",
+      "summary": "Section 11: To discharge or discriminate against any workmen for filing charges or testifying against",
+      "plain_english": "employer in any enquiry or proceeding relating to any industrial dispute.",
+      "keywords": [
+        "Against",
+        "Discharge",
+        "Discriminate",
+        "Workmen",
+        "Filing",
+        "Charges"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "12",
+      "summary": "Section 12: To recruit workmen during a strike which is not an illegal strike",
+      "plain_english": "Section 12: To recruit workmen during a strike which is not an illegal strike",
+      "keywords": [
+        "Strike",
+        "Recruit",
+        "Workmen",
+        "During",
+        "Which",
+        "Illegal"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "13",
+      "summary": "Section 13: Failure to implement award, settlement or agreement",
+      "plain_english": "Section 13: Failure to implement award, settlement or agreement",
+      "keywords": [
+        "Failure",
+        "Implement",
+        "Award",
+        "Settlement",
+        "Agreement"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "14",
+      "summary": "Section 14: To indulge in acts of force or violence",
+      "plain_english": "Section 14: To indulge in acts of force or violence",
+      "keywords": [
+        "Indulge",
+        "Acts",
+        "Force",
+        "Violence"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "15",
+      "summary": "Section 15: To refuse to bargain collectively, in good faith with the recognized trade unions",
+      "plain_english": "Section 15: To refuse to bargain collectively, in good faith with the recognized trade unions",
+      "keywords": [
+        "Refuse",
+        "Bargain",
+        "Collectively",
+        "Good",
+        "Faith",
+        "Recognized"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "16",
+      "summary": "Section 16: Proposing or continuing a lock out deemed to be illegal under this act",
+      "plain_english": "If the employer of any establishment commits any of these acts then he will be liable for an offence of unfair labour practice. Unfair labour practices on the part of workmen and trade unions of workmen 146",
+      "keywords": [
+        "Unfair",
+        "Labour",
+        "Workmen",
+        "Proposing",
+        "Continuing",
+        "Lock"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "17",
+      "summary": "Section 17: Disciplinary Action",
+      "plain_english": "Where the conduct of an employee amounts to misconduct in employment as defined in the relevant service rules the employer should initiate appropriate disciplinary action in accordance with the relevant rules.",
+      "keywords": [
+        "Disciplinary",
+        "Action",
+        "Relevant",
+        "Rules",
+        "Where",
+        "Conduct"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "18",
+      "summary": "Section 18: Worker’s Initiative",
+      "plain_english": "Employees should be allowed to raise issues of sexual harassment at worker’s meeting and in other appropriate fora and it should be affirmatively discussed in periodical employer-employee meetings.",
+      "keywords": [
+        "Worker",
+        "Should",
+        "Initiative",
+        "Employees",
+        "Allowed",
+        "Raise"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "19",
+      "summary": "Section 19: Third Party harassment",
+      "plain_english": "Where sexual harassment occurs as a result of an act or omission by any third party or outsider the employer and the persons in charge shall take all steps necessary and reasonable to assist the affected person in terms of support and preventive action.",
+      "keywords": [
+        "Third",
+        "Party",
+        "Harassment",
+        "Where",
+        "Sexual",
+        "Occurs"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "20",
+      "summary": "Section 20: Annual Report",
+      "plain_english": "The Complaints Committee shall prepare an Annual Report giving a full account of its activities during the previous year and forward a copy thereof to the Head of the Organisation concerned who shall forward the same to the government department concerned with its comments. Savings:- Nothing contained in this code shall prejudice any right available to the employee or prevent any person from seeking any legal remedy under the National Commission for Women Act 1990, Protection of Human Rights Com",
+      "keywords": [
+        "Annual",
+        "Report",
+        "Forward",
+        "Concerned",
+        "Complaints",
+        "Committee"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "1946",
+      "summary": "Section 1946: Its constitution, as amended, includes the Declaration of Philadelphia (1944) on the",
+      "plain_english": "aims and purposes of the organisation. As of April 2009, the current director-general is Juan Somavia (since 1999). Unlike other United Nations specialized agencies, the International Labour Organization has a tripartite governing structure — representing governments, employers and workers. Presently there are 181 members. The International Labour Organization (ILO) is devoted to advancing opportunities for women and men to obtain decent and productive work in conditions of freedom, equity, secu",
+      "keywords": [
+        "International",
+        "Labour",
+        "Organization",
+        "Constitution",
+        "Amended",
+        "Includes"
+      ],
+      "legal_topics": [
+        "Labour Law"
+      ],
+      "related": []
+    }
+  ]
+}

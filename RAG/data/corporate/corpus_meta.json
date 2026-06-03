@@ -1,0 +1,7304 @@
+[
+  {
+    "idx": 0,
+    "number": "1",
+    "title": "Short title, extent, commencement and application",
+    "page": 1
+  },
+  {
+    "idx": 1,
+    "number": "3",
+    "title": "Formation of company",
+    "page": 1
+  },
+  {
+    "idx": 2,
+    "number": "3A",
+    "title": "Members severally liable in certain cases",
+    "page": 1
+  },
+  {
+    "idx": 3,
+    "number": "6",
+    "title": "Act to override memorandum, articles, etc",
+    "page": 1
+  },
+  {
+    "idx": 4,
+    "number": "7",
+    "title": "Incorporation of company",
+    "page": 1
+  },
+  {
+    "idx": 5,
+    "number": "8",
+    "title": "Formation of companies with charitable objects, etc",
+    "page": 1
+  },
+  {
+    "idx": 6,
+    "number": "9",
+    "title": "Effect of registration",
+    "page": 1
+  },
+  {
+    "idx": 7,
+    "number": "10",
+    "title": "Effect of memorandum and articles",
+    "page": 1
+  },
+  {
+    "idx": 8,
+    "number": "10A",
+    "title": "Commencement of business, etc",
+    "page": 1
+  },
+  {
+    "idx": 9,
+    "number": "12",
+    "title": "Registered office of company",
+    "page": 1
+  },
+  {
+    "idx": 10,
+    "number": "13",
+    "title": "Alteration of memorandum",
+    "page": 1
+  },
+  {
+    "idx": 11,
+    "number": "14",
+    "title": "Alteration of articles",
+    "page": 1
+  },
+  {
+    "idx": 12,
+    "number": "15",
+    "title": "Alteration of memorandum or articles to be noted in every copy",
+    "page": 1
+  },
+  {
+    "idx": 13,
+    "number": "16",
+    "title": "Rectification of name of company",
+    "page": 1
+  },
+  {
+    "idx": 14,
+    "number": "17",
+    "title": "Copies of memorandum, articles, etc., to be given to members",
+    "page": 1
+  },
+  {
+    "idx": 15,
+    "number": "18",
+    "title": "Conversion of companies already registered",
+    "page": 1
+  },
+  {
+    "idx": 16,
+    "number": "19",
+    "title": "Subsidiary company not to hold shares in its holding company",
+    "page": 1
+  },
+  {
+    "idx": 17,
+    "number": "20",
+    "title": "Service of documents",
+    "page": 1
+  },
+  {
+    "idx": 18,
+    "number": "21",
+    "title": "Authentication of documents, proceedings and contracts",
+    "page": 1
+  },
+  {
+    "idx": 19,
+    "number": "22",
+    "title": "Execution of bills of exchange, etc",
+    "page": 1
+  },
+  {
+    "idx": 20,
+    "number": "23",
+    "title": "Public offer and private placement",
+    "page": 1
+  },
+  {
+    "idx": 21,
+    "number": "24",
+    "title": "Power of Securities and Exchange Board to regulate issue and transfer of securities, etc",
+    "page": 1
+  },
+  {
+    "idx": 22,
+    "number": "25",
+    "title": "Document containing offer of securities for sale to be deemed prospectus",
+    "page": 1
+  },
+  {
+    "idx": 23,
+    "number": "26",
+    "title": "Matters to be stated in prospectus",
+    "page": 1
+  },
+  {
+    "idx": 24,
+    "number": "27",
+    "title": "Variation in terms of contract or objects in prospectus",
+    "page": 1
+  },
+  {
+    "idx": 25,
+    "number": "28",
+    "title": "Offer of sale of shares by certain members of company",
+    "page": 1
+  },
+  {
+    "idx": 26,
+    "number": "29",
+    "title": "Public offer of securities to be in dematerialised form",
+    "page": 1
+  },
+  {
+    "idx": 27,
+    "number": "30",
+    "title": "Advertisement of prospectus",
+    "page": 1
+  },
+  {
+    "idx": 28,
+    "number": "31",
+    "title": "Shelf prospectus",
+    "page": 1
+  },
+  {
+    "idx": 29,
+    "number": "32",
+    "title": "Red herring prospectus",
+    "page": 1
+  },
+  {
+    "idx": 30,
+    "number": "33",
+    "title": "Issue of application forms for securities",
+    "page": 1
+  },
+  {
+    "idx": 31,
+    "number": "34",
+    "title": "Criminal liability for mis-statements in prospectus",
+    "page": 1
+  },
+  {
+    "idx": 32,
+    "number": "35",
+    "title": "Civil liability for mis-statements in prospectus",
+    "page": 1
+  },
+  {
+    "idx": 33,
+    "number": "36",
+    "title": "Punishment for fraudulently inducing persons to invest money",
+    "page": 2
+  },
+  {
+    "idx": 34,
+    "number": "37",
+    "title": "Action by affected persons",
+    "page": 2
+  },
+  {
+    "idx": 35,
+    "number": "38",
+    "title": "Punishment for personation for acquisition, etc., of securities",
+    "page": 2
+  },
+  {
+    "idx": 36,
+    "number": "39",
+    "title": "Allotment of securities by company",
+    "page": 2
+  },
+  {
+    "idx": 37,
+    "number": "40",
+    "title": "Securities to be dealt with in stock exchanges",
+    "page": 2
+  },
+  {
+    "idx": 38,
+    "number": "41",
+    "title": "Global depository receipt",
+    "page": 2
+  },
+  {
+    "idx": 39,
+    "number": "42",
+    "title": "Issue of shares on private placement basis",
+    "page": 2
+  },
+  {
+    "idx": 40,
+    "number": "43",
+    "title": "Kinds of share capital",
+    "page": 2
+  },
+  {
+    "idx": 41,
+    "number": "44",
+    "title": "Nature of shares or debentures",
+    "page": 2
+  },
+  {
+    "idx": 42,
+    "number": "45",
+    "title": "Numbering of shares",
+    "page": 2
+  },
+  {
+    "idx": 43,
+    "number": "46",
+    "title": "Certificate of shares",
+    "page": 2
+  },
+  {
+    "idx": 44,
+    "number": "47",
+    "title": "Voting rights",
+    "page": 2
+  },
+  {
+    "idx": 45,
+    "number": "48",
+    "title": "Variation of shareholders’ rights",
+    "page": 2
+  },
+  {
+    "idx": 46,
+    "number": "49",
+    "title": "Calls on shares of same class to be made on uniform basis",
+    "page": 2
+  },
+  {
+    "idx": 47,
+    "number": "50",
+    "title": "Company to accept unpaid share capital, although not called up",
+    "page": 2
+  },
+  {
+    "idx": 48,
+    "number": "51",
+    "title": "Payment of dividend in proportion to amount paid-up",
+    "page": 2
+  },
+  {
+    "idx": 49,
+    "number": "52",
+    "title": "Application of premiums received on issue of shares",
+    "page": 2
+  },
+  {
+    "idx": 50,
+    "number": "53",
+    "title": "Prohibition on issue of shares at discount",
+    "page": 2
+  },
+  {
+    "idx": 51,
+    "number": "54",
+    "title": "Issues of sweat equity shares",
+    "page": 2
+  },
+  {
+    "idx": 52,
+    "number": "55",
+    "title": "Issue and redemption of preference shares",
+    "page": 2
+  },
+  {
+    "idx": 53,
+    "number": "56",
+    "title": "Transfer and transmission of securities",
+    "page": 2
+  },
+  {
+    "idx": 54,
+    "number": "57",
+    "title": "Punishment for personation of shareholder",
+    "page": 2
+  },
+  {
+    "idx": 55,
+    "number": "58",
+    "title": "Refusal of registration and appeal against refusal",
+    "page": 2
+  },
+  {
+    "idx": 56,
+    "number": "59",
+    "title": "Rectification of register of members",
+    "page": 2
+  },
+  {
+    "idx": 57,
+    "number": "60",
+    "title": "Publication of authorised, subscribed and paid-up capital",
+    "page": 2
+  },
+  {
+    "idx": 58,
+    "number": "61",
+    "title": "Power of limited company to alter its share capital",
+    "page": 2
+  },
+  {
+    "idx": 59,
+    "number": "62",
+    "title": "Further issue of share capital",
+    "page": 2
+  },
+  {
+    "idx": 60,
+    "number": "63",
+    "title": "Issue of bonus shares",
+    "page": 2
+  },
+  {
+    "idx": 61,
+    "number": "64",
+    "title": "Notice to be given to Registrar for alteration of share capital",
+    "page": 2
+  },
+  {
+    "idx": 62,
+    "number": "65",
+    "title": "Unlimited company to provide for reserve share capital on conversion into limited company",
+    "page": 2
+  },
+  {
+    "idx": 63,
+    "number": "66",
+    "title": "Reduction of share capital",
+    "page": 2
+  },
+  {
+    "idx": 64,
+    "number": "67",
+    "title": "Restrictions on purchase by company or giving of loans by it for purchase of its shares",
+    "page": 2
+  },
+  {
+    "idx": 65,
+    "number": "68",
+    "title": "Power of company to purchase its own securities",
+    "page": 2
+  },
+  {
+    "idx": 66,
+    "number": "69",
+    "title": "Transfer of certain sums to capital redemption reserve account",
+    "page": 2
+  },
+  {
+    "idx": 67,
+    "number": "70",
+    "title": "Prohibition for buy-back in certain circumstances",
+    "page": 2
+  },
+  {
+    "idx": 68,
+    "number": "72",
+    "title": "Power to nominate",
+    "page": 2
+  },
+  {
+    "idx": 69,
+    "number": "73",
+    "title": "Prohibition on acceptance of deposits from public",
+    "page": 2
+  },
+  {
+    "idx": 70,
+    "number": "74",
+    "title": "Repayment of deposits, etc., accepted before commencement of this Act",
+    "page": 2
+  },
+  {
+    "idx": 71,
+    "number": "75",
+    "title": "Damages for fraud",
+    "page": 2
+  },
+  {
+    "idx": 72,
+    "number": "76",
+    "title": "Acceptance of deposits from public by certain companies",
+    "page": 3
+  },
+  {
+    "idx": 73,
+    "number": "76A",
+    "title": "Punishment for contravention of section 73 or section 76",
+    "page": 3
+  },
+  {
+    "idx": 74,
+    "number": "77",
+    "title": "Duty to register charges, etc",
+    "page": 3
+  },
+  {
+    "idx": 75,
+    "number": "78",
+    "title": "Application for registration of charge",
+    "page": 3
+  },
+  {
+    "idx": 76,
+    "number": "80",
+    "title": "Date of notice of charge",
+    "page": 3
+  },
+  {
+    "idx": 77,
+    "number": "81",
+    "title": "Register of charges to be kept by Registrar",
+    "page": 3
+  },
+  {
+    "idx": 78,
+    "number": "82",
+    "title": "Company to report satisfaction of charge",
+    "page": 3
+  },
+  {
+    "idx": 79,
+    "number": "83",
+    "title": "Power of Registrar to make entries of satisfaction and release in absence of intimation from",
+    "page": 3
+  },
+  {
+    "idx": 80,
+    "number": "84",
+    "title": "Intimation of appointment of receiver or manager",
+    "page": 3
+  },
+  {
+    "idx": 81,
+    "number": "85",
+    "title": "Company’s register of charges",
+    "page": 3
+  },
+  {
+    "idx": 82,
+    "number": "86",
+    "title": "Punishment for contravention",
+    "page": 3
+  },
+  {
+    "idx": 83,
+    "number": "87",
+    "title": "Rectification by Central Government in Register of charges",
+    "page": 3
+  },
+  {
+    "idx": 84,
+    "number": "88",
+    "title": "Register of members, etc",
+    "page": 3
+  },
+  {
+    "idx": 85,
+    "number": "89",
+    "title": "Declaration in respect of beneficial interest in any share",
+    "page": 3
+  },
+  {
+    "idx": 86,
+    "number": "90",
+    "title": "Register of significant beneficial owners in a Company",
+    "page": 3
+  },
+  {
+    "idx": 87,
+    "number": "91",
+    "title": "Power to close register of members or debenture holders or other security holders",
+    "page": 3
+  },
+  {
+    "idx": 88,
+    "number": "92",
+    "title": "Annual return",
+    "page": 3
+  },
+  {
+    "idx": 89,
+    "number": "94",
+    "title": "Place of keeping and inspection of registers, returns, etc",
+    "page": 3
+  },
+  {
+    "idx": 90,
+    "number": "95",
+    "title": "Registers, etc., to be evidence",
+    "page": 3
+  },
+  {
+    "idx": 91,
+    "number": "96",
+    "title": "Annual general meeting",
+    "page": 3
+  },
+  {
+    "idx": 92,
+    "number": "97",
+    "title": "Power of Tribunal to call annual general meeting",
+    "page": 3
+  },
+  {
+    "idx": 93,
+    "number": "98",
+    "title": "Power of Tribunal to call meetings of members, etc",
+    "page": 3
+  },
+  {
+    "idx": 94,
+    "number": "99",
+    "title": "Punishment for default in complying with provisions of sections 96 to 98",
+    "page": 3
+  },
+  {
+    "idx": 95,
+    "number": "100",
+    "title": "Calling of extraordinary general meeting",
+    "page": 3
+  },
+  {
+    "idx": 96,
+    "number": "101",
+    "title": "Notice of meeting",
+    "page": 3
+  },
+  {
+    "idx": 97,
+    "number": "102",
+    "title": "Statement to be annexed to notice",
+    "page": 3
+  },
+  {
+    "idx": 98,
+    "number": "103",
+    "title": "Quorum for meetings",
+    "page": 3
+  },
+  {
+    "idx": 99,
+    "number": "104",
+    "title": "Chairman of meetings",
+    "page": 3
+  },
+  {
+    "idx": 100,
+    "number": "106",
+    "title": "Restriction on voting rights",
+    "page": 3
+  },
+  {
+    "idx": 101,
+    "number": "107",
+    "title": "Voting by show of hands",
+    "page": 3
+  },
+  {
+    "idx": 102,
+    "number": "108",
+    "title": "Voting through electronic means",
+    "page": 3
+  },
+  {
+    "idx": 103,
+    "number": "109",
+    "title": "Demand for poll",
+    "page": 3
+  },
+  {
+    "idx": 104,
+    "number": "110",
+    "title": "Postal ballot",
+    "page": 3
+  },
+  {
+    "idx": 105,
+    "number": "111",
+    "title": "Circulation of members’ resolution",
+    "page": 3
+  },
+  {
+    "idx": 106,
+    "number": "112",
+    "title": "Representation of President and Governors in meetings",
+    "page": 3
+  },
+  {
+    "idx": 107,
+    "number": "113",
+    "title": "Representation of corporations at meeting of companies and of creditors",
+    "page": 3
+  },
+  {
+    "idx": 108,
+    "number": "114",
+    "title": "Ordinary and special resolutions",
+    "page": 3
+  },
+  {
+    "idx": 109,
+    "number": "115",
+    "title": "Resolutions requiring special notice",
+    "page": 3
+  },
+  {
+    "idx": 110,
+    "number": "116",
+    "title": "Resolutions passed at adjourned meeting",
+    "page": 3
+  },
+  {
+    "idx": 111,
+    "number": "117",
+    "title": "Resolutions and agreements to be filed",
+    "page": 3
+  },
+  {
+    "idx": 112,
+    "number": "118",
+    "title": "Minutes of proceedings of general meeting, meeting of Board of Directors and other meeting and",
+    "page": 4
+  },
+  {
+    "idx": 113,
+    "number": "119",
+    "title": "Inspection of minute-books of general meeting",
+    "page": 4
+  },
+  {
+    "idx": 114,
+    "number": "120",
+    "title": "Maintenance and inspection of documents in electronic form",
+    "page": 4
+  },
+  {
+    "idx": 115,
+    "number": "121",
+    "title": "Report on annual general meeting",
+    "page": 4
+  },
+  {
+    "idx": 116,
+    "number": "122",
+    "title": "Applicability of this Chapter to One Person Company",
+    "page": 4
+  },
+  {
+    "idx": 117,
+    "number": "123",
+    "title": "Declaration of dividend",
+    "page": 4
+  },
+  {
+    "idx": 118,
+    "number": "124",
+    "title": "Unpaid Dividend Account",
+    "page": 4
+  },
+  {
+    "idx": 119,
+    "number": "125",
+    "title": "Investor Education and Protection Fund",
+    "page": 4
+  },
+  {
+    "idx": 120,
+    "number": "126",
+    "title": "Right to dividend, rights shares and bonus shares to be held in abeyance pending registration of",
+    "page": 4
+  },
+  {
+    "idx": 121,
+    "number": "127",
+    "title": "Punishment for failure to distribute dividends",
+    "page": 4
+  },
+  {
+    "idx": 122,
+    "number": "128",
+    "title": "Books of account, etc., to be kept by company",
+    "page": 4
+  },
+  {
+    "idx": 123,
+    "number": "129",
+    "title": "Financial statement",
+    "page": 4
+  },
+  {
+    "idx": 124,
+    "number": "129A",
+    "title": "Periodical financial results",
+    "page": 4
+  },
+  {
+    "idx": 125,
+    "number": "130",
+    "title": "Re-opening of accounts on court’s or Tribunal’s orders",
+    "page": 4
+  },
+  {
+    "idx": 126,
+    "number": "131",
+    "title": "Voluntary revision of financial statements or Board’s report",
+    "page": 4
+  },
+  {
+    "idx": 127,
+    "number": "132",
+    "title": "Constitution of National Financial Reporting Authority",
+    "page": 4
+  },
+  {
+    "idx": 128,
+    "number": "133",
+    "title": "Central Government to prescribe accounting standards",
+    "page": 4
+  },
+  {
+    "idx": 129,
+    "number": "134",
+    "title": "Financial statement, Board’s report, etc",
+    "page": 4
+  },
+  {
+    "idx": 130,
+    "number": "135",
+    "title": "Corporate Social Responsibility",
+    "page": 4
+  },
+  {
+    "idx": 131,
+    "number": "136",
+    "title": "Right of member to copies of audited financial statement",
+    "page": 4
+  },
+  {
+    "idx": 132,
+    "number": "137",
+    "title": "Copy of financial statement to be filed with Registrar",
+    "page": 4
+  },
+  {
+    "idx": 133,
+    "number": "138",
+    "title": "Internal Audit",
+    "page": 4
+  },
+  {
+    "idx": 134,
+    "number": "139",
+    "title": "Appointment of auditors",
+    "page": 4
+  },
+  {
+    "idx": 135,
+    "number": "140",
+    "title": "Removal, resignation of auditor and giving of special notice",
+    "page": 4
+  },
+  {
+    "idx": 136,
+    "number": "141",
+    "title": "Eligibility, qualifications and disqualifications of auditors",
+    "page": 4
+  },
+  {
+    "idx": 137,
+    "number": "142",
+    "title": "Remuneration of auditors",
+    "page": 4
+  },
+  {
+    "idx": 138,
+    "number": "143",
+    "title": "Powers and duties of auditors and auditing standards",
+    "page": 4
+  },
+  {
+    "idx": 139,
+    "number": "144",
+    "title": "Auditor not to render certain services",
+    "page": 4
+  },
+  {
+    "idx": 140,
+    "number": "145",
+    "title": "Auditor to sign audit reports, etc",
+    "page": 4
+  },
+  {
+    "idx": 141,
+    "number": "146",
+    "title": "Auditors to attend general meeting",
+    "page": 4
+  },
+  {
+    "idx": 142,
+    "number": "147",
+    "title": "Punishment for contravention",
+    "page": 4
+  },
+  {
+    "idx": 143,
+    "number": "148",
+    "title": "Central Government to specify audit of items of cost in respect of certain companies",
+    "page": 4
+  },
+  {
+    "idx": 144,
+    "number": "149",
+    "title": "Company to have Board of Directors",
+    "page": 4
+  },
+  {
+    "idx": 145,
+    "number": "150",
+    "title": "Manner of selection of independent directors and maintenance of data bank of independent",
+    "page": 5
+  },
+  {
+    "idx": 146,
+    "number": "151",
+    "title": "Appointment of director elected by small shareholders",
+    "page": 5
+  },
+  {
+    "idx": 147,
+    "number": "152",
+    "title": "Appointment of directors",
+    "page": 5
+  },
+  {
+    "idx": 148,
+    "number": "153",
+    "title": "Application for allotment of Director Identification Number",
+    "page": 5
+  },
+  {
+    "idx": 149,
+    "number": "154",
+    "title": "Allotment of Director Identification Number",
+    "page": 5
+  },
+  {
+    "idx": 150,
+    "number": "155",
+    "title": "Prohibition to obtain more than one Director Identification Number",
+    "page": 5
+  },
+  {
+    "idx": 151,
+    "number": "156",
+    "title": "Director to intimate Director Identification Number",
+    "page": 5
+  },
+  {
+    "idx": 152,
+    "number": "157",
+    "title": "Company to inform Director Identification Number to Registrar",
+    "page": 5
+  },
+  {
+    "idx": 153,
+    "number": "158",
+    "title": "Obligation to indicate Director Identification Number",
+    "page": 5
+  },
+  {
+    "idx": 154,
+    "number": "159",
+    "title": "Penalty for default of certain provisions",
+    "page": 5
+  },
+  {
+    "idx": 155,
+    "number": "160",
+    "title": "Right of persons other than retiring directors to stand for directorship",
+    "page": 5
+  },
+  {
+    "idx": 156,
+    "number": "161",
+    "title": "Appointment of additional director, alternate director and nominee director",
+    "page": 5
+  },
+  {
+    "idx": 157,
+    "number": "162",
+    "title": "Appointment of directors to be voted individually",
+    "page": 5
+  },
+  {
+    "idx": 158,
+    "number": "163",
+    "title": "Option to adopt principle of proportional representation for appointment of directors",
+    "page": 5
+  },
+  {
+    "idx": 159,
+    "number": "164",
+    "title": "Disqualifications for appointment of director",
+    "page": 5
+  },
+  {
+    "idx": 160,
+    "number": "165",
+    "title": "Number of directorships",
+    "page": 5
+  },
+  {
+    "idx": 161,
+    "number": "166",
+    "title": "Duties of directors",
+    "page": 5
+  },
+  {
+    "idx": 162,
+    "number": "167",
+    "title": "Vacation of office of director",
+    "page": 5
+  },
+  {
+    "idx": 163,
+    "number": "168",
+    "title": "Resignation of director",
+    "page": 5
+  },
+  {
+    "idx": 164,
+    "number": "169",
+    "title": "Removal of directors",
+    "page": 5
+  },
+  {
+    "idx": 165,
+    "number": "170",
+    "title": "Register of directors and key managerial personnel and their shareholding",
+    "page": 5
+  },
+  {
+    "idx": 166,
+    "number": "171",
+    "title": "Members’ right to inspect",
+    "page": 5
+  },
+  {
+    "idx": 167,
+    "number": "173",
+    "title": "Meetings of Board",
+    "page": 5
+  },
+  {
+    "idx": 168,
+    "number": "174",
+    "title": "Quorum for meetings of Board",
+    "page": 5
+  },
+  {
+    "idx": 169,
+    "number": "175",
+    "title": "Passing of resolution by circulation",
+    "page": 5
+  },
+  {
+    "idx": 170,
+    "number": "176",
+    "title": "Defects in appointment of directors not to invalidate actions taken",
+    "page": 5
+  },
+  {
+    "idx": 171,
+    "number": "177",
+    "title": "Audit committee",
+    "page": 5
+  },
+  {
+    "idx": 172,
+    "number": "178",
+    "title": "Nomination and Remuneration Committee and Stakeholders Relationship Committee",
+    "page": 5
+  },
+  {
+    "idx": 173,
+    "number": "179",
+    "title": "Powers of Board",
+    "page": 5
+  },
+  {
+    "idx": 174,
+    "number": "180",
+    "title": "Restrictions on powers of Board",
+    "page": 5
+  },
+  {
+    "idx": 175,
+    "number": "181",
+    "title": "Company to contribute to bona fide and charitable funds, etc",
+    "page": 5
+  },
+  {
+    "idx": 176,
+    "number": "182",
+    "title": "Prohibitions and restrictions regarding political contributions",
+    "page": 5
+  },
+  {
+    "idx": 177,
+    "number": "183",
+    "title": "Power of Board and other persons to make contributions to national defence fund, etc",
+    "page": 5
+  },
+  {
+    "idx": 178,
+    "number": "184",
+    "title": "Disclosure of interest by director",
+    "page": 5
+  },
+  {
+    "idx": 179,
+    "number": "185",
+    "title": "Loan to directors, etc",
+    "page": 5
+  },
+  {
+    "idx": 180,
+    "number": "186",
+    "title": "Loan and investment by company",
+    "page": 5
+  },
+  {
+    "idx": 181,
+    "number": "187",
+    "title": "Investments of company to be held in its own name",
+    "page": 5
+  },
+  {
+    "idx": 182,
+    "number": "188",
+    "title": "Related party transactions",
+    "page": 5
+  },
+  {
+    "idx": 183,
+    "number": "189",
+    "title": "Register of contracts or arrangements in which directors are interested",
+    "page": 5
+  },
+  {
+    "idx": 184,
+    "number": "190",
+    "title": "Contract of employment with managing or whole-time directors",
+    "page": 5
+  },
+  {
+    "idx": 185,
+    "number": "191",
+    "title": "Payment to director for loss of office, etc., in connection with transfer of undertaking, property or shares",
+    "page": 5
+  },
+  {
+    "idx": 186,
+    "number": "192",
+    "title": "Restriction on non-cash transactions involving directors",
+    "page": 5
+  },
+  {
+    "idx": 187,
+    "number": "193",
+    "title": "Contract by One Person Company",
+    "page": 5
+  },
+  {
+    "idx": 188,
+    "number": "196",
+    "title": "Appointment of managing director, whole-time director or manager",
+    "page": 6
+  },
+  {
+    "idx": 189,
+    "number": "197",
+    "title": "Overall maximum managerial remuneration and managerial remuneration in case of absence or",
+    "page": 6
+  },
+  {
+    "idx": 190,
+    "number": "198",
+    "title": "Calculation of profits",
+    "page": 6
+  },
+  {
+    "idx": 191,
+    "number": "199",
+    "title": "Recovery of remuneration in certain cases",
+    "page": 6
+  },
+  {
+    "idx": 192,
+    "number": "200",
+    "title": "Central Government or company to fix limit with regard to remuneration",
+    "page": 6
+  },
+  {
+    "idx": 193,
+    "number": "201",
+    "title": "Forms of, and procedure in relation to, certain applications",
+    "page": 6
+  },
+  {
+    "idx": 194,
+    "number": "202",
+    "title": "Compensation for loss of office of managing or whole-time director or manager",
+    "page": 6
+  },
+  {
+    "idx": 195,
+    "number": "203",
+    "title": "Appointment of key managerial personnel",
+    "page": 6
+  },
+  {
+    "idx": 196,
+    "number": "204",
+    "title": "Secretarial audit for bigger companies",
+    "page": 6
+  },
+  {
+    "idx": 197,
+    "number": "205",
+    "title": "Functions of company secretary",
+    "page": 6
+  },
+  {
+    "idx": 198,
+    "number": "206",
+    "title": "Power to call for information, inspect books and conduct inquiries",
+    "page": 6
+  },
+  {
+    "idx": 199,
+    "number": "207",
+    "title": "Conduct of inspection and inquiry",
+    "page": 6
+  },
+  {
+    "idx": 200,
+    "number": "208",
+    "title": "Report on inspection made",
+    "page": 6
+  },
+  {
+    "idx": 201,
+    "number": "209",
+    "title": "Search and seizure",
+    "page": 6
+  },
+  {
+    "idx": 202,
+    "number": "210",
+    "title": "Investigation into affairs of company",
+    "page": 6
+  },
+  {
+    "idx": 203,
+    "number": "211",
+    "title": "Establishment of Serious Fraud Investigation Office",
+    "page": 6
+  },
+  {
+    "idx": 204,
+    "number": "212",
+    "title": "Investigation into affairs of company by Serious Fraud Investigation Office",
+    "page": 6
+  },
+  {
+    "idx": 205,
+    "number": "213",
+    "title": "Investigation into company’s affairs in other cases",
+    "page": 6
+  },
+  {
+    "idx": 206,
+    "number": "214",
+    "title": "Security for payment of costs and expenses of investigation",
+    "page": 6
+  },
+  {
+    "idx": 207,
+    "number": "215",
+    "title": "Firm, body corporate or association not to be appointed as inspector",
+    "page": 6
+  },
+  {
+    "idx": 208,
+    "number": "216",
+    "title": "Investigation of ownership of company",
+    "page": 6
+  },
+  {
+    "idx": 209,
+    "number": "217",
+    "title": "Procedure, powers, etc., of inspectors",
+    "page": 6
+  },
+  {
+    "idx": 210,
+    "number": "218",
+    "title": "Protection of employees during investigation",
+    "page": 6
+  },
+  {
+    "idx": 211,
+    "number": "219",
+    "title": "Power of inspector to conduct investigation into affairs of related companies, etc",
+    "page": 6
+  },
+  {
+    "idx": 212,
+    "number": "220",
+    "title": "Seizure of documents by inspector",
+    "page": 6
+  },
+  {
+    "idx": 213,
+    "number": "221",
+    "title": "Freezing of assets of company on inquiry and investigation",
+    "page": 6
+  },
+  {
+    "idx": 214,
+    "number": "222",
+    "title": "Imposition of restrictions upon securities",
+    "page": 6
+  },
+  {
+    "idx": 215,
+    "number": "223",
+    "title": "Inspector’s report",
+    "page": 6
+  },
+  {
+    "idx": 216,
+    "number": "224",
+    "title": "Actions to be taken in pursuance of inspector’s report",
+    "page": 6
+  },
+  {
+    "idx": 217,
+    "number": "225",
+    "title": "Expenses of investigation",
+    "page": 6
+  },
+  {
+    "idx": 218,
+    "number": "226",
+    "title": "Voluntary winding up of company, etc., not to stop investigation proceedings",
+    "page": 6
+  },
+  {
+    "idx": 219,
+    "number": "227",
+    "title": "Legal advisers and bankers not to disclose certain information",
+    "page": 6
+  },
+  {
+    "idx": 220,
+    "number": "228",
+    "title": "Investigation, etc., of foreign companies",
+    "page": 6
+  },
+  {
+    "idx": 221,
+    "number": "229",
+    "title": "Penalty for furnishing false statement, mutilation, destruction of documents",
+    "page": 6
+  },
+  {
+    "idx": 222,
+    "number": "230",
+    "title": "Power to compromise or make arrangements with creditors and members",
+    "page": 6
+  },
+  {
+    "idx": 223,
+    "number": "231",
+    "title": "Power to Tribunal to enforce compromise or arrangement",
+    "page": 6
+  },
+  {
+    "idx": 224,
+    "number": "232",
+    "title": "Merger and amalgamation of companies",
+    "page": 6
+  },
+  {
+    "idx": 225,
+    "number": "233",
+    "title": "Merger or amalgamation of certain companies",
+    "page": 6
+  },
+  {
+    "idx": 226,
+    "number": "234",
+    "title": "Merger or amalgamation of company with foreign company",
+    "page": 6
+  },
+  {
+    "idx": 227,
+    "number": "235",
+    "title": "Power to acquire shares of shareholders dissenting from scheme or contract approved by",
+    "page": 7
+  },
+  {
+    "idx": 228,
+    "number": "236",
+    "title": "Purchase of minority shareholding",
+    "page": 7
+  },
+  {
+    "idx": 229,
+    "number": "237",
+    "title": "Power of Central Government to provide for amalgamation of companies in public interest",
+    "page": 7
+  },
+  {
+    "idx": 230,
+    "number": "238",
+    "title": "Registration of offer of schemes involving transfer of shares",
+    "page": 7
+  },
+  {
+    "idx": 231,
+    "number": "239",
+    "title": "Preservation of books and papers of amalgamated companies",
+    "page": 7
+  },
+  {
+    "idx": 232,
+    "number": "240",
+    "title": "Liability of officers in respect of offences committed prior to merger, amalgamation, etc",
+    "page": 7
+  },
+  {
+    "idx": 233,
+    "number": "241",
+    "title": "Application to Tribunal for relief in cases of oppression, etc",
+    "page": 7
+  },
+  {
+    "idx": 234,
+    "number": "242",
+    "title": "Powers of Tribunal",
+    "page": 7
+  },
+  {
+    "idx": 235,
+    "number": "243",
+    "title": "Consequence of termination or modification of certain agreements",
+    "page": 7
+  },
+  {
+    "idx": 236,
+    "number": "244",
+    "title": "Right to apply under section 241",
+    "page": 7
+  },
+  {
+    "idx": 237,
+    "number": "245",
+    "title": "Class action",
+    "page": 7
+  },
+  {
+    "idx": 238,
+    "number": "246",
+    "title": "Application of certain provisions to proceedings under section 241 or section 245",
+    "page": 7
+  },
+  {
+    "idx": 239,
+    "number": "247",
+    "title": "Valuation by registered valuers",
+    "page": 7
+  },
+  {
+    "idx": 240,
+    "number": "248",
+    "title": "Power of Registrar to remove name of company from register of companies",
+    "page": 7
+  },
+  {
+    "idx": 241,
+    "number": "249",
+    "title": "Restrictions on making application under section 248 in certain situations",
+    "page": 7
+  },
+  {
+    "idx": 242,
+    "number": "250",
+    "title": "Effect of company notified as dissolved",
+    "page": 7
+  },
+  {
+    "idx": 243,
+    "number": "251",
+    "title": "Fraudulent application for removal of name",
+    "page": 7
+  },
+  {
+    "idx": 244,
+    "number": "252",
+    "title": "Appeal to Tribunal",
+    "page": 7
+  },
+  {
+    "idx": 245,
+    "number": "270",
+    "title": "Winding up by Tribunal",
+    "page": 8
+  },
+  {
+    "idx": 246,
+    "number": "271",
+    "title": "Circumstances in which company may be wound up by Tribunal",
+    "page": 8
+  },
+  {
+    "idx": 247,
+    "number": "272",
+    "title": "Petition for winding up",
+    "page": 8
+  },
+  {
+    "idx": 248,
+    "number": "273",
+    "title": "Powers of Tribunal",
+    "page": 8
+  },
+  {
+    "idx": 249,
+    "number": "274",
+    "title": "Directions for filing statement of affairs",
+    "page": 8
+  },
+  {
+    "idx": 250,
+    "number": "275",
+    "title": "Company Liquidators and their appointments",
+    "page": 8
+  },
+  {
+    "idx": 251,
+    "number": "276",
+    "title": "Removal and replacement of liquidator",
+    "page": 8
+  },
+  {
+    "idx": 252,
+    "number": "277",
+    "title": "Intimation to Company Liquidator, provisional liquidator and Registrar",
+    "page": 8
+  },
+  {
+    "idx": 253,
+    "number": "278",
+    "title": "Effect of winding up order",
+    "page": 8
+  },
+  {
+    "idx": 254,
+    "number": "279",
+    "title": "Stay of suits, etc., on winding up order",
+    "page": 8
+  },
+  {
+    "idx": 255,
+    "number": "280",
+    "title": "Jurisdiction of Tribunal",
+    "page": 8
+  },
+  {
+    "idx": 256,
+    "number": "281",
+    "title": "Submission of report by Company Liquidator",
+    "page": 8
+  },
+  {
+    "idx": 257,
+    "number": "282",
+    "title": "Directions of Tribunal on report of Company Liquidator",
+    "page": 8
+  },
+  {
+    "idx": 258,
+    "number": "283",
+    "title": "Custody of company’s properties",
+    "page": 8
+  },
+  {
+    "idx": 259,
+    "number": "284",
+    "title": "Promoters, directors, etc., to cooperate with Company Liquidator",
+    "page": 8
+  },
+  {
+    "idx": 260,
+    "number": "285",
+    "title": "Settlement of list of contributories and application of assets",
+    "page": 8
+  },
+  {
+    "idx": 261,
+    "number": "286",
+    "title": "Obligations of directors and managers",
+    "page": 8
+  },
+  {
+    "idx": 262,
+    "number": "287",
+    "title": "Advisory Committee",
+    "page": 8
+  },
+  {
+    "idx": 263,
+    "number": "288",
+    "title": "Submission of periodical reports to Tribunal",
+    "page": 8
+  },
+  {
+    "idx": 264,
+    "number": "290",
+    "title": "Powers and duties of Company Liquidator",
+    "page": 8
+  },
+  {
+    "idx": 265,
+    "number": "291",
+    "title": "Provision for professional assistance to Company Liquidator",
+    "page": 8
+  },
+  {
+    "idx": 266,
+    "number": "292",
+    "title": "Exercise and control of Company Liquidator’s powers",
+    "page": 8
+  },
+  {
+    "idx": 267,
+    "number": "293",
+    "title": "Books to be kept by Company Liquidator",
+    "page": 8
+  },
+  {
+    "idx": 268,
+    "number": "294",
+    "title": "Audit of Company Liquidator’s accounts",
+    "page": 8
+  },
+  {
+    "idx": 269,
+    "number": "295",
+    "title": "Payment of debts by contributory and extent of set-off",
+    "page": 8
+  },
+  {
+    "idx": 270,
+    "number": "296",
+    "title": "Power of Tribunal to make calls",
+    "page": 8
+  },
+  {
+    "idx": 271,
+    "number": "297",
+    "title": "Adjustment of rights of contributories",
+    "page": 8
+  },
+  {
+    "idx": 272,
+    "number": "298",
+    "title": "Power to order costs",
+    "page": 8
+  },
+  {
+    "idx": 273,
+    "number": "299",
+    "title": "Power to summon persons suspected of having property of company, etc",
+    "page": 8
+  },
+  {
+    "idx": 274,
+    "number": "300",
+    "title": "Power to order examination of promoters, directors, etc",
+    "page": 8
+  },
+  {
+    "idx": 275,
+    "number": "301",
+    "title": "Arrest of person trying to leave India or abscond",
+    "page": 8
+  },
+  {
+    "idx": 276,
+    "number": "302",
+    "title": "Dissolution of company by Tribunal",
+    "page": 8
+  },
+  {
+    "idx": 277,
+    "number": "303",
+    "title": "Appeals from orders made before commencement of Act",
+    "page": 8
+  },
+  {
+    "idx": 278,
+    "number": "324",
+    "title": "Debts of all descriptions to be admitted to proof",
+    "page": 9
+  },
+  {
+    "idx": 279,
+    "number": "326",
+    "title": "Overriding preferential payments",
+    "page": 9
+  },
+  {
+    "idx": 280,
+    "number": "327",
+    "title": "Preferential payments",
+    "page": 9
+  },
+  {
+    "idx": 281,
+    "number": "328",
+    "title": "Fraudulent preference",
+    "page": 9
+  },
+  {
+    "idx": 282,
+    "number": "329",
+    "title": "Transfers not in good faith to be void",
+    "page": 9
+  },
+  {
+    "idx": 283,
+    "number": "330",
+    "title": "Certain transfers to be void",
+    "page": 9
+  },
+  {
+    "idx": 284,
+    "number": "331",
+    "title": "Liabilities and rights of certain persons fraudulently preferred",
+    "page": 9
+  },
+  {
+    "idx": 285,
+    "number": "332",
+    "title": "Effect of floating charge",
+    "page": 9
+  },
+  {
+    "idx": 286,
+    "number": "333",
+    "title": "Disclaimer of onerous property",
+    "page": 9
+  },
+  {
+    "idx": 287,
+    "number": "334",
+    "title": "Transfers, etc., after commencement of winding up to be void",
+    "page": 9
+  },
+  {
+    "idx": 288,
+    "number": "335",
+    "title": "Certain attachments, executions, etc., in winding up by Tribunal to be void",
+    "page": 9
+  },
+  {
+    "idx": 289,
+    "number": "336",
+    "title": "Offences by officers of companies in liquidation",
+    "page": 9
+  },
+  {
+    "idx": 290,
+    "number": "337",
+    "title": "Penalty for frauds by officers",
+    "page": 9
+  },
+  {
+    "idx": 291,
+    "number": "338",
+    "title": "Liability where proper accounts not kept",
+    "page": 9
+  },
+  {
+    "idx": 292,
+    "number": "339",
+    "title": "Liability for fraudulent conduct of business",
+    "page": 9
+  },
+  {
+    "idx": 293,
+    "number": "340",
+    "title": "Power of Tribunal to assess damages against delinquent directors, etc",
+    "page": 9
+  },
+  {
+    "idx": 294,
+    "number": "341",
+    "title": "Liability under sections 339 and 340 to extend to partners or directors in firms or companies",
+    "page": 9
+  },
+  {
+    "idx": 295,
+    "number": "342",
+    "title": "Prosecution of delinquent officers and members of company",
+    "page": 9
+  },
+  {
+    "idx": 296,
+    "number": "343",
+    "title": "Company Liquidator to exercise certain powers subject to sanction",
+    "page": 9
+  },
+  {
+    "idx": 297,
+    "number": "344",
+    "title": "Statement that company is in liquidation",
+    "page": 9
+  },
+  {
+    "idx": 298,
+    "number": "345",
+    "title": "Books and papers of company to be evidence",
+    "page": 9
+  },
+  {
+    "idx": 299,
+    "number": "346",
+    "title": "Inspection of books and papers by creditors and contributories",
+    "page": 9
+  },
+  {
+    "idx": 300,
+    "number": "347",
+    "title": "Disposal of books and papers of company",
+    "page": 9
+  },
+  {
+    "idx": 301,
+    "number": "348",
+    "title": "Information as to pending liquidations",
+    "page": 9
+  },
+  {
+    "idx": 302,
+    "number": "349",
+    "title": "Official Liquidator to make payments into public account of India",
+    "page": 9
+  },
+  {
+    "idx": 303,
+    "number": "350",
+    "title": "Company Liquidator to deposit monies into scheduled bank",
+    "page": 9
+  },
+  {
+    "idx": 304,
+    "number": "351",
+    "title": "Liquidator not to deposit monies into private banking account",
+    "page": 9
+  },
+  {
+    "idx": 305,
+    "number": "352",
+    "title": "Company Liquidation Dividend and Undistributed Assets Account",
+    "page": 9
+  },
+  {
+    "idx": 306,
+    "number": "353",
+    "title": "Liquidator to make returns, etc",
+    "page": 9
+  },
+  {
+    "idx": 307,
+    "number": "354",
+    "title": "Meetings to ascertain wishes of creditors or contributories",
+    "page": 9
+  },
+  {
+    "idx": 308,
+    "number": "355",
+    "title": "Court, tribunal or person, etc., before whom affidavit may be sworn",
+    "page": 9
+  },
+  {
+    "idx": 309,
+    "number": "356",
+    "title": "Power of Tribunal to declare dissolution of company void",
+    "page": 9
+  },
+  {
+    "idx": 310,
+    "number": "357",
+    "title": "Commencement of winding up by Tribunal",
+    "page": 9
+  },
+  {
+    "idx": 311,
+    "number": "358",
+    "title": "Exclusion of certain time in computing period of limitation",
+    "page": 9
+  },
+  {
+    "idx": 312,
+    "number": "359",
+    "title": "Appointment of Official Liquidator",
+    "page": 10
+  },
+  {
+    "idx": 313,
+    "number": "360",
+    "title": "Powers and functions of Official Liquidator",
+    "page": 10
+  },
+  {
+    "idx": 314,
+    "number": "361",
+    "title": "Summary procedure for liquidation",
+    "page": 10
+  },
+  {
+    "idx": 315,
+    "number": "362",
+    "title": "Sale of assets and recovery of debts due to company",
+    "page": 10
+  },
+  {
+    "idx": 316,
+    "number": "363",
+    "title": "Settlement of claims of creditors by Official Liquidator",
+    "page": 10
+  },
+  {
+    "idx": 317,
+    "number": "364",
+    "title": "Appeal by creditor",
+    "page": 10
+  },
+  {
+    "idx": 318,
+    "number": "365",
+    "title": "Order of dissolution of company",
+    "page": 10
+  },
+  {
+    "idx": 319,
+    "number": "366",
+    "title": "Companies capable of being registered",
+    "page": 10
+  },
+  {
+    "idx": 320,
+    "number": "367",
+    "title": "Certificate of registration of existing companies",
+    "page": 10
+  },
+  {
+    "idx": 321,
+    "number": "368",
+    "title": "Vesting of property on registration",
+    "page": 10
+  },
+  {
+    "idx": 322,
+    "number": "369",
+    "title": "Saving of existing liabilities",
+    "page": 10
+  },
+  {
+    "idx": 323,
+    "number": "370",
+    "title": "Continuation of pending legal proceedings",
+    "page": 10
+  },
+  {
+    "idx": 324,
+    "number": "371",
+    "title": "Effect of registration under this Part",
+    "page": 10
+  },
+  {
+    "idx": 325,
+    "number": "372",
+    "title": "Power of Court to stay or restrain proceedings",
+    "page": 10
+  },
+  {
+    "idx": 326,
+    "number": "373",
+    "title": "Suits stayed on winding up order",
+    "page": 10
+  },
+  {
+    "idx": 327,
+    "number": "374",
+    "title": "Obligations of companies registering under this Part",
+    "page": 10
+  },
+  {
+    "idx": 328,
+    "number": "375",
+    "title": "Winding up of unregistered companies",
+    "page": 10
+  },
+  {
+    "idx": 329,
+    "number": "376",
+    "title": "Power to wind up foreign companies although dissolved",
+    "page": 10
+  },
+  {
+    "idx": 330,
+    "number": "377",
+    "title": "Provisions of Chapter cumulative",
+    "page": 10
+  },
+  {
+    "idx": 331,
+    "number": "378",
+    "title": "Saving and construction of enactments conferring power to wind up partnership firm, association",
+    "page": 10
+  },
+  {
+    "idx": 332,
+    "number": "378B",
+    "title": "Objects of producer company",
+    "page": 10
+  },
+  {
+    "idx": 333,
+    "number": "378C",
+    "title": "Formation of Producer Company and its registration",
+    "page": 10
+  },
+  {
+    "idx": 334,
+    "number": "378D",
+    "title": "Membership and voting rights of Members of Producer Company",
+    "page": 10
+  },
+  {
+    "idx": 335,
+    "number": "378E",
+    "title": "Benefits to Members",
+    "page": 10
+  },
+  {
+    "idx": 336,
+    "number": "378F",
+    "title": "Memorandum of Producer Company",
+    "page": 10
+  },
+  {
+    "idx": 337,
+    "number": "378H",
+    "title": "Amendment of memorandum",
+    "page": 10
+  },
+  {
+    "idx": 338,
+    "number": "378J",
+    "title": "Option to inter-State co-operative societies to become Producer Companies",
+    "page": 10
+  },
+  {
+    "idx": 339,
+    "number": "378K",
+    "title": "Effect of incorporation of Producer Company",
+    "page": 11
+  },
+  {
+    "idx": 340,
+    "number": "378M",
+    "title": "Concession, etc., to be deemed to have been granted to Producer Company",
+    "page": 11
+  },
+  {
+    "idx": 341,
+    "number": "378N",
+    "title": "Provisions in respect of officers and other employees of inter-State co-operative society",
+    "page": 11
+  },
+  {
+    "idx": 342,
+    "number": "378P",
+    "title": "Appointment of directors",
+    "page": 11
+  },
+  {
+    "idx": 343,
+    "number": "378Q",
+    "title": "Vacation of office by directors",
+    "page": 11
+  },
+  {
+    "idx": 344,
+    "number": "378R",
+    "title": "Powers and functions of Board",
+    "page": 11
+  },
+  {
+    "idx": 345,
+    "number": "378S",
+    "title": "Matters to be transacted at general meeting",
+    "page": 11
+  },
+  {
+    "idx": 346,
+    "number": "378T",
+    "title": "Liability of directors",
+    "page": 11
+  },
+  {
+    "idx": 347,
+    "number": "378U",
+    "title": "Committee of directors",
+    "page": 11
+  },
+  {
+    "idx": 348,
+    "number": "378V",
+    "title": "Meetings of Board and quorum",
+    "page": 11
+  },
+  {
+    "idx": 349,
+    "number": "378W",
+    "title": "Chief Executive and his functions",
+    "page": 11
+  },
+  {
+    "idx": 350,
+    "number": "378X",
+    "title": "Secretary of Producer Company",
+    "page": 11
+  },
+  {
+    "idx": 351,
+    "number": "378Z",
+    "title": "Voting rights",
+    "page": 11
+  },
+  {
+    "idx": 352,
+    "number": "379",
+    "title": "Application of Act to foreign companies",
+    "page": 12
+  },
+  {
+    "idx": 353,
+    "number": "380",
+    "title": "Documents, etc., to be delivered to Registrar by foreign companies",
+    "page": 12
+  },
+  {
+    "idx": 354,
+    "number": "381",
+    "title": "Accounts of foreign company",
+    "page": 12
+  },
+  {
+    "idx": 355,
+    "number": "382",
+    "title": "Display of name, etc., of foreign company",
+    "page": 12
+  },
+  {
+    "idx": 356,
+    "number": "383",
+    "title": "Service on foreign company",
+    "page": 12
+  },
+  {
+    "idx": 357,
+    "number": "384",
+    "title": "Debentures, annual return, registration of charges, books of account and their inspection",
+    "page": 12
+  },
+  {
+    "idx": 358,
+    "number": "385",
+    "title": "Fee for registration of documents",
+    "page": 12
+  },
+  {
+    "idx": 359,
+    "number": "387",
+    "title": "Dating of prospectus and particulars to be contained therein",
+    "page": 12
+  },
+  {
+    "idx": 360,
+    "number": "388",
+    "title": "Provisions as to expert’s consent and allotment",
+    "page": 12
+  },
+  {
+    "idx": 361,
+    "number": "389",
+    "title": "Registration of prospectus",
+    "page": 12
+  },
+  {
+    "idx": 362,
+    "number": "390",
+    "title": "Offer of Indian Depository Receipts",
+    "page": 12
+  },
+  {
+    "idx": 363,
+    "number": "391",
+    "title": "Application of sections 34 to 36 and Chapter XX",
+    "page": 12
+  },
+  {
+    "idx": 364,
+    "number": "392",
+    "title": "Punishment for contravention",
+    "page": 12
+  },
+  {
+    "idx": 365,
+    "number": "393",
+    "title": "Company’s failure to comply with provisions of this Chapter not to affect validity of contracts",
+    "page": 12
+  },
+  {
+    "idx": 366,
+    "number": "394",
+    "title": "Annual reports on Government companies",
+    "page": 13
+  },
+  {
+    "idx": 367,
+    "number": "395",
+    "title": "Annual reports where one or more State Governments are members of companies",
+    "page": 13
+  },
+  {
+    "idx": 368,
+    "number": "396",
+    "title": "Registration offices",
+    "page": 13
+  },
+  {
+    "idx": 369,
+    "number": "397",
+    "title": "Admissibility of certain documents as evidence",
+    "page": 13
+  },
+  {
+    "idx": 370,
+    "number": "398",
+    "title": "Provisions relating to filing of applications, documents, inspection, etc., in electronic form",
+    "page": 13
+  },
+  {
+    "idx": 371,
+    "number": "399",
+    "title": "Inspection, production and evidence of documents kept by Registrar",
+    "page": 13
+  },
+  {
+    "idx": 372,
+    "number": "400",
+    "title": "Electronic form to be exclusive, alternative or in addition to physical form",
+    "page": 13
+  },
+  {
+    "idx": 373,
+    "number": "401",
+    "title": "Provision of value added services through electronic form",
+    "page": 13
+  },
+  {
+    "idx": 374,
+    "number": "402",
+    "title": "Application of provisions of Information Technology Act, 2000",
+    "page": 13
+  },
+  {
+    "idx": 375,
+    "number": "403",
+    "title": "Fee for filing, etc",
+    "page": 13
+  },
+  {
+    "idx": 376,
+    "number": "404",
+    "title": "Fees, etc., to be credited into public account",
+    "page": 13
+  },
+  {
+    "idx": 377,
+    "number": "405",
+    "title": "Power of Central Government to direct companies to furnish information or statistics",
+    "page": 13
+  },
+  {
+    "idx": 378,
+    "number": "406",
+    "title": "Provision relating to Nidhis and its application, etc",
+    "page": 13
+  },
+  {
+    "idx": 379,
+    "number": "408",
+    "title": "Constitution of National Company Law Tribunal",
+    "page": 13
+  },
+  {
+    "idx": 380,
+    "number": "409",
+    "title": "Qualification of President and Members of Tribunal",
+    "page": 13
+  },
+  {
+    "idx": 381,
+    "number": "410",
+    "title": "Constitution of Appellate Tribunal",
+    "page": 13
+  },
+  {
+    "idx": 382,
+    "number": "411",
+    "title": "Qualifications of Chairperson and members of Appellate Tribunal",
+    "page": 13
+  },
+  {
+    "idx": 383,
+    "number": "412",
+    "title": "Selection of Members of Tribunal and Appellate Tribunal",
+    "page": 13
+  },
+  {
+    "idx": 384,
+    "number": "413",
+    "title": "Term of office of President, Chairperson and other Members",
+    "page": 13
+  },
+  {
+    "idx": 385,
+    "number": "414",
+    "title": "Salary, allowances and other terms and conditions of service of Members",
+    "page": 13
+  },
+  {
+    "idx": 386,
+    "number": "415",
+    "title": "Acting President and Chairperson of Tribunal or Appellate Tribunal",
+    "page": 13
+  },
+  {
+    "idx": 387,
+    "number": "416",
+    "title": "Resignation of Members",
+    "page": 13
+  },
+  {
+    "idx": 388,
+    "number": "417",
+    "title": "Removal of Members",
+    "page": 13
+  },
+  {
+    "idx": 389,
+    "number": "417A",
+    "title": "Qualifications, terms and conditions of service of Chairperson and Member",
+    "page": 13
+  },
+  {
+    "idx": 390,
+    "number": "418",
+    "title": "Staff of Tribunal and Appellate Tribunal",
+    "page": 13
+  },
+  {
+    "idx": 391,
+    "number": "419",
+    "title": "Benches of Tribunal",
+    "page": 13
+  },
+  {
+    "idx": 392,
+    "number": "420",
+    "title": "Orders of Tribunal",
+    "page": 13
+  },
+  {
+    "idx": 393,
+    "number": "421",
+    "title": "Appeal from orders of Tribunal",
+    "page": 13
+  },
+  {
+    "idx": 394,
+    "number": "422",
+    "title": "Expeditious disposal by Tribunal and Appellate Tribunal",
+    "page": 13
+  },
+  {
+    "idx": 395,
+    "number": "423",
+    "title": "Appeal to Supreme Court",
+    "page": 13
+  },
+  {
+    "idx": 396,
+    "number": "424",
+    "title": "Procedure before Tribunal and Appellate Tribunal",
+    "page": 13
+  },
+  {
+    "idx": 397,
+    "number": "425",
+    "title": "Power to punish for contempt",
+    "page": 13
+  },
+  {
+    "idx": 398,
+    "number": "426",
+    "title": "Delegation of powers",
+    "page": 14
+  },
+  {
+    "idx": 399,
+    "number": "427",
+    "title": "President, Members, officers, etc., to be public servants",
+    "page": 14
+  },
+  {
+    "idx": 400,
+    "number": "428",
+    "title": "Protection of action taken in good faith",
+    "page": 14
+  },
+  {
+    "idx": 401,
+    "number": "429",
+    "title": "Power to seek assistance of Chief Metropolitan Magistrate, etc",
+    "page": 14
+  },
+  {
+    "idx": 402,
+    "number": "430",
+    "title": "Civil court not to have jurisdiction",
+    "page": 14
+  },
+  {
+    "idx": 403,
+    "number": "431",
+    "title": "Vacancy in Tribunal or Appellate Tribunal not to invalidate acts or proceedings",
+    "page": 14
+  },
+  {
+    "idx": 404,
+    "number": "432",
+    "title": "Right to legal representation",
+    "page": 14
+  },
+  {
+    "idx": 405,
+    "number": "434",
+    "title": "Transfer of certain pending proceedings",
+    "page": 14
+  },
+  {
+    "idx": 406,
+    "number": "435",
+    "title": "Establishment of Special Courts",
+    "page": 14
+  },
+  {
+    "idx": 407,
+    "number": "436",
+    "title": "Offences triable by Special Courts",
+    "page": 14
+  },
+  {
+    "idx": 408,
+    "number": "437",
+    "title": "Appeal and revision",
+    "page": 14
+  },
+  {
+    "idx": 409,
+    "number": "438",
+    "title": "Application of Code to proceedings before Special Court",
+    "page": 14
+  },
+  {
+    "idx": 410,
+    "number": "439",
+    "title": "Offences to be non-cognizable",
+    "page": 14
+  },
+  {
+    "idx": 411,
+    "number": "440",
+    "title": "Transitional provisions",
+    "page": 14
+  },
+  {
+    "idx": 412,
+    "number": "441",
+    "title": "Compounding of certain offences",
+    "page": 14
+  },
+  {
+    "idx": 413,
+    "number": "442",
+    "title": "Mediation and Conciliation Panel",
+    "page": 14
+  },
+  {
+    "idx": 414,
+    "number": "443",
+    "title": "Power of Central Government to appoint company prosecutors",
+    "page": 14
+  },
+  {
+    "idx": 415,
+    "number": "444",
+    "title": "Appeal against acquittal",
+    "page": 14
+  },
+  {
+    "idx": 416,
+    "number": "445",
+    "title": "Compensation for accusation without reasonable cause",
+    "page": 14
+  },
+  {
+    "idx": 417,
+    "number": "446",
+    "title": "Application of fines",
+    "page": 14
+  },
+  {
+    "idx": 418,
+    "number": "446A",
+    "title": "Factors for determining level of punishment",
+    "page": 14
+  },
+  {
+    "idx": 419,
+    "number": "446B",
+    "title": "Lesser penalties for certain companies",
+    "page": 14
+  },
+  {
+    "idx": 420,
+    "number": "447",
+    "title": "Punishment for fraud",
+    "page": 14
+  },
+  {
+    "idx": 421,
+    "number": "448",
+    "title": "Punishment for false statement",
+    "page": 14
+  },
+  {
+    "idx": 422,
+    "number": "449",
+    "title": "Punishment for false evidence",
+    "page": 14
+  },
+  {
+    "idx": 423,
+    "number": "450",
+    "title": "Punishment where no specific penalty or punishment is provided",
+    "page": 14
+  },
+  {
+    "idx": 424,
+    "number": "451",
+    "title": "Punishment in case of repeated default",
+    "page": 14
+  },
+  {
+    "idx": 425,
+    "number": "452",
+    "title": "Punishment for wrongful withholding of property",
+    "page": 14
+  },
+  {
+    "idx": 426,
+    "number": "453",
+    "title": "Punishment for improper use of “Limited” or “Private Limited”",
+    "page": 14
+  },
+  {
+    "idx": 427,
+    "number": "454",
+    "title": "Adjudication of penalties",
+    "page": 14
+  },
+  {
+    "idx": 428,
+    "number": "454A",
+    "title": "Penalty for repeated default",
+    "page": 14
+  },
+  {
+    "idx": 429,
+    "number": "455",
+    "title": "Dormant company",
+    "page": 14
+  },
+  {
+    "idx": 430,
+    "number": "456",
+    "title": "Protection of action taken in good faith",
+    "page": 14
+  },
+  {
+    "idx": 431,
+    "number": "457",
+    "title": "Non-disclosure of information in certain cases",
+    "page": 14
+  },
+  {
+    "idx": 432,
+    "number": "458",
+    "title": "Delegation by Central Government of its powers and functions",
+    "page": 14
+  },
+  {
+    "idx": 433,
+    "number": "459",
+    "title": "Powers of Central Government of Tribunal to accord approval, etc., subject to conditions and to",
+    "page": 14
+  },
+  {
+    "idx": 434,
+    "number": "460",
+    "title": "Condonation of delay in certain cases",
+    "page": 14
+  },
+  {
+    "idx": 435,
+    "number": "461",
+    "title": "Annual report by Central Government",
+    "page": 14
+  },
+  {
+    "idx": 436,
+    "number": "462",
+    "title": "Power to exempt class or classes of companies from provisions of this Act",
+    "page": 14
+  },
+  {
+    "idx": 437,
+    "number": "463",
+    "title": "Power of court to grant relief in certain cases",
+    "page": 14
+  },
+  {
+    "idx": 438,
+    "number": "464",
+    "title": "Prohibition of association or partnership of persons exceeding certain number",
+    "page": 14
+  },
+  {
+    "idx": 439,
+    "number": "465",
+    "title": "Repeal of certain enactments and savings",
+    "page": 14
+  },
+  {
+    "idx": 440,
+    "number": "466",
+    "title": "Dissolution of Company Law Board and consequential provisions",
+    "page": 14
+  },
+  {
+    "idx": 441,
+    "number": "467",
+    "title": "Power of Central Government to amend Schedules",
+    "page": 14
+  },
+  {
+    "idx": 442,
+    "number": "468",
+    "title": "Power of Central Government to make rules relating to winding up",
+    "page": 14
+  },
+  {
+    "idx": 443,
+    "number": "469",
+    "title": "Power of Central Government to make rules",
+    "page": 15
+  },
+  {
+    "idx": 444,
+    "number": "470",
+    "title": "Power to remove difficulties",
+    "page": 15
+  },
+  {
+    "idx": 445,
+    "number": "1",
+    "title": "Short title, extent, commencement and application.—(1) This Act may be called the Companies Act, 2013",
+    "page": 1
+  },
+  {
+    "idx": 446,
+    "number": "2",
+    "title": "Definitions.—In this Act, unless the context otherwise requires,—",
+    "page": 17
+  },
+  {
+    "idx": 447,
+    "number": "1",
+    "title": "The Explanation subs. by Act 1 of 2018, s. 2 (w.e.f. 7-5-2018)",
+    "page": 16
+  },
+  {
+    "idx": 448,
+    "number": "2",
+    "title": "The Proviso ins. by s. 2, ibid. (w.e.f. 9-2-2018)",
+    "page": 17
+  },
+  {
+    "idx": 449,
+    "number": "1",
+    "title": "The proviso subs. by Act 22 of 2019, s. 2 (w.e.f. 2-11-2018)",
+    "page": 17
+  },
+  {
+    "idx": 450,
+    "number": "1",
+    "title": "The Explanation ins. by Act 1 of 2018, s. 2 (w.e.f. 9-2-2018)",
+    "page": 20
+  },
+  {
+    "idx": 451,
+    "number": "2",
+    "title": "Clause (49) omitted by s. 2, ibid. (w.e.f. 9-2-2018)",
+    "page": 19
+  },
+  {
+    "idx": 452,
+    "number": "3",
+    "title": "The word “and” omitted by s. 2, ibid. (w.e.f. 9-2-2018)",
+    "page": 1
+  },
+  {
+    "idx": 453,
+    "number": "5",
+    "title": "The Proviso ins. by Act 29 of 2020, s. 2 (w.e.f. 22-1-2021)",
+    "page": 21
+  },
+  {
+    "idx": 454,
+    "number": "1",
+    "title": "The words “of one lakh rupees or such higher paid-up share capital” omitted by Act 21 of 2015, s. 2 (w.e.f. 29-5-2015)",
+    "page": 21
+  },
+  {
+    "idx": 455,
+    "number": "2",
+    "title": "The words “of five lakh rupees or such higher paid-up capital,” omitted by Act 21 of 2015, s. 2 (w.e.f. 29-5-2015)",
+    "page": 21
+  },
+  {
+    "idx": 456,
+    "number": "3",
+    "title": "Formation of company.—(1) A company may be formed for any lawful purpose by—",
+    "page": 21
+  },
+  {
+    "idx": 457,
+    "number": "4",
+    "title": "Memorandum.—(1) The memorandum of a company shall state—",
+    "page": 28
+  },
+  {
+    "idx": 458,
+    "number": "5",
+    "title": "Articles.—(1) The articles of a company shall contain the regulations for management of the",
+    "page": 21
+  },
+  {
+    "idx": 459,
+    "number": "6",
+    "title": "Act to override memorandum, articles, etc.—Save as otherwise expressly provided in this Act—",
+    "page": 1
+  },
+  {
+    "idx": 460,
+    "number": "7",
+    "title": "Incorporation of company.—(1) There shall be filed with the Registrar within whose jurisdiction",
+    "page": 1
+  },
+  {
+    "idx": 461,
+    "number": "8",
+    "title": "Formation of companies with charitable objects, etc.—(1) Where it is proved to the satisfaction",
+    "page": 1
+  },
+  {
+    "idx": 462,
+    "number": "9",
+    "title": "Effect of registration.—From the date of incorporation mentioned in the certificate of incorporation",
+    "page": 1
+  },
+  {
+    "idx": 463,
+    "number": "2",
+    "title": "The words “with imprisonment for a term which may extend to three years or” omitted by Act 29 of 2020, s. 3 (w.e.f. 21-12",
+    "page": 24
+  },
+  {
+    "idx": 464,
+    "number": "10",
+    "title": "Effect of memorandum and articles.—(1) Subject to the provisions of this Act, the memorandum",
+    "page": 1
+  },
+  {
+    "idx": 465,
+    "number": "12",
+    "title": "Registered office of company.—(1) A company shall, 3[within thirty days of its incorporation] and",
+    "page": 1
+  },
+  {
+    "idx": 466,
+    "number": "1",
+    "title": "The words “and a common seal” omitted by Act 21 of 2015, s. 3 (w.e.f. 29-5-2015)",
+    "page": 23
+  },
+  {
+    "idx": 467,
+    "number": "13",
+    "title": "Alteration of memorandum.—(1) Save as provided in section 61, a company may, by a special",
+    "page": 1
+  },
+  {
+    "idx": 468,
+    "number": "14",
+    "title": "Alteration of articles.—(1) Subject to the provisions of this Act and the conditions contained in",
+    "page": 1
+  },
+  {
+    "idx": 469,
+    "number": "15",
+    "title": "Alteration of memorandum or articles to be noted in every copy.—(1) Every alteration made in",
+    "page": 1
+  },
+  {
+    "idx": 470,
+    "number": "16",
+    "title": "Rectification of name of company.—(1) If, through inadvertence or otherwise, a company on its",
+    "page": 1
+  },
+  {
+    "idx": 471,
+    "number": "17",
+    "title": "Copies of memorandum, articles, etc., to be given to members.—(1) A company shall, on being",
+    "page": 1
+  },
+  {
+    "idx": 472,
+    "number": "18",
+    "title": "Conversion of companies already registered.—(1) A company of any class registered under this",
+    "page": 1
+  },
+  {
+    "idx": 473,
+    "number": "19",
+    "title": "Subsidiary company not to hold shares in its holding company.—(1) No company shall, either",
+    "page": 1
+  },
+  {
+    "idx": 474,
+    "number": "20",
+    "title": "Service of documents.—(1) A document may be served on a company or an officer thereof by",
+    "page": 1
+  },
+  {
+    "idx": 475,
+    "number": "21",
+    "title": "Authentication of documents, proceedings and contracts.—Save as otherwise provided in this",
+    "page": 1
+  },
+  {
+    "idx": 476,
+    "number": "22",
+    "title": "Execution of bills of exchange, etc.—(1) A bill of exchange, hundi or promissory note shall be",
+    "page": 1
+  },
+  {
+    "idx": 477,
+    "number": "23",
+    "title": "Public offer and private placement.—(1) A public company may issue securities—",
+    "page": 1
+  },
+  {
+    "idx": 478,
+    "number": "24",
+    "title": "Power of Securities and Exchange Board to regulate issue and transfer of securities",
+    "page": 1
+  },
+  {
+    "idx": 479,
+    "number": "3",
+    "title": "The proviso ins. by s. 6, ibid. (w.e.f. 29-5-2015)",
+    "page": 27
+  },
+  {
+    "idx": 480,
+    "number": "4",
+    "title": "The words “and have the effect as if it were made under its common seal” omitted by s. 6, ibid. (w.e.f. 29-5-2015)",
+    "page": 28
+  },
+  {
+    "idx": 481,
+    "number": "25",
+    "title": "Document containing offer of securities for sale to be deemed prospectus.—(1) Where a",
+    "page": 1
+  },
+  {
+    "idx": 482,
+    "number": "26",
+    "title": "Matters to be stated in prospectus.—(1) Every prospectus issued by or on behalf of a public",
+    "page": 1
+  },
+  {
+    "idx": 483,
+    "number": "1",
+    "title": "Clauses (a), (b) and (d) omitted by Act 1 of 2018, s. 8 (w.e.f. 7-5-2018)",
+    "page": 33
+  },
+  {
+    "idx": 484,
+    "number": "3",
+    "title": "Sub-section (7) omitted by s. 6, ibid. (w.e.f. 15-8-2019)",
+    "page": 38
+  },
+  {
+    "idx": 485,
+    "number": "4",
+    "title": "The words “with imprisonment for a term which may extend to three years or” omitted by Act 29 of 2020, s. 6 (w.e.f. 21-12",
+    "page": 38
+  },
+  {
+    "idx": 486,
+    "number": "27",
+    "title": "Variation in terms of contract or objects in prospectus.—(1) A company shall not, at any time",
+    "page": 1
+  },
+  {
+    "idx": 487,
+    "number": "28",
+    "title": "Offer of sale of shares by certain members of company.—(1) Where certain members of a",
+    "page": 1
+  },
+  {
+    "idx": 488,
+    "number": "29",
+    "title": "Public offer of securities to be in dematerialised form.—(1) Notwithstanding anything contained",
+    "page": 1
+  },
+  {
+    "idx": 489,
+    "number": "30",
+    "title": "Advertisement of prospectus.—Where an advertisement of any prospectus of a company is",
+    "page": 1
+  },
+  {
+    "idx": 490,
+    "number": "31",
+    "title": "Shelf prospectus.—(1) Any class or classes of companies, as the Securities and Exchange Board",
+    "page": 1
+  },
+  {
+    "idx": 491,
+    "number": "1",
+    "title": "The word “public” omitted by Act 22 of 2019, s. 7 (w.e.f. 15-8-2019)",
+    "page": 40
+  },
+  {
+    "idx": 492,
+    "number": "32",
+    "title": "Red herring prospectus.—(1) A company proposing to make an offer of securities may issue a",
+    "page": 1
+  },
+  {
+    "idx": 493,
+    "number": "33",
+    "title": "Issue of application forms for securities.—(1) No form of application for the purchase of any of",
+    "page": 1
+  },
+  {
+    "idx": 494,
+    "number": "34",
+    "title": "Criminal liability for mis-statements in prospectus.—Where a prospectus, issued, circulated or",
+    "page": 1
+  },
+  {
+    "idx": 495,
+    "number": "35",
+    "title": "Civil liability for mis-statements in prospectus.—(1) Where a person has subscribed for securities",
+    "page": 1
+  },
+  {
+    "idx": 496,
+    "number": "36",
+    "title": "Punishment for fraudulently inducing persons to invest money. —Any person who, either",
+    "page": 2
+  },
+  {
+    "idx": 497,
+    "number": "37",
+    "title": "Action by affected persons.—A suit may be filed or any other action may be taken under section",
+    "page": 2
+  },
+  {
+    "idx": 498,
+    "number": "38",
+    "title": "Punishment for personation for acquisition, etc., of securities.—(1) Any person who—",
+    "page": 2
+  },
+  {
+    "idx": 499,
+    "number": "39",
+    "title": "Allotment of securities by company.—(1) No allotment of any securities of a company offered to",
+    "page": 2
+  },
+  {
+    "idx": 500,
+    "number": "40",
+    "title": "Securities to be dealt with in stock exchanges.—(1) Every company making public offer shall",
+    "page": 2
+  },
+  {
+    "idx": 501,
+    "number": "41",
+    "title": "Global depository receipt.—A company may, after passing a special resolution in its general",
+    "page": 2
+  },
+  {
+    "idx": 502,
+    "number": "1",
+    "title": "The words “with imprisonment for a term which may extend to one year or” omitted by Act 29 of 2020, s. 7 (w.e.f. 21-12",
+    "page": 41
+  },
+  {
+    "idx": 503,
+    "number": "43",
+    "title": "Kinds of share capital.—The share capital of a company limited by shares shall be of two kinds",
+    "page": 2
+  },
+  {
+    "idx": 504,
+    "number": "44",
+    "title": "Nature of shares or debentures.—The shares or debentures or other interest of any member in a",
+    "page": 2
+  },
+  {
+    "idx": 505,
+    "number": "45",
+    "title": "Numbering of shares.—Every share in a company having a share capital shall be distinguished by",
+    "page": 2
+  },
+  {
+    "idx": 506,
+    "number": "46",
+    "title": "Certificate of shares.—(1) A certificate, 1[issued under the common seal, if any, of the company",
+    "page": 2
+  },
+  {
+    "idx": 507,
+    "number": "47",
+    "title": "Voting rights.—(1) Subject to the 2[provisions of section 43, sub-section (2) of section 50 and sub",
+    "page": 2
+  },
+  {
+    "idx": 508,
+    "number": "48",
+    "title": "Variations of shareholders’ rights.—(1) Where a share capital of the company is divided into",
+    "page": 2
+  },
+  {
+    "idx": 509,
+    "number": "49",
+    "title": "Calls on shares of same class to be made on uniform basis.—Where any calls for further share",
+    "page": 2
+  },
+  {
+    "idx": 510,
+    "number": "50",
+    "title": "Company to accept unpaid share capital, although not called up.—(1) A company may, if so",
+    "page": 2
+  },
+  {
+    "idx": 511,
+    "number": "51",
+    "title": "Payment of dividend in proportion to amount paid-up.—A company may, if so authorised by",
+    "page": 2
+  },
+  {
+    "idx": 512,
+    "number": "1",
+    "title": "Sub-section (5) omitted by Act 29 of 2020, s. 8 (w.e.f. 21-12-2020)",
+    "page": 45
+  },
+  {
+    "idx": 513,
+    "number": "52",
+    "title": "Application of premiums received on issue of shares.—(1) Where a company issues shares at a",
+    "page": 2
+  },
+  {
+    "idx": 514,
+    "number": "53",
+    "title": "Prohibition on issue of shares at discount.—(1) Except as provided in section 54, a company",
+    "page": 2
+  },
+  {
+    "idx": 515,
+    "number": "54",
+    "title": "Issue of sweat equity shares.—(1) Notwithstanding anything contained in section 53, a company",
+    "page": 2
+  },
+  {
+    "idx": 516,
+    "number": "55",
+    "title": "Issue and redemption of preference shares.—(1) No company limited by shares shall, after the",
+    "page": 2
+  },
+  {
+    "idx": 517,
+    "number": "1",
+    "title": "Clause (c) omitted by Act 1 of 2018, s. 13 (w.e.f. 7-5-2018)",
+    "page": 48
+  },
+  {
+    "idx": 518,
+    "number": "57",
+    "title": "Punishment for personation of shareholder.—If any person deceitfully personates as an owner",
+    "page": 2
+  },
+  {
+    "idx": 519,
+    "number": "58",
+    "title": "Refusal of registration and appeal against refusal.—(1) If a private company limited by shares",
+    "page": 2
+  },
+  {
+    "idx": 520,
+    "number": "59",
+    "title": "Rectification of register of members.—(1) If the name of any person is, without sufficient cause",
+    "page": 2
+  },
+  {
+    "idx": 521,
+    "number": "60",
+    "title": "Publication of authorised, subscribed and paid-up capital.—(1) Where any notice",
+    "page": 2
+  },
+  {
+    "idx": 522,
+    "number": "61",
+    "title": "Power of limited company to alter its share capital.—(1) A limited company having a share",
+    "page": 2
+  },
+  {
+    "idx": 523,
+    "number": "62",
+    "title": "Further issue of share capital.—(1) Where at any time, a company having a share capital proposes",
+    "page": 2
+  },
+  {
+    "idx": 524,
+    "number": "1",
+    "title": "Sub-section (5) omitted by Act 29 of 2020, s. 10 (w.e.f. 21-12-2020)",
+    "page": 50
+  },
+  {
+    "idx": 525,
+    "number": "63",
+    "title": "Issue of bonus shares.—(1) A company may issue fully paid-up bonus shares to its members, in",
+    "page": 2
+  },
+  {
+    "idx": 526,
+    "number": "64",
+    "title": "Notice to be given to Registrar for alteration of share capital.—(1) Where—",
+    "page": 2
+  },
+  {
+    "idx": 527,
+    "number": "65",
+    "title": "Unlimited company to provide for reserve share capital on conversion into limited",
+    "page": 2
+  },
+  {
+    "idx": 528,
+    "number": "66",
+    "title": "Reduction of share capital.—(1) Subject to confirmation by the Tribunal on an application by the",
+    "page": 2
+  },
+  {
+    "idx": 529,
+    "number": "67",
+    "title": "Restriction on purchase by company or giving of loans by it for purchase of its shares.—(1)",
+    "page": 2
+  },
+  {
+    "idx": 530,
+    "number": "1",
+    "title": "Sub-section (11) omitted by Act 29 of 2020, s. 13 (w.e.f. 21-12-2020)",
+    "page": 53
+  },
+  {
+    "idx": 531,
+    "number": "68",
+    "title": "Power of company to purchase its own securities.—(1) Notwithstanding anything contained in",
+    "page": 2
+  },
+  {
+    "idx": 532,
+    "number": "69",
+    "title": "Transfer of certain sums to capital redemption reserve account.—(1) Where a company",
+    "page": 2
+  },
+  {
+    "idx": 533,
+    "number": "1",
+    "title": "The words “with imprisonment for a term which may extend to three years or” omitted by Act 29 of 2020, s. 14 (w.e.f. 21-12",
+    "page": 57
+  },
+  {
+    "idx": 534,
+    "number": "70",
+    "title": "Prohibition for buy-back in certain circumstances.—(1) No company shall directly or indirectly",
+    "page": 2
+  },
+  {
+    "idx": 535,
+    "number": "71",
+    "title": "Debentures.—(1) A company may issue debentures with an option to convert such debentures into",
+    "page": 60
+  },
+  {
+    "idx": 536,
+    "number": "72",
+    "title": "Power to nominate.—(1) Every holder of securities of a company may, at any time, nominate, in",
+    "page": 2
+  },
+  {
+    "idx": 537,
+    "number": "73",
+    "title": "Prohibition on acceptance of deposits from public.—(1) On and after the commencement of this",
+    "page": 2
+  },
+  {
+    "idx": 538,
+    "number": "1",
+    "title": "Sub-section (11) omitted by Act 29 of 2020, s. 15 (w.e.f. 21-12-2020)",
+    "page": 59
+  },
+  {
+    "idx": 539,
+    "number": "74",
+    "title": "Repayment of deposits, etc., accepted before commencement of this Act.—(1) Where in respect",
+    "page": 2
+  },
+  {
+    "idx": 540,
+    "number": "75",
+    "title": "Damages for fraud.—(1) Where a company fails to repay the deposit or part thereof or any interest",
+    "page": 2
+  },
+  {
+    "idx": 541,
+    "number": "2",
+    "title": "Clause (d) omitted by s. 15, ibid. (w.e.f. 15-8-2018)",
+    "page": 32
+  },
+  {
+    "idx": 542,
+    "number": "76",
+    "title": "Acceptance of deposits from public by certain companies.—(1) Notwithstanding anything",
+    "page": 3
+  },
+  {
+    "idx": 543,
+    "number": "77",
+    "title": "Duty to register charges, etc.—(1) It shall be the duty of every company creating a charge within",
+    "page": 3
+  },
+  {
+    "idx": 544,
+    "number": "4",
+    "title": "The words “or with both” omitted by s. 17, ibid. (w.e.f. 9-2-2018)",
+    "page": 40
+  },
+  {
+    "idx": 545,
+    "number": "78",
+    "title": "Application for registration of charge.—Where a company fails to 3[register the charge within",
+    "page": 3
+  },
+  {
+    "idx": 546,
+    "number": "80",
+    "title": "Date of notice of charge.—Where any charge on any property or assets of a company or any of its",
+    "page": 3
+  },
+  {
+    "idx": 547,
+    "number": "81",
+    "title": "Register of charges to be kept by Registrar.—(1) The Registrar shall, in respect of every",
+    "page": 3
+  },
+  {
+    "idx": 548,
+    "number": "1",
+    "title": "The proviso ins. by Act 1 of 2018, s. 18 (w.e.f. 7-5-2018)",
+    "page": 61
+  },
+  {
+    "idx": 549,
+    "number": "82",
+    "title": "Company to report satisfaction of charge.—(1) A company shall give intimation to the Registrar",
+    "page": 3
+  },
+  {
+    "idx": 550,
+    "number": "83",
+    "title": "Power of Registrar to make entries of satisfaction and release in absence of intimation from",
+    "page": 3
+  },
+  {
+    "idx": 551,
+    "number": "84",
+    "title": "Intimation of appointment of receiver or manager.—(1) If any person obtains an order for the",
+    "page": 3
+  },
+  {
+    "idx": 552,
+    "number": "85",
+    "title": "Company’s register of charges.—(1) Every company shall keep at its registered office a register",
+    "page": 3
+  },
+  {
+    "idx": 553,
+    "number": "2",
+    "title": "The Proviso ins. by s. 20, ibid. (w.e.f. 5-7-2018)",
+    "page": 62
+  },
+  {
+    "idx": 554,
+    "number": "86",
+    "title": "Punishment for contravention.—1[ 2[(1)] If any company is in default in complying with any of",
+    "page": 3
+  },
+  {
+    "idx": 555,
+    "number": "88",
+    "title": "Register of members, etc.—(1) Every company shall keep and maintain the following registers in",
+    "page": 3
+  },
+  {
+    "idx": 556,
+    "number": "89",
+    "title": "Declaration in respect of beneficial interest in any share.—(1) Where the name of a person is",
+    "page": 3
+  },
+  {
+    "idx": 557,
+    "number": "2",
+    "title": "The words and figures “within the time specified under section 403” omitted by Act 1 of 2018, s. 21 (w.e.f. 7-5-2018)",
+    "page": 65
+  },
+  {
+    "idx": 558,
+    "number": "4",
+    "title": "Subs.by Act 29 of 2020, s. 19, for sub-section (10) (w.e.f. 21-12-2020)",
+    "page": 63
+  },
+  {
+    "idx": 559,
+    "number": "91",
+    "title": "Power to close register of members or debenture-holders or other security holders.—(1) A",
+    "page": 3
+  },
+  {
+    "idx": 560,
+    "number": "92",
+    "title": "Annual return.—(1) Every company shall prepare a return (hereinafter referred to as the annual",
+    "page": 3
+  },
+  {
+    "idx": 561,
+    "number": "2",
+    "title": "Clause (c) omitted by Act 1 of 2018, s. 23 (w.e.f. 5-3-2021)",
+    "page": 67
+  },
+  {
+    "idx": 562,
+    "number": "3",
+    "title": "The words “indicating their names, addresses, countries of incorporation, registration and percentage of shareholding held by",
+    "page": 40
+  },
+  {
+    "idx": 563,
+    "number": "94",
+    "title": "Place of keeping and inspection of registers, returns, etc.—(1) The registers required to be kept and",
+    "page": 3
+  },
+  {
+    "idx": 564,
+    "number": "3",
+    "title": "The words “within the time as specified, under section 403” omitted by Act 1 of 2018, s. 23 (w.e.f. 7-5-2018)",
+    "page": 69
+  },
+  {
+    "idx": 565,
+    "number": "8",
+    "title": "The words “and the Registrar has been given a copy of the proposed special resolution in advance” omitted by Act 1 of 2018, s",
+    "page": 31
+  },
+  {
+    "idx": 566,
+    "number": "9",
+    "title": "The proviso ins. by Act 1 of 2018, s. 25 (w.e.f. 13-6-2018)",
+    "page": 32
+  },
+  {
+    "idx": 567,
+    "number": "95",
+    "title": "Registers, etc., to be evidence.—The registers, their indices and copies of annual returns",
+    "page": 3
+  },
+  {
+    "idx": 568,
+    "number": "96",
+    "title": "Annual general meeting.—(1) Every company other than a One Person Company shall in each",
+    "page": 3
+  },
+  {
+    "idx": 569,
+    "number": "97",
+    "title": "Power of Tribunal to call annual general meeting.—(1) If any default is made in holding the",
+    "page": 3
+  },
+  {
+    "idx": 570,
+    "number": "98",
+    "title": "Power of Tribunal to call meetings of members, etc.—(1) If for any reason it is impracticable to",
+    "page": 3
+  },
+  {
+    "idx": 571,
+    "number": "99",
+    "title": "Punishment for default in complying with provisions of sections 96 to 98.—If any default is",
+    "page": 3
+  },
+  {
+    "idx": 572,
+    "number": "100",
+    "title": "Calling of extraordinary general meeting.—(1) The Board may, whenever it deems fit, call an",
+    "page": 3
+  },
+  {
+    "idx": 573,
+    "number": "101",
+    "title": "Notice of meeting.—(1) A general meeting of a company may be called by giving not less than",
+    "page": 3
+  },
+  {
+    "idx": 574,
+    "number": "2",
+    "title": "The proviso subs. by s. 28, ibid., (w.e.f. 9-2-2018)",
+    "page": 69
+  },
+  {
+    "idx": 575,
+    "number": "102",
+    "title": "Statement to be annexed to notice.—(1) A statement setting out the following material facts",
+    "page": 3
+  },
+  {
+    "idx": 576,
+    "number": "103",
+    "title": "Quorum for meetings.—(1) Unless the articles of the company provide for a larger number,—",
+    "page": 3
+  },
+  {
+    "idx": 577,
+    "number": "104",
+    "title": "Chairman of meetings.—(1) Unless the articles of the company otherwise provide, the members",
+    "page": 3
+  },
+  {
+    "idx": 578,
+    "number": "105",
+    "title": "Proxies.—(1) Any member of a company entitled to attend and vote at a meeting of the company",
+    "page": 75
+  },
+  {
+    "idx": 579,
+    "number": "106",
+    "title": "Restriction on voting rights.—(1) Notwithstanding anything contained in this Act, the articles of",
+    "page": 3
+  },
+  {
+    "idx": 580,
+    "number": "107",
+    "title": "Voting by show of hands.—(1) At any general meeting, a resolution put to the vote of the meeting",
+    "page": 3
+  },
+  {
+    "idx": 581,
+    "number": "108",
+    "title": "Voting through electronic means.—The Central Government may prescribe the class or classes",
+    "page": 3
+  },
+  {
+    "idx": 582,
+    "number": "109",
+    "title": "Demand for poll.—(1) Before or on the declaration of the result of the voting on any resolution",
+    "page": 3
+  },
+  {
+    "idx": 583,
+    "number": "110",
+    "title": "Postal ballot.—(1) Notwithstanding anything contained in this Act, a company—",
+    "page": 3
+  },
+  {
+    "idx": 584,
+    "number": "111",
+    "title": "Circulation of members’ resolution.—(1) A company shall, on requisition in writing of such",
+    "page": 3
+  },
+  {
+    "idx": 585,
+    "number": "112",
+    "title": "Representation of President and Governors in meetings.—(1) The President of India or the",
+    "page": 3
+  },
+  {
+    "idx": 586,
+    "number": "113",
+    "title": "Representation of corporations at meeting of companies and of creditors.—(1) A body",
+    "page": 3
+  },
+  {
+    "idx": 587,
+    "number": "1",
+    "title": "The Proviso ins. by Act 1 of 2018, s. 29 (w.e.f. 9-2-2018)",
+    "page": 64
+  },
+  {
+    "idx": 588,
+    "number": "114",
+    "title": "Ordinary and special resolutions.—(1) A resolution shall be an ordinary resolution if the notice",
+    "page": 3
+  },
+  {
+    "idx": 589,
+    "number": "115",
+    "title": "Resolutions requiring special notice.—Where, by any provision contained in this Act or in the",
+    "page": 3
+  },
+  {
+    "idx": 590,
+    "number": "116",
+    "title": "Resolutions passed at adjourned meeting.—Where a resolution is passed at an adjourned",
+    "page": 3
+  },
+  {
+    "idx": 591,
+    "number": "117",
+    "title": "Resolutions and agreements to be filed.—(1) A copy of every resolution or any agreement, in",
+    "page": 3
+  },
+  {
+    "idx": 592,
+    "number": "1",
+    "title": "The words and figures “within the time specified under section 403” omitted by Act 1 of 2018, s. 30 (w.e.f. 7-5-2018)",
+    "page": 77
+  },
+  {
+    "idx": 593,
+    "number": "118",
+    "title": "Minutes of proceedings of general meeting, meeting of Board of Directors and other meeting",
+    "page": 4
+  },
+  {
+    "idx": 594,
+    "number": "1",
+    "title": "Clause (e) omitted by Act 1 of 2018, s. 30 (w.e.f. 7-5-2018)",
+    "page": 78
+  },
+  {
+    "idx": 595,
+    "number": "3",
+    "title": "The word “and” omitted by Act 21 of 2015, s. 9 (w.e.f. 29-5-2015)",
+    "page": 70
+  },
+  {
+    "idx": 596,
+    "number": "5",
+    "title": "The “and” omitted by Act 1 of 2018, s. 30 (w.e.f. 7-5-2018)",
+    "page": 29
+  },
+  {
+    "idx": 597,
+    "number": "6",
+    "title": "The proviso subs. by Act 29 of 2020, s. 22 (w.e.f. 22-1-2021)",
+    "page": 30
+  },
+  {
+    "idx": 598,
+    "number": "119",
+    "title": "Inspection of minute-books of general meeting.—(1) The books containing the minutes of the",
+    "page": 4
+  },
+  {
+    "idx": 599,
+    "number": "120",
+    "title": "Maintenance and inspection of documents in electronic form.—Without prejudice to any other",
+    "page": 4
+  },
+  {
+    "idx": 600,
+    "number": "121",
+    "title": "Report on annual general meeting.—(1) Every listed public company shall prepare in the",
+    "page": 4
+  },
+  {
+    "idx": 601,
+    "number": "122",
+    "title": "Applicability of this Chapter to One Person Company.—(1) The provisions of section 98 and",
+    "page": 4
+  },
+  {
+    "idx": 602,
+    "number": "123",
+    "title": "Declaration of dividend.—(1) No dividend shall be declared or paid by a company for any",
+    "page": 4
+  },
+  {
+    "idx": 603,
+    "number": "1",
+    "title": "The words and figures “within the time as specified, under section 403” omitted by Act 1 of 2018, s. 31 (w.e.f. 7-5-2018)",
+    "page": 79
+  },
+  {
+    "idx": 604,
+    "number": "124",
+    "title": "Unpaid Dividend Account.—(1) Where a dividend has been declared by a company but has not",
+    "page": 4
+  },
+  {
+    "idx": 605,
+    "number": "1",
+    "title": "The proviso ins. by Act 1 of 2018, s. 32 (w.e.f. 9-2-2018)",
+    "page": 81
+  },
+  {
+    "idx": 606,
+    "number": "3",
+    "title": "The Proviso ins. by Act 21 of 2015, s. 10 (w.e.f. 29-5-2015)",
+    "page": 79
+  },
+  {
+    "idx": 607,
+    "number": "125",
+    "title": "Investor Education and Protection Fund.—(1) The Central Government shall establish a Fund",
+    "page": 4
+  },
+  {
+    "idx": 608,
+    "number": "126",
+    "title": "Right to dividend, rights shares and bonus shares to be held in abeyance pending registration",
+    "page": 4
+  },
+  {
+    "idx": 609,
+    "number": "127",
+    "title": "Punishment for failure to distribute dividends.—Where a dividend has been declared by a",
+    "page": 4
+  },
+  {
+    "idx": 610,
+    "number": "128",
+    "title": "Books of account, etc., to be kept by company.—(1) Every company shall prepare and keep at",
+    "page": 4
+  },
+  {
+    "idx": 611,
+    "number": "129",
+    "title": "Financial statement.—(1) The financial statements shall give a true and fair view of the state of",
+    "page": 4
+  },
+  {
+    "idx": 612,
+    "number": "1",
+    "title": "The words “with imprisonment for a term which may extend to one year or” omitted by Act 29 of 2020, s. 24 (w.e.f. 21-21",
+    "page": 82
+  },
+  {
+    "idx": 613,
+    "number": "2",
+    "title": "The words “or with both” omitted by s. 24, ibid. (w.e.f. 21-12-2020)",
+    "page": 72
+  },
+  {
+    "idx": 614,
+    "number": "130",
+    "title": "Re-opening of accounts on court’s or Tribunal’s orders.—(1) A company shall not re-open its",
+    "page": 4
+  },
+  {
+    "idx": 615,
+    "number": "131",
+    "title": "Voluntary revision of financial statements or Board’s report.—(1) If it appears to the directors",
+    "page": 4
+  },
+  {
+    "idx": 616,
+    "number": "132",
+    "title": "Constitution of National Financial Reporting Authority.—(1) The Central Government may",
+    "page": 4
+  },
+  {
+    "idx": 617,
+    "number": "4",
+    "title": "Sub-sections (6), (7), (8) and (9) omitted by s. 35, ibid. (w.e.f. 9-2-2018)",
+    "page": 68
+  },
+  {
+    "idx": 618,
+    "number": "133",
+    "title": "Central Government to prescribe accounting standards.—The Central Government may",
+    "page": 4
+  },
+  {
+    "idx": 619,
+    "number": "134",
+    "title": "Financial statement, Board’s report, etc.— 2[(1) The financial statement, including consolidated",
+    "page": 4
+  },
+  {
+    "idx": 620,
+    "number": "2",
+    "title": "The provisos ins. by s. 36, ibid., (w.e.f. 31-7-2018)",
+    "page": 86
+  },
+  {
+    "idx": 621,
+    "number": "3",
+    "title": "Sub-section (3A) ins. by s. 36, ibid., (w.e.f. 31-7-2018)",
+    "page": 82
+  },
+  {
+    "idx": 622,
+    "number": "135",
+    "title": "Corporate Social Responsibility.—(1) Every company having net worth of rupees five hundred",
+    "page": 4
+  },
+  {
+    "idx": 623,
+    "number": "3",
+    "title": "The proviso ins. by s. 37, ibid., (w.e.f. 19-9-2018)",
+    "page": 92
+  },
+  {
+    "idx": 624,
+    "number": "136",
+    "title": "Right of member to copies of audited financial statement.—(1) 7*** a copy of the financial",
+    "page": 4
+  },
+  {
+    "idx": 625,
+    "number": "2",
+    "title": "The Proviso ins. by s. 27, ibid. (w.e.f. 22-1-2021)",
+    "page": 92
+  },
+  {
+    "idx": 626,
+    "number": "7",
+    "title": "The words and figures “Without prejudice to the provisions of section 101” omitted by Act 1 of 2018, s. 38, (w.e.f. 9-2-2018)",
+    "page": 30
+  },
+  {
+    "idx": 627,
+    "number": "137",
+    "title": "Copy of financial statement to be filed with Registrar.—(1) A copy of the financial statements",
+    "page": 4
+  },
+  {
+    "idx": 628,
+    "number": "3",
+    "title": "The proviso ins. by s. 38, ibid. (w.e.f. 9-2-2018)",
+    "page": 93
+  },
+  {
+    "idx": 629,
+    "number": "4",
+    "title": "The words and figures “within the time specified under section 403” omitted by s. 39, ibid., (w.e.f. 7-5-2018)",
+    "page": 90
+  },
+  {
+    "idx": 630,
+    "number": "138",
+    "title": "Internal audit.—(1) Such class or classes of companies as may be prescribed shall be required",
+    "page": 4
+  },
+  {
+    "idx": 631,
+    "number": "139",
+    "title": "Appointment of auditors.—(1) Subject to the provisions of this Chapter, every company shall",
+    "page": 4
+  },
+  {
+    "idx": 632,
+    "number": "1",
+    "title": "The proviso ins. by Act 1 of 2018, s. 39 (w.e.f. 7-5-2018)",
+    "page": 86
+  },
+  {
+    "idx": 633,
+    "number": "2",
+    "title": "The words and figures “within the time specified, under section 403” omitted by s. 39, ibid. (w.e.f. 7-5-2018)",
+    "page": 94
+  },
+  {
+    "idx": 634,
+    "number": "9",
+    "title": "The first proviso omitted by Act 1 of 2018, s. 40 (w.e.f. 7-5-2018)",
+    "page": 70
+  },
+  {
+    "idx": 635,
+    "number": "140",
+    "title": "Removal, resignation of auditor and giving of special notice.—(1) The auditor appointed under",
+    "page": 4
+  },
+  {
+    "idx": 636,
+    "number": "141",
+    "title": "Eligibility, qualifications and disqualifications of auditors.—(1) A person shall be eligible for",
+    "page": 4
+  },
+  {
+    "idx": 637,
+    "number": "142",
+    "title": "Remuneration of auditors.—(1) The remuneration of the auditor of a company shall be fixed in",
+    "page": 4
+  },
+  {
+    "idx": 638,
+    "number": "143",
+    "title": "Powers and duties of auditors and auditing standards.—(1) Every auditor of a company shall",
+    "page": 4
+  },
+  {
+    "idx": 639,
+    "number": "144",
+    "title": "Auditor not to render certain services.—An auditor appointed under this Act shall provide to",
+    "page": 4
+  },
+  {
+    "idx": 640,
+    "number": "145",
+    "title": "Auditor to sign audit reports, etc.—The person appointed as an auditor of the company shall",
+    "page": 4
+  },
+  {
+    "idx": 641,
+    "number": "146",
+    "title": "Auditors to attend general meeting.—All notices of, and other communications relating to, any",
+    "page": 4
+  },
+  {
+    "idx": 642,
+    "number": "147",
+    "title": "Punishment for contravention.—(1) If any of the provisions of sections 139 to 146 (both",
+    "page": 4
+  },
+  {
+    "idx": 643,
+    "number": "1",
+    "title": "The words “with imprisonment for a term which may extend to one year or” omitted by Act 29 of 2020, s. 31 (w.e.f. 21-12",
+    "page": 96
+  },
+  {
+    "idx": 644,
+    "number": "148",
+    "title": "Central Government to specify audit of items of cost in respect of certain companies.—(1)",
+    "page": 4
+  },
+  {
+    "idx": 645,
+    "number": "2",
+    "title": "The proviso ins. by s. 44, ibid., (w.e.f. 9-2-2018)",
+    "page": 96
+  },
+  {
+    "idx": 646,
+    "number": "149",
+    "title": "Company to have Board of Directors.—(1) Every company shall have a Board of Directors",
+    "page": 4
+  },
+  {
+    "idx": 647,
+    "number": "3",
+    "title": "The proviso ins. by s. 46, ibid., (w.e.f. 7-5-2018)",
+    "page": 95
+  },
+  {
+    "idx": 648,
+    "number": "150",
+    "title": "Manner of selection of independent directors and maintenance of databank of independent",
+    "page": 5
+  },
+  {
+    "idx": 649,
+    "number": "151",
+    "title": "Appointment of director elected by small shareholders.—A listed company may have one",
+    "page": 5
+  },
+  {
+    "idx": 650,
+    "number": "152",
+    "title": "Appointment of directors.—(1) Where no provision is made in the articles of a company for the",
+    "page": 5
+  },
+  {
+    "idx": 651,
+    "number": "153",
+    "title": "Application for allotment of Director Identification Number.—Every individual intending to",
+    "page": 5
+  },
+  {
+    "idx": 652,
+    "number": "154",
+    "title": "Allotment of Director Identification Number.—The Central Government shall, within one",
+    "page": 5
+  },
+  {
+    "idx": 653,
+    "number": "155",
+    "title": "Prohibition to obtain more than one Director Identification Number.—No individual, who",
+    "page": 5
+  },
+  {
+    "idx": 654,
+    "number": "156",
+    "title": "Director to intimate Director Identification Number.—Every existing director shall, within one",
+    "page": 5
+  },
+  {
+    "idx": 655,
+    "number": "157",
+    "title": "Company to inform Director Identification Number to Registrar.—(1) Every company shall",
+    "page": 5
+  },
+  {
+    "idx": 656,
+    "number": "158",
+    "title": "Obligation to indicate Director Identification Number.—Every person or company, while",
+    "page": 5
+  },
+  {
+    "idx": 657,
+    "number": "1",
+    "title": "The proviso ins. by Act 1 of 2018, s. 48 (w.e.f. 9-2-2018)",
+    "page": 104
+  },
+  {
+    "idx": 658,
+    "number": "2",
+    "title": "The words and figures “within the time specified under section 403” omitted by Act 1 of 2018, s. 49 (w.e.f. 7-5-2018)",
+    "page": 105
+  },
+  {
+    "idx": 659,
+    "number": "160",
+    "title": "Right of persons other than retiring directors to stand for directorship.— (1) A person who",
+    "page": 5
+  },
+  {
+    "idx": 660,
+    "number": "161",
+    "title": "Appointment of additional director, alternate director and nominee director.—(1) The",
+    "page": 5
+  },
+  {
+    "idx": 661,
+    "number": "2",
+    "title": "The proviso ins. by Act 1 of 2018, s. 50 (w.e.f. 9-2-2018)",
+    "page": 110
+  },
+  {
+    "idx": 662,
+    "number": "4",
+    "title": "The words “In the case of a public company,” omitted by s. 51, ibid. (w.e.f. 9-2-2018)",
+    "page": 95
+  },
+  {
+    "idx": 663,
+    "number": "162",
+    "title": "Appointment of directors to be voted individually.—(1) At a general meeting of a company, a",
+    "page": 5
+  },
+  {
+    "idx": 664,
+    "number": "163",
+    "title": "Option to adopt principle of proportional representation for appointment of directors.—",
+    "page": 5
+  },
+  {
+    "idx": 665,
+    "number": "164",
+    "title": "Disqualifications for appointment of director.—(1) A person shall not be eligible for",
+    "page": 5
+  },
+  {
+    "idx": 666,
+    "number": "165",
+    "title": "Number of directorships.—(1) No person, after the commencement of this Act, shall hold office",
+    "page": 5
+  },
+  {
+    "idx": 667,
+    "number": "166",
+    "title": "Duties of directors.—(1) Subject to the provisions of this Act, a director of a company shall act",
+    "page": 5
+  },
+  {
+    "idx": 668,
+    "number": "1",
+    "title": "The proviso ins. by Act 1 of 2018, s. 52 (w.e.f. 7-5-2018)",
+    "page": 110
+  },
+  {
+    "idx": 669,
+    "number": "2",
+    "title": "The proviso subs. by Act 1 of 2018, s. 52 (w.e.f. 7-5-2018)",
+    "page": 111
+  },
+  {
+    "idx": 670,
+    "number": "3",
+    "title": "The Explanation renumbered as Explanation I thereof by s. 53, ibid. (w.e.f. 9-2-2018)",
+    "page": 107
+  },
+  {
+    "idx": 671,
+    "number": "167",
+    "title": "Vacation of office of director.—(1) The office of a director shall become vacant in case—",
+    "page": 5
+  },
+  {
+    "idx": 672,
+    "number": "1",
+    "title": "The proviso ins. by Act 1 of 2018, s. 54 (w.e.f. 7-5-2018)",
+    "page": 113
+  },
+  {
+    "idx": 673,
+    "number": "2",
+    "title": "The proviso subs. by Act 1 of 2018, s. 54 (w.e.f. 7-5-2018)",
+    "page": 113
+  },
+  {
+    "idx": 674,
+    "number": "168",
+    "title": "Resignation of director.—(1) A director may resign from his office by giving a notice in writing",
+    "page": 5
+  },
+  {
+    "idx": 675,
+    "number": "169",
+    "title": "Removal of directors.—(1) A company may, by ordinary resolution, remove a director, not being",
+    "page": 5
+  },
+  {
+    "idx": 676,
+    "number": "1",
+    "title": "The words “with imprisonment for a term which may extend to one year or” omitted by Act 29 of 2020, s. 34 (w.e.f. 21-12",
+    "page": 114
+  },
+  {
+    "idx": 677,
+    "number": "4",
+    "title": "The proviso ins. by Notification No. S.O. 768(E), dated 21st February, 2018 (w.e.f. 21-2-2018)",
+    "page": 111
+  },
+  {
+    "idx": 678,
+    "number": "170",
+    "title": "Register of directors and key managerial personnel and their shareholding.—(1) Every",
+    "page": 5
+  },
+  {
+    "idx": 679,
+    "number": "171",
+    "title": "Members’ right to inspect.—(1) The register kept under sub-section (1) of section 170,—",
+    "page": 5
+  },
+  {
+    "idx": 680,
+    "number": "173",
+    "title": "Meetings of Board.—(1) Every company shall hold the first meeting of the Board of Directors",
+    "page": 5
+  },
+  {
+    "idx": 681,
+    "number": "174",
+    "title": "Quorum for meetings of Board.—(1) The quorum for a meeting of the Board of Directors of a",
+    "page": 5
+  },
+  {
+    "idx": 682,
+    "number": "1",
+    "title": "The proviso ins. by Act 1 of 2018, s. 56 (w.e.f. 7-5-2018)",
+    "page": 115
+  },
+  {
+    "idx": 683,
+    "number": "175",
+    "title": "Passing of resolution by circulation.—(1) No resolution shall be deemed to have been duly",
+    "page": 5
+  },
+  {
+    "idx": 684,
+    "number": "176",
+    "title": "Defects in appointment of directors not to invalidate actions taken.—No act done by a person",
+    "page": 5
+  },
+  {
+    "idx": 685,
+    "number": "177",
+    "title": "Audit Committee.—(1) The Board of Directors of 1[every listed public company] and such other",
+    "page": 5
+  },
+  {
+    "idx": 686,
+    "number": "178",
+    "title": "Nomination and Remuneration Committee and Stakeholders Relationship",
+    "page": 5
+  },
+  {
+    "idx": 687,
+    "number": "1",
+    "title": "The proviso ins. by Act 21 of 2015, s. 14 (w.e.f. 14-12-2015)",
+    "page": 117
+  },
+  {
+    "idx": 688,
+    "number": "179",
+    "title": "Powers of Board.—(1) The Board of Directors of a company shall be entitled to exercise all such",
+    "page": 5
+  },
+  {
+    "idx": 689,
+    "number": "180",
+    "title": "Restrictions on powers of Board.—(1) The Board of Directors of a company shall exercise the",
+    "page": 5
+  },
+  {
+    "idx": 690,
+    "number": "181",
+    "title": "Company to contribute to bona fide and charitable funds, etc.—The Board of Directors of a",
+    "page": 5
+  },
+  {
+    "idx": 691,
+    "number": "182",
+    "title": "Prohibitions and restrictions regarding political contributions.—(1) Notwithstanding",
+    "page": 5
+  },
+  {
+    "idx": 692,
+    "number": "183",
+    "title": "Power of Board and other persons to make contributions to national defence fund",
+    "page": 5
+  },
+  {
+    "idx": 693,
+    "number": "1",
+    "title": "The proviso omitted by Act 7 of 2017, s. 154 (w.e.f. 31-3-2017)",
+    "page": 119
+  },
+  {
+    "idx": 694,
+    "number": "2",
+    "title": "The word “further” omitted by Act 7 of 2017, s. 154 (w.e.f. 31-3-2017)",
+    "page": 114
+  },
+  {
+    "idx": 695,
+    "number": "3",
+    "title": "The words “and the acceptance” omitted by s. 154, ibid. (w.e.f. 31-3-2017)",
+    "page": 113
+  },
+  {
+    "idx": 696,
+    "number": "184",
+    "title": "Disclosure of interest by director.—(1) Every director shall at the first meeting of the Board in",
+    "page": 5
+  },
+  {
+    "idx": 697,
+    "number": "186",
+    "title": "Loan and investment by company.—(1) Without prejudice to the provisions contained in this",
+    "page": 5
+  },
+  {
+    "idx": 698,
+    "number": "187",
+    "title": "Investments of company to be held in its own name.—(1) All investments made or held by a",
+    "page": 5
+  },
+  {
+    "idx": 699,
+    "number": "188",
+    "title": "Related party transactions.— (1) Except with the consent of the Board of Directors given by a",
+    "page": 5
+  },
+  {
+    "idx": 700,
+    "number": "3",
+    "title": "The proviso ins. by Act 1 of 2018, s. 63 (w.e.f. 9-2-2018)",
+    "page": 123
+  },
+  {
+    "idx": 701,
+    "number": "189",
+    "title": "Register of contracts or arrangements in which directors are interested.—(1) Every company",
+    "page": 5
+  },
+  {
+    "idx": 702,
+    "number": "1",
+    "title": "The proviso ins. by Act 21 of 2015, s. 16 (w.e.f. 29-5-2015)",
+    "page": 123
+  },
+  {
+    "idx": 703,
+    "number": "190",
+    "title": "Contract of employment with managing or whole-time director.—(1) Every company shall",
+    "page": 5
+  },
+  {
+    "idx": 704,
+    "number": "191",
+    "title": "Payment to director for loss of office, etc., in connection with transfer of undertaking",
+    "page": 5
+  },
+  {
+    "idx": 705,
+    "number": "192",
+    "title": "Restriction on non-cash transactions involving directors.—(1) No company shall enter into an",
+    "page": 5
+  },
+  {
+    "idx": 706,
+    "number": "193",
+    "title": "Contract by One Person Company.—(1) Where One Person Company limited by shares or by",
+    "page": 5
+  },
+  {
+    "idx": 707,
+    "number": "196",
+    "title": "Appointment of managing director, whole-time director or manager.—(1) No company shall",
+    "page": 6
+  },
+  {
+    "idx": 708,
+    "number": "197",
+    "title": "Overall maximum managerial remuneration and managerial remuneration in case of",
+    "page": 6
+  },
+  {
+    "idx": 709,
+    "number": "1",
+    "title": "The proviso ins. by Act 1 of 2018, s. 66 (w.e.f. 12-9-2018)",
+    "page": 129
+  },
+  {
+    "idx": 710,
+    "number": "3",
+    "title": "The words “with the approval of the Central Government,” omitted by Act 1 of 2018, s. 67 (w.e.f. 12-9-2018)",
+    "page": 128
+  },
+  {
+    "idx": 711,
+    "number": "1",
+    "title": "The proviso ins. by Act 1 of 2018, s. 67 (w.e.f. 12-9-2018)",
+    "page": 132
+  },
+  {
+    "idx": 712,
+    "number": "3",
+    "title": "The words “and if it is not able to comply with such provisions, with the previous approval of the Central Government”",
+    "page": 132
+  },
+  {
+    "idx": 713,
+    "number": "4",
+    "title": "Sub-section (7) omitted by Act 22 of 2019, s. 29 (w.e.f. 2-11-2018)",
+    "page": 115
+  },
+  {
+    "idx": 714,
+    "number": "198",
+    "title": "Calculation of profits.—(1) In computing the net profits of a company in any financial year for",
+    "page": 6
+  },
+  {
+    "idx": 715,
+    "number": "2",
+    "title": "The proviso ins. by s. 67, ibid., (w.e.f. 12-9-2018)",
+    "page": 123
+  },
+  {
+    "idx": 716,
+    "number": "3",
+    "title": "The words “and if such conditions are not being complied, the approval of the Central Government had been obtained” by",
+    "page": 133
+  },
+  {
+    "idx": 717,
+    "number": "2",
+    "title": "Clause (f) ins. by s. 68, ibid. (w.e.f. 12-9-2018)",
+    "page": 134
+  },
+  {
+    "idx": 718,
+    "number": "3",
+    "title": "The words “which begins at or after the commencement of this Act” omitted by s. 68, ibid. (w.e.f. 12-9-2018)",
+    "page": 134
+  },
+  {
+    "idx": 719,
+    "number": "199",
+    "title": "Recovery of remuneration in certain cases.—Without prejudice to any liability incurred under",
+    "page": 6
+  },
+  {
+    "idx": 720,
+    "number": "200",
+    "title": "Central Government or company to fix limit with regard to remuneration.—Notwithstanding",
+    "page": 6
+  },
+  {
+    "idx": 721,
+    "number": "201",
+    "title": "Forms of, and procedure in relation to, certain applications.—(1) Every application made to",
+    "page": 6
+  },
+  {
+    "idx": 722,
+    "number": "202",
+    "title": "Compensation for loss of office of managing or whole-time director or manager.—(1) A",
+    "page": 6
+  },
+  {
+    "idx": 723,
+    "number": "1",
+    "title": "The words “the Central Government or” omitted by Act 1 of 2018, s. 69 (w.e.f. 12-9-2018)",
+    "page": 133
+  },
+  {
+    "idx": 724,
+    "number": "2",
+    "title": "The words “this Chapter” omitted by s. 70, ibid. (w.e.f. 12-9-2018)",
+    "page": 135
+  },
+  {
+    "idx": 725,
+    "number": "203",
+    "title": "Appointment of key managerial personnel.—(1) Every company belonging to such class or",
+    "page": 6
+  },
+  {
+    "idx": 726,
+    "number": "204",
+    "title": "Secretarial audit for bigger companies.—(1) Every listed company and a company belonging",
+    "page": 6
+  },
+  {
+    "idx": 727,
+    "number": "205",
+    "title": "Functions of company secretary.—(1) The functions of the company secretary shall include,—",
+    "page": 6
+  },
+  {
+    "idx": 728,
+    "number": "206",
+    "title": "Power to call for information, inspect books and conduct inquiries.—(1) Where on a scrutiny",
+    "page": 6
+  },
+  {
+    "idx": 729,
+    "number": "208",
+    "title": "Report on inspection made.—The Registrar or inspector shall, after the inspection of the books",
+    "page": 6
+  },
+  {
+    "idx": 730,
+    "number": "209",
+    "title": "Search and seizure.—(1) Where, upon information in his possession or otherwise, the Registrar",
+    "page": 6
+  },
+  {
+    "idx": 731,
+    "number": "210",
+    "title": "Investigation into affairs of company.—(1) Where the Central Government is of the opinion",
+    "page": 6
+  },
+  {
+    "idx": 732,
+    "number": "211",
+    "title": "Establishment of Serious Fraud Investigation Office.—(1) The Central Government shall, by",
+    "page": 6
+  },
+  {
+    "idx": 733,
+    "number": "212",
+    "title": "Investigation into affairs of Company by Serious Fraud Investigation Office.—(1) Without",
+    "page": 6
+  },
+  {
+    "idx": 734,
+    "number": "3",
+    "title": "Subs. s. 31, ibid., for “The Director, Additional Director or Assistant Director of Serious Fraud Investigation Office shall",
+    "page": 135
+  },
+  {
+    "idx": 735,
+    "number": "213",
+    "title": "Investigation into company’s affairs in other cases.—The Tribunal may,—",
+    "page": 6
+  },
+  {
+    "idx": 736,
+    "number": "214",
+    "title": "Security for payment of costs and expenses of investigation.—Where an investigation is",
+    "page": 6
+  },
+  {
+    "idx": 737,
+    "number": "215",
+    "title": "Firm, body corporate or association not to be appointed as inspector.—No firm, body",
+    "page": 6
+  },
+  {
+    "idx": 738,
+    "number": "216",
+    "title": "Investigation of ownership of company.—(1) Where it appears to the Central Government that",
+    "page": 6
+  },
+  {
+    "idx": 739,
+    "number": "217",
+    "title": "Procedure, powers, etc., of inspectors.—(1) It shall be the duty of all officers and other",
+    "page": 6
+  },
+  {
+    "idx": 740,
+    "number": "218",
+    "title": "Protection of employees during investigation.—(1) Notwithstanding anything contained in any",
+    "page": 6
+  },
+  {
+    "idx": 741,
+    "number": "219",
+    "title": "Power of inspector to conduct investigation into affairs of related companies, etc.—If an",
+    "page": 6
+  },
+  {
+    "idx": 742,
+    "number": "220",
+    "title": "Seizure of documents by inspector.—(1) Where in the course of an investigation under this",
+    "page": 6
+  },
+  {
+    "idx": 743,
+    "number": "221",
+    "title": "Freezing of assets of company on inquiry and investigation.—(1) Where it appears to the",
+    "page": 6
+  },
+  {
+    "idx": 744,
+    "number": "222",
+    "title": "Imposition of restrictions upon securities.—(1) Where it appears to the Tribunal, in connection",
+    "page": 6
+  },
+  {
+    "idx": 745,
+    "number": "223",
+    "title": "Inspector’s report.—(1) An inspector appointed under this Chapter may, and if so directed by",
+    "page": 6
+  },
+  {
+    "idx": 746,
+    "number": "224",
+    "title": "Actions to be taken in pursuance of inspector’s report.—(1) If, from an inspector’s report",
+    "page": 6
+  },
+  {
+    "idx": 747,
+    "number": "225",
+    "title": "Expenses of investigation.—(1) The expenses of, and incidental to, an investigation by an",
+    "page": 6
+  },
+  {
+    "idx": 748,
+    "number": "226",
+    "title": "Voluntary winding up of company, etc., not to stop investigation proceedings.—An",
+    "page": 6
+  },
+  {
+    "idx": 749,
+    "number": "227",
+    "title": "Legal advisors and bankers not to disclose certain information.—Nothing in this Chapter shall",
+    "page": 6
+  },
+  {
+    "idx": 750,
+    "number": "228",
+    "title": "Investigation, etc., of foreign companies.—The provisions of this Chapter shall apply mutatis",
+    "page": 6
+  },
+  {
+    "idx": 751,
+    "number": "229",
+    "title": "Penalty for furnishing false statement, mutilation, destruction of documents.—Where a",
+    "page": 6
+  },
+  {
+    "idx": 752,
+    "number": "230",
+    "title": "Power to compromise or make arrangements with creditors and members.—(1) Where a",
+    "page": 6
+  },
+  {
+    "idx": 753,
+    "number": "231",
+    "title": "Power of Tribunal to enforce compromise or arrangement.—(1) Where the Tribunal makes",
+    "page": 6
+  },
+  {
+    "idx": 754,
+    "number": "232",
+    "title": "Merger and amalgamation of companies.—(1) Where an application is made to the Tribunal",
+    "page": 6
+  },
+  {
+    "idx": 755,
+    "number": "233",
+    "title": "Merger or amalgamation of certain companies.—(1) Notwithstanding the provisions of section",
+    "page": 6
+  },
+  {
+    "idx": 756,
+    "number": "234",
+    "title": "Merger or amalgamation of company with foreign company.—(1) The provisions of this",
+    "page": 6
+  },
+  {
+    "idx": 757,
+    "number": "235",
+    "title": "Power to acquire shares of shareholders dissenting from scheme or contract approved by",
+    "page": 7
+  },
+  {
+    "idx": 758,
+    "number": "236",
+    "title": "Purchase of minority shareholding.—(1) In the event of an acquirer, or a person acting in concert",
+    "page": 7
+  },
+  {
+    "idx": 759,
+    "number": "237",
+    "title": "Power of Central Government to provide for amalgamation of companies in public",
+    "page": 7
+  },
+  {
+    "idx": 760,
+    "number": "238",
+    "title": "Registration of offer of schemes involving transfer of shares.—(1) In relation to every offer of",
+    "page": 7
+  },
+  {
+    "idx": 761,
+    "number": "239",
+    "title": "Preservation of books and papers of amalgamated companies.—The books and papers of a",
+    "page": 7
+  },
+  {
+    "idx": 762,
+    "number": "240",
+    "title": "Liability of officers in respect of offences committed prior to merger, amalgamation, etc.—",
+    "page": 7
+  },
+  {
+    "idx": 763,
+    "number": "241",
+    "title": "Application to Tribunal for relief in cases of oppression, etc.—(1) Any member of a company",
+    "page": 7
+  },
+  {
+    "idx": 764,
+    "number": "242",
+    "title": "Powers of Tribunal.—(1) If, on any application made under section 241, the Tribunal is of the",
+    "page": 7
+  },
+  {
+    "idx": 765,
+    "number": "243",
+    "title": "Consequence of termination or modification of certain agreements.—(1) Where an order made",
+    "page": 7
+  },
+  {
+    "idx": 766,
+    "number": "244",
+    "title": "Right to apply under section 241.—(1) The following members of a company shall have the",
+    "page": 7
+  },
+  {
+    "idx": 767,
+    "number": "1",
+    "title": "The words “with imprisonment for a term which may extend to six months or” omitted by Act 29 of 2020, s. 43",
+    "page": 136
+  },
+  {
+    "idx": 768,
+    "number": "5",
+    "title": "The words “with imprisonment for a term which may extend to six months or” omitted by Act 29 of 2020, s. 44",
+    "page": 79
+  },
+  {
+    "idx": 769,
+    "number": "245",
+    "title": "Class action.—(1) Such number of member or members, depositor or depositors or any class of",
+    "page": 7
+  },
+  {
+    "idx": 770,
+    "number": "246",
+    "title": "Application of certain provisions to proceedings under section 241 or section 245.—The",
+    "page": 7
+  },
+  {
+    "idx": 771,
+    "number": "247",
+    "title": "Valuation by registered valuers.—(1) Where a valuation is required to be made in respect of any",
+    "page": 7
+  },
+  {
+    "idx": 772,
+    "number": "248",
+    "title": "Power of Registrar to remove name of company from register of companies.—(1) Where the",
+    "page": 7
+  },
+  {
+    "idx": 773,
+    "number": "5",
+    "title": "Clause (b) omitted by s. 19, ibid. (w.e.f. 29-5-2015)",
+    "page": 163
+  },
+  {
+    "idx": 774,
+    "number": "249",
+    "title": "Restrictions on making application under section 248 in certain situations.—(1) An",
+    "page": 7
+  },
+  {
+    "idx": 775,
+    "number": "250",
+    "title": "Effect of company notified as dissolved.—Where a company stands dissolved under section 248",
+    "page": 7
+  },
+  {
+    "idx": 776,
+    "number": "251",
+    "title": "Fraudulent application for removal of name.—(1) Where it is found that an application by a",
+    "page": 7
+  },
+  {
+    "idx": 777,
+    "number": "252",
+    "title": "Appeal to Tribunal.—(1) Any person aggrieved by an order of the Registrar, notifying a company",
+    "page": 7
+  },
+  {
+    "idx": 778,
+    "number": "273",
+    "title": "Powers of Tribunal.—(1) The Tribunal may, on receipt of a petition for winding up under section",
+    "page": 8
+  },
+  {
+    "idx": 779,
+    "number": "274",
+    "title": "Directions for filing statement of affairs.—(1) Where a petition for winding up is filed before",
+    "page": 8
+  },
+  {
+    "idx": 780,
+    "number": "275",
+    "title": "Company Liquidators and their appointments.—(1) For the purposes of winding up of a",
+    "page": 8
+  },
+  {
+    "idx": 781,
+    "number": "2",
+    "title": "Sub-section (4) omitted by s. 255 and the Eleventh Schedule, ibid. (w.e.f. 15-11-2016)",
+    "page": 136
+  },
+  {
+    "idx": 782,
+    "number": "276",
+    "title": "Removal and replacement of liquidator.—(1) The Tribunal may, on a reasonable cause being",
+    "page": 8
+  },
+  {
+    "idx": 783,
+    "number": "277",
+    "title": "Intimation to Company Liquidator, provisional liquidator and Registrar.—(1) Where the",
+    "page": 8
+  },
+  {
+    "idx": 784,
+    "number": "278",
+    "title": "Effect of winding up order.—The order for the winding up of a company shall operate in favour",
+    "page": 8
+  },
+  {
+    "idx": 785,
+    "number": "279",
+    "title": "Stay of suits, etc., on winding up order.—(1) When a winding up order has been passed or a",
+    "page": 8
+  },
+  {
+    "idx": 786,
+    "number": "281",
+    "title": "Submission of report by Company Liquidator.—(1) Where the Tribunal has made a winding",
+    "page": 8
+  },
+  {
+    "idx": 787,
+    "number": "282",
+    "title": "Directions of Tribunal on report of Company Liquidator.—(1) The Tribunal shall, on",
+    "page": 8
+  },
+  {
+    "idx": 788,
+    "number": "283",
+    "title": "Custody of company’s properties.—(1) Where a winding up order has been made or where a",
+    "page": 8
+  },
+  {
+    "idx": 789,
+    "number": "284",
+    "title": "Promoters, directors, etc., to cooperate with Company Liquidator.—(1) The promoters",
+    "page": 8
+  },
+  {
+    "idx": 790,
+    "number": "285",
+    "title": "Settlement of list of contributories and application of assets.—(1) As soon as may be after the",
+    "page": 8
+  },
+  {
+    "idx": 791,
+    "number": "286",
+    "title": "Obligations of directors and managers.—In the case of a limited company, any person who is",
+    "page": 8
+  },
+  {
+    "idx": 792,
+    "number": "287",
+    "title": "Advisory committee.—(1) The Tribunal may, while passing an order of winding up of a company",
+    "page": 8
+  },
+  {
+    "idx": 793,
+    "number": "288",
+    "title": "Submission of periodical reports to Tribunal.—(1) The Company Liquidator shall make",
+    "page": 8
+  },
+  {
+    "idx": 794,
+    "number": "290",
+    "title": "Powers and duties of Company Liquidator.—(1) Subject to directions by the Tribunal, if any",
+    "page": 8
+  },
+  {
+    "idx": 795,
+    "number": "291",
+    "title": "Provision for professional assistance to Company Liquidator.—(1) The Company Liquidator",
+    "page": 8
+  },
+  {
+    "idx": 796,
+    "number": "292",
+    "title": "Exercise and control of Company Liquidator’s powers.—(1) Subject to the provisions of this",
+    "page": 8
+  },
+  {
+    "idx": 797,
+    "number": "293",
+    "title": "Books to be kept by Company Liquidator.—(1) The Company Liquidator shall keep proper",
+    "page": 8
+  },
+  {
+    "idx": 798,
+    "number": "294",
+    "title": "Audit of Company Liquidator’s accounts.—(1) The Company Liquidator shall maintain proper",
+    "page": 8
+  },
+  {
+    "idx": 799,
+    "number": "295",
+    "title": "Payment of debts by contributory and extent of set-off.—(1) The Tribunal may, at any time",
+    "page": 8
+  },
+  {
+    "idx": 800,
+    "number": "296",
+    "title": "Power of Tribunal to make calls.—The Tribunal may, at any time after the passing of a winding",
+    "page": 8
+  },
+  {
+    "idx": 801,
+    "number": "297",
+    "title": "Adjustment of rights of contributories.—The Tribunal shall adjust the rights of the",
+    "page": 8
+  },
+  {
+    "idx": 802,
+    "number": "298",
+    "title": "Power to order costs.—The Tribunal may, in the event of the assets of a company being",
+    "page": 8
+  },
+  {
+    "idx": 803,
+    "number": "299",
+    "title": "Power to summon persons suspected of having property of company, etc.—(1) The Tribunal",
+    "page": 8
+  },
+  {
+    "idx": 804,
+    "number": "300",
+    "title": "Power to order examination of promoters, directors, etc.—(1) Where an order has been made",
+    "page": 8
+  },
+  {
+    "idx": 805,
+    "number": "301",
+    "title": "Arrest of person trying to leave India or abscond.—At any time either before or after",
+    "page": 8
+  },
+  {
+    "idx": 806,
+    "number": "302",
+    "title": "Dissolution of company by Tribunal.—(1) When the affairs of a company have been completely",
+    "page": 8
+  },
+  {
+    "idx": 807,
+    "number": "303",
+    "title": "Appeals from orders made before commencement of Act.—Nothing in this Chapter shall affect",
+    "page": 8
+  },
+  {
+    "idx": 808,
+    "number": "2",
+    "title": "Sub-section (4) omitted by s. 47, ibid. (w.e.f. 21-12-2020)",
+    "page": 171
+  },
+  {
+    "idx": 809,
+    "number": "324",
+    "title": "Debts of all descriptions to be admitted to proof.— In every winding up (subject, in the case of",
+    "page": 9
+  },
+  {
+    "idx": 810,
+    "number": "327",
+    "title": "Preferential payments.—(1) In a winding up, subject to the provisions of section 326, there shall",
+    "page": 9
+  },
+  {
+    "idx": 811,
+    "number": "328",
+    "title": "Fraudulent preference.—(1) Where a company has given preference to a person who is one of",
+    "page": 9
+  },
+  {
+    "idx": 812,
+    "number": "330",
+    "title": "Certain transfers to be void.—Any transfer or assignment by a company of all its properties or",
+    "page": 9
+  },
+  {
+    "idx": 813,
+    "number": "331",
+    "title": "Liabilities and rights of certain persons fraudulently preferred.—(1) Where a company is",
+    "page": 9
+  },
+  {
+    "idx": 814,
+    "number": "332",
+    "title": "Effect of floating charge.—Where a company is being wound up, a floating charge on the",
+    "page": 9
+  },
+  {
+    "idx": 815,
+    "number": "333",
+    "title": "Disclaimer of onerous property.—(1) Where any part of the property of a company which is",
+    "page": 9
+  },
+  {
+    "idx": 816,
+    "number": "335",
+    "title": "Certain attachments, executions, etc., in winding up by Tribunal to be void.—(1) Where any",
+    "page": 9
+  },
+  {
+    "idx": 817,
+    "number": "336",
+    "title": "Offences by officers of companies in liquidation.—(1) If any person, who is or has been an",
+    "page": 9
+  },
+  {
+    "idx": 818,
+    "number": "337",
+    "title": "Penalty for frauds by officers.—If any person, being at the time of the commission of the alleged",
+    "page": 9
+  },
+  {
+    "idx": 819,
+    "number": "338",
+    "title": "Liability where proper accounts not kept.—(1) Where a company is being wound up, if it is",
+    "page": 9
+  },
+  {
+    "idx": 820,
+    "number": "339",
+    "title": "Liability for fraudulent conduct of business.—(1) If in the course of the winding up of a",
+    "page": 9
+  },
+  {
+    "idx": 821,
+    "number": "340",
+    "title": "Power of Tribunal to assess damages against delinquent directors, etc.—(1) If in the course",
+    "page": 9
+  },
+  {
+    "idx": 822,
+    "number": "341",
+    "title": "Liability under sections 339 and 340 to extend to partners or directors in firms or",
+    "page": 9
+  },
+  {
+    "idx": 823,
+    "number": "342",
+    "title": "Prosecution of delinquent officers and members of company.—(1) If it appears to the Tribunal",
+    "page": 9
+  },
+  {
+    "idx": 824,
+    "number": "343",
+    "title": "Company Liquidator to exercise certain powers subject to sanction.—3[(1) The Company",
+    "page": 9
+  },
+  {
+    "idx": 825,
+    "number": "344",
+    "title": "Statement that company is in liquidation.—(1) Where a company is being wound up, whether",
+    "page": 9
+  },
+  {
+    "idx": 826,
+    "number": "345",
+    "title": "Books and papers of company to be evidence.—Where a company is being wound up, all books",
+    "page": 9
+  },
+  {
+    "idx": 827,
+    "number": "1",
+    "title": "Sub-sections (2), (3) and (4) omitted by Act 31 of 2016, s. 255 and the Eleventh Schedule (w.e.f. 15-11-2016)",
+    "page": 163
+  },
+  {
+    "idx": 828,
+    "number": "2",
+    "title": "Sub-section (6) omitted by Act 29 of 2020, s. 48 (w.e.f. 21-12-2020)",
+    "page": 181
+  },
+  {
+    "idx": 829,
+    "number": "346",
+    "title": "Inspection of books and papers by creditors and contributories.—(1) At any time after the",
+    "page": 9
+  },
+  {
+    "idx": 830,
+    "number": "347",
+    "title": "Disposal of books and papers of company.—1[(1) When the affairs of a company have been",
+    "page": 9
+  },
+  {
+    "idx": 831,
+    "number": "348",
+    "title": "Information as to pending liquidations.—4[(1) If the winding up of a company is not concluded",
+    "page": 9
+  },
+  {
+    "idx": 832,
+    "number": "2",
+    "title": "The words “with imprisonment for a term which may extend to six months or” omitted by Act 29 of 2020, s. 49 (w.e.f. 21-12",
+    "page": 191
+  },
+  {
+    "idx": 833,
+    "number": "349",
+    "title": "Official Liquidator to make payments into public account of India.—Every Official",
+    "page": 9
+  },
+  {
+    "idx": 834,
+    "number": "350",
+    "title": "Company Liquidator to deposit monies into scheduled bank.—(1) Every Company Liquidator",
+    "page": 9
+  },
+  {
+    "idx": 835,
+    "number": "351",
+    "title": "Liquidator not to deposit monies into private banking account.—Neither the Official",
+    "page": 9
+  },
+  {
+    "idx": 836,
+    "number": "352",
+    "title": "Company Liquidation Dividend and Undistributed Assets Account.—(1) Where any company",
+    "page": 9
+  },
+  {
+    "idx": 837,
+    "number": "2",
+    "title": "Sub-section (7) omitted by Act 29 of 2020, s. 50 (w.e.f. 21-12-2020)",
+    "page": 192
+  },
+  {
+    "idx": 838,
+    "number": "353",
+    "title": "Liquidator to make returns, etc.—(1) If any Company Liquidator who has made any default in",
+    "page": 9
+  },
+  {
+    "idx": 839,
+    "number": "354",
+    "title": "Meetings to ascertain wishes of creditors or contributories.—(1) In all matters relating to the",
+    "page": 9
+  },
+  {
+    "idx": 840,
+    "number": "355",
+    "title": "Court, tribunal or person, etc., before whom affidavit may be sworn.—(1) Any affidavit",
+    "page": 9
+  },
+  {
+    "idx": 841,
+    "number": "356",
+    "title": "Powers of Tribunal to declare dissolution of company void.—(1) Where a company has been",
+    "page": 9
+  },
+  {
+    "idx": 842,
+    "number": "358",
+    "title": "Exclusion of certain time in computing period of limitation.—Notwithstanding anything in the",
+    "page": 9
+  },
+  {
+    "idx": 843,
+    "number": "359",
+    "title": "Appointment of Official Liquidator.—(1) For the purposes of this Act, so far as it relates to the",
+    "page": 10
+  },
+  {
+    "idx": 844,
+    "number": "1",
+    "title": "Subs.by Act 29 of 2020, s. 51, for sub-section (2) (w.e.f. 21-12-2020)",
+    "page": 191
+  },
+  {
+    "idx": 845,
+    "number": "360",
+    "title": "Powers and functions of Official Liquidator.—(1) The Official Liquidator shall exercise such",
+    "page": 10
+  },
+  {
+    "idx": 846,
+    "number": "361",
+    "title": "Summary procedure for liquidation.—(1) Where the company to be wound up under this",
+    "page": 10
+  },
+  {
+    "idx": 847,
+    "number": "362",
+    "title": "Sale of assets and recovery of debts due to company.—(1) The Official Liquidator shall",
+    "page": 10
+  },
+  {
+    "idx": 848,
+    "number": "363",
+    "title": "Settlement of claims of creditors by Official Liquidator.—(1) The Official Liquidator within",
+    "page": 10
+  },
+  {
+    "idx": 849,
+    "number": "364",
+    "title": "Appeal by creditor.—(1) Any creditor aggrieved by the decision of the Official Liquidator under",
+    "page": 10
+  },
+  {
+    "idx": 850,
+    "number": "365",
+    "title": "Order of dissolution of company.—(1) The Official Liquidator shall, if he is satisfied that the",
+    "page": 10
+  },
+  {
+    "idx": 851,
+    "number": "366",
+    "title": "Companies capable of being registered.—(1) For the purposes of this Part, the word “company”",
+    "page": 10
+  },
+  {
+    "idx": 852,
+    "number": "367",
+    "title": "Certificate of registration of existing companies.—On compliance with the requirements of this",
+    "page": 10
+  },
+  {
+    "idx": 853,
+    "number": "368",
+    "title": "Vesting of property on registration.—All property, movable and immovable (including",
+    "page": 10
+  },
+  {
+    "idx": 854,
+    "number": "369",
+    "title": "Saving of existing liabilities.—The registration of a company in pursuance of this Part shall not",
+    "page": 10
+  },
+  {
+    "idx": 855,
+    "number": "370",
+    "title": "Continuation of pending legal proceedings.—All suits and other legal proceedings taken by or",
+    "page": 10
+  },
+  {
+    "idx": 856,
+    "number": "371",
+    "title": "Effect of registration under this Part.—(1) When a company is registered in pursuance of this",
+    "page": 10
+  },
+  {
+    "idx": 857,
+    "number": "372",
+    "title": "Power of Court to stay or restrain proceedings.—The provisions of this Act 1[or of the",
+    "page": 10
+  },
+  {
+    "idx": 858,
+    "number": "373",
+    "title": "Suits stayed on winding up order.—Where an order has been made for winding up, or a",
+    "page": 10
+  },
+  {
+    "idx": 859,
+    "number": "374",
+    "title": "Obligations of companies registering under this Part.—Every company which is seeking",
+    "page": 10
+  },
+  {
+    "idx": 860,
+    "number": "1",
+    "title": "The proviso ins. by Act 31 of 2016, s. 255 and the Eleventh Schedule (w.e.f. 15-11-2016)",
+    "page": 195
+  },
+  {
+    "idx": 861,
+    "number": "375",
+    "title": "Winding up of unregistered companies.—(1) Subject to the provisions of this Part, any",
+    "page": 10
+  },
+  {
+    "idx": 862,
+    "number": "1",
+    "title": "The proviso ins. by Act 1 of 2018, s. 76 (w.e.f. 15-8-2018)",
+    "page": 199
+  },
+  {
+    "idx": 863,
+    "number": "376",
+    "title": "Power to wind up foreign companies, although dissolved.— Where a body corporate",
+    "page": 10
+  },
+  {
+    "idx": 864,
+    "number": "377",
+    "title": "Provisions of Chapter cumulative.—(1) The provisions of this Part, with respect to unregistered",
+    "page": 10
+  },
+  {
+    "idx": 865,
+    "number": "378",
+    "title": "Saving and construction of enactments conferring power to wind up partnership firm",
+    "page": 10
+  },
+  {
+    "idx": 866,
+    "number": "378A",
+    "title": "Definitions.— In this Chapter, unless the context otherwise requires,—",
+    "page": 201
+  },
+  {
+    "idx": 867,
+    "number": "378B",
+    "title": "Objects of Producer Company.—(1) The objects of the Producer Company shall relate to all",
+    "page": 10
+  },
+  {
+    "idx": 868,
+    "number": "378C",
+    "title": "Formation of Producer Company and its registration.—(1) Any ten or more individuals",
+    "page": 10
+  },
+  {
+    "idx": 869,
+    "number": "378D",
+    "title": "Membership and voting rights of Members of Producer Company.— (1)(a) In a case where",
+    "page": 10
+  },
+  {
+    "idx": 870,
+    "number": "378E",
+    "title": "Benefits to Members.—(1) Subject to the provisions made in articles, every Member shall",
+    "page": 10
+  },
+  {
+    "idx": 871,
+    "number": "378F",
+    "title": "Memorandum of Producer Company.—The memorandum of association of every Producer",
+    "page": 10
+  },
+  {
+    "idx": 872,
+    "number": "378G",
+    "title": "Articles of association.—(1) There shall be presented, for registration to the Registrar of the",
+    "page": 205
+  },
+  {
+    "idx": 873,
+    "number": "378H",
+    "title": "Amendment of memorandum.—(1) A Producer Company shall not alter the conditions",
+    "page": 10
+  },
+  {
+    "idx": 874,
+    "number": "378J",
+    "title": "Option to inter-State co-operative societies to become Producer Companies.—(1)",
+    "page": 10
+  },
+  {
+    "idx": 875,
+    "number": "378K",
+    "title": "Effect of incorporation of Producer Company.—Every shareholder of the inter-State co",
+    "page": 11
+  },
+  {
+    "idx": 876,
+    "number": "378L",
+    "title": "Vesting of undertaking in Producer Company.—(1) All properties and assets, movable and",
+    "page": 208
+  },
+  {
+    "idx": 877,
+    "number": "378M",
+    "title": "Concession etc., to be deemed to have been granted to Producer Company.—With effect",
+    "page": 11
+  },
+  {
+    "idx": 878,
+    "number": "378N",
+    "title": "Provisions in respect of officers and other employees of inter-State co-operative society.—",
+    "page": 11
+  },
+  {
+    "idx": 879,
+    "number": "378P",
+    "title": "Appointment of directors.— (1)Save as otherwise provided in section 378N, the Members who",
+    "page": 11
+  },
+  {
+    "idx": 880,
+    "number": "378Q",
+    "title": "Vacation of office by directors.— (1) The office of the director of a Producer Company shall",
+    "page": 11
+  },
+  {
+    "idx": 881,
+    "number": "378R",
+    "title": "Powers and functions of Board.—(1) Subject to the provisions of this Act and articles, the",
+    "page": 11
+  },
+  {
+    "idx": 882,
+    "number": "378S",
+    "title": "Matters to be transacted at general meeting.— The Board of Directors of a Producer Company",
+    "page": 11
+  },
+  {
+    "idx": 883,
+    "number": "378T",
+    "title": "Liability of directors.— (1) When the directors vote for a resolution, or approve by any other",
+    "page": 11
+  },
+  {
+    "idx": 884,
+    "number": "378U",
+    "title": "Committee of directors.—(1) The Board may constitute such number of committees as it may",
+    "page": 11
+  },
+  {
+    "idx": 885,
+    "number": "378W",
+    "title": "Chief Executive and his functions.— (1) Every Producer Company shall have a full time Chief",
+    "page": 11
+  },
+  {
+    "idx": 886,
+    "number": "378X",
+    "title": "Secretary of Producer Company.— (1) Every Producer Company having an average annual",
+    "page": 11
+  },
+  {
+    "idx": 887,
+    "number": "378Y",
+    "title": "Quorum.— Unless the articles require a larger number, one-fourth of the total membership shall",
+    "page": 213
+  },
+  {
+    "idx": 888,
+    "number": "378Z",
+    "title": "Voting rights.— Save as otherwise provided in sub-sections (1) and (3) of section 378D, every",
+    "page": 11
+  },
+  {
+    "idx": 889,
+    "number": "379",
+    "title": "Application of Act to foreign companies.—1[(1) Sections 380 to 386 (both inclusive) and sections",
+    "page": 12
+  },
+  {
+    "idx": 890,
+    "number": "2",
+    "title": "The Proviso omitted by Act 29 of 2020, s. 53 (w.e.f. 22-1-2021)",
+    "page": 193
+  },
+  {
+    "idx": 891,
+    "number": "380",
+    "title": "Documents, etc., to be delivered to Registrar by foreign companies.—(1) Every foreign",
+    "page": 12
+  },
+  {
+    "idx": 892,
+    "number": "381",
+    "title": "Accounts of foreign company.—(1) Every foreign company shall, in every calendar year,—",
+    "page": 12
+  },
+  {
+    "idx": 893,
+    "number": "382",
+    "title": "Display of name, etc., of foreign company.—Every foreign company shall—",
+    "page": 12
+  },
+  {
+    "idx": 894,
+    "number": "383",
+    "title": "Service on foreign company.—Any process, notice, or other document required to be served on",
+    "page": 12
+  },
+  {
+    "idx": 895,
+    "number": "384",
+    "title": "Debentures, annual return, registration of charges, books of account and their inspection.—",
+    "page": 12
+  },
+  {
+    "idx": 896,
+    "number": "385",
+    "title": "Fee for registration of documents.—There shall be paid to the Registrar for registering any",
+    "page": 12
+  },
+  {
+    "idx": 897,
+    "number": "386",
+    "title": "Interpretation.—For the purposes of the foregoing provisions of this Chapter,—",
+    "page": 224
+  },
+  {
+    "idx": 898,
+    "number": "387",
+    "title": "Dating of prospectus and particulars to be contained therein.—(1) No person shall issue",
+    "page": 12
+  },
+  {
+    "idx": 899,
+    "number": "388",
+    "title": "Provisions as to expert’s consent and allotment.—(1) No person shall issue, circulate or",
+    "page": 12
+  },
+  {
+    "idx": 900,
+    "number": "389",
+    "title": "Registration of prospectus.—No person shall issue, circulate or distribute in India any prospectus",
+    "page": 12
+  },
+  {
+    "idx": 901,
+    "number": "390",
+    "title": "Offer of Indian Depository Receipts.—Notwithstanding anything contained in any other law for",
+    "page": 12
+  },
+  {
+    "idx": 902,
+    "number": "391",
+    "title": "Application of sections 34 to 36 and Chapter XX.—(1) The provisions of sections 34 to 36 (both",
+    "page": 12
+  },
+  {
+    "idx": 903,
+    "number": "392",
+    "title": "Punishment for contravention.—Without prejudice to the provisions of section 391, if a foreign",
+    "page": 12
+  },
+  {
+    "idx": 904,
+    "number": "393",
+    "title": "Company’s failure to comply with provisions of this Chapter not to affect validity of",
+    "page": 12
+  },
+  {
+    "idx": 905,
+    "number": "2",
+    "title": "The words “with imprisonment for a term which may extend to six months or” omitted by Act 29 of 2020, s. 54 (w.e.f. 21-12",
+    "page": 222
+  },
+  {
+    "idx": 906,
+    "number": "394",
+    "title": "Annual reports on Government companies.—(1) Where the Central Government is a member",
+    "page": 13
+  },
+  {
+    "idx": 907,
+    "number": "395",
+    "title": "Annual reports where one or more State Governments are members of companies.—(1)",
+    "page": 13
+  },
+  {
+    "idx": 908,
+    "number": "396",
+    "title": "Registration offices.—(1) For the purposes of exercising such powers and discharging such",
+    "page": 13
+  },
+  {
+    "idx": 909,
+    "number": "397",
+    "title": "Admissibility of certain documents as evidence.—Notwithstanding anything contained in any",
+    "page": 13
+  },
+  {
+    "idx": 910,
+    "number": "398",
+    "title": "Provisions relating to filing of applications, documents, inspection, etc., in electronic form.—",
+    "page": 13
+  },
+  {
+    "idx": 911,
+    "number": "1",
+    "title": "The word “prospectus” omitted by Act 22 of 2019, s. 38 (w.e.f. 15-8-2019)",
+    "page": 200
+  },
+  {
+    "idx": 912,
+    "number": "399",
+    "title": "Inspection, production and evidence of documents kept by Registrar.—(1) Save as otherwise",
+    "page": 13
+  },
+  {
+    "idx": 913,
+    "number": "400",
+    "title": "Electronic form to be exclusive, alternative or in addition to physical form.—The Central",
+    "page": 13
+  },
+  {
+    "idx": 914,
+    "number": "401",
+    "title": "Provision of value added services through electronic form.—The Central Government may",
+    "page": 13
+  },
+  {
+    "idx": 915,
+    "number": "402",
+    "title": "Application of provisions of Information Technology Act, 2000.—All the provisions of the",
+    "page": 13
+  },
+  {
+    "idx": 916,
+    "number": "403",
+    "title": "Fee for filing, etc.—(1) Any document, required to be submitted, filed, registered or recorded, or",
+    "page": 13
+  },
+  {
+    "idx": 917,
+    "number": "404",
+    "title": "Fees, etc., to be credited into public account.—All fees, charges and other sums received by any",
+    "page": 13
+  },
+  {
+    "idx": 918,
+    "number": "405",
+    "title": "Power of Central Government to direct companies to furnish information or statistics.—(1)",
+    "page": 13
+  },
+  {
+    "idx": 919,
+    "number": "407",
+    "title": "Definitions.—In this Chapter, unless the context otherwise requires,—",
+    "page": 232
+  },
+  {
+    "idx": 920,
+    "number": "408",
+    "title": "Constitution of National Company Law Tribunal.—The Central Government shall, by",
+    "page": 13
+  },
+  {
+    "idx": 921,
+    "number": "409",
+    "title": "Qualification of President and Members of Tribunal.—(1) The President shall be a person who",
+    "page": 13
+  },
+  {
+    "idx": 922,
+    "number": "410",
+    "title": "Constitution of Appellate Tribunal.—The Central Government shall, by notification, constitute",
+    "page": 13
+  },
+  {
+    "idx": 923,
+    "number": "411",
+    "title": "Qualifications of chairperson and Members of Appellate Tribunal.—(1) The chairperson shall",
+    "page": 13
+  },
+  {
+    "idx": 924,
+    "number": "412",
+    "title": "Selection of Members of Tribunal and Appellate Tribunal.— (1) The President of the Tribunal",
+    "page": 13
+  },
+  {
+    "idx": 925,
+    "number": "413",
+    "title": "Term of office of President, chairperson and other Members.— (1) The President and every",
+    "page": 13
+  },
+  {
+    "idx": 926,
+    "number": "1",
+    "title": "The words “not exceeding eleven” omitted by Act 29 of 2020, s. 58 (w.e.f. 22-1-2021)",
+    "page": 228
+  },
+  {
+    "idx": 927,
+    "number": "414",
+    "title": "Salary, allowances and other terms and conditions of service of Members.—The salary",
+    "page": 13
+  },
+  {
+    "idx": 928,
+    "number": "415",
+    "title": "Acting President and Chairperson of Tribunal or Appellate Tribunal.—(1) In the event of the",
+    "page": 13
+  },
+  {
+    "idx": 929,
+    "number": "416",
+    "title": "Resignation of Members.—The President, the Chairperson or any Member may, by notice in",
+    "page": 13
+  },
+  {
+    "idx": 930,
+    "number": "417",
+    "title": "Removal of Members.—(1) The Central Government may, after consultation with the Chief",
+    "page": 13
+  },
+  {
+    "idx": 931,
+    "number": "418",
+    "title": "Staff of Tribunal and Appellate Tribunal.—(1) The Central Government shall, in consultation",
+    "page": 13
+  },
+  {
+    "idx": 932,
+    "number": "419",
+    "title": "Benches of Tribunal.—(1) There shall be constituted such number of Benches of the Tribunal",
+    "page": 13
+  },
+  {
+    "idx": 933,
+    "number": "420",
+    "title": "Orders of Tribunal.—(1) The Tribunal may, after giving the parties to any proceeding before it",
+    "page": 13
+  },
+  {
+    "idx": 934,
+    "number": "421",
+    "title": "Appeal from orders of Tribunal.—(1) Any person aggrieved by an order of the Tribunal may",
+    "page": 13
+  },
+  {
+    "idx": 935,
+    "number": "422",
+    "title": "Expeditious disposal by Tribunal and Appellate Tribunal.—(1) Every application or petition",
+    "page": 13
+  },
+  {
+    "idx": 936,
+    "number": "423",
+    "title": "Appeal to Supreme Court.—Any person aggrieved by any order of the Appellate Tribunal may",
+    "page": 13
+  },
+  {
+    "idx": 937,
+    "number": "424",
+    "title": "Procedure before Tribunal and Appellate Tribunal.—(1) The Tribunal and the Appellate",
+    "page": 13
+  },
+  {
+    "idx": 938,
+    "number": "425",
+    "title": "Power to punish for contempt.— The Tribunal and the Appellate Tribunal shall have the same",
+    "page": 13
+  },
+  {
+    "idx": 939,
+    "number": "426",
+    "title": "Delegation of powers.—The Tribunal or the Appellate Tribunal may, by general or special order",
+    "page": 14
+  },
+  {
+    "idx": 940,
+    "number": "427",
+    "title": "President, Members, officers, etc., to be public servants.—The President, Members, officers",
+    "page": 14
+  },
+  {
+    "idx": 941,
+    "number": "428",
+    "title": "Protection of action taken in good faith.—No suit, prosecution or other legal proceeding shall",
+    "page": 14
+  },
+  {
+    "idx": 942,
+    "number": "429",
+    "title": "Power to seek assistance of Chief Metropolitan Magistrate, etc.—1[(1) The Tribunal may, in",
+    "page": 14
+  },
+  {
+    "idx": 943,
+    "number": "430",
+    "title": "Civil court not to have jurisdiction.—No civil court shall have jurisdiction to entertain any suit",
+    "page": 14
+  },
+  {
+    "idx": 944,
+    "number": "431",
+    "title": "Vacancy in Tribunal or Appellate Tribunal not to invalidate acts or proceedings.—No act or proceeding",
+    "page": 14
+  },
+  {
+    "idx": 945,
+    "number": "432",
+    "title": "Right to legal representation.—A party to any proceeding or appeal before the Tribunal or the Appellate",
+    "page": 14
+  },
+  {
+    "idx": 946,
+    "number": "433",
+    "title": "Limitation.—The provisions of the Limitation Act, 1963 (36 of 1963) shall, as far as may be, apply to",
+    "page": 239
+  },
+  {
+    "idx": 947,
+    "number": "5",
+    "title": "Ins., ibid. (w.e.f. 29-6-2017)",
+    "page": 166
+  },
+  {
+    "idx": 948,
+    "number": "436",
+    "title": "Offences triable by Special Courts.—(1) Notwithstanding anything contained in the Code of",
+    "page": 14
+  },
+  {
+    "idx": 949,
+    "number": "437",
+    "title": "Appeal and revision.—The High Court may exercise, so far as may be applicable, all the powers",
+    "page": 14
+  },
+  {
+    "idx": 950,
+    "number": "438",
+    "title": "Application of Code to proceedings before Special Court.—Save as otherwise provided in this",
+    "page": 14
+  },
+  {
+    "idx": 951,
+    "number": "439",
+    "title": "Offences to be non-cognizable.—(1) Notwithstanding anything in the Code of Criminal",
+    "page": 14
+  },
+  {
+    "idx": 952,
+    "number": "440",
+    "title": "Transitional provisions.—Any offence committed under this Act, which is triable by a Special",
+    "page": 14
+  },
+  {
+    "idx": 953,
+    "number": "441",
+    "title": "Compounding of certain offences.—(1) Notwithstanding anything contained in the Code of",
+    "page": 14
+  },
+  {
+    "idx": 954,
+    "number": "442",
+    "title": "Mediation and Conciliation Panel.—(1) The Central Government shall maintain a panel of",
+    "page": 14
+  },
+  {
+    "idx": 955,
+    "number": "443",
+    "title": "Power of Central Government to appoint company prosecutors.—Notwithstanding anything",
+    "page": 14
+  },
+  {
+    "idx": 956,
+    "number": "444",
+    "title": "Appeal against acquittal.—Notwithstanding anything contained in the Code of Criminal",
+    "page": 14
+  },
+  {
+    "idx": 957,
+    "number": "445",
+    "title": "Compensation for accusation without reasonable cause.—The provisions of section 250 of the",
+    "page": 14
+  },
+  {
+    "idx": 958,
+    "number": "446",
+    "title": "Application of fines.—The court imposing any fine under this Act may direct that the whole or",
+    "page": 14
+  },
+  {
+    "idx": 959,
+    "number": "447",
+    "title": "Punishment for fraud.—Without prejudice to any liability including repayment of any debt under",
+    "page": 14
+  },
+  {
+    "idx": 960,
+    "number": "448",
+    "title": "Punishment for false statement.— Save as otherwise provided in this Act, if in any return, report",
+    "page": 14
+  },
+  {
+    "idx": 961,
+    "number": "449",
+    "title": "Punishment for false evidence.—Save as otherwise provided in this Act, if any person",
+    "page": 14
+  },
+  {
+    "idx": 962,
+    "number": "450",
+    "title": "Punishment where no specific penalty or punishment is provided.—If a company or any",
+    "page": 14
+  },
+  {
+    "idx": 963,
+    "number": "2",
+    "title": "The proviso ins. by s. 92, ibid. (w.e.f. 9-2-2018)",
+    "page": 226
+  },
+  {
+    "idx": 964,
+    "number": "451",
+    "title": "Punishment in case of repeated default.—If a company or an officer of a company commits an",
+    "page": 14
+  },
+  {
+    "idx": 965,
+    "number": "452",
+    "title": "Punishment for wrongful withholding of property.—(1) If any officer or employee of a",
+    "page": 14
+  },
+  {
+    "idx": 966,
+    "number": "453",
+    "title": "Punishment for improper use of “Limited” or “Private Limited”.—If any person or persons",
+    "page": 14
+  },
+  {
+    "idx": 967,
+    "number": "454",
+    "title": "Adjudication of penalties.—(1) The Central Government may, by an order published in the",
+    "page": 14
+  },
+  {
+    "idx": 968,
+    "number": "455",
+    "title": "Dormant company.—(1) Where a company is formed and registered under this Act for a future",
+    "page": 14
+  },
+  {
+    "idx": 969,
+    "number": "3",
+    "title": "The words “Where an officer of a company or any other person” omitted by s. 42, ibid., (w.e.f. 2-11-2018)",
+    "page": 142
+  },
+  {
+    "idx": 970,
+    "number": "4",
+    "title": "The words “does not pay the penalty” omitted by s. 42, ibid. (w.e.f.. 2-11-2018)",
+    "page": 133
+  },
+  {
+    "idx": 971,
+    "number": "456",
+    "title": "Protection of action taken in good faith.—No suit, prosecution or other legal proceeding shall",
+    "page": 14
+  },
+  {
+    "idx": 972,
+    "number": "457",
+    "title": "Non-disclosure of information in certain cases.—Notwithstanding anything contained in any",
+    "page": 14
+  },
+  {
+    "idx": 973,
+    "number": "458",
+    "title": "Delegation by Central Government of its powers and functions.—(1) The Central Government",
+    "page": 14
+  },
+  {
+    "idx": 974,
+    "number": "459",
+    "title": "Powers of Central Government of Tribunal to accord approval, etc., subject to conditions",
+    "page": 14
+  },
+  {
+    "idx": 975,
+    "number": "1",
+    "title": "The proviso omitted by Act 1 of 2018, s. 93 (w.e.f. 9-2-2018)",
+    "page": 233
+  },
+  {
+    "idx": 976,
+    "number": "460",
+    "title": "Condonation of delay in certain cases.—Notwithstanding anything contained in this Act,—",
+    "page": 14
+  },
+  {
+    "idx": 977,
+    "number": "461",
+    "title": "Annual report by Central Government.—The Central Government shall cause a general annual",
+    "page": 14
+  },
+  {
+    "idx": 978,
+    "number": "462",
+    "title": "Power to exempt class or classes of companies from provisions of this Act.—(1) The Central",
+    "page": 14
+  },
+  {
+    "idx": 979,
+    "number": "463",
+    "title": "Power of court to grant relief in certain cases.—(1) If in any proceeding for negligence, default",
+    "page": 14
+  },
+  {
+    "idx": 980,
+    "number": "464",
+    "title": "Prohibition of association or partnership of persons exceeding certain number.—(1) No",
+    "page": 14
+  },
+  {
+    "idx": 981,
+    "number": "465",
+    "title": "Repeal of certain enactments and savings.—(1) The Companies Act, 1956 (1 of 1956) and the",
+    "page": 14
+  },
+  {
+    "idx": 982,
+    "number": "1",
+    "title": "The first proviso omitted by Act 29 of 2020, s. 66 (w.e.f. 11-2-2021)",
+    "page": 247
+  },
+  {
+    "idx": 983,
+    "number": "466",
+    "title": "Dissolution of Company Law Board and consequential provisions.—(1) Notwithstanding",
+    "page": 14
+  },
+  {
+    "idx": 984,
+    "number": "467",
+    "title": "Power of Central Government to amend Schedules.—(1) Subject to the provisions of this",
+    "page": 14
+  },
+  {
+    "idx": 985,
+    "number": "468",
+    "title": "Powers of Central Government to make rules relating to winding up.—(1) The Central",
+    "page": 14
+  },
+  {
+    "idx": 986,
+    "number": "469",
+    "title": "Power of Central Government to make rules.—(1) The Central Government may, by",
+    "page": 15
+  },
+  {
+    "idx": 987,
+    "number": "470",
+    "title": "Power to remove difficulties.—(1) If any difficulty arises in giving effect to the provisions of",
+    "page": 15
+  },
+  {
+    "idx": 988,
+    "number": "4",
+    "title": "Except as required by law, no person shall be recognised by the company as holding any share upon any trust",
+    "page": 246
+  },
+  {
+    "idx": 989,
+    "number": "7",
+    "title": "The rights conferred upon the holders of the shares of any class issued with preferred or other rights shall not",
+    "page": 94
+  },
+  {
+    "idx": 990,
+    "number": "8",
+    "title": "Subject to the provisions of section 55, any preference shares may, with the sanction of an ordinary resolution",
+    "page": 70
+  },
+  {
+    "idx": 991,
+    "number": "10",
+    "title": "The company may sell, in such manner as the Board thinks fit, any shares on which the company has a lien",
+    "page": 33
+  },
+  {
+    "idx": 992,
+    "number": "14",
+    "title": "A call shall be deemed to have been made at the time when the resolution of the Board authorising the call",
+    "page": 35
+  },
+  {
+    "idx": 993,
+    "number": "15",
+    "title": "The joint holders of a share shall be jointly and severally liable to pay all calls in respect thereof",
+    "page": 36
+  },
+  {
+    "idx": 994,
+    "number": "18",
+    "title": "The Board—",
+    "page": 37
+  },
+  {
+    "idx": 995,
+    "number": "20",
+    "title": "The Board may, subject to the right of appeal conferred by section 58 decline to register—",
+    "page": 37
+  },
+  {
+    "idx": 996,
+    "number": "21",
+    "title": "The Board may decline to recognise any instrument of transfer unless—",
+    "page": 38
+  },
+  {
+    "idx": 997,
+    "number": "22",
+    "title": "On giving not less than seven days’ previous notice in accordance with section 91and rules made thereunder",
+    "page": 38
+  },
+  {
+    "idx": 998,
+    "number": "26",
+    "title": "A person becoming entitled to a share by reason of the death or insolvency of the holder shall be entitled to",
+    "page": 39
+  },
+  {
+    "idx": 999,
+    "number": "27",
+    "title": "In case of a One Person Company—",
+    "page": 41
+  },
+  {
+    "idx": 1000,
+    "number": "28",
+    "title": "If a member fails to pay any call, or instalment of a call, on the day appointed for payment thereof, the Board",
+    "page": 41
+  },
+  {
+    "idx": 1001,
+    "number": "29",
+    "title": "The notice aforesaid shall—",
+    "page": 41
+  },
+  {
+    "idx": 1002,
+    "number": "30",
+    "title": "If the requirements of any such notice as aforesaid are not complied with, any share in respect of which the",
+    "page": 41
+  },
+  {
+    "idx": 1003,
+    "number": "34",
+    "title": "The provisions of these regulations as to forfeiture shall apply in the case of non-payment of any sum which",
+    "page": 42
+  },
+  {
+    "idx": 1004,
+    "number": "35",
+    "title": "The company may, from time to time, by ordinary resolution increase the share capital by such sum, to be",
+    "page": 42
+  },
+  {
+    "idx": 1005,
+    "number": "36",
+    "title": "Subject to the provisions of section 61, the company may, by ordinary resolution,—",
+    "page": 43
+  },
+  {
+    "idx": 1006,
+    "number": "37",
+    "title": "Where shares are converted into stock,—",
+    "page": 43
+  },
+  {
+    "idx": 1007,
+    "number": "38",
+    "title": "The company may, by special resolution, reduce in any manner and with, and subject to, any incident",
+    "page": 43
+  },
+  {
+    "idx": 1008,
+    "number": "41",
+    "title": "Notwithstanding anything contained in these articles but subject to the provisions of sections 68 to 70 and any",
+    "page": 45
+  },
+  {
+    "idx": 1009,
+    "number": "42",
+    "title": "All general meetings other than annual general meeting shall be called extraordinary general meeting",
+    "page": 2
+  },
+  {
+    "idx": 1010,
+    "number": "45",
+    "title": "The Chairperson, if any, of the Board shall preside as Chairperson at every general meeting of the company",
+    "page": 47
+  },
+  {
+    "idx": 1011,
+    "number": "46",
+    "title": "If there is no such Chairperson, or if he is not present within fifteen minutes after the time appointed for",
+    "page": 47
+  },
+  {
+    "idx": 1012,
+    "number": "47",
+    "title": "If at any meeting no director is willing to act as Chairperson or if no director is present within fifteen minutes",
+    "page": 47
+  },
+  {
+    "idx": 1013,
+    "number": "48",
+    "title": "In case of a One Person Company—",
+    "page": 48
+  },
+  {
+    "idx": 1014,
+    "number": "50",
+    "title": "Subject to any rights or restrictions for the time being attached to any class or classes of shares,—",
+    "page": 48
+  },
+  {
+    "idx": 1015,
+    "number": "51",
+    "title": "A member may exercise his vote at a meeting by electronic means in accordance with section 108 and shall",
+    "page": 48
+  },
+  {
+    "idx": 1016,
+    "number": "53",
+    "title": "A member of unsound mind, or in respect of whom an order has been made by any court having jurisdiction",
+    "page": 49
+  },
+  {
+    "idx": 1017,
+    "number": "54",
+    "title": "Any business other than that upon which a poll has been demanded may be proceeded with, pending the",
+    "page": 49
+  },
+  {
+    "idx": 1018,
+    "number": "55",
+    "title": "No member shall be entitled to vote at any general meeting unless all calls or other sums presently payable",
+    "page": 50
+  },
+  {
+    "idx": 1019,
+    "number": "57",
+    "title": "The instrument appointing a proxy and the power-of-attorney or other authority, if any, under which it is",
+    "page": 52
+  },
+  {
+    "idx": 1020,
+    "number": "58",
+    "title": "An instrument appointing a proxy shall be in the form as prescribed in the rules made under section 105",
+    "page": 52
+  },
+  {
+    "idx": 1021,
+    "number": "59",
+    "title": "A vote given in accordance with the terms of an instrument of proxy shall be valid, notwithstanding the",
+    "page": 52
+  },
+  {
+    "idx": 1022,
+    "number": "60",
+    "title": "The number of the directors and the names of the first directors shall be determined in writing by the",
+    "page": 53
+  },
+  {
+    "idx": 1023,
+    "number": "62",
+    "title": "The Board may pay all expenses incurred in getting up and registering the company",
+    "page": 53
+  },
+  {
+    "idx": 1024,
+    "number": "63",
+    "title": "The company may exercise the powers conferred on it by section 88 with regard to the keeping of a foreign",
+    "page": 55
+  },
+  {
+    "idx": 1025,
+    "number": "64",
+    "title": "All cheques, promissory notes, drafts, hundis, bills of exchange and other negotiable instruments, and all",
+    "page": 55
+  },
+  {
+    "idx": 1026,
+    "number": "65",
+    "title": "Every director present at any meeting of the Board or of a committee thereof shall sign his name in a book to",
+    "page": 55
+  },
+  {
+    "idx": 1027,
+    "number": "69",
+    "title": "The continuing directors may act notwithstanding any vacancy in the Board; but, if and so long as their number",
+    "page": 59
+  },
+  {
+    "idx": 1028,
+    "number": "74",
+    "title": "All acts done in any meeting of the Board or of a committee thereof or by any person acting as a director",
+    "page": 62
+  },
+  {
+    "idx": 1029,
+    "number": "75",
+    "title": "Save as otherwise expressly provided in the Act, a resolution in writing, signed by all the members of the",
+    "page": 62
+  },
+  {
+    "idx": 1030,
+    "number": "76",
+    "title": "In case of a One Person Company—",
+    "page": 63
+  },
+  {
+    "idx": 1031,
+    "number": "77",
+    "title": "Subject to the provisions of the Act,—",
+    "page": 63
+  },
+  {
+    "idx": 1032,
+    "number": "78",
+    "title": "A provision of the Act or these regulations requiring or authorising a thing to be done by or to a director and",
+    "page": 64
+  },
+  {
+    "idx": 1033,
+    "number": "80",
+    "title": "The company in general meeting may declare dividends, but no dividend shall exceed the amount",
+    "page": 64
+  },
+  {
+    "idx": 1034,
+    "number": "81",
+    "title": "Subject to the provisions of section 123, the Board may from time to time pay to the members such interim",
+    "page": 64
+  },
+  {
+    "idx": 1035,
+    "number": "84",
+    "title": "The Board may deduct from any dividend payable to any member all sums of money, if any, presently payable",
+    "page": 65
+  },
+  {
+    "idx": 1036,
+    "number": "86",
+    "title": "Any one of two or more joint holders of a share may give effective receipts for any dividends, bonuses or",
+    "page": 66
+  },
+  {
+    "idx": 1037,
+    "number": "87",
+    "title": "Notice of any dividend that may have been declared shall be given to the persons entitled to share therein in",
+    "page": 3
+  },
+  {
+    "idx": 1038,
+    "number": "88",
+    "title": "No dividend shall bear interest against the company",
+    "page": 66
+  },
+  {
+    "idx": 1039,
+    "number": "90",
+    "title": "Subject to the provisions of Chapter XX of the Act and rules made thereunder—",
+    "page": 3
+  },
+  {
+    "idx": 1040,
+    "number": "91",
+    "title": "Every officer of the company shall be indemnified out of the assets of the company against any liability",
+    "page": 69
+  },
+  {
+    "idx": 1041,
+    "number": "1",
+    "title": "The number of members with which the company proposes to be registered is hundred, but the Board of",
+    "page": 249
+  },
+  {
+    "idx": 1042,
+    "number": "2",
+    "title": "All the articles of Table F in Schedule I annexed to the Companies Act, 2013 shall be deemed to be incorporated",
+    "page": 244
+  },
+  {
+    "idx": 1043,
+    "number": "2",
+    "title": "The subscribers to the memorandum and such other persons as the Board shall admit to membership shall be",
+    "page": 271
+  },
+  {
+    "idx": 1044,
+    "number": "3",
+    "title": "All general meetings other than annual general meeting shall be called extraordinary general meeting",
+    "page": 246
+  },
+  {
+    "idx": 1045,
+    "number": "6",
+    "title": "The Chairperson, if any, of the Board shall preside as Chairperson at every general meeting of the company",
+    "page": 79
+  },
+  {
+    "idx": 1046,
+    "number": "7",
+    "title": "If there is no such Chairperson, or if he is not present within fifteen minutes after the time appointed for holding",
+    "page": 260
+  },
+  {
+    "idx": 1047,
+    "number": "8",
+    "title": "If at any meeting no director is willing to act as Chairperson or if no director is present within fifteen minutes",
+    "page": 260
+  },
+  {
+    "idx": 1048,
+    "number": "10",
+    "title": "Every member shall have one vote",
+    "page": 260
+  },
+  {
+    "idx": 1049,
+    "number": "11",
+    "title": "A member of unsound mind, or in respect of whom an order has been made by any Court having",
+    "page": 272
+  },
+  {
+    "idx": 1050,
+    "number": "12",
+    "title": "No member shall be entitled to vote at any general meeting unless all sums presently payable by him to the",
+    "page": 33
+  },
+  {
+    "idx": 1051,
+    "number": "14",
+    "title": "A vote given in accordance with the terms of an instrument of proxy shall be valid, notwithstanding the",
+    "page": 261
+  },
+  {
+    "idx": 1052,
+    "number": "15",
+    "title": "A member may exercise his vote at a meeting by electronic means in accordance with section 108 and shall",
+    "page": 261
+  },
+  {
+    "idx": 1053,
+    "number": "16",
+    "title": "Any business other than that upon which a poll has been demanded may be proceeded with, pending the",
+    "page": 36
+  },
+  {
+    "idx": 1054,
+    "number": "17",
+    "title": "The number of the directors and the names of the first directors shall be determined in writing by the",
+    "page": 36
+  },
+  {
+    "idx": 1055,
+    "number": "21",
+    "title": "The continuing directors may act notwithstanding any vacancy in the Board; but, if and so long as their number",
+    "page": 261
+  },
+  {
+    "idx": 1056,
+    "number": "26",
+    "title": "All acts done by any meeting of the Board or of a committee thereof or by any person acting as a director",
+    "page": 262
+  },
+  {
+    "idx": 1057,
+    "number": "27",
+    "title": "Save as otherwise expressly provided in the Act, a resolution in writing, signed by all the members of the",
+    "page": 262
+  },
+  {
+    "idx": 1058,
+    "number": "28",
+    "title": "Subject to the provisions of the Act,—",
+    "page": 263
+  },
+  {
+    "idx": 1059,
+    "number": "29",
+    "title": "A provision of the Act or these regulations requiring or authorising a thing to be done by or to a director and",
+    "page": 263
+  },
+  {
+    "idx": 1060,
+    "number": "1",
+    "title": "The number of members with which the company proposes to be registered is hundred, but the Board of",
+    "page": 271
+  },
+  {
+    "idx": 1061,
+    "number": "2",
+    "title": "All the articles of Table F in Schedule I annexed to the Companies Act, 2013 shall be deemed to be incorporated",
+    "page": 271
+  },
+  {
+    "idx": 1062,
+    "number": "1",
+    "title": "The number of members with which the company proposes to be registered is hundred, but the Board of",
+    "page": 275
+  },
+  {
+    "idx": 1063,
+    "number": "2",
+    "title": "The subscribers to the memorandum and such other persons as the Board shall admit to membership shall be",
+    "page": 275
+  },
+  {
+    "idx": 1064,
+    "number": "3",
+    "title": "All the articles of Table H in Schedule I annexed to the Companies Act, 2013 shall be deemed to be incorporated",
+    "page": 271
+  },
+  {
+    "idx": 1065,
+    "number": "1",
+    "title": "Depreciation is the systematic allocation of the depreciable amount of an asset over its useful life. The",
+    "page": 275
+  },
+  {
+    "idx": 1066,
+    "number": "2",
+    "title": "For the purpose of this Schedule, the term depreciation includes amortisation",
+    "page": 275
+  },
+  {
+    "idx": 1067,
+    "number": "3",
+    "title": "Without prejudice to the foregoing provisions of paragraph 1,—",
+    "page": 275
+  },
+  {
+    "idx": 1068,
+    "number": "4",
+    "title": "The useful life or residual value of any specific asset, as notified for accounting purposes by a Regulatory",
+    "page": 259
+  },
+  {
+    "idx": 1069,
+    "number": "5",
+    "title": "Subject to Parts A and B above, the following are the useful lives of various tangible assets",
+    "page": 239
+  },
+  {
+    "idx": 1070,
+    "number": "1",
+    "title": "Cinematograph films—Machinery used in the production and",
+    "page": 276
+  },
+  {
+    "idx": 1071,
+    "number": "2",
+    "title": "Projecting equipment for exhibition of films -do",
+    "page": 276
+  },
+  {
+    "idx": 1072,
+    "number": "1",
+    "title": "Plant and Machinery except direct fire glass melting furnaces 13 Years",
+    "page": 278
+  },
+  {
+    "idx": 1073,
+    "number": "2",
+    "title": "Plant and Machinery except direct fire glass melting furnaces 8 Years",
+    "page": 278
+  },
+  {
+    "idx": 1074,
+    "number": "3",
+    "title": "Float Glass Melting Furnaces [NESD] 10 Years",
+    "page": 276
+  },
+  {
+    "idx": 1075,
+    "number": "1",
+    "title": "Towers 18 Years",
+    "page": 278
+  },
+  {
+    "idx": 1076,
+    "number": "2",
+    "title": "Telecom transceivers, switching centres, transmission and other 13 Years",
+    "page": 278
+  },
+  {
+    "idx": 1077,
+    "number": "3",
+    "title": "Telecom—Ducts, Cables and optical fibre 18 Years",
+    "page": 278
+  },
+  {
+    "idx": 1078,
+    "number": "4",
+    "title": "Satellites -do",
+    "page": 277
+  },
+  {
+    "idx": 1079,
+    "number": "1",
+    "title": "Refineries 25 Years",
+    "page": 279
+  },
+  {
+    "idx": 1080,
+    "number": "2",
+    "title": "Oil and gas assets (including wells), processing plant and -do",
+    "page": 279
+  },
+  {
+    "idx": 1081,
+    "number": "3",
+    "title": "Petrochemical Plant -do",
+    "page": 279
+  },
+  {
+    "idx": 1082,
+    "number": "4",
+    "title": "Storage tanks and related equipment -do",
+    "page": 279
+  },
+  {
+    "idx": 1083,
+    "number": "5",
+    "title": "Pipelines 30 Years",
+    "page": 278
+  },
+  {
+    "idx": 1084,
+    "number": "6",
+    "title": "Drilling Rig -do",
+    "page": 272
+  },
+  {
+    "idx": 1085,
+    "number": "7",
+    "title": "Field operations (above ground) Portable boilers, drilling tools, 8 Years",
+    "page": 272
+  },
+  {
+    "idx": 1086,
+    "number": "8",
+    "title": "Loggers -do",
+    "page": 272
+  },
+  {
+    "idx": 1087,
+    "number": "1",
+    "title": "Thermal/ Gas/ Combined Cycle Power Generation Plant 40 Years",
+    "page": 279
+  },
+  {
+    "idx": 1088,
+    "number": "2",
+    "title": "Hydro Power Generation Plant -do",
+    "page": 279
+  },
+  {
+    "idx": 1089,
+    "number": "3",
+    "title": "Nuclear Power Generation Plant -do",
+    "page": 279
+  },
+  {
+    "idx": 1090,
+    "number": "4",
+    "title": "Transmission lines, cables and other network assets -do",
+    "page": 279
+  },
+  {
+    "idx": 1091,
+    "number": "5",
+    "title": "Wind Power Generation Plant 22 Years",
+    "page": 279
+  },
+  {
+    "idx": 1092,
+    "number": "6",
+    "title": "Electric Distribution Plant 35 Years",
+    "page": 279
+  },
+  {
+    "idx": 1093,
+    "number": "7",
+    "title": "Gas Storage and Distribution Plant 30 Years",
+    "page": 279
+  },
+  {
+    "idx": 1094,
+    "number": "8",
+    "title": "Water Distribution Plant including pipelines -do",
+    "page": 279
+  },
+  {
+    "idx": 1095,
+    "number": "1",
+    "title": "Sinter Plant 20 Years",
+    "page": 279
+  },
+  {
+    "idx": 1096,
+    "number": "2",
+    "title": "Blast Furnace -do",
+    "page": 279
+  },
+  {
+    "idx": 1097,
+    "number": "3",
+    "title": "Coke ovens -do",
+    "page": 279
+  },
+  {
+    "idx": 1098,
+    "number": "4",
+    "title": "Rolling mill in steel plant -do",
+    "page": 279
+  },
+  {
+    "idx": 1099,
+    "number": "5",
+    "title": "Basic oxygen Furnace Converter 25 Years",
+    "page": 279
+  },
+  {
+    "idx": 1100,
+    "number": "1",
+    "title": "Metal pot line [NESD] 40 Years",
+    "page": 279
+  },
+  {
+    "idx": 1101,
+    "number": "2",
+    "title": "Bauxite crushing and grinding section [NESD] -do",
+    "page": 279
+  },
+  {
+    "idx": 1102,
+    "number": "3",
+    "title": "Digester Section [NESD] -do",
+    "page": 279
+  },
+  {
+    "idx": 1103,
+    "number": "4",
+    "title": "Turbine [NESD] -do",
+    "page": 279
+  },
+  {
+    "idx": 1104,
+    "number": "5",
+    "title": "Equipments for Calcination [NESD] -do",
+    "page": 279
+  },
+  {
+    "idx": 1105,
+    "number": "6",
+    "title": "Copper Smelter [NESD] -do",
+    "page": 279
+  },
+  {
+    "idx": 1106,
+    "number": "7",
+    "title": "Roll Grinder 40 Years",
+    "page": 279
+  },
+  {
+    "idx": 1107,
+    "number": "8",
+    "title": "Soaking Pit 30 Years",
+    "page": 279
+  },
+  {
+    "idx": 1108,
+    "number": "9",
+    "title": "Annealing Furnace -do",
+    "page": 96
+  },
+  {
+    "idx": 1109,
+    "number": "10",
+    "title": "Rolling Mills -do",
+    "page": 272
+  },
+  {
+    "idx": 1110,
+    "number": "11",
+    "title": "Equipments for Scalping, Slitting , etc. [NESD] -do",
+    "page": 272
+  },
+  {
+    "idx": 1111,
+    "number": "12",
+    "title": "Surface Miner, Ripper Dozer, etc., used in mines 25 Years",
+    "page": 272
+  },
+  {
+    "idx": 1112,
+    "number": "13",
+    "title": "Copper refining plant [NESD] -do",
+    "page": 34
+  },
+  {
+    "idx": 1113,
+    "number": "1",
+    "title": "Electrical Machinery, X-ray and electrotherapeutic apparatus 13 Years",
+    "page": 279
+  },
+  {
+    "idx": 1114,
+    "number": "2",
+    "title": "Other Equipments. 15 Years",
+    "page": 279
+  },
+  {
+    "idx": 1115,
+    "number": "1",
+    "title": "Reactors 20 Years",
+    "page": 280
+  },
+  {
+    "idx": 1116,
+    "number": "2",
+    "title": "Distillation Columns -do",
+    "page": 280
+  },
+  {
+    "idx": 1117,
+    "number": "3",
+    "title": "Drying equipments/Centrifuges and Decanters -do",
+    "page": 279
+  },
+  {
+    "idx": 1118,
+    "number": "4",
+    "title": "Vessel/storage tanks -do",
+    "page": 279
+  },
+  {
+    "idx": 1119,
+    "number": "1",
+    "title": "Concreting, Crushing, Piling Equipments and Road Making 12 Years",
+    "page": 280
+  },
+  {
+    "idx": 1120,
+    "number": "2",
+    "title": "Heavy Lift Equipments—",
+    "page": 280
+  },
+  {
+    "idx": 1121,
+    "number": "3",
+    "title": "Transmission line, Tunneling Equipments [NESD] 10 Years",
+    "page": 280
+  },
+  {
+    "idx": 1122,
+    "number": "4",
+    "title": "Earth-moving equipments 9 Years",
+    "page": 280
+  },
+  {
+    "idx": 1123,
+    "number": "5",
+    "title": "Others including Material Handling/Pipeline/Welding 12 Years",
+    "page": 280
+  },
+  {
+    "idx": 1124,
+    "number": "1",
+    "title": "Motor cycles, scooters and other mopeds 10 Years",
+    "page": 280
+  },
+  {
+    "idx": 1125,
+    "number": "2",
+    "title": "Motor buses, motor lorries, motor cars and motor taxies used in 6 Years",
+    "page": 280
+  },
+  {
+    "idx": 1126,
+    "number": "3",
+    "title": "Motor buses, motor lorries and motor cars other than those used 8 Years",
+    "page": 280
+  },
+  {
+    "idx": 1127,
+    "number": "4",
+    "title": "Motor tractors, harvesting combines and heavy vehicles -do",
+    "page": 280
+  },
+  {
+    "idx": 1128,
+    "number": "5",
+    "title": "Electrically operated vehicles including battery powered or fuel 8 Years",
+    "page": 280
+  },
+  {
+    "idx": 1129,
+    "number": "1",
+    "title": "Ocean-going ships",
+    "page": 280
+  },
+  {
+    "idx": 1130,
+    "number": "2",
+    "title": "Vessels ordinarily operating on inland waters—",
+    "page": 281
+  },
+  {
+    "idx": 1131,
+    "number": "2",
+    "title": "Where, during any financial year, any addition has been made to any asset, or where any asset has been sold",
+    "page": 281
+  },
+  {
+    "idx": 1132,
+    "number": "3",
+    "title": "The following information shall also be disclosed in the accounts, namely:—",
+    "page": 281
+  },
+  {
+    "idx": 1133,
+    "number": "6",
+    "title": "The useful lives of assets working on shift basis have been specified in the Schedule based on their single shift",
+    "page": 280
+  },
+  {
+    "idx": 1134,
+    "number": "7",
+    "title": "From the date this Schedule comes into effect, the carrying amount of the asset as on that date—",
+    "page": 280
+  },
+  {
+    "idx": 1135,
+    "number": "1",
+    "title": "Where compliance with the requirements of the Act including Accounting Standards as applicable to the",
+    "page": 281
+  },
+  {
+    "idx": 1136,
+    "number": "2",
+    "title": "The disclosure requirements specified in this Schedule are in addition to and not in substitution of the disclosure",
+    "page": 282
+  },
+  {
+    "idx": 1137,
+    "number": "5",
+    "title": "Except in the case of the first Financial Statements laid before the Company (after its incorporation) the",
+    "page": 281
+  },
+  {
+    "idx": 1138,
+    "number": "6",
+    "title": "For the purpose of this Schedule, the terms used herein shall be as per the applicable Accounting Standards",
+    "page": 282
+  },
+  {
+    "idx": 1139,
+    "number": "1",
+    "title": "An asset shall be classified as current when it satisfies any of the following criteria:—",
+    "page": 283
+  },
+  {
+    "idx": 1140,
+    "number": "2",
+    "title": "An operating cycle is the time between the acquisition of assets for processing and their realisation in cash or",
+    "page": 283
+  },
+  {
+    "idx": 1141,
+    "number": "3",
+    "title": "A liability shall be classified as current when it satisfies any of the following criteria:—",
+    "page": 282
+  },
+  {
+    "idx": 1142,
+    "number": "4",
+    "title": "A receivable shall be classified as a “trade receivable” if it is in respect of the amount due on account of goods",
+    "page": 281
+  },
+  {
+    "idx": 1143,
+    "number": "5",
+    "title": "A payable shall be classified as a “trade payable” if it is in respect of the amount due on account of goods",
+    "page": 283
+  },
+  {
+    "idx": 1144,
+    "number": "6",
+    "title": "A company shall disclose the following in the notes to accounts",
+    "page": 283
+  },
+  {
+    "idx": 1145,
+    "number": "1",
+    "title": "The provisions of this Part shall apply to the income and expenditure account referred to in sub-clause",
+    "page": 285
+  },
+  {
+    "idx": 1146,
+    "number": "3",
+    "title": "Finance Costs",
+    "page": 285
+  },
+  {
+    "idx": 1147,
+    "number": "4",
+    "title": "Other income",
+    "page": 286
+  },
+  {
+    "idx": 1148,
+    "number": "5",
+    "title": "Additional Information",
+    "page": 286
+  },
+  {
+    "idx": 1149,
+    "number": "1",
+    "title": "Where a company is required to prepare Consolidated Financial Statements, i.e., consolidated balance sheet",
+    "page": 301
+  },
+  {
+    "idx": 1150,
+    "number": "2",
+    "title": "In Consolidated Financial Statements, the following shall be disclosed by way of additional information",
+    "page": 285
+  },
+  {
+    "idx": 1151,
+    "number": "3",
+    "title": "All subsidiaries, associates and joint ventures (whether Indian or foreign) will be covered under consolidated",
+    "page": 301
+  },
+  {
+    "idx": 1152,
+    "number": "4",
+    "title": "An entity shall disclose the list of subsidiaries or associates or joint ventures which have not been consolidated",
+    "page": 301
+  },
+  {
+    "idx": 1153,
+    "number": "1",
+    "title": "Every company to which Indian Accounting Standards apply, shall prepare its financial statements in accordance",
+    "page": 304
+  },
+  {
+    "idx": 1154,
+    "number": "2",
+    "title": "Where compliance with the requirements of the Act including Indian Accounting Standards (except the option",
+    "page": 304
+  },
+  {
+    "idx": 1155,
+    "number": "3",
+    "title": "The disclosure requirements specified in the Schedule are in addition to and not in substitution of the disclosure",
+    "page": 306
+  },
+  {
+    "idx": 1156,
+    "number": "5",
+    "title": "Depending upon the 2[Total Income] of the company, the figures appearing in the Financial Statements shall",
+    "page": 301
+  },
+  {
+    "idx": 1157,
+    "number": "6",
+    "title": "Financial Statements shall contain the corresponding amounts (comparatives) for the immediately preceding",
+    "page": 286
+  },
+  {
+    "idx": 1158,
+    "number": "7",
+    "title": "Financial Statements shall disclose all ‘material’ items, i.e., the items if they could, individually or collectively",
+    "page": 282
+  },
+  {
+    "idx": 1159,
+    "number": "8",
+    "title": "For the purpose of this Schedule, the terms used herein shall have the same meanings assigned to them in Indian",
+    "page": 280
+  },
+  {
+    "idx": 1160,
+    "number": "9",
+    "title": "Where any Act or Regulation requires specific disclosures to be made in the standalone financial statements of",
+    "page": 280
+  },
+  {
+    "idx": 1161,
+    "number": "1",
+    "title": "An entity shall classify an asset as current when",
+    "page": 306
+  },
+  {
+    "idx": 1162,
+    "number": "2",
+    "title": "The operating cycle of an entity is the time between the acquisition of assets for processing and their realisation in cash or cash",
+    "page": 306
+  },
+  {
+    "idx": 1163,
+    "number": "3",
+    "title": "An entity shall classify a liability as current when",
+    "page": 306
+  },
+  {
+    "idx": 1164,
+    "number": "4",
+    "title": "A receivable shall be classified as a ‘trade receivable’ if it is in respect of the amount due on account of goods sold or services",
+    "page": 306
+  },
+  {
+    "idx": 1165,
+    "number": "5",
+    "title": "A payable shall be classified as a ‘trade payable’ if it is in respect of the amount due on account of goods purchased or services",
+    "page": 306
+  },
+  {
+    "idx": 1166,
+    "number": "6",
+    "title": "A company shall disclose the following in the Notes",
+    "page": 306
+  },
+  {
+    "idx": 1167,
+    "number": "7",
+    "title": "When a company applies an accounting policy retrospectively or makes a restatement of items in the financial statements or",
+    "page": 307
+  },
+  {
+    "idx": 1168,
+    "number": "8",
+    "title": "Share application money pending allotment shall be classified into equity or liability in accordance with relevant Indian Accounting",
+    "page": 307
+  },
+  {
+    "idx": 1169,
+    "number": "9",
+    "title": "Preference shares including premium received on issue, shall be classified and presented as ‘Equity’ or ‘Liability’ in accordance",
+    "page": 307
+  },
+  {
+    "idx": 1170,
+    "number": "10",
+    "title": "Compound financial instruments such as convertible debentures, where split into equity and liability components, as per the",
+    "page": 280
+  },
+  {
+    "idx": 1171,
+    "number": "11",
+    "title": "Regulatory Deferral Account Balances shall be presented in the Balance Sheet in accordance with the relevant Indian",
+    "page": 280
+  },
+  {
+    "idx": 1172,
+    "number": "1",
+    "title": "The provisions of this Part shall apply to the income and expenditure account, in like manner as they apply to a",
+    "page": 310
+  },
+  {
+    "idx": 1173,
+    "number": "2",
+    "title": "The Statement of Profit and Loss shall include",
+    "page": 310
+  },
+  {
+    "idx": 1174,
+    "number": "3",
+    "title": "Revenue from operations shall disclose separately in the notes",
+    "page": 310
+  },
+  {
+    "idx": 1175,
+    "number": "4",
+    "title": "Finance Costs: Finance costs shall be classified as",
+    "page": 310
+  },
+  {
+    "idx": 1176,
+    "number": "6",
+    "title": "Other Comprehensive Income shall be classified into",
+    "page": 310
+  },
+  {
+    "idx": 1177,
+    "number": "7",
+    "title": "Additional Information: A Company shall disclose by way of notes, additional information regarding aggregate expenditure",
+    "page": 324
+  },
+  {
+    "idx": 1178,
+    "number": "8",
+    "title": "Changes in Regulatory Deferral Account Balances shall be presented in the Statement of Profit and Loss in",
+    "page": 324
+  },
+  {
+    "idx": 1179,
+    "number": "1",
+    "title": "Where a company is required to prepare Consolidated Financial Statements, i.e., consolidated balance sheet",
+    "page": 326
+  },
+  {
+    "idx": 1180,
+    "number": "2",
+    "title": "In Consolidated Financial Statements, the following shall be disclosed by way of additional information",
+    "page": 326
+  },
+  {
+    "idx": 1181,
+    "number": "3",
+    "title": "All subsidiaries, associates and joint ventures (whether Indian or foreign) will be covered under consolidated",
+    "page": 326
+  },
+  {
+    "idx": 1182,
+    "number": "4",
+    "title": "An entity shall disclose the list of subsidiaries or associates or joint ventures which have not been consolidated",
+    "page": 326
+  },
+  {
+    "idx": 1183,
+    "number": "1",
+    "title": "Every Non-Banking Financial company as defined in the Companies (Indian Accounting Standards) (Amend",
+    "page": 328
+  },
+  {
+    "idx": 1184,
+    "number": "2",
+    "title": "Where compliance with the requirements of relevant Act, Regulations, Guidelines or Circulars issued by the",
+    "page": 329
+  },
+  {
+    "idx": 1185,
+    "number": "3",
+    "title": "The disclosure requirements specified in this Schedule are in addition to and not in substitution of the disclosure",
+    "page": 330
+  },
+  {
+    "idx": 1186,
+    "number": "5",
+    "title": "Depending upon the total income of the NBFC, the figures appearing in the Financial Statements shall be rounded",
+    "page": 310
+  },
+  {
+    "idx": 1187,
+    "number": "6",
+    "title": "Financial Statements shall contain the corresponding amounts (comparatives) for the immediately preceding",
+    "page": 327
+  },
+  {
+    "idx": 1188,
+    "number": "7",
+    "title": "Financial Statements shall disclose all ‘material’ items, i.e., the items if they could, individually or collectively",
+    "page": 327
+  },
+  {
+    "idx": 1189,
+    "number": "8",
+    "title": "For the purpose of this Schedule, the terms used herein shall have the same meanings assigned to them in Indian",
+    "page": 328
+  },
+  {
+    "idx": 1190,
+    "number": "9",
+    "title": "Where any Act, Regulation, Guidelines or Circulars issued by the relevant regulators from time to time requires",
+    "page": 324
+  },
+  {
+    "idx": 1191,
+    "number": "10",
+    "title": "The NBFCs preparing financial statements as per this Schedule may change the order of presentation of line items",
+    "page": 325
+  },
+  {
+    "idx": 1192,
+    "number": "1",
+    "title": "When an NBFC applies an accounting policy retrospectively or makes a restatement of items in the",
+    "page": 330
+  },
+  {
+    "idx": 1193,
+    "number": "2",
+    "title": "Share application money pending allotment shall be classified into equity or liability in accordance with",
+    "page": 330
+  },
+  {
+    "idx": 1194,
+    "number": "3",
+    "title": "Preference shares including premium received on issue, shall be classified and presented as ‘Equity’ or",
+    "page": 330
+  },
+  {
+    "idx": 1195,
+    "number": "4",
+    "title": "Compound financial instruments such as convertible debentures, where split into equity and liability",
+    "page": 330
+  },
+  {
+    "idx": 1196,
+    "number": "5",
+    "title": "Regulatory Deferral Account Balances shall be presented in the Balance Sheet in accordance with the",
+    "page": 331
+  },
+  {
+    "idx": 1197,
+    "number": "1",
+    "title": "The provisions of this Part shall apply to the income and expenditure account, in like manner as they apply to a",
+    "page": 349
+  },
+  {
+    "idx": 1198,
+    "number": "2",
+    "title": "The Statement of Profit and Loss shall include",
+    "page": 349
+  },
+  {
+    "idx": 1199,
+    "number": "3",
+    "title": "Interest Income",
+    "page": 349
+  },
+  {
+    "idx": 1200,
+    "number": "4",
+    "title": "Net gain/ (loss) on fair value changes*",
+    "page": 349
+  },
+  {
+    "idx": 1201,
+    "number": "5",
+    "title": "Other Income (to be specified)",
+    "page": 349
+  },
+  {
+    "idx": 1202,
+    "number": "6",
+    "title": "Finance Costs",
+    "page": 331
+  },
+  {
+    "idx": 1203,
+    "number": "7",
+    "title": "Employee Benefits Expenses",
+    "page": 331
+  },
+  {
+    "idx": 1204,
+    "number": "8",
+    "title": "Impairment on financial instruments",
+    "page": 331
+  },
+  {
+    "idx": 1205,
+    "number": "9",
+    "title": "Other expenses (to be specified)",
+    "page": 331
+  },
+  {
+    "idx": 1206,
+    "number": "10",
+    "title": "Other Comprehensive Income shall be classified into",
+    "page": 331
+  },
+  {
+    "idx": 1207,
+    "number": "11",
+    "title": "Additional Information: An NBFC shall disclose by way of notes, additional information regarding aggregate",
+    "page": 325
+  },
+  {
+    "idx": 1208,
+    "number": "3",
+    "title": "The words “without Central Government approval” omitted by Notification No. S.O. 4822(E), dated 12th September, 2018",
+    "page": 352
+  },
+  {
+    "idx": 1209,
+    "number": "3",
+    "title": "The words “the limits laid down in” omitted by ibid., (w.e..f 12-9-2018)",
+    "page": 362
+  },
+  {
+    "idx": 1210,
+    "number": "1",
+    "title": "The words “without Central Government approval” omitted by Notification No. S.O. 4822(E), dated 12th September, 2018",
+    "page": 352
+  },
+  {
+    "idx": 1211,
+    "number": "1",
+    "title": "A managerial person shall be eligible for the following perquisites which shall not be included in the",
+    "page": 364
+  },
+  {
+    "idx": 1212,
+    "number": "2",
+    "title": "In addition to the perquisites specified in paragraph 1 of this section, an expatriate managerial person",
+    "page": 352
+  },
+  {
+    "idx": 1213,
+    "number": "2",
+    "title": "Clause (d) omitted by Notification No. S.O. 4822(E), dated 12th September, 2018 (w.e.f. 12-9-2018)",
+    "page": 365
+  },
+  {
+    "idx": 1214,
+    "number": "1",
+    "title": "The appointment and remuneration referred to in Part I and Part II of this Schedule shall be subject",
+    "page": 365
+  },
+  {
+    "idx": 1215,
+    "number": "2",
+    "title": "The auditor or the Secretary of the company or where the company is not required to appointed a",
+    "page": 365
+  },
+  {
+    "idx": 1216,
+    "number": "1",
+    "title": "Clause (A) omitted by Notification No S.O. 4822(E), dated 12th September, 2018 (w.e.f. 12-9-2018)",
+    "page": 366
+  }
+]

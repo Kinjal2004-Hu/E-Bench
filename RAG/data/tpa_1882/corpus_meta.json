@@ -1,0 +1,1676 @@
+[
+  {
+    "idx": 0,
+    "number": "1",
+    "title": "Short title",
+    "page": 1
+  },
+  {
+    "idx": 1,
+    "number": "2",
+    "title": "Repeal of Acts",
+    "page": 1
+  },
+  {
+    "idx": 2,
+    "number": "4",
+    "title": "Enactments relating to contracts to be taken as part of Contract Act and",
+    "page": 1
+  },
+  {
+    "idx": 3,
+    "number": "6",
+    "title": "What may be transferred",
+    "page": 1
+  },
+  {
+    "idx": 4,
+    "number": "7",
+    "title": "Persons competent to transfer",
+    "page": 1
+  },
+  {
+    "idx": 5,
+    "number": "8",
+    "title": "Operation of transfer",
+    "page": 1
+  },
+  {
+    "idx": 6,
+    "number": "9",
+    "title": "Oral transfer",
+    "page": 1
+  },
+  {
+    "idx": 7,
+    "number": "10",
+    "title": "Condition restraining alienation",
+    "page": 1
+  },
+  {
+    "idx": 8,
+    "number": "11",
+    "title": "Restriction repugnant to interest cleated",
+    "page": 1
+  },
+  {
+    "idx": 9,
+    "number": "12",
+    "title": "Condition making interest determinable on insolvency or attempted alienation",
+    "page": 1
+  },
+  {
+    "idx": 10,
+    "number": "13",
+    "title": "Transfer for benefit of unborn person",
+    "page": 1
+  },
+  {
+    "idx": 11,
+    "number": "14",
+    "title": "Rule against perpetuity",
+    "page": 1
+  },
+  {
+    "idx": 12,
+    "number": "15",
+    "title": "Transfer to class some of whom come under sections 13 and 14",
+    "page": 1
+  },
+  {
+    "idx": 13,
+    "number": "16",
+    "title": "Transfer to take effect on failure of prior interest",
+    "page": 1
+  },
+  {
+    "idx": 14,
+    "number": "17",
+    "title": "Direction for accumulation",
+    "page": 1
+  },
+  {
+    "idx": 15,
+    "number": "18",
+    "title": "Transfer in perpetuity for benefit of public",
+    "page": 1
+  },
+  {
+    "idx": 16,
+    "number": "19",
+    "title": "Vested interest",
+    "page": 1
+  },
+  {
+    "idx": 17,
+    "number": "20",
+    "title": "When unborn person acquires vested interest on transfer for his benefit",
+    "page": 1
+  },
+  {
+    "idx": 18,
+    "number": "21",
+    "title": "Contingent interest",
+    "page": 1
+  },
+  {
+    "idx": 19,
+    "number": "22",
+    "title": "Transfer to members of a class who attain a particular age",
+    "page": 2
+  },
+  {
+    "idx": 20,
+    "number": "23",
+    "title": "Transfer contingent on happening of specified uncertain event",
+    "page": 2
+  },
+  {
+    "idx": 21,
+    "number": "24",
+    "title": "Transfer to such of certain persons as survive at some period not specified",
+    "page": 2
+  },
+  {
+    "idx": 22,
+    "number": "25",
+    "title": "Conditional transfer",
+    "page": 2
+  },
+  {
+    "idx": 23,
+    "number": "26",
+    "title": "Fulfilment of condition precedent",
+    "page": 2
+  },
+  {
+    "idx": 24,
+    "number": "27",
+    "title": "Conditional transfer to one person coupled with transfer to another on failure of prior",
+    "page": 2
+  },
+  {
+    "idx": 25,
+    "number": "28",
+    "title": "Ulterior transfer conditional on happening or not happening of specified event",
+    "page": 2
+  },
+  {
+    "idx": 26,
+    "number": "29",
+    "title": "Fulfilment of condition subsequent",
+    "page": 2
+  },
+  {
+    "idx": 27,
+    "number": "30",
+    "title": "Prior disposition not affected by invalidity of ulterior disposition",
+    "page": 2
+  },
+  {
+    "idx": 28,
+    "number": "31",
+    "title": "Condition that transfer shall cease to have effect in case specified uncertain event",
+    "page": 2
+  },
+  {
+    "idx": 29,
+    "number": "32",
+    "title": "Such condition must not be invalid",
+    "page": 2
+  },
+  {
+    "idx": 30,
+    "number": "33",
+    "title": "Transfer conditional on performance of act, no time being specified for performance",
+    "page": 2
+  },
+  {
+    "idx": 31,
+    "number": "34",
+    "title": "Transfer conditional on performance of act, time being specified",
+    "page": 2
+  },
+  {
+    "idx": 32,
+    "number": "35",
+    "title": "Election when necessary",
+    "page": 2
+  },
+  {
+    "idx": 33,
+    "number": "36",
+    "title": "Apportionment of periodical payments on determination of interest of person entitled",
+    "page": 2
+  },
+  {
+    "idx": 34,
+    "number": "37",
+    "title": "Apportionment of benefit of obligation on severance",
+    "page": 2
+  },
+  {
+    "idx": 35,
+    "number": "38",
+    "title": "Transfer by person authorised only under certain circumstances to transfer",
+    "page": 2
+  },
+  {
+    "idx": 36,
+    "number": "39",
+    "title": "Transfer where third person is entitled to maintenance",
+    "page": 2
+  },
+  {
+    "idx": 37,
+    "number": "40",
+    "title": "Burden of obligation imposing restriction on use of land or of obligation annexed to",
+    "page": 2
+  },
+  {
+    "idx": 38,
+    "number": "41",
+    "title": "Transfer by ostensible owner",
+    "page": 2
+  },
+  {
+    "idx": 39,
+    "number": "42",
+    "title": "Transfer by person having authority to revoke former transfer",
+    "page": 2
+  },
+  {
+    "idx": 40,
+    "number": "43",
+    "title": "Transfer by unauthorised person who subsequently acquires interest in property",
+    "page": 2
+  },
+  {
+    "idx": 41,
+    "number": "44",
+    "title": "Transfer by one co-owner",
+    "page": 2
+  },
+  {
+    "idx": 42,
+    "number": "45",
+    "title": "Joint transfer for consideration",
+    "page": 2
+  },
+  {
+    "idx": 43,
+    "number": "46",
+    "title": "Transfer for consideration by persons having distinct interests",
+    "page": 2
+  },
+  {
+    "idx": 44,
+    "number": "47",
+    "title": "Transfer by co-owners of share in common property",
+    "page": 2
+  },
+  {
+    "idx": 45,
+    "number": "48",
+    "title": "Priority of rights created by transfer",
+    "page": 2
+  },
+  {
+    "idx": 46,
+    "number": "49",
+    "title": "Transferee's right under policy",
+    "page": 2
+  },
+  {
+    "idx": 47,
+    "number": "50",
+    "title": "Rent bona fide paid to holder under defective title",
+    "page": 2
+  },
+  {
+    "idx": 48,
+    "number": "51",
+    "title": "Improvements made by bona fide holders under defective titles",
+    "page": 3
+  },
+  {
+    "idx": 49,
+    "number": "52",
+    "title": "Transfer of property pending suit relating thereto",
+    "page": 3
+  },
+  {
+    "idx": 50,
+    "number": "53",
+    "title": "Fraudulent transfer",
+    "page": 3
+  },
+  {
+    "idx": 51,
+    "number": "53A",
+    "title": "Part performance",
+    "page": 3
+  },
+  {
+    "idx": 52,
+    "number": "55",
+    "title": "Rights and liabilities of buyer and seller",
+    "page": 3
+  },
+  {
+    "idx": 53,
+    "number": "56",
+    "title": "Marshalling by subsequent purchaser",
+    "page": 3
+  },
+  {
+    "idx": 54,
+    "number": "57",
+    "title": "Provision by Court for incumbrances and sale freed therefrom",
+    "page": 3
+  },
+  {
+    "idx": 55,
+    "number": "59",
+    "title": "Mortgage when to be by assurance",
+    "page": 3
+  },
+  {
+    "idx": 56,
+    "number": "59A",
+    "title": "References to mortgagors and mortgagees to include persons deriving title from",
+    "page": 3
+  },
+  {
+    "idx": 57,
+    "number": "60",
+    "title": "Right of mortgagor to redeem",
+    "page": 3
+  },
+  {
+    "idx": 58,
+    "number": "60B",
+    "title": "Right to inspection and production of documents",
+    "page": 3
+  },
+  {
+    "idx": 59,
+    "number": "61",
+    "title": "Right to redeem separately or simultaneously",
+    "page": 3
+  },
+  {
+    "idx": 60,
+    "number": "62",
+    "title": "Right of usufructuary mortgagor to recover possession",
+    "page": 3
+  },
+  {
+    "idx": 61,
+    "number": "63",
+    "title": "Accession to mortgaged property",
+    "page": 3
+  },
+  {
+    "idx": 62,
+    "number": "63A",
+    "title": "Improvements to mortgaged property",
+    "page": 4
+  },
+  {
+    "idx": 63,
+    "number": "64",
+    "title": "Renewal of mortgaged lease",
+    "page": 4
+  },
+  {
+    "idx": 64,
+    "number": "65",
+    "title": "Implied contracts by mortgagor",
+    "page": 4
+  },
+  {
+    "idx": 65,
+    "number": "65A",
+    "title": "Mortgagor’s power to lease",
+    "page": 4
+  },
+  {
+    "idx": 66,
+    "number": "66",
+    "title": "Waste by mortgagor in possession",
+    "page": 4
+  },
+  {
+    "idx": 67,
+    "number": "67",
+    "title": "Right to foreclosure or sale",
+    "page": 4
+  },
+  {
+    "idx": 68,
+    "number": "67A",
+    "title": "Mortgagee when bound to bring one suit on several mortgages",
+    "page": 4
+  },
+  {
+    "idx": 69,
+    "number": "68",
+    "title": "Right to sue for mortgage-money",
+    "page": 4
+  },
+  {
+    "idx": 70,
+    "number": "69",
+    "title": "Power of sale when valid",
+    "page": 4
+  },
+  {
+    "idx": 71,
+    "number": "69A",
+    "title": "Appointment of receiver",
+    "page": 4
+  },
+  {
+    "idx": 72,
+    "number": "70",
+    "title": "Accession to mortgaged property",
+    "page": 4
+  },
+  {
+    "idx": 73,
+    "number": "71",
+    "title": "Renewal of mortgaged lease",
+    "page": 4
+  },
+  {
+    "idx": 74,
+    "number": "72",
+    "title": "Rights of mortgagee in possession",
+    "page": 4
+  },
+  {
+    "idx": 75,
+    "number": "73",
+    "title": "Right to proceeds of revenue sale or compensation on acquisition",
+    "page": 4
+  },
+  {
+    "idx": 76,
+    "number": "76",
+    "title": "Liabilities of mortgagee in possession",
+    "page": 4
+  },
+  {
+    "idx": 77,
+    "number": "77",
+    "title": "Receipts in lieu of interests",
+    "page": 4
+  },
+  {
+    "idx": 78,
+    "number": "78",
+    "title": "Postponement of prior mortgagee",
+    "page": 4
+  },
+  {
+    "idx": 79,
+    "number": "79",
+    "title": "Mortgage to secure uncertain amount when maximum is expressed",
+    "page": 4
+  },
+  {
+    "idx": 80,
+    "number": "81",
+    "title": "Marshalling securities",
+    "page": 4
+  },
+  {
+    "idx": 81,
+    "number": "82",
+    "title": "Contribution to mortgage-debt",
+    "page": 4
+  },
+  {
+    "idx": 82,
+    "number": "83",
+    "title": "Power to deposit in Court money due on mortgage",
+    "page": 4
+  },
+  {
+    "idx": 83,
+    "number": "84",
+    "title": "Cessation of interest",
+    "page": 4
+  },
+  {
+    "idx": 84,
+    "number": "91",
+    "title": "Persons who may sue for redemption",
+    "page": 5
+  },
+  {
+    "idx": 85,
+    "number": "93",
+    "title": "Prohibition of tacking",
+    "page": 5
+  },
+  {
+    "idx": 86,
+    "number": "94",
+    "title": "Rights of mesne mortgagee",
+    "page": 5
+  },
+  {
+    "idx": 87,
+    "number": "95",
+    "title": "Right of redeeming co-mortgagor to expenses",
+    "page": 5
+  },
+  {
+    "idx": 88,
+    "number": "96",
+    "title": "Mortgage by deposit of title-deeds",
+    "page": 5
+  },
+  {
+    "idx": 89,
+    "number": "98",
+    "title": "Rights and liabilities of parties to anomalous mortgages",
+    "page": 5
+  },
+  {
+    "idx": 90,
+    "number": "101",
+    "title": "No merger in case of subsequent encumbrance",
+    "page": 5
+  },
+  {
+    "idx": 91,
+    "number": "102",
+    "title": "Service or tender on or to agent",
+    "page": 5
+  },
+  {
+    "idx": 92,
+    "number": "103",
+    "title": "Notice, etc., to or by person incompetent to contract",
+    "page": 5
+  },
+  {
+    "idx": 93,
+    "number": "104",
+    "title": "Power to make rules",
+    "page": 5
+  },
+  {
+    "idx": 94,
+    "number": "105",
+    "title": "Lease defined",
+    "page": 5
+  },
+  {
+    "idx": 95,
+    "number": "106",
+    "title": "Duration of certain leases in absence of written contract or local usage",
+    "page": 5
+  },
+  {
+    "idx": 96,
+    "number": "107",
+    "title": "Leases how made",
+    "page": 5
+  },
+  {
+    "idx": 97,
+    "number": "108",
+    "title": "Rights and liabilities of lessor and lessee",
+    "page": 5
+  },
+  {
+    "idx": 98,
+    "number": "109",
+    "title": "Rights of lessor’s transferee",
+    "page": 5
+  },
+  {
+    "idx": 99,
+    "number": "110",
+    "title": "Exclusion of day on which term commences",
+    "page": 5
+  },
+  {
+    "idx": 100,
+    "number": "111",
+    "title": "Determination of lease",
+    "page": 5
+  },
+  {
+    "idx": 101,
+    "number": "112",
+    "title": "Waiver of forfeiture",
+    "page": 5
+  },
+  {
+    "idx": 102,
+    "number": "113",
+    "title": "Waiver of notice to quit",
+    "page": 5
+  },
+  {
+    "idx": 103,
+    "number": "114",
+    "title": "Relief against forfeiture for non-payment of rent",
+    "page": 5
+  },
+  {
+    "idx": 104,
+    "number": "114A",
+    "title": "Relief against forfeiture in certain other cases",
+    "page": 6
+  },
+  {
+    "idx": 105,
+    "number": "115",
+    "title": "Effect of surrender and forfeiture on under-leases",
+    "page": 6
+  },
+  {
+    "idx": 106,
+    "number": "116",
+    "title": "Effect of holding over",
+    "page": 6
+  },
+  {
+    "idx": 107,
+    "number": "117",
+    "title": "Exemption of leases for agricultural purposes",
+    "page": 6
+  },
+  {
+    "idx": 108,
+    "number": "119",
+    "title": "Right of party deprived of thing received in exchange",
+    "page": 6
+  },
+  {
+    "idx": 109,
+    "number": "120",
+    "title": "Rights and liabilities of parties",
+    "page": 6
+  },
+  {
+    "idx": 110,
+    "number": "121",
+    "title": "Exchange of money",
+    "page": 6
+  },
+  {
+    "idx": 111,
+    "number": "123",
+    "title": "Transfer how effected",
+    "page": 6
+  },
+  {
+    "idx": 112,
+    "number": "124",
+    "title": "Gift of existing and future property",
+    "page": 6
+  },
+  {
+    "idx": 113,
+    "number": "125",
+    "title": "Gift to several, of whom one does not accept",
+    "page": 6
+  },
+  {
+    "idx": 114,
+    "number": "126",
+    "title": "When gift may be suspended or revoked",
+    "page": 6
+  },
+  {
+    "idx": 115,
+    "number": "127",
+    "title": "Onerous gifts",
+    "page": 6
+  },
+  {
+    "idx": 116,
+    "number": "128",
+    "title": "Universal donee",
+    "page": 6
+  },
+  {
+    "idx": 117,
+    "number": "129",
+    "title": "Saving of donations mortis causa and Muhammadan law",
+    "page": 6
+  },
+  {
+    "idx": 118,
+    "number": "130",
+    "title": "Transfer of actionable claim",
+    "page": 6
+  },
+  {
+    "idx": 119,
+    "number": "131",
+    "title": "Notice to be in writing, signed",
+    "page": 6
+  },
+  {
+    "idx": 120,
+    "number": "132",
+    "title": "Liability of transferee of actionable claim",
+    "page": 6
+  },
+  {
+    "idx": 121,
+    "number": "133",
+    "title": "Warranty of solvency of debtor",
+    "page": 6
+  },
+  {
+    "idx": 122,
+    "number": "134",
+    "title": "Mortgaged debt",
+    "page": 6
+  },
+  {
+    "idx": 123,
+    "number": "135",
+    "title": "Assignment of rights under policy of insurance against fire",
+    "page": 6
+  },
+  {
+    "idx": 124,
+    "number": "136",
+    "title": "Incapacity of officers connected with Courts of Justice",
+    "page": 6
+  },
+  {
+    "idx": 125,
+    "number": "137",
+    "title": "Saving of negotiable instruments, etc",
+    "page": 6
+  },
+  {
+    "idx": 126,
+    "number": "1",
+    "title": "Short title.—This Act may be called the Transfer of Property Act, 1882",
+    "page": 1
+  },
+  {
+    "idx": 127,
+    "number": "2",
+    "title": "The application of this Act was barred in the Naga Hills District, including the Mokokchung Sub-division, the",
+    "page": 1
+  },
+  {
+    "idx": 128,
+    "number": "5",
+    "title": "The Act has been extended to—",
+    "page": 7
+  },
+  {
+    "idx": 129,
+    "number": "8",
+    "title": "The words “with the previous sanction of the Governor General in Council” omitted by Act 38 of 1920, s. 2 and the",
+    "page": 1
+  },
+  {
+    "idx": 130,
+    "number": "2",
+    "title": "Repeal of Acts. Saving of certain enactments, incidents, rights, liabilities, etc.—",
+    "page": 7
+  },
+  {
+    "idx": 131,
+    "number": "3",
+    "title": "Interpretation-clause.—In this Act, unless there is something repugnant in the subject or",
+    "page": 8
+  },
+  {
+    "idx": 132,
+    "number": "3",
+    "title": "The word “Hindu” omitted by s. 3, ibid",
+    "page": 8
+  },
+  {
+    "idx": 133,
+    "number": "4",
+    "title": "The words “or Buddhist” omitted by s. 3, ibid",
+    "page": 1
+  },
+  {
+    "idx": 134,
+    "number": "8",
+    "title": "See the Indian Registration Act, 1908 (16 of 1908)",
+    "page": 7
+  },
+  {
+    "idx": 135,
+    "number": "4",
+    "title": "Enactments relating to contracts to be taken as part of Contract Act and supplemental to the",
+    "page": 8
+  },
+  {
+    "idx": 136,
+    "number": "6",
+    "title": "What may be transferred.—Property of any kind may be transferred, except as otherwise",
+    "page": 1
+  },
+  {
+    "idx": 137,
+    "number": "7",
+    "title": "Persons competent to transfer.—Every person competent to contract and entitled to transferable",
+    "page": 1
+  },
+  {
+    "idx": 138,
+    "number": "1",
+    "title": "Nothing in Chapter II is to be deemed to affect any rule of Muhammadan Law—see s. 2, supra",
+    "page": 7
+  },
+  {
+    "idx": 139,
+    "number": "5",
+    "title": "The words “for compensation for a fraud or for harm illegally caused” omitted by Act 2 of 1900, s. 3",
+    "page": 7
+  },
+  {
+    "idx": 140,
+    "number": "8",
+    "title": "The word “Government” successively adapted by the A.O. 1937 and A.O. 1950 to read as above",
+    "page": 8
+  },
+  {
+    "idx": 141,
+    "number": "8",
+    "title": "Operation of transfer.—Unless a different intention is expressed or necessarily",
+    "page": 10
+  },
+  {
+    "idx": 142,
+    "number": "9",
+    "title": "Oral transfer.—A transfer of property may be made without writing in every case",
+    "page": 1
+  },
+  {
+    "idx": 143,
+    "number": "10",
+    "title": "Condition restraining alienation.—Where property is transferred subject to a",
+    "page": 1
+  },
+  {
+    "idx": 144,
+    "number": "11",
+    "title": "Restriction repugnant to interest created.—Where, on a transfer of property, an",
+    "page": 1
+  },
+  {
+    "idx": 145,
+    "number": "12",
+    "title": "Condition making interest determinable on insolvency or attempted alienation.—",
+    "page": 1
+  },
+  {
+    "idx": 146,
+    "number": "13",
+    "title": "Transfer for benefit of unborn person.—Where, on a transfer of property, an",
+    "page": 1
+  },
+  {
+    "idx": 147,
+    "number": "14",
+    "title": "Rule against perpetuity.—No transfer of property can operate to create an interest which is to",
+    "page": 1
+  },
+  {
+    "idx": 148,
+    "number": "15",
+    "title": "Transfer to class some of whom come under sections 13 and 14.—If, on a transfer of property",
+    "page": 1
+  },
+  {
+    "idx": 149,
+    "number": "17",
+    "title": "Direction for accumulation.—(1) Where the terms of a transfer of property direct that the",
+    "page": 1
+  },
+  {
+    "idx": 150,
+    "number": "18",
+    "title": "Transfer in perpetuity for benefit of public.—The restrictions in sections 14, 16 and",
+    "page": 1
+  },
+  {
+    "idx": 151,
+    "number": "19",
+    "title": "Vested interest.—Where, on a transfer of property, an interest therein is created in favour",
+    "page": 1
+  },
+  {
+    "idx": 152,
+    "number": "20",
+    "title": "When unborn person acquires vested interest on transfer for his benefit.—Where, on",
+    "page": 1
+  },
+  {
+    "idx": 153,
+    "number": "21",
+    "title": "Contingent interest.—Where, on a transfer of property, an interest therein is created in",
+    "page": 1
+  },
+  {
+    "idx": 154,
+    "number": "22",
+    "title": "Transfer to members of a class who attain a particular age.—Where, on a transfer of",
+    "page": 2
+  },
+  {
+    "idx": 155,
+    "number": "23",
+    "title": "Transfer contingent on happening of specified uncertain event.—Where, on a transfer of",
+    "page": 2
+  },
+  {
+    "idx": 156,
+    "number": "24",
+    "title": "Transfer to such of certain persons as survive at some period not specified.—Where, on",
+    "page": 2
+  },
+  {
+    "idx": 157,
+    "number": "25",
+    "title": "Conditional transfer.—An interest created on a transfer of property and dependent upon a",
+    "page": 2
+  },
+  {
+    "idx": 158,
+    "number": "26",
+    "title": "Fulfilment of condition precedent.—Where the terms of a transfer of property impose a",
+    "page": 2
+  },
+  {
+    "idx": 159,
+    "number": "27",
+    "title": "Conditional transfer to one person coupled with transfer to another on failure of prior",
+    "page": 2
+  },
+  {
+    "idx": 160,
+    "number": "28",
+    "title": "Ulterior transfer conditional on happening or not happening of specified event.—On a",
+    "page": 2
+  },
+  {
+    "idx": 161,
+    "number": "29",
+    "title": "Fulfilment of condition subsequent.—An ulterior disposition of the kind contemplated by the",
+    "page": 2
+  },
+  {
+    "idx": 162,
+    "number": "30",
+    "title": "Prior disposition not affected by invalidity of ulterior disposition.—If the ulterior disposition",
+    "page": 2
+  },
+  {
+    "idx": 163,
+    "number": "31",
+    "title": "Condition that transfer shall cease to have effect in case specified uncertain event happens",
+    "page": 2
+  },
+  {
+    "idx": 164,
+    "number": "32",
+    "title": "Such condition must not be invalid.—In order that a condition that an interest shall cease to",
+    "page": 2
+  },
+  {
+    "idx": 165,
+    "number": "33",
+    "title": "Transfer conditional on performance of act, no time being specified for",
+    "page": 2
+  },
+  {
+    "idx": 166,
+    "number": "34",
+    "title": "Transfer conditional on performance of act, time being specified.—Where an act is to be",
+    "page": 2
+  },
+  {
+    "idx": 167,
+    "number": "35",
+    "title": "Election when necessary.—Where a person professes to transfer property which he has no right",
+    "page": 2
+  },
+  {
+    "idx": 168,
+    "number": "36",
+    "title": "Apportionment of periodical payments determination of interest of person entitled.—In the",
+    "page": 2
+  },
+  {
+    "idx": 169,
+    "number": "37",
+    "title": "Apportionment of benefit of obligation on severance.—When, in consequence of a transfer",
+    "page": 2
+  },
+  {
+    "idx": 170,
+    "number": "38",
+    "title": "Transfer by person authorised only under certain circumstances to transfer.—Where any",
+    "page": 2
+  },
+  {
+    "idx": 171,
+    "number": "39",
+    "title": "Transfer where third person is entitled to maintenance.—Where a third person has a right to receive",
+    "page": 2
+  },
+  {
+    "idx": 172,
+    "number": "1",
+    "title": "The words “with the intention of defeating such right” omitted by Act 20 of 1929, s. 11",
+    "page": 10
+  },
+  {
+    "idx": 173,
+    "number": "40",
+    "title": "Burden of obligation imposing restriction on use of land.—Where, for the more beneficial",
+    "page": 2
+  },
+  {
+    "idx": 174,
+    "number": "41",
+    "title": "Transfer by ostensible owner.—Where, with the consent, express or implied, of the persons",
+    "page": 2
+  },
+  {
+    "idx": 175,
+    "number": "42",
+    "title": "Transfer by person having authority to revoke former transfer.—Where a person transfers",
+    "page": 2
+  },
+  {
+    "idx": 176,
+    "number": "43",
+    "title": "Transfer by unauthorised person who subsequently acquires interest in property",
+    "page": 2
+  },
+  {
+    "idx": 177,
+    "number": "44",
+    "title": "Transfer by one co-owner.—Where one of two or more co-owners of immoveable property",
+    "page": 2
+  },
+  {
+    "idx": 178,
+    "number": "1",
+    "title": "The Illustrations omitted by Act 20 of 1929, s. 11",
+    "page": 16
+  },
+  {
+    "idx": 179,
+    "number": "45",
+    "title": "Joint transfer for consideration.—Where immoveable property is transferred for consideration",
+    "page": 2
+  },
+  {
+    "idx": 180,
+    "number": "46",
+    "title": "Transfer for consideration by persons having distinct interests.—Where immoveable property",
+    "page": 2
+  },
+  {
+    "idx": 181,
+    "number": "47",
+    "title": "Transfer by co-owners of share in common property.—Where several co-owners of",
+    "page": 2
+  },
+  {
+    "idx": 182,
+    "number": "48",
+    "title": "Priority of rights created by transfer.—Where a person purports to create by transfer at",
+    "page": 2
+  },
+  {
+    "idx": 183,
+    "number": "49",
+    "title": "Transferee’s right under policy.—Where immoveable property is transferred for consideration",
+    "page": 2
+  },
+  {
+    "idx": 184,
+    "number": "50",
+    "title": "Rent bona fide paid to holder under defective title.—No person shall be chargeable with",
+    "page": 2
+  },
+  {
+    "idx": 185,
+    "number": "51",
+    "title": "Improvements made by bona fide holders under defective titles.—When the transferee of",
+    "page": 3
+  },
+  {
+    "idx": 186,
+    "number": "52",
+    "title": "Transfer of property pending suit relating thereto.—During the 1[pendency] in any",
+    "page": 3
+  },
+  {
+    "idx": 187,
+    "number": "5",
+    "title": "The words “or the Crown Representative” Rep. by the A.O. 1948",
+    "page": 10
+  },
+  {
+    "idx": 188,
+    "number": "55",
+    "title": "Rights and liabilities of buyer and seller.—In the absence of a contract to the contrary",
+    "page": 3
+  },
+  {
+    "idx": 189,
+    "number": "2",
+    "title": "The words “the contract though required to be registered, has not been registered, or” omitted by Act 48 of 2001, s. 10 (w.e.f",
+    "page": 8
+  },
+  {
+    "idx": 190,
+    "number": "57",
+    "title": "Provision by Court for incumbrances and sale freed therefrom.—(a) Where immoveable",
+    "page": 3
+  },
+  {
+    "idx": 191,
+    "number": "1",
+    "title": "The words “with notice of the payment” omitted by Act 20 of 1929, s. 17",
+    "page": 17
+  },
+  {
+    "idx": 192,
+    "number": "59",
+    "title": "Mortgage when to be by assurance.—Where the principal money secured is one hundred",
+    "page": 3
+  },
+  {
+    "idx": 193,
+    "number": "60",
+    "title": "Right of mortgagor to redeem.—At any time after the principal money has become 9[due]",
+    "page": 3
+  },
+  {
+    "idx": 194,
+    "number": "3",
+    "title": "The words “Rangoon, Moulmein, Bassein and Akyab” omitted by A.O. 1937",
+    "page": 8
+  },
+  {
+    "idx": 195,
+    "number": "4",
+    "title": "The words “Governor General in Council” successively amended by A.O. 1937 and the A.O. 1950 to read as",
+    "page": 9
+  },
+  {
+    "idx": 196,
+    "number": "7",
+    "title": "Third paragraph omitted by Act 20 of 1929, s. 20",
+    "page": 10
+  },
+  {
+    "idx": 197,
+    "number": "60B",
+    "title": "Right to inspection and production of documents.—A mortgagor, as long as his right",
+    "page": 3
+  },
+  {
+    "idx": 198,
+    "number": "62",
+    "title": "Right of usufructuary mortgagor to recover possession.—In the case of a usufructuary",
+    "page": 3
+  },
+  {
+    "idx": 199,
+    "number": "63",
+    "title": "Accession to mortgaged property.—Where mortgaged property in possession of the",
+    "page": 3
+  },
+  {
+    "idx": 200,
+    "number": "2",
+    "title": "S. 60A and 60B ins. by s. 23, ibid",
+    "page": 20
+  },
+  {
+    "idx": 201,
+    "number": "64",
+    "title": "Renewal of mortgaged lease.—Where the mortgaged property is a lease 3***, and",
+    "page": 4
+  },
+  {
+    "idx": 202,
+    "number": "65",
+    "title": "Implied contracts by mortgagor.—In the absence of a contract to the contrary, the",
+    "page": 4
+  },
+  {
+    "idx": 203,
+    "number": "3",
+    "title": "The words “for a term of years” omitted by s. 28, ibid",
+    "page": 24
+  },
+  {
+    "idx": 204,
+    "number": "4",
+    "title": "The words “for a term of years” omitted by s. 29, ibid",
+    "page": 24
+  },
+  {
+    "idx": 205,
+    "number": "66",
+    "title": "Waste by mortgagor in possession.—A mortgagor in possession of the mortgaged",
+    "page": 4
+  },
+  {
+    "idx": 206,
+    "number": "67",
+    "title": "Right to foreclosure or sale.—In the absence of a contract to the contrary, the mortgagee",
+    "page": 4
+  },
+  {
+    "idx": 207,
+    "number": "1",
+    "title": "Certain words omitted by Act 20 of 1929, s. 29",
+    "page": 22
+  },
+  {
+    "idx": 208,
+    "number": "69",
+    "title": "Power of sale when valid.—4[(1)] 5[6*** A mortgagee, or any person acting on his",
+    "page": 4
+  },
+  {
+    "idx": 209,
+    "number": "6",
+    "title": "The words and figures “Notwithstanding anything contained in the Trustees’ and Mortgagees’ Powers Act, 1866 (28 of 1866)”",
+    "page": 10
+  },
+  {
+    "idx": 210,
+    "number": "2",
+    "title": "The words “the L.G., with the previous sanction of the G. G. in C.” successively amended by A.O. 1937 and A.O. 1950 to read",
+    "page": 25
+  },
+  {
+    "idx": 211,
+    "number": "4",
+    "title": "The words “the Secretary of State for India in Council” successively amended by A.O. 1937 and A.O. 1950 to read",
+    "page": 26
+  },
+  {
+    "idx": 212,
+    "number": "6",
+    "title": "The word “Karachi” omitted by A.O. 1948",
+    "page": 28
+  },
+  {
+    "idx": 213,
+    "number": "7",
+    "title": "The words “or Rangoon” have been successively amended by Acts 6 of 1904, 11 of 1915, 20 of 1929, the A.O. 1937 and the",
+    "page": 24
+  },
+  {
+    "idx": 214,
+    "number": "8",
+    "title": "Second paragraph numbered as sub-section (2) by Act 20 of 1929, s. 34",
+    "page": 11
+  },
+  {
+    "idx": 215,
+    "number": "9",
+    "title": "The word “'But” omitted by s. 34, ibid",
+    "page": 11
+  },
+  {
+    "idx": 216,
+    "number": "10",
+    "title": "Clause (1) was lettered (a) by s. 34, ibid",
+    "page": 11
+  },
+  {
+    "idx": 217,
+    "number": "11",
+    "title": "Clause (2) was lettered (b) by s. 34, ibid",
+    "page": 11
+  },
+  {
+    "idx": 218,
+    "number": "12",
+    "title": "Third paragraph numbered as sub-section (3) by s. 34, ibid",
+    "page": 11
+  },
+  {
+    "idx": 219,
+    "number": "13",
+    "title": "Fourth paragraph numbered as sub-section (4) by Act 20 of 1929, s. 34",
+    "page": 11
+  },
+  {
+    "idx": 220,
+    "number": "15",
+    "title": "The last paragraph of this section omitted by s. 34, ibid",
+    "page": 12
+  },
+  {
+    "idx": 221,
+    "number": "70",
+    "title": "Accession to mortgaged property.—If, after the date of a mortgage, any accession is",
+    "page": 4
+  },
+  {
+    "idx": 222,
+    "number": "71",
+    "title": "Renewal of mortgaged lease.—When the mortgaged property is a lease 1***, and the",
+    "page": 4
+  },
+  {
+    "idx": 223,
+    "number": "72",
+    "title": "Rights of mortgagee in possession.—2[A mortgagee] may spend such money as is",
+    "page": 4
+  },
+  {
+    "idx": 224,
+    "number": "1",
+    "title": "The words “for a term of years” omitted by Act 20 of 1929, s. 36",
+    "page": 27
+  },
+  {
+    "idx": 225,
+    "number": "3",
+    "title": "Clause (a) omitted by s. 37, ibid",
+    "page": 26
+  },
+  {
+    "idx": 226,
+    "number": "76",
+    "title": "Liabilities of mortgagee in possession.—When, during the continuance of the mortgage, the",
+    "page": 4
+  },
+  {
+    "idx": 227,
+    "number": "77",
+    "title": "Receipts in lieu of interest.—Nothing in section 76, clauses (b), (d), (g) and (h), applies",
+    "page": 4
+  },
+  {
+    "idx": 228,
+    "number": "78",
+    "title": "Postponement of prior mortgagee.—Where, through the fraud, misrepresentation or",
+    "page": 4
+  },
+  {
+    "idx": 229,
+    "number": "79",
+    "title": "Mortgage to secure uncertain amount when maximum is expressed.—If a mortgage",
+    "page": 4
+  },
+  {
+    "idx": 230,
+    "number": "2",
+    "title": "The words “on the mortgage-money” omitted by s. 40, ibid",
+    "page": 29
+  },
+  {
+    "idx": 231,
+    "number": "3",
+    "title": "The word “gross” omitted by s. 40, ibid",
+    "page": 31
+  },
+  {
+    "idx": 232,
+    "number": "82",
+    "title": "Contribution to mortgage-debt.—2[Where property subject to a mortgage belongs to",
+    "page": 4
+  },
+  {
+    "idx": 233,
+    "number": "83",
+    "title": "Power to deposit in Court money due on mortgage.—At any time after the principal",
+    "page": 4
+  },
+  {
+    "idx": 234,
+    "number": "5",
+    "title": "See the Code of Civil Procedure, 1908 (5 of 1908), Sch. I, Order VI, rule 15",
+    "page": 19
+  },
+  {
+    "idx": 235,
+    "number": "84",
+    "title": "Cessation of interest.—When the mortgagor or such other person as aforesaid has",
+    "page": 4
+  },
+  {
+    "idx": 236,
+    "number": "4",
+    "title": "For the repealed provisions, as re-enacted, see (Act 5 of 1908), Sch. I, Order XXXIV",
+    "page": 29
+  },
+  {
+    "idx": 237,
+    "number": "93",
+    "title": "Prohibition of tacking.—No mortgagee paying off a prior mortgage, whether with or",
+    "page": 5
+  },
+  {
+    "idx": 238,
+    "number": "94",
+    "title": "Rights of mesne mortgagee.—Where a property is mortgaged for successive debts to successive",
+    "page": 5
+  },
+  {
+    "idx": 239,
+    "number": "96",
+    "title": "Mortgage by deposit of title-deeds.—The provisions hereinbefore contained which apply to a",
+    "page": 5
+  },
+  {
+    "idx": 240,
+    "number": "98",
+    "title": "Rights and liabilities of parties to anomalous mortgages.—In the case of 3[an anomalous",
+    "page": 5
+  },
+  {
+    "idx": 241,
+    "number": "100",
+    "title": "Charges.—Where immoveable property of one person is by act of parties or operation of law",
+    "page": 36
+  },
+  {
+    "idx": 242,
+    "number": "2",
+    "title": "For the repealed provisions, as re-enacted, see (Act 5 of 1908), Sch. I, Order XXXIV, rules 12 and 13",
+    "page": 33
+  },
+  {
+    "idx": 243,
+    "number": "102",
+    "title": "Service or tender on or to agent.—Where the person on or to whom any notice or tender",
+    "page": 5
+  },
+  {
+    "idx": 244,
+    "number": "103",
+    "title": "Notice, etc., to or by person incompetent to contract.—Where, under the provisions of",
+    "page": 5
+  },
+  {
+    "idx": 245,
+    "number": "104",
+    "title": "Power to make rules.—The High Court may, from time to time, make rules consistent",
+    "page": 5
+  },
+  {
+    "idx": 246,
+    "number": "105",
+    "title": "Lease defined.—A lease of immoveable property is a transfer of a right to enjoy such property",
+    "page": 5
+  },
+  {
+    "idx": 247,
+    "number": "107",
+    "title": "Leases how made.—A lease of immoveable property from year to year, or for any term",
+    "page": 5
+  },
+  {
+    "idx": 248,
+    "number": "108",
+    "title": "Rights and liabilities of lessor and lessee.— In the absence of a contract or local",
+    "page": 5
+  },
+  {
+    "idx": 249,
+    "number": "4",
+    "title": "The words “with the previous sanction of the Governor General in Council” omitted by A. O. 1937",
+    "page": 35
+  },
+  {
+    "idx": 250,
+    "number": "109",
+    "title": "Rights of lessor’s transferee.—If the lessor transfers the property leased, or any part thereof, or",
+    "page": 5
+  },
+  {
+    "idx": 251,
+    "number": "110",
+    "title": "Exclusion of day on which term commences.—Where the time limited by a lease of",
+    "page": 5
+  },
+  {
+    "idx": 252,
+    "number": "111",
+    "title": "Determination of lease.—A lease of immoveable property determines—",
+    "page": 5
+  },
+  {
+    "idx": 253,
+    "number": "1",
+    "title": "The words “or the lease shall become void” omitted by Act 20 of 1929, s. 57",
+    "page": 31
+  },
+  {
+    "idx": 254,
+    "number": "112",
+    "title": "Waiver of forfeiture.—A forfeiture under section 111, clause (g) is waived by",
+    "page": 5
+  },
+  {
+    "idx": 255,
+    "number": "113",
+    "title": "Waiver of notice to quit.—A notice given under section 111, clause (h), is waived, with the",
+    "page": 5
+  },
+  {
+    "idx": 256,
+    "number": "114",
+    "title": "Relief against forfeiture for non-payment of rent.—Where a lease of immoveable",
+    "page": 5
+  },
+  {
+    "idx": 257,
+    "number": "115",
+    "title": "Effect of surrender and forfeiture on under-leases.—The surrender, express or implied",
+    "page": 6
+  },
+  {
+    "idx": 258,
+    "number": "116",
+    "title": "Effect of holding over.—If a lessee or under-lessee of property remains in possession",
+    "page": 6
+  },
+  {
+    "idx": 259,
+    "number": "117",
+    "title": "Exemption of leases for agricultural purposes.—None of the provisions of this",
+    "page": 6
+  },
+  {
+    "idx": 260,
+    "number": "120",
+    "title": "Rights and liabilities of parties.—Save as otherwise provided in this Chapter",
+    "page": 6
+  },
+  {
+    "idx": 261,
+    "number": "121",
+    "title": "Exchange of money.—On an exchange of money, each party thereby warrants",
+    "page": 6
+  },
+  {
+    "idx": 262,
+    "number": "1",
+    "title": "The words “with the previous sanction of the Governor General in Council” omitted by Act 38 of 1920, s. 2 and I",
+    "page": 40
+  },
+  {
+    "idx": 263,
+    "number": "123",
+    "title": "Transfer how effected.—For the purpose of making a gift of immoveable",
+    "page": 6
+  },
+  {
+    "idx": 264,
+    "number": "124",
+    "title": "Gift of existing and future property.—A gift comprising both existing and future",
+    "page": 6
+  },
+  {
+    "idx": 265,
+    "number": "125",
+    "title": "Gift to several, of whom one does not accept.—A gift of a thing to two or more",
+    "page": 6
+  },
+  {
+    "idx": 266,
+    "number": "126",
+    "title": "When gift may be suspended or revoked.—The donor and donee may agree that",
+    "page": 6
+  },
+  {
+    "idx": 267,
+    "number": "127",
+    "title": "Onerous gifts.—Where a gift is in the form of a single transfer to the same person",
+    "page": 6
+  },
+  {
+    "idx": 268,
+    "number": "128",
+    "title": "Universal donee.—Subject to the provisions of section 127, where a gift consists",
+    "page": 6
+  },
+  {
+    "idx": 269,
+    "number": "129",
+    "title": "Saving of donations mortis causa and Muhammadan law.—Nothing in this",
+    "page": 6
+  },
+  {
+    "idx": 270,
+    "number": "130",
+    "title": "Transfer of actionable claim.—(1) The transfer of an actionable claim 4[whether with",
+    "page": 6
+  },
+  {
+    "idx": 271,
+    "number": "2",
+    "title": "The words and figures “or, save as provided by s. 123, any rule of Hindu or Buddhist law” omitted by Act 20 of 1929",
+    "page": 36
+  },
+  {
+    "idx": 272,
+    "number": "5",
+    "title": "The words and figures “and notwithstanding anything contained in section 123” ins. by Act 38 of 1925, s. 2, omitted",
+    "page": 34
+  },
+  {
+    "idx": 273,
+    "number": "131",
+    "title": "Notice to be in writing, signed.—Every notice of transfer of an actionable claim shall",
+    "page": 6
+  },
+  {
+    "idx": 274,
+    "number": "132",
+    "title": "Liability of transferee of actionable claim.—The transferee of an actionable claim shall",
+    "page": 6
+  },
+  {
+    "idx": 275,
+    "number": "133",
+    "title": "Warranty of solvency of debtor.—Where the transferor of a debt warrants the solvency of",
+    "page": 6
+  },
+  {
+    "idx": 276,
+    "number": "134",
+    "title": "Mortgaged debt.—Where a debt is transferred for the purpose of securing an existing or",
+    "page": 6
+  },
+  {
+    "idx": 277,
+    "number": "136",
+    "title": "Incapacity of officers connected with Courts of Justice.—No Judge, legal practitioner or",
+    "page": 6
+  },
+  {
+    "idx": 278,
+    "number": "137",
+    "title": "Saving of negotiable instruments, etc.—Nothing in the foregoing sections of this",
+    "page": 6
+  }
+]

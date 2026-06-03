@@ -1,0 +1,2923 @@
+{
+  "law_id": "rera",
+  "domain_field": null,
+  "curated": [
+    {
+      "provision_number": "1",
+      "summary": "Section 1: Short title, extent and commencement",
+      "plain_english": "2. Definitions. REGISTRATION OF REAL ESTATE PROJECT AND REGISTRATION OF REAL ESTATE AGENTS",
+      "keywords": [
+        "Registration",
+        "Real",
+        "Estate",
+        "Short",
+        "Title",
+        "Extent"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "3",
+      "summary": "Section 3: Prior registration of real estate project with Real Estate Regulatory Authority",
+      "plain_english": "Section 3: Prior registration of real estate project with Real Estate Regulatory Authority",
+      "keywords": [
+        "Real",
+        "Estate",
+        "Prior",
+        "Registration",
+        "Project",
+        "Regulatory"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "4",
+      "summary": "Section 4: Application for registration of real estate projects",
+      "plain_english": "Section 4: Application for registration of real estate projects",
+      "keywords": [
+        "Application",
+        "Registration",
+        "Real",
+        "Estate",
+        "Projects"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "5",
+      "summary": "Section 5: Grant of registration",
+      "plain_english": "Section 5: Grant of registration",
+      "keywords": [
+        "Grant",
+        "Registration"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "6",
+      "summary": "Section 6: Extension of registration",
+      "plain_english": "Section 6: Extension of registration",
+      "keywords": [
+        "Extension",
+        "Registration"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "7",
+      "summary": "Section 7: Revocation of registration",
+      "plain_english": "Section 7: Revocation of registration",
+      "keywords": [
+        "Revocation",
+        "Registration"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "8",
+      "summary": "Section 8: Obligation of Authority consequent upon lapse of or on revocation of registration",
+      "plain_english": "Section 8: Obligation of Authority consequent upon lapse of or on revocation of registration",
+      "keywords": [
+        "Obligation",
+        "Authority",
+        "Consequent",
+        "Lapse",
+        "Revocation",
+        "Registration"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "9",
+      "summary": "Section 9: Registration of real estate agents",
+      "plain_english": "Section 9: Registration of real estate agents",
+      "keywords": [
+        "Registration",
+        "Real",
+        "Estate",
+        "Agents"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "10",
+      "summary": "Section 10: Functions of real estate agents",
+      "plain_english": "FUNCTIONS AND DUTIES OF PROMOTER",
+      "keywords": [
+        "Functions",
+        "Real",
+        "Estate",
+        "Agents",
+        "Duties",
+        "Promoter"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "11",
+      "summary": "Section 11: Functions and duties of promoter",
+      "plain_english": "Section 11: Functions and duties of promoter",
+      "keywords": [
+        "Functions",
+        "Duties",
+        "Promoter"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "12",
+      "summary": "Section 12: Obligations of promoter regarding veracity of the advertisement or prospectus",
+      "plain_english": "Section 12: Obligations of promoter regarding veracity of the advertisement or prospectus",
+      "keywords": [
+        "Obligations",
+        "Promoter",
+        "Regarding",
+        "Veracity",
+        "Advertisement",
+        "Prospectus"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "13",
+      "summary": "Section 13: No deposit or advance to be taken by promoter without first entering into agreement for sale",
+      "plain_english": "Section 13: No deposit or advance to be taken by promoter without first entering into agreement for sale",
+      "keywords": [
+        "Deposit",
+        "Advance",
+        "Taken",
+        "Promoter",
+        "First",
+        "Entering"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "14",
+      "summary": "Section 14: Adherence to sanctioned plans and project specifications by the promoter",
+      "plain_english": "Section 14: Adherence to sanctioned plans and project specifications by the promoter",
+      "keywords": [
+        "Adherence",
+        "Sanctioned",
+        "Plans",
+        "Project",
+        "Specifications",
+        "Promoter"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "15",
+      "summary": "Section 15: Obligations of promoter in case of transfer of a real estate project to a third party",
+      "plain_english": "Section 15: Obligations of promoter in case of transfer of a real estate project to a third party",
+      "keywords": [
+        "Obligations",
+        "Promoter",
+        "Case",
+        "Transfer",
+        "Real",
+        "Estate"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "16",
+      "summary": "Section 16: Obligations of promoter regarding insurance of real estate project",
+      "plain_english": "Section 16: Obligations of promoter regarding insurance of real estate project",
+      "keywords": [
+        "Obligations",
+        "Promoter",
+        "Regarding",
+        "Insurance",
+        "Real",
+        "Estate"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "17",
+      "summary": "Section 17: Transfer of title",
+      "plain_english": "Section 17: Transfer of title",
+      "keywords": [
+        "Transfer",
+        "Title"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "18",
+      "summary": "Section 18: Return of amount and compensation",
+      "plain_english": "RIGHTS AND DUTIES OF ALLOTTEES",
+      "keywords": [
+        "Return",
+        "Amount",
+        "Compensation",
+        "Rights",
+        "Duties",
+        "Allottees"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "19",
+      "summary": "Section 19: Rights and duties of allottees",
+      "plain_english": "CHAPTET V THE REAL ESTATE REGULATORY AUTHORITY",
+      "keywords": [
+        "Rights",
+        "Duties",
+        "Allottees",
+        "Chaptet",
+        "Real",
+        "Estate"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "20",
+      "summary": "Section 20: Establishment and incorporation of Real Estate Regulatory Authority",
+      "plain_english": "Section 20: Establishment and incorporation of Real Estate Regulatory Authority",
+      "keywords": [
+        "Establishment",
+        "Incorporation",
+        "Real",
+        "Estate",
+        "Regulatory",
+        "Authority"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "21",
+      "summary": "Section 21: Composition of Authority",
+      "plain_english": "Section 21: Composition of Authority",
+      "keywords": [
+        "Composition",
+        "Authority"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "22",
+      "summary": "Section 22: Qualifications of Chairperson and Members of Authority",
+      "plain_english": "Section 22: Qualifications of Chairperson and Members of Authority",
+      "keywords": [
+        "Qualifications",
+        "Chairperson",
+        "Members",
+        "Authority"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "23",
+      "summary": "Section 23: Term of office of Chairperson and Members",
+      "plain_english": "1 SECTIONS",
+      "keywords": [
+        "Term",
+        "Office",
+        "Chairperson",
+        "Members",
+        "Sections"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "24",
+      "summary": "Section 24: Salary and allowances payable to Chairperson and Members",
+      "plain_english": "Section 24: Salary and allowances payable to Chairperson and Members",
+      "keywords": [
+        "Salary",
+        "Allowances",
+        "Payable",
+        "Chairperson",
+        "Members"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "25",
+      "summary": "Section 25: Administrative powers of Chairperson",
+      "plain_english": "Section 25: Administrative powers of Chairperson",
+      "keywords": [
+        "Administrative",
+        "Powers",
+        "Chairperson"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "26",
+      "summary": "Section 26: Removal of Chairperson and Members from office in certain circumstances",
+      "plain_english": "Section 26: Removal of Chairperson and Members from office in certain circumstances",
+      "keywords": [
+        "Removal",
+        "Chairperson",
+        "Members",
+        "Office",
+        "Certain",
+        "Circumstances"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "27",
+      "summary": "Section 27: Restrictions on Chairperson or Members on employment after cessation of office",
+      "plain_english": "Section 27: Restrictions on Chairperson or Members on employment after cessation of office",
+      "keywords": [
+        "Restrictions",
+        "Chairperson",
+        "Members",
+        "Employment",
+        "Cessation",
+        "Office"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "28",
+      "summary": "Section 28: Officers and other employees of Authority",
+      "plain_english": "Section 28: Officers and other employees of Authority",
+      "keywords": [
+        "Officers",
+        "Other",
+        "Employees",
+        "Authority"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "29",
+      "summary": "Section 29: Meetings of Authority",
+      "plain_english": "Section 29: Meetings of Authority",
+      "keywords": [
+        "Meetings",
+        "Authority"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "30",
+      "summary": "Section 30: Vacancies, etc., not to invalidate proceeding of Authority",
+      "plain_english": "Section 30: Vacancies, etc., not to invalidate proceeding of Authority",
+      "keywords": [
+        "Vacancies",
+        "Invalidate",
+        "Proceeding",
+        "Authority"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "31",
+      "summary": "Section 31: Filing of complaints with the Authority or the adjudicating officer",
+      "plain_english": "Section 31: Filing of complaints with the Authority or the adjudicating officer",
+      "keywords": [
+        "Filing",
+        "Complaints",
+        "Authority",
+        "Adjudicating",
+        "Officer"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "32",
+      "summary": "Section 32: Functions of Authority for promotion of real estate sector",
+      "plain_english": "Section 32: Functions of Authority for promotion of real estate sector",
+      "keywords": [
+        "Functions",
+        "Authority",
+        "Promotion",
+        "Real",
+        "Estate",
+        "Sector"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "33",
+      "summary": "Section 33: Advocacy and awareness measures",
+      "plain_english": "Section 33: Advocacy and awareness measures",
+      "keywords": [
+        "Advocacy",
+        "Awareness",
+        "Measures"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "34",
+      "summary": "Section 34: Functions of Authority",
+      "plain_english": "Section 34: Functions of Authority",
+      "keywords": [
+        "Functions",
+        "Authority"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "35",
+      "summary": "Section 35: Powers of Authority to call for information, conduct investigations",
+      "plain_english": "Section 35: Powers of Authority to call for information, conduct investigations",
+      "keywords": [
+        "Powers",
+        "Authority",
+        "Call",
+        "Information",
+        "Conduct",
+        "Investigations"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "36",
+      "summary": "Section 36: Power to issue interim orders",
+      "plain_english": "Section 36: Power to issue interim orders",
+      "keywords": [
+        "Power",
+        "Issue",
+        "Interim",
+        "Orders"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "37",
+      "summary": "Section 37: Powers of Authority to issue directions",
+      "plain_english": "Section 37: Powers of Authority to issue directions",
+      "keywords": [
+        "Powers",
+        "Authority",
+        "Issue",
+        "Directions"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "38",
+      "summary": "Section 38: Powers of Authority",
+      "plain_english": "Section 38: Powers of Authority",
+      "keywords": [
+        "Powers",
+        "Authority"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "39",
+      "summary": "Section 39: Rectification of orders",
+      "plain_english": "Section 39: Rectification of orders",
+      "keywords": [
+        "Rectification",
+        "Orders"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "40",
+      "summary": "Section 40: Recovery of interest or penalty or compensation and enforcement of order, etc",
+      "plain_english": "CENTRAL ADVISORY COUNCIL",
+      "keywords": [
+        "Recovery",
+        "Interest",
+        "Penalty",
+        "Compensation",
+        "Enforcement",
+        "Order"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "41",
+      "summary": "Section 41: Establishment of Central Advisory Council",
+      "plain_english": "Section 41: Establishment of Central Advisory Council",
+      "keywords": [
+        "Establishment",
+        "Central",
+        "Advisory",
+        "Council"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "42",
+      "summary": "Section 42: Functions of Central Advisory Council",
+      "plain_english": "THE REAL ESTATE APPELLATE TRIBUNAL",
+      "keywords": [
+        "Functions",
+        "Central",
+        "Advisory",
+        "Council",
+        "Real",
+        "Estate"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "43",
+      "summary": "Section 43: Establishment of Real Estate Appellate Tribunal",
+      "plain_english": "Section 43: Establishment of Real Estate Appellate Tribunal",
+      "keywords": [
+        "Establishment",
+        "Real",
+        "Estate",
+        "Appellate",
+        "Tribunal"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "44",
+      "summary": "Section 44: Application for settlement of disputes and appeals to Appellate Tribunal",
+      "plain_english": "Section 44: Application for settlement of disputes and appeals to Appellate Tribunal",
+      "keywords": [
+        "Application",
+        "Settlement",
+        "Disputes",
+        "Appeals",
+        "Appellate",
+        "Tribunal"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "45",
+      "summary": "Section 45: Composition of Appellate Tribunal",
+      "plain_english": "Section 45: Composition of Appellate Tribunal",
+      "keywords": [
+        "Composition",
+        "Appellate",
+        "Tribunal"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "46",
+      "summary": "Section 46: Qualifications for appointment of Chairperson and Members",
+      "plain_english": "Section 46: Qualifications for appointment of Chairperson and Members",
+      "keywords": [
+        "Qualifications",
+        "Appointment",
+        "Chairperson",
+        "Members"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "47",
+      "summary": "Section 47: Term of office of Chairperson and Members",
+      "plain_english": "Section 47: Term of office of Chairperson and Members",
+      "keywords": [
+        "Term",
+        "Office",
+        "Chairperson",
+        "Members"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "48",
+      "summary": "Section 48: Salary and allowances payable to Chairperson and Members",
+      "plain_english": "Section 48: Salary and allowances payable to Chairperson and Members",
+      "keywords": [
+        "Salary",
+        "Allowances",
+        "Payable",
+        "Chairperson",
+        "Members"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "49",
+      "summary": "Section 49: Removal of Chairperson and Member from office in certain circumstances",
+      "plain_english": "Section 49: Removal of Chairperson and Member from office in certain circumstances",
+      "keywords": [
+        "Removal",
+        "Chairperson",
+        "Member",
+        "Office",
+        "Certain",
+        "Circumstances"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "50",
+      "summary": "Section 50: Restrictions on Chairperson or Judicial Member or Technical or Administrative Member on",
+      "plain_english": "employment after cessation of office.",
+      "keywords": [
+        "Member",
+        "Restrictions",
+        "Chairperson",
+        "Judicial",
+        "Technical",
+        "Administrative"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "51",
+      "summary": "Section 51: Officers and other employees of Appellate Tribunal",
+      "plain_english": "52. Vacancies.",
+      "keywords": [
+        "Officers",
+        "Other",
+        "Employees",
+        "Appellate",
+        "Tribunal",
+        "Vacancies"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "53",
+      "summary": "Section 53: Powers of Tribunal",
+      "plain_english": "Section 53: Powers of Tribunal",
+      "keywords": [
+        "Powers",
+        "Tribunal"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "54",
+      "summary": "Section 54: Administrative powers of Chairperson of Appellate Tribunal",
+      "plain_english": "Section 54: Administrative powers of Chairperson of Appellate Tribunal",
+      "keywords": [
+        "Administrative",
+        "Powers",
+        "Chairperson",
+        "Appellate",
+        "Tribunal"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "55",
+      "summary": "Section 55: Vacancies, etc., not to invalidate proceeding of Appellate Tribunal",
+      "plain_english": "Section 55: Vacancies, etc., not to invalidate proceeding of Appellate Tribunal",
+      "keywords": [
+        "Vacancies",
+        "Invalidate",
+        "Proceeding",
+        "Appellate",
+        "Tribunal"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "56",
+      "summary": "Section 56: Right to legal representation",
+      "plain_english": "Section 56: Right to legal representation",
+      "keywords": [
+        "Right",
+        "Legal",
+        "Representation"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "57",
+      "summary": "Section 57: Orders passed by Appellate Tribunal to be executable as a decree",
+      "plain_english": "Section 57: Orders passed by Appellate Tribunal to be executable as a decree",
+      "keywords": [
+        "Orders",
+        "Passed",
+        "Appellate",
+        "Tribunal",
+        "Executable",
+        "Decree"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "58",
+      "summary": "Section 58: Appeal to High Court",
+      "plain_english": "2 OFFENCES, PENALTIES AND ADJUDICATION SECTIONS",
+      "keywords": [
+        "Appeal",
+        "High",
+        "Court",
+        "Offences",
+        "Penalties",
+        "Adjudication"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "59",
+      "summary": "Section 59: Punishment for nonregistration under section 3",
+      "plain_english": "Section 59: Punishment for nonregistration under section 3",
+      "keywords": [
+        "Punishment",
+        "Nonregistration",
+        "Section"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "60",
+      "summary": "Section 60: Penalty for contravention of section 4",
+      "plain_english": "Section 60: Penalty for contravention of section 4",
+      "keywords": [
+        "Penalty",
+        "Contravention",
+        "Section"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "61",
+      "summary": "Section 61: Penalty for contravention of other provisions of this Act",
+      "plain_english": "Section 61: Penalty for contravention of other provisions of this Act",
+      "keywords": [
+        "Penalty",
+        "Contravention",
+        "Other",
+        "Provisions"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "62",
+      "summary": "Section 62: Penalty for nonregistration and contravention under sections 9 and 10",
+      "plain_english": "Section 62: Penalty for nonregistration and contravention under sections 9 and 10",
+      "keywords": [
+        "Penalty",
+        "Nonregistration",
+        "Contravention",
+        "Sections"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "63",
+      "summary": "Section 63: Penalty for failure to comply with orders of Authority by promoter",
+      "plain_english": "Section 63: Penalty for failure to comply with orders of Authority by promoter",
+      "keywords": [
+        "Penalty",
+        "Failure",
+        "Comply",
+        "Orders",
+        "Authority",
+        "Promoter"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "64",
+      "summary": "Section 64: Penalty for failure to comply with orders of Appellate Tribunal by promoter",
+      "plain_english": "Section 64: Penalty for failure to comply with orders of Appellate Tribunal by promoter",
+      "keywords": [
+        "Penalty",
+        "Failure",
+        "Comply",
+        "Orders",
+        "Appellate",
+        "Tribunal"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "65",
+      "summary": "Section 65: Penalty for failure to comply with orders of Authority by real estate agent",
+      "plain_english": "Section 65: Penalty for failure to comply with orders of Authority by real estate agent",
+      "keywords": [
+        "Penalty",
+        "Failure",
+        "Comply",
+        "Orders",
+        "Authority",
+        "Real"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "66",
+      "summary": "Section 66: Penalty for failure to comply with orders of Appellate Tribunal by real estate agent",
+      "plain_english": "Section 66: Penalty for failure to comply with orders of Appellate Tribunal by real estate agent",
+      "keywords": [
+        "Penalty",
+        "Failure",
+        "Comply",
+        "Orders",
+        "Appellate",
+        "Tribunal"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "67",
+      "summary": "Section 67: Penalty for failure to comply with orders of Authority by allottee",
+      "plain_english": "Section 67: Penalty for failure to comply with orders of Authority by allottee",
+      "keywords": [
+        "Penalty",
+        "Failure",
+        "Comply",
+        "Orders",
+        "Authority",
+        "Allottee"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "68",
+      "summary": "Section 68: Penalty for failure to comply with orders of Appellate Tribunal by allottee",
+      "plain_english": "Section 68: Penalty for failure to comply with orders of Appellate Tribunal by allottee",
+      "keywords": [
+        "Penalty",
+        "Failure",
+        "Comply",
+        "Orders",
+        "Appellate",
+        "Tribunal"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "69",
+      "summary": "Section 69: Offences by companies",
+      "plain_english": "Section 69: Offences by companies",
+      "keywords": [
+        "Offences",
+        "Companies"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "70",
+      "summary": "Section 70: Compounding of offences",
+      "plain_english": "Section 70: Compounding of offences",
+      "keywords": [
+        "Compounding",
+        "Offences"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "71",
+      "summary": "Section 71: Power to adjudicate",
+      "plain_english": "Section 71: Power to adjudicate",
+      "keywords": [
+        "Power",
+        "Adjudicate"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "72",
+      "summary": "Section 72: Factors to be taken into account by the adjudicating officer",
+      "plain_english": "FINANCE, ACCOUNTS, AUDITS AND REPORTS",
+      "keywords": [
+        "Factors",
+        "Taken",
+        "Account",
+        "Adjudicating",
+        "Officer",
+        "Finance"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "73",
+      "summary": "Section 73: Grants and loans by Central Government",
+      "plain_english": "Section 73: Grants and loans by Central Government",
+      "keywords": [
+        "Grants",
+        "Loans",
+        "Central",
+        "Government"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "74",
+      "summary": "Section 74: Grants and loans by State Government",
+      "plain_english": "Section 74: Grants and loans by State Government",
+      "keywords": [
+        "Grants",
+        "Loans",
+        "State",
+        "Government"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "75",
+      "summary": "Section 75: Constitution of Fund",
+      "plain_english": "Section 75: Constitution of Fund",
+      "keywords": [
+        "Constitution",
+        "Fund"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "76",
+      "summary": "Section 76: Crediting sums realised by way of penalties to Consolidated Fund of India or State account",
+      "plain_english": "Section 76: Crediting sums realised by way of penalties to Consolidated Fund of India or State account",
+      "keywords": [
+        "Crediting",
+        "Sums",
+        "Realised",
+        "Penalties",
+        "Consolidated",
+        "Fund"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "77",
+      "summary": "Section 77: Budget, accounts and audit",
+      "plain_english": "Section 77: Budget, accounts and audit",
+      "keywords": [
+        "Budget",
+        "Accounts",
+        "Audit"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "78",
+      "summary": "Section 78: Annual report",
+      "plain_english": "MISCELLANEOUS",
+      "keywords": [
+        "Annual",
+        "Report",
+        "Miscellaneous"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "79",
+      "summary": "Section 79: Bar of jurisdiction",
+      "plain_english": "Section 79: Bar of jurisdiction",
+      "keywords": [
+        "Jurisdiction"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "80",
+      "summary": "Section 80: Cognizance of offences",
+      "plain_english": "81. Delegation.",
+      "keywords": [
+        "Cognizance",
+        "Offences",
+        "Delegation"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "82",
+      "summary": "Section 82: Power of appropriate Government to supersede Authority",
+      "plain_english": "Section 82: Power of appropriate Government to supersede Authority",
+      "keywords": [
+        "Power",
+        "Appropriate",
+        "Government",
+        "Supersede",
+        "Authority"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "83",
+      "summary": "Section 83: Powers of appropriate Government to issue directions to Authority and obtain reports and returns",
+      "plain_english": "Section 83: Powers of appropriate Government to issue directions to Authority and obtain reports and returns",
+      "keywords": [
+        "Powers",
+        "Appropriate",
+        "Government",
+        "Issue",
+        "Directions",
+        "Authority"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "84",
+      "summary": "Section 84: Power of appropriate Government to make rules",
+      "plain_english": "Section 84: Power of appropriate Government to make rules",
+      "keywords": [
+        "Power",
+        "Appropriate",
+        "Government",
+        "Make",
+        "Rules"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "85",
+      "summary": "Section 85: Power to make regulations",
+      "plain_english": "Section 85: Power to make regulations",
+      "keywords": [
+        "Power",
+        "Make",
+        "Regulations"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "86",
+      "summary": "Section 86: Laying of rules",
+      "plain_english": "Section 86: Laying of rules",
+      "keywords": [
+        "Laying",
+        "Rules"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "87",
+      "summary": "Section 87: Members, etc., to be public servants",
+      "plain_english": "Section 87: Members, etc., to be public servants",
+      "keywords": [
+        "Members",
+        "Public",
+        "Servants"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "88",
+      "summary": "Section 88: Application of other laws not barred",
+      "plain_english": "Section 88: Application of other laws not barred",
+      "keywords": [
+        "Application",
+        "Other",
+        "Laws",
+        "Barred"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "89",
+      "summary": "Section 89: Act to have overriding effect",
+      "plain_english": "Section 89: Act to have overriding effect",
+      "keywords": [
+        "Have",
+        "Overriding",
+        "Effect"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "90",
+      "summary": "Section 90: Protection of action taken in good faith",
+      "plain_english": "Section 90: Protection of action taken in good faith",
+      "keywords": [
+        "Protection",
+        "Action",
+        "Taken",
+        "Good",
+        "Faith"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "91",
+      "summary": "Section 91: Power to remove difficulties",
+      "plain_english": "92. Repeal. 3 THE REAL ESTATE (REGULATION AND DEVELOPMENT) ACT, 2016 ACT NO. 16 OF 2016 [25th March, 2016.] An Act to establish the Real Estate Regulatory Authority for regulation and promotion of the real estate sector and to ensure sale of plot, apartment or building, as the case may be, or sale of real estate project, in an efficient and transparent manner and to protect the interest of consumers in the real estate sector and to establish an adjudicating mechanism for speedy dispute redressal",
+      "keywords": [
+        "Real",
+        "Estate",
+        "Regulation",
+        "Establish",
+        "Sector",
+        "Sale"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "1",
+      "summary": "Section 1: Short title, extent and commencement.—(1) This Act may be called the Real Estate (Regulation",
+      "plain_english": "and Development) Act, 2016. (2) It extends to the whole of India except the State of Jammu and Kashmir*. (3) It shall come into force on such date1 as the Central Government may, by notification in the Official Gazette, appoint: Provided that different dates may be appointed for different provisions of this Act and any reference in any such provision to the commencement of this Act shall be construed as a reference to the coming into force of that provision.",
+      "keywords": [
+        "Commencement",
+        "Force",
+        "Different",
+        "Reference",
+        "Provision",
+        "Short"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "2",
+      "summary": "Section 2: Definitions.—In this Act, unless the context otherwise requires,—",
+      "plain_english": "(a) “adjudicating officer” means the adjudicating officer appointed under sub-section (1) of section 71; (b) “advertisement” means any document described or issued as advertisement through any medium and includes any notice, circular or other documents or publicity in any form, informing persons about a real estate project, or offering for sale of a plot, building or apartment or inviting persons to purchase in any manner such plot, building or apartment or to make advances or deposits for such",
+      "keywords": [
+        "Adjudicating",
+        "Officer",
+        "Means",
+        "Section",
+        "Advertisement",
+        "Persons"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "3",
+      "summary": "Section 3: Prior registration of real estate project with Real Estate Regulatory Authority.—(1) No",
+      "plain_english": "promoter shall advertise, market, book, sell or offer for sale, or invite persons to purchase in any manner any plot, apartment or building, as the case may be, in any real estate project or part of it, in any planning area, without registering the real estate project with the Real Estate Regulatory Authority established under this Act: Provided that projects that are ongoing on the date of commencement of this Act and for which the completion certificate has not been issued, the promoter shall",
+      "keywords": [
+        "Real",
+        "Estate",
+        "Project",
+        "Regulatory",
+        "Authority",
+        "Promoter"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "4",
+      "summary": "Section 4: Application for registration of real estate projects.—(1) Every promoter shall make an",
+      "plain_english": "application to the Authority for registration of the real estate project in such form, manner, within such time and accompanied by such fee as may be 1[prescribed]. (2) The promoter shall enclose the following documents along with the application referred to in sub-section (1), namely:— (a) a brief details of his enterprise including its name, registered address, type of enterprise (proprietorship, societies, partnership, companies, competent authority), and the particulars of registration, and",
+      "keywords": [
+        "Application",
+        "Registration",
+        "Real",
+        "Estate",
+        "Promoter",
+        "Authority"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "5",
+      "summary": "Section 5: Grant of registration.—(1) On receipt of the application under sub-section (1) of section 4, the",
+      "plain_english": "Authority shall within a period of thirty days. (a) grant registration subject to the provisions of this Act and the rules and regulations made thereunder, and provide a registration number, including a Login Id and password to the applicant for accessing the website of the Authority and to create his web page and to fill therein the details of the proposed project; or (b) reject the application for reasons to be recorded in writing, if such application does not conform to the provisions of this",
+      "keywords": [
+        "Registration",
+        "Application",
+        "Grant",
+        "Section",
+        "Authority",
+        "Provisions"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "6",
+      "summary": "Section 6: Extension of registration.—The registration granted under section 5 may be extended by the",
+      "plain_english": "Authority on an application made by the promoter, due to force majeure, in such form and on payment of such fee as may be 1[prescribed]: Provided that the Authority may in reasonable circumstances, without default on the part of the promoter, based on the facts of each case, and for reasons to be recorded in writing, extend the registration granted to a project for such time as it considers necessary, which shall, in aggregate, not exceed a period of one year: Provided further that no applicatio",
+      "keywords": [
+        "Registration",
+        "Granted",
+        "Authority",
+        "Promoter",
+        "Provided",
+        "Extension"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "7",
+      "summary": "Section 7: Revocation of registration.—(1) The Authority may, on receipt of a complaint or suomotu in this",
+      "plain_english": "behalf or on the recommendation of the competent authority, revoke the registration granted under section 5, after being satisfied that— (a) the promoter makes default in doing anything required by or under this Act or the rules or the regulations made thereunder; (b) the promoter violates any of the terms or conditions of the approval given by the competent authority; (c) the promoter is involved in any kind of unfair practice or irregularities. Explanation.—For the purposes of this clause, the",
+      "keywords": [
+        "Authority",
+        "Promoter",
+        "Registration",
+        "Competent",
+        "Revocation",
+        "Receipt"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "8",
+      "summary": "Section 8: Obligation of Authority consequent upon lapse of or on revocation of registration.—Upon",
+      "plain_english": "lapse of the registration or on revocation of the registration under this Act, the Authority, may consult the appropriate Government to take such action as it may deem fit including the carrying out of the remaining development works by competent authority or by the association of allottees or in any other manner, as may be determined by the Authority: Provided that no direction, decision or order of the Authority under this section shall take effect until the expiry of the period of appeal prov",
+      "keywords": [
+        "Authority",
+        "Registration",
+        "Lapse",
+        "Revocation",
+        "Take",
+        "Obligation"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "9",
+      "summary": "Section 9: Registration of real estate agents.—(1) No real estate agent shall facilitate the sale or purchase of",
+      "plain_english": "or act on behalf of any person to facilitate the sale or purchase of any plot, apartment or building, as the case may be, in a real estate project or part of it, being the part of the real estate project registered under section 3, being sold by the promoter in any planning area, without obtaining registration under this section. (2) Every real estate agent shall make an application to the Authority for registration in such form, manner, within such time and accompanied by such fee and documents",
+      "keywords": [
+        "Real",
+        "Estate",
+        "Registration",
+        "Agent",
+        "Facilitate",
+        "Sale"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "10",
+      "summary": "Section 10: Functions of real estate agents.—Every real estate agent registered under section 9 shall—",
+      "plain_english": "(a) not facilitate the sale or purchase of any plot, apartment or building, as the case may be, in a real estate project or part of it, being sold by the promoter in any planning area, which is not registered with the Authority; (b) maintain and preserve such books of account, records and documents as may be prescribed; (c) not involve himself in any unfair trade practices, namely:— (i) the practice of making any statement, whether orally or in writing or by visible representation which— (A) fal",
+      "keywords": [
+        "Real",
+        "Estate",
+        "Registered",
+        "Which",
+        "Functions",
+        "Agents"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "11",
+      "summary": "Section 11: Functions and duties of promoter.—(1) The promoter shall, upon receiving his Login Id and",
+      "plain_english": "password under clause (a) of sub-section (1) or under sub-section (2) of section 5, as the case may be, create his web page on the website of the Authority and enter all details of the proposed project as provided under sub-section (2) of section 4, in all the fields as provided, for public viewing, including— (a) details of the registration granted by the Authority; 13 (b) quarterly up-to-date the list of number and types of apartments or plots, as the case may be, booked; (c) quarterly up-to-d",
+      "keywords": [
+        "Section",
+        "Promoter",
+        "Case",
+        "Authority",
+        "Details",
+        "Provided"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "12",
+      "summary": "Section 12: Obligations of promoter regarding veracity of the advertisement or prospectus.—Where any",
+      "plain_english": "person makes an advance or a deposit on the basis of the information contained in the notice, advertisement or prospectus, or on the basis of any model apartment, plot or building, as the case may be, and sustains any loss or damage by reason of any incorrect, false statement included therein, he shall be compensated by the promoter in the manner as provided under this Act: Provided that if the person affected by such incorrect, false statement contained in the notice, advertisement or prospectu",
+      "keywords": [
+        "Advertisement",
+        "Promoter",
+        "Prospectus",
+        "Person",
+        "Basis",
+        "Contained"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "13",
+      "summary": "Section 13: No deposit or advance to be taken by promoter without first entering into agreement for",
+      "plain_english": "sale.—(1) A promoter shall not accept a sum more than ten per cent. of the cost of the apartment, plot, or building as the case may be, as an advance payment or an application fee, from a person without first entering into a written agreement for sale with such person and register the said agreement for sale, under any law for the time being in force. (2) The agreement for sale referred to in sub-section (1) shall be in such form as may be prescribed and shall specify the particulars of developm",
+      "keywords": [
+        "Agreement",
+        "Sale",
+        "Advance",
+        "Promoter",
+        "First",
+        "Entering"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "14",
+      "summary": "Section 14: Adherence to sanctioned plans and project specifications by the promoter.—(1) The",
+      "plain_english": "proposed project shall be developed and completed by the promoter in accordance with the sanctioned plans, layout plans and specifications as approved by the competent authorities. (2) Notwithstanding anything contained in any law, contract or agreement, after the sanctioned plans, layout plans and specifications and the nature of the fixtures, fittings, amenities and common areas, of the 15 apartment, plot or building, as the case may be, as approved by the competent authority, are disclosed or",
+      "keywords": [
+        "Plans",
+        "Sanctioned",
+        "Specifications",
+        "Project",
+        "Promoter",
+        "Layout"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "15",
+      "summary": "Section 15: Obligations of promoter in case of transfer of a real estate project to a third party.—(1) The",
+      "plain_english": "promoter shall not transfer or assign his majority rights and liabilities in respect of a real estate project to a third party without obtaining prior written consent from two-third allottees, except the promoter, and without the prior written approval of the Authority: Provided that such transfer or assignment shall not affect the allotment or sale of the apartments, plots or buildings as the case may be, in the real estate project made by the erstwhile promoter. Explanation.—For the purpose of",
+      "keywords": [
+        "Promoter",
+        "Transfer",
+        "Real",
+        "Estate",
+        "Project",
+        "Third"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "16",
+      "summary": "Section 16: Obligations of promoter regarding insurance of real estate project.—(1) The promoter shall",
+      "plain_english": "obtain all such insurances as may be notified by the appropriate Government, including but not limited to insurance in respect of — (i) title of the land and building as a part of the real estate project; and (ii) construction of the real estate project. (2) The promoter shall be liable to pay the premium and charges in respect of the insurance specified in sub-section (1) and shall pay the same before transferring the insurance to the association of the allottees. (3) The insurance as specified",
+      "keywords": [
+        "Insurance",
+        "Promoter",
+        "Real",
+        "Estate",
+        "Project",
+        "Respect"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "17",
+      "summary": "Section 17: Transfer of title.—(1) The promoter shall execute a registered conveyance deed in favour of the",
+      "plain_english": "allottee along with the undivided proportionate title in the common areas to the association of the allottees or the competent authority, as the case may be, and hand over the physical possession of the plot, apartment of building, as the case may be, to the allottees and the common areas to the association of the allottees or the competent authority, as the case may be, in a real estate project, and the other title documents pertaining thereto within specified period as per sanctioned plans as",
+      "keywords": [
+        "Title",
+        "Allottees",
+        "Case",
+        "Common",
+        "Areas",
+        "Association"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "18",
+      "summary": "Section 18: Return of amount and compensation.—(1) If the promoter fails to complete or is unable to give",
+      "plain_english": "possession of an apartment, plot or building,— (a) in accordance with the terms of the agreement for sale or, as the case may be, duly completed by the date specified therein; or (b) due to discontinuance of his business as a developer on account of suspension or revocation of the registration under this Act or for any other reason, he shall be liable on demand to the allottees, in case the allottee wishes to withdraw from the project, without prejudice to any other remedy available, to return t",
+      "keywords": [
+        "Return",
+        "Case",
+        "Other",
+        "Amount",
+        "Compensation",
+        "Promoter"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "19",
+      "summary": "Section 19: Rights and duties of allottees.—(1) The allottee shall be entitled to obtain the information",
+      "plain_english": "relating to sanctioned plans, layout plans along with the specifications, approved by the competent authority and such other information as provided in this Act or the rules and regulations made thereunder or the agreement for sale signed with the promoter. (2) The allottee shall be entitled to know stage-wise time schedule of completion of the project, including the provisions for water, sanitation, electricity and other amenities and services as agreed to between the promoter and the allottee",
+      "keywords": [
+        "Allottee",
+        "Entitled",
+        "Information",
+        "Plans",
+        "Other",
+        "Promoter"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "20",
+      "summary": "Section 20: Establishment and incorporation of Real Estate Regulatory Authority.—(1) The appropriate",
+      "plain_english": "Government shall, within a period of one year from the date of coming into force of this Act, by notification, establish an Authority to be known as the Real Estate Regulatory Authority to exercise the powers conferred on it and to perform the functions assigned to it under this Act: Provided that the appropriate Government of two or more States or Union territories may, if it deems fit, establish one single Authority: Provided further that the appropriate Government may, if it deems fit, establ",
+      "keywords": [
+        "Authority",
+        "Appropriate",
+        "Government",
+        "Real",
+        "Estate",
+        "Regulatory"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "21",
+      "summary": "Section 21: Composition of Authority.—The Authority shall consist of a Chairperson and not less than two",
+      "plain_english": "whole time Members to be appointed by the appropriate Government.",
+      "keywords": [
+        "Authority",
+        "Composition",
+        "Consist",
+        "Chairperson",
+        "Less",
+        "Than"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "22",
+      "summary": "Section 22: Qualifications of Chairperson and Members of Authority.—The Chairperson and other",
+      "plain_english": "Members of the Authority shall be appointed by the appropriate Government on the recommendations of a Selection Committee consisting of the Chief Justice of the High Court or his nominee, the Secretary of the Department dealing with Housing and the Law Secretary, in such manner as may be prescribed, from amongst persons having adequate knowledge of and professional experience of at-least twenty years in case of the Chairperson and fifteen years in the case of the Members in urban development, ho",
+      "keywords": [
+        "Chairperson",
+        "Members",
+        "Authority",
+        "Secretary",
+        "Years",
+        "Case"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "23",
+      "summary": "Section 23: Term of office of Chairperson and Members.—(1) The Chairperson and Members shall hold",
+      "plain_english": "office for a term not exceeding five years from the date on which they enter upon their office, or until they attain the age of sixty-five years, whichever is earlier and shall not be eligible for re-appointment. (2) Before appointing any person as a Chairperson or Member, the appropriate Government shall satisfy itself that the person does not have any such financial or other interest as is likely to affect prejudicially his functions as such Member.",
+      "keywords": [
+        "Office",
+        "Chairperson",
+        "Term",
+        "Members",
+        "Five",
+        "Years"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "24",
+      "summary": "Section 24: Salary and allowances payable to Chairperson and Members.—(1) The salary and allowances",
+      "plain_english": "payable to, and the other terms and conditions of service of, the Chairperson and other Members shall be such as may be prescribed and shall not be varied to their disadvantage during their tenure. (2) Notwithstanding anything contained in sub-sections (1) and (2) of section 23, the Chairperson or a Member, as the case may be, may,— (a) relinquish his office by giving in writing, to the appropriate Government, notice of not less than three months; or 19 (b) be removed from his office in accordan",
+      "keywords": [
+        "Chairperson",
+        "Salary",
+        "Allowances",
+        "Payable",
+        "Members",
+        "Other"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "25",
+      "summary": "Section 25: Administrative powers of Chairperson.—The Chairperson shall have powers of general",
+      "plain_english": "superintendence and directions in the conduct of the affairs of Authority and he shall, in addition to presiding over the meetings of the Authority, exercise and discharge such administrative powers and functions of the Authority as may be prescribed.",
+      "keywords": [
+        "Powers",
+        "Authority",
+        "Administrative",
+        "Chairperson",
+        "Have",
+        "General"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "26",
+      "summary": "Section 26: Removal of Chairperson and Members from office in certain circumstances.—(1) The",
+      "plain_english": "appropriate Government may, in accordance with the procedure notified, remove from office the Chairperson or other Members, if the Chairperson or such other Member, as the case may be,— (a) has been adjudged as an insolvent; or (b) has been convicted of an offence, involving moral turpitude; or (c) has become physically or mentally incapable of acting as a Member; or (d) has acquired such financial or other interest as is likely to affect prejudicially his functions; or (e) has so abused his pos",
+      "keywords": [
+        "Chairperson",
+        "Other",
+        "Members",
+        "Office",
+        "Member",
+        "Been"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "27",
+      "summary": "Section 27: Restrictions on Chairperson or Members on employment after cessation of office.—(1) The",
+      "plain_english": "Chairperson or a Member, ceasing to hold office as such, shall not— (a) accept any employment in, or connected with, the management or administration of, any person or organisation which has been associated with any work under this Act, from the date on which he ceases to hold office: Provided that nothing contained in this clause shall apply to any employment under the appropriate Government or a local authority or in any statutory authority or any corporation established by or under any Centra",
+      "keywords": [
+        "Employment",
+        "Office",
+        "Chairperson",
+        "Hold",
+        "Which",
+        "Authority"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "28",
+      "summary": "Section 28: Officers and other employees of Authority.—(1) The appropriate Government may, in",
+      "plain_english": "consultation with the Authority appoint such officers and employees as it considers necessary for the efficient discharge of their functions under this Act who would discharge their functions under the general superintendence of the Chairperson. 20 (2) The salary and allowances payable to, and the other terms and conditions of service of, the officers and of the employees of the Authority appointed under sub-section (1) shall be such as may be prescribed.",
+      "keywords": [
+        "Officers",
+        "Employees",
+        "Authority",
+        "Other",
+        "Discharge",
+        "Their"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "29",
+      "summary": "Section 29: Meetings of Authority.—(1) The Authority shall meet at such places and times, and shall follow",
+      "plain_english": "such rules of procedure in regard to the transaction of business at its meetings, (including quorum at such meetings), as may be specified by the regulations made by the Authority. (2) If the Chairperson for any reason, is unable to attend a meeting of the Authority, any other Member chosen by the Members present amongst themselves at the meeting, shall preside at the meeting. (3) All questions which come up before any meeting of the Authority shall be decided by a majority of votes by the Membe",
+      "keywords": [
+        "Authority",
+        "Meeting",
+        "Meetings",
+        "Meet",
+        "Places",
+        "Times"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "30",
+      "summary": "Section 30: Vacancies, etc., not to invalidate proceeding of Authority.—No act or proceeding of the",
+      "plain_english": "Authority shall be invalid merely by reason of— (a) any vacancy in, or any defect in the constitution of, the Authority; or (b) any defect in the appointment of a person acting as a Member of the Authority; or (c) any irregularity in the procedure of the Authority not affecting the merits of the case.",
+      "keywords": [
+        "Authority",
+        "Proceeding",
+        "Defect",
+        "Vacancies",
+        "Invalidate",
+        "Invalid"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "31",
+      "summary": "Section 31: Filing of complaints with the Authority or the adjudicating officer.—(1) Any aggrieved",
+      "plain_english": "person may file a complaint with the Authority or the adjudicating officer, as the case may be, for any violation or contravention of the provisions of this Act or the rules and regulations made thereunder, against any promoter, allottee or real estate agent, as the case may be. Explanation.—For the purpose of this sub-section “person” shall include the association of allottees or any voluntary consumer association registered under any law for the time being in force. (2) The form, manner and fe",
+      "keywords": [
+        "Authority",
+        "Adjudicating",
+        "Officer",
+        "Person",
+        "Case",
+        "Association"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "32",
+      "summary": "Section 32: Functions of Authority for promotion of real estate sector.—The Authority shall in order to",
+      "plain_english": "facilitate the growth and promotion of a healthy, transparent, efficient and competitive real estate sector make recommendations to the appropriate Government or the competent authority, as the case may be, on,— (a) protection of interest of the allottees, promoter and real estate agent; (b) creation of a single window system for ensuring time bound project approvals and clearances for timely completion of the project; (c) creation of a transparent and robust grievance redressal mechanism agains",
+      "keywords": [
+        "Authority",
+        "Real",
+        "Estate",
+        "Promotion",
+        "Sector",
+        "Transparent"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "33",
+      "summary": "Section 33: Advocacy and awareness measures.—(1) The appropriate Government may, while formulating",
+      "plain_english": "a policy on real estate sector (including review of laws related to real estate sector) or any other matter, make a reference to the Authority for its opinion on possible effect of such policy or law on real estate sector and on the receipt of such a reference, the Authority shall within a period of sixty days of making such reference, give its opinion to the appropriate Government, which may thereafter take further action as it deems fit. (2) The opinion given by the Authority under sub-section",
+      "keywords": [
+        "Real",
+        "Estate",
+        "Sector",
+        "Reference",
+        "Authority",
+        "Opinion"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "34",
+      "summary": "Section 34: Functions of Authority.—The functions of the Authority shall include—",
+      "plain_english": "(a) to register and regulate real estate projects and real estate agents registered under this Act; (b) to publish and maintain a website of records, for public viewing, of all real estate projects for which registration has been given, with such details as may be prescribed, including information provided in the application for which registration has been granted; (c) to maintain a database, on its website, for public viewing, and enter the names and photographs of promoters as defaulters inclu",
+      "keywords": [
+        "Real",
+        "Estate",
+        "Functions",
+        "Authority",
+        "Projects",
+        "Maintain"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "35",
+      "summary": "Section 35: Powers of Authority to call for information, conduct investigations.—(1) Where the Authority",
+      "plain_english": "considers it expedient to do so, on a complaint or suomotu, relating to this Act or the rules or regulations made thereunder, it may, by order in writing and recording reasons therefor call upon any promoter or allottee or real estate agent, as the case may be, at any time to furnish in writing such information or explanation relating to its affairs as the Authority may require and appoint one or more persons to make an inquiry in relation to the affairs of any promoter or allottee or the real e",
+      "keywords": [
+        "Authority",
+        "Call",
+        "Information",
+        "Relating",
+        "Writing",
+        "Promoter"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "36",
+      "summary": "Section 36: Power to issue interim orders.—Where during an inquiry, the Authority is satisfied that an act in",
+      "plain_english": "contravention of this Act, or the rules and regulations made thereunder, has been committed and continues to be committed or that such act is about to be committed, the Authority may, by order, restrain any promoter, allottee or real estate agent from carrying on such act until the conclusion of such inquiry or until further orders, without giving notice to such party, where the Authority deems it necessary.",
+      "keywords": [
+        "Authority",
+        "Committed",
+        "Orders",
+        "Where",
+        "Inquiry",
+        "Until"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "37",
+      "summary": "Section 37: Powers of Authority to issue directions.—The Authority may, for the purpose of discharging its",
+      "plain_english": "functions under the provisions of this Act or rules or regulations made thereunder, issue such directions from time to time, to the promoters or allottees or real estate agents, as the case may be, as it may consider necessary and such directions shall be binding on all concerned.",
+      "keywords": [
+        "Directions",
+        "Authority",
+        "Issue",
+        "Time",
+        "Powers",
+        "Purpose"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "38",
+      "summary": "Section 38: Powers of Authority.—(1) The Authority shall have powers to impose penalty or interest, in",
+      "plain_english": "regard to any contravention of obligations cast upon the promoters, the allottees and the real estate agents, under this Act or the rules and the regulations made thereunder. (2) The Authority shall be guided by the principles of natural justice and, subject to the other provisions of this Act and the rules made thereunder, the Authority shall have powers to regulate its own procedure. (3) Where an issue is raised relating to agreement, action, omission, practice or procedure that— (a) has an ap",
+      "keywords": [
+        "Authority",
+        "Powers",
+        "Have",
+        "Rules",
+        "Made",
+        "Thereunder"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "39",
+      "summary": "Section 39: Rectification of orders.—The Authority may, at any time within a period of two years from the",
+      "plain_english": "date of the order made under this Act, with a view to rectifying any mistake apparent from the record, amend any order passed by it, and shall make such amendment, if the mistake is brought to its notice by the parties: Provided that no such amendment shall be made in respect of any order against which an appeal has been preferred under this Act: Provided further that the Authority shall not, while rectifying any mistake apparent from record, amend substantive part of its order passed under the",
+      "keywords": [
+        "Order",
+        "Mistake",
+        "Authority",
+        "Made",
+        "Rectifying",
+        "Apparent"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "40",
+      "summary": "Section 40: Recovery of interest or penalty or compensation and enforcement of order, etc.—(1) If a",
+      "plain_english": "promoter or an allottee or a real estate agent, as the case may be, fails to pay any interest or penalty or compensation imposed on him, by the adjudicating officer or the Regulatory Authority or the Appellate Authority, as the case may be, under this Act or the rules and regulations made thereunder, it shall be recoverable from such promoter or allottee or real estate agent, in such manner as may be prescribed as an arrears of land revenue. 23 (2) If any adjudicating officer or the Regulatory A",
+      "keywords": [
+        "Interest",
+        "Penalty",
+        "Compensation",
+        "Promoter",
+        "Allottee",
+        "Real"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "41",
+      "summary": "Section 41: Establishment of Central Advisory Council.—(1) The Central Government may, by",
+      "plain_english": "notification, establish with effect from such date as it may specify in such notification, a Council to be known as the Central Advisory Council. (2) The Minister to the Government of India in charge of the Ministry of the Central Government dealing with Housing shall be the ex officio Chairperson of the Central Advisory Council. (3) The Central Advisory Council shall consist of representatives of the Ministry of Finance, Ministry of Industry and Commerce, Ministry of Urban Development, Ministry",
+      "keywords": [
+        "Central",
+        "Council",
+        "Ministry",
+        "Advisory",
+        "Government",
+        "Notification"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "42",
+      "summary": "Section 42: Functions of Central Advisory Council.—(1) The functions of the Central Advisory Council",
+      "plain_english": "shall be to advise and recommend the Central Government,— (a) on all matters concerning the implementation of this Act; (b) on major questions of policy; (c) towards protection of consumer interest; (d) to foster the growth and development of the real estate sector; (e) on any other matter as may be assigned to it by the Central Government. (2) The Central Government may specify the rules to give effect to the recommendations of the Central Advisory Council on matters as provided under sub-secti",
+      "keywords": [
+        "Central",
+        "Advisory",
+        "Council",
+        "Government",
+        "Functions",
+        "Matters"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "43",
+      "summary": "Section 43: Establishment of Real Estate Appellate Tribunal.—(1) The appropriate Government shall",
+      "plain_english": "within a period of one year from the date of coming into force of this Act, by notification, establish an Appellate Tribunal to be known as the —(name of the State/Union territory) Real Estate Appellate Tribunal. (2) The appropriate Government may, if it deems necessary, establish one or more benches of the Appellate Tribunal, for various jurisdictions, in the State or Union territory, as the case may be. (3) Every bench of the Appellate Tribunal shall consist of at least one Judicial Member and",
+      "keywords": [
+        "Appellate",
+        "Tribunal",
+        "Real",
+        "Estate",
+        "Appropriate",
+        "Government"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "44",
+      "summary": "Section 44: Application for settlement of disputes and appeals to Appellate Tribunal.—(1) The",
+      "plain_english": "appropriate Government or the competent authority or any person aggrieved by any direction or order or decision of the Authority or the adjudicating officer may prefer an appeal to the Appellate Tribunal. (2) Every appeal made under sub-section (1) shall be preferred within a period of sixty days from the date on which a copy of the direction or order or decision made by the Authority or the adjudicating officer is received by the appropriate Government or the competent authority or the aggrieve",
+      "keywords": [
+        "Authority",
+        "Appellate",
+        "Tribunal",
+        "Appropriate",
+        "Government",
+        "Competent"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "45",
+      "summary": "Section 45: Composition of Appellate Tribunal.—The Appellate Tribunal shall consist of a Chairperson and",
+      "plain_english": "not less than two whole time Members of which one shall be a Judicial member and other shall be a Technical or Administrative Member, to be appointed by the appropriate Government. Explanation.—For the purposes of this Chapter,— (i) “Judicial Member” means a Member of the Appellate Tribunal appointed as such under clause (b) of sub-section (1) of section 46; (ii) “Technical or Administrative Member” means a Member of the Appellate Tribunal appointed as such under clause (c) of sub-section (1) of",
+      "keywords": [
+        "Member",
+        "Appellate",
+        "Tribunal",
+        "Appointed",
+        "Section",
+        "Judicial"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "46",
+      "summary": "Section 46: Qualifications for appointment of Chairperson and Members.—(1) A person shall not be",
+      "plain_english": "qualified for appointment as the Chairperson or a Member of the Appellate Tribunal unless he,— (a) in the case of Chairperson, is or has been a Judge of a High Court; and 25 (b) in the case of a Judicial Member he has held a judicial office in the territory of India for at least fifteen years or has been a member of the Indian Legal Service and has held the post of Additional Secretary of that service or any equivalent post, or has been an advocate for at least twenty years with experience in de",
+      "keywords": [
+        "Chairperson",
+        "Member",
+        "Been",
+        "Appointment",
+        "Case",
+        "Judicial"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "47",
+      "summary": "Section 47: Term of office of Chairperson and Members.—(1) The Chairperson of the Appellate Tribunal",
+      "plain_english": "or a Member of the Appellate Tribunal shall hold office, as such for a term not exceeding five years from the date on which he enters upon his office, but shall not be eligible for re-appointment: Provided that in case a person, who is or has been a Judge of a High Court, has been appointed as Chairperson of the Tribunal, he shall not hold office after he has attained the age of sixty-seven years: Provided further that no Judicial Member or Technical or Administrative Member shall hold office af",
+      "keywords": [
+        "Office",
+        "Chairperson",
+        "Tribunal",
+        "Member",
+        "Hold",
+        "Term"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "48",
+      "summary": "Section 48: Salary and allowances payable to Chairperson and Members.—(1) The salary and allowances",
+      "plain_english": "payable to, and the other terms and conditions of service of, the Chairperson and other Members shall be such as may be prescribed and shall not be varied to their disadvantage during their tenure. (2) Notwithstanding anything contained in sub-sections (1) and (2) of section 47, the Chairperson or a Member, as the case may be, may:— (a) relinquish his office by giving in writing to the appropriate Government a notice of not less than three months; (b) be removed from his office in accordance wit",
+      "keywords": [
+        "Chairperson",
+        "Salary",
+        "Allowances",
+        "Payable",
+        "Members",
+        "Other"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "49",
+      "summary": "Section 49: Removal of Chairperson and Member from office in certain circumstances.—(1) The",
+      "plain_english": "appropriate Government may, in consultation with the Chief Justice of the High Court, remove from office of the Chairperson or any Judicial Member or Technical or Administrative Member of the Appellate Tribunal, who— (a) has been adjudged as an insolvent; or (b) has been convicted of an offence which, in the opinion of the appropriate Government involves moral turpitude; or (c) has become physically or mentally incapable; or (d) has acquired such financial or other interest as is likely to affec",
+      "keywords": [
+        "Member",
+        "Chairperson",
+        "Office",
+        "Appropriate",
+        "Government",
+        "Been"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "50",
+      "summary": "Section 50: Restrictions on Chairperson or Judicial Member or Technical or Administrative Member",
+      "plain_english": "on employment after cessation of office.—(1) The Chairperson or Judicial Member or Technical or Administrative Member, ceasing to hold office as such shall not:— (a) accept any employment in, or connected with, the management or administration of, any person or organisation which has been associated with any work under this Act, from the date on which he ceases to hold office: Provided that nothing contained in this clause shall apply to any employment under the appropriate Government or a local",
+      "keywords": [
+        "Member",
+        "Employment",
+        "Office",
+        "Chairperson",
+        "Judicial",
+        "Technical"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "51",
+      "summary": "Section 51: Officers and other employees of Appellate Tribunal.—(1) The appropriate Government shall",
+      "plain_english": "provide the Appellate Tribunal with such officers and employees as it may deem fit. (2) The officers and employees of the Appellate Tribunal shall discharge their functions under the general superintendence of its Chairperson. (3) The salary and allowances payable to, and the other terms and conditions of service of, the officers and employees of the Appellate Tribunal shall be such as may be prescribed.",
+      "keywords": [
+        "Officers",
+        "Employees",
+        "Appellate",
+        "Tribunal",
+        "Other",
+        "Appropriate"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "52",
+      "summary": "Section 52: Vacancies.—If, for reason other than temporary absence, any vacancy occurs in the office of the",
+      "plain_english": "Chairperson or a Member of the Appellate Tribunal, the appropriate Government shall appoint another person in accordance with the provisions of this Act to fill the vacancy and the proceedings may be continued before the Appellate Tribunal from the stage at which the vacancy is filled. 27",
+      "keywords": [
+        "Vacancy",
+        "Appellate",
+        "Tribunal",
+        "Vacancies",
+        "Reason",
+        "Other"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "53",
+      "summary": "Section 53: Powers of Tribunal.—(1)The Appellate Tribunal shall not be bound by the procedure laid down",
+      "plain_english": "by the Code of Civil Procedure, 1908 (5 of 1908) but shall be guided by the principles of natural justice. (2) Subject to the provisions of this Act, the Appellate Tribunal shall have power to regulate its own procedure. (3) The Appellate Tribunal shall also not be bound by the rules of evidence contained in the Indian Evidence Act, 1872 (1 of 1872). (4) The Appellate Tribunal shall have, for the purpose of discharging its functions under this Act, the same powers as are vested in a civil court",
+      "keywords": [
+        "Tribunal",
+        "Appellate",
+        "Procedure",
+        "Powers",
+        "Bound",
+        "Civil"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "54",
+      "summary": "Section 54: Administrative powers of Chairperson of Appellate Tribunal.—The Chairperson shall have",
+      "plain_english": "powers of general superintendence and direction in the conduct of the affairs of Appellate Tribunal and he shall, in addition to presiding over the meetings of the Appellate Tribunal, exercise and discharge such administrative powers and functions of the Appellate Tribunal as may be prescribed.",
+      "keywords": [
+        "Appellate",
+        "Tribunal",
+        "Powers",
+        "Administrative",
+        "Chairperson",
+        "Have"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "55",
+      "summary": "Section 55: Vacancies, etc., not to invalidate proceeding of Appellate Tribunal.—No act or proceeding of",
+      "plain_english": "the Appellate Tribunal shall be invalid merely by reason of— (a) any vacancy in, or any defect in the constitution of, the Appellate Tribunal; or (b) any defect in the appointment of a person acting as a Member of the Appellate Tribunal; or (c) any irregularity in the procedure of the Appellate Tribunal not affecting the merits of the case.",
+      "keywords": [
+        "Appellate",
+        "Tribunal",
+        "Proceeding",
+        "Defect",
+        "Vacancies",
+        "Invalidate"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "56",
+      "summary": "Section 56: Right to legal representation.—The applicant or appellant may either appear in person or",
+      "plain_english": "authorise one or more chartered accountants or company secretaries or cost accountants or legal practitioners or any of its officers to present his or its case before the Appellate Tribunal or the Regulatory Authority or the adjudicating officer, as the case may be. Explanation.—For the purposes of this section,— (a) “chartered accountant” means a chartered accountant as defined in clause (b) of sub-section (1) of section 2 of the Chartered Accountants Act, 1949 (38 of 1949) or any other law for",
+      "keywords": [
+        "Chartered",
+        "Accountants",
+        "Section",
+        "Legal",
+        "Case",
+        "Accountant"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "57",
+      "summary": "Section 57: Orders passed by Appellate Tribunal to be executable as a decree.—(1) Every order made by",
+      "plain_english": "the Appellate Tribunal under this Act shall be executable by the Appellate Tribunal as a decree of civil court, and for this purpose, the Appellate Tribunal shall have all the powers of a civil court. (2) Notwithstanding anything contained in sub-section (1), the Appellate Tribunal may transmit any order made by it to a civil court having local jurisdiction and such civil court shall execute the order as if it were a decree made by the court.",
+      "keywords": [
+        "Appellate",
+        "Tribunal",
+        "Court",
+        "Civil",
+        "Decree",
+        "Order"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "58",
+      "summary": "Section 58: Appeal to High Court.—(1) Any person aggrieved by any decision or order of the Appellate",
+      "plain_english": "Tribunal, may, file an appeal to the High Court, within a period of sixty days from the date of communication of the decision or order of the Appellate Tribunal, to him, on any one or more of the grounds specified in section 100 of the Code of Civil Procedure, 1908 (5 of 1908): Provided that the High Court may entertain the appeal after the expiry of the said period of sixty days, if it is satisfied that the appellant was prevented by sufficient cause from preferring the appeal in time. Explanat",
+      "keywords": [
+        "Appeal",
+        "High",
+        "Court",
+        "Decision",
+        "Order",
+        "Appellate"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "59",
+      "summary": "Section 59: Punishment for nonregistration under section 3.—(1) If any promoter contravenes the",
+      "plain_english": "provisions of section 3, he shall be liable to a penalty which may extend up to ten per cent. of the estimated cost of the real estate project as determined by the Authority. (2) If any promoter does not comply with the orders, decisions or directions issued under sub-section (1) or continues to violate the provisions of section 3, he shall be punishable with imprisonment for a term which may extend up to three years or with fine which may extend up to a further ten per cent. of the estimated co",
+      "keywords": [
+        "Section",
+        "Which",
+        "Extend",
+        "Promoter",
+        "Provisions",
+        "Cent"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "60",
+      "summary": "Section 60: Penalty for contravention of section 4.—If any promoter provides false information or",
+      "plain_english": "contravenes the provisions of section 4, he shall be liable to a penalty which may extend up to five per cent. of the estimated cost of the real estate project, as determined by the Authority.",
+      "keywords": [
+        "Penalty",
+        "Section",
+        "Contravention",
+        "Promoter",
+        "Provides",
+        "False"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "61",
+      "summary": "Section 61: Penalty for contravention of other provisions of this Act.—If any promoter contravenes any",
+      "plain_english": "other provisions of this Act, other than that provided under section 3 or section 4, or the rules or regulations made thereunder, he shall be liable to a penalty which may extend up to five per cent. of the estimated cost of the real estate project as determined by the Authority.",
+      "keywords": [
+        "Other",
+        "Penalty",
+        "Provisions",
+        "Section",
+        "Contravention",
+        "Promoter"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "62",
+      "summary": "Section 62: Penalty for nonregistration and contravention under sections 9 and 10.—If any real estate",
+      "plain_english": "agent fails to comply with or contravenes the provisions of section 9 or section 10, he shall be liable to a penalty of ten thousand rupees for every day during which such default continues, which may cumulatively extend up to five per cent. of the cost of plot, apartment or building, as the case may be, of the real estate project, for which the sale or purchase has been facilitated as determined by the Authority.",
+      "keywords": [
+        "Which",
+        "Penalty",
+        "Real",
+        "Estate",
+        "Section",
+        "Nonregistration"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "63",
+      "summary": "Section 63: Penalty for failure to comply with orders of Authority by promoter.—If any promoter, who",
+      "plain_english": "fails to comply with, or contravenes any of the orders or directions of the Authority, he shall be liable to a penalty for every day during which such default continues, which may cumulatively extend up to five per cent., of the estimated cost of the real estate project as determined by the Authority.",
+      "keywords": [
+        "Authority",
+        "Penalty",
+        "Comply",
+        "Orders",
+        "Promoter",
+        "Which"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "64",
+      "summary": "Section 64: Penalty for failure to comply with orders of Appellate Tribunal by promoter.—If any",
+      "plain_english": "promoter, who fails to comply with, or contravenes any of the orders, decisions or directions of the 29 Appellate Tribunal, he shall be punishable with imprisonment for a term which may extend up to three years or with fine for every day during which such default continues, which may cumulatively extend up to ten per cent. of the estimated cost of the real estate project, or with both.",
+      "keywords": [
+        "Which",
+        "Comply",
+        "Orders",
+        "Appellate",
+        "Tribunal",
+        "Promoter"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "65",
+      "summary": "Section 65: Penalty for failure to comply with orders of Authority by real estate agent.—If any real estate",
+      "plain_english": "agent, who fails to comply with, or contravenes any of the orders or directions of the Authority, he shall be liable to a penalty for every day during which such default continues, which may cumulatively extend up to five per cent., of the estimated cost of plot, apartment or building, as the case may be, of the real estate project, for which the sale or purchase has been facilitated and as determined by the Authority.",
+      "keywords": [
+        "Authority",
+        "Real",
+        "Estate",
+        "Which",
+        "Penalty",
+        "Comply"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "66",
+      "summary": "Section 66: Penalty for failure to comply with orders of Appellate Tribunal by real estate agent.—If any",
+      "plain_english": "real estate agent, who fails to comply with, or contravenes any of the orders, decisions or directions of the Appellate Tribunal, he shall be punishable with imprisonment for a term which may extend up to one year or with fine for every day during which such default continues, which may cumulatively extend up to ten per cent. of the estimated cost of plot, apartment or building, as the case may be, of the real estate project, for which the sale or purchase has been facilitated, or with both.",
+      "keywords": [
+        "Which",
+        "Real",
+        "Estate",
+        "Comply",
+        "Orders",
+        "Appellate"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "67",
+      "summary": "Section 67: Penalty for failure to comply with orders of Authority by allottee.—If any allottee, who fails",
+      "plain_english": "to comply with, or contravenes any of the orders, decisions or directions of the Authority he shall be liable to a penalty for the period during which such default continues, which may cumulatively extend up to five per cent. of the plot, apartment or building cost, as the case may be, as determined by the Authority.",
+      "keywords": [
+        "Authority",
+        "Penalty",
+        "Comply",
+        "Orders",
+        "Allottee",
+        "Which"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "68",
+      "summary": "Section 68: Penalty for failure to comply with orders of Appellate Tribunal by allottee.—If any allottee",
+      "plain_english": "who fails to comply with, or contravenes any of the orders or directions of the Appellate Tribunal, as the case may be, he shall be punishable with imprisonment for a term which may extend up to one year or with fine for every day during which such default continues, which may cumulatively extend up to ten per cent. of the plot, apartment or building cost, as the case may be, or with both.",
+      "keywords": [
+        "Which",
+        "Comply",
+        "Orders",
+        "Appellate",
+        "Tribunal",
+        "Allottee"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "69",
+      "summary": "Section 69: Offences by companies.—(1) Where an Offence under this Act has been committed by a",
+      "plain_english": "company, every person who, at the time, the offence was committed was in charge of, or was responsible to the company for the conduct of, the business of the company, as well as the company, shall be deemed to be guilty of the offence and shall be liable to be proceeded against and punished accordingly: Provided that nothing contained in this sub-section, shall render any such person liable to any punishment under this Act if he proves that the offence was committed without his knowledge or that",
+      "keywords": [
+        "Offence",
+        "Company",
+        "Committed",
+        "Person",
+        "Liable",
+        "Offences"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "70",
+      "summary": "Section 70: Compounding of offences.—Notwithstanding anything contained in the Code of Criminal",
+      "plain_english": "Procedure, 1973 (2 of 1974), if any person is punished with imprisonment under this Act, the punishment may, either before or after the institution of the prosecution, be compounded by the court on such terms and conditions and on payment of such sums as may be prescribed: Provided that the sum prescribed shall not, in any case, exceed the maximum amount of the fine which may be imposed for the offence so compounded.",
+      "keywords": [
+        "Compounded",
+        "Prescribed",
+        "Compounding",
+        "Offences",
+        "Notwithstanding",
+        "Anything"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "71",
+      "summary": "Section 71: Power to adjudicate.—(1) For the purpose of adjudging compensation under sections 12, 14, 18",
+      "plain_english": "and section 19, the Authority shall appoint, in consultation with the appropriate Government, one or more judicial officer as deemed necessary, who is or has been a District Judge to be an adjudicating officer for 30 holding an inquiry in the prescribed manner, after giving any person concerned a reasonable opportunity of being heard: Provided that any person whose complaint in respect of matters covered under sections 12, 14, 18 and section 19 is pending before the Consumer Disputes Redressal F",
+      "keywords": [
+        "Sections",
+        "Section",
+        "Officer",
+        "Person",
+        "Power",
+        "Adjudicate"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "72",
+      "summary": "Section 72: Factors to be taken into account by the adjudicating officer.—While adjudging the quantum",
+      "plain_english": "of compensation or interest, as the case may be, under section 71, the adjudicating officer shall have due regard to the following factors, namely:— (a) the amount of disproportionate gain or unfair advantage, wherever quantifiable, made as a result of the default; (b) the amount of loss caused as a result of the default; (c) the repetitive nature of the default; (d) such other factors which the adjudicating officer considers necessary to the case in furtherance of justice. FINANCE, ACCOUNTS, AU",
+      "keywords": [
+        "Factors",
+        "Adjudicating",
+        "Officer",
+        "Default",
+        "Case",
+        "Amount"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "73",
+      "summary": "Section 73: Grants and loans by Central Government.—The Central Government may, after due",
+      "plain_english": "appropriation made by Parliament in this behalf, make to the Authority grants and loans of such sums of money as that Government may consider necessary.",
+      "keywords": [
+        "Government",
+        "Grants",
+        "Loans",
+        "Central",
+        "Appropriation",
+        "Made"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "74",
+      "summary": "Section 74: Grants and loans by State Government.—The State Government may, after due appropriation",
+      "plain_english": "made by State Legislature by law in this behalf, make to the Authority, grants and loans of such sums of money as the State Government may think fit for being utilised for the purposes of this Act.",
+      "keywords": [
+        "State",
+        "Government",
+        "Grants",
+        "Loans",
+        "Appropriation",
+        "Made"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "75",
+      "summary": "Section 75: Constitution of Fund.—(1) The appropriate Government shall constitute a fund to be called the",
+      "plain_english": "'Real Estate Regulatory Fund’ and there shall be credited thereto,— (a) all Government grants received by the Authority; (b) the fees received under this Act; (c) the interest accrued on the amounts referred to in clauses (a) to (b). 31 (2) The Fund shall be applied for meeting— (a) the salaries and allowances payable to the Chairperson and other Members, the adjudicating officer and the administrative expenses including the salaries and allowances payable to the officers and other employees of",
+      "keywords": [
+        "Fund",
+        "Government",
+        "Received",
+        "Salaries",
+        "Allowances",
+        "Payable"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "76",
+      "summary": "Section 76: Crediting sums realised by way of penalties to Consolidated Fund of India or State",
+      "plain_english": "account.—(1) All sums realised, by way of penalties, imposed by the Appellate Tribunal or the Authority, in the Union territories, shall be credited to the Consolidated Fund of India. (2) All sums realised, by way of penalties, imposed by the Appellate Tribunal or the Authority, in a State, shall be credited to such account as the State Government may specify.",
+      "keywords": [
+        "Sums",
+        "Realised",
+        "Penalties",
+        "State",
+        "Consolidated",
+        "Fund"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "77",
+      "summary": "Section 77: Budget, accounts and audit.—(1) The Authority shall prepare a budget, maintain proper",
+      "plain_english": "accounts and other relevant records and prepare an annual statement of accounts in such form as may be prescribed by the appropriate Government in consultation with the Comptroller and AuditorGeneral of India. (2) The accounts of the Authority shall be audited by the Comptroller and AuditorGeneral of India at such intervals as may be specified by him and any expenditure incurred in connection with such audit shall be payable by the Authority to the Comptroller and AuditorGeneral of India. (3) Th",
+      "keywords": [
+        "Accounts",
+        "Authority",
+        "Comptroller",
+        "Auditorgeneral",
+        "India",
+        "Budget"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "78",
+      "summary": "Section 78: Annual report.—(1) The Authority shall prepare once in every year, in such form and at such",
+      "plain_english": "time as may be prescribed by the appropriate Government,— (a) a description of all the activities of the Authority for the previous year; (b) the annual accounts for the previous year; and (c) theprogrammes of work for the coming year. (2) A copy of the report received under sub-section (1) shall be laid, as soon as may be after it is received, before each House of Parliament or, as the case may be, before the State Legislature or the Union Territory Legislature, where it consists of two Houses,",
+      "keywords": [
+        "Year",
+        "Annual",
+        "Report",
+        "Authority",
+        "Previous",
+        "Received"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "79",
+      "summary": "Section 79: Bar of jurisdiction.—No civil court shall have jurisdiction to entertain any suit or proceeding in",
+      "plain_english": "respect of any matter which the Authority or the adjudicating officer or the Appellate Tribunal is empowered by or under this Act to determine and no injunction shall be granted by any court or other authority in respect of any action taken or to be taken in pursuance of any power conferred by or under this Act.",
+      "keywords": [
+        "Jurisdiction",
+        "Court",
+        "Respect",
+        "Authority",
+        "Taken",
+        "Civil"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "80",
+      "summary": "Section 80: Cognizance of offences.—(1) No court shall take cognizance of any offence punishable under",
+      "plain_english": "this Act or the rules or regulations made thereunder save on a complaint in writing made by the Authority or by any officer of the Authority duly authorised by it for this purpose. (2) No court inferior to that of a Metropolitan Magistrate or a Judicial Magistrate of the first class shall try any offence punishable under this Act.",
+      "keywords": [
+        "Cognizance",
+        "Court",
+        "Offence",
+        "Punishable",
+        "Made",
+        "Authority"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "81",
+      "summary": "Section 81: Delegation.—The Authority may, by general or special order in writing, delegate to any member",
+      "plain_english": "officer of the Authority or any other person subject to such conditions, if any, as may be specified in the order, such of its powers and functions under this Act (except the power to make regulations under section 85), as it may deem necessary.",
+      "keywords": [
+        "Authority",
+        "Order",
+        "Delegation",
+        "General",
+        "Special",
+        "Writing"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "82",
+      "summary": "Section 82: Power of appropriate Government to supersede Authority.—(1) If, at any time, the",
+      "plain_english": "appropriate Government is of the opinion,— (a) that, on account of circumstances beyond the control of the Authority, it is unable to discharge the functions or perform the duties imposed on it by or under the provisions of this Act; or (b) that the Authority has persistently defaulted in complying with any direction given by the appropriate Government under this Act or in the discharge of the functions or performance of the duties imposed on it by or under the provisions of this Act and as a re",
+      "keywords": [
+        "Appropriate",
+        "Government",
+        "Authority",
+        "Discharge",
+        "Functions",
+        "Duties"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "83",
+      "summary": "Section 83: Powers of appropriate Government to issue directions to Authority and obtain reports and",
+      "plain_english": "returns.—(1) Without prejudice to the foregoing provisions of this Act, the Authority shall, in exercise of its powers and in performance of its functions under this Act, be bound by such directions on questions of policy, as the appropriate Government may give in writing to it from time to time: Provided that the Authority shall, as far as practicable, be given an opportunity to express its views before any direction is given under this sub-section. (2) If any dispute arises between the appropr",
+      "keywords": [
+        "Authority",
+        "Powers",
+        "Appropriate",
+        "Government",
+        "Directions",
+        "Time"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "84",
+      "summary": "Section 84: Power of appropriate Government to make rules.—(1) The appropriate Government shall",
+      "plain_english": "within a period of six months of the commencement of this Act, by notification, make rules for carrying out the provisions of this Act. (2) In particular, and without prejudice to the generality of the foregoing power, such rules may provide for all or any of the following matters, namely:— 1[(a) the form, time and manner of making application and fees payable therewith under sub-section (1) of section 4; (ab) information and documents for application to the Authority for registration under clau",
+      "keywords": [
+        "Rules",
+        "Power",
+        "Appropriate",
+        "Government",
+        "Make",
+        "Application"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "85",
+      "summary": "Section 85: Power to make regulations.—(1) The Authority shall, within a period of three months of its",
+      "plain_english": "establishment, by notification, make regulations, consistent with this Act and the rules made thereunder to carry out the purposes of this Act. (2) In particular, and without prejudice to the generality of the foregoing power, such regulations may provide for all or any of the following matters, namely:— 2* * * * * (c) such other information and documents required under clause (f) of sub-section (1) of section 11; 1. Ins. by the Real Estate (Regulation and Development) Removal of Difficulties Or",
+      "keywords": [
+        "Regulations",
+        "Power",
+        "Make",
+        "Section",
+        "Authority",
+        "Period"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "86",
+      "summary": "Section 86: Laying of rules.—(1) Every rule made by the Central Government, every regulation made by the",
+      "plain_english": "Authority under the Union territoryof Delhi and the Union territories without Legislature and every notification issued by the Central Government under this Act shall be laid, as soon as may be after it is made, before each House of Parliament, while it is in session, for a total period of thirty days which may be comprised in one session or in two or more successive sessions, and if, before the expiry of the session immediately following the session or the successive sessions aforesaid, both Ho",
+      "keywords": [
+        "Session",
+        "Made",
+        "Central",
+        "Government",
+        "Union",
+        "Successive"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "87",
+      "summary": "Section 87: Members, etc., to be public servants.—The Chairperson, Members and other officers and",
+      "plain_english": "employees of the Authority, and the Appellate Tribunal and the adjudicating officer shall be deemed to be public servants within the meaning of section 21 of the Indian Penal Code (45 of 1860).",
+      "keywords": [
+        "Members",
+        "Public",
+        "Servants",
+        "Chairperson",
+        "Other",
+        "Officers"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "88",
+      "summary": "Section 88: Application of other laws not barred.—The provisions of this Act shall be in addition to, and",
+      "plain_english": "not in derogation of, the provisions of any other law for the time being in force.",
+      "keywords": [
+        "Other",
+        "Provisions",
+        "Application",
+        "Laws",
+        "Barred",
+        "Addition"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "89",
+      "summary": "Section 89: Act to have overriding effect.—The provisions of this Act shall have effect, notwithstanding",
+      "plain_english": "anything inconsistent therewith contained in any other law for the time being in force.",
+      "keywords": [
+        "Have",
+        "Effect",
+        "Overriding",
+        "Provisions",
+        "Notwithstanding",
+        "Anything"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "90",
+      "summary": "Section 90: Protection of action taken in good faith.—No suit, prosecution or other legal proceedings shall",
+      "plain_english": "lie against the appropriate Government or the Authority or any officer of the appropriate Government or any member, officer or other employees of the Authority for anything which is in good faith done or intended to be done under this Act or the rules or regulations made thereunder.",
+      "keywords": [
+        "Good",
+        "Faith",
+        "Other",
+        "Appropriate",
+        "Government",
+        "Authority"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "91",
+      "summary": "Section 91: Power to remove difficulties.—(1) If any difficulty arises in giving effect to the provisions of",
+      "plain_english": "this Act, the Central Government may, by order, published in the Official Gazette, make such provisions not inconsistent with the provisions of this Act as may appear to be necessary for removing the difficulty: Provided that no order shall be made under this section after the expiry of two years from the date of the commencement of this Act. (2) Every order made under this section shall be laid, as soon as may be after it is made, before each House of Parliament.",
+      "keywords": [
+        "Provisions",
+        "Order",
+        "Made",
+        "Difficulty",
+        "Section",
+        "Power"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "92",
+      "summary": "Section 92: Repeal.—The Maharashtra Housing (Regulation and Development) Act, 2012 (Maharashtra Act",
+      "plain_english": "No. II of 2014) is hereby repealed. 1. Omitted by the Real Estate (Regulation and Development) Removal of Difficulties Order, 2016 [S.O. 3347 (E)], (w.e.f. 28-10-2016). 36",
+      "keywords": [
+        "Maharashtra",
+        "Regulation",
+        "Development",
+        "Repeal",
+        "Housing",
+        "Hereby"
+      ],
+      "legal_topics": [
+        "Real Estate Law"
+      ],
+      "related": []
+    }
+  ]
+}

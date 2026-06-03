@@ -1,0 +1,164 @@
+[
+  {
+    "id": "constitution",
+    "label": "Constitution of India",
+    "domain": "Constitutional Law",
+    "provision_count": 459,
+    "strategy": "constitution_with_parts",
+    "extraction_seconds": 80.37,
+    "error": null
+  },
+  {
+    "id": "ica_1872",
+    "label": "Indian Contract Act, 1872",
+    "domain": "Contract Law",
+    "provision_count": 317,
+    "strategy": "old_act_multiline",
+    "extraction_seconds": 29.59,
+    "error": null
+  },
+  {
+    "id": "tpa_1882",
+    "label": "Transfer of Property Act, 1882",
+    "domain": "Property Law",
+    "provision_count": 279,
+    "strategy": "old_act_multiline",
+    "extraction_seconds": 21.93,
+    "error": null
+  },
+  {
+    "id": "sra_1963",
+    "label": "Specific Relief Act, 1963",
+    "domain": "Civil Remedies",
+    "provision_count": 94,
+    "strategy": "default_numbered",
+    "extraction_seconds": 4.59,
+    "error": null
+  },
+  {
+    "id": "cpa_2019",
+    "label": "Consumer Protection Act, 2019",
+    "domain": "Consumer Law",
+    "provision_count": 212,
+    "strategy": "default_numbered",
+    "extraction_seconds": 10.43,
+    "error": null
+  },
+  {
+    "id": "it_act_2000",
+    "label": "Information Technology Act, 2000",
+    "domain": "Cyber Law",
+    "provision_count": 214,
+    "strategy": "default_numbered",
+    "extraction_seconds": 8.81,
+    "error": null
+  },
+  {
+    "id": "family_laws",
+    "label": "Family Courts Act, 1984",
+    "domain": "Family Law",
+    "provision_count": 46,
+    "strategy": "default_numbered",
+    "extraction_seconds": 1.79,
+    "error": null
+  },
+  {
+    "id": "labour_employment",
+    "label": "Labour & Employment Laws",
+    "domain": "Labour Law",
+    "provision_count": 251,
+    "strategy": "multi_act_compilation",
+    "extraction_seconds": 30.51,
+    "error": null
+  },
+  {
+    "id": "rera",
+    "label": "Real Estate (Regulation and Development) Act, 2016",
+    "domain": "Real Estate Law",
+    "provision_count": 180,
+    "strategy": "default_numbered",
+    "extraction_seconds": 10.03,
+    "error": null
+  },
+  {
+    "id": "taxation",
+    "label": "Income Tax Act, 1961",
+    "domain": "Tax Law",
+    "provision_count": 1581,
+    "strategy": "default_numbered",
+    "extraction_seconds": 415.94,
+    "error": null
+  },
+  {
+    "id": "corporate",
+    "label": "Companies Act, 2013",
+    "domain": "Corporate Law",
+    "provision_count": 1217,
+    "strategy": "default_numbered",
+    "extraction_seconds": 125.41,
+    "error": null
+  },
+  {
+    "id": "securities",
+    "label": "Securities Laws",
+    "domain": "Corporate Law",
+    "provision_count": 104,
+    "strategy": "default_numbered",
+    "extraction_seconds": 7.06,
+    "error": null
+  },
+  {
+    "id": "motor_vehicles",
+    "label": "Motor Vehicles Act",
+    "domain": "Transport Law",
+    "provision_count": 453,
+    "strategy": "default_numbered",
+    "extraction_seconds": 21.61,
+    "error": null
+  },
+  {
+    "id": "bns_2023",
+    "label": "Bharatiya Nyaya Sanhita, 2023",
+    "domain": "Criminal Law",
+    "provision_count": 46,
+    "strategy": "default_numbered",
+    "extraction_seconds": 27.69,
+    "error": null
+  },
+  {
+    "id": "bnss_2023",
+    "label": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+    "domain": "Criminal Procedure",
+    "provision_count": 68,
+    "strategy": "default_numbered",
+    "extraction_seconds": 33.2,
+    "error": null
+  },
+  {
+    "id": "bsa_2023",
+    "label": "Bharatiya Sakshya Adhiniyam, 2023",
+    "domain": "Evidence Law",
+    "provision_count": 46,
+    "strategy": "default_numbered",
+    "extraction_seconds": 11.25,
+    "error": null
+  },
+  {
+    "id": "gdr_rules_2014",
+    "label": "Companies (Issue of Global Depository Receipts) Rules, 2014",
+    "domain": "Corporate Law",
+    "provision_count": 4,
+    "strategy": "rules_with_inline_clauses",
+    "extraction_seconds": 0.25,
+    "error": null
+  },
+  {
+    "id": "dv_act_2005",
+    "label": "Protection of Women from Domestic Violence Act, 2005",
+    "domain": "Family Law",
+    "provision_count": 70,
+    "strategy": "default_numbered",
+    "extraction_seconds": 2.07,
+    "error": null
+  }
+]

@@ -1,0 +1,2756 @@
+[
+  {
+    "idx": 0,
+    "number": "1",
+    "title": "Name and territory of the Union",
+    "page": 4
+  },
+  {
+    "idx": 1,
+    "number": "2",
+    "title": "Admission or establishment of new States",
+    "page": 4
+  },
+  {
+    "idx": 2,
+    "number": "3",
+    "title": "Formation of new States and alteration of areas, boundaries or",
+    "page": 4
+  },
+  {
+    "idx": 3,
+    "number": "4",
+    "title": "Laws made under articles 2 and 3 to provide for the amendment of",
+    "page": 4
+  },
+  {
+    "idx": 4,
+    "number": "5",
+    "title": "Citizenship at the commencement of the Constitution",
+    "page": 4
+  },
+  {
+    "idx": 5,
+    "number": "6",
+    "title": "Rights of citizenship of certain persons who have migrated to",
+    "page": 4
+  },
+  {
+    "idx": 6,
+    "number": "7",
+    "title": "Rights of citizenship of certain migrants to Pakistan",
+    "page": 4
+  },
+  {
+    "idx": 7,
+    "number": "8",
+    "title": "Rights of citizenship of certain persons of Indian origin residing",
+    "page": 4
+  },
+  {
+    "idx": 8,
+    "number": "9",
+    "title": "Persons voluntarily acquiring citizenship of a foreign State not to",
+    "page": 4
+  },
+  {
+    "idx": 9,
+    "number": "10",
+    "title": "Continuance of the rights of citizenship",
+    "page": 4
+  },
+  {
+    "idx": 10,
+    "number": "11",
+    "title": "Parliament to regulate the right of citizenship by law",
+    "page": 4
+  },
+  {
+    "idx": 11,
+    "number": "13",
+    "title": "Laws inconsistent with or in derogation of the fundamental",
+    "page": 5
+  },
+  {
+    "idx": 12,
+    "number": "14",
+    "title": "Equality before law",
+    "page": 5
+  },
+  {
+    "idx": 13,
+    "number": "15",
+    "title": "Prohibition of discrimination on grounds of religion, race, caste",
+    "page": 5
+  },
+  {
+    "idx": 14,
+    "number": "16",
+    "title": "Equality of opportunity in matters of public employment",
+    "page": 5
+  },
+  {
+    "idx": 15,
+    "number": "17",
+    "title": "Abolition of Untouchability",
+    "page": 5
+  },
+  {
+    "idx": 16,
+    "number": "18",
+    "title": "Abolition of titles",
+    "page": 5
+  },
+  {
+    "idx": 17,
+    "number": "19",
+    "title": "Protection of certain rights regarding freedom of speech, etc",
+    "page": 5
+  },
+  {
+    "idx": 18,
+    "number": "20",
+    "title": "Protection in respect of conviction for offences",
+    "page": 5
+  },
+  {
+    "idx": 19,
+    "number": "21",
+    "title": "Protection of life and personal liberty",
+    "page": 5
+  },
+  {
+    "idx": 20,
+    "number": "21A",
+    "title": "Right to education",
+    "page": 5
+  },
+  {
+    "idx": 21,
+    "number": "22",
+    "title": "Protection against arrest and detention in certain cases",
+    "page": 5
+  },
+  {
+    "idx": 22,
+    "number": "23",
+    "title": "Prohibition of traffic in human beings and forced labour",
+    "page": 5
+  },
+  {
+    "idx": 23,
+    "number": "24",
+    "title": "Prohibition of employment of children in factories, etc",
+    "page": 5
+  },
+  {
+    "idx": 24,
+    "number": "25",
+    "title": "Freedom of conscience and free profession, practice and",
+    "page": 5
+  },
+  {
+    "idx": 25,
+    "number": "26",
+    "title": "Freedom to manage religious affairs",
+    "page": 5
+  },
+  {
+    "idx": 26,
+    "number": "27",
+    "title": "Freedom as to payment of taxes for promotion of any particular",
+    "page": 5
+  },
+  {
+    "idx": 27,
+    "number": "28",
+    "title": "Freedom as to attendance at religious instruction or religious",
+    "page": 5
+  },
+  {
+    "idx": 28,
+    "number": "29",
+    "title": "Protection of interests of minorities",
+    "page": 6
+  },
+  {
+    "idx": 29,
+    "number": "30",
+    "title": "Right of minorities to establish and administer educational",
+    "page": 6
+  },
+  {
+    "idx": 30,
+    "number": "31A",
+    "title": "Saving of Laws providing for acquisition of estates, etc",
+    "page": 6
+  },
+  {
+    "idx": 31,
+    "number": "31B",
+    "title": "Validation of certain Acts and Regulations",
+    "page": 6
+  },
+  {
+    "idx": 32,
+    "number": "31C",
+    "title": "Saving of laws giving effect to certain directive principles",
+    "page": 6
+  },
+  {
+    "idx": 33,
+    "number": "32",
+    "title": "Remedies for enforcement of rights conferred by this Part",
+    "page": 6
+  },
+  {
+    "idx": 34,
+    "number": "33",
+    "title": "Power of Parliament to modify the rights conferred by this Part",
+    "page": 6
+  },
+  {
+    "idx": 35,
+    "number": "34",
+    "title": "Restriction on rights conferred by this Part while martial law is",
+    "page": 6
+  },
+  {
+    "idx": 36,
+    "number": "35",
+    "title": "Legislation to give effect to the provisions of this Part",
+    "page": 6
+  },
+  {
+    "idx": 37,
+    "number": "37",
+    "title": "Application of the principles contained in this Part",
+    "page": 6
+  },
+  {
+    "idx": 38,
+    "number": "38",
+    "title": "State to secure a social order for the promotion of welfare of the",
+    "page": 6
+  },
+  {
+    "idx": 39,
+    "number": "39",
+    "title": "Certain principles of policy to be followed by the State",
+    "page": 6
+  },
+  {
+    "idx": 40,
+    "number": "39A",
+    "title": "Equal justice and free legal aid",
+    "page": 6
+  },
+  {
+    "idx": 41,
+    "number": "40",
+    "title": "Organisation of village panchayats",
+    "page": 7
+  },
+  {
+    "idx": 42,
+    "number": "41",
+    "title": "Right to work, to education and to public assistance in certain",
+    "page": 7
+  },
+  {
+    "idx": 43,
+    "number": "42",
+    "title": "Provision for just and humane conditions of work and maternity",
+    "page": 7
+  },
+  {
+    "idx": 44,
+    "number": "43",
+    "title": "Living wage, etc., for workers",
+    "page": 7
+  },
+  {
+    "idx": 45,
+    "number": "43A",
+    "title": "Participation of workers in management of Industries",
+    "page": 7
+  },
+  {
+    "idx": 46,
+    "number": "43B",
+    "title": "Promotion of co-operative societies",
+    "page": 7
+  },
+  {
+    "idx": 47,
+    "number": "44",
+    "title": "Uniform civil code for the citizens",
+    "page": 7
+  },
+  {
+    "idx": 48,
+    "number": "45",
+    "title": "Provision for early childhood care and education to children",
+    "page": 7
+  },
+  {
+    "idx": 49,
+    "number": "46",
+    "title": "Promotion of educational and economic interests of Scheduled",
+    "page": 7
+  },
+  {
+    "idx": 50,
+    "number": "47",
+    "title": "Duty of the State to raise the level of nutrition and the standard",
+    "page": 7
+  },
+  {
+    "idx": 51,
+    "number": "48",
+    "title": "Organisation of agriculture and animal husbandry",
+    "page": 7
+  },
+  {
+    "idx": 52,
+    "number": "48A",
+    "title": "Protection and improvement of environment and safeguarding of",
+    "page": 7
+  },
+  {
+    "idx": 53,
+    "number": "49",
+    "title": "Protection of monuments and places and objects of national",
+    "page": 7
+  },
+  {
+    "idx": 54,
+    "number": "50",
+    "title": "Separation of judiciary from executive",
+    "page": 7
+  },
+  {
+    "idx": 55,
+    "number": "51",
+    "title": "Promotion of international peace and security",
+    "page": 7
+  },
+  {
+    "idx": 56,
+    "number": "51A",
+    "title": "Fundamental duties",
+    "page": 7
+  },
+  {
+    "idx": 57,
+    "number": "52",
+    "title": "The President of India",
+    "page": 7
+  },
+  {
+    "idx": 58,
+    "number": "53",
+    "title": "Executive power of the Union",
+    "page": 7
+  },
+  {
+    "idx": 59,
+    "number": "54",
+    "title": "Election of President",
+    "page": 7
+  },
+  {
+    "idx": 60,
+    "number": "55",
+    "title": "Manner of election of President",
+    "page": 8
+  },
+  {
+    "idx": 61,
+    "number": "56",
+    "title": "Term of office of President",
+    "page": 8
+  },
+  {
+    "idx": 62,
+    "number": "57",
+    "title": "Eligibility for re-election",
+    "page": 8
+  },
+  {
+    "idx": 63,
+    "number": "58",
+    "title": "Qualifications for election as President",
+    "page": 8
+  },
+  {
+    "idx": 64,
+    "number": "59",
+    "title": "Conditions of President’s office",
+    "page": 8
+  },
+  {
+    "idx": 65,
+    "number": "60",
+    "title": "Oath or affirmation by the President",
+    "page": 8
+  },
+  {
+    "idx": 66,
+    "number": "61",
+    "title": "Procedure for impeachment of the President",
+    "page": 8
+  },
+  {
+    "idx": 67,
+    "number": "62",
+    "title": "Time of holding election to fill vacancy in the office of President",
+    "page": 8
+  },
+  {
+    "idx": 68,
+    "number": "63",
+    "title": "The Vice-President of India",
+    "page": 8
+  },
+  {
+    "idx": 69,
+    "number": "64",
+    "title": "The Vice-President to be ex officio Chairman of the Council of",
+    "page": 8
+  },
+  {
+    "idx": 70,
+    "number": "65",
+    "title": "The Vice-President to act as President or to discharge his",
+    "page": 8
+  },
+  {
+    "idx": 71,
+    "number": "66",
+    "title": "Election of Vice-President",
+    "page": 8
+  },
+  {
+    "idx": 72,
+    "number": "67",
+    "title": "Term of office of Vice-President",
+    "page": 8
+  },
+  {
+    "idx": 73,
+    "number": "68",
+    "title": "Time of holding election to fill vacancy in the office of Vice-President",
+    "page": 8
+  },
+  {
+    "idx": 74,
+    "number": "69",
+    "title": "Oath or affirmation by the Vice-President",
+    "page": 8
+  },
+  {
+    "idx": 75,
+    "number": "70",
+    "title": "Discharge of President’s functions in other contingencies",
+    "page": 8
+  },
+  {
+    "idx": 76,
+    "number": "71",
+    "title": "Matters relating to, or connected with, the election of a President",
+    "page": 8
+  },
+  {
+    "idx": 77,
+    "number": "72",
+    "title": "Power of President to grant pardons, etc., and to suspend, remit",
+    "page": 8
+  },
+  {
+    "idx": 78,
+    "number": "73",
+    "title": "Extent of executive power of the Union",
+    "page": 8
+  },
+  {
+    "idx": 79,
+    "number": "74",
+    "title": "Council of Ministers to aid and advise President",
+    "page": 8
+  },
+  {
+    "idx": 80,
+    "number": "75",
+    "title": "Other provisions as to Ministers",
+    "page": 8
+  },
+  {
+    "idx": 81,
+    "number": "76",
+    "title": "Attorney-General for India",
+    "page": 8
+  },
+  {
+    "idx": 82,
+    "number": "77",
+    "title": "Conduct of business of the Government of India",
+    "page": 9
+  },
+  {
+    "idx": 83,
+    "number": "78",
+    "title": "Duties of Prime Minister as respects the furnishing of",
+    "page": 9
+  },
+  {
+    "idx": 84,
+    "number": "79",
+    "title": "Constitution of Parliament",
+    "page": 9
+  },
+  {
+    "idx": 85,
+    "number": "80",
+    "title": "Composition of the Council of States",
+    "page": 9
+  },
+  {
+    "idx": 86,
+    "number": "81",
+    "title": "Composition of the House of the People",
+    "page": 9
+  },
+  {
+    "idx": 87,
+    "number": "82",
+    "title": "Readjustment after each census",
+    "page": 9
+  },
+  {
+    "idx": 88,
+    "number": "83",
+    "title": "Duration of Houses of Parliament",
+    "page": 9
+  },
+  {
+    "idx": 89,
+    "number": "84",
+    "title": "Qualification for membership of Parliament",
+    "page": 9
+  },
+  {
+    "idx": 90,
+    "number": "85",
+    "title": "Sessions of Parliament, prorogation and dissolution",
+    "page": 9
+  },
+  {
+    "idx": 91,
+    "number": "86",
+    "title": "Right of President to address and send messages to Houses",
+    "page": 9
+  },
+  {
+    "idx": 92,
+    "number": "87",
+    "title": "Special address by the President",
+    "page": 9
+  },
+  {
+    "idx": 93,
+    "number": "88",
+    "title": "Rights of Ministers and Attorney-General as respects Houses",
+    "page": 9
+  },
+  {
+    "idx": 94,
+    "number": "89",
+    "title": "The Chairman and Deputy Chairman of the Council of States",
+    "page": 9
+  },
+  {
+    "idx": 95,
+    "number": "90",
+    "title": "Vacation and resignation of, and removal from, the office of",
+    "page": 9
+  },
+  {
+    "idx": 96,
+    "number": "91",
+    "title": "Power of the Deputy Chairman or other person to perform the",
+    "page": 9
+  },
+  {
+    "idx": 97,
+    "number": "92",
+    "title": "The Chairman or the Deputy Chairman not to preside while a",
+    "page": 9
+  },
+  {
+    "idx": 98,
+    "number": "93",
+    "title": "The Speaker and Deputy Speaker of the House of the People",
+    "page": 9
+  },
+  {
+    "idx": 99,
+    "number": "94",
+    "title": "Vacation and resignation of, and removal from, the offices of",
+    "page": 9
+  },
+  {
+    "idx": 100,
+    "number": "95",
+    "title": "Power of the Deputy Speaker or other person to perform the",
+    "page": 9
+  },
+  {
+    "idx": 101,
+    "number": "96",
+    "title": "The Speaker or the Deputy Speaker not to preside while a",
+    "page": 10
+  },
+  {
+    "idx": 102,
+    "number": "97",
+    "title": "Salaries and allowances of the Chairman and Deputy Chairman",
+    "page": 10
+  },
+  {
+    "idx": 103,
+    "number": "98",
+    "title": "Secretariat of Parliament",
+    "page": 10
+  },
+  {
+    "idx": 104,
+    "number": "99",
+    "title": "Oath or affirmation by members",
+    "page": 10
+  },
+  {
+    "idx": 105,
+    "number": "100",
+    "title": "Voting in Houses, power of Houses to act notwithstanding",
+    "page": 10
+  },
+  {
+    "idx": 106,
+    "number": "101",
+    "title": "Vacation of seats",
+    "page": 10
+  },
+  {
+    "idx": 107,
+    "number": "102",
+    "title": "Disqualifications for membership",
+    "page": 10
+  },
+  {
+    "idx": 108,
+    "number": "103",
+    "title": "Decision on questions as to disqualifications of members",
+    "page": 10
+  },
+  {
+    "idx": 109,
+    "number": "104",
+    "title": "Penalty for sitting and voting before making oath or affirmation",
+    "page": 10
+  },
+  {
+    "idx": 110,
+    "number": "105",
+    "title": "Powers, privileges, etc., of the Houses of Parliament and of the",
+    "page": 10
+  },
+  {
+    "idx": 111,
+    "number": "106",
+    "title": "Salaries and allowances of members",
+    "page": 10
+  },
+  {
+    "idx": 112,
+    "number": "107",
+    "title": "Provisions as to introduction and passing of Bills",
+    "page": 10
+  },
+  {
+    "idx": 113,
+    "number": "108",
+    "title": "Joint sitting of both Houses in certain cases",
+    "page": 10
+  },
+  {
+    "idx": 114,
+    "number": "109",
+    "title": "Special procedure in respect of Money Bills",
+    "page": 10
+  },
+  {
+    "idx": 115,
+    "number": "110",
+    "title": "Definition of “Money Bills”",
+    "page": 10
+  },
+  {
+    "idx": 116,
+    "number": "111",
+    "title": "Assent to Bills",
+    "page": 10
+  },
+  {
+    "idx": 117,
+    "number": "112",
+    "title": "Annual financial statement",
+    "page": 10
+  },
+  {
+    "idx": 118,
+    "number": "113",
+    "title": "Procedure in Parliament with respect to estimates",
+    "page": 10
+  },
+  {
+    "idx": 119,
+    "number": "114",
+    "title": "Appropriation Bills",
+    "page": 10
+  },
+  {
+    "idx": 120,
+    "number": "115",
+    "title": "Supplementary, additional or excess grants",
+    "page": 11
+  },
+  {
+    "idx": 121,
+    "number": "116",
+    "title": "Votes on account, votes of credit and exceptional grants",
+    "page": 11
+  },
+  {
+    "idx": 122,
+    "number": "117",
+    "title": "Special provisions as to financial Bills",
+    "page": 11
+  },
+  {
+    "idx": 123,
+    "number": "118",
+    "title": "Rules of procedure",
+    "page": 11
+  },
+  {
+    "idx": 124,
+    "number": "119",
+    "title": "Regulation by law of procedure in Parliament in relation to",
+    "page": 11
+  },
+  {
+    "idx": 125,
+    "number": "120",
+    "title": "Language to be used in Parliament",
+    "page": 11
+  },
+  {
+    "idx": 126,
+    "number": "121",
+    "title": "Restriction on discussion in Parliament",
+    "page": 11
+  },
+  {
+    "idx": 127,
+    "number": "122",
+    "title": "Courts not to inquire into proceedings of Parliament",
+    "page": 11
+  },
+  {
+    "idx": 128,
+    "number": "123",
+    "title": "Power of President to promulgate Ordinances during recess of",
+    "page": 11
+  },
+  {
+    "idx": 129,
+    "number": "124",
+    "title": "Establishment and constitution ofthe Supreme Court",
+    "page": 11
+  },
+  {
+    "idx": 130,
+    "number": "124A",
+    "title": "National Judicial AppointmentsCommission",
+    "page": 11
+  },
+  {
+    "idx": 131,
+    "number": "124B",
+    "title": "Functions of Commission",
+    "page": 11
+  },
+  {
+    "idx": 132,
+    "number": "124C",
+    "title": "Power of Parliament to make law",
+    "page": 11
+  },
+  {
+    "idx": 133,
+    "number": "125",
+    "title": "Salaries, etc., of Judges",
+    "page": 11
+  },
+  {
+    "idx": 134,
+    "number": "126",
+    "title": "Appointment of acting Chief Justice",
+    "page": 11
+  },
+  {
+    "idx": 135,
+    "number": "127",
+    "title": "Appointment ofad hocJudges",
+    "page": 11
+  },
+  {
+    "idx": 136,
+    "number": "128",
+    "title": "Attendance of retired Judges at sittings of the Supreme Court",
+    "page": 11
+  },
+  {
+    "idx": 137,
+    "number": "129",
+    "title": "Supreme Court to be a court of record",
+    "page": 11
+  },
+  {
+    "idx": 138,
+    "number": "130",
+    "title": "Seat of Supreme Court",
+    "page": 11
+  },
+  {
+    "idx": 139,
+    "number": "131",
+    "title": "Original jurisdiction of the Supreme Court",
+    "page": 11
+  },
+  {
+    "idx": 140,
+    "number": "132",
+    "title": "Appellate jurisdiction of the Supreme Court in appeals from",
+    "page": 11
+  },
+  {
+    "idx": 141,
+    "number": "133",
+    "title": "Appellate jurisdiction of the Supreme Court in appeals from",
+    "page": 11
+  },
+  {
+    "idx": 142,
+    "number": "134",
+    "title": "Appellate jurisdiction of the Supreme Court in regard to criminal",
+    "page": 11
+  },
+  {
+    "idx": 143,
+    "number": "134A",
+    "title": "Certificate for appeal to the Supreme Court",
+    "page": 12
+  },
+  {
+    "idx": 144,
+    "number": "135",
+    "title": "Jurisdiction and powers of the Federal Court under existing law",
+    "page": 12
+  },
+  {
+    "idx": 145,
+    "number": "136",
+    "title": "Special leave to appeal by the Supreme Court",
+    "page": 12
+  },
+  {
+    "idx": 146,
+    "number": "137",
+    "title": "Review of judgments or orders by the Supreme Court",
+    "page": 12
+  },
+  {
+    "idx": 147,
+    "number": "138",
+    "title": "Enlargement of the jurisdiction of the Supreme Court",
+    "page": 12
+  },
+  {
+    "idx": 148,
+    "number": "139",
+    "title": "Conferment on the Supreme Court of powers to issue certain",
+    "page": 12
+  },
+  {
+    "idx": 149,
+    "number": "139A",
+    "title": "Transfer of certain cases",
+    "page": 12
+  },
+  {
+    "idx": 150,
+    "number": "140",
+    "title": "Ancillary powers ofthe Supreme Court",
+    "page": 12
+  },
+  {
+    "idx": 151,
+    "number": "141",
+    "title": "Law declared by Supreme Court to be binding on all courts",
+    "page": 12
+  },
+  {
+    "idx": 152,
+    "number": "142",
+    "title": "Enforcement of decrees and orders of the Supreme Court and",
+    "page": 12
+  },
+  {
+    "idx": 153,
+    "number": "143",
+    "title": "Power of the President to consult the Supreme Court",
+    "page": 12
+  },
+  {
+    "idx": 154,
+    "number": "144",
+    "title": "Civil and judicial authorities to act in aid of the Supreme",
+    "page": 12
+  },
+  {
+    "idx": 155,
+    "number": "145",
+    "title": "Rules of Court, etc",
+    "page": 12
+  },
+  {
+    "idx": 156,
+    "number": "146",
+    "title": "Officers and servants and the expenses of the Supreme Court",
+    "page": 12
+  },
+  {
+    "idx": 157,
+    "number": "148",
+    "title": "Comptroller and Auditor-General of India",
+    "page": 12
+  },
+  {
+    "idx": 158,
+    "number": "149",
+    "title": "Duties and powers of the Comptroller and Auditor-General",
+    "page": 12
+  },
+  {
+    "idx": 159,
+    "number": "150",
+    "title": "Form of accounts of the Union and of the States",
+    "page": 12
+  },
+  {
+    "idx": 160,
+    "number": "151",
+    "title": "Audit reports",
+    "page": 12
+  },
+  {
+    "idx": 161,
+    "number": "153",
+    "title": "Governors of States",
+    "page": 13
+  },
+  {
+    "idx": 162,
+    "number": "154",
+    "title": "Executive power of State",
+    "page": 13
+  },
+  {
+    "idx": 163,
+    "number": "155",
+    "title": "Appointment of Governor",
+    "page": 13
+  },
+  {
+    "idx": 164,
+    "number": "156",
+    "title": "Term of office of Governor",
+    "page": 13
+  },
+  {
+    "idx": 165,
+    "number": "157",
+    "title": "Qualifications for appointment as Governor",
+    "page": 13
+  },
+  {
+    "idx": 166,
+    "number": "158",
+    "title": "Conditions of Governor’s office",
+    "page": 13
+  },
+  {
+    "idx": 167,
+    "number": "159",
+    "title": "Oath or affirmation by the Governor",
+    "page": 13
+  },
+  {
+    "idx": 168,
+    "number": "160",
+    "title": "Discharge of the functions of the Governor in certain",
+    "page": 13
+  },
+  {
+    "idx": 169,
+    "number": "161",
+    "title": "Power of Governor to grant pardons, etc., and to suspend, remit",
+    "page": 13
+  },
+  {
+    "idx": 170,
+    "number": "162",
+    "title": "Extent of executive power of State",
+    "page": 13
+  },
+  {
+    "idx": 171,
+    "number": "163",
+    "title": "Council of Ministers to aid and advise Governor",
+    "page": 13
+  },
+  {
+    "idx": 172,
+    "number": "164",
+    "title": "Other provisions as to Ministers",
+    "page": 13
+  },
+  {
+    "idx": 173,
+    "number": "165",
+    "title": "Advocate-General for the State",
+    "page": 13
+  },
+  {
+    "idx": 174,
+    "number": "166",
+    "title": "Conduct of business of the Government of a State",
+    "page": 13
+  },
+  {
+    "idx": 175,
+    "number": "167",
+    "title": "Duties of Chief Minister as respects the furnishing of",
+    "page": 13
+  },
+  {
+    "idx": 176,
+    "number": "168",
+    "title": "Constitution of Legislatures in States",
+    "page": 13
+  },
+  {
+    "idx": 177,
+    "number": "169",
+    "title": "Abolition or creation of Legislative Councils in States",
+    "page": 13
+  },
+  {
+    "idx": 178,
+    "number": "170",
+    "title": "Composition of the Legislative Assemblies",
+    "page": 13
+  },
+  {
+    "idx": 179,
+    "number": "171",
+    "title": "Composition of the Legislative Councils",
+    "page": 14
+  },
+  {
+    "idx": 180,
+    "number": "172",
+    "title": "Duration of State Legislatures",
+    "page": 14
+  },
+  {
+    "idx": 181,
+    "number": "173",
+    "title": "Qualification for membership of the State Legislature",
+    "page": 14
+  },
+  {
+    "idx": 182,
+    "number": "174",
+    "title": "Sessions of the State Legislature, prorogation and dissolution",
+    "page": 14
+  },
+  {
+    "idx": 183,
+    "number": "175",
+    "title": "Right of Governor to address and send messages to the House or",
+    "page": 14
+  },
+  {
+    "idx": 184,
+    "number": "176",
+    "title": "Special address by the Governor",
+    "page": 14
+  },
+  {
+    "idx": 185,
+    "number": "177",
+    "title": "Rights of Ministers and Advocate-General as respects the",
+    "page": 14
+  },
+  {
+    "idx": 186,
+    "number": "178",
+    "title": "The Speaker and Deputy Speaker of the Legislative Assembly",
+    "page": 14
+  },
+  {
+    "idx": 187,
+    "number": "179",
+    "title": "Vacation and resignation of, and removal from, the offices of",
+    "page": 14
+  },
+  {
+    "idx": 188,
+    "number": "180",
+    "title": "Power of the Deputy Speaker or other person to perform the",
+    "page": 14
+  },
+  {
+    "idx": 189,
+    "number": "181",
+    "title": "The Speaker or the Deputy Speaker not to preside while a",
+    "page": 14
+  },
+  {
+    "idx": 190,
+    "number": "182",
+    "title": "The Chairman and Deputy Chairman of the Legislative Council",
+    "page": 14
+  },
+  {
+    "idx": 191,
+    "number": "183",
+    "title": "Vacation and resignation of, and removal from, the offices of",
+    "page": 14
+  },
+  {
+    "idx": 192,
+    "number": "184",
+    "title": "Power of the Deputy Chairman or other person to perform the",
+    "page": 14
+  },
+  {
+    "idx": 193,
+    "number": "185",
+    "title": "The Chairman or the Deputy Chairman not to preside while a",
+    "page": 14
+  },
+  {
+    "idx": 194,
+    "number": "186",
+    "title": "Salaries and allowances of the Speaker and Deputy Speaker and",
+    "page": 14
+  },
+  {
+    "idx": 195,
+    "number": "187",
+    "title": "Secretariat of State Legislature",
+    "page": 14
+  },
+  {
+    "idx": 196,
+    "number": "188",
+    "title": "Oath or affirmation by members",
+    "page": 14
+  },
+  {
+    "idx": 197,
+    "number": "189",
+    "title": "Voting in Houses, power of Houses to act notwithstanding",
+    "page": 14
+  },
+  {
+    "idx": 198,
+    "number": "190",
+    "title": "Vacation of seats",
+    "page": 14
+  },
+  {
+    "idx": 199,
+    "number": "191",
+    "title": "Disqualifications for membership",
+    "page": 15
+  },
+  {
+    "idx": 200,
+    "number": "192",
+    "title": "Decision on questions as to disqualifications of members",
+    "page": 15
+  },
+  {
+    "idx": 201,
+    "number": "193",
+    "title": "Penalty for sitting and voting before making oath or affirmation",
+    "page": 15
+  },
+  {
+    "idx": 202,
+    "number": "194",
+    "title": "Powers, privileges, etc., of the Houses of Legislatures and of the",
+    "page": 15
+  },
+  {
+    "idx": 203,
+    "number": "195",
+    "title": "Salaries and allowances of members",
+    "page": 15
+  },
+  {
+    "idx": 204,
+    "number": "196",
+    "title": "Provisions as to introduction and passing of Bills",
+    "page": 15
+  },
+  {
+    "idx": 205,
+    "number": "197",
+    "title": "Restriction on powers of Legislative Council as to Bills other",
+    "page": 15
+  },
+  {
+    "idx": 206,
+    "number": "198",
+    "title": "Special procedure in respect of Money Bills",
+    "page": 15
+  },
+  {
+    "idx": 207,
+    "number": "199",
+    "title": "Definition of “Money Bills”",
+    "page": 15
+  },
+  {
+    "idx": 208,
+    "number": "200",
+    "title": "Assent to Bills",
+    "page": 15
+  },
+  {
+    "idx": 209,
+    "number": "201",
+    "title": "Bills reserved for consideration",
+    "page": 15
+  },
+  {
+    "idx": 210,
+    "number": "202",
+    "title": "Annual financial statement",
+    "page": 15
+  },
+  {
+    "idx": 211,
+    "number": "203",
+    "title": "Procedure in Legislature with respect to estimates",
+    "page": 15
+  },
+  {
+    "idx": 212,
+    "number": "204",
+    "title": "Appropriation Bills",
+    "page": 15
+  },
+  {
+    "idx": 213,
+    "number": "205",
+    "title": "Supplementary, additional or excess grants",
+    "page": 15
+  },
+  {
+    "idx": 214,
+    "number": "206",
+    "title": "Votes on account, votes of credit and exceptional grants",
+    "page": 15
+  },
+  {
+    "idx": 215,
+    "number": "207",
+    "title": "Special provisions as to financial Bills",
+    "page": 15
+  },
+  {
+    "idx": 216,
+    "number": "208",
+    "title": "Rules of procedure",
+    "page": 15
+  },
+  {
+    "idx": 217,
+    "number": "209",
+    "title": "Regulation by law of procedure in the Legislature of the State in",
+    "page": 15
+  },
+  {
+    "idx": 218,
+    "number": "210",
+    "title": "Language to be used in the Legislature",
+    "page": 16
+  },
+  {
+    "idx": 219,
+    "number": "211",
+    "title": "Restriction on discussion in the Legislature",
+    "page": 16
+  },
+  {
+    "idx": 220,
+    "number": "212",
+    "title": "Courts not to inquire into proceedings of the Legislature",
+    "page": 16
+  },
+  {
+    "idx": 221,
+    "number": "213",
+    "title": "Power of Governor to promulgate Ordinances during recess of",
+    "page": 16
+  },
+  {
+    "idx": 222,
+    "number": "214",
+    "title": "High Courts for States",
+    "page": 16
+  },
+  {
+    "idx": 223,
+    "number": "215",
+    "title": "High Courts to be courts of record",
+    "page": 16
+  },
+  {
+    "idx": 224,
+    "number": "216",
+    "title": "Constitution of High Courts",
+    "page": 16
+  },
+  {
+    "idx": 225,
+    "number": "217",
+    "title": "Appointment and conditions of the office of a Judge of a High",
+    "page": 16
+  },
+  {
+    "idx": 226,
+    "number": "218",
+    "title": "Application of certain provisions relating to Supreme Court to",
+    "page": 16
+  },
+  {
+    "idx": 227,
+    "number": "219",
+    "title": "Oath or affirmation by Judges of High Courts",
+    "page": 16
+  },
+  {
+    "idx": 228,
+    "number": "220",
+    "title": "Restriction on practice after being a permanent Judge",
+    "page": 16
+  },
+  {
+    "idx": 229,
+    "number": "221",
+    "title": "Salaries, etc., of Judges",
+    "page": 16
+  },
+  {
+    "idx": 230,
+    "number": "222",
+    "title": "Transfer of a Judge from one High Court to another",
+    "page": 16
+  },
+  {
+    "idx": 231,
+    "number": "223",
+    "title": "Appointment of acting Chief Justice",
+    "page": 16
+  },
+  {
+    "idx": 232,
+    "number": "224",
+    "title": "Appointment of additional and acting Judges",
+    "page": 16
+  },
+  {
+    "idx": 233,
+    "number": "224A",
+    "title": "Appointment of retired Judges at sittings of High Courts",
+    "page": 16
+  },
+  {
+    "idx": 234,
+    "number": "225",
+    "title": "Jurisdiction of existing High Courts",
+    "page": 16
+  },
+  {
+    "idx": 235,
+    "number": "226",
+    "title": "Power of High Courts to issue certain writs",
+    "page": 16
+  },
+  {
+    "idx": 236,
+    "number": "227",
+    "title": "Power of superintendence over all courts by the High Court",
+    "page": 16
+  },
+  {
+    "idx": 237,
+    "number": "228",
+    "title": "Transfer of certain cases to High Court",
+    "page": 16
+  },
+  {
+    "idx": 238,
+    "number": "229",
+    "title": "Officers and servants and the expenses of High Courts",
+    "page": 17
+  },
+  {
+    "idx": 239,
+    "number": "230",
+    "title": "Extension of jurisdiction of High Courts to Union territories",
+    "page": 17
+  },
+  {
+    "idx": 240,
+    "number": "231",
+    "title": "Establishment of a common High Court for two or more States",
+    "page": 17
+  },
+  {
+    "idx": 241,
+    "number": "233",
+    "title": "Appointment of district judges",
+    "page": 17
+  },
+  {
+    "idx": 242,
+    "number": "233A",
+    "title": "Validation of appointments of, and judgments, etc., delivered by",
+    "page": 17
+  },
+  {
+    "idx": 243,
+    "number": "234",
+    "title": "Recruitment of persons other than district judges to the judicial",
+    "page": 17
+  },
+  {
+    "idx": 244,
+    "number": "235",
+    "title": "Control over subordinate courts",
+    "page": 17
+  },
+  {
+    "idx": 245,
+    "number": "237",
+    "title": "Application of the provisions of this Chapter to certain class or",
+    "page": 17
+  },
+  {
+    "idx": 246,
+    "number": "239",
+    "title": "Administration of Union territories",
+    "page": 17
+  },
+  {
+    "idx": 247,
+    "number": "239A",
+    "title": "Creation of local Legislatures or Council of Ministers or both for",
+    "page": 17
+  },
+  {
+    "idx": 248,
+    "number": "239B",
+    "title": "Power of administrator to promulgate Ordinances during recess",
+    "page": 17
+  },
+  {
+    "idx": 249,
+    "number": "240",
+    "title": "Power of President to make regulations for certain Union",
+    "page": 17
+  },
+  {
+    "idx": 250,
+    "number": "241",
+    "title": "High Courts for Union territories",
+    "page": 17
+  },
+  {
+    "idx": 251,
+    "number": "243A",
+    "title": "Gram Sabha",
+    "page": 18
+  },
+  {
+    "idx": 252,
+    "number": "243B",
+    "title": "Constitution of Panchayats",
+    "page": 18
+  },
+  {
+    "idx": 253,
+    "number": "243C",
+    "title": "Composition of Panchayats",
+    "page": 18
+  },
+  {
+    "idx": 254,
+    "number": "243D",
+    "title": "Reservation of seats",
+    "page": 18
+  },
+  {
+    "idx": 255,
+    "number": "243E",
+    "title": "Duration of Panchayats, etc",
+    "page": 18
+  },
+  {
+    "idx": 256,
+    "number": "243F",
+    "title": "Disqualifications for membership",
+    "page": 18
+  },
+  {
+    "idx": 257,
+    "number": "243G",
+    "title": "Powers, authority and responsibilities of Panchayats",
+    "page": 18
+  },
+  {
+    "idx": 258,
+    "number": "243H",
+    "title": "Powers to impose taxes by, and Funds of, the Panchayats",
+    "page": 18
+  },
+  {
+    "idx": 259,
+    "number": "243J",
+    "title": "Audit of accounts of Panchayats",
+    "page": 18
+  },
+  {
+    "idx": 260,
+    "number": "243K",
+    "title": "Elections to the Panchayats",
+    "page": 18
+  },
+  {
+    "idx": 261,
+    "number": "243L",
+    "title": "Application to Union territories",
+    "page": 18
+  },
+  {
+    "idx": 262,
+    "number": "243M",
+    "title": "Part not to apply to certain areas",
+    "page": 18
+  },
+  {
+    "idx": 263,
+    "number": "243N",
+    "title": "Continuance of existing laws and Panchayats",
+    "page": 18
+  },
+  {
+    "idx": 264,
+    "number": "243Q",
+    "title": "Constitution of Municipalities",
+    "page": 18
+  },
+  {
+    "idx": 265,
+    "number": "243R",
+    "title": "Composition of Municipalities",
+    "page": 18
+  },
+  {
+    "idx": 266,
+    "number": "243S",
+    "title": "Constitution and composition of Wards Committees, etc",
+    "page": 18
+  },
+  {
+    "idx": 267,
+    "number": "243T",
+    "title": "Reservation of seats",
+    "page": 18
+  },
+  {
+    "idx": 268,
+    "number": "243U",
+    "title": "Duration of Municipalities, etc",
+    "page": 18
+  },
+  {
+    "idx": 269,
+    "number": "243V",
+    "title": "Disqualifications for membership",
+    "page": 18
+  },
+  {
+    "idx": 270,
+    "number": "243W",
+    "title": "Powers, authority and responsibilities of Municipalities, etc",
+    "page": 18
+  },
+  {
+    "idx": 271,
+    "number": "243X",
+    "title": "Power to impose taxes by, and Funds of, the Municipalities",
+    "page": 18
+  },
+  {
+    "idx": 272,
+    "number": "243Y",
+    "title": "Finance Commission",
+    "page": 18
+  },
+  {
+    "idx": 273,
+    "number": "243Z",
+    "title": "Audit of accounts of Municipalities",
+    "page": 19
+  },
+  {
+    "idx": 274,
+    "number": "244",
+    "title": "Administration of Scheduled Areas and Tribal Areas",
+    "page": 19
+  },
+  {
+    "idx": 275,
+    "number": "244A",
+    "title": "Formation of an autonomous State comprising certain tribal",
+    "page": 19
+  },
+  {
+    "idx": 276,
+    "number": "245",
+    "title": "Extent of laws made by Parliament and by the Legislatures of",
+    "page": 20
+  },
+  {
+    "idx": 277,
+    "number": "246",
+    "title": "Subject-matter of laws made by Parliament and by the",
+    "page": 20
+  },
+  {
+    "idx": 278,
+    "number": "246A",
+    "title": "Special provision with respect to goods and services tax",
+    "page": 20
+  },
+  {
+    "idx": 279,
+    "number": "247",
+    "title": "Power of Parliament to provide for the establishment of certain",
+    "page": 20
+  },
+  {
+    "idx": 280,
+    "number": "248",
+    "title": "Residuary powers of legislation",
+    "page": 20
+  },
+  {
+    "idx": 281,
+    "number": "249",
+    "title": "Power of Parliament to legislate with respect to a matter in the",
+    "page": 20
+  },
+  {
+    "idx": 282,
+    "number": "250",
+    "title": "Power of Parliament to legislate with respect to any matter in the",
+    "page": 20
+  },
+  {
+    "idx": 283,
+    "number": "251",
+    "title": "Inconsistency between laws made by Parliament under articles",
+    "page": 20
+  },
+  {
+    "idx": 284,
+    "number": "252",
+    "title": "Power of Parliament to legislate for two or more States by",
+    "page": 20
+  },
+  {
+    "idx": 285,
+    "number": "253",
+    "title": "Legislation for giving effect to international agreements",
+    "page": 20
+  },
+  {
+    "idx": 286,
+    "number": "254",
+    "title": "Inconsistency between laws made by Parliament and laws made",
+    "page": 20
+  },
+  {
+    "idx": 287,
+    "number": "255",
+    "title": "Requirements as to recommendations and previous sanctions to",
+    "page": 20
+  },
+  {
+    "idx": 288,
+    "number": "256",
+    "title": "Obligation of States and the Union",
+    "page": 20
+  },
+  {
+    "idx": 289,
+    "number": "257",
+    "title": "Control of the Union over States in certain cases",
+    "page": 20
+  },
+  {
+    "idx": 290,
+    "number": "258",
+    "title": "Power of the Union to confer powers, etc., on States in certain",
+    "page": 20
+  },
+  {
+    "idx": 291,
+    "number": "258A",
+    "title": "Power of the States to entrust functions to the Union",
+    "page": 21
+  },
+  {
+    "idx": 292,
+    "number": "260",
+    "title": "Jurisdiction of the Union in relation to territories outside India",
+    "page": 21
+  },
+  {
+    "idx": 293,
+    "number": "261",
+    "title": "Public acts, records and judicial proceedings",
+    "page": 21
+  },
+  {
+    "idx": 294,
+    "number": "262",
+    "title": "Adjudication of disputes relating to waters of inter-State rivers",
+    "page": 21
+  },
+  {
+    "idx": 295,
+    "number": "263",
+    "title": "Provisions with respect to an inter-State Council",
+    "page": 21
+  },
+  {
+    "idx": 296,
+    "number": "265",
+    "title": "Taxes not to be imposed save by authority of law",
+    "page": 21
+  },
+  {
+    "idx": 297,
+    "number": "266",
+    "title": "Consolidated Funds and public accounts of India and of the",
+    "page": 21
+  },
+  {
+    "idx": 298,
+    "number": "267",
+    "title": "Contingency Fund",
+    "page": 21
+  },
+  {
+    "idx": 299,
+    "number": "268",
+    "title": "Duties levied by the Union but collected and appropriated by the",
+    "page": 21
+  },
+  {
+    "idx": 300,
+    "number": "269",
+    "title": "Taxes levied and collected by the Union but assigned to the",
+    "page": 21
+  },
+  {
+    "idx": 301,
+    "number": "269A",
+    "title": "Levy and collection of goods and services tax in course of inter",
+    "page": 21
+  },
+  {
+    "idx": 302,
+    "number": "270",
+    "title": "Taxes levied and distributed between the Union and the States",
+    "page": 21
+  },
+  {
+    "idx": 303,
+    "number": "271",
+    "title": "Surcharge on certain duties and taxes for purposes of the Union",
+    "page": 21
+  },
+  {
+    "idx": 304,
+    "number": "273",
+    "title": "Grants in lieu of export duty on jute and jute products",
+    "page": 21
+  },
+  {
+    "idx": 305,
+    "number": "274",
+    "title": "Prior recommendation of President required to Bills affecting",
+    "page": 21
+  },
+  {
+    "idx": 306,
+    "number": "275",
+    "title": "Grants from the Union to certain States",
+    "page": 22
+  },
+  {
+    "idx": 307,
+    "number": "276",
+    "title": "Taxes on professions, trades, callings and employments",
+    "page": 22
+  },
+  {
+    "idx": 308,
+    "number": "279",
+    "title": "Calculation of “net proceeds”, etc",
+    "page": 22
+  },
+  {
+    "idx": 309,
+    "number": "279A",
+    "title": "Goods and Services Tax Council",
+    "page": 22
+  },
+  {
+    "idx": 310,
+    "number": "280",
+    "title": "Finance Commission",
+    "page": 22
+  },
+  {
+    "idx": 311,
+    "number": "281",
+    "title": "Recommendations of the Finance Commission",
+    "page": 22
+  },
+  {
+    "idx": 312,
+    "number": "282",
+    "title": "Expenditure defrayable by the Union or a State out of its",
+    "page": 22
+  },
+  {
+    "idx": 313,
+    "number": "283",
+    "title": "Custody, etc., of Consolidated Funds, Contingency Funds and",
+    "page": 22
+  },
+  {
+    "idx": 314,
+    "number": "284",
+    "title": "Custody of suitors’ deposits and other moneys received by",
+    "page": 22
+  },
+  {
+    "idx": 315,
+    "number": "285",
+    "title": "Exemption of property of the Union from State taxation",
+    "page": 22
+  },
+  {
+    "idx": 316,
+    "number": "286",
+    "title": "Restrictions as to imposition of tax on the sale or purchase of",
+    "page": 22
+  },
+  {
+    "idx": 317,
+    "number": "287",
+    "title": "Exemption from taxes on electricity",
+    "page": 22
+  },
+  {
+    "idx": 318,
+    "number": "288",
+    "title": "Exemption from taxation by States in respect of water or",
+    "page": 22
+  },
+  {
+    "idx": 319,
+    "number": "289",
+    "title": "Exemption of property and income of a State from Union",
+    "page": 22
+  },
+  {
+    "idx": 320,
+    "number": "290",
+    "title": "Adjustment in respect of certain expenses and pensions",
+    "page": 22
+  },
+  {
+    "idx": 321,
+    "number": "290A",
+    "title": "Annual payment to certain Devaswom Funds",
+    "page": 22
+  },
+  {
+    "idx": 322,
+    "number": "292",
+    "title": "Borrowing by the Government of India",
+    "page": 22
+  },
+  {
+    "idx": 323,
+    "number": "293",
+    "title": "Borrowing by States",
+    "page": 22
+  },
+  {
+    "idx": 324,
+    "number": "294",
+    "title": "Succession to property, assets, rights, liabilities and obligations",
+    "page": 23
+  },
+  {
+    "idx": 325,
+    "number": "295",
+    "title": "Succession to property, assets, rights, liabilities and obligations",
+    "page": 23
+  },
+  {
+    "idx": 326,
+    "number": "296",
+    "title": "Property accruing by escheat or lapseor asbona vacantia",
+    "page": 23
+  },
+  {
+    "idx": 327,
+    "number": "297",
+    "title": "Things of value within territorial waters or continental shelf and",
+    "page": 23
+  },
+  {
+    "idx": 328,
+    "number": "298",
+    "title": "Power to carry on trade, etc",
+    "page": 23
+  },
+  {
+    "idx": 329,
+    "number": "300",
+    "title": "Suits and proceedings",
+    "page": 23
+  },
+  {
+    "idx": 330,
+    "number": "300A",
+    "title": "Persons not to be deprived of property save by authority of law",
+    "page": 23
+  },
+  {
+    "idx": 331,
+    "number": "301",
+    "title": "Freedom of trade, commerce and intercourse",
+    "page": 23
+  },
+  {
+    "idx": 332,
+    "number": "302",
+    "title": "Power of Parliament to impose restrictions on trade, commerce",
+    "page": 23
+  },
+  {
+    "idx": 333,
+    "number": "303",
+    "title": "Restrictions on the legislative powers of the Union and of the",
+    "page": 23
+  },
+  {
+    "idx": 334,
+    "number": "304",
+    "title": "Restrictions on trade, commerce and intercourse among States",
+    "page": 23
+  },
+  {
+    "idx": 335,
+    "number": "305",
+    "title": "Saving of existing laws and laws providing for State monopolies",
+    "page": 23
+  },
+  {
+    "idx": 336,
+    "number": "307",
+    "title": "Appointment of authority for carrying out the purposes of",
+    "page": 23
+  },
+  {
+    "idx": 337,
+    "number": "309",
+    "title": "Recruitment and conditions of service of persons serving the",
+    "page": 24
+  },
+  {
+    "idx": 338,
+    "number": "310",
+    "title": "Tenure of office of persons serving the Union or a State",
+    "page": 24
+  },
+  {
+    "idx": 339,
+    "number": "311",
+    "title": "Dismissal, removal or reduction in rank of persons employed in",
+    "page": 24
+  },
+  {
+    "idx": 340,
+    "number": "312",
+    "title": "All-India services",
+    "page": 24
+  },
+  {
+    "idx": 341,
+    "number": "312A",
+    "title": "Power of Parliament to vary or revoke conditions of service of",
+    "page": 24
+  },
+  {
+    "idx": 342,
+    "number": "313",
+    "title": "Transitional provisions",
+    "page": 24
+  },
+  {
+    "idx": 343,
+    "number": "315",
+    "title": "Public Service Commissions for the Union and for the States",
+    "page": 24
+  },
+  {
+    "idx": 344,
+    "number": "316",
+    "title": "Appointment and term of office of members",
+    "page": 24
+  },
+  {
+    "idx": 345,
+    "number": "317",
+    "title": "Removal and suspension of a member of a Public Service",
+    "page": 24
+  },
+  {
+    "idx": 346,
+    "number": "318",
+    "title": "Power to make regulations as to conditions of service of",
+    "page": 24
+  },
+  {
+    "idx": 347,
+    "number": "319",
+    "title": "Prohibition as to the holding of offices by members of",
+    "page": 24
+  },
+  {
+    "idx": 348,
+    "number": "320",
+    "title": "Functions of Public Service Commissions",
+    "page": 24
+  },
+  {
+    "idx": 349,
+    "number": "321",
+    "title": "Power to extend functions of Public Service Commissions",
+    "page": 24
+  },
+  {
+    "idx": 350,
+    "number": "322",
+    "title": "Expenses of Public Service Commissions",
+    "page": 24
+  },
+  {
+    "idx": 351,
+    "number": "323",
+    "title": "Reports of Public Service Commissions",
+    "page": 24
+  },
+  {
+    "idx": 352,
+    "number": "323A",
+    "title": "Administrative tribunals",
+    "page": 24
+  },
+  {
+    "idx": 353,
+    "number": "323B",
+    "title": "Tribunals for other matters",
+    "page": 24
+  },
+  {
+    "idx": 354,
+    "number": "324",
+    "title": "Superintendence, direction and control of elections to be vested",
+    "page": 25
+  },
+  {
+    "idx": 355,
+    "number": "325",
+    "title": "No person to be ineligible for inclusion in, or to claim to be",
+    "page": 25
+  },
+  {
+    "idx": 356,
+    "number": "326",
+    "title": "Elections to the House of the People and to the Legislative",
+    "page": 25
+  },
+  {
+    "idx": 357,
+    "number": "327",
+    "title": "Power of Parliament to make provision with respect to elections",
+    "page": 25
+  },
+  {
+    "idx": 358,
+    "number": "328",
+    "title": "Power of Legislature of a State to make provision with respect to",
+    "page": 25
+  },
+  {
+    "idx": 359,
+    "number": "329",
+    "title": "Bar to interference by courts in electoral matters",
+    "page": 25
+  },
+  {
+    "idx": 360,
+    "number": "330",
+    "title": "Reservation of seats for Scheduled Castes and Scheduled Tribes",
+    "page": 25
+  },
+  {
+    "idx": 361,
+    "number": "330A",
+    "title": "Reservation of seats for women in the House of the People",
+    "page": 25
+  },
+  {
+    "idx": 362,
+    "number": "331",
+    "title": "Representation of the Anglo-Indian community in the House of",
+    "page": 25
+  },
+  {
+    "idx": 363,
+    "number": "332",
+    "title": "Reservation of seats for Scheduled Castes and Scheduled Tribes",
+    "page": 25
+  },
+  {
+    "idx": 364,
+    "number": "332A",
+    "title": "Reservation of seats for women in the Legislative Assemblies of",
+    "page": 25
+  },
+  {
+    "idx": 365,
+    "number": "333",
+    "title": "Representation of the Anglo-Indian community in the",
+    "page": 25
+  },
+  {
+    "idx": 366,
+    "number": "334",
+    "title": "Reservation of seats and special representation to cease after",
+    "page": 25
+  },
+  {
+    "idx": 367,
+    "number": "334A",
+    "title": "Reservation of seats for women take effect",
+    "page": 25
+  },
+  {
+    "idx": 368,
+    "number": "335",
+    "title": "Claims of Scheduled Castes and Scheduled Tribes to services",
+    "page": 25
+  },
+  {
+    "idx": 369,
+    "number": "336",
+    "title": "Special provision for Anglo-Indian community in certain",
+    "page": 26
+  },
+  {
+    "idx": 370,
+    "number": "337",
+    "title": "Special provision with respect to educational grants for the",
+    "page": 26
+  },
+  {
+    "idx": 371,
+    "number": "338",
+    "title": "National Commission for Scheduled Castes",
+    "page": 26
+  },
+  {
+    "idx": 372,
+    "number": "338A",
+    "title": "National Commission for Scheduled Tribes",
+    "page": 26
+  },
+  {
+    "idx": 373,
+    "number": "338B",
+    "title": "National Commission for Backward Classes",
+    "page": 26
+  },
+  {
+    "idx": 374,
+    "number": "339",
+    "title": "Control of the Union over the administration of Scheduled Areas",
+    "page": 26
+  },
+  {
+    "idx": 375,
+    "number": "340",
+    "title": "Appointment of a Commission to investigate the conditions of",
+    "page": 26
+  },
+  {
+    "idx": 376,
+    "number": "341",
+    "title": "Scheduled Castes",
+    "page": 26
+  },
+  {
+    "idx": 377,
+    "number": "342",
+    "title": "Scheduled Tribes",
+    "page": 26
+  },
+  {
+    "idx": 378,
+    "number": "342A",
+    "title": "Sociallyand educationally backward classes",
+    "page": 26
+  },
+  {
+    "idx": 379,
+    "number": "343",
+    "title": "Official language of the Union",
+    "page": 26
+  },
+  {
+    "idx": 380,
+    "number": "344",
+    "title": "Commission and Committee of Parliament on official language",
+    "page": 26
+  },
+  {
+    "idx": 381,
+    "number": "345",
+    "title": "Official language or languages of a State",
+    "page": 26
+  },
+  {
+    "idx": 382,
+    "number": "346",
+    "title": "Official language for communication between one State and",
+    "page": 26
+  },
+  {
+    "idx": 383,
+    "number": "347",
+    "title": "Special provision relating to language spoken by a section of the",
+    "page": 26
+  },
+  {
+    "idx": 384,
+    "number": "348",
+    "title": "Language to be used in the Supreme Court and in the High",
+    "page": 26
+  },
+  {
+    "idx": 385,
+    "number": "349",
+    "title": "Special procedure for enactment of certain laws relating to",
+    "page": 26
+  },
+  {
+    "idx": 386,
+    "number": "350",
+    "title": "Language to be used in representations for redress of grievances",
+    "page": 27
+  },
+  {
+    "idx": 387,
+    "number": "350A",
+    "title": "Facilities for instruction in mother-tongue at primary stage",
+    "page": 27
+  },
+  {
+    "idx": 388,
+    "number": "350B",
+    "title": "Special Officer for linguistic minorities",
+    "page": 27
+  },
+  {
+    "idx": 389,
+    "number": "351",
+    "title": "Directive for development of the Hindi language",
+    "page": 27
+  },
+  {
+    "idx": 390,
+    "number": "352",
+    "title": "Proclamation of Emergency",
+    "page": 27
+  },
+  {
+    "idx": 391,
+    "number": "353",
+    "title": "Effect of Proclamation of Emergency",
+    "page": 27
+  },
+  {
+    "idx": 392,
+    "number": "354",
+    "title": "Application of provisions relating to distribution of revenues",
+    "page": 27
+  },
+  {
+    "idx": 393,
+    "number": "355",
+    "title": "Duty of the Union to protect States against external aggression",
+    "page": 27
+  },
+  {
+    "idx": 394,
+    "number": "356",
+    "title": "Provisions in case of failure of constitutional machinery in",
+    "page": 27
+  },
+  {
+    "idx": 395,
+    "number": "357",
+    "title": "Exercise of legislative powers under Proclamation issued under",
+    "page": 27
+  },
+  {
+    "idx": 396,
+    "number": "358",
+    "title": "Suspension of provisions of article 19 during emergencies",
+    "page": 27
+  },
+  {
+    "idx": 397,
+    "number": "359",
+    "title": "Suspension of the enforcement of the rights conferred by Part III",
+    "page": 27
+  },
+  {
+    "idx": 398,
+    "number": "360",
+    "title": "Provisions as to financial emergency",
+    "page": 27
+  },
+  {
+    "idx": 399,
+    "number": "361",
+    "title": "Protection of President and Governors and Rajpramukhs",
+    "page": 27
+  },
+  {
+    "idx": 400,
+    "number": "361A",
+    "title": "Protection of publication of proceedings of Parliament and State",
+    "page": 27
+  },
+  {
+    "idx": 401,
+    "number": "361B",
+    "title": "Disqualification for appointment on remunerative political post",
+    "page": 27
+  },
+  {
+    "idx": 402,
+    "number": "363",
+    "title": "Bar to interference by courts in disputes arising out of certain",
+    "page": 27
+  },
+  {
+    "idx": 403,
+    "number": "363A",
+    "title": "Recognition granted to Rulers of Indian States to cease and privy",
+    "page": 27
+  },
+  {
+    "idx": 404,
+    "number": "364",
+    "title": "Special provisions as to major ports and aerodromes",
+    "page": 28
+  },
+  {
+    "idx": 405,
+    "number": "365",
+    "title": "Effect of failure to comply with, or to give effect to, directions",
+    "page": 28
+  },
+  {
+    "idx": 406,
+    "number": "368",
+    "title": "Power of Parliament to amend the Constitution and procedure",
+    "page": 28
+  },
+  {
+    "idx": 407,
+    "number": "369",
+    "title": "Temporary power to Parliament to make laws with respect to",
+    "page": 28
+  },
+  {
+    "idx": 408,
+    "number": "370",
+    "title": "Temporary provisions with respect to the State of Jammu and",
+    "page": 28
+  },
+  {
+    "idx": 409,
+    "number": "371",
+    "title": "Special provision with respect to the States of Maharashtra and",
+    "page": 28
+  },
+  {
+    "idx": 410,
+    "number": "371A",
+    "title": "Special provision with respect to the State of Nagaland",
+    "page": 28
+  },
+  {
+    "idx": 411,
+    "number": "371C",
+    "title": "Special provision with respect to the State of Manipur",
+    "page": 28
+  },
+  {
+    "idx": 412,
+    "number": "371D",
+    "title": "Special provisions with respect to the State of Andhra Pradesh or",
+    "page": 28
+  },
+  {
+    "idx": 413,
+    "number": "371E",
+    "title": "Establishment of Central University in Andhra Pradesh",
+    "page": 28
+  },
+  {
+    "idx": 414,
+    "number": "371F",
+    "title": "Special provisions with respect to the State of Sikkim",
+    "page": 28
+  },
+  {
+    "idx": 415,
+    "number": "371G",
+    "title": "Special provision with respect to the State of Mizoram",
+    "page": 28
+  },
+  {
+    "idx": 416,
+    "number": "371H",
+    "title": "Special provision with respect to the State of Arunachal Pradesh",
+    "page": 28
+  },
+  {
+    "idx": 417,
+    "number": "371J",
+    "title": "Special provisions with respect to the State of Karnataka",
+    "page": 28
+  },
+  {
+    "idx": 418,
+    "number": "372",
+    "title": "Continuance in force of existing laws and their adaptation",
+    "page": 28
+  },
+  {
+    "idx": 419,
+    "number": "372A",
+    "title": "Power of the President to adapt laws",
+    "page": 28
+  },
+  {
+    "idx": 420,
+    "number": "373",
+    "title": "Power of President to make order in respect of persons under",
+    "page": 29
+  },
+  {
+    "idx": 421,
+    "number": "374",
+    "title": "Provisions as to Judges of the Federal Court and proceedings",
+    "page": 29
+  },
+  {
+    "idx": 422,
+    "number": "375",
+    "title": "Courts, authorities and officers to continue to function subject to",
+    "page": 29
+  },
+  {
+    "idx": 423,
+    "number": "376",
+    "title": "Provisions as to Judges of High Courts",
+    "page": 29
+  },
+  {
+    "idx": 424,
+    "number": "377",
+    "title": "Provisions as to Comptroller and Auditor-General of India",
+    "page": 29
+  },
+  {
+    "idx": 425,
+    "number": "378",
+    "title": "Provisions as to Public Service Commissions",
+    "page": 29
+  },
+  {
+    "idx": 426,
+    "number": "378A",
+    "title": "Special provision as to duration of Andhra Pradesh Legislative",
+    "page": 29
+  },
+  {
+    "idx": 427,
+    "number": "392",
+    "title": "Power of the President to remove difficulties",
+    "page": 30
+  },
+  {
+    "idx": 428,
+    "number": "393",
+    "title": "Short title",
+    "page": 30
+  },
+  {
+    "idx": 429,
+    "number": "12",
+    "title": "Definition.—In this Part, unless the context otherwise requires, “the",
+    "page": 37
+  },
+  {
+    "idx": 430,
+    "number": "36",
+    "title": "Definition.—In this Part, unless the context otherwise requires, “the",
+    "page": 52
+  },
+  {
+    "idx": 431,
+    "number": "147",
+    "title": "Interpretation.—In this Chapter and in Chapter V of Part VI",
+    "page": 99
+  },
+  {
+    "idx": 432,
+    "number": "152",
+    "title": "Definition.—In this Part, unless the context otherwise requires, the",
+    "page": 101
+  },
+  {
+    "idx": 433,
+    "number": "236",
+    "title": "Interpretation.—In this Chapter—",
+    "page": 141
+  },
+  {
+    "idx": 434,
+    "number": "243",
+    "title": "Definitions.—In this Part, unless the context otherwise requires,—",
+    "page": 150
+  },
+  {
+    "idx": 435,
+    "number": "243I",
+    "title": "Constitution of Finance Commission to review financial",
+    "page": 154
+  },
+  {
+    "idx": 436,
+    "number": "243O",
+    "title": "Bar to interference by courts in electoral matters.—",
+    "page": 157
+  },
+  {
+    "idx": 437,
+    "number": "243P",
+    "title": "Definitions.—In this Part, unless the context otherwise",
+    "page": 158
+  },
+  {
+    "idx": 438,
+    "number": "277",
+    "title": "Savings.—Any taxes, duties, cesses or fees which, immediately",
+    "page": 190
+  },
+  {
+    "idx": 439,
+    "number": "299",
+    "title": "Contracts.—(1) All contracts made in the exercise of the executive",
+    "page": 201
+  },
+  {
+    "idx": 440,
+    "number": "308",
+    "title": "Interpretation.—In this Part, unless the context otherwise requires",
+    "page": 204
+  },
+  {
+    "idx": 441,
+    "number": "366",
+    "title": "Definitions.—In this Constitution, unless the context otherwise",
+    "page": 253
+  },
+  {
+    "idx": 442,
+    "number": "367",
+    "title": "Interpretation.—(1) Unless the context otherwise requires, the",
+    "page": 258
+  },
+  {
+    "idx": 443,
+    "number": "394",
+    "title": "Commencement.—This article and articles 5, 6, 7, 8, 9, 60, 324",
+    "page": 283
+  },
+  {
+    "idx": 444,
+    "number": "395",
+    "title": "Repeals.— The Indian Independence Act, 1947, and the",
+    "page": 283
+  },
+  {
+    "idx": 445,
+    "number": "3B",
+    "title": "Additional powers of the Bodoland Territorial Council to make laws.—(1) Without",
+    "page": 316
+  },
+  {
+    "idx": 446,
+    "number": "31",
+    "title": "Posts and telegraphs; telephones, wireless, broadcasting and other like",
+    "page": 343
+  },
+  {
+    "idx": 447,
+    "number": "17B",
+    "title": "Protection of wild animals and birds.]",
+    "page": 353
+  },
+  {
+    "idx": 448,
+    "number": "232",
+    "title": "The Maharashtra Land Revenue Code and the Maharashtra",
+    "page": 372
+  },
+  {
+    "idx": 449,
+    "number": "238",
+    "title": "The Rajasthan Colonisation (Amendment) Act, 1984 (Rajasthan Act",
+    "page": 372
+  },
+  {
+    "idx": 450,
+    "number": "242",
+    "title": "The Tamil Nadu Land Reforms (Fixation of Ceiling on Land)",
+    "page": 372
+  },
+  {
+    "idx": 451,
+    "number": "259",
+    "title": "The Bihar Consolidation of Holdings and Prevention of Fragmentation",
+    "page": 374
+  },
+  {
+    "idx": 452,
+    "number": "264",
+    "title": "The Bihar Land Reforms (Fixation of Ceiling Area and Acquisition of",
+    "page": 374
+  },
+  {
+    "idx": 453,
+    "number": "272",
+    "title": "The Rajasthan Colonisation (Amendment) Act, 1987 (Rajasthan Act 2",
+    "page": 374
+  },
+  {
+    "idx": 454,
+    "number": "278",
+    "title": "The West Bengal Land Reforms (Amendment) Act, 1981 (West",
+    "page": 375
+  },
+  {
+    "idx": 455,
+    "number": "SCHEDULE-THE FIRST",
+    "title": "THE FIRST SCHEDULE",
+    "page": 384
+  },
+  {
+    "idx": 456,
+    "number": "SCHEDULE-THE SECOND",
+    "title": "THE SECOND SCHEDULE",
+    "page": 384
+  },
+  {
+    "idx": 457,
+    "number": "SCHEDULE-THE THIRD",
+    "title": "THE THIRD SCHEDULE",
+    "page": 385
+  },
+  {
+    "idx": 458,
+    "number": "1975",
+    "title": "In sectors still to be demarcated, transfer of territorial jurisdiction may",
+    "page": 385
+  }
+]

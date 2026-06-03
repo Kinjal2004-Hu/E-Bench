@@ -1,0 +1,311 @@
+{
+  "total_laws": 18,
+  "total_provisions": 5641,
+  "embedding_model": "BAAI/bge-base-en-v1.5",
+  "embedding_dim": 768,
+  "build_version": "2.0",
+  "laws": [
+    {
+      "id": "bns_2023",
+      "label": "Bharatiya Nyaya Sanhita, 2023",
+      "domain": "Criminal Law",
+      "strategy": "default_numbered",
+      "provision_label": "Section",
+      "provision_count": 46,
+      "has_schedules": false,
+      "corpus_json": "data\\bns_2023\\corpus.json",
+      "corpus_meta": "data\\bns_2023\\corpus_meta.json",
+      "faiss_index": "data\\bns_2023\\faiss.index",
+      "embeddings_npy": "data\\bns_2023\\embeddings.npy",
+      "error": null
+    },
+    {
+      "id": "bnss_2023",
+      "label": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+      "domain": "Criminal Procedure",
+      "strategy": "default_numbered",
+      "provision_label": "Section",
+      "provision_count": 68,
+      "has_schedules": false,
+      "corpus_json": "data\\bnss_2023\\corpus.json",
+      "corpus_meta": "data\\bnss_2023\\corpus_meta.json",
+      "faiss_index": "data\\bnss_2023\\faiss.index",
+      "embeddings_npy": "data\\bnss_2023\\embeddings.npy",
+      "error": null
+    },
+    {
+      "id": "bsa_2023",
+      "label": "Bharatiya Sakshya Adhiniyam, 2023",
+      "domain": "Evidence Law",
+      "strategy": "default_numbered",
+      "provision_label": "Section",
+      "provision_count": 46,
+      "has_schedules": false,
+      "corpus_json": "data\\bsa_2023\\corpus.json",
+      "corpus_meta": "data\\bsa_2023\\corpus_meta.json",
+      "faiss_index": "data\\bsa_2023\\faiss.index",
+      "embeddings_npy": "data\\bsa_2023\\embeddings.npy",
+      "error": null
+    },
+    {
+      "id": "constitution",
+      "label": "Constitution of India",
+      "domain": "Constitutional Law",
+      "strategy": "constitution_with_parts",
+      "provision_label": "Article",
+      "provision_count": 459,
+      "has_schedules": true,
+      "corpus_json": "data\\constitution\\corpus.json",
+      "corpus_meta": "data\\constitution\\corpus_meta.json",
+      "faiss_index": "data\\constitution\\faiss.index",
+      "embeddings_npy": "data\\constitution\\embeddings.npy",
+      "error": null
+    },
+    {
+      "id": "corporate",
+      "label": "Companies Act, 2013",
+      "domain": "Corporate Law",
+      "strategy": "default_numbered",
+      "provision_label": "Section",
+      "provision_count": 1217,
+      "has_schedules": true,
+      "corpus_json": "data\\corporate\\corpus.json",
+      "corpus_meta": "data\\corporate\\corpus_meta.json",
+      "faiss_index": "data\\corporate\\faiss.index",
+      "embeddings_npy": "data\\corporate\\embeddings.npy",
+      "error": null
+    },
+    {
+      "id": "cpa_2019",
+      "label": "Consumer Protection Act, 2019",
+      "domain": "Consumer Law",
+      "strategy": "default_numbered",
+      "provision_label": "Section",
+      "provision_count": 212,
+      "has_schedules": false,
+      "corpus_json": "data\\cpa_2019\\corpus.json",
+      "corpus_meta": "data\\cpa_2019\\corpus_meta.json",
+      "faiss_index": "data\\cpa_2019\\faiss.index",
+      "embeddings_npy": "data\\cpa_2019\\embeddings.npy",
+      "error": null
+    },
+    {
+      "id": "dv_act_2005",
+      "label": "Protection of Women from Domestic Violence Act, 2005",
+      "domain": "Family Law",
+      "strategy": "default_numbered",
+      "provision_label": "Section",
+      "provision_count": 70,
+      "has_schedules": false,
+      "corpus_json": "data\\dv_act_2005\\corpus.json",
+      "corpus_meta": "data\\dv_act_2005\\corpus_meta.json",
+      "faiss_index": "data\\dv_act_2005\\faiss.index",
+      "embeddings_npy": "data\\dv_act_2005\\embeddings.npy",
+      "error": null
+    },
+    {
+      "id": "family_laws",
+      "label": "Family Courts Act, 1984",
+      "domain": "Family Law",
+      "strategy": "default_numbered",
+      "provision_label": "Section",
+      "provision_count": 46,
+      "has_schedules": false,
+      "corpus_json": "data\\family_laws\\corpus.json",
+      "corpus_meta": "data\\family_laws\\corpus_meta.json",
+      "faiss_index": "data\\family_laws\\faiss.index",
+      "embeddings_npy": "data\\family_laws\\embeddings.npy",
+      "error": null
+    },
+    {
+      "id": "gdr_rules_2014",
+      "label": "Companies (Issue of Global Depository Receipts) Rules, 2014",
+      "domain": "Corporate Law",
+      "strategy": "rules_with_inline_clauses",
+      "provision_label": "Rule",
+      "provision_count": 4,
+      "has_schedules": false,
+      "corpus_json": "data\\gdr_rules_2014\\corpus.json",
+      "corpus_meta": "data\\gdr_rules_2014\\corpus_meta.json",
+      "faiss_index": "data\\gdr_rules_2014\\faiss.index",
+      "embeddings_npy": "data\\gdr_rules_2014\\embeddings.npy",
+      "error": null
+    },
+    {
+      "id": "ica_1872",
+      "label": "Indian Contract Act, 1872",
+      "domain": "Contract Law",
+      "strategy": "old_act_multiline",
+      "provision_label": "Section",
+      "provision_count": 317,
+      "has_schedules": false,
+      "corpus_json": "data\\ica_1872\\corpus.json",
+      "corpus_meta": "data\\ica_1872\\corpus_meta.json",
+      "faiss_index": "data\\ica_1872\\faiss.index",
+      "embeddings_npy": "data\\ica_1872\\embeddings.npy",
+      "error": null
+    },
+    {
+      "id": "it_act_2000",
+      "label": "Information Technology Act, 2000",
+      "domain": "Cyber Law",
+      "strategy": "default_numbered",
+      "provision_label": "Section",
+      "provision_count": 214,
+      "has_schedules": true,
+      "corpus_json": "data\\it_act_2000\\corpus.json",
+      "corpus_meta": "data\\it_act_2000\\corpus_meta.json",
+      "faiss_index": "data\\it_act_2000\\faiss.index",
+      "embeddings_npy": "data\\it_act_2000\\embeddings.npy",
+      "error": null
+    },
+    {
+      "id": "labour_employment",
+      "label": "Labour & Employment Laws",
+      "domain": "Labour Law",
+      "strategy": "multi_act_compilation",
+      "provision_label": "Section",
+      "provision_count": 251,
+      "has_schedules": false,
+      "corpus_json": "data\\labour_employment\\corpus.json",
+      "corpus_meta": "data\\labour_employment\\corpus_meta.json",
+      "faiss_index": "data\\labour_employment\\faiss.index",
+      "embeddings_npy": "data\\labour_employment\\embeddings.npy",
+      "error": null
+    },
+    {
+      "id": "motor_vehicles",
+      "label": "Motor Vehicles Act",
+      "domain": "Transport Law",
+      "strategy": "default_numbered",
+      "provision_label": "Section",
+      "provision_count": 453,
+      "has_schedules": true,
+      "corpus_json": "data\\motor_vehicles\\corpus.json",
+      "corpus_meta": "data\\motor_vehicles\\corpus_meta.json",
+      "faiss_index": "data\\motor_vehicles\\faiss.index",
+      "embeddings_npy": "data\\motor_vehicles\\embeddings.npy",
+      "error": null
+    },
+    {
+      "id": "rera",
+      "label": "Real Estate (Regulation and Development) Act, 2016",
+      "domain": "Real Estate Law",
+      "strategy": "default_numbered",
+      "provision_label": "Section",
+      "provision_count": 180,
+      "has_schedules": true,
+      "corpus_json": "data\\rera\\corpus.json",
+      "corpus_meta": "data\\rera\\corpus_meta.json",
+      "faiss_index": "data\\rera\\faiss.index",
+      "embeddings_npy": "data\\rera\\embeddings.npy",
+      "error": null
+    },
+    {
+      "id": "securities",
+      "label": "Securities Laws",
+      "domain": "Corporate Law",
+      "strategy": "default_numbered",
+      "provision_label": "Section",
+      "provision_count": 104,
+      "has_schedules": true,
+      "corpus_json": "data\\securities\\corpus.json",
+      "corpus_meta": "data\\securities\\corpus_meta.json",
+      "faiss_index": "data\\securities\\faiss.index",
+      "embeddings_npy": "data\\securities\\embeddings.npy",
+      "error": null
+    },
+    {
+      "id": "sra_1963",
+      "label": "Specific Relief Act, 1963",
+      "domain": "Civil Remedies",
+      "strategy": "default_numbered",
+      "provision_label": "Section",
+      "provision_count": 94,
+      "has_schedules": false,
+      "corpus_json": "data\\sra_1963\\corpus.json",
+      "corpus_meta": "data\\sra_1963\\corpus_meta.json",
+      "faiss_index": "data\\sra_1963\\faiss.index",
+      "embeddings_npy": "data\\sra_1963\\embeddings.npy",
+      "error": null
+    },
+    {
+      "id": "taxation",
+      "label": "Income Tax Act, 1961",
+      "domain": "Tax Law",
+      "strategy": "default_numbered",
+      "provision_label": "Section",
+      "provision_count": 1581,
+      "has_schedules": true,
+      "corpus_json": "data\\taxation\\corpus.json",
+      "corpus_meta": "data\\taxation\\corpus_meta.json",
+      "faiss_index": "data\\taxation\\faiss.index",
+      "embeddings_npy": "data\\taxation\\embeddings.npy",
+      "error": null
+    },
+    {
+      "id": "tpa_1882",
+      "label": "Transfer of Property Act, 1882",
+      "domain": "Property Law",
+      "strategy": "old_act_multiline",
+      "provision_label": "Section",
+      "provision_count": 279,
+      "has_schedules": false,
+      "corpus_json": "data\\tpa_1882\\corpus.json",
+      "corpus_meta": "data\\tpa_1882\\corpus_meta.json",
+      "faiss_index": "data\\tpa_1882\\faiss.index",
+      "embeddings_npy": "data\\tpa_1882\\embeddings.npy",
+      "error": null
+    }
+  ],
+  "domain_index": {
+    "Criminal Law": [
+      "bns_2023"
+    ],
+    "Criminal Procedure": [
+      "bnss_2023"
+    ],
+    "Evidence Law": [
+      "bsa_2023"
+    ],
+    "Constitutional Law": [
+      "constitution"
+    ],
+    "Corporate Law": [
+      "corporate",
+      "gdr_rules_2014",
+      "securities"
+    ],
+    "Consumer Law": [
+      "cpa_2019"
+    ],
+    "Family Law": [
+      "dv_act_2005",
+      "family_laws"
+    ],
+    "Contract Law": [
+      "ica_1872"
+    ],
+    "Cyber Law": [
+      "it_act_2000"
+    ],
+    "Labour Law": [
+      "labour_employment"
+    ],
+    "Transport Law": [
+      "motor_vehicles"
+    ],
+    "Real Estate Law": [
+      "rera"
+    ],
+    "Civil Remedies": [
+      "sra_1963"
+    ],
+    "Tax Law": [
+      "taxation"
+    ],
+    "Property Law": [
+      "tpa_1882"
+    ]
+  }
+}

@@ -1,0 +1,3435 @@
+{
+  "law_id": "it_act_2000",
+  "domain_field": null,
+  "curated": [
+    {
+      "provision_number": "1",
+      "summary": "Section 1: Short title, extent, commencement and application",
+      "plain_english": "2. Definitions. DIGITAL SIGNATURE AND ELECTRONIC SIGNATURE",
+      "keywords": [
+        "Signature",
+        "Short",
+        "Title",
+        "Extent",
+        "Commencement",
+        "Application"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "3",
+      "summary": "Section 3: Authentication of electronic records",
+      "plain_english": "Section 3: Authentication of electronic records",
+      "keywords": [
+        "Authentication",
+        "Electronic",
+        "Records"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "3A",
+      "summary": "Section 3A: Electronic signature",
+      "plain_english": "ELECTRONIC GOVERNANCE",
+      "keywords": [
+        "Electronic",
+        "Signature",
+        "Governance"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "4",
+      "summary": "Section 4: Legal recognition of electronic records",
+      "plain_english": "Section 4: Legal recognition of electronic records",
+      "keywords": [
+        "Legal",
+        "Recognition",
+        "Electronic",
+        "Records"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "5",
+      "summary": "Section 5: Legal recognition of electronic signatures",
+      "plain_english": "Section 5: Legal recognition of electronic signatures",
+      "keywords": [
+        "Legal",
+        "Recognition",
+        "Electronic",
+        "Signatures"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "6",
+      "summary": "Section 6: Use of electronic records and electronic signatures in Government and its agencies",
+      "plain_english": "Section 6: Use of electronic records and electronic signatures in Government and its agencies",
+      "keywords": [
+        "Electronic",
+        "Records",
+        "Signatures",
+        "Government",
+        "Agencies"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "6A",
+      "summary": "Section 6A: Delivery of services by service provider",
+      "plain_english": "Section 6A: Delivery of services by service provider",
+      "keywords": [
+        "Delivery",
+        "Services",
+        "Service",
+        "Provider"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "7",
+      "summary": "Section 7: Retention of electronic records",
+      "plain_english": "Section 7: Retention of electronic records",
+      "keywords": [
+        "Retention",
+        "Electronic",
+        "Records"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "7A",
+      "summary": "Section 7A: Audit of documents, etc., maintained in electronic form",
+      "plain_english": "Section 7A: Audit of documents, etc., maintained in electronic form",
+      "keywords": [
+        "Audit",
+        "Documents",
+        "Maintained",
+        "Electronic",
+        "Form"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "8",
+      "summary": "Section 8: Publication of rule, regulation, etc., in Electronic Gazette",
+      "plain_english": "Section 8: Publication of rule, regulation, etc., in Electronic Gazette",
+      "keywords": [
+        "Publication",
+        "Rule",
+        "Regulation",
+        "Electronic",
+        "Gazette"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "9",
+      "summary": "Section 9: Sections 6, 7 and 8 not to confer right to insist document should be accepted in electronic form",
+      "plain_english": "Section 9: Sections 6, 7 and 8 not to confer right to insist document should be accepted in electronic form",
+      "keywords": [
+        "Sections",
+        "Confer",
+        "Right",
+        "Insist",
+        "Document",
+        "Should"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "10",
+      "summary": "Section 10: Power to make rules by Central Government in respect of electronic signature",
+      "plain_english": "Section 10: Power to make rules by Central Government in respect of electronic signature",
+      "keywords": [
+        "Power",
+        "Make",
+        "Rules",
+        "Central",
+        "Government",
+        "Respect"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "10A",
+      "summary": "Section 10A: Validity of contracts formed through electronic means",
+      "plain_english": "ATTRIBUTION, ACKNOWLEDGEMENT AND DESPATCH OF ELECTRONIC RECORDS",
+      "keywords": [
+        "Electronic",
+        "Validity",
+        "Contracts",
+        "Formed",
+        "Through",
+        "Means"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "11",
+      "summary": "Section 11: Attribution of electronic records",
+      "plain_english": "Section 11: Attribution of electronic records",
+      "keywords": [
+        "Attribution",
+        "Electronic",
+        "Records"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "12",
+      "summary": "Section 12: Acknowledgment of receipt",
+      "plain_english": "Section 12: Acknowledgment of receipt",
+      "keywords": [
+        "Acknowledgment",
+        "Receipt"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "13",
+      "summary": "Section 13: Time and place of despatch and receipt of electronic record",
+      "plain_english": "SECURE ELECTRONIC RECORDS AND SECURE ELECTRONIC SIGNATURE",
+      "keywords": [
+        "Electronic",
+        "Secure",
+        "Time",
+        "Place",
+        "Despatch",
+        "Receipt"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "14",
+      "summary": "Section 14: Secure electronic record",
+      "plain_english": "Section 14: Secure electronic record",
+      "keywords": [
+        "Secure",
+        "Electronic",
+        "Record"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "15",
+      "summary": "Section 15: Secure electronic signature",
+      "plain_english": "Section 15: Secure electronic signature",
+      "keywords": [
+        "Secure",
+        "Electronic",
+        "Signature"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "16",
+      "summary": "Section 16: Security procedures and practices",
+      "plain_english": "REGULATION OF CERTIFYING AUTHORITIES",
+      "keywords": [
+        "Security",
+        "Procedures",
+        "Practices",
+        "Regulation",
+        "Certifying",
+        "Authorities"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "17",
+      "summary": "Section 17: Appointment of Controller and other officers",
+      "plain_english": "Section 17: Appointment of Controller and other officers",
+      "keywords": [
+        "Appointment",
+        "Controller",
+        "Other",
+        "Officers"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "18",
+      "summary": "Section 18: Functions of Controller",
+      "plain_english": "Section 18: Functions of Controller",
+      "keywords": [
+        "Functions",
+        "Controller"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "19",
+      "summary": "Section 19: Recognition of foreign Certifying Authorities",
+      "plain_english": "20. [Omitted.].",
+      "keywords": [
+        "Recognition",
+        "Foreign",
+        "Certifying",
+        "Authorities",
+        "Omitted"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "21",
+      "summary": "Section 21: Licence to issue electronic signature Certificates",
+      "plain_english": "Section 21: Licence to issue electronic signature Certificates",
+      "keywords": [
+        "Licence",
+        "Issue",
+        "Electronic",
+        "Signature",
+        "Certificates"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "22",
+      "summary": "Section 22: Application for licence",
+      "plain_english": "Section 22: Application for licence",
+      "keywords": [
+        "Application",
+        "Licence"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "23",
+      "summary": "Section 23: Renewal of licence",
+      "plain_english": "Section 23: Renewal of licence",
+      "keywords": [
+        "Renewal",
+        "Licence"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "24",
+      "summary": "Section 24: Procedure for grant or rejection of licence",
+      "plain_english": "Section 24: Procedure for grant or rejection of licence",
+      "keywords": [
+        "Procedure",
+        "Grant",
+        "Rejection",
+        "Licence"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "25",
+      "summary": "Section 25: Suspension of licence",
+      "plain_english": "Section 25: Suspension of licence",
+      "keywords": [
+        "Suspension",
+        "Licence"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "26",
+      "summary": "Section 26: Notice of suspension or revocation of licence",
+      "plain_english": "1 SECTIONS",
+      "keywords": [
+        "Notice",
+        "Suspension",
+        "Revocation",
+        "Licence",
+        "Sections"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "27",
+      "summary": "Section 27: Power to delegate",
+      "plain_english": "Section 27: Power to delegate",
+      "keywords": [
+        "Power",
+        "Delegate"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "28",
+      "summary": "Section 28: Power to investigate contraventions",
+      "plain_english": "Section 28: Power to investigate contraventions",
+      "keywords": [
+        "Power",
+        "Investigate",
+        "Contraventions"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "29",
+      "summary": "Section 29: Access to computers and data",
+      "plain_english": "Section 29: Access to computers and data",
+      "keywords": [
+        "Access",
+        "Computers",
+        "Data"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "30",
+      "summary": "Section 30: Certifying Authority to follow certain procedures",
+      "plain_english": "Section 30: Certifying Authority to follow certain procedures",
+      "keywords": [
+        "Certifying",
+        "Authority",
+        "Follow",
+        "Certain",
+        "Procedures"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "31",
+      "summary": "Section 31: Certifying Authority to ensure compliance of the Act, etc",
+      "plain_english": "Section 31: Certifying Authority to ensure compliance of the Act, etc",
+      "keywords": [
+        "Certifying",
+        "Authority",
+        "Ensure",
+        "Compliance"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "32",
+      "summary": "Section 32: Display of licence",
+      "plain_english": "Section 32: Display of licence",
+      "keywords": [
+        "Display",
+        "Licence"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "33",
+      "summary": "Section 33: Surrender of licence",
+      "plain_english": "34. Disclosure. ELECTRONIC SIGNATURE CERTIFICATES",
+      "keywords": [
+        "Surrender",
+        "Licence",
+        "Disclosure",
+        "Electronic",
+        "Signature",
+        "Certificates"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "35",
+      "summary": "Section 35: Certifying authority to issue electronic signature Certificate",
+      "plain_english": "Section 35: Certifying authority to issue electronic signature Certificate",
+      "keywords": [
+        "Certifying",
+        "Authority",
+        "Issue",
+        "Electronic",
+        "Signature",
+        "Certificate"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "36",
+      "summary": "Section 36: Representations upon issuance of Digital signature Certificate",
+      "plain_english": "Section 36: Representations upon issuance of Digital signature Certificate",
+      "keywords": [
+        "Representations",
+        "Issuance",
+        "Digital",
+        "Signature",
+        "Certificate"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "37",
+      "summary": "Section 37: Suspension of Digital Signature Certificate",
+      "plain_english": "Section 37: Suspension of Digital Signature Certificate",
+      "keywords": [
+        "Suspension",
+        "Digital",
+        "Signature",
+        "Certificate"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "38",
+      "summary": "Section 38: Revocation of Digital Signature Certificate",
+      "plain_english": "Section 38: Revocation of Digital Signature Certificate",
+      "keywords": [
+        "Revocation",
+        "Digital",
+        "Signature",
+        "Certificate"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "39",
+      "summary": "Section 39: Notice of suspension or revocation",
+      "plain_english": "DUTIES OF SUBSCRIBERS",
+      "keywords": [
+        "Notice",
+        "Suspension",
+        "Revocation",
+        "Duties",
+        "Subscribers"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "40",
+      "summary": "Section 40: Generating key pair",
+      "plain_english": "Section 40: Generating key pair",
+      "keywords": [
+        "Generating",
+        "Pair"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "40A",
+      "summary": "Section 40A: Duties of subscriber of Electronic Signature Certificate",
+      "plain_english": "Section 40A: Duties of subscriber of Electronic Signature Certificate",
+      "keywords": [
+        "Duties",
+        "Subscriber",
+        "Electronic",
+        "Signature",
+        "Certificate"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "41",
+      "summary": "Section 41: Acceptance of Digital Signature Certificate",
+      "plain_english": "Section 41: Acceptance of Digital Signature Certificate",
+      "keywords": [
+        "Acceptance",
+        "Digital",
+        "Signature",
+        "Certificate"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "42",
+      "summary": "Section 42: Control of private key",
+      "plain_english": "PENALTIES, COMPENSATION AND ADJUDICATION",
+      "keywords": [
+        "Control",
+        "Private",
+        "Penalties",
+        "Compensation",
+        "Adjudication"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "43",
+      "summary": "Section 43: Penalty and compensation for damage to computer, computer system, etc",
+      "plain_english": "Section 43: Penalty and compensation for damage to computer, computer system, etc",
+      "keywords": [
+        "Computer",
+        "Penalty",
+        "Compensation",
+        "Damage",
+        "System"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "43A",
+      "summary": "Section 43A: Compensation for failure to protect data",
+      "plain_english": "Section 43A: Compensation for failure to protect data",
+      "keywords": [
+        "Compensation",
+        "Failure",
+        "Protect",
+        "Data"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "44",
+      "summary": "Section 44: Penalty for failure to furnish information, return, etc",
+      "plain_english": "Section 44: Penalty for failure to furnish information, return, etc",
+      "keywords": [
+        "Penalty",
+        "Failure",
+        "Furnish",
+        "Information",
+        "Return"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "45",
+      "summary": "Section 45: Residuary penalty",
+      "plain_english": "Section 45: Residuary penalty",
+      "keywords": [
+        "Residuary",
+        "Penalty"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "46",
+      "summary": "Section 46: Power to adjudicate",
+      "plain_english": "Section 46: Power to adjudicate",
+      "keywords": [
+        "Power",
+        "Adjudicate"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "47",
+      "summary": "Section 47: Factors to be taken into account by the adjudicating officer",
+      "plain_english": "THE APPELLATE TRIBUNAL",
+      "keywords": [
+        "Factors",
+        "Taken",
+        "Account",
+        "Adjudicating",
+        "Officer",
+        "Appellate"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "48",
+      "summary": "Section 48: Appellate Tribunal",
+      "plain_english": "49. [Omitted.]. 50. [Omitted.]. 51. [Omitted.]. 52. [Omitted.]. 52A. [Omitted.]. 52B. [Omitted.]. 52C. [Omitted.].",
+      "keywords": [
+        "Omitted",
+        "Appellate",
+        "Tribunal"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "52D",
+      "summary": "Section 52D: Decision by majority",
+      "plain_english": "53. [Omitted.]. 54. [Omitted.].",
+      "keywords": [
+        "Omitted",
+        "Decision",
+        "Majority"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "55",
+      "summary": "Section 55: Orders constituting Appellate Tribunal to be final and not to invalidate its proceedings",
+      "plain_english": "56. [Omitted.].",
+      "keywords": [
+        "Orders",
+        "Constituting",
+        "Appellate",
+        "Tribunal",
+        "Final",
+        "Invalidate"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "57",
+      "summary": "Section 57: Appeal to Appellate Tribunal",
+      "plain_english": "Section 57: Appeal to Appellate Tribunal",
+      "keywords": [
+        "Appeal",
+        "Appellate",
+        "Tribunal"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "58",
+      "summary": "Section 58: Procedure and powers of the Appellate Tribunal",
+      "plain_english": "Section 58: Procedure and powers of the Appellate Tribunal",
+      "keywords": [
+        "Procedure",
+        "Powers",
+        "Appellate",
+        "Tribunal"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "59",
+      "summary": "Section 59: Right to legal representation",
+      "plain_english": "60. Limitation.",
+      "keywords": [
+        "Right",
+        "Legal",
+        "Representation",
+        "Limitation"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "61",
+      "summary": "Section 61: Civil court not to have jurisdiction",
+      "plain_english": "Section 61: Civil court not to have jurisdiction",
+      "keywords": [
+        "Civil",
+        "Court",
+        "Have",
+        "Jurisdiction"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "62",
+      "summary": "Section 62: Appeal to High Court",
+      "plain_english": "Section 62: Appeal to High Court",
+      "keywords": [
+        "Appeal",
+        "High",
+        "Court"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "63",
+      "summary": "Section 63: Compounding of contraventions",
+      "plain_english": "2 SECTIONS",
+      "keywords": [
+        "Compounding",
+        "Contraventions",
+        "Sections"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "64",
+      "summary": "Section 64: Recovery of penalty or compensation",
+      "plain_english": "OFFENCES",
+      "keywords": [
+        "Recovery",
+        "Penalty",
+        "Compensation",
+        "Offences"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "65",
+      "summary": "Section 65: Tampering with computer source documents",
+      "plain_english": "Section 65: Tampering with computer source documents",
+      "keywords": [
+        "Tampering",
+        "Computer",
+        "Source",
+        "Documents"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "66",
+      "summary": "Section 66: Computer related offences",
+      "plain_english": "Section 66: Computer related offences",
+      "keywords": [
+        "Computer",
+        "Related",
+        "Offences"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "66A",
+      "summary": "Section 66A: Punishment for sending offensive messages through communication service, etc",
+      "plain_english": "Section 66A: Punishment for sending offensive messages through communication service, etc",
+      "keywords": [
+        "Punishment",
+        "Sending",
+        "Offensive",
+        "Messages",
+        "Through",
+        "Communication"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "66B",
+      "summary": "Section 66B: Punishment for dishonestly receiving stolen computer resource or communication device",
+      "plain_english": "Section 66B: Punishment for dishonestly receiving stolen computer resource or communication device",
+      "keywords": [
+        "Punishment",
+        "Dishonestly",
+        "Receiving",
+        "Stolen",
+        "Computer",
+        "Resource"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "66C",
+      "summary": "Section 66C: Punishment for identity theft",
+      "plain_english": "Section 66C: Punishment for identity theft",
+      "keywords": [
+        "Punishment",
+        "Identity",
+        "Theft"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "66D",
+      "summary": "Section 66D: Punishment for cheating by personation by using computer resource",
+      "plain_english": "Section 66D: Punishment for cheating by personation by using computer resource",
+      "keywords": [
+        "Punishment",
+        "Cheating",
+        "Personation",
+        "Using",
+        "Computer",
+        "Resource"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "66E",
+      "summary": "Section 66E: Punishment for violation of privacy",
+      "plain_english": "Section 66E: Punishment for violation of privacy",
+      "keywords": [
+        "Punishment",
+        "Violation",
+        "Privacy"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "66F",
+      "summary": "Section 66F: Punishment for cyber terrorism",
+      "plain_english": "Section 66F: Punishment for cyber terrorism",
+      "keywords": [
+        "Punishment",
+        "Cyber",
+        "Terrorism"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "67",
+      "summary": "Section 67: Punishment for publishing or transmitting obscene material in electronic form",
+      "plain_english": "Section 67: Punishment for publishing or transmitting obscene material in electronic form",
+      "keywords": [
+        "Punishment",
+        "Publishing",
+        "Transmitting",
+        "Obscene",
+        "Material",
+        "Electronic"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "67A",
+      "summary": "Section 67A: Punishment for publishing or transmitting of material containing sexually explicit act, etc., in",
+      "plain_english": "electronic form.",
+      "keywords": [
+        "Punishment",
+        "Publishing",
+        "Transmitting",
+        "Material",
+        "Containing",
+        "Sexually"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "67B",
+      "summary": "Section 67B: Punishment for publishing or transmitting of material depicting children in sexually explicit act",
+      "plain_english": "etc., in electronic form.",
+      "keywords": [
+        "Punishment",
+        "Publishing",
+        "Transmitting",
+        "Material",
+        "Depicting",
+        "Children"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "67C",
+      "summary": "Section 67C: Preservation and retention of information by intermediaries",
+      "plain_english": "Section 67C: Preservation and retention of information by intermediaries",
+      "keywords": [
+        "Preservation",
+        "Retention",
+        "Information",
+        "Intermediaries"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "68",
+      "summary": "Section 68: Power of Controller to give directions",
+      "plain_english": "Section 68: Power of Controller to give directions",
+      "keywords": [
+        "Power",
+        "Controller",
+        "Give",
+        "Directions"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "69",
+      "summary": "Section 69: Power to issue directions for interception or monitoring or decryption of any information through",
+      "plain_english": "any computer resource.",
+      "keywords": [
+        "Power",
+        "Issue",
+        "Directions",
+        "Interception",
+        "Monitoring",
+        "Decryption"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "69A",
+      "summary": "Section 69A: Power to issue directions for blocking for public access of any information through any",
+      "plain_english": "computer resource.",
+      "keywords": [
+        "Power",
+        "Issue",
+        "Directions",
+        "Blocking",
+        "Public",
+        "Access"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "69B",
+      "summary": "Section 69B: Power to authorise to monitor and collect traffic data or information through any computer",
+      "plain_english": "resource for cyber security.",
+      "keywords": [
+        "Power",
+        "Authorise",
+        "Monitor",
+        "Collect",
+        "Traffic",
+        "Data"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "70",
+      "summary": "Section 70: Protected system",
+      "plain_english": "Section 70: Protected system",
+      "keywords": [
+        "Protected",
+        "System"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "70A",
+      "summary": "Section 70A: National nodal agency",
+      "plain_english": "Section 70A: National nodal agency",
+      "keywords": [
+        "National",
+        "Nodal",
+        "Agency"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "70B",
+      "summary": "Section 70B: Indian Computer Emergency Response Team to serve as national agency for incident response",
+      "plain_english": "Section 70B: Indian Computer Emergency Response Team to serve as national agency for incident response",
+      "keywords": [
+        "Response",
+        "Indian",
+        "Computer",
+        "Emergency",
+        "Team",
+        "Serve"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "71",
+      "summary": "Section 71: Penalty for misrepresentation",
+      "plain_english": "Section 71: Penalty for misrepresentation",
+      "keywords": [
+        "Penalty",
+        "Misrepresentation"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "72",
+      "summary": "Section 72: Penalty for Breach of confidentiality and privacy",
+      "plain_english": "Section 72: Penalty for Breach of confidentiality and privacy",
+      "keywords": [
+        "Penalty",
+        "Breach",
+        "Confidentiality",
+        "Privacy"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "72A",
+      "summary": "Section 72A: Punishment for disclosure of information in breach of lawful contract",
+      "plain_english": "Section 72A: Punishment for disclosure of information in breach of lawful contract",
+      "keywords": [
+        "Punishment",
+        "Disclosure",
+        "Information",
+        "Breach",
+        "Lawful",
+        "Contract"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "73",
+      "summary": "Section 73: Penalty for publishing electronic signature Certificate false in certain particulars",
+      "plain_english": "Section 73: Penalty for publishing electronic signature Certificate false in certain particulars",
+      "keywords": [
+        "Penalty",
+        "Publishing",
+        "Electronic",
+        "Signature",
+        "Certificate",
+        "False"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "74",
+      "summary": "Section 74: Publication for fraudulent purpose",
+      "plain_english": "Section 74: Publication for fraudulent purpose",
+      "keywords": [
+        "Publication",
+        "Fraudulent",
+        "Purpose"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "75",
+      "summary": "Section 75: Act to apply for offence or contravention committed outside India",
+      "plain_english": "76. Confiscation.",
+      "keywords": [
+        "Apply",
+        "Offence",
+        "Contravention",
+        "Committed",
+        "Outside",
+        "India"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "77",
+      "summary": "Section 77: Compensation, penalties or confiscation not to interfere with other punishment",
+      "plain_english": "Section 77: Compensation, penalties or confiscation not to interfere with other punishment",
+      "keywords": [
+        "Compensation",
+        "Penalties",
+        "Confiscation",
+        "Interfere",
+        "Other",
+        "Punishment"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "77A",
+      "summary": "Section 77A: Compounding of offences",
+      "plain_english": "Section 77A: Compounding of offences",
+      "keywords": [
+        "Compounding",
+        "Offences"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "77B",
+      "summary": "Section 77B: Offences with three years imprisonment to be bailable",
+      "plain_english": "Section 77B: Offences with three years imprisonment to be bailable",
+      "keywords": [
+        "Offences",
+        "Three",
+        "Years",
+        "Imprisonment",
+        "Bailable"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "78",
+      "summary": "Section 78: Power to investigate offences",
+      "plain_english": "INTERMEDIARIES NOT TO BE LIABLE IN CERTAIN CASES",
+      "keywords": [
+        "Power",
+        "Investigate",
+        "Offences",
+        "Intermediaries",
+        "Liable",
+        "Certain"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "79",
+      "summary": "Section 79: Exemption from liability of intermediary in certain cases",
+      "plain_english": "EXAMINER OF ELECTRONIC EVIDENCE",
+      "keywords": [
+        "Exemption",
+        "Liability",
+        "Intermediary",
+        "Certain",
+        "Cases",
+        "Examiner"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "79A",
+      "summary": "Section 79A: Central Government to notify Examiner of Electronic Evidence",
+      "plain_english": "MISCELLANEOUS",
+      "keywords": [
+        "Central",
+        "Government",
+        "Notify",
+        "Examiner",
+        "Electronic",
+        "Evidence"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "80",
+      "summary": "Section 80: Power of police officer and other officers to enter, search, etc",
+      "plain_english": "Section 80: Power of police officer and other officers to enter, search, etc",
+      "keywords": [
+        "Power",
+        "Police",
+        "Officer",
+        "Other",
+        "Officers",
+        "Enter"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "81",
+      "summary": "Section 81: Act to have overriding effect",
+      "plain_english": "Section 81: Act to have overriding effect",
+      "keywords": [
+        "Have",
+        "Overriding",
+        "Effect"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "81A",
+      "summary": "Section 81A: Application of the Act to electronic cheque and truncated cheque",
+      "plain_english": "Section 81A: Application of the Act to electronic cheque and truncated cheque",
+      "keywords": [
+        "Cheque",
+        "Application",
+        "Electronic",
+        "Truncated"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "82",
+      "summary": "Section 82: Controller, Deputy Controller and Assistant Controller to be public servants",
+      "plain_english": "3 SECTIONS",
+      "keywords": [
+        "Controller",
+        "Deputy",
+        "Assistant",
+        "Public",
+        "Servants",
+        "Sections"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "83",
+      "summary": "Section 83: Power to give directions",
+      "plain_english": "Section 83: Power to give directions",
+      "keywords": [
+        "Power",
+        "Give",
+        "Directions"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "84",
+      "summary": "Section 84: Protection of action taken in good faith",
+      "plain_english": "Section 84: Protection of action taken in good faith",
+      "keywords": [
+        "Protection",
+        "Action",
+        "Taken",
+        "Good",
+        "Faith"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "84A",
+      "summary": "Section 84A: Modes or methods for encryption",
+      "plain_english": "Section 84A: Modes or methods for encryption",
+      "keywords": [
+        "Modes",
+        "Methods",
+        "Encryption"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "84B",
+      "summary": "Section 84B: Punishment for abetment of offences",
+      "plain_english": "Section 84B: Punishment for abetment of offences",
+      "keywords": [
+        "Punishment",
+        "Abetment",
+        "Offences"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "84C",
+      "summary": "Section 84C: Punishment for attempt to commit offences",
+      "plain_english": "Section 84C: Punishment for attempt to commit offences",
+      "keywords": [
+        "Punishment",
+        "Attempt",
+        "Commit",
+        "Offences"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "85",
+      "summary": "Section 85: Offences by companies",
+      "plain_english": "Section 85: Offences by companies",
+      "keywords": [
+        "Offences",
+        "Companies"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "86",
+      "summary": "Section 86: Removal of difficulties",
+      "plain_english": "Section 86: Removal of difficulties",
+      "keywords": [
+        "Removal",
+        "Difficulties"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "87",
+      "summary": "Section 87: Power of Central Government to make rules",
+      "plain_english": "Section 87: Power of Central Government to make rules",
+      "keywords": [
+        "Power",
+        "Central",
+        "Government",
+        "Make",
+        "Rules"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "88",
+      "summary": "Section 88: Constitution of Advisory Committee",
+      "plain_english": "Section 88: Constitution of Advisory Committee",
+      "keywords": [
+        "Constitution",
+        "Advisory",
+        "Committee"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "89",
+      "summary": "Section 89: Power of Controller to make regulations",
+      "plain_english": "Section 89: Power of Controller to make regulations",
+      "keywords": [
+        "Power",
+        "Controller",
+        "Make",
+        "Regulations"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "90",
+      "summary": "Section 90: Power of State Government to make rules",
+      "plain_english": "91. [Omitted.]. 92. [Omitted.]. 93. [Omitted.]. 94. [Omitted.]. THE FIRST SCHEDULE. THE SECOND SCHEDULE. THE THIRD SCHEDULE [Omitted.]. THE FOURTH SCHEDULE [Omitted.]. 4 THE INFORMATION TECHNOLOGY ACT, 2000 ACT NO. 21 OF 2000 [9th June, 2000.] An Act to provide legal recognition for transactions carried out by means of electronic data interchange and other means of electronic communication, commonly referred to as ―electronic commerce‖, which involve the use of alternatives to paper-based method",
+      "keywords": [
+        "Omitted",
+        "Schedule",
+        "Electronic",
+        "Means",
+        "Power",
+        "State"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "1",
+      "summary": "Section 1: Short title, extent, commencement and application.—(1) This Act may be called the",
+      "plain_english": "Information Technology Act, 2000. (2) It shall extend to the whole of India and, save as otherwise provided in this Act, it applies also to any offence or contravention thereunder committed outside India by any person. (3) It shall come into force on such date1 as the Central Government may, by notification, appoint and different dates may be appointed for different provisions of this Act and any reference in any such provision to the commencement of this Act shall be construed as a reference to",
+      "keywords": [
+        "Commencement",
+        "India",
+        "Different",
+        "Reference",
+        "Short",
+        "Title"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "2",
+      "summary": "Section 2: Definitions.—(1) In this Act, unless the context otherwise requires,—",
+      "plain_english": "(a) ―access‖ with its grammatical variations and cognate expressions means gaining entry into, instructing or communicating with the logical, arithmetical, or memory function resources of a computer, computer system or computer network; (b) ―addressee‖ means a person who is intended by the originator to receive the electronic record but does not include any intermediary; (c) ―adjudicating officer‖ means an adjudicating officer appointed under sub-section (1) of section 46; 1. 17th October, 2000,",
+      "keywords": [
+        "Means",
+        "Computer",
+        "Adjudicating",
+        "Officer",
+        "Section",
+        "Definitions"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "5",
+      "summary": "Section 5: Clause (n) omitted by Act 7 of 2017, s.169 (w.e.f. 26-5-2017)",
+      "plain_english": "6 (nb) ―cyber security‖ means protecting information, equipment, devices, computer, computer resource, communication device and information stored therein from unauthorised access, use, disclosure, disruption, modification or destruction;] (o) ―data‖ means a representation of information, knowledge, facts, concepts or instructions which are being prepared or have been prepared in a formalised manner, and is intended to be processed, is being processed or has been processed in a computer system o",
+      "keywords": [
+        "Information",
+        "Computer",
+        "Processed",
+        "Means",
+        "Being",
+        "Prepared"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "3",
+      "summary": "Section 3: Authentication of electronic records.–(1) Subject to the provisions of this section any subscriber",
+      "plain_english": "may authenticate an electronic record by affixing his digital signature. (2) The authentication of the electronic record shall be effected by the use of asymmetric crypto system and hash function which envelop and transform the initial electronic record into another electronic record. Explanation.–For the purposes of this sub-section, ―hash function‖ means an algorithm mapping or translation of one sequence of bits into another, generally smaller, set known as ―hash result‖ such that an electron",
+      "keywords": [
+        "Electronic",
+        "Record",
+        "Hash",
+        "Authentication",
+        "Section",
+        "Function"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "4",
+      "summary": "Section 4: Legal recognition of electronic records.—Where any law provides that information or any other",
+      "plain_english": "matter shall be in writing or in the typewritten or printed form, then, notwithstanding anything contained in such law, such requirement shall be deemed to have been satisfied if such information or matter is– (a) rendered or made available in an electronic form; and (b) accessible so as to be usable for a subsequent reference.",
+      "keywords": [
+        "Electronic",
+        "Information",
+        "Matter",
+        "Form",
+        "Legal",
+        "Recognition"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "5",
+      "summary": "Section 5: Legal recognition of 1[electronic signatures].—Where any law provides that information or any",
+      "plain_english": "other matter shall be authenticated by affixing the signature or any document shall be signed or bear the signature of any person, then, notwithstanding anything contained in such law, such requirement shall be deemed to have been satisfied, if such information or matter is authenticated by means of 1[electronic signature] affixed in such manner as may be prescribed by the Central Government. Explanation.–For the purposes of this section, ―signed‖, with its grammatical variations and cognate exp",
+      "keywords": [
+        "Signature",
+        "Electronic",
+        "Information",
+        "Matter",
+        "Authenticated",
+        "Signed"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "6",
+      "summary": "Section 6: Use of electronic records and 1[electronic signatures] in Government and its agencies.–(1)",
+      "plain_english": "Where any law provides for— (a) the filing of any form, application or any other document with any office, authority, body or agency owned or controlled by the appropriate Government in a particular manner; (b) the issue or grant of any licence, permit, sanction or approval by whatever name called in a particular manner; (c) the receipt or payment of money in a particular manner, then, notwithstanding anything contained in any other law for the time being in force, such requirement shall be deem",
+      "keywords": [
+        "Particular",
+        "Manner",
+        "Electronic",
+        "Government",
+        "Other",
+        "Records"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "7",
+      "summary": "Section 7: Retention of electronic records.—(1) Where any law provides that documents, records or",
+      "plain_english": "information shall be retained for any specific period, then, that requirement shall be deemed to have been satisfied if such documents, records or information are retained in the electronic form, if— (a) the information contained therein remains accessible so as to be usable for a subsequent reference; (b) the electronic record is retained in the format in which it was originally generated, sent or received or in a format which can be demonstrated to represent accurately the information original",
+      "keywords": [
+        "Information",
+        "Electronic",
+        "Records",
+        "Retained",
+        "Documents",
+        "Format"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "8",
+      "summary": "Section 8: Publication of rule, regulation, etc., in Electronic Gazette.—Where any law provides that any",
+      "plain_english": "rule, regulation, order, bye-law, notification or any other matter shall be published in the Official Gazette, then, such requirement shall be deemed to have been satisfied if such rule, regulation, order, bye-law, notification or any other matter is published in the Official Gazette or Electronic Gazette: Provided that where any rule, regulation, order, by-law, notification or any other matter is published in the Official Gazette or Electronic Gazette, the date of publication shall be deemed to",
+      "keywords": [
+        "Gazette",
+        "Rule",
+        "Regulation",
+        "Electronic",
+        "Order",
+        "Notification"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "9",
+      "summary": "Section 9: Sections 6, 7 and 8 not to confer right to insist document should be accepted in electronic",
+      "plain_english": "form.—Nothing contained in sections 6, 7 and 8 shall confer a right upon any person to insist that any 1. Ins. by Act 10 of 2009, s. 7 (w.e.f. 27-10-2009). 2. Ins. by s. 8, ibid. (w.e.f. 27-10-2009). 10 Ministry or Department of the Central Government or the State Government or any authority or body established by or under any law or controlled or funded by the Central or State Government should accept, issue, create, retain and preserve any document in the form of electronic records or effect a",
+      "keywords": [
+        "Government",
+        "Sections",
+        "Confer",
+        "Right",
+        "Insist",
+        "Document"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "10",
+      "summary": "Section 10: Power to make rules by Central Government in respect of 1[electronic signature].—The",
+      "plain_english": "Central Government may, for the purposes of this Act, by rules, prescribe— (a) the type of 1[electronic signature]; (b) the manner and format in which the 1[electronic signature] shall be affixed; (c) the manner or procedure which facilitates identification of the person affixing the 1[electronic signature]; (d) control processes and procedures to ensure adequate integrity, security and confidentiality of electronic records or payments; and (e) any other matter which is necessary to give legal e",
+      "keywords": [
+        "Electronic",
+        "Signature",
+        "Which",
+        "Rules",
+        "Central",
+        "Government"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "11",
+      "summary": "Section 11: Attribution of electronic records.—An electronic record shall be attributed to the originator—",
+      "plain_english": "(a) if it was sent by the originator himself; (b) by a person who had the authority to act on behalf of the originator in respect of that electronic record; or (c) by an information system programmed by or on behalf of the originator to operate automatically.",
+      "keywords": [
+        "Originator",
+        "Electronic",
+        "Record",
+        "Behalf",
+        "Attribution",
+        "Records"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "12",
+      "summary": "Section 12: Acknowledgment of receipt.—(1) Where the originator has not 3[stipulated] that the",
+      "plain_english": "acknowledgment of receipt of electronic record be given in a particular form or by a particular method, an acknowledgment may be given by— (a) any communication by the addressee, automated or otherwise; or (b) any conduct of the addressee, sufficient to indicate to the originator that the electronic record has been received. (2) Where the originator has stipulated that the electronic record shall be binding only on receipt of an acknowledgment of such electronic record by him, then unless acknow",
+      "keywords": [
+        "Acknowledgment",
+        "Electronic",
+        "Record",
+        "Receipt",
+        "Originator",
+        "Where"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "13",
+      "summary": "Section 13: Time and place of despatch and receipt of electronic record.—(1) Save as otherwise agreed to",
+      "plain_english": "between the originator and the addressee, the despatch of an electronic record occurs when it enters a computer resource outside the control of the originator. 1. Subs. by Act 10 of 2009, s. 2, for ―digital signature‖ (w.e.f. 27-10-2009). 2. Ins. by s. 9, ibid. (w.e.f. 27-10-2009). 3. Subs. by s. 10, ibid., for ―agreed with the addressee‖ (w.e.f. 27-10-2009). 11 (2) Save as otherwise agreed between the originator and the addressee, the time of receipt of an electronic record shall be determined",
+      "keywords": [
+        "Electronic",
+        "Record",
+        "Agreed",
+        "Originator",
+        "Addressee",
+        "Time"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "14",
+      "summary": "Section 14: Secure electronic record.—Where any security procedure has been applied to an electronic",
+      "plain_english": "record at a specific point of time, then such record shall he deemed to be a secure electronic record from such point of time to the time of verification. 2[15. Secure electronic signature.—An electronic signature shall be deemed to be a secure electronic signature if— (i) the signature creation data, at the time of affixing signature, was under the exclusive control of signatory and no other person; and (ii) the signature creation data was stored and affixed in such exclusive manner as may be p",
+      "keywords": [
+        "Electronic",
+        "Signature",
+        "Secure",
+        "Record",
+        "Time",
+        "Point"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "16",
+      "summary": "Section 16: Security procedures and practices.—The Central Government may, for the purposes of sections",
+      "plain_english": "14 and 15, prescribe the security procedures and practices: Provided that in prescribing such security procedures and practices, the Central Government shall have regard to the commercial circumstances, nature of transactions and such other related factors as it may consider appropriate.] REGULATION OF CERTIFYING AUTHORITIES",
+      "keywords": [
+        "Security",
+        "Procedures",
+        "Practices",
+        "Central",
+        "Government",
+        "Purposes"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "17",
+      "summary": "Section 17: Appointment of Controller and other officers.—(1) The Central Government may, by",
+      "plain_english": "notification in the Official Gazette, appoint a Controller of Certifying Authorities for the purposes of this Act and may also by the same or subsequent notification appoint such number of Deputy Controllers 3[, Assistant Controllers, other officers and employees] as it deems fit. 1. Subs. by Act 10 of 2009, s. 2, for ―digital signatures‖ (w.e.f. 27-10-2009). 2. Subs. by s 11, ibid., for sections 15 and 16 (w.e.f. 27-10-2009). 3. Subs. by s.12, ibid., for ―and Assistant Controllers‖ (w.e.f. 27-1",
+      "keywords": [
+        "Controllers",
+        "Subs",
+        "Controller",
+        "Other",
+        "Officers",
+        "Notification"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "18",
+      "summary": "Section 18: Functions of Controller.—The Controller may perform all or any of the following functions",
+      "plain_english": "namely:– (a) exercising supervision over the activities of the Certifying Authorities; (b) certifying public keys of the Certifying Authorities; (c) laying down the standards to be maintained by the Certifying Authorities; (d) specifying the qualifications and experience which employees of the Certifying Authority should possess; (e) specifying the conditions subject to which the Certifying Authorities shall conduct their business; (f) specifying the contents of written, printed or visual materi",
+      "keywords": [
+        "Certifying",
+        "Authorities",
+        "Specifying",
+        "Functions",
+        "Controller",
+        "Which"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "19",
+      "summary": "Section 19: Recognition of foreign Certifying Authorities.—(1) Subject to such conditions and restrictions",
+      "plain_english": "as may be specified by regulations, the Controller may with the previous approval of the Central Government, and by notification in the Official Gazette, recognise any foreign Certifying Authority as a Certifying Authority for the purposes of this Act. (2) Where any Certifying Authority is recognised under sub-section (1), the 2[electronic signature] Certificate issued by such Certifying Authority shall be valid for the purposes of this Act. (3) The Controller may, if he is satisfied that any Ce",
+      "keywords": [
+        "Certifying",
+        "Authority",
+        "Foreign",
+        "Controller",
+        "Purposes",
+        "Recognition"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "21",
+      "summary": "Section 21: Licence to issue 1[electronic signature] Certificates.—(1) Subject to the provisions of",
+      "plain_english": "sub-section (2), any person may make an application, to the Controller, for a licence to issue 1[electronic signature] Certificates. (2) No licence shall be issued under sub-section (1), unless the applicant fulfils such requirements with respect to qualification, expertise, manpower, financial resources and other infrastructure facilities, which are necessary to issue 1[electronic signature] Certificates as may be prescribed by the Central Government. (3) A licence granted under this section sh",
+      "keywords": [
+        "Licence",
+        "Issue",
+        "Electronic",
+        "Signature",
+        "Certificates",
+        "Section"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "22",
+      "summary": "Section 22: Application for licence.—(1) Every application for issue of a licence shall be in such form as",
+      "plain_english": "may be prescribed by the Central Government. (2) Every application for issue of a licence shall be accompanied by— (a) a certification practice statement; (b) a statement including the procedures with respect to identification of the applicant; (c) payment of such fees, not exceeding twenty-five thousand rupees as may be prescribed by the Central Government; (d) such other documents, as may be prescribed by the Central Government.",
+      "keywords": [
+        "Application",
+        "Licence",
+        "Prescribed",
+        "Central",
+        "Government",
+        "Issue"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "23",
+      "summary": "Section 23: Renewal of licence.—An application for renewal of a licence shall be—",
+      "plain_english": "(a) in such form; (b) accompanied by such fees, not exceeding five thousand rupees, as may be prescribed by the Central Government and shall be made not less than forty-five days before the date of expiry of the period of validity of the licence.",
+      "keywords": [
+        "Licence",
+        "Renewal",
+        "Five",
+        "Application",
+        "Form",
+        "Accompanied"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "24",
+      "summary": "Section 24: Procedure for grant or rejection of licence.—The Controller may, on receipt of an application",
+      "plain_english": "under sub-section (1) of section 21, after considering the documents accompanying the application and such other factors, as he deems fit, grant the licence or reject the application: Provided that no application shall be rejected under this section unless the applicant has been given a reasonable opportunity of presenting his case.",
+      "keywords": [
+        "Application",
+        "Section",
+        "Grant",
+        "Licence",
+        "Procedure",
+        "Rejection"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "25",
+      "summary": "Section 25: Suspension of licence.—(1) The Controller may, if he is satisfied after making such inquiry, as",
+      "plain_english": "he may think fit, that a Certifying Authority has— (a) made a statement in, or in relation to, the application for the issue or renewal of the licence, which is incorrect or false in material particulars; (b) failed to comply with the terms and conditions subject to which the licence was granted; 2[(c) failed to maintain the procedures and standards specified in section 30;] (d) contravened any provisions of this Act, rule, regulation or order made thereunder, revoke the licence: Provided that n",
+      "keywords": [
+        "Licence",
+        "Made",
+        "Which",
+        "Failed",
+        "Suspension",
+        "Controller"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "26",
+      "summary": "Section 26: Notice of suspension or revocation of licence.—(1) Where the licence of the Certifying",
+      "plain_english": "Authority is suspended or revoked, the Controller shall publish notice of such suspension or revocation, as the case may be, in the data base maintained by him. (2) Where one or more repositories are specified, the Controller shall publish notices of such suspension or revocation, as the case may be, in all such repositories: Provided that the data base containing the notice of such suspension or revocation, as the case may be, shall be made available through a web site which shall be accessible",
+      "keywords": [
+        "Suspension",
+        "Revocation",
+        "Notice",
+        "Case",
+        "Licence",
+        "Where"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "27",
+      "summary": "Section 27: Power to delegate.—The Controller may, in writing, authorise the Deputy Controller, Assistant",
+      "plain_english": "Controller or any officer to exercise any of the powers of the Controller under this Chapter.",
+      "keywords": [
+        "Controller",
+        "Power",
+        "Delegate",
+        "Writing",
+        "Authorise",
+        "Deputy"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "28",
+      "summary": "Section 28: Power to investigate contraventions.—(1) The Controller or any officer authorised by him in",
+      "plain_english": "this behalf shall take up for investigation any contravention of the provisions of this Act, rules or regulations made thereunder. (2) The Controller or any officer authorised by him in this behalf shall exercise the like powers which are conferred on Income-tax authorities under Chapter XIII of the Income-tax Act, 1961 (43 of 1961), and shall exercise such powers, subject to such limitations laid down under that Act.",
+      "keywords": [
+        "Controller",
+        "Officer",
+        "Authorised",
+        "Behalf",
+        "Exercise",
+        "Powers"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "29",
+      "summary": "Section 29: Access to computers and data.—(1) Without prejudice to the provisions of sub-section (1) of",
+      "plain_english": "section 69, the Controller or any person authorised by him shall, if he has reasonable cause to suspect that 2[any contravention of the provisions of this Chapter] has been committed, have access to any computer system, any apparatus, data or any other material connected with such system, for the purpose of searching or causing a search to be made for obtaining any information or data contained in or available to such computer system. (2) For the purposes of sub-section (1), the Controller or an",
+      "keywords": [
+        "Data",
+        "Section",
+        "System",
+        "Access",
+        "Provisions",
+        "Controller"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "30",
+      "summary": "Section 30: Certifying Authority to follow certain procedures.—Every Certifying Authority shall,—",
+      "plain_english": "(a) make use of hardware, software and procedures that are secure from intrusion and misuse; (b) provide a reasonable level of reliability in its services which are reasonably suited to the performance of intended functions; (c) adhere to security procedures to ensure that the secrecy and privacy of the 1[electronic signatures] are assured; 3*** 4[(ca) be the repository of all electronic signature Certificates issued under this Act; (cb) publish information regarding its practices, electronic si",
+      "keywords": [
+        "Procedures",
+        "Electronic",
+        "Certifying",
+        "Authority",
+        "Follow",
+        "Certain"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "31",
+      "summary": "Section 31: Certifying Authority to ensure compliance of the Act, etc.—Every Certifying Authority shall",
+      "plain_english": "ensure that every person employed or otherwise engaged by it complies, in the course of his employment or engagement, with the provisions of this Act, rules, regulations and orders made thereunder. 1. Subs. by Act 10 of 2009, s. 2, for ―Digital Signature‖ (w.e.f. 27-10-2009). 2. Subs. by s. 14, ibid., for ―any contravention of the provisions of this Act, rules and regulations made thereunder‖ (w.e.f. 27-10-2009).",
+      "keywords": [
+        "Certifying",
+        "Authority",
+        "Ensure",
+        "Provisions",
+        "Rules",
+        "Regulations"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "3",
+      "summary": "Section 3: The word ―and‖ omitted by s. 15, ibid. (w.e.f. 27-10-2009)",
+      "plain_english": "4. Ins. by s. 15, ibid. (w.e.f. 27-10-2009). 15",
+      "keywords": [
+        "Ibid",
+        "Word",
+        "Omitted"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "32",
+      "summary": "Section 32: Display of licence.—Every Certifying Authority shall display its licence at a conspicuous place",
+      "plain_english": "of the premises in which it carries on its business.",
+      "keywords": [
+        "Display",
+        "Licence",
+        "Certifying",
+        "Authority",
+        "Conspicuous",
+        "Place"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "33",
+      "summary": "Section 33: Surrender of licence.—(1) Every Certifying Authority whose licence is suspended or revoked",
+      "plain_english": "shall immediately after such suspension or revocation, surrender the licence to the Controller. (2) Where any Certifying Authority fails to surrender a licence under sub-section (1), the person in whose favour a licence is issued, shall be guilty of an offence and shall be punished with imprisonment which may extend up to six months or a fine which may extend up to ten thousand rupees or with both.",
+      "keywords": [
+        "Licence",
+        "Surrender",
+        "Certifying",
+        "Authority",
+        "Whose",
+        "Which"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "34",
+      "summary": "Section 34: Disclosure.–(1) Every Certifying Authority shall disclose in the manner specified by",
+      "plain_english": "regulations— (a) its 1[electronic signature] Certificate 2***; (b) any certification practice statement relevant thereto; (c) notice of the revocation or suspension of its Certifying Authority certificate, if any; and (d) any other fact that materially and adversely affects either the reliability of a 1[electronic signature] Certificate, which that Authority has issued, or the Authority's ability to perform its services. (2) Where in the opinion of the Certifying Authority any event has occurred",
+      "keywords": [
+        "Authority",
+        "Certifying",
+        "Certificate",
+        "Electronic",
+        "Signature",
+        "Disclosure"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "35",
+      "summary": "Section 35: Certifying authority to issue 1[electronic signature] Certificate.—(1) Any person may make an",
+      "plain_english": "application to the Certifying Authority for the issue of a 1[electronic signature] Certificate in such form as may be prescribed by the Central Government. (2) Every such application shall be accompanied by such fee not exceeding twenty-five thousand rupees as may be prescribed by the Central Government, to be paid to the Certifying Authority: Provided that while prescribing fees under sub-section (2) different fees may be prescribed for different classes of applicants. (3) Every such applicatio",
+      "keywords": [
+        "Certifying",
+        "Authority",
+        "Prescribed",
+        "Issue",
+        "Electronic",
+        "Signature"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "36",
+      "summary": "Section 36: Representations upon issuance of Digital Signature Certificate.—A Certifying Authority",
+      "plain_english": "while issuing a Digital Signature Certificate shall certify that— (a) it has complied with the provisions of this Act and the rules and regulations made thereunder; (b) it has published the Digital Signature Certificate or otherwise made it available to such person relying on it and the subscriber has accepted it; 1. Subs. by Act 10 of 2009, s. 2, for ―Digital Signature‖ (w.e.f. 27-10-2009).",
+      "keywords": [
+        "Digital",
+        "Signature",
+        "Certificate",
+        "Made",
+        "Representations",
+        "Issuance"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "2",
+      "summary": "Section 2: Certain words omitted by s. 16, ibid. (w.e.f. 27-10-2009)",
+      "plain_english": "Section 2: Certain words omitted by s. 16, ibid. (w.e.f. 27-10-2009)",
+      "keywords": [
+        "Certain",
+        "Words",
+        "Omitted",
+        "Ibid"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "3",
+      "summary": "Section 3: The first proviso omitted by s. 17, ibid. (w.e.f. 27-10-2009)",
+      "plain_english": "4. Subs. by s. 17, ibid., for ―Provided further‖ (w.e.f. 27-10-2009). 16 (c) the subscriber holds the private key corresponding to the public key, listed in the Digital Signature Certificate; 1[(ca) the subscriber holds a private key which is capable of creating a digital signature; (cb) the public key to be listed in the certificate can be used to verify a digital signature affixed by the private key held by the subscriber;] (d) the subscriber's public key and private key constitute a functioni",
+      "keywords": [
+        "Subscriber",
+        "Private",
+        "Public",
+        "Digital",
+        "Signature",
+        "Ibid"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "37",
+      "summary": "Section 37: Suspension of Digital Signature Certificate.–(1) Subject to the provisions of sub-section (2), the",
+      "plain_english": "Certifying Authority which has issued a Digital Signature Certificate may suspend such Digital Signature Certificate,– (a) on receipt of a request to that effect from– (i) the subscriber listed in the Digital Signature Certificate; or (ii) any person duly authorised to act on behalf of that subscriber; (b) if it is of opinion that the Digital Signature Certificate should be suspended in public interest. (2) A Digital Signature Certificate shall not be suspended for a period exceeding fifteen day",
+      "keywords": [
+        "Digital",
+        "Signature",
+        "Certificate",
+        "Subscriber",
+        "Suspended",
+        "Suspension"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "38",
+      "summary": "Section 38: Revocation of Digital Signature Certificate.–(1) A Certifying Authority may revoke a Digital",
+      "plain_english": "Signature Certificate issued by it– (a) where the subscriber or any other person authorised by him makes a request to that effect; or (b) upon the death of the subscriber; or (c) upon the dissolution of the firm or winding up of the company where the subscriber is a firm or a company. (2) Subject to the provisions of sub-section (3) and without prejudice to the provisions of sub-section (1), a Certifying Authority may revoke a Digital Signature Certificate which has been issued by it at any time",
+      "keywords": [
+        "Digital",
+        "Signature",
+        "Certificate",
+        "Subscriber",
+        "Certifying",
+        "Authority"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "39",
+      "summary": "Section 39: Notice of suspension or revocation.–(1) Where a Digital Signature Certificate is suspended or",
+      "plain_english": "revoked under section 37 or section 38, the Certifying Authority shall publish a notice of such suspension or revocation, as the case may be, in the repository specified in the Digital Signature Certificate for publication of such notice. 1. Ins. by Act 10 of 2009, s. 18 (w.e.f. 27-10-2009). 17 (2) Where one or more repositories are specified, the Certifying Authority shall publish notices of such suspension or revocation, as the case may be, in all such repositories. DUTIES OF SUBSCRIBERS",
+      "keywords": [
+        "Notice",
+        "Suspension",
+        "Revocation",
+        "Where",
+        "Digital",
+        "Signature"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "40",
+      "summary": "Section 40: Generating key pair.–Where any Digital Signature Certificate the public key of which",
+      "plain_english": "corresponds to the private key of that subscriber which is to be listed in the Digital Signature Certificate has been accepted by a subscriber, 1*** the subscriber shall generate 2[that key] pair by applying the security procedure. 3[40A. Duties of subscriber of Electronic Signature Certificate.–In respect of Electronic Signature Certificate the subscriber shall perform such duties as may be prescribed.]",
+      "keywords": [
+        "Subscriber",
+        "Signature",
+        "Certificate",
+        "Pair",
+        "Digital",
+        "Which"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "41",
+      "summary": "Section 41: Acceptance of Digital Signature Certificate.–(1) A subscriber shall be deemed to have accepted",
+      "plain_english": "a Digital Signature Certificate if he publishes or authorises the publication of a Digital Signature Certificate– (a) to one or more persons; (b) in a repository; or otherwise demonstrates his approval of the Digital Signature Certificate in any manner. (2) By accepting a Digital Signature Certificate the subscriber certifies to all who reasonably rely on the information contained in the Digital Signature Certificate that– (a) the subscriber holds the private key corresponding to the public key",
+      "keywords": [
+        "Digital",
+        "Signature",
+        "Certificate",
+        "Subscriber",
+        "Acceptance",
+        "Deemed"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "42",
+      "summary": "Section 42: Control of private key.–(1) Every subscriber shall exercise reasonable care to retain control of",
+      "plain_english": "the private key corresponding to the public key listed in his Digital Signature Certificate and take all steps to prevent its disclosure 4***. (2) If the private key corresponding to the public key listed in the Digital Signature Certificate has been compromised, then, the subscriber shall communicate the same without any delay to the Certifying Authority in such manner as may be specified by the regulations. Explanation.–For the removal of doubts, it is hereby declared that the subscriber shall",
+      "keywords": [
+        "Private",
+        "Subscriber",
+        "Control",
+        "Corresponding",
+        "Public",
+        "Listed"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "1",
+      "summary": "Section 1: The word ―then‖ omitted by notification No. S.O. 1015(E) (w.e.f. 19-9-2002)",
+      "plain_english": "Section 1: The word ―then‖ omitted by notification No. S.O. 1015(E) (w.e.f. 19-9-2002)",
+      "keywords": [
+        "Word",
+        "Then",
+        "Omitted",
+        "Notification"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "2",
+      "summary": "Section 2: Subs. ibid., for ―the key‖ (w.e.f. 19-9-2002)",
+      "plain_english": "3. Ins. by Act 10 of 2009, s. 19 (w.e.f. 27-10-2009).",
+      "keywords": [
+        "Subs",
+        "Ibid"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "4",
+      "summary": "Section 4: The words ―to a person not authorised to affix the digital signature of the subscriber‖ omitted by notification No. S.O.1015(E)",
+      "plain_english": "(w.e.f. 19-9-2002). 5. Subs. by Act 10 of 2009, s. 20, for ―PENALTIES AND ADJUDICATION‖ (w.e.f. 27-10-2009). 6. Subs. by s. 21, ibid., for ―Penalty‖ (w.e.f. 27-10-2009). 7. Ins. by s. 21, ibid. (w.e.f. 27-10-2009). 18 (b) downloads, copies or extracts any data, computer data base or information from such computer, computer system or computer network including information or data held or stored in any removable storage medium; (c) introduces or causes to be introduced any computer contaminant or",
+      "keywords": [
+        "Computer",
+        "Data",
+        "Subs",
+        "Ibid",
+        "Information",
+        "Words"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "44",
+      "summary": "Section 44: Penalty for failure to furnish information, return, etc.–If any person who is required under this",
+      "plain_english": "Act or any rules or regulations made thereunder to– (a) furnish any document, return or report to the Controller or the Certifying Authority fails to furnish the same, he shall be liable to a penalty not exceeding one lakh and fifty thousand rupees for each such failure; (b) file any return or furnish any information, books or other documents within the time specified therefor in the regulations fails to file return or furnish the same within the time specified therefor in the regulations, he sh",
+      "keywords": [
+        "Furnish",
+        "Return",
+        "Regulations",
+        "Penalty",
+        "Failure",
+        "Information"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "45",
+      "summary": "Section 45: Residuary penalty.–Whoever contravenes any rules or regulations made under this Act, for the",
+      "plain_english": "contravention of which no penalty has been separately provided, shall be liable to pay a compensation not exceeding twenty-five thousand rupees to the person affected by such contravention or a penalty not exceeding twenty-five thousand rupees.",
+      "keywords": [
+        "Penalty",
+        "Contravention",
+        "Exceeding",
+        "Twenty",
+        "Five",
+        "Thousand"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "46",
+      "summary": "Section 46: Power to adjudicate.–(1) For the purpose of adjudging under this Chapter whether any person",
+      "plain_english": "has committed a contravention of any of the provisions of this Act or of any rule, regulation, 1[direction or order made thereunder which renders him liable to pay penalty or compensation,] the Central Government shall, subject to the provisions of sub-section (3), appoint any officer not below the rank of a Director to the Government of India or an equivalent officer of a State Government to be an adjudicating officer for holding an inquiry in the manner prescribed by the Central Government. 2[",
+      "keywords": [
+        "Government",
+        "Officer",
+        "Provisions",
+        "Central",
+        "Power",
+        "Adjudicate"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "47",
+      "summary": "Section 47: Factors to be taken into account by the adjudicating officer.–While adjudging the quantum of",
+      "plain_english": "compensation under this Chapter, the adjudicating officer shall have due regard to the following factors, namely:– (a) the amount of gain of unfair advantage, wherever quantifiable, made as a result of the default; (b) the amount of loss caused to any person as a result of the default; (c) the repetitive nature of the default. THE 2[APPELLATE TRIBUNAL] 48. 3[Appellate Tribunal].–4[(1) The Telecom Disputes Settlement and Appellate Tribunal established under section 14 of the Telecom Regulatory Au",
+      "keywords": [
+        "Default",
+        "Appellate",
+        "Tribunal",
+        "Factors",
+        "Adjudicating",
+        "Officer"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "52D",
+      "summary": "Section 52D: Decision by majority.–If the Members of a Bench consisting of two Members differ in opinion",
+      "plain_english": "on any point, they shall state the point or points on which they differ, and make a reference to the Chairperson of the 2[Appellate Tribunal] who shall hear the point or points himself and such point or points shall be decided according to the opinion of the majority of the Members who have heard the case, including those who first heard it.] 53. [Filling up of vacancies.] Omitted by the Finance Act, 2017 (7 of 2017), s. 169 (w.e.f. 26-5-2017). 54. [Resignation and removal.] Omitted by s. 169, i",
+      "keywords": [
+        "Point",
+        "Members",
+        "Points",
+        "Majority",
+        "Differ",
+        "Opinion"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "55",
+      "summary": "Section 55: Orders constituting Appellate Tribunal to be final and not to invalidate its proceedings.–No",
+      "plain_english": "order of the Central Government appointing any person as the 7[Chairperson or the Member] of a 2[Appellate Tribunal] shall be called in question in any manner and no act or proceeding before a 1. Ins. by Act 10 of 2009, s. 23 (w.e.f. 27-10-2009). 2. Subs. by Act 7 of 2017, s. 169, for ―Cyber Appellate Tribunal‖ (w.e.f. 26-5-2017) 3. Subs. by s. 169, ibid., for ― Establishment of Appellate Tribunal‖ (w.e.f. 26-5-2017). 4. Subs. by s. 169, ibid., for sub-section (1) (w.e.f. 26-5-2017). 5. Subs. by",
+      "keywords": [
+        "Appellate",
+        "Tribunal",
+        "Subs",
+        "Ibid",
+        "Orders",
+        "Constituting"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "57",
+      "summary": "Section 57: Appeal to 1[Appellate Tribunal].–(1) Save as provided in sub-section (2), any person aggrieved",
+      "plain_english": "by an order made by controller or an adjudicating officer under this Act may prefer an appeal to a 1[Appellate Tribunal] having jurisdiction in the matter. (2) No appeal shall lie to the 1[Appellate Tribunal] from an order made by an adjudicating officer with the consent of the parties. (3) Every appeal under sub-section (1) shall be filed within a period of forty-five days from the date on which a copy of the order made by the Controller or the adjudicating officer is received by the person agg",
+      "keywords": [
+        "Appeal",
+        "Appellate",
+        "Tribunal",
+        "Order",
+        "Made",
+        "Adjudicating"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "58",
+      "summary": "Section 58: Procedure and powers of the Appellate Tribunal].–(1) The 1[Appellate Tribunal] shall not be",
+      "plain_english": "bound by the procedure laid down by the Code of Civil Procedure, 1908 (5 of 1908) but shall be guided by the principles of natural justice and, subject to the other provisions of this Act and of any rules, the 1[Appellate Tribunal] shall have powers to regulate its own procedure including the place at which it shall have its sittings. (2) The 1[Appellate Tribunal] shall have, for the purposes of discharging its functions under this Act, the same powers as are vested in a civil court under the Co",
+      "keywords": [
+        "Procedure",
+        "Appellate",
+        "Tribunal",
+        "Powers",
+        "Have",
+        "Civil"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "59",
+      "summary": "Section 59: Right to legal representation.–The appellant may either appear in person or authorise one or",
+      "plain_english": "more legal practitioners or any of its officers to present his or its case before the 1[Appellate Tribunal].",
+      "keywords": [
+        "Legal",
+        "Right",
+        "Representation",
+        "Appellant",
+        "Either",
+        "Appear"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "60",
+      "summary": "Section 60: Limitation.–The provisions of the Limitation Act, 1963 (36 of 1963), shall, as far as may be",
+      "plain_english": "apply to an appeal made to the 1[Appellate Tribunal]. 1. Subs. by Act 7 of 2017, s, 169, for ―Cyber Appellate Tribunal‖ (w.e.f. 26-5-2017) 22",
+      "keywords": [
+        "Limitation",
+        "Appellate",
+        "Tribunal",
+        "Provisions",
+        "Apply",
+        "Appeal"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "61",
+      "summary": "Section 61: Civil court not to have jurisdiction.–No court shall have jurisdiction to entertain any suit or",
+      "plain_english": "proceeding in respect of any matter which an adjudicating officer appointed under this Act or the 1[Appellate Tribunal] constituted under this Act is empowered by or under this Act to determine and no injunction shall be granted by any court or other authority in respect of any action taken or to be taken in pursuance of any power conferred by or under this Act.",
+      "keywords": [
+        "Court",
+        "Have",
+        "Jurisdiction",
+        "Respect",
+        "Taken",
+        "Civil"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "62",
+      "summary": "Section 62: Appeal to High Court.–Any person aggrieved by any decision or order of the 1[Appellate",
+      "plain_english": "Tribunal] may file an appeal to the High Court within sixty days from the date of communication of the decision or order of the 1[Appellate Tribunal] to him on any question of fact or law arising out of such order: Provided that the High Court may, if it is satisfied that the appellant was prevented by sufficient cause from filing the appeal within the said period, allow it to be filed within a further period not exceeding sixty days.",
+      "keywords": [
+        "Appeal",
+        "High",
+        "Court",
+        "Order",
+        "Decision",
+        "Appellate"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "63",
+      "summary": "Section 63: Compounding of contraventions.–(1) Any contravention under this 2[Act] may, either before or",
+      "plain_english": "after the institution of adjudication proceedings, be compounded by the Controller or such other officer as may be specially authorised by him in this behalf or by the adjudicating officer, as the case may be, subject to such conditions as the Controller or such other officer or the adjudicating officer may specify: Provided that such sum shall not, in any case, exceed the maximum amount of the penalty which may be imposed under this Act for the contravention so compounded. (2) Nothing in sub-se",
+      "keywords": [
+        "Officer",
+        "Contravention",
+        "Compounded",
+        "Controller",
+        "Other",
+        "Adjudicating"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "64",
+      "summary": "Section 64: Recovery of 3[penalty or compensation].–A 4[penalty imposed or compensation awarded] under",
+      "plain_english": "this Act, if it is not paid, shall he recovered as an arrear of land revenue and the licence or the 5[electronic signature] Certificate, as the case may be, shall be suspended till the penalty is paid. OFFENCES",
+      "keywords": [
+        "Penalty",
+        "Compensation",
+        "Paid",
+        "Recovery",
+        "Imposed",
+        "Awarded"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "65",
+      "summary": "Section 65: Tampering with computer source documents.–Whoever knowingly or intentionally conceals",
+      "plain_english": "destroys or alters or intentionally or knowingly causes another to conceal, destroy, or alter any computer source code used for a computer, computer programme, computer system or computer network, when the computer source code is required to be kept or maintained by law for the time being in force, shall be punishable with imprisonment up to three years, or with fine which may extend up to two lakh rupees, or with both. Explanation.–For the purposes of this section, ―computer source code‖ means",
+      "keywords": [
+        "Computer",
+        "Source",
+        "Code",
+        "Knowingly",
+        "Intentionally",
+        "Tampering"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "66B",
+      "summary": "Section 66B: Punishment for dishonestly receiving stolen computer resource or communication",
+      "plain_english": "device.–Whoever dishonestly receive or retains any stolen computer resource or communication device knowing or having reason to believe the same to be stolen computer resource or communication device, shall be punished with imprisonment of either description for a term which may extend to three years or with fine which may extend to rupees one lakh or with both.",
+      "keywords": [
+        "Stolen",
+        "Computer",
+        "Resource",
+        "Communication",
+        "Device",
+        "Dishonestly"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "66C",
+      "summary": "Section 66C: Punishment for identity theft.–Whoever, fraudulently or dishonestly make use of the",
+      "plain_english": "electronic signature, password or any other unique identification feature of any other person, shall be punished with imprisonment of either description for a term which may extend to three years and shall also be liable to fine which may extend to rupees one lakh.",
+      "keywords": [
+        "Other",
+        "Which",
+        "Extend",
+        "Punishment",
+        "Identity",
+        "Theft"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "66D",
+      "summary": "Section 66D: Punishment for cheating by personation by using computer resource.–Whoever, by means of",
+      "plain_english": "any communication device or computer resource cheats by personation, shall be punished with imprisonment of either description for a term which may extend to three years and shall also be liable to fine which may extend to one lakh rupees.",
+      "keywords": [
+        "Personation",
+        "Computer",
+        "Resource",
+        "Which",
+        "Extend",
+        "Punishment"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "66E",
+      "summary": "Section 66E: Punishment for violation of privacy.–Whoever, intentionally or knowingly captures, publishes",
+      "plain_english": "or transmits the image of a private area of any person without his or her consent, under circumstances violating the privacy of that person, shall be punished with imprisonment which may extend to three years or with fine not exceeding two lakh rupees, or with both. Explanation.–For the purposes of this section– (a) ―transmit‖ means to electronically send a visual image with the intent that it be viewed by a person or persons; (b) ―capture‖, with respect to an image, means to videotape, photogra",
+      "keywords": [
+        "Image",
+        "Person",
+        "Privacy",
+        "Means",
+        "Punishment",
+        "Violation"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "66F",
+      "summary": "Section 66F: Punishment for cyber terrorism.–(1) Whoever,–",
+      "plain_english": "(A) with intent to threaten the unity, integrity, security or sovereignty of India or to strike terror in the people or any section of the people by– (i) denying or cause the denial of access to any person authorised to access computer resource; or (ii) attempting to penetrate or access a computer resource without authorisation or exceeding authorised access; or (iii) introducing or causing to introduce any computer contaminant, and by means of such conduct causes or is likely to cause death or",
+      "keywords": [
+        "Access",
+        "Computer",
+        "People",
+        "Cause",
+        "Authorised",
+        "Resource"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "67",
+      "summary": "Section 67: Punishment for publishing or transmitting obscene material in electronic form.–Whoever",
+      "plain_english": "publishes or transmits or causes to be published or transmitted in the electronic form, any material which is lascivious or appeals to the prurient interest or if its effect is such as to tend to deprave and corrupt persons who are likely, having regard to all relevant circumstances, to read, see or hear the matter contained or embodied in it, shall be punished on first conviction with imprisonment of either description for a term which may extend to three years and with fine which may extend to",
+      "keywords": [
+        "Which",
+        "Material",
+        "Electronic",
+        "Form",
+        "Extend",
+        "Punishment"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "67A",
+      "summary": "Section 67A: Punishment for publishing or transmitting of material containing sexually explicit act, etc",
+      "plain_english": "in electronic form.–Whoever publishes or transmits or causes to be published or transmitted in the electronic form any material which contains sexually explicit act or conduct shall be punished on first conviction with imprisonment of either description for a term which may extend to five years and with fine which may extend to ten lakh rupees and in the event of second or subsequent conviction with imprisonment of either description for a term which may extend to seven years and also with fine",
+      "keywords": [
+        "Which",
+        "Extend",
+        "Material",
+        "Sexually",
+        "Explicit",
+        "Electronic"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "67B",
+      "summary": "Section 67B: Punishment for publishing or transmitting of material depicting children in sexually",
+      "plain_english": "explicit act, etc., in electronic form.–Whoever,– (a) publishes or transmits or causes to be published or transmitted material in any electronic form which depicts children engaged in sexually explicit act or conduct; or (b) creates text or digital images, collects, seeks, browses, downloads, advertises, promotes, exchanges or distributes material in any electronic form depicting children in obscene or indecent or sexually explicit manner; or 25 (c) cultivates, entices or induces children to onl",
+      "keywords": [
+        "Children",
+        "Material",
+        "Sexually",
+        "Explicit",
+        "Electronic",
+        "Form"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "67C",
+      "summary": "Section 67C: Preservation and retention of information by intermediaries.–(1) Intermediary shall preserve",
+      "plain_english": "and retain such information as may be specified for such duration and in such manner and format as the Central Government may prescribe. (2) any intermediary who intentionally or knowingly contravenes the provisions of sub-section (1) shall be punished with an imprisonment for a term which may extend to three years and also be liable to fine.]",
+      "keywords": [
+        "Information",
+        "Intermediary",
+        "Preservation",
+        "Retention",
+        "Intermediaries",
+        "Preserve"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "68",
+      "summary": "Section 68: Power of Controller to give directions.–(1) The Controller may, by order, direct a Certifying",
+      "plain_english": "Authority or any employee of such Authority to take such measures or cease carrying on such activities as specified in the order if those are necessary to ensure compliance with the provisions of this Act, rules or any regulations made thereunder. 1[(2) Any person who intentionally or knowingly fails to comply with any order under sub-section (1) shall be guilty of an offence and shall be liable on conviction to imprisonment for a term not exceeding two years or a fine not exceeding one lakh rup",
+      "keywords": [
+        "Order",
+        "Controller",
+        "Authority",
+        "Exceeding",
+        "Power",
+        "Give"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "69A",
+      "summary": "Section 69A: Power to issue directions for blocking for public access of any information through any",
+      "plain_english": "computer resource.–(1) Where the Central Government or any of its officers specially authorised by it in this behalf is satisfied that it is necessary or expedient so to do, in the interest of sovereignty and integrity of India, defence of India, security of the State, friendly relations with foreign States or public order or for preventing incitement to the commission of any cognizable offence relating to above, it may subject to the provisions of sub-section (2), for reasons to be recorded in",
+      "keywords": [
+        "Public",
+        "India",
+        "Power",
+        "Issue",
+        "Directions",
+        "Blocking"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "69B",
+      "summary": "Section 69B: Power to authorise to monitor and collect traffic data or information through any",
+      "plain_english": "computer resource for cyber security.–(1) The Central Government may, to enhance cyber security and for identification, analysis and prevention of intrusion or spread of computer contaminant in the country, by notification in the Official Gazette, authorise any agency of the Government to monitor and collect traffic data or information generated, transmitted, received or stored in any computer resource. (2) The intermediary or any person in-charge or the computer resource shall, when called upon",
+      "keywords": [
+        "Computer",
+        "Resource",
+        "Authorise",
+        "Monitor",
+        "Collect",
+        "Traffic"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "70",
+      "summary": "Section 70: Protected system.–1[(1) The appropriate Government may, by notification in the Official Gazette",
+      "plain_english": "declare any computer resource which directly or indirectly affects the facility of Critical Information Infrastructure, to be a protected system. Explanation.–For the purposes of this section, ―Critical Information Infrastructure‖ means the computer resource, the incapacitation or destruction of which, shall have debilitating impact on national security, economy, public health or safety.] (2) The appropriate Government may, by order in writing, authorise the persons who are authorised to access",
+      "keywords": [
+        "Protected",
+        "System",
+        "Appropriate",
+        "Government",
+        "Computer",
+        "Resource"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "70B",
+      "summary": "Section 70B: Indian Computer Emergency Response Team to serve as national agency for incident",
+      "plain_english": "response.–(1) The Central Government shall, by notification in the Official Gazette, appoint an agency of the Government to be called the Indian Computer Emergency Response Team. (2) The Central Government shall provide the agency referred to in sub-section (1) with a Director General and such other officers and employees as may be prescribed. (3) The salary and allowances and terms and conditions of the Director-General and other officers and employees shall be such as may be prescribed. (4) Th",
+      "keywords": [
+        "Response",
+        "Agency",
+        "Government",
+        "Indian",
+        "Computer",
+        "Emergency"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "71",
+      "summary": "Section 71: Penalty for misrepresentation.–Whoever makes any misrepresentation to, or suppresses any",
+      "plain_english": "material fact from the Controller or the Certifying Authority for obtaining any licence or 1[electronic signature] Certificate, as the case may be, shall be punished with imprisonment for a term which may extend to two years, or with fine which may extend to one lakh rupees, or with both.",
+      "keywords": [
+        "Misrepresentation",
+        "Which",
+        "Extend",
+        "Penalty",
+        "Whoever",
+        "Makes"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "72",
+      "summary": "Section 72: Penalty for Breach of confidentiality and privacy.–Save as otherwise provided in this Act or",
+      "plain_english": "any other law for the time being in force, if any person who, in pursuance of any of the powers conferred under this Act, rules or regulations made thereunder, has secured access to any electronic record, book, register, correspondence, information, document or other material without the consent of the person concerned discloses such electronic record, book, register, correspondence, information, document or other material to any other person shall be punished with imprisonment for a term which",
+      "keywords": [
+        "Other",
+        "Person",
+        "Electronic",
+        "Record",
+        "Book",
+        "Register"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "73",
+      "summary": "Section 73: Penalty for publishing 1[electronic signature] Certificate false in certain particulars.–(1) No",
+      "plain_english": "person shall publish a 1[electronic signature] Certificate or otherwise make it available to any other person with the knowledge that– (a) the Certifying Authority listed in the certificate has not issued it; or (b) the subscriber listed in the certificate has not accepted it; or (c) the certificate has been revoked or suspended, unless such publication is for the purpose of verifying a 1[electronic signature] created prior to such suspension or revocation. (2) Any person who contravenes the pro",
+      "keywords": [
+        "Certificate",
+        "Electronic",
+        "Signature",
+        "Person",
+        "Listed",
+        "Penalty"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "74",
+      "summary": "Section 74: Publication for fraudulent purpose.–Whoever knowingly creates, publishes or otherwise makes",
+      "plain_english": "available a 1[electronic signature] Certificate for any fraudulent or unlawful purpose shall be punished with imprisonment for a term which may extend to two years, or with fine which may extend to one lakh rupees, or with both.",
+      "keywords": [
+        "Fraudulent",
+        "Purpose",
+        "Which",
+        "Extend",
+        "Publication",
+        "Whoever"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "75",
+      "summary": "Section 75: Act to apply for offence or contravention committed outside India.–(1) Subject to the",
+      "plain_english": "provisions of sub-section (2), the provisions of this Act shall apply also to any offence or contravention committed outside India by any person irrespective of his nationality. (2) For the purposes of sub-section (1), this Act shall apply to an offence or contravention committed outside India by any person if the act or conduct constituting the offence or contravention involves a computer, computer system or computer network located in India.",
+      "keywords": [
+        "Offence",
+        "Contravention",
+        "India",
+        "Apply",
+        "Committed",
+        "Outside"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "76",
+      "summary": "Section 76: Confiscation.–Any computer, computer system, floppies, compact disks, tape drives or any other",
+      "plain_english": "accessories related thereto, in respect of which any provision of this Act, rules, orders or regulations made thereunder has been or is being contravened, shall be liable to confiscation: Provided that where it is established to the satisfaction of the court adjudicating the confiscation that the person in whose possession, power or control of any such computer, computer system, floppies, compact disks, tape drives or any other accessories relating thereto is found is not responsible for the con",
+      "keywords": [
+        "Computer",
+        "Confiscation",
+        "System",
+        "Floppies",
+        "Compact",
+        "Disks"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "77A",
+      "summary": "Section 77A: Compounding of offences.–A court of competent jurisdiction may compound offences, other",
+      "plain_english": "than offences for which the punishment for life or imprisonment for a term exceeding three years has been provided, under this Act: Provided that the court shall not compound such offence where the accused is, by reason of his previous conviction, liable to either enhanced punishment or to a punishment of a different kind: Provided further that the court shall not compound any offence where such offence affects the socio economic conditions of the country or has been committed against a child be",
+      "keywords": [
+        "Offences",
+        "Court",
+        "Compound",
+        "Punishment",
+        "Provided",
+        "Offence"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "77B",
+      "summary": "Section 77B: Offences with three years imprisonment to be bailable.–Notwithstanding anything contained",
+      "plain_english": "in the Code of Criminal Procedure, 1973 (2 of 1974), the offence punishable with imprisonment of three years and above shall be cognizable and the offence punishable with imprisonment of three years shall be bailable.]",
+      "keywords": [
+        "Three",
+        "Years",
+        "Imprisonment",
+        "Bailable",
+        "Offence",
+        "Punishable"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "78",
+      "summary": "Section 78: Power to investigate offences.–Notwithstanding anything contained in the Code of Criminal",
+      "plain_english": "Procedure, 1973 (2 of 1974), a police officer not below the rank of 1[Inspector] shall investigate any offence under this Act. 2[CHAPTER XII INTERMEDIARIES NOT TO BE LIABLE IN CERTAIN CASES",
+      "keywords": [
+        "Investigate",
+        "Power",
+        "Offences",
+        "Notwithstanding",
+        "Anything",
+        "Contained"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "79",
+      "summary": "Section 79: Exemption from liability of intermediary in certain cases.–(1) Notwithstanding anything",
+      "plain_english": "contained in any law for the time being in force but subject to the provisions of sub-sections (2) and (3), an intermediary shall not be liable for any third party information, data, or communication link made available or hosted by him. (2) The provisions of sub-section (1) shall apply if– (a) the function of the intermediary is limited to providing access to a communication system over which information made available by third parties is transmitted or temporarily stored or hosted; or (b) the",
+      "keywords": [
+        "Intermediary",
+        "Provisions",
+        "Third",
+        "Information",
+        "Communication",
+        "Made"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "79A",
+      "summary": "Section 79A: Central Government to notify Examiner of Electronic Evidence.–The Central Government",
+      "plain_english": "may, for the purposes of providing expert opinion on electronic form evidence before any court or other authority specify, by notification in the Official Gazette, any Department, body or agency of the Central Government or a State Government as an Examiner of Electronic Evidence. Explanation.–For the purposes of this section, ―electronic form evidence‖ means any information of probative value that is either stored or transmitted in electronic form and includes computer evidence, digital audio,",
+      "keywords": [
+        "Electronic",
+        "Evidence",
+        "Government",
+        "Central",
+        "Form",
+        "Examiner"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "80",
+      "summary": "Section 80: Power of police officer and other officers to enter, search, etc.–(1) Notwithstanding anything",
+      "plain_english": "contained in the Code of Criminal Procedure, 1973 (2 of 1974), any police officer, not below the rank of a 1[Inspector], or any other officer of the Central Government or a State Government authorised by the Central Government in this behalf may enter any public place and search and arrest without warrant any person found therein who is reasonably suspected of having committed or of committing or of being about to commit any offence under this Act. Explanation.–For the purposes of this sub-secti",
+      "keywords": [
+        "Officer",
+        "Government",
+        "Police",
+        "Other",
+        "Enter",
+        "Search"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "81",
+      "summary": "Section 81: Act to have overriding effect.–The provisions of this Act shall have effect notwithstanding",
+      "plain_english": "anything inconsistent therewith contained in any other law for the time being in force. 2[Provided that nothing contained in this Act shall restrict any person from exercising any right conferred under the Copyright Act, 1957 (14 of 1957) or the Patents Act, 1970 (39 of 1970).] 3[81A. Application of the Act to electronic cheque and truncated cheque.–(1) The provisions of this Act, for the time being in force, shall apply to, or in relation to, electronic cheques and the truncated cheques subject",
+      "keywords": [
+        "Have",
+        "Effect",
+        "Provisions",
+        "Contained",
+        "Time",
+        "Being"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "83",
+      "summary": "Section 83: Power to give directions.–The Central Government may give directions to any State Government",
+      "plain_english": "as to the carrying into execution in the State of any of the provisions of this Act or of any rule, regulation or order made thereunder.",
+      "keywords": [
+        "Give",
+        "Directions",
+        "Government",
+        "State",
+        "Power",
+        "Central"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "84",
+      "summary": "Section 84: Protection of action taken in good faith.–No suit, prosecution or other legal proceeding shall lie",
+      "plain_english": "against the Central Government, the State Government, the Controller or any person acting on behalf of him, 5[and adjudicating officers] for anything which is in good faith done or intended to be done in pursuance of this Act or any rule, regulation or order made thereunder. 1. Subs. by Act 10 of 2009, s. 41, for ―Deputy Superintendent of Police‖ (w.e.f. 27-10-2009). 2. Ins. by s. 42, ibid. (w.e.f. 27-10-2009). 3. Ins. by Act 55 of 2002, s. 13 (w.e.f. 26-2-2003). 4. Subs. by 7 of 2017, s. 169, f",
+      "keywords": [
+        "Good",
+        "Faith",
+        "Government",
+        "Done",
+        "Subs",
+        "Protection"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "84B",
+      "summary": "Section 84B: Punishment for abetment of offences.–Whoever abets any offence shall, if the act abetted is",
+      "plain_english": "committed in consequence of the abetment, and no express provision is made by this Act for the punishment of such abetment, be punished with the punishment provided for the offence under this Act. Explanation.–An act or offence is said to be committed in consequence of abetment, when it is committed in consequence of the instigation, or in pursuance of the conspiracy, or with the aid which constitutes the abetment.",
+      "keywords": [
+        "Abetment",
+        "Punishment",
+        "Offence",
+        "Committed",
+        "Consequence",
+        "Offences"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "84C",
+      "summary": "Section 84C: Punishment for attempt to commit offences.–Whoever attempts to commit an offence",
+      "plain_english": "punishable by this Act or causes such an offence to be committed, and in such an attempt does any act towards the commission of the offence, shall, where no express provision is made for the punishment of such attempt, be punished with imprisonment of any description provided for the offence, for a term which may extend to one-half of the longest term of imprisonment provided for that offence, or with such fine as is provided for the offence, or with both.]",
+      "keywords": [
+        "Offence",
+        "Attempt",
+        "Provided",
+        "Punishment",
+        "Commit",
+        "Imprisonment"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "85",
+      "summary": "Section 85: Offences by companies.–(1) Where a person committing a contravention of any of the provisions",
+      "plain_english": "of this Act or of any rule, direction or order made thereunder is a company, every person who, at the time the contravention was committed, was in charge of, and was responsible to, the company for the conduct of business of the company as well as the company, shall be guilty of the contravention and shall be liable to be proceeded against and punished accordingly: Provided that nothing contained in this sub-section shall render any such person liable to punishment if he proves that the contrave",
+      "keywords": [
+        "Company",
+        "Person",
+        "Contravention",
+        "Liable",
+        "Offences",
+        "Companies"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "86",
+      "summary": "Section 86: Removal of difficulties.–(1) If any difficulty arises in giving effect to the provisions of this Act",
+      "plain_english": "the Central Government may, by order published in the Official Gazette, make such provisions not inconsistent with the provisions of this Act as appear to it to be necessary or expedient for removing the difficulty: Provided that no order shall be made under this section after the expiry of a period of two years from the commencement of this Act. (2) Every order made under this section shall be laid, as soon as may be after it is made, before each House of Parliament.",
+      "keywords": [
+        "Provisions",
+        "Order",
+        "Made",
+        "Difficulty",
+        "Section",
+        "Removal"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "87",
+      "summary": "Section 87: Power of Central Government to make rules.–(1) The Central Government may, by notification",
+      "plain_english": "in the Official Gazette and in the Electronic Gazette, make rules to carry out the provisions of this Act. (2) In particular, and without prejudice to the generality of the foregoing power, such rules may provide for all or any of the following matters, namely:– 2[(a) the conditions for considering reliability of electronic signature or electronic authentication technique under sub-section (2) of section 3A; 1. Ins. by 10 of 2009, s. 45 (w.e.f. 27-10-2009). 2. Subs. by s. 46, ibid., for clause (",
+      "keywords": [
+        "Rules",
+        "Electronic",
+        "Power",
+        "Central",
+        "Government",
+        "Make"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "5",
+      "summary": "Section 5: Clause (g) omitted by s. 46, ibid. (w.e.f. 27-10-2009)",
+      "plain_english": "6. Ins. by s. 46, ibid. (w.e.f. 27-10-2009).",
+      "keywords": [
+        "Ibid",
+        "Clause",
+        "Omitted"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "7",
+      "summary": "Section 7: Clauses (r), (s) and (t) omitted by Act 7 of 2017, s. 169 (w.e.f. 26-5-2017)",
+      "plain_english": "33 (v) any other power of a civil court required to be prescribed under clause (g) of sub-section (2) of section 58; and 1[(w) the powers and functions of the Chairperson of the 2[Appellate Tribunal] under section 52A; (x) the information, duration, manner and form of such information to be retained and preserved under section 67C; (y) the procedures and safeguards for interception, monitoring or decryption under sub-section (2) of section 69; (z) the procedures and safeguards for blocking for a",
+      "keywords": [
+        "Section",
+        "Information",
+        "Procedures",
+        "Safeguards",
+        "Clauses",
+        "Omitted"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "88",
+      "summary": "Section 88: Constitution of Advisory Committee.–(1) The Central Government shall, as soon as may be",
+      "plain_english": "after the commencement of this Act, constitute a Committee called the Cyber Regulations Advisory Committee. (2) The Cyber Regulations Advisory Committee shall consist of a Chairperson and such number of other official and non-official members representing the interests principally affected or having special knowledge of the subject-matter as the Central Government may deem fit. (3) The Cyber Regulations Advisory Committee shall advise– (a) the Central Government either generally as regards any r",
+      "keywords": [
+        "Committee",
+        "Advisory",
+        "Central",
+        "Government",
+        "Cyber",
+        "Regulations"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "4",
+      "summary": "Section 4: The words ―the notification or‖ omitted by s. 46, ibid. (w.e.f. 27-10-2009)",
+      "plain_english": "34",
+      "keywords": [
+        "Words",
+        "Notification",
+        "Omitted",
+        "Ibid"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "89",
+      "summary": "Section 89: Power of Controller to make regulations.–(1) The Controller may, after consultation with the",
+      "plain_english": "Cyber Regulations Advisory Committee and with the previous approval of the Central Government, by notification in the Official Gazette, make regulations consistent with this Act and the rules made thereunder to carry out the purposes of this Act. (2) In particular, and without prejudice to the generality of the foregoing power, such regulations may provide for all or any of the following matters, namely:– (a) the particulars relating to maintenance of data base containing the disclosure record o",
+      "keywords": [
+        "Regulations",
+        "Power",
+        "Controller",
+        "Make",
+        "Consultation",
+        "Cyber"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "90",
+      "summary": "Section 90: Power of State Government to make rules.–(1) The State Government may, by notification in",
+      "plain_english": "the Official Gazette, make rules to carry out the provisions of this Act. (2) In particular, and without prejudice to the generality of the foregoing power, such rules may provide for all or any of the following matters, namely:– (a) the electronic form in which filing, issue, grant, receipt or payment shall be effected under sub-section (1) of section 6; (b) for matters specified in sub-section (2) of section 6; 2* * * * * (3) Every rule made by the State Government under this section shall be",
+      "keywords": [
+        "Section",
+        "State",
+        "Government",
+        "Rules",
+        "Power",
+        "Make"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "2",
+      "summary": "Section 2: Clause (c) omitted by Act 10 of 2009, s. 47 (w.e.f. 27-10-2009)",
+      "plain_english": "35 1[THE FIRST SCHEDULE [See sub-section (4) of section 1] DOCUMENTS OR TRANSACTIONS TO WHICH THE ACT SHALL NOT APPLY Sl. No. Description of documents or transactions",
+      "keywords": [
+        "Section",
+        "Documents",
+        "Transactions",
+        "Clause",
+        "Omitted",
+        "First"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "1",
+      "summary": "Section 1: A negotiable instrument (other than a cheque) as defined in section 13 of the Negotiable",
+      "plain_english": "Instruments Act, 1881 (26 of 1881).",
+      "keywords": [
+        "Negotiable",
+        "Instrument",
+        "Other",
+        "Than",
+        "Cheque",
+        "Defined"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "2",
+      "summary": "Section 2: A power-of-attorney as defined in section 1A of the Powers-of-Attorney Act, 1882 (7 of 1882)",
+      "plain_english": "Section 2: A power-of-attorney as defined in section 1A of the Powers-of-Attorney Act, 1882 (7 of 1882)",
+      "keywords": [
+        "Attorney",
+        "Power",
+        "Defined",
+        "Section",
+        "Powers"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "3",
+      "summary": "Section 3: A trust as defined in section 3 of the Indian Trust Act, 1882 (2 of 1882)",
+      "plain_english": "Section 3: A trust as defined in section 3 of the Indian Trust Act, 1882 (2 of 1882)",
+      "keywords": [
+        "Trust",
+        "Defined",
+        "Section",
+        "Indian"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "4",
+      "summary": "Section 4: A will as defined in clause (h) of section 2 of the Indian Succession Act, 1925 (39 of 1925)",
+      "plain_english": "including any other testamentary disposition by whatever name called.",
+      "keywords": [
+        "Will",
+        "Defined",
+        "Clause",
+        "Section",
+        "Indian",
+        "Succession"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "5",
+      "summary": "Section 5: Any contract for the sale or conveyance of immovable property or any interest in such",
+      "plain_english": "property. ______________ THE SECOND SCHEDULE [See sub-section (1) of section 3A] ELECTRONIC SIGNATURE OR ELECTRONIC AUTHENTICATION TECHNIQUE AND PROCEDURE Sl. No. Description Procedure (1) (2) (3) .] ________________ [THE THIRD SCHEDULE.] Omitted by the Information Technology (Amendment) Act, 2008 (10 of 2009), s. 50 (w.e.f. 27-10-2009). [THE FOURTH SCHEDULE.] Omitted by s. 50, ibid. (w.e.f. 27-10-2009). 1. Subs. by Act 10 of 2009, s. 49, for the First Schedule and the Second Schedule (w.e.f. 27",
+      "keywords": [
+        "Schedule",
+        "Property",
+        "Second",
+        "Section",
+        "Electronic",
+        "Procedure"
+      ],
+      "legal_topics": [
+        "Cyber Law"
+      ],
+      "related": []
+    }
+  ]
+}

@@ -1,0 +1,1545 @@
+{
+  "law_id": "sra_1963",
+  "domain_field": null,
+  "curated": [
+    {
+      "provision_number": "1",
+      "summary": "Section 1: Short title, extent and commencement",
+      "plain_english": "2. Definitions. 3. Savings.",
+      "keywords": [
+        "Short",
+        "Title",
+        "Extent",
+        "Commencement",
+        "Definitions",
+        "Savings"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "4",
+      "summary": "Section 4: Specific relief to be granted only for enforcing individual civil rights and not for enforcing penal",
+      "plain_english": "laws. PART II SPECIFIC RELIEF RECOVERING POSSESSION OF PROPERTY",
+      "keywords": [
+        "Specific",
+        "Relief",
+        "Enforcing",
+        "Granted",
+        "Only",
+        "Individual"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "5",
+      "summary": "Section 5: Recovery of specific immovable property",
+      "plain_english": "Section 5: Recovery of specific immovable property",
+      "keywords": [
+        "Recovery",
+        "Specific",
+        "Immovable",
+        "Property"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "6",
+      "summary": "Section 6: Suit by person dispossessed of immovable property",
+      "plain_english": "Section 6: Suit by person dispossessed of immovable property",
+      "keywords": [
+        "Suit",
+        "Person",
+        "Dispossessed",
+        "Immovable",
+        "Property"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "7",
+      "summary": "Section 7: Recovery of specific movable property",
+      "plain_english": "Section 7: Recovery of specific movable property",
+      "keywords": [
+        "Recovery",
+        "Specific",
+        "Movable",
+        "Property"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "8",
+      "summary": "Section 8: Liability of person in possession, not as owner, to deliver to persons entitled to immediate possession",
+      "plain_english": "SPECIFIC PERFORMANCE OF CONTRACTS",
+      "keywords": [
+        "Possession",
+        "Liability",
+        "Person",
+        "Owner",
+        "Deliver",
+        "Persons"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "9",
+      "summary": "Section 9: Defences respecting suits for relief based on contract",
+      "plain_english": "CONTRACTS WHICH CAN BE SPECIFICALLY ENFORCED",
+      "keywords": [
+        "Defences",
+        "Respecting",
+        "Suits",
+        "Relief",
+        "Based",
+        "Contract"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "10",
+      "summary": "Section 10: Specific performance in respect of contracts",
+      "plain_english": "Section 10: Specific performance in respect of contracts",
+      "keywords": [
+        "Specific",
+        "Performance",
+        "Respect",
+        "Contracts"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "11",
+      "summary": "Section 11: Cases in which specific performance of contracts connected with trusts enforceable",
+      "plain_english": "Section 11: Cases in which specific performance of contracts connected with trusts enforceable",
+      "keywords": [
+        "Cases",
+        "Which",
+        "Specific",
+        "Performance",
+        "Contracts",
+        "Connected"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "12",
+      "summary": "Section 12: Specific performance of part of contract",
+      "plain_english": "Section 12: Specific performance of part of contract",
+      "keywords": [
+        "Specific",
+        "Performance",
+        "Part",
+        "Contract"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "13",
+      "summary": "Section 13: Rights of purchaser or lessee against person with no title or imperfect title",
+      "plain_english": "CONTRACTS WHICH CANNOT BE SPECIFICALLY ENFORCED",
+      "keywords": [
+        "Title",
+        "Rights",
+        "Purchaser",
+        "Lessee",
+        "Against",
+        "Person"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "14",
+      "summary": "Section 14: Contracts not specifically enforceable",
+      "plain_english": "Section 14: Contracts not specifically enforceable",
+      "keywords": [
+        "Contracts",
+        "Specifically",
+        "Enforceable"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "14A",
+      "summary": "Section 14A: Power of court to engage experts",
+      "plain_english": "PERSONS FOR OR AGAINST WHOM CONTRACTS MAY BE SPECIFICALLY ENFORCED",
+      "keywords": [
+        "Power",
+        "Court",
+        "Engage",
+        "Experts",
+        "Persons",
+        "Against"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "15",
+      "summary": "Section 15: Who may obtain specific performance",
+      "plain_english": "Section 15: Who may obtain specific performance",
+      "keywords": [
+        "Obtain",
+        "Specific",
+        "Performance"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "16",
+      "summary": "Section 16: Personal bars to relief",
+      "plain_english": "Section 16: Personal bars to relief",
+      "keywords": [
+        "Personal",
+        "Bars",
+        "Relief"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "17",
+      "summary": "Section 17: Contract to sell or let property by one who has no title, not specifically enforceable",
+      "plain_english": "Section 17: Contract to sell or let property by one who has no title, not specifically enforceable",
+      "keywords": [
+        "Contract",
+        "Sell",
+        "Property",
+        "Title",
+        "Specifically",
+        "Enforceable"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "18",
+      "summary": "Section 18: Non-enforcement except with variation",
+      "plain_english": "Section 18: Non-enforcement except with variation",
+      "keywords": [
+        "Enforcement",
+        "Except",
+        "Variation"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "19",
+      "summary": "Section 19: Relief against parties and persons claiming under them by subsequent title",
+      "plain_english": "1 Substituted performance of contracts, etc. SECTIONS",
+      "keywords": [
+        "Relief",
+        "Against",
+        "Parties",
+        "Persons",
+        "Claiming",
+        "Them"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "20",
+      "summary": "Section 20: Substituted performance of contract",
+      "plain_english": "Section 20: Substituted performance of contract",
+      "keywords": [
+        "Substituted",
+        "Performance",
+        "Contract"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "20A",
+      "summary": "Section 20A: Special provisions for contract relating to infrastructure project",
+      "plain_english": "Section 20A: Special provisions for contract relating to infrastructure project",
+      "keywords": [
+        "Special",
+        "Provisions",
+        "Contract",
+        "Relating",
+        "Infrastructure",
+        "Project"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "20B",
+      "summary": "Section 20B: Special Courts",
+      "plain_english": "Section 20B: Special Courts",
+      "keywords": [
+        "Special",
+        "Courts"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "20C",
+      "summary": "Section 20C: Expeditious disposal of suits",
+      "plain_english": "Section 20C: Expeditious disposal of suits",
+      "keywords": [
+        "Expeditious",
+        "Disposal",
+        "Suits"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "21",
+      "summary": "Section 21: Power to award compensation in certain cases",
+      "plain_english": "Section 21: Power to award compensation in certain cases",
+      "keywords": [
+        "Power",
+        "Award",
+        "Compensation",
+        "Certain",
+        "Cases"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "22",
+      "summary": "Section 22: Power to grant relief for possession, partition, refund of earnest money, etc",
+      "plain_english": "Section 22: Power to grant relief for possession, partition, refund of earnest money, etc",
+      "keywords": [
+        "Power",
+        "Grant",
+        "Relief",
+        "Possession",
+        "Partition",
+        "Refund"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "23",
+      "summary": "Section 23: Liquidation of damages not a bar to specific performance",
+      "plain_english": "Section 23: Liquidation of damages not a bar to specific performance",
+      "keywords": [
+        "Liquidation",
+        "Damages",
+        "Specific",
+        "Performance"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "24",
+      "summary": "Section 24: Bar of suit for compensation for breach after dismissal of suit for specific performance",
+      "plain_english": "ENFORCEMENT OF AWARDS AND DIRECTIONS TO EXECUTE SETTLEMENTS",
+      "keywords": [
+        "Suit",
+        "Compensation",
+        "Breach",
+        "Dismissal",
+        "Specific",
+        "Performance"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "25",
+      "summary": "Section 25: Application of preceding sections to certain awards and testamentary directions to execute",
+      "plain_english": "settlements. RECTIFICATION OF INSTRUMENTS",
+      "keywords": [
+        "Application",
+        "Preceding",
+        "Sections",
+        "Certain",
+        "Awards",
+        "Testamentary"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "26",
+      "summary": "Section 26: When instrument may be rectified",
+      "plain_english": "RESCISSION OF CONTRACTS",
+      "keywords": [
+        "When",
+        "Instrument",
+        "Rectified",
+        "Rescission",
+        "Contracts"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "27",
+      "summary": "Section 27: When rescission may be adjudged or refused",
+      "plain_english": "Section 27: When rescission may be adjudged or refused",
+      "keywords": [
+        "When",
+        "Rescission",
+        "Adjudged",
+        "Refused"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "28",
+      "summary": "Section 28: Rescission in certain circumstances of contracts for the sale or lease of immovable property, the",
+      "plain_english": "specific performance of which has been decreed.",
+      "keywords": [
+        "Rescission",
+        "Certain",
+        "Circumstances",
+        "Contracts",
+        "Sale",
+        "Lease"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "29",
+      "summary": "Section 29: Alternative prayer for rescission in suit for specific performance",
+      "plain_english": "Section 29: Alternative prayer for rescission in suit for specific performance",
+      "keywords": [
+        "Alternative",
+        "Prayer",
+        "Rescission",
+        "Suit",
+        "Specific",
+        "Performance"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "30",
+      "summary": "Section 30: Court may require parties rescinding to do equity",
+      "plain_english": "CANCELLATION OF INSTRUMENTS",
+      "keywords": [
+        "Court",
+        "Require",
+        "Parties",
+        "Rescinding",
+        "Equity",
+        "Cancellation"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "31",
+      "summary": "Section 31: When cancellation may be ordered",
+      "plain_english": "Section 31: When cancellation may be ordered",
+      "keywords": [
+        "When",
+        "Cancellation",
+        "Ordered"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "32",
+      "summary": "Section 32: What instruments may be partially cancelled",
+      "plain_english": "Section 32: What instruments may be partially cancelled",
+      "keywords": [
+        "What",
+        "Instruments",
+        "Partially",
+        "Cancelled"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "33",
+      "summary": "Section 33: Power to require benefit to be restored or compensation to be made when instrument is cancelled",
+      "plain_english": "or is successfully resisted as being void or voidable. DECLARATORY DECREES",
+      "keywords": [
+        "Power",
+        "Require",
+        "Benefit",
+        "Restored",
+        "Compensation",
+        "Made"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "34",
+      "summary": "Section 34: Discretion of court as to declaration of status or right",
+      "plain_english": "Section 34: Discretion of court as to declaration of status or right",
+      "keywords": [
+        "Discretion",
+        "Court",
+        "Declaration",
+        "Status",
+        "Right"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "35",
+      "summary": "Section 35: Effect of declaration",
+      "plain_english": "PART III PREVENTIVE RELIEF INJUNCTIONS GENERALLY",
+      "keywords": [
+        "Effect",
+        "Declaration",
+        "Part",
+        "Preventive",
+        "Relief",
+        "Injunctions"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "36",
+      "summary": "Section 36: Preventive relief how granted",
+      "plain_english": "2 SECTIONS",
+      "keywords": [
+        "Preventive",
+        "Relief",
+        "Granted",
+        "Sections"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "37",
+      "summary": "Section 37: Temporary and perpetual injunctions",
+      "plain_english": "PERPETUAL INJUNCTIONS",
+      "keywords": [
+        "Perpetual",
+        "Injunctions",
+        "Temporary"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "38",
+      "summary": "Section 38: Perpetual injunction when granted",
+      "plain_english": "Section 38: Perpetual injunction when granted",
+      "keywords": [
+        "Perpetual",
+        "Injunction",
+        "When",
+        "Granted"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "39",
+      "summary": "Section 39: Mandatory injunctions",
+      "plain_english": "Section 39: Mandatory injunctions",
+      "keywords": [
+        "Mandatory",
+        "Injunctions"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "40",
+      "summary": "Section 40: Damages in lieu of, or in addition to, injunction",
+      "plain_english": "Section 40: Damages in lieu of, or in addition to, injunction",
+      "keywords": [
+        "Damages",
+        "Lieu",
+        "Addition",
+        "Injunction"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "41",
+      "summary": "Section 41: Injunction when refused",
+      "plain_english": "Section 41: Injunction when refused",
+      "keywords": [
+        "Injunction",
+        "When",
+        "Refused"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "42",
+      "summary": "Section 42: Injunction to perform negative agreement",
+      "plain_english": "43. [Repealed.]. 44. [Repealed.]. THE SCHEDULE. 3 THE SPECIFIC RELIEF ACT, 1963 ACT NO. 47 OF 1963 [13th December, 1963.] An Act to define and amend the law relating to certain kinds of specific relief. BE it enacted by Parliament in the Fourteenth Year of the Republic of India as follow:— PART I PRELIMINARY",
+      "keywords": [
+        "Repealed",
+        "Specific",
+        "Relief",
+        "Injunction",
+        "Perform",
+        "Negative"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "1",
+      "summary": "Section 1: Short title, extent and commencement.—(1) This Act may be called the Specific Relief Act, 1963",
+      "plain_english": "(2) It extends to the whole of India 1[***]. (3) It shall come into force on such date2 as the Central Government may, by notification in the Official Gazette, appoint.",
+      "keywords": [
+        "Short",
+        "Title",
+        "Extent",
+        "Commencement",
+        "Called",
+        "Specific"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "2",
+      "summary": "Section 2: Definitions.—In this Act, unless the context otherwise requires,—",
+      "plain_english": "(a) “obligation” includes every duty enforceable by law; (b) “settlement” means an instrument (other than a will or codicil as defined by the Indian Succession Act, 1925 (39 of 1925), whereby the destination or devolution of successive interests in movable or immovable property is disposed of or is agreed to be disposed of; (c) “trust” has the same meaning as in section 3 of the Indian Trusts Act, 1882 (2 of 1882), and includes an obligation in the nature of a trust within the meaning of Chapter",
+      "keywords": [
+        "Obligation",
+        "Includes",
+        "Indian",
+        "Disposed",
+        "Trust",
+        "Meaning"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "3",
+      "summary": "Section 3: Savings.—Except as otherwise provided herein, nothing in this Act shall be deemed—",
+      "plain_english": "(a) to deprive any person of any right to relief, other than specific performance, which he may have under any contract; or (b) to affect the operation of the Indian Registration Act, 1908 (16 of 1908), on documents.",
+      "keywords": [
+        "Savings",
+        "Except",
+        "Otherwise",
+        "Provided",
+        "Herein",
+        "Nothing"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "4",
+      "summary": "Section 4: Specific relief to be granted only for enforcing individual civil rights and not for enforcing",
+      "plain_english": "penal laws.—Specific relief can be granted only for the purpose of enforcing individual civil rights and not for the mere purpose of enforcing a penal law. PART II SPECIFIC RELIEF RECOVERING POSSESSION OF PROPERTY",
+      "keywords": [
+        "Enforcing",
+        "Specific",
+        "Relief",
+        "Granted",
+        "Only",
+        "Individual"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "5",
+      "summary": "Section 5: Recovery of specific immovable property.—A person entitled to the possession of specific",
+      "plain_english": "immovable property may recover it in the manner provided by the Code of Civil Procedure, 1908 (5 of 1908).",
+      "keywords": [
+        "Specific",
+        "Immovable",
+        "Property",
+        "Recovery",
+        "Person",
+        "Entitled"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "6",
+      "summary": "Section 6: Suit by person dispossessed of immovable property.—(1) If any person is dispossessed without",
+      "plain_english": "his consent of immovable property otherwise than in due course of law, he or any person 3[through whom",
+      "keywords": [
+        "Person",
+        "Dispossessed",
+        "Immovable",
+        "Property",
+        "Suit",
+        "Consent"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "1",
+      "summary": "Section 1: The words \"except the State of Jammu and Kashmir\" omitted by Act 34 of 2019, s. 95 and 96 and the Fifth Schedule",
+      "plain_english": "(w.e.f. 31-10-2019). 2. 1st March, 1964, vide notification No. S.O. 189, dated 13th January, 1964, see Gazette of India, Extraordinary, Part II, sec. 3(ii). 3. Ins. by Act 18 of 2018, s. 2 (w.e.f. 1-10-2018). 4 he has been in possession or any person] claiming through him may, by suit, recover possession thereof, notwithstanding any other title that may be set up in such suit. (2) No suit under this section shall be brought— (a) after the expiry of six months from the date of dispossession; or (",
+      "keywords": [
+        "Suit",
+        "Possession",
+        "Words",
+        "Except",
+        "State",
+        "Jammu"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "7",
+      "summary": "Section 7: Recovery of specific movable property.—A person entitled to the possession of specific movable",
+      "plain_english": "property may recover it in the manner provided by the Code of Civil Procedure, 1908 (5 of 1908). Explanation 1.—A trustee may sue under this section for the possession of movable property to the beneficial interest in which the person for whom he is trustee is entitled. Explanation 2.—A special or temporary right to the present possession of movable property is sufficient to support a suit under this section.",
+      "keywords": [
+        "Movable",
+        "Property",
+        "Possession",
+        "Specific",
+        "Person",
+        "Entitled"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "8",
+      "summary": "Section 8: Liability of person in possession, not as owner, to deliver to persons entitled to immediate",
+      "plain_english": "possession.—Any person having the possession or control of a particular article of movable property, of which he is not the owner, may be compelled specifically to deliver it to the person entitled to its immediate possession, in any of the following cases:— (a) when the thing claimed is held by the defendant as the agent or trustee of the plaintiff; (b) when compensation in money would not afford the plaintiff adequate relief for the loss of the thing claimed; (c) when it would be extremely dif",
+      "keywords": [
+        "Possession",
+        "Person",
+        "When",
+        "Owner",
+        "Deliver",
+        "Entitled"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "9",
+      "summary": "Section 9: Defences respecting suits for relief based on contract.—Except as otherwise provided herein",
+      "plain_english": "where any relief is claimed under this Chapter in respect of a contract, the person against whom the relief is claimed may plead by way of defence any ground which is available to him under any law relating to contracts. CONTRACTS WHICH CAN BE SPECIFICALLY ENFORCED 1[10. Specific performance in respect of contracts.—The specific performance of a contract shall be enforced by the court subject to the provisions contained in sub-section (2) of section 11, section 14 and section 16.] 1. Subs. by Ac",
+      "keywords": [
+        "Section",
+        "Relief",
+        "Contract",
+        "Contracts",
+        "Claimed",
+        "Respect"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "11",
+      "summary": "Section 11: Cases in which specific performance of contracts connected with trusts enforceable.—(1)",
+      "plain_english": "Except as otherwise provided in this Act, specific performance of a 1[contract shall], be enforced when the act agreed to be done is in the performance wholly or partly of a trust. (2) A contract made by a trustee in excess of his powers or in breach of trust cannot be specifically enforced.",
+      "keywords": [
+        "Performance",
+        "Specific",
+        "Contract",
+        "Enforced",
+        "Trust",
+        "Cases"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "12",
+      "summary": "Section 12: Specific performance of part of contract.—(1) Except as otherwise hereinafter provided in this",
+      "plain_english": "section, the court shall not direct the specific performance of a part of a contract. (2) Where a party to a contract is unable to perform the whole of his part of it, but the part which must be left unperformed be a only a small proportion to the whole in value and admits of compensation in money, the court may, at the suit of either party, direct the specific performance of so much of the contract as can be performed, and award compensation in money for the deficiency. (3) Where a party to a c",
+      "keywords": [
+        "Part",
+        "Contract",
+        "Specific",
+        "Performance",
+        "Party",
+        "Court"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "13",
+      "summary": "Section 13: Rights of purchaser or lessee against person with no title or imperfect title.—(1) Where a",
+      "plain_english": "person contracts to sell or let certain immovable property having no title or only an imperfect title, the purchaser or lessee (subject to the other provisions of this Chapter), has the following rights, namely:— (a) if the vendor or lessor has subsequently to the contract acquired any interest in the property, the purchaser or lessee may compel him to make good the contract out of such interest; (b) where the concurrence of other person is necessary for validating the title, and they are bound",
+      "keywords": [
+        "Title",
+        "Purchaser",
+        "Lessee",
+        "Person",
+        "Rights",
+        "Imperfect"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "14A",
+      "summary": "Section 14A: Power of court to engage experts.—(1) Without prejudice to the generality of the provisions",
+      "plain_english": "contained in the Code of Civil Procedure, 1908 (5 of 1908), in any suit under this Act, where the court considers it necessary to get expert opinion to assist it on any specific issue involved in the suit, it may engage one or more experts and direct to report to it on such issue and may secure attendance of the expert for providing evidence, including production of documents on the issue. (2) The court may require or direct any person to give relevant information to the expert or to produce, or",
+      "keywords": [
+        "Court",
+        "Expert",
+        "Issue",
+        "Engage",
+        "Experts",
+        "Suit"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "15",
+      "summary": "Section 15: Who may obtain specific performance.—Except as otherwise provided by this Chapter, the",
+      "plain_english": "specific performance of a contract may be obtained by— (a) any party thereto; (b) the representative in interest or the principal, of any party thereto: Provided that where the learning, skill, solvency or any personal quality of such party is a material ingredient in the contract, or where the contract provides that his interest shall not be assigned, his representative in interest or his principal shall not be entitled to specific performance of the contract, unless such party has already perf",
+      "keywords": [
+        "Contract",
+        "Party",
+        "Specific",
+        "Performance",
+        "Interest",
+        "Provided"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "16",
+      "summary": "Section 16: Personal bars to relief.—Specific performance of a contract cannot be enforced in favour of a",
+      "plain_english": "person— 2[(a) who has obtained substituted performance of contract under section 20; or] (b) who has become incapable of performing, or violates any essential term of, the contract that on his part remains to be performed, or acts in fraud of the contract, or wilfully acts at variance with, or in subversion of, the relation intended to be established by the contract; or (c) 3[who fails to prove] that he has performed or has always been ready and willing to perform the essential terms of the cont",
+      "keywords": [
+        "Contract",
+        "Performance",
+        "Essential",
+        "Performed",
+        "Acts",
+        "Personal"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "17",
+      "summary": "Section 17: Contract to sell or let property by one who has no title, not specifically enforceable.—(1) A",
+      "plain_english": "contract to sell or let any immovable property cannot be specifically enforced in favour of a vendor or lessor— (a) who, knowing himself not to have any title to the property, has contracted to sell or let the property; (b) who, though he entered into the contract believing that he had a good title to the property, cannot at the time fixed by the parties or by the court for the completion of the sale or letting, give the purchaser or lessee a title free from reasonable doubt. (2) The provisions",
+      "keywords": [
+        "Property",
+        "Title",
+        "Contract",
+        "Sell",
+        "Specifically",
+        "Cannot"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "18",
+      "summary": "Section 18: Non-enforcement except with variation.—Where a plaintiff seeks specific performance of a",
+      "plain_english": "contract in writing, to which the defendant sets up a variation, the plaintiff cannot obtain the performance sought, except with the variation so set up, in the following cases, namely:— (a) where by fraud, mistake of fact or mis-representation, the written contract of which performance is sought is in its terms or effect different from what the parties agreed to, or does not contain all the terms agreed to between the parties on the basis of which the defendant entered into the contact; 1. Ins.",
+      "keywords": [
+        "Variation",
+        "Performance",
+        "Which",
+        "Except",
+        "Where",
+        "Plaintiff"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "19",
+      "summary": "Section 19: Relief against parties and persons claiming under them by subsequent title.—Except as",
+      "plain_english": "otherwise provided by this Chapter, specific performance of a contract may be enforced against— (a) either party thereto; (b) any other person claiming under him by a title arising subsequently to the contract, except a transferee for value who has paid his money in good faith and without notice of the original contract; (c) any person claiming under a title which, though prior to the contract and known to the plaintiff, might have been displaced by the defendant; 1[(ca) when a limited liability",
+      "keywords": [
+        "Contract",
+        "Claiming",
+        "Title",
+        "Against",
+        "Except",
+        "Person"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "20A",
+      "summary": "Section 20A: Special provisions for contract relating to infrastructure project.—(1) No injunction shall be",
+      "plain_english": "granted by a court in a suit under this Act involving a contract relating to an infrastructure project specified in the Schedule, where granting injunction would cause impediment or delay in the progress or completion of such infrastructure project. 1. Ins. by Act 18 of 2018, s. 8 (w.e.f. 1-10-2018). 2. Subs. by s. 9, ibid., for “Discretion and powers of Court”(w.e.f. 1-10-2018). 3. Subs. by s. 10, ibid., for section 20 (w.e.f. 1-10-2018). 9 Explanation.—For the purposes of this section, section",
+      "keywords": [
+        "Infrastructure",
+        "Project",
+        "Section",
+        "Contract",
+        "Relating",
+        "Injunction"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "20B",
+      "summary": "Section 20B: Special Courts.—The State Government, in consultation with the Chief Justice of the High Court",
+      "plain_english": "shall designate, by notification published in the Official Gazette, one or more Civil Courts as Special Courts, within the local limits of the area to exercise jurisdiction and to try a suit under this Act in respect of contracts relating to infrastructure projects.",
+      "keywords": [
+        "Courts",
+        "Special",
+        "State",
+        "Government",
+        "Consultation",
+        "Chief"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "20C",
+      "summary": "Section 20C: Expeditious disposal of suits.—Notwithstanding anything contained in the Code of Civil",
+      "plain_english": "Procedure, 1908 (5 of 1908), a suit filed under the provisions of this Act shall be disposed of by the court within a period of twelve months from the date of service of summons to the defendant: Provided that the said period may be extended for a further period not exceeding six months in aggregate after recording reasons in writing for such extension by the court.]",
+      "keywords": [
+        "Period",
+        "Court",
+        "Months",
+        "Expeditious",
+        "Disposal",
+        "Suits"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "21",
+      "summary": "Section 21: Power to award compensation in certain cases.—(1) In a suit for specific performance of a",
+      "plain_english": "contract, the plaintiff may also claim compensation for its breach 1[in addition to] such performance. (2) If, in any such suit, the court decides that specific performance ought not to be granted, but that there is a contract between the parties which has been broken by the defendant, and that the plaintiff is entitled to compensation for that breach, it shall award him such compensation accordingly. (3) If, in any such suit, the court decides that specific performance ought to be granted, but",
+      "keywords": [
+        "Compensation",
+        "Performance",
+        "Suit",
+        "Specific",
+        "Award",
+        "Contract"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "22",
+      "summary": "Section 22: Power to grant relief for possession, partition, refund of earnest money, etc.—(1)",
+      "plain_english": "Notwithstanding anything to the contrary contained in the Code of Civil Procedure,1908 (5 of 1908), any person suing for the specific performance of a contract for the transfer of immovable property may, in an appropriate case, ask for— (a) possession, or partition and separate possession, of the property, in addition to such performance; or 1. Subs. by Act 18 of 2018, s. 11, for “, either in addition to, or in substitution of,” (w.e.f. 1-10-2018). 10 (b) any other relief to which he may be enti",
+      "keywords": [
+        "Possession",
+        "Relief",
+        "Partition",
+        "Performance",
+        "Property",
+        "Addition"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "23",
+      "summary": "Section 23: Liquidation of damages not a bar to specific performance.—(1) A contract, otherwise proper to",
+      "plain_english": "be specifically enforced, may be so enforced, though a sum be named in it as the amount to be paid in case of its breach and the party in default is willing to pay the same, if the court, having regard to the terms of the contract and other attending circumstances, is satisfied that the sum was named only for the purpose of securing performance of the contract and not for the purpose of giving to the party in default an option of paying money in lieu of specific performance. (2) When enforcing s",
+      "keywords": [
+        "Performance",
+        "Contract",
+        "Specific",
+        "Enforced",
+        "Named",
+        "Party"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "24",
+      "summary": "Section 24: Bar of suit for compensation for breach after dismissal of suit for specific performance.—The",
+      "plain_english": "dismissal of a suit for specific performance of a contract or part thereof shall bar the plaintiff’s right to sue for compensation for the breach of such contract or part, as the case may be, but shall not bar his right to sue for any other relief to which he may be entitled, by reason of such breach. ENFORCEMENT OF AWARDS AND DIRECTIONS TO EXECUTE SETTLEMENTS",
+      "keywords": [
+        "Suit",
+        "Breach",
+        "Compensation",
+        "Dismissal",
+        "Specific",
+        "Performance"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "25",
+      "summary": "Section 25: Application of preceding sections to certain awards and testamentary directions to execute",
+      "plain_english": "settlements.—The provisions of this Chapter as to contracts shall apply to awards to which 2[the Arbitration and Conciliation Act, 1996 (26 of 1996)], does not apply and to directions in a will or codicil to execute a particular settlement. RECTIFICATION OF INSTRUMENTS",
+      "keywords": [
+        "Awards",
+        "Directions",
+        "Execute",
+        "Apply",
+        "Application",
+        "Preceding"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "26",
+      "summary": "Section 26: When instrument may be rectified.—(1) When, through fraud or a mutual mistake of the parties",
+      "plain_english": "a contract or other instrument in writing [not being the articles of association of a company to which the Companies Act, 1956 (1 of 1956), applies] does not express their real intention, then— (a) either party or his representative in interest may institute a suit to have the instrument rectified; or (b) the plaintiff may, in any suit in which any right arising under the instrument is in issue, claim in his pleading that the instrument be rectified; or (c) a defendant in any such suit as is ref",
+      "keywords": [
+        "Instrument",
+        "Rectified",
+        "Suit",
+        "When",
+        "Which",
+        "Through"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "27",
+      "summary": "Section 27: When rescission may be adjudged or refused.—(1) Any person interested in a contract may sue",
+      "plain_english": "to have it rescinded, and such rescission may be adjudged by the court in any of the following cases, namely:— (a) where the contract is voidable or terminable by the plaintiff; (b) where the contract is unlawful for causes not apparent on its face and the defendant is more to blame than the plaintiff. (2) Notwithstanding anything contained in sub-section (1), the court may refuse to rescind the contract— (a) where the plaintiff has expressly or impliedly ratified the contract; or (b) where, owi",
+      "keywords": [
+        "Contract",
+        "Where",
+        "Plaintiff",
+        "Rescission",
+        "Adjudged",
+        "Court"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "28",
+      "summary": "Section 28: Rescission in certain circumstances of contracts for the sale or lease of immovable property",
+      "plain_english": "the specific performance of which has been decreed.—(1) Where in any suit a decree for specific performance of a contract for the sale or lease of immovable property has been made and the purchaser or lessee does not, within the period allowed by the decree or such further period as the court may allow, pay the purchase money or other sum which the court has ordered him to pay, the vendor or lessor may apply in the same suit in which the decree is made, to have the contract rescinded and on such",
+      "keywords": [
+        "Which",
+        "Decree",
+        "Sale",
+        "Lease",
+        "Immovable",
+        "Property"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "29",
+      "summary": "Section 29: Alternative prayer for rescission in suit for specific performance.—A plaintiff instituting a suit",
+      "plain_english": "for the specific performance of a contract in writing may pray in the alternative that, if the contract cannot be specifically enforced, it may be rescinded and delivered up to be cancelled; and the court, if it refuses to enforce the contract specifically, may direct it to be rescinded and delivered up accordingly.",
+      "keywords": [
+        "Contract",
+        "Alternative",
+        "Suit",
+        "Specific",
+        "Performance",
+        "Specifically"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "30",
+      "summary": "Section 30: Court may require parties rescinding to do equity.—On adjudging the rescission of a contract",
+      "plain_english": "the court may require the party to whom such relief is granted to restore, so far as may be, any benefit which he may have received from the other party and to make any compensation to him which justice may require. CANCELLATION OF INSTRUMENTS",
+      "keywords": [
+        "Require",
+        "Court",
+        "Party",
+        "Which",
+        "Parties",
+        "Rescinding"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "31",
+      "summary": "Section 31: When cancellation may be ordered.—(1) Any person against whom a written instrument is void",
+      "plain_english": "or voidable, and who has reasonable apprehension that such instrument, if left outstanding may cause him serious injury, may sue to have it adjudged void or voidable; and the court may, in its discretion, so adjudge it and order it to be delivered up and cancelled. (2) If the instrument has been registered under the Indian Registration Act, 1908 (16 of 1908), the court shall also send a copy of its decree to the officer in whose office the instrument has been so registered; and such officer shal",
+      "keywords": [
+        "Instrument",
+        "Void",
+        "Voidable",
+        "Court",
+        "Been",
+        "Registered"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "32",
+      "summary": "Section 32: What instruments may be partially cancelled.—Where an instrument is evidence of different",
+      "plain_english": "rights or different obligations, the court may, in a proper case, cancel it in part and allow it to stand for the residue.",
+      "keywords": [
+        "Different",
+        "What",
+        "Instruments",
+        "Partially",
+        "Cancelled",
+        "Where"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "33",
+      "summary": "Section 33: Power to require benefit to be restored or compensation to be made when instrument is",
+      "plain_english": "cancelled or is successfully resisted as being void or voidable.—(1) On adjudging the cancellation of an instrument, the court may require the party to whom such relief is granted, to restore, so far as may be any benefit which he may have received from the other party and to make any compensation to him which justice may require. (2) Where a defendant successfully resists any suit on the ground— (a) that the instrument sought to be enforced against him in the suit is voidable, the court may if",
+      "keywords": [
+        "Require",
+        "Instrument",
+        "Benefit",
+        "Compensation",
+        "Successfully",
+        "Voidable"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "34",
+      "summary": "Section 34: Discretion of court as to declaration of status or right.—Any person entitled to any legal",
+      "plain_english": "character, or to any right as to any property, may institute a suit against any person denying, or interested to deny, his title to such character or right, and the court may in its discretion make therein a declaration that he is so entitled, and the plaintiff need not in such suit ask for any further relief: Provided that no court shall make any such declaration where the plaintiff, being able to seek further relief than a mere declaration of title, omits to do so. 13 Explanation.—A trustee of",
+      "keywords": [
+        "Declaration",
+        "Court",
+        "Right",
+        "Discretion",
+        "Person",
+        "Entitled"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "35",
+      "summary": "Section 35: Effect of declaration.—A declaration made under this Chapter is binding only on the parties to the",
+      "plain_english": "suit, persons claiming through them respectively, and, where any of the parties are trustees, on the persons for whom, if in existence at the date of the declaration, such parties would be trustees. PART III PREVENTIVE RELIEF INJUNCTIONS GENERALLY",
+      "keywords": [
+        "Declaration",
+        "Parties",
+        "Persons",
+        "Trustees",
+        "Effect",
+        "Made"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "36",
+      "summary": "Section 36: Preventive relief how granted.—Preventive relief is granted at the discretion of the court by",
+      "plain_english": "injunction, temporary or perpetual.",
+      "keywords": [
+        "Preventive",
+        "Relief",
+        "Granted",
+        "Discretion",
+        "Court",
+        "Injunction"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "37",
+      "summary": "Section 37: Temporary and perpetual injunctions.—(1) Temporary injunctions are such as are to continue",
+      "plain_english": "until a specific time, or until the further order of the court, and they may be granted at any stage of a suit, and are regulated by the Code of Civil Procedure, 1908 (5 of 1908). (2) A perpetual injunction can only be granted by the decree made at the hearing and upon the merits of the suit; the defendant is thereby perpetually enjoined from the assertion of a right, or from the commission of an act, which would be contrary to the rights of the plaintiff. PERPETUAL INJUNCTIONS",
+      "keywords": [
+        "Perpetual",
+        "Injunctions",
+        "Temporary",
+        "Until",
+        "Granted",
+        "Suit"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "38",
+      "summary": "Section 38: Perpetual injunction when granted.—(1) Subject to the other provisions contained in or referred",
+      "plain_english": "to by this Chapter, a perpetual injunction may be granted to the plaintiff to prevent the breach of an obligation existing in his favour, whether expressly or by implication. (2) When any such obligation arises from contract, the court shall be guided by the rules and provisions contained in Chapter II. (3) When the defendant invades or threatens to invade the plaintiff’s right to, or enjoyment of, property, the court may grant a perpetual injunction in the following cases, namely:— (a) where th",
+      "keywords": [
+        "Perpetual",
+        "Injunction",
+        "When",
+        "Granted",
+        "Provisions",
+        "Contained"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "39",
+      "summary": "Section 39: Mandatory injunctions.—When, to prevent the breach of an obligation, it is necessary to compel",
+      "plain_english": "the performance of certain acts which the court is capable of enforcing, the court may in its discretion grant an injunction to prevent the breach complained of, and also to compel performance of the requisite acts.",
+      "keywords": [
+        "Prevent",
+        "Breach",
+        "Compel",
+        "Performance",
+        "Acts",
+        "Court"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "40",
+      "summary": "Section 40: Damages in lieu of, or in addition to, injunction.—(1) The plaintiff in a suit for perpetual",
+      "plain_english": "injunction under section 38, or mandatory injunction under section 39, may claim damages either in addition to, or in substitution for, such injunction and the court may, if it thinks fit, award such damages. (2) No relief for damages shall be granted under this section unless the plaintiff has claimed such relief in his plaint: Provided that where no such damages have been claimed in the plaint, the court shall, at any stage of the proceedings, allow the plaintiff to amend the plaint on such te",
+      "keywords": [
+        "Damages",
+        "Injunction",
+        "Plaintiff",
+        "Section",
+        "Plaint",
+        "Addition"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "41",
+      "summary": "Section 41: Injunction when refused.—An injunction cannot be granted—",
+      "plain_english": "(a) to restrain any person from prosecuting a judicial proceeding pending at the institution of the suit in which the injunction is sought, unless such restraint is necessary to prevent a multiplicity of proceedings; (b) to restrain any person from instituting or prosecuting any proceeding in a court not sub- ordinate to that from which the injunction is sought; (c) to restrain any person from applying to any legislative body; (d) to restrain any person from instituting or prosecuting any procee",
+      "keywords": [
+        "Injunction",
+        "Restrain",
+        "Person",
+        "Prosecuting",
+        "Proceeding",
+        "Which"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "42",
+      "summary": "Section 42: Injunction to perform negative agreement.—Notwithstanding anything contained in clause (e)",
+      "plain_english": "of section 41, where a contract comprises an affirmative agreement to do a certain act, coupled with a negative agreement, express or implied, not to do a certain act, the circumstance that the court is unable to compel specific performance of the affirmative agreement shall not preclude it from granting an injunction to perform the negative agreement: Provided that the plaintiff has not failed to perform the contract so far as it is binding on him. 2* * * * * 1. Ins. by Act 18 of 2018, s. 13 (w",
+      "keywords": [
+        "Agreement",
+        "Perform",
+        "Negative",
+        "Injunction",
+        "Contract",
+        "Affirmative"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "2",
+      "summary": "Section 2: Sections 43 and 44 rep. by the Repealing and Amending Act, 1974 (56 of 1974), s. 2 and the First Schedule",
+      "plain_english": "(w.e.f. 20-12-1974). 15 1[THE SCHEDULE [See sections 20A and 41 (ha)] Category of projects and Infrastructure Sub-Sectors Sl. No. Category Infrastructure Sub-Sectors 1 2 3",
+      "keywords": [
+        "Sections",
+        "Schedule",
+        "Category",
+        "Infrastructure",
+        "Sectors",
+        "Repealing"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "1",
+      "summary": "Section 1: Transport (a) Road and bridges",
+      "plain_english": "(b) Ports (including Capital Dredging) (c) Shipyards (including a floating or land-based facility with the essential features of waterfront, turning basin, berthing and docking facility, slipways or ship lifts, and which is self-sufficient for carrying on shipbuilding/repair/breaking activities) (d) Inland Waterways (e) Airports (f) Railway Track, tunnels, viaducts, bridges, terminal infrastructure including stations and adjoining commercial infrastructure (g) Urban Public Transport (except roll",
+      "keywords": [
+        "Including",
+        "Transport",
+        "Bridges",
+        "Facility",
+        "Infrastructure",
+        "Road"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "2",
+      "summary": "Section 2: Energy (a) Electricity Generation",
+      "plain_english": "(b) Electricity Transmission (c) Electricity Distribution (d) Oil pipelines (e) Oil/Gas/Liquefied Natural Gas (LNG) storage facility(including strategic storage of crude oil) (f) Gas pipelines (including city gas distribution network)",
+      "keywords": [
+        "Electricity",
+        "Distribution",
+        "Pipelines",
+        "Storage",
+        "Including",
+        "Energy"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "3",
+      "summary": "Section 3: Water and (a) Solid Waste Management",
+      "plain_english": "Sanitation (b) Water supply pipelines (c) Water treatment plants (d) Sewage collection, treatment and disposal system (e) Irrigation (dams, channels, embankments, etc.) (f) Storm Water Drainage System (g) Slurry pipelines",
+      "keywords": [
+        "Water",
+        "Pipelines",
+        "Treatment",
+        "System",
+        "Solid",
+        "Waste"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "4",
+      "summary": "Section 4: Communication (a) Telecommunication (Fixed network including optic fibre/wire/cable",
+      "plain_english": "networks which provide broadband/internet) (b) Telecommunication towers (c) Telecommunications and Telecom Services 1. Ins. by Act 18 of 2018, s. 14 (w.e.f. 1-10-2018). 16 Sl. No. Category Infrastructure Sub-Sectors 1 2 3",
+      "keywords": [
+        "Telecommunication",
+        "Communication",
+        "Fixed",
+        "Network",
+        "Including",
+        "Optic"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "5",
+      "summary": "Section 5: Social and (a) Education Institutions (capital stock)",
+      "plain_english": "Commercial (b) Sports infrastructure (including provision of Sports Stadia and Infrastructure Infrastructure for Academies for Training/Research in Sports and Sports- relating activities) (c) Hospitals (capital stock including Medical Colleges, Para Medical Training Institutes and Diagnostic Centres) (d) Tourism infrastructure viz. (i) three-star or higher category classified hotels located outside cities with population of more than one million; (ii) ropeways and cable cars (e) Common infrastru",
+      "keywords": [
+        "Sports",
+        "Infrastructure",
+        "Capital",
+        "Stock",
+        "Including",
+        "Training"
+      ],
+      "legal_topics": [
+        "Civil Remedies"
+      ],
+      "related": []
+    }
+  ]
+}

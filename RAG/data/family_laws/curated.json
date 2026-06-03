@@ -1,0 +1,752 @@
+{
+  "law_id": "family_laws",
+  "domain_field": null,
+  "curated": [
+    {
+      "provision_number": "1",
+      "summary": "Section 1: Short title, extent and commencement",
+      "plain_english": "2. Definitions. FAMILY COURTS",
+      "keywords": [
+        "Short",
+        "Title",
+        "Extent",
+        "Commencement",
+        "Definitions",
+        "Family"
+      ],
+      "legal_topics": [
+        "Family Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "3",
+      "summary": "Section 3: Establishment of Family Courts",
+      "plain_english": "Section 3: Establishment of Family Courts",
+      "keywords": [
+        "Establishment",
+        "Family",
+        "Courts"
+      ],
+      "legal_topics": [
+        "Family Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "4",
+      "summary": "Section 4: Appointment of Judges",
+      "plain_english": "Section 4: Appointment of Judges",
+      "keywords": [
+        "Appointment",
+        "Judges"
+      ],
+      "legal_topics": [
+        "Family Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "5",
+      "summary": "Section 5: Association of social welfare agencies, etc",
+      "plain_english": "Section 5: Association of social welfare agencies, etc",
+      "keywords": [
+        "Association",
+        "Social",
+        "Welfare",
+        "Agencies"
+      ],
+      "legal_topics": [
+        "Family Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "6",
+      "summary": "Section 6: Counsellors, officers and other employees of Family Courts",
+      "plain_english": "JURISDICTION 7. Jurisdiction.",
+      "keywords": [
+        "Jurisdiction",
+        "Counsellors",
+        "Officers",
+        "Other",
+        "Employees",
+        "Family"
+      ],
+      "legal_topics": [
+        "Family Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "8",
+      "summary": "Section 8: Exclusion of jurisdiction and pending proceedings",
+      "plain_english": "PROCEDURE",
+      "keywords": [
+        "Exclusion",
+        "Jurisdiction",
+        "Pending",
+        "Proceedings",
+        "Procedure"
+      ],
+      "legal_topics": [
+        "Family Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "9",
+      "summary": "Section 9: Duty of Family Court to make efforts for settlement",
+      "plain_english": "Section 9: Duty of Family Court to make efforts for settlement",
+      "keywords": [
+        "Duty",
+        "Family",
+        "Court",
+        "Make",
+        "Efforts",
+        "Settlement"
+      ],
+      "legal_topics": [
+        "Family Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "10",
+      "summary": "Section 10: Procedure generally",
+      "plain_english": "Section 10: Procedure generally",
+      "keywords": [
+        "Procedure",
+        "Generally"
+      ],
+      "legal_topics": [
+        "Family Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "11",
+      "summary": "Section 11: Proceedings to be held in camera",
+      "plain_english": "Section 11: Proceedings to be held in camera",
+      "keywords": [
+        "Proceedings",
+        "Held",
+        "Camera"
+      ],
+      "legal_topics": [
+        "Family Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "12",
+      "summary": "Section 12: Assistance of medical and welfare experts",
+      "plain_english": "Section 12: Assistance of medical and welfare experts",
+      "keywords": [
+        "Assistance",
+        "Medical",
+        "Welfare",
+        "Experts"
+      ],
+      "legal_topics": [
+        "Family Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "13",
+      "summary": "Section 13: Right to legal representation",
+      "plain_english": "Section 13: Right to legal representation",
+      "keywords": [
+        "Right",
+        "Legal",
+        "Representation"
+      ],
+      "legal_topics": [
+        "Family Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "14",
+      "summary": "Section 14: Application of Indian Evidence Act, 1872",
+      "plain_english": "Section 14: Application of Indian Evidence Act, 1872",
+      "keywords": [
+        "Application",
+        "Indian",
+        "Evidence"
+      ],
+      "legal_topics": [
+        "Family Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "15",
+      "summary": "Section 15: Record of oral evidence",
+      "plain_english": "Section 15: Record of oral evidence",
+      "keywords": [
+        "Record",
+        "Oral",
+        "Evidence"
+      ],
+      "legal_topics": [
+        "Family Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "16",
+      "summary": "Section 16: Evidence of formal character on affidavit",
+      "plain_english": "17. Judgment.",
+      "keywords": [
+        "Evidence",
+        "Formal",
+        "Character",
+        "Affidavit",
+        "Judgment"
+      ],
+      "legal_topics": [
+        "Family Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "18",
+      "summary": "Section 18: Execution of decrees and orders",
+      "plain_english": "APPEALS AND REVISIONS 19. Appeal. MISCELLANEOUS",
+      "keywords": [
+        "Execution",
+        "Decrees",
+        "Orders",
+        "Appeals",
+        "Revisions",
+        "Appeal"
+      ],
+      "legal_topics": [
+        "Family Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "20",
+      "summary": "Section 20: Act to have overriding effect",
+      "plain_english": "Section 20: Act to have overriding effect",
+      "keywords": [
+        "Have",
+        "Overriding",
+        "Effect"
+      ],
+      "legal_topics": [
+        "Family Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "21",
+      "summary": "Section 21: Power of High Court to make rules",
+      "plain_english": "Section 21: Power of High Court to make rules",
+      "keywords": [
+        "Power",
+        "High",
+        "Court",
+        "Make",
+        "Rules"
+      ],
+      "legal_topics": [
+        "Family Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "22",
+      "summary": "Section 22: Power of the Central Government to make rules",
+      "plain_english": "Section 22: Power of the Central Government to make rules",
+      "keywords": [
+        "Power",
+        "Central",
+        "Government",
+        "Make",
+        "Rules"
+      ],
+      "legal_topics": [
+        "Family Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "23",
+      "summary": "Section 23: Power of the State Government to make rules",
+      "plain_english": "1 THE FAMILY COURTS ACT, 1984 ACT NO. 66 OF 1984 [14th September, 1984.] An Act to provide for the establishment of Family Courts with a view to promote conciliation in, and secure speedy settlement of, disputes relating to marriage and family affairs and for matters connected therewith. BE it enacted by Parliament in the Thirty-fifth Year of the Republic of India as follows:— PRELIMINARY",
+      "keywords": [
+        "Family",
+        "Courts",
+        "Power",
+        "State",
+        "Government",
+        "Make"
+      ],
+      "legal_topics": [
+        "Family Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "1",
+      "summary": "Section 1: Short title, extent and commencement.—(1) This Act may be called the Family Courts Act",
+      "plain_english": "1984. (2) It extends to the whole of India 1***. (3) It shall come into force on such date2 as the Central Government may, by notification in the Official Gazette, appoint, and different dates may be appointed for different States.",
+      "keywords": [
+        "Different",
+        "Short",
+        "Title",
+        "Extent",
+        "Commencement",
+        "Called"
+      ],
+      "legal_topics": [
+        "Family Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "1",
+      "summary": "Section 1: The words “except the State of Jammu and Kashmir” Omitted by the Jammu and Kashmir Reorganization (Adaptation of",
+      "plain_english": "Central Laws) Order, 2020, vide notification No. S.O. 1123(E) dated (18-3-2020) and vide Union Territory of Ladakh Reorganisation (Adaptation of Central Laws) Order, 2020, notification No. S.O. 3774(E), dated (23-10-2020).",
+      "keywords": [
+        "Jammu",
+        "Kashmir",
+        "Adaptation",
+        "Central",
+        "Laws",
+        "Order"
+      ],
+      "legal_topics": [
+        "Family Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "2",
+      "summary": "Section 2: This Act shall come into force in—",
+      "plain_english": "(i)Union territory of Andaman and Nicobar Islands on 19th November, 1986,vide notification No. 79/22/86, dated 19th November, 1986, Gazette of India, Extra., Pt. II, Section 1. (ii) Madhya Pradesh on 19thNovember, 1986, vide notification No. 79/6/86, dated 14th November, 1986, Gazette of India, Extra., Pt. II, Section 1. (iii) Uttar Pradesh on 2ndOctober, 1986, vide notification No. 79/11/86-Jus., dated 4th September, 1986, Gazette of India, Pt. II, Section 1. (iv)Delhi on 19th November, 1986,vi",
+      "keywords": [
+        "November",
+        "Vide",
+        "Notification",
+        "Dated",
+        "Gazette",
+        "India"
+      ],
+      "legal_topics": [
+        "Family Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "2",
+      "summary": "Section 2: Definitions.—In this Act, unless the context otherwise requires,—",
+      "plain_english": "(a) “Judge” means the Judge or, as the case may be, the Principal Judge, Additional Principal Judge or other Judge of a Family Court; (b) “notification” means a notification published in the Official Gazette; (c) “prescribed” means prescribed by rules made under this Act; (d) “Family Court” means a Family Court established under section 3; (e) all other words and expressions used but not defined in this Act and defined in the Code of Civil Procedure, 1908 (5 of 1908) shall have the meanings resp",
+      "keywords": [
+        "Judge",
+        "Means",
+        "Family",
+        "Court",
+        "Principal",
+        "Other"
+      ],
+      "legal_topics": [
+        "Family Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "3",
+      "summary": "Section 3: Establishment of Family Courts.—(1) For the purpose of exercising the jurisdiction and powers",
+      "plain_english": "conferred on a Family Court by this Act, the State Government, after consultation with the High Court, and by notification,— (a) shall, as soon as may be after the commencement of this Act, established for every area in the State comprising of city or town whose population exceeds one million, a Family Court; (b) may establish Family Courts for such other areas in the State as it may deem necessary. (2) The State Government shall, after consultation with the High Court, specify, by notification,",
+      "keywords": [
+        "Family",
+        "Court",
+        "State",
+        "Courts",
+        "Government",
+        "Consultation"
+      ],
+      "legal_topics": [
+        "Family Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "4",
+      "summary": "Section 4: Appointment of Judges.—(1) The State Government may, with the concurrence of the High",
+      "plain_english": "Court, appoint one or more persons to be the Judge or Judges of a Family Court. (2) When a Family Court consists of more than one Judge,— (a) each of the Judges may exercise all or any of the powers conferred on the Court by this Act or any other law for the time being in force; (b) the State Government may, with the concurrence of the High Court, appoint any of the Judges to be the Principal Judge and any other Judge to be the Additional Principal Judge; (c) the Principal Judge may, from time t",
+      "keywords": [
+        "Judge",
+        "Court",
+        "Judges",
+        "Principal",
+        "State",
+        "Government"
+      ],
+      "legal_topics": [
+        "Family Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "5",
+      "summary": "Section 5: Association of social welfare agencies, etc.—The State Government may, in consultation with the",
+      "plain_english": "High Court, provide, by rules, for the association, in such manner and for such purposes and subject to such conditions as may be specified in the rules, with a Family Court of— (a) institutions or organisations engaged in social welfare or the representatives thereof; (b) persons professionally engaged in promoting the welfare of the family; (c) persons working in the field of social welfare; and (d) any other person whose association with a Family Court would enable it to exercise its jurisdic",
+      "keywords": [
+        "Welfare",
+        "Association",
+        "Social",
+        "Court",
+        "Family",
+        "Rules"
+      ],
+      "legal_topics": [
+        "Family Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "6",
+      "summary": "Section 6: Counsellors, officers and other employees of Family Courts.—(1) The State Government shall",
+      "plain_english": "in consultation with the High Court, determine the number and categories of counsellors, officers and other employees required to assist a Family Court in the discharge of its functions and provide the Family Court with such counsellors, officers and other employees as it may think fit. (2) The terms and conditions of association of the counsellors and the terms and conditions of service of the officers and other employees, referred to in sub-section (1), shall be such as may be specified by rul",
+      "keywords": [
+        "Counsellors",
+        "Officers",
+        "Other",
+        "Employees",
+        "Family",
+        "Court"
+      ],
+      "legal_topics": [
+        "Family Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "7",
+      "summary": "Section 7: Jurisdiction.—(1) Subject to the other provisions of this Act, a Family Court shall—",
+      "plain_english": "(a) have and exercise all the jurisdiction exercisable by any district court or any subordinate civil court under any law for the time being in force in respect of suits and proceedings of the nature referred to in the Explanation; and (b) be deemed, for the purposes of exercising such jurisdiction under such law, to be a district court or, as the case may be, such subordinate civil court for the area to which the jurisdiction of the Family Court extends. Explanation.—The suits and proceedings r",
+      "keywords": [
+        "Court",
+        "Jurisdiction",
+        "Family",
+        "District",
+        "Subordinate",
+        "Civil"
+      ],
+      "legal_topics": [
+        "Family Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "8",
+      "summary": "Section 8: Exclusion of jurisdiction and pending proceedings.—Where a Family Court has been",
+      "plain_english": "established for any area,— (a) no district court or any subordinate civil court referred to in sub-section (1) of section 7 shall, in relation to such area, have or exercise any jurisdiction in respect of any suit or proceeding of the nature referred to in the Explanation to that sub-section; (b) no magistrate shall, in relation to such area, have or exercise any jurisdiction or powers under Chapter IX of the Code of Criminal Procedure, 1973 (2 of 1974); (c) every suit or proceeding of the natur",
+      "keywords": [
+        "Jurisdiction",
+        "Court",
+        "Area",
+        "Section",
+        "Referred",
+        "Relation"
+      ],
+      "legal_topics": [
+        "Family Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "9",
+      "summary": "Section 9: Duty of Family Court to make efforts for settlement.—(1) In every suit or proceeding",
+      "plain_english": "endeavour shall be made by the Family Court in the first instance, where it is possible to do so consistent with the nature and circumstances of the case, to assist and persuade the parties in arriving at a settlement in respect of the subject-matter of the suit or proceeding and for this purpose a Family Court may, subject to any rules made by the High Court, follow such procedure as it may deem fit. (2) If, in any suit or proceeding, at any stage, it appears to the Family Court that there is a",
+      "keywords": [
+        "Court",
+        "Family",
+        "Suit",
+        "Proceeding",
+        "Settlement",
+        "Made"
+      ],
+      "legal_topics": [
+        "Family Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "10",
+      "summary": "Section 10: Procedure generally.—(1) Subject to the other provisions of this Act and the rules, the",
+      "plain_english": "provisions of the Code of Civil Procedure, 1908 (5 of 1908) and of any other law for the time being in force shall apply to the suits and proceedings [other than the proceedings under Chapter IX of the Code of Criminal Procedure, 1973 (2 of 1974)] before a Family Court and for the purposes of the said provisions of the Code, a Family Court shall be deemed to be a civil court and shall have all the powers of such court. (2) Subject to the other provisions of this Act and the rules, the provisions",
+      "keywords": [
+        "Provisions",
+        "Other",
+        "Court",
+        "Procedure",
+        "Code",
+        "Subject"
+      ],
+      "legal_topics": [
+        "Family Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "11",
+      "summary": "Section 11: Proceedings to be held in camera.—In every suit or proceedings to which this Act applies, the",
+      "plain_english": "proceedings may be held in camera if the Family Court so desires and shall be so held if either party so desires.",
+      "keywords": [
+        "Proceedings",
+        "Held",
+        "Camera",
+        "Desires",
+        "Suit",
+        "Which"
+      ],
+      "legal_topics": [
+        "Family Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "12",
+      "summary": "Section 12: Assistance of medical and welfare experts.—In every suit or proceedings, it shall be open to a",
+      "plain_english": "Family Court to secure the services of a medical expert or such person (preferably a woman where available), whether related to the parties or not, including a person professionally engaged in promoting the welfare of the family as the Court may think fit, for the purposes of assisting the Family Court in discharging the functions imposed by this Act.",
+      "keywords": [
+        "Family",
+        "Court",
+        "Medical",
+        "Welfare",
+        "Person",
+        "Assistance"
+      ],
+      "legal_topics": [
+        "Family Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "13",
+      "summary": "Section 13: Right to legal representation.—Notwithstanding anything contained in any law, no party to a",
+      "plain_english": "suit or proceeding before a Family Court shall be entitled, as of right, to be represented by a legal practitioner: Provided that if the Family Court considers it necessary in the interest of justice, it may seek the assistance of a legal expert as amicus curiae.",
+      "keywords": [
+        "Legal",
+        "Right",
+        "Family",
+        "Court",
+        "Representation",
+        "Notwithstanding"
+      ],
+      "legal_topics": [
+        "Family Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "14",
+      "summary": "Section 14: Application of Indian Evidence Act, 1872.—A Family Court may receive as evidence any",
+      "plain_english": "report, statement, documents, information or matter that may, in its opinion, assist it to deal effectually with a dispute, whether or not the same would be otherwise relevant or admissible under the Indian Evidence Act, 1872 (1 of 1872).",
+      "keywords": [
+        "Evidence",
+        "Indian",
+        "Application",
+        "Family",
+        "Court",
+        "Receive"
+      ],
+      "legal_topics": [
+        "Family Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "15",
+      "summary": "Section 15: Record of oral evidence.—In suits or proceedings before a Family Court, it shall not be",
+      "plain_english": "necessary to record the evidence of witnesses at length, but the Judge, as the examination of each witness proceeds, shall, record or cause to be recorded, a memorandum of the substance of what the witness deposes, and such memorandum shall be signed by the witness and the Judge and shall form part of the record.",
+      "keywords": [
+        "Record",
+        "Witness",
+        "Evidence",
+        "Judge",
+        "Memorandum",
+        "Oral"
+      ],
+      "legal_topics": [
+        "Family Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "16",
+      "summary": "Section 16: Evidence of formal character on affidavit.—(1) The evidence of any person where such",
+      "plain_english": "evidence is of a formal character, may be given by affidavit and may, subject to all just exceptions, be read in evidence in any suit or proceeding before a Family Court. (2) The Family Court may, if it thinks fit, and shall, on the application of any of the parties to the suit or proceeding summon and examine any such person as to the facts contained in his affidavit.",
+      "keywords": [
+        "Evidence",
+        "Affidavit",
+        "Formal",
+        "Character",
+        "Person",
+        "Suit"
+      ],
+      "legal_topics": [
+        "Family Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "17",
+      "summary": "Section 17: Judgment.—Judgment of a Family Court shall contain a concise statement of the case, the point",
+      "plain_english": "for determination, the decision thereon and the reasons for such decision.",
+      "keywords": [
+        "Judgment",
+        "Decision",
+        "Family",
+        "Court",
+        "Contain",
+        "Concise"
+      ],
+      "legal_topics": [
+        "Family Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "18",
+      "summary": "Section 18: Execution of decrees and orders.—(1) A decree or an order [other than an order under Chapter",
+      "plain_english": "IX of the Code of Criminal Procedure, 1973 (2 of 1974)], passed by a Family Court shall have the same force and effect as a decree or order of a civil court and shall be executed in the same manner as is prescribed by the Code of Civil Procedure, 1908 (5 of 1908) for the execution of decrees and orders. (2) An order passed by a Family Court under Chapter IX of the Code of Criminal Procedure, 1973 (2 of 1974) shall be executed in the manner prescribed for the execution of such order by that Code.",
+      "keywords": [
+        "Order",
+        "Code",
+        "Execution",
+        "Procedure",
+        "Court",
+        "Decrees"
+      ],
+      "legal_topics": [
+        "Family Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "19",
+      "summary": "Section 19: Appeal.—(1) Save as provided in sub-section (2) and notwithstanding anything contained in the",
+      "plain_english": "Code of Civil Procedure,1908 (5 of 1908) or in the Code of Criminal Procedure, 1973 (2 of 1974) or in any other law, an appeal shall lie from every judgment or order, not being an interlocutory order, of a Family Court to the High Court both on facts and on law. (2) No appeal shall lie from a decree or order passed by the Family Court with the consent of the parties 2[or from an order passed under Chapter IX of the Code of Criminal Procedure, 1973 (2 of 1974): Provided that nothing in this sub-s",
+      "keywords": [
+        "Order",
+        "Appeal",
+        "Code",
+        "Procedure",
+        "Court",
+        "Provided"
+      ],
+      "legal_topics": [
+        "Family Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "20",
+      "summary": "Section 20: Act to have overriding effect.—The provisions of this Act shall have effect notwithstanding",
+      "plain_english": "anything inconsistent therewith contained in any other law for the time being in force or in any instrument having effect by virtue of any law other than this Act.",
+      "keywords": [
+        "Effect",
+        "Have",
+        "Other",
+        "Overriding",
+        "Provisions",
+        "Notwithstanding"
+      ],
+      "legal_topics": [
+        "Family Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "21",
+      "summary": "Section 21: Power of High Court to make rules.—(1) The High Court may, by notification in the Official",
+      "plain_english": "Gazette, make such rules as it may deem necessary for carrying out the purposes of this Act. (2) In particular, and without prejudice to the generality of the foregoing power, such rules may provide for all or any of the following matters, namely:— (a) normal working hours of Family Courts and holding of sittings of Family Courts on holidays and outside normal working hours; (b) holding of sittings of Family Courts at places other than their ordinary places of sitting; (c) efforts which may be m",
+      "keywords": [
+        "Rules",
+        "Family",
+        "Courts",
+        "Power",
+        "High",
+        "Court"
+      ],
+      "legal_topics": [
+        "Family Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "3",
+      "summary": "Section 3: Sub-section (4) renumbered as sub-section (5) thereof by s. 2, ibid. (w.e.f. 28-12-1991)",
+      "plain_english": "Section 3: Sub-section (4) renumbered as sub-section (5) thereof by s. 2, ibid. (w.e.f. 28-12-1991)",
+      "keywords": [
+        "Section",
+        "Renumbered",
+        "Thereof",
+        "Ibid"
+      ],
+      "legal_topics": [
+        "Family Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "4",
+      "summary": "Section 4: Sub-section (6) by the Jammu and Kashmir Reorganization (Adaptation of Central Laws) Order, 2020, vide notification No",
+      "plain_english": "S.O. 1123(E) dated (18-3-2020) and vide Union Territory of Ladakh Reorganisation (Adaptation of Central Laws) Order, 2020, notification No. S.O. 3774(E), dated (23-10-2020). 7",
+      "keywords": [
+        "Adaptation",
+        "Central",
+        "Laws",
+        "Order",
+        "Vide",
+        "Notification"
+      ],
+      "legal_topics": [
+        "Family Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "22",
+      "summary": "Section 22: Power of the Central Government to make rules.—(1) The Central Government may, with the",
+      "plain_english": "concurrence of the Chief Justice of India, by notification, make rules prescribing the other qualifications for appointment of a Judge referred to in clause (c) of sub-section (3) of section 4. (2) Every rule made under this Act by the Central Government shall be laid, as soon as may be after it is made, before each House of Parliament, while it is in session, for a total period of thirty days which may be comprised in one session or in two or more successive sessions, and if, before the expiry",
+      "keywords": [
+        "Central",
+        "Government",
+        "Make",
+        "Rules",
+        "Section",
+        "Made"
+      ],
+      "legal_topics": [
+        "Family Law"
+      ],
+      "related": []
+    },
+    {
+      "provision_number": "23",
+      "summary": "Section 23: Power of the State Government to make rules.—(1) The State Government may, after",
+      "plain_english": "consultation with the High Court, by notification, make rules for carrying out the purposes of this Act. (2) In particular and without prejudice to the generality of the provisions of sub-section (1) such rules may provide for all or any of the following matters, namely:— (a) the salary or honorarium and other allowances payable to, and the other terms and conditions of Judges under sub-section (6) of section 4; (b)the terms and conditions of association of counsellors and the terms and conditio",
+      "keywords": [
+        "Rules",
+        "Section",
+        "Terms",
+        "State",
+        "Government",
+        "Make"
+      ],
+      "legal_topics": [
+        "Family Law"
+      ],
+      "related": []
+    }
+  ]
+}

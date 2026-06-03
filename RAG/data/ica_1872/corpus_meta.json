@@ -1,0 +1,1904 @@
+[
+  {
+    "idx": 0,
+    "number": "1",
+    "title": "Short title",
+    "page": 1
+  },
+  {
+    "idx": 1,
+    "number": "3",
+    "title": "Communication, acceptance and revocation of proposals",
+    "page": 1
+  },
+  {
+    "idx": 2,
+    "number": "4",
+    "title": "Communication when complete",
+    "page": 1
+  },
+  {
+    "idx": 3,
+    "number": "5",
+    "title": "Revocation of proposals and acceptances",
+    "page": 1
+  },
+  {
+    "idx": 4,
+    "number": "6",
+    "title": "Revocation how made",
+    "page": 1
+  },
+  {
+    "idx": 5,
+    "number": "7",
+    "title": "Acceptance must be absolute",
+    "page": 1
+  },
+  {
+    "idx": 6,
+    "number": "8",
+    "title": "Acceptance by performing conditions, or receiving consideration",
+    "page": 1
+  },
+  {
+    "idx": 7,
+    "number": "9",
+    "title": "Promises, express and implied",
+    "page": 1
+  },
+  {
+    "idx": 8,
+    "number": "10",
+    "title": "What agreements are contracts",
+    "page": 1
+  },
+  {
+    "idx": 9,
+    "number": "11",
+    "title": "Who are competent to contract",
+    "page": 1
+  },
+  {
+    "idx": 10,
+    "number": "12",
+    "title": "What is a sound mind for the purposes of contracting",
+    "page": 1
+  },
+  {
+    "idx": 11,
+    "number": "19",
+    "title": "Voidability of agreements without free consent",
+    "page": 1
+  },
+  {
+    "idx": 12,
+    "number": "19A",
+    "title": "Power to set aside contract induced by undue influence",
+    "page": 1
+  },
+  {
+    "idx": 13,
+    "number": "20",
+    "title": "Agreement void where both parties are under mistake as to matter of fact",
+    "page": 1
+  },
+  {
+    "idx": 14,
+    "number": "21",
+    "title": "Effect of mistakes as to law",
+    "page": 1
+  },
+  {
+    "idx": 15,
+    "number": "22",
+    "title": "Contract caused by mistake of one party as to matter of fact",
+    "page": 1
+  },
+  {
+    "idx": 16,
+    "number": "23",
+    "title": "What considerations and objects are lawful, and what not",
+    "page": 2
+  },
+  {
+    "idx": 17,
+    "number": "24",
+    "title": "Agreement void, if considerations and objects unlawful in part",
+    "page": 2
+  },
+  {
+    "idx": 18,
+    "number": "25",
+    "title": "Agreement without consideration, void, unless it is in writing and registered, or is a promise to",
+    "page": 2
+  },
+  {
+    "idx": 19,
+    "number": "26",
+    "title": "Agreement in restraint of marriage, void",
+    "page": 2
+  },
+  {
+    "idx": 20,
+    "number": "27",
+    "title": "Agreement in restraint of trade, void",
+    "page": 2
+  },
+  {
+    "idx": 21,
+    "number": "28",
+    "title": "Agreements in restraint of legal proceeding void",
+    "page": 2
+  },
+  {
+    "idx": 22,
+    "number": "29",
+    "title": "Agreements void for uncertainty",
+    "page": 2
+  },
+  {
+    "idx": 23,
+    "number": "30",
+    "title": "Agreements by way of wager, void",
+    "page": 2
+  },
+  {
+    "idx": 24,
+    "number": "32",
+    "title": "Enforcement of contracts contingent on an event happening",
+    "page": 2
+  },
+  {
+    "idx": 25,
+    "number": "33",
+    "title": "Enforcement of contracts contingent on an event not happening",
+    "page": 2
+  },
+  {
+    "idx": 26,
+    "number": "34",
+    "title": "When event on which contract is contingent to be deemed impossible, if it is the future conduct of",
+    "page": 2
+  },
+  {
+    "idx": 27,
+    "number": "35",
+    "title": "When contracts become void which are contingent on happening of specified event within fixed",
+    "page": 2
+  },
+  {
+    "idx": 28,
+    "number": "36",
+    "title": "Agreement contingent on impossible events void",
+    "page": 2
+  },
+  {
+    "idx": 29,
+    "number": "37",
+    "title": "Obligation of parties to contracts",
+    "page": 2
+  },
+  {
+    "idx": 30,
+    "number": "38",
+    "title": "Effect of refusal to accept offer of performance",
+    "page": 2
+  },
+  {
+    "idx": 31,
+    "number": "39",
+    "title": "Effect of refusal of party to perform promise wholly",
+    "page": 2
+  },
+  {
+    "idx": 32,
+    "number": "40",
+    "title": "Person by whom promise is to be performed",
+    "page": 2
+  },
+  {
+    "idx": 33,
+    "number": "41",
+    "title": "Effect of accepting performance from third person",
+    "page": 2
+  },
+  {
+    "idx": 34,
+    "number": "42",
+    "title": "Devolution of joint liabilities",
+    "page": 3
+  },
+  {
+    "idx": 35,
+    "number": "43",
+    "title": "Any one of joint promisors may be compelled to perform",
+    "page": 3
+  },
+  {
+    "idx": 36,
+    "number": "44",
+    "title": "Effect of release of one joint promisor",
+    "page": 3
+  },
+  {
+    "idx": 37,
+    "number": "45",
+    "title": "Devolution of joint rights",
+    "page": 3
+  },
+  {
+    "idx": 38,
+    "number": "46",
+    "title": "Time for performance of promise, when no application is to be made and no time is specified",
+    "page": 3
+  },
+  {
+    "idx": 39,
+    "number": "47",
+    "title": "Time and place for performance of promise, where time is specified and no application to be",
+    "page": 3
+  },
+  {
+    "idx": 40,
+    "number": "48",
+    "title": "Application for performance on certain day to be at proper time and place",
+    "page": 3
+  },
+  {
+    "idx": 41,
+    "number": "49",
+    "title": "Place for performance of promise, where no application to be made and no place fixed for",
+    "page": 3
+  },
+  {
+    "idx": 42,
+    "number": "50",
+    "title": "Performance in manner or at time prescribed or sanctioned by promisee",
+    "page": 3
+  },
+  {
+    "idx": 43,
+    "number": "51",
+    "title": "Promisor not bound to perform, unless reciprocal promisee ready and willing to perform",
+    "page": 3
+  },
+  {
+    "idx": 44,
+    "number": "52",
+    "title": "Order of performance of reciprocal promises",
+    "page": 3
+  },
+  {
+    "idx": 45,
+    "number": "53",
+    "title": "Liability of party preventing event on which the contract is to take effect",
+    "page": 3
+  },
+  {
+    "idx": 46,
+    "number": "54",
+    "title": "Effect of default as to that promise which should be first performed, in contract consisting of",
+    "page": 3
+  },
+  {
+    "idx": 47,
+    "number": "55",
+    "title": "Effect of failure to perform at fixed time, in contract in which time is essential",
+    "page": 3
+  },
+  {
+    "idx": 48,
+    "number": "56",
+    "title": "Agreement to do impossible act",
+    "page": 3
+  },
+  {
+    "idx": 49,
+    "number": "57",
+    "title": "Reciprocal promise to do things legal, and also other things illegal",
+    "page": 3
+  },
+  {
+    "idx": 50,
+    "number": "58",
+    "title": "Alternative promise, one branch being illegal",
+    "page": 3
+  },
+  {
+    "idx": 51,
+    "number": "59",
+    "title": "Application of payment where debt to be discharged is indicated",
+    "page": 3
+  },
+  {
+    "idx": 52,
+    "number": "60",
+    "title": "Application of payment where debt to be discharged is not indicated",
+    "page": 3
+  },
+  {
+    "idx": 53,
+    "number": "61",
+    "title": "Application of payment where neither party appropriates",
+    "page": 3
+  },
+  {
+    "idx": 54,
+    "number": "62",
+    "title": "Effect of novation, rescission, and alteration of contract",
+    "page": 3
+  },
+  {
+    "idx": 55,
+    "number": "63",
+    "title": "Promisee may dispense with or remit performance of promise",
+    "page": 3
+  },
+  {
+    "idx": 56,
+    "number": "64",
+    "title": "Consequences of rescission of voidable contract",
+    "page": 3
+  },
+  {
+    "idx": 57,
+    "number": "65",
+    "title": "Obligation of person who has received advantage under void agreement, or contract that becomes",
+    "page": 3
+  },
+  {
+    "idx": 58,
+    "number": "66",
+    "title": "Mode of communicating or revoking rescission of voidable contract",
+    "page": 3
+  },
+  {
+    "idx": 59,
+    "number": "67",
+    "title": "Effect of neglect of promisee to afford promisor reasonable facilities for performance",
+    "page": 3
+  },
+  {
+    "idx": 60,
+    "number": "68",
+    "title": "Claim for necessaries supplied to person incapable of contracting, or on his account",
+    "page": 4
+  },
+  {
+    "idx": 61,
+    "number": "69",
+    "title": "Reimbursement of person paying money due by another, in payment of which he is interested",
+    "page": 4
+  },
+  {
+    "idx": 62,
+    "number": "70",
+    "title": "Obligation of person enjoying benefit of non-gratuitous act",
+    "page": 4
+  },
+  {
+    "idx": 63,
+    "number": "71",
+    "title": "Responsibility of finder of goods",
+    "page": 4
+  },
+  {
+    "idx": 64,
+    "number": "72",
+    "title": "Liability of person to whom money is paid, or thing delivered, by mistake or under coercion",
+    "page": 4
+  },
+  {
+    "idx": 65,
+    "number": "73",
+    "title": "Compensation for loss or damage caused by breach of contract",
+    "page": 4
+  },
+  {
+    "idx": 66,
+    "number": "74",
+    "title": "Compensation for breach of contract where penalty stipulated for",
+    "page": 4
+  },
+  {
+    "idx": 67,
+    "number": "75",
+    "title": "Party rightfully rescinding contract, entitled to compensation",
+    "page": 4
+  },
+  {
+    "idx": 68,
+    "number": "125",
+    "title": "Rights of indemnity-holder when sued",
+    "page": 5
+  },
+  {
+    "idx": 69,
+    "number": "127",
+    "title": "Consideration for guarantee",
+    "page": 5
+  },
+  {
+    "idx": 70,
+    "number": "128",
+    "title": "Surety’s liability",
+    "page": 5
+  },
+  {
+    "idx": 71,
+    "number": "130",
+    "title": "Revocation of continuing guarantee",
+    "page": 5
+  },
+  {
+    "idx": 72,
+    "number": "131",
+    "title": "Revocation of continuing guarantee by surety’s death",
+    "page": 5
+  },
+  {
+    "idx": 73,
+    "number": "132",
+    "title": "Liability of two persons, primarily liable, not affected by arrangement between them that one shall be",
+    "page": 5
+  },
+  {
+    "idx": 74,
+    "number": "133",
+    "title": "Discharge of surety by variance in terms of contract",
+    "page": 5
+  },
+  {
+    "idx": 75,
+    "number": "134",
+    "title": "Discharge of surety by release or discharge of principal debtor",
+    "page": 5
+  },
+  {
+    "idx": 76,
+    "number": "135",
+    "title": "Discharge of surety when creditor compounds with, gives time to, or agrees not to sue, principal debtor",
+    "page": 5
+  },
+  {
+    "idx": 77,
+    "number": "136",
+    "title": "Surety not discharged when agreement made with third person to give time to principal debtor",
+    "page": 5
+  },
+  {
+    "idx": 78,
+    "number": "137",
+    "title": "Creditor’s forbearance to sue does not discharge surety",
+    "page": 5
+  },
+  {
+    "idx": 79,
+    "number": "138",
+    "title": "Release of one co-surety does not discharge others",
+    "page": 5
+  },
+  {
+    "idx": 80,
+    "number": "139",
+    "title": "Discharge of surety of creditor’s act or omission impairing surety’s eventual remedy",
+    "page": 6
+  },
+  {
+    "idx": 81,
+    "number": "140",
+    "title": "Rights of surety on payment or performance",
+    "page": 6
+  },
+  {
+    "idx": 82,
+    "number": "141",
+    "title": "Surety’s right to benefit of creditor’s securities",
+    "page": 6
+  },
+  {
+    "idx": 83,
+    "number": "142",
+    "title": "Guarantee obtained by misrepresentation invalid",
+    "page": 6
+  },
+  {
+    "idx": 84,
+    "number": "143",
+    "title": "Guarantee obtained by concealment invalid",
+    "page": 6
+  },
+  {
+    "idx": 85,
+    "number": "144",
+    "title": "Guarantee on contract that creditor shall not act on it until co-surety joins",
+    "page": 6
+  },
+  {
+    "idx": 86,
+    "number": "145",
+    "title": "Implied promise to indemnify surety",
+    "page": 6
+  },
+  {
+    "idx": 87,
+    "number": "146",
+    "title": "Co-sureties liable to contribute equally",
+    "page": 6
+  },
+  {
+    "idx": 88,
+    "number": "147",
+    "title": "Liability of co-sureties bound in different sums",
+    "page": 6
+  },
+  {
+    "idx": 89,
+    "number": "149",
+    "title": "Delivery to bailee how made",
+    "page": 6
+  },
+  {
+    "idx": 90,
+    "number": "150",
+    "title": "Bailor’s duty to disclose faults in goods bailed",
+    "page": 6
+  },
+  {
+    "idx": 91,
+    "number": "151",
+    "title": "Care to be taken by bailee",
+    "page": 6
+  },
+  {
+    "idx": 92,
+    "number": "152",
+    "title": "Bailee when not liable for loss, etc., of thing bailed",
+    "page": 6
+  },
+  {
+    "idx": 93,
+    "number": "153",
+    "title": "Termination of bailment by bailee’s act inconsistent with conditions",
+    "page": 6
+  },
+  {
+    "idx": 94,
+    "number": "154",
+    "title": "Liability of bailee making unauthorized use of goods bailed",
+    "page": 6
+  },
+  {
+    "idx": 95,
+    "number": "155",
+    "title": "Effect of mixture, with bailor’s consent, of his goods with bailee’s",
+    "page": 6
+  },
+  {
+    "idx": 96,
+    "number": "156",
+    "title": "Effect of mixture, without bailor’s consent, when the goods can be separated",
+    "page": 6
+  },
+  {
+    "idx": 97,
+    "number": "157",
+    "title": "Effect of mixture, without bailor’s consent, when the goods cannot be separated",
+    "page": 6
+  },
+  {
+    "idx": 98,
+    "number": "158",
+    "title": "Repayment, by bailor, of necessary expenses",
+    "page": 6
+  },
+  {
+    "idx": 99,
+    "number": "159",
+    "title": "Restoration of goods lent gratuitously",
+    "page": 6
+  },
+  {
+    "idx": 100,
+    "number": "160",
+    "title": "Return of goods bailed on expiration of time or accomplishment of purpose",
+    "page": 6
+  },
+  {
+    "idx": 101,
+    "number": "161",
+    "title": "Bailee’s responsibility when goods are not duly returned",
+    "page": 6
+  },
+  {
+    "idx": 102,
+    "number": "162",
+    "title": "Termination of gratuitous bailment by death",
+    "page": 6
+  },
+  {
+    "idx": 103,
+    "number": "163",
+    "title": "Bailor entitled to increase or profit from goods bailed",
+    "page": 6
+  },
+  {
+    "idx": 104,
+    "number": "164",
+    "title": "Bailor’s responsibility to bailee",
+    "page": 6
+  },
+  {
+    "idx": 105,
+    "number": "165",
+    "title": "Bailment by several joint owners",
+    "page": 6
+  },
+  {
+    "idx": 106,
+    "number": "166",
+    "title": "Bailee not responsible on re-delivery to bailor without title",
+    "page": 6
+  },
+  {
+    "idx": 107,
+    "number": "167",
+    "title": "Right of third person claiming goods bailed",
+    "page": 6
+  },
+  {
+    "idx": 108,
+    "number": "168",
+    "title": "Right of finder of goods",
+    "page": 6
+  },
+  {
+    "idx": 109,
+    "number": "169",
+    "title": "When finder of thing commonly on sale may sell it",
+    "page": 6
+  },
+  {
+    "idx": 110,
+    "number": "170",
+    "title": "Bailee’s particular lien",
+    "page": 6
+  },
+  {
+    "idx": 111,
+    "number": "171",
+    "title": "General lien of bankers, factors, wharfingers, attorneys and policy-brokers",
+    "page": 6
+  },
+  {
+    "idx": 112,
+    "number": "173",
+    "title": "Pawnee’s right of retainer",
+    "page": 6
+  },
+  {
+    "idx": 113,
+    "number": "174",
+    "title": "Pawnee not to retain for debt or promise other than that for which goods pledged",
+    "page": 7
+  },
+  {
+    "idx": 114,
+    "number": "175",
+    "title": "Pawnee’s right as to extraordinary expenses incurred",
+    "page": 7
+  },
+  {
+    "idx": 115,
+    "number": "176",
+    "title": "Pawnee’s right where pawnor makes default",
+    "page": 7
+  },
+  {
+    "idx": 116,
+    "number": "177",
+    "title": "Defaulting pawnor’s right to redeem",
+    "page": 7
+  },
+  {
+    "idx": 117,
+    "number": "178",
+    "title": "Pledge by mercantile agent",
+    "page": 7
+  },
+  {
+    "idx": 118,
+    "number": "178A",
+    "title": "Pledge by person in possession under voidable contract",
+    "page": 7
+  },
+  {
+    "idx": 119,
+    "number": "179",
+    "title": "Pledge where pawnor has only a limited interest",
+    "page": 7
+  },
+  {
+    "idx": 120,
+    "number": "180",
+    "title": "Suit by bailor or bailee against wrong-doer",
+    "page": 7
+  },
+  {
+    "idx": 121,
+    "number": "181",
+    "title": "Apportionment of relief or compensation obtained by such suits",
+    "page": 7
+  },
+  {
+    "idx": 122,
+    "number": "183",
+    "title": "Who may employ agent",
+    "page": 7
+  },
+  {
+    "idx": 123,
+    "number": "184",
+    "title": "Who may be an agent",
+    "page": 7
+  },
+  {
+    "idx": 124,
+    "number": "185",
+    "title": "Consideration not necessary",
+    "page": 7
+  },
+  {
+    "idx": 125,
+    "number": "186",
+    "title": "Agent’s authority may be expressed or implied",
+    "page": 7
+  },
+  {
+    "idx": 126,
+    "number": "187",
+    "title": "Definitions of express and implied authority",
+    "page": 7
+  },
+  {
+    "idx": 127,
+    "number": "188",
+    "title": "Extent of agent’s authority",
+    "page": 7
+  },
+  {
+    "idx": 128,
+    "number": "189",
+    "title": "Agent’s authority in an emergency",
+    "page": 7
+  },
+  {
+    "idx": 129,
+    "number": "190",
+    "title": "When agent cannot delegate",
+    "page": 7
+  },
+  {
+    "idx": 130,
+    "number": "192",
+    "title": "Representation of principal by sub-agent properly appointed",
+    "page": 7
+  },
+  {
+    "idx": 131,
+    "number": "193",
+    "title": "Agent’s responsibility for sub-agent appointed without authority",
+    "page": 7
+  },
+  {
+    "idx": 132,
+    "number": "194",
+    "title": "Relation between principal and person duly appointed by agent to act in business of agency",
+    "page": 7
+  },
+  {
+    "idx": 133,
+    "number": "195",
+    "title": "Agent’s duty in naming such person",
+    "page": 7
+  },
+  {
+    "idx": 134,
+    "number": "196",
+    "title": "Right of person as to acts done for him without his authority",
+    "page": 7
+  },
+  {
+    "idx": 135,
+    "number": "197",
+    "title": "Ratification may be expressed or implied",
+    "page": 7
+  },
+  {
+    "idx": 136,
+    "number": "198",
+    "title": "Knowledge requisite for valid ratification",
+    "page": 7
+  },
+  {
+    "idx": 137,
+    "number": "199",
+    "title": "Effect of ratifying unauthorized act forming part of a transaction",
+    "page": 7
+  },
+  {
+    "idx": 138,
+    "number": "200",
+    "title": "Ratification of unauthorized act cannot injure third person",
+    "page": 7
+  },
+  {
+    "idx": 139,
+    "number": "201",
+    "title": "Termination of agency",
+    "page": 8
+  },
+  {
+    "idx": 140,
+    "number": "202",
+    "title": "Termination of agency, where agent has an interest in subject-matter",
+    "page": 8
+  },
+  {
+    "idx": 141,
+    "number": "203",
+    "title": "When principal may revoke agent’s authority",
+    "page": 8
+  },
+  {
+    "idx": 142,
+    "number": "204",
+    "title": "Revocation where authority has been partly exercised",
+    "page": 8
+  },
+  {
+    "idx": 143,
+    "number": "205",
+    "title": "Compensation for revocation by principal, or renunciation by agent",
+    "page": 8
+  },
+  {
+    "idx": 144,
+    "number": "206",
+    "title": "Notice of revocation or renunciation",
+    "page": 8
+  },
+  {
+    "idx": 145,
+    "number": "207",
+    "title": "Revocation and renunciation may be expressed or implied",
+    "page": 8
+  },
+  {
+    "idx": 146,
+    "number": "208",
+    "title": "When termination of agent’s authority takes effect as to agent, and as to third persons",
+    "page": 8
+  },
+  {
+    "idx": 147,
+    "number": "209",
+    "title": "Agent’s duty on termination of agency by principal’s death or insanity",
+    "page": 8
+  },
+  {
+    "idx": 148,
+    "number": "210",
+    "title": "Termination of sub-agent’s authority",
+    "page": 8
+  },
+  {
+    "idx": 149,
+    "number": "211",
+    "title": "Agent’s duty in conducting principal’s business",
+    "page": 8
+  },
+  {
+    "idx": 150,
+    "number": "212",
+    "title": "Skill and diligence required from agent",
+    "page": 8
+  },
+  {
+    "idx": 151,
+    "number": "213",
+    "title": "Agent’s accounts",
+    "page": 8
+  },
+  {
+    "idx": 152,
+    "number": "214",
+    "title": "Agent’s duty to communicate with principal",
+    "page": 8
+  },
+  {
+    "idx": 153,
+    "number": "215",
+    "title": "Right of principal when agent deals, on his own account, in business of agency without",
+    "page": 8
+  },
+  {
+    "idx": 154,
+    "number": "216",
+    "title": "Principal’s right to benefit gained by agent dealing on his own account in business of agency",
+    "page": 8
+  },
+  {
+    "idx": 155,
+    "number": "217",
+    "title": "Agent’s right of retainer out of sums received on principal’s account",
+    "page": 8
+  },
+  {
+    "idx": 156,
+    "number": "218",
+    "title": "Agent’s duty to pay sums received for principal",
+    "page": 8
+  },
+  {
+    "idx": 157,
+    "number": "219",
+    "title": "When agent’s remuneration becomes due",
+    "page": 8
+  },
+  {
+    "idx": 158,
+    "number": "220",
+    "title": "Agent not entitled to remuneration for business misconducted",
+    "page": 8
+  },
+  {
+    "idx": 159,
+    "number": "221",
+    "title": "Agent’s lien on principal’s property",
+    "page": 8
+  },
+  {
+    "idx": 160,
+    "number": "222",
+    "title": "Agent to be indemnified against consequences of lawful acts",
+    "page": 8
+  },
+  {
+    "idx": 161,
+    "number": "223",
+    "title": "Agent to be indemnified against consequences of acts done in good faith",
+    "page": 8
+  },
+  {
+    "idx": 162,
+    "number": "224",
+    "title": "Non-liability of employer of agent to do a criminal act",
+    "page": 8
+  },
+  {
+    "idx": 163,
+    "number": "225",
+    "title": "Compensation to agent for injury caused by principal’s neglect",
+    "page": 8
+  },
+  {
+    "idx": 164,
+    "number": "226",
+    "title": "Enforcement and consequences of agent’s contracts",
+    "page": 8
+  },
+  {
+    "idx": 165,
+    "number": "227",
+    "title": "Principal how far bound, when agent exceeds authority",
+    "page": 8
+  },
+  {
+    "idx": 166,
+    "number": "228",
+    "title": "Principal not bound when excess of agent’s authority is not separable",
+    "page": 8
+  },
+  {
+    "idx": 167,
+    "number": "229",
+    "title": "Consequences of notice given to agent",
+    "page": 8
+  },
+  {
+    "idx": 168,
+    "number": "230",
+    "title": "Agent cannot personally enforce, nor be bound by, contracts on behalf of principal",
+    "page": 8
+  },
+  {
+    "idx": 169,
+    "number": "231",
+    "title": "Rights of parties to a contract made by agent not disclosed",
+    "page": 8
+  },
+  {
+    "idx": 170,
+    "number": "232",
+    "title": "Performance of contract with agent supposed to be principal",
+    "page": 8
+  },
+  {
+    "idx": 171,
+    "number": "233",
+    "title": "Right of person dealing with agent personally liable",
+    "page": 8
+  },
+  {
+    "idx": 172,
+    "number": "234",
+    "title": "Consequence of inducing agent or principal to act on belief that principal or agent will be held",
+    "page": 9
+  },
+  {
+    "idx": 173,
+    "number": "235",
+    "title": "Liability of pretended agent",
+    "page": 9
+  },
+  {
+    "idx": 174,
+    "number": "236",
+    "title": "Person falsely contracting as agent not entitled to performance",
+    "page": 9
+  },
+  {
+    "idx": 175,
+    "number": "237",
+    "title": "Liability of principal inducing belief that agent’s unauthorized acts were authorized",
+    "page": 9
+  },
+  {
+    "idx": 176,
+    "number": "238",
+    "title": "Effect, on agreement, of misrepresentation or fraud by agent",
+    "page": 9
+  },
+  {
+    "idx": 177,
+    "number": "1",
+    "title": "Short title.—This Act may be called the Indian Contract Act, 1872",
+    "page": 1
+  },
+  {
+    "idx": 178,
+    "number": "2",
+    "title": "Interpretation-clause.—In this Act the following words and expressions are used in the following",
+    "page": 10
+  },
+  {
+    "idx": 179,
+    "number": "1",
+    "title": "For the Statement of Objects and Reasons for the Bill which was based on a a report of Her Majesty’s Commissioners",
+    "page": 10
+  },
+  {
+    "idx": 180,
+    "number": "3",
+    "title": "The words “except the State of Jammu and Kashmir” omitted by Act 34 of 2019, s. 95 and the Fifth Schedule",
+    "page": 1
+  },
+  {
+    "idx": 181,
+    "number": "4",
+    "title": "The words “The enactments mentioned in the Schedule hereto are repealed to the extent specified in the third column thereof",
+    "page": 1
+  },
+  {
+    "idx": 182,
+    "number": "4",
+    "title": "Communication when complete.—The communication of a proposal is complete when it comes",
+    "page": 10
+  },
+  {
+    "idx": 183,
+    "number": "5",
+    "title": "Revocation of proposals and acceptances.—A proposal may be revoked at any time before the",
+    "page": 1
+  },
+  {
+    "idx": 184,
+    "number": "6",
+    "title": "Revocation how made.—A proposal is revoked—",
+    "page": 1
+  },
+  {
+    "idx": 185,
+    "number": "7",
+    "title": "Acceptance must be absolute.—In order to convert a proposal into a promise, the acceptance",
+    "page": 1
+  },
+  {
+    "idx": 186,
+    "number": "8",
+    "title": "Acceptance by performing conditions, or receiving consideration.—Performance of the",
+    "page": 1
+  },
+  {
+    "idx": 187,
+    "number": "9",
+    "title": "Promises, express and implied.—In so far as the proposal or acceptance of any promise is made",
+    "page": 1
+  },
+  {
+    "idx": 188,
+    "number": "10",
+    "title": "What agreements are contracts.—All agreements are contracts if they are made by the free",
+    "page": 1
+  },
+  {
+    "idx": 189,
+    "number": "11",
+    "title": "Who are competent to contract.—Every person is competent to contract who is of the age of",
+    "page": 1
+  },
+  {
+    "idx": 190,
+    "number": "12",
+    "title": "What is a sound mind for the purposes of contracting.—A person is said to be of sound mind",
+    "page": 1
+  },
+  {
+    "idx": 191,
+    "number": "2",
+    "title": "See e.g., s. 25, infra; the Copyright Act, 1957 (14 of 1957), s. 19; the Carriers Act, 1865 (3 of 1865) ss. 6 and 7;",
+    "page": 10
+  },
+  {
+    "idx": 192,
+    "number": "3",
+    "title": "See the Indian Majority Act, 1875 (9 of 1875)",
+    "page": 10
+  },
+  {
+    "idx": 193,
+    "number": "2",
+    "title": "Cf. s. 238, infra",
+    "page": 13
+  },
+  {
+    "idx": 194,
+    "number": "3",
+    "title": "See s. 143, infra",
+    "page": 13
+  },
+  {
+    "idx": 195,
+    "number": "19",
+    "title": "Voidability of agreements without free consent.—When consent to an agreement is caused by",
+    "page": 1
+  },
+  {
+    "idx": 196,
+    "number": "1",
+    "title": "The words “undue influence” rep. by Act 6 of 1899, s. 3",
+    "page": 10
+  },
+  {
+    "idx": 197,
+    "number": "21",
+    "title": "Effect of mistakes as to law.—A contract is not voidable because it was caused by a mistake as",
+    "page": 1
+  },
+  {
+    "idx": 198,
+    "number": "22",
+    "title": "Contract caused by mistake of one party as to matter of fact.—A contract is not voidable",
+    "page": 1
+  },
+  {
+    "idx": 199,
+    "number": "23",
+    "title": "What considerations and objects are lawful, and what not.—The consideration or object of an",
+    "page": 2
+  },
+  {
+    "idx": 200,
+    "number": "1",
+    "title": "The original words ‘British India” have successively been amended by the A.O. 1948 and the A.O. 1950 to read as above",
+    "page": 15
+  },
+  {
+    "idx": 201,
+    "number": "3",
+    "title": "The second Illustration to s. 21 rep. by Act 24 of 1917, s. 3 and the Second Schedule",
+    "page": 14
+  },
+  {
+    "idx": 202,
+    "number": "4",
+    "title": "See ss. 26, 27, 28 and 30, infra",
+    "page": 11
+  },
+  {
+    "idx": 203,
+    "number": "25",
+    "title": "Agreement without consideration, void, unless it is in writing and registered,or is a promise",
+    "page": 2
+  },
+  {
+    "idx": 204,
+    "number": "26",
+    "title": "Agreement in restraint of marriage, void.—Every agreement in restraint of the marriage of any",
+    "page": 2
+  },
+  {
+    "idx": 205,
+    "number": "27",
+    "title": "Agreement in restraint of trade, void.—Every agreement by which any one is restrained from",
+    "page": 2
+  },
+  {
+    "idx": 206,
+    "number": "1",
+    "title": "Exceptions 2 and 3 rep. by Act 9 of 1932, s. 73 and the Second Schedule",
+    "page": 16
+  },
+  {
+    "idx": 207,
+    "number": "3",
+    "title": "The second clause of Exception 1 to section 28 rep. by Act 1 of 1877, s. 2 and Sch",
+    "page": 16
+  },
+  {
+    "idx": 208,
+    "number": "4",
+    "title": "Cf. the Arbitration Act, 1940 (10 of 1940) and the Companies Act, 1956 (1 of 1956), s. 389",
+    "page": 16
+  },
+  {
+    "idx": 209,
+    "number": "29",
+    "title": "Agreements void for uncertainty.—Agreements, the meaning of which is not certain, or capable",
+    "page": 2
+  },
+  {
+    "idx": 210,
+    "number": "30",
+    "title": "Agreements by way of wager void.—Agreements by way of wager are void; and no suit shall be",
+    "page": 2
+  },
+  {
+    "idx": 211,
+    "number": "32",
+    "title": "Enforcement of contracts contingent on an event happening.—Contingent contracts to do or",
+    "page": 2
+  },
+  {
+    "idx": 212,
+    "number": "33",
+    "title": "Enforcement of contracts contingent on an event not happening.—Contingent contracts to do",
+    "page": 2
+  },
+  {
+    "idx": 213,
+    "number": "36",
+    "title": "Agreement contingent on impossible events void.—Contingent agreements to do or not to do",
+    "page": 2
+  },
+  {
+    "idx": 214,
+    "number": "37",
+    "title": "Obligation of parties to contracts.—The parties to a contract must either perform, or offer to",
+    "page": 2
+  },
+  {
+    "idx": 215,
+    "number": "38",
+    "title": "Effect of refusal to accept offer of performance.—Where a promisor has made an offer of",
+    "page": 2
+  },
+  {
+    "idx": 216,
+    "number": "39",
+    "title": "Effect of refusal of party to perform promise wholly.—When a party to a contract has refused",
+    "page": 2
+  },
+  {
+    "idx": 217,
+    "number": "41",
+    "title": "Effect of accepting performance from third person.—When a promisee accepts performance",
+    "page": 2
+  },
+  {
+    "idx": 218,
+    "number": "42",
+    "title": "Devolution of joint liabilities.—When two or more persons have made a joint promise, then",
+    "page": 3
+  },
+  {
+    "idx": 219,
+    "number": "45",
+    "title": "Devolution of joint rights.—When a person has made a promise to two or more persons jointly",
+    "page": 3
+  },
+  {
+    "idx": 220,
+    "number": "46",
+    "title": "Time for performance of promise, when no application is to be made and no time is",
+    "page": 3
+  },
+  {
+    "idx": 221,
+    "number": "48",
+    "title": "Application for performance on certain day to be at proper time and place.—When a",
+    "page": 3
+  },
+  {
+    "idx": 222,
+    "number": "1",
+    "title": "See s. 138, infra",
+    "page": 18
+  },
+  {
+    "idx": 223,
+    "number": "2",
+    "title": "For an Exception to s. 45 in case of Government securities, see the Public Debt Act, 1944 (18 of 1944), s. 8",
+    "page": 14
+  },
+  {
+    "idx": 224,
+    "number": "49",
+    "title": "Place for performance of promise, where no application to be made and no place fixed for",
+    "page": 3
+  },
+  {
+    "idx": 225,
+    "number": "50",
+    "title": "Performance in manner or at time prescribed or sanctioned by promisee.—The performance",
+    "page": 3
+  },
+  {
+    "idx": 226,
+    "number": "53",
+    "title": "Liability of party preventing event on which the contract is to take effect.—When a contract",
+    "page": 3
+  },
+  {
+    "idx": 227,
+    "number": "54",
+    "title": "Effect of default as to that promise which should be first performed, in contract consisting",
+    "page": 3
+  },
+  {
+    "idx": 228,
+    "number": "55",
+    "title": "Effect of failure to perform at fixed time, in contract in which time is essential.—When a",
+    "page": 3
+  },
+  {
+    "idx": 229,
+    "number": "1",
+    "title": "See s. 73, infra",
+    "page": 23
+  },
+  {
+    "idx": 230,
+    "number": "2",
+    "title": "C.f. ss. 62 and 63, infra",
+    "page": 23
+  },
+  {
+    "idx": 231,
+    "number": "56",
+    "title": "Agreement to do impossible act.—An agreement to do an act impossible in itself is void",
+    "page": 3
+  },
+  {
+    "idx": 232,
+    "number": "58",
+    "title": "Alternative promise, one branch being illegal.—In the case of an alternative promise, one",
+    "page": 3
+  },
+  {
+    "idx": 233,
+    "number": "1",
+    "title": "See s. 65, infra",
+    "page": 25
+  },
+  {
+    "idx": 234,
+    "number": "60",
+    "title": "Application of payment where debt to be discharged is not indicated.—Where the debtor has",
+    "page": 3
+  },
+  {
+    "idx": 235,
+    "number": "61",
+    "title": "Application of payment where neither party appropriates.—Where neither party makes any",
+    "page": 3
+  },
+  {
+    "idx": 236,
+    "number": "62",
+    "title": "Effect of novation, rescission, and alteration of contract.—If the parties to a contract agree to",
+    "page": 3
+  },
+  {
+    "idx": 237,
+    "number": "63",
+    "title": "Promisee may dispense with or remit performance of promisee.—Every promisee may",
+    "page": 3
+  },
+  {
+    "idx": 238,
+    "number": "64",
+    "title": "Consequences of rescission of voidable contract.—When a person at whose option a contract is",
+    "page": 3
+  },
+  {
+    "idx": 239,
+    "number": "1",
+    "title": "But see s. 135, infra",
+    "page": 26
+  },
+  {
+    "idx": 240,
+    "number": "2",
+    "title": "See s. 41, supra",
+    "page": 25
+  },
+  {
+    "idx": 241,
+    "number": "4",
+    "title": "See s. 75, infra",
+    "page": 18
+  },
+  {
+    "idx": 242,
+    "number": "65",
+    "title": "Obligation of person who has received advantage under void agreement, or contract that",
+    "page": 3
+  },
+  {
+    "idx": 243,
+    "number": "66",
+    "title": "Mode of communicating or revoking rescission of voidable contract.—The rescission of a",
+    "page": 3
+  },
+  {
+    "idx": 244,
+    "number": "67",
+    "title": "Effect of neglect of promisee to afford promisor reasonable facilities for performance.—If",
+    "page": 3
+  },
+  {
+    "idx": 245,
+    "number": "68",
+    "title": "Claim for necessaries supplied to person incapable of contracting, or on his account.—If a",
+    "page": 4
+  },
+  {
+    "idx": 246,
+    "number": "1",
+    "title": "See ss. 3 and 5, supra",
+    "page": 27
+  },
+  {
+    "idx": 247,
+    "number": "2",
+    "title": "The property of a Government ward in Madhya Pradesh is not liable under this section, see the C.P. Court of Wards Act, 1899",
+    "page": 27
+  },
+  {
+    "idx": 248,
+    "number": "72",
+    "title": "Liability of person to whom money is paid, or thing delivered, by mistake or under",
+    "page": 4
+  },
+  {
+    "idx": 249,
+    "number": "1",
+    "title": "As to suits by minors under s. 70 in Presidency Small Cause Courts, see the Presidency Small Cause Courts Act, 1882",
+    "page": 28
+  },
+  {
+    "idx": 250,
+    "number": "2",
+    "title": "See ss. 151 and 152, infra",
+    "page": 28
+  },
+  {
+    "idx": 251,
+    "number": "74",
+    "title": "Compensation for breach of contract where penalty stipulated for.—1[When a contract has",
+    "page": 4
+  },
+  {
+    "idx": 252,
+    "number": "127",
+    "title": "Consideration for guarantee.—Anything done, or any promise made, for the benefit of the",
+    "page": 5
+  },
+  {
+    "idx": 253,
+    "number": "128",
+    "title": "Surety’s liability.—The liability of the surety is co- extensive with that of the principal debtor",
+    "page": 5
+  },
+  {
+    "idx": 254,
+    "number": "132",
+    "title": "Liability of two persons, primarily liable, not affected by arrangement between them that",
+    "page": 5
+  },
+  {
+    "idx": 255,
+    "number": "135",
+    "title": "Discharge of surety when creditor compounds with, gives time to, or agrees not to sue",
+    "page": 5
+  },
+  {
+    "idx": 256,
+    "number": "136",
+    "title": "Surety not discharged when agreement made with third person to give time to principal",
+    "page": 5
+  },
+  {
+    "idx": 257,
+    "number": "137",
+    "title": "Creditor’s forbearance to sue does not discharge surety.—Mere forbearance on the part of",
+    "page": 5
+  },
+  {
+    "idx": 258,
+    "number": "139",
+    "title": "Discharge of surety by creditor’s act or omission impairing surety’s eventual remedy.—If",
+    "page": 6
+  },
+  {
+    "idx": 259,
+    "number": "142",
+    "title": "Guarantee obtained by misrepresentation invalid.—Any guarantee which has been obtained",
+    "page": 6
+  },
+  {
+    "idx": 260,
+    "number": "143",
+    "title": "Guarantee obtained by concealment invalid.—Any guarantee which the creditor has obtained",
+    "page": 6
+  },
+  {
+    "idx": 261,
+    "number": "1",
+    "title": "See s. 44, supra",
+    "page": 29
+  },
+  {
+    "idx": 262,
+    "number": "144",
+    "title": "Guarantee on contract that creditor shall not act on it until co-surety joins.—Where a",
+    "page": 6
+  },
+  {
+    "idx": 263,
+    "number": "146",
+    "title": "Co-sureties liable to contribute equally.—Where two or more persons are co-sureties for the",
+    "page": 6
+  },
+  {
+    "idx": 264,
+    "number": "1",
+    "title": "See s. 43, supra",
+    "page": 37
+  },
+  {
+    "idx": 265,
+    "number": "149",
+    "title": "Delivery to bailee how made.—The delivery to the bailee may be made by doing anything",
+    "page": 6
+  },
+  {
+    "idx": 266,
+    "number": "1151",
+    "title": "Care to be taken by bailee.—In all cases of bailment the bailee is bound to take as much care",
+    "page": 39
+  },
+  {
+    "idx": 267,
+    "number": "153",
+    "title": "Termination of bailment by bailee’s act inconsistent with conditions.—A contract of",
+    "page": 6
+  },
+  {
+    "idx": 268,
+    "number": "154",
+    "title": "Liability of bailee making unauthorized use of goods bailed.—If the bailee makes any use of",
+    "page": 6
+  },
+  {
+    "idx": 269,
+    "number": "1",
+    "title": "The responsibility of the Trustees of the Port of Madras constituted under the Madras Port Trust Act, 1905 (Madras Act",
+    "page": 38
+  },
+  {
+    "idx": 270,
+    "number": "155",
+    "title": "Effect of mixture, with bailor’s consent, of his goods with bailee’s.—If the bailee, with the",
+    "page": 6
+  },
+  {
+    "idx": 271,
+    "number": "157",
+    "title": "Effect of mixture, without bailor’s consent, when the goods cannot be separated.—If the",
+    "page": 6
+  },
+  {
+    "idx": 272,
+    "number": "158",
+    "title": "Repayment, by bailor, of necessary expenses.—Where, by the conditions of the bailment, the",
+    "page": 6
+  },
+  {
+    "idx": 273,
+    "number": "1161",
+    "title": "Bailee’s responsibility when goods are not duly returned.—If, by the default of the bailee",
+    "page": 40
+  },
+  {
+    "idx": 274,
+    "number": "1",
+    "title": "S. 161 has been declared to apply to the responsibility of the Trustees of the Port of Madras as to goods in their possession",
+    "page": 39
+  },
+  {
+    "idx": 275,
+    "number": "2",
+    "title": "As to Railway contracts, see the Indian Railways Act, 1890 (9 of 1890), s. 72",
+    "page": 29
+  },
+  {
+    "idx": 276,
+    "number": "162",
+    "title": "Termination of gratuitous bailment by death.—A gratuitous bailment is terminated by the",
+    "page": 6
+  },
+  {
+    "idx": 277,
+    "number": "163",
+    "title": "Bailor entitled to increase or profit from goods bailed.—In the absence of any contract to the",
+    "page": 6
+  },
+  {
+    "idx": 278,
+    "number": "164",
+    "title": "Bailor’s responsibility to bailee.—The bailor is responsible to the bailee for any loss which the",
+    "page": 6
+  },
+  {
+    "idx": 279,
+    "number": "170",
+    "title": "Bailee’s particular lien.—Where the bailee has, in accordance with the purpose of the",
+    "page": 6
+  },
+  {
+    "idx": 280,
+    "number": "1",
+    "title": "See the Indian Evidence Act, 1872 (1 of 1872), s. 117",
+    "page": 40
+  },
+  {
+    "idx": 281,
+    "number": "175",
+    "title": "Pawnee’s right as to extraordinary expenses incurred.—Thepawnee is entitled to receive",
+    "page": 7
+  },
+  {
+    "idx": 282,
+    "number": "176",
+    "title": "Pawnee’s right where pawnor makes default.—If the pawnor makes default in payment of the",
+    "page": 7
+  },
+  {
+    "idx": 283,
+    "number": "177",
+    "title": "Defaulting pawner’s right to redeem.—If a time is stipulated for the payment of the debt, or",
+    "page": 7
+  },
+  {
+    "idx": 284,
+    "number": "178A",
+    "title": "Pledge by person in possession under voidable contract.—When the pawnor has obtained",
+    "page": 7
+  },
+  {
+    "idx": 285,
+    "number": "1",
+    "title": "As to lien of an agent, see s. 221, infra. As to lien of a Railway Administration, see the Indian Railways Act, 1890 (9 of 1890)",
+    "page": 41
+  },
+  {
+    "idx": 286,
+    "number": "2",
+    "title": "For limitation, see the Limitation Act, 1963 (36 of 1963), the Second Schedule",
+    "page": 40
+  },
+  {
+    "idx": 287,
+    "number": "3",
+    "title": "Ss. 178 and 178A subs. by Act 4 of 1930, s. 2, for the original s. 178",
+    "page": 18
+  },
+  {
+    "idx": 288,
+    "number": "179",
+    "title": "Pledge where pawnor has only a limited interest.—Where a person pledges goods in which",
+    "page": 7
+  },
+  {
+    "idx": 289,
+    "number": "181",
+    "title": "Apportionment of relief or compensation obtained by such suits.—Whatever is obtained by",
+    "page": 7
+  },
+  {
+    "idx": 290,
+    "number": "183",
+    "title": "Who may employ agent.—Any person who is of the age of majority according to the law to",
+    "page": 7
+  },
+  {
+    "idx": 291,
+    "number": "184",
+    "title": "Who may be an agent.—As between the principal and third persons, any person may become",
+    "page": 7
+  },
+  {
+    "idx": 292,
+    "number": "185",
+    "title": "Consideration not necessary.—No consideration is necessary to create an agency",
+    "page": 7
+  },
+  {
+    "idx": 293,
+    "number": "186",
+    "title": "Agent’s authority may be expressed or implied.—The authority of an agent may be expressed",
+    "page": 7
+  },
+  {
+    "idx": 294,
+    "number": "187",
+    "title": "Definitions of express and implied authority.—An authority is said to be express when it is",
+    "page": 7
+  },
+  {
+    "idx": 295,
+    "number": "188",
+    "title": "Extent of agent’s authority.—An agent, having an authority to do an act, has authority to do",
+    "page": 7
+  },
+  {
+    "idx": 296,
+    "number": "1",
+    "title": "See, however, the Registration Act, 1908 (16 of 1908), s. 33; see also the Code of Civil Procedure, 1908 (5 of 1908), Sch. I",
+    "page": 42
+  },
+  {
+    "idx": 297,
+    "number": "190",
+    "title": "When agent cannot delegate.—An agent cannot lawfully employ another to perform acts",
+    "page": 7
+  },
+  {
+    "idx": 298,
+    "number": "192",
+    "title": "Representation of principal by sub-agent properly appointed.—Where a sub-agent is",
+    "page": 7
+  },
+  {
+    "idx": 299,
+    "number": "193",
+    "title": "Agent’s responsibility for sub-agent appointed without authority.—Where an agent, without",
+    "page": 7
+  },
+  {
+    "idx": 300,
+    "number": "195",
+    "title": "Agent’s duty in naming such person.—In selecting such agent for his principal, an agent is",
+    "page": 7
+  },
+  {
+    "idx": 301,
+    "number": "196",
+    "title": "Right of person as to acts done for him without his authority. Effect of ratification.—",
+    "page": 7
+  },
+  {
+    "idx": 302,
+    "number": "201",
+    "title": "Termination of agency.—An agency is terminated by the principal revoking his authority; or",
+    "page": 8
+  },
+  {
+    "idx": 303,
+    "number": "206",
+    "title": "Notice of revocation or renunciation.—Reasonable notice must be given of such revocation or",
+    "page": 8
+  },
+  {
+    "idx": 304,
+    "number": "210",
+    "title": "Termination of sub-agent’s authority.—The termination of the authority of an agent causes",
+    "page": 8
+  },
+  {
+    "idx": 305,
+    "number": "212",
+    "title": "Skill and diligence required from agent.—An agent is bound to conduct the business of the",
+    "page": 8
+  },
+  {
+    "idx": 306,
+    "number": "216",
+    "title": "Principal’s right to benefit gained by agent dealing on his own account in business of",
+    "page": 8
+  },
+  {
+    "idx": 307,
+    "number": "218",
+    "title": "Agent’s duty to pay sums received for principal.—Subject to such deductions, the agent is",
+    "page": 8
+  },
+  {
+    "idx": 308,
+    "number": "221",
+    "title": "Agent’s lien on principal’s property.—In the absence of any contract to the contrary, an agent",
+    "page": 8
+  },
+  {
+    "idx": 309,
+    "number": "226",
+    "title": "Enforcement and consequences of agent’s contracts.—Contracts entered into through an",
+    "page": 8
+  },
+  {
+    "idx": 310,
+    "number": "1",
+    "title": "See s. 24, supra",
+    "page": 43
+  },
+  {
+    "idx": 311,
+    "number": "2",
+    "title": "Cf. the Indian Fatal Accidents Act, 1855 (13 of 1855)",
+    "page": 42
+  },
+  {
+    "idx": 312,
+    "number": "227",
+    "title": "Principal how far bound, when agent exceeds authority.—When an agent does more than he",
+    "page": 8
+  },
+  {
+    "idx": 313,
+    "number": "232",
+    "title": "Performance of contract with agent supposed to be principal.—Where one man makes a",
+    "page": 8
+  },
+  {
+    "idx": 314,
+    "number": "234",
+    "title": "Consequence of inducing agent or principal to act on belief that principal or agent will be",
+    "page": 9
+  },
+  {
+    "idx": 315,
+    "number": "235",
+    "title": "Liability of pretended agent.—A person untruly representing himself to be the authorized",
+    "page": 9
+  },
+  {
+    "idx": 316,
+    "number": "238",
+    "title": "Effect, on agreement, of misrepresentation of fraud, by agent.—Misrepresentation made, or",
+    "page": 9
+  }
+]

@@ -4,6 +4,8 @@ import html
 import sys
 import os
 import asyncio
+import time
+import logging
 import numpy as np
 from pathlib import Path
 from functools import lru_cache
@@ -12,6 +14,48 @@ from dotenv import load_dotenv
 
 if sys.stdout.encoding != 'utf-8':
     sys.stdout.reconfigure(encoding='utf-8', errors='replace')
+
+# ── Logging Configuration ──
+LOG_FORMAT = "%(asctime)s.%(msecs)03d | %(levelname)-7s | %(name)-18s | %(message)s"
+LOG_DATE_FORMAT = "%Y-%m-%d %H:%M:%S"
+
+logging.basicConfig(
+    level=logging.INFO,
+    format=LOG_FORMAT,
+    datefmt=LOG_DATE_FORMAT,
+    stream=sys.stdout,
+    force=True,
+)
+logger = logging.getLogger("rag")
+
+
+def _truncate(text: str, limit: int = 240) -> str:
+    text = (text or "").replace("\n", " ").replace("\r", " ").strip()
+    return text if len(text) <= limit else text[:limit] + f"... (+{len(text) - limit} chars)"
+
+
+def _format_retrieved_docs(ranked: List[dict]) -> str:
+    if not ranked:
+        return "<none>"
+    parts = []
+    for i, r in enumerate(ranked, 1):
+        sec = r.get("section", {}) or {}
+        doc = sec.get("document", "?")
+        num = sec.get("section", "?")
+        title = sec.get("title", "")
+        sc = r.get("score", 0.0)
+        bd = r.get("score_breakdown") or {}
+        v = bd.get("vector_similarity", 0.0)
+        rr = bd.get("reranker_relevance", 0.0)
+        sub = r.get("sub_clause")
+        ex = r.get("example")
+        locator = f"§{num} {title}".strip()
+        if sub:
+            locator += f" sub({sub.get('id')})"
+        if ex:
+            locator += f" ex({ex.get('id')})"
+        parts.append(f"#{i} {doc} {locator} | hybrid={sc:.3f} vec={v:.3f} rerank={rr:.3f}")
+    return " | ".join(parts)
 
 load_dotenv()
 
@@ -65,6 +109,7 @@ RERANK_WEIGHT = 0.65
 
 
 embed_model = SentenceTransformer("BAAI/bge-large-en-v1.5")
+per_law_embed_model = SentenceTransformer("BAAI/bge-base-en-v1.5")
 reranker = CrossEncoder("cross-encoder/ms-marco-MiniLM-L-12-v2")
 
 client = OpenAI(
@@ -90,6 +135,9 @@ SECTIONS = []
 CORPUS_META = []
 INDEX = None
 MONGO_DB = None
+DATA_DIR = Path(__file__).parent / "data"
+MASTER_INDEX = None
+PER_LAW_INDEXES = {}
 
 
 # ── Pydantic Models ──
@@ -794,9 +842,12 @@ def mmr_diversify(ranked_entries, top_k, lambda_mmr=0.5):
 @lru_cache(maxsize=256)
 def retrieve(query, top_k=TOP_K_FINAL):
 
+    t_start = time.perf_counter()
     qvec = embed_model.encode([query], normalize_embeddings=True)
+    t_embed = time.perf_counter()
 
     raw_scores, ids = INDEX.search(qvec, TOP_K_VECTOR)
+    t_faiss = time.perf_counter()
 
     vector_scores = raw_scores[0]
 
@@ -818,6 +869,7 @@ def retrieve(query, top_k=TOP_K_FINAL):
         valid_indices.append(i)
 
     rerank_raw = reranker.predict(pairs)
+    t_rerank = time.perf_counter()
 
     def sigmoid(x):
         return 1 / (1 + np.exp(-x))
@@ -876,6 +928,21 @@ def retrieve(query, top_k=TOP_K_FINAL):
             "sub_clause": sub_clause,
             "example": example
         })
+
+    t_done = time.perf_counter()
+    docs_used = sorted({r["section"].get("document", "?") for r in results})
+    logger.info(
+        "[retrieve] query=%r | top_k=%d | embed=%.3fs faiss=%.3fs rerank=%.3fs total=%.3fs | docs=%s",
+        _truncate(query, 120),
+        top_k,
+        t_embed - t_start,
+        t_faiss - t_embed,
+        t_rerank - t_faiss,
+        t_done - t_start,
+        docs_used or "<none>",
+    )
+    for line in _format_retrieved_docs(results).split(" | "):
+        logger.info("    └─ %s", line)
 
     return results
 
@@ -1147,6 +1214,15 @@ def ask_llm(question, sections, ik_results=None):
     ]
 
     print(f"[ask_llm] sending to LLM: question='{question[:100]}' sections={len(sections)} ik_results={len(ik_results or [])}", flush=True)
+    logger.info(
+        "[ask_llm] → NVIDIA | model=%s | question=%r | sections=%d | ik_results=%d | prompt_tokens≈%d",
+        LLM_MODEL,
+        _truncate(question, 120),
+        len(sections),
+        len(ik_results or []),
+        sum(len(m["content"]) for m in messages) // 4,
+    )
+    t_llm = time.perf_counter()
     try:
         # Use non-streaming for faster response
         completion = client.chat.completions.create(
@@ -1155,11 +1231,25 @@ def ask_llm(question, sections, ik_results=None):
             temperature=0,
             max_tokens=4096
         )
+        elapsed = time.perf_counter() - t_llm
         answer = completion.choices[0].message.content
-        print(f"[ask_llm] done: content_len={len(answer)}", flush=True)
+        usage = getattr(completion, "usage", None)
+        prompt_t = getattr(usage, "prompt_tokens", None) if usage else None
+        comp_t = getattr(usage, "completion_tokens", None) if usage else None
+        total_t = getattr(usage, "total_tokens", None) if usage else None
+        logger.info(
+            "[ask_llm] ← NVIDIA | elapsed=%.3fs | prompt_tokens=%s | completion_tokens=%s | total_tokens=%s | answer_len=%d",
+            elapsed,
+            prompt_t,
+            comp_t,
+            total_t,
+            len(answer or ""),
+        )
+        logger.info("[ask_llm] response preview: %s", _truncate(answer, 400))
         return answer
     except Exception as e:
-        print(f"[ask_llm] ERROR: {e}", flush=True)
+        elapsed = time.perf_counter() - t_llm
+        logger.error("[ask_llm] ← NVIDIA | ERROR after %.3fs | %s", elapsed, e, exc_info=False)
         return f"Sorry, I encountered an error: {str(e)}"
 
 
@@ -1254,9 +1344,15 @@ def build_case_studies(question, sections, ik_results=None):
 @app.on_event("startup")
 def startup():
 
+    logger.info("=" * 80)
+    logger.info("[startup] RAG server starting | model=%s | docs=%s", LLM_MODEL, list(DOCUMENTS.keys()))
+
     global INDEX, MONGO_DB
 
+    t = time.perf_counter()
     INDEX = build_index()
+    logger.info("[startup] FAISS index built in %.3fs | vectors=%d | corpus_entries=%d",
+                time.perf_counter() - t, INDEX.ntotal if INDEX else 0, len(CORPUS_META))
 
     mongodb_uri = os.getenv("MONGODB_URI", "")
     if mongodb_uri:
@@ -1264,11 +1360,18 @@ def startup():
             mongo_client = MongoClient(mongodb_uri)
             MONGO_DB = mongo_client.get_database()
             print(f"[startup] MongoDB connected: {MONGO_DB.name}", flush=True)
+            logger.info("[startup] MongoDB connected: %s", MONGO_DB.name)
         except Exception as e:
             print(f"[startup] MongoDB connection failed: {e}", flush=True)
+            logger.warning("[startup] MongoDB connection failed: %s", e)
             MONGO_DB = None
     else:
         print("[startup] MONGODB_URI not set, skipping MongoDB", flush=True)
+        logger.info("[startup] MONGODB_URI not set, skipping MongoDB")
+
+    load_per_law_indexes()
+    logger.info("[startup] RAG server ready on http://localhost:8000")
+    logger.info("=" * 80)
 
 
 @app.get("/", response_class=HTMLResponse)
@@ -1284,7 +1387,11 @@ def home():
 @app.post("/ask", response_model=AskResponse)
 async def ask(body: AskRequest):
 
+    req_start = time.perf_counter()
     print(f"[ask] question='{body.question}' top_k={body.top_k}", flush=True)
+    logger.info("─" * 80)
+    logger.info("[POST /ask] request received | question=%r | top_k=%d | history_msgs=%d",
+                _truncate(body.question, 160), body.top_k, len(body.history or []))
 
     loop = asyncio.get_event_loop()
 
@@ -1293,11 +1400,17 @@ async def ask(body: AskRequest):
 
     ranked, ik_raw = await asyncio.gather(ranked_task, ik_task)
     print(f"[ask] retrieved {len(ranked)} sections, {len(ik_raw)} ik results", flush=True)
+    logger.info("[POST /ask] retrieval done | sections=%d | ik_results=%d | elapsed=%.3fs",
+                len(ranked), len(ik_raw), time.perf_counter() - req_start)
 
     sections = [r["section"] for r in ranked]
 
     ai_answer = await loop.run_in_executor(None, ask_llm, body.question, sections, ik_raw)
     print(f"[ask] ai_answer length={len(ai_answer)} preview='{ai_answer[:200]}'", flush=True)
+    logger.info("[POST /ask] response sent | answer_len=%d | total_elapsed=%.3fs",
+                len(ai_answer), time.perf_counter() - req_start)
+    logger.info("[POST /ask] answer preview: %s", _truncate(ai_answer, 300))
+    logger.info("─" * 80)
 
     results = to_search_results(ranked)
 
@@ -1314,11 +1427,17 @@ async def ask(body: AskRequest):
 
 @app.post("/ask/stream")
 def ask_stream(body: AskRequest):
+    req_start = time.perf_counter()
     print(f"[ask/stream] question='{body.question}'", flush=True)
+    logger.info("─" * 80)
+    logger.info("[POST /ask/stream] request received | question=%r | top_k=%d | history_msgs=%d",
+                _truncate(body.question, 160), body.top_k, len(body.history or []))
 
     ranked = retrieve(body.question, body.top_k)
     sections = [r["section"] for r in ranked]
     ik_raw = ik_search(body.question, max_results=5)
+    logger.info("[POST /ask/stream] retrieval done | sections=%d | ik_results=%d | elapsed=%.3fs",
+                len(ranked), len(ik_raw), time.perf_counter() - req_start)
 
     context = ""
     for s in sections:
@@ -1340,6 +1459,10 @@ def ask_stream(body: AskRequest):
     ik_meta = [{"doc_id": d["doc_id"], "title": d["title"], "headline": d.get("headline", "")} for d in ik_raw]
 
     def event_stream():
+        llm_start = time.perf_counter()
+        logger.info("[POST /ask/stream] → NVIDIA (streaming) | model=%s | prompt_chars=%d",
+                    LLM_MODEL, sum(len(m["content"]) for m in messages))
+        full_response_parts = []
         try:
             completion = client.chat.completions.create(
                 model=LLM_MODEL,
@@ -1353,10 +1476,21 @@ def ask_stream(body: AskRequest):
                 if not chunk.choices:
                     continue
                 if chunk.choices[0].delta.content is not None:
-                    yield f"data: {json.dumps({'t': 'token', 'c': chunk.choices[0].delta.content})}\n\n"
+                    token = chunk.choices[0].delta.content
+                    full_response_parts.append(token)
+                    yield f"data: {json.dumps({'t': 'token', 'c': token})}\n\n"
         except Exception as e:
+            elapsed = time.perf_counter() - llm_start
+            logger.error("[POST /ask/stream] ← NVIDIA | STREAM ERROR after %.3fs | %s", elapsed, e, exc_info=False)
             print(f"[ask/stream] ERROR: {e}", flush=True)
             yield f"data: {json.dumps({'t': 'error', 'c': str(e)})}\n\n"
+
+        elapsed = time.perf_counter() - llm_start
+        full_response = "".join(full_response_parts)
+        logger.info("[POST /ask/stream] ← NVIDIA | stream_elapsed=%.3fs | streamed_chars=%d | total_elapsed=%.3fs",
+                    elapsed, len(full_response), time.perf_counter() - req_start)
+        logger.info("[POST /ask/stream] full response preview: %s", _truncate(full_response, 400))
+        logger.info("─" * 80)
 
         yield f"data: {json.dumps({'t': 'meta', 'sections': sections_meta, 'ik': ik_meta})}\n\n"
         yield f"data: {json.dumps({'t': 'done'})}\n\n"
@@ -1367,6 +1501,10 @@ def ask_stream(body: AskRequest):
 @app.get("/query", response_model=QueryResponse)
 async def query(q: str = Query(...), top_k: int = 7):
 
+    req_start = time.perf_counter()
+    logger.info("─" * 80)
+    logger.info("[GET /query] request received | q=%r | top_k=%d", _truncate(q, 160), top_k)
+
     loop = asyncio.get_event_loop()
 
     ranked_task = loop.run_in_executor(None, retrieve, q, top_k)
@@ -1376,6 +1514,10 @@ async def query(q: str = Query(...), top_k: int = 7):
     sections = [r["section"] for r in ranked]
 
     ai_answer = await loop.run_in_executor(None, ask_llm, q, sections, ik_raw)
+
+    logger.info("[GET /query] done | total_elapsed=%.3fs | answer_len=%d",
+                time.perf_counter() - req_start, len(ai_answer))
+    logger.info("─" * 80)
 
     results = to_search_results(ranked)
 
@@ -1394,6 +1536,11 @@ async def query(q: str = Query(...), top_k: int = 7):
 
 @app.post("/microlearning/ask", response_model=MicrolearningAskResponse)
 async def microlearning_ask(body: MicrolearningAskRequest):
+
+    req_start = time.perf_counter()
+    logger.info("─" * 80)
+    logger.info("[POST /microlearning/ask] request received | lesson_id=%s | lesson_title=%r | question=%r",
+                body.lesson_id, _truncate(body.lesson_title, 100), _truncate(body.question, 160))
 
     composite_query = (
         f"Lesson: {body.lesson_title}. "
@@ -1420,6 +1567,10 @@ async def microlearning_ask(body: MicrolearningAskRequest):
 
     results = to_search_results(ranked)
     case_studies = build_case_studies(body.question, sections, ik_raw)
+
+    logger.info("[POST /microlearning/ask] done | total_elapsed=%.3fs | answer_len=%d | case_studies=%d",
+                time.perf_counter() - req_start, len(ai_answer), len(case_studies))
+    logger.info("─" * 80)
 
     return MicrolearningAskResponse(
         lesson_title=body.lesson_title,
@@ -1567,6 +1718,7 @@ def microlearning_generate(body: GenerateLessonRequest):
 
 @app.post("/tools/case-analyzer", response_model=ToolCaseAnalyzerResponse)
 def tool_case_analyzer(body: ToolCaseAnalyzerRequest):
+    req_start = time.perf_counter()
     if not body.case_text.strip():
         raise HTTPException(400, "case_text is required")
 
@@ -1576,9 +1728,16 @@ def tool_case_analyzer(body: ToolCaseAnalyzerRequest):
         f"Case text:\n{body.case_text}"
     )
 
+    logger.info("─" * 80)
+    logger.info("[POST /tools/case-analyzer] request received | case_text_len=%d chars", len(body.case_text))
+
     ranked = retrieve(prompt, body.top_k)
     sections = [r["section"] for r in ranked]
     ai_answer = ask_llm(prompt, sections)
+
+    logger.info("[POST /tools/case-analyzer] done | total_elapsed=%.3fs | answer_len=%d",
+                time.perf_counter() - req_start, len(ai_answer))
+    logger.info("─" * 80)
 
     return ToolCaseAnalyzerResponse(
         ai_answer=ai_answer,
@@ -1589,8 +1748,12 @@ def tool_case_analyzer(body: ToolCaseAnalyzerRequest):
 
 @app.post("/tools/contract-risk", response_model=ToolContractRiskResponse)
 def tool_contract_risk(body: ToolContractRiskRequest):
+    req_start = time.perf_counter()
     if not body.contract_text.strip():
         raise HTTPException(400, "contract_text is required")
+
+    logger.info("─" * 80)
+    logger.info("[POST /tools/contract-risk] request received | contract_text_len=%d chars", len(body.contract_text))
 
     ranked = retrieve(
         "Identify legal risks, unfair terms, liabilities, and enforceability concerns in this contract:\n"
@@ -1619,14 +1782,30 @@ def tool_contract_risk(body: ToolContractRiskRequest):
         },
     ]
 
-    response = client.chat.completions.create(
-        model=LLM_MODEL,
-        messages=messages,
-        temperature=0,
-        max_tokens=16384,
-        extra_body={"chat_template_kwargs": {"enable_thinking": True}, "reasoning_budget": 16384}
-    )
-    output = response.choices[0].message.content or ""
+    logger.info("[POST /tools/contract-risk] → NVIDIA | model=%s | prompt_chars=%d",
+                LLM_MODEL, sum(len(m["content"]) for m in messages))
+    llm_start = time.perf_counter()
+    try:
+        response = client.chat.completions.create(
+            model=LLM_MODEL,
+            messages=messages,
+            temperature=0,
+            max_tokens=16384,
+            extra_body={"chat_template_kwargs": {"enable_thinking": True}, "reasoning_budget": 16384}
+        )
+        llm_elapsed = time.perf_counter() - llm_start
+        output = response.choices[0].message.content or ""
+        usage = getattr(response, "usage", None)
+        logger.info("[POST /tools/contract-risk] ← NVIDIA | llm_elapsed=%.3fs | output_len=%d | tokens=%s/%s/%s",
+                    llm_elapsed, len(output),
+                    getattr(usage, "prompt_tokens", "?") if usage else "?",
+                    getattr(usage, "completion_tokens", "?") if usage else "?",
+                    getattr(usage, "total_tokens", "?") if usage else "?")
+        logger.info("[POST /tools/contract-risk] raw output preview: %s", _truncate(output, 400))
+    except Exception as e:
+        llm_elapsed = time.perf_counter() - llm_start
+        logger.error("[POST /tools/contract-risk] ← NVIDIA | LLM ERROR after %.3fs | %s", llm_elapsed, e, exc_info=False)
+        output = ""
     parsed = _extract_json_object(output) or {}
 
     risk_score = parsed.get("risk_score", 0)
@@ -1654,6 +1833,11 @@ def tool_contract_risk(body: ToolContractRiskRequest):
     if recommendations:
         ai_answer += "\n\nRecommended Actions:\n" + "\n".join([f"- {r}" for r in recommendations])
 
+    logger.info("[POST /tools/contract-risk] done | risk_score=%d | risk_level=%s | flagged=%d | recommendations=%d | total_elapsed=%.3fs",
+                risk_score, _normalize_risk_level(risk_score), len(flagged_clauses), len(recommendations),
+                time.perf_counter() - req_start)
+    logger.info("─" * 80)
+
     return ToolContractRiskResponse(
         ai_answer=ai_answer,
         supporting_sections=to_search_results(ranked),
@@ -1666,6 +1850,7 @@ def tool_contract_risk(body: ToolContractRiskRequest):
 
 @app.post("/tools/case-summarizer", response_model=ToolCaseSummarizerResponse)
 def tool_case_summarizer(body: ToolCaseSummarizerRequest):
+    req_start = time.perf_counter()
     if not body.document_text.strip():
         raise HTTPException(400, "document_text is required")
 
@@ -1675,9 +1860,16 @@ def tool_case_summarizer(body: ToolCaseSummarizerRequest):
         f"Document text:\n{body.document_text}"
     )
 
+    logger.info("─" * 80)
+    logger.info("[POST /tools/case-summarizer] request received | document_text_len=%d chars", len(body.document_text))
+
     ranked = retrieve(prompt, body.top_k)
     sections = [r["section"] for r in ranked]
     ai_answer = ask_llm(prompt, sections)
+
+    logger.info("[POST /tools/case-summarizer] done | total_elapsed=%.3fs | answer_len=%d",
+                time.perf_counter() - req_start, len(ai_answer))
+    logger.info("─" * 80)
 
     return ToolCaseSummarizerResponse(
         ai_answer=ai_answer,
@@ -2198,6 +2390,270 @@ async def legal_news_to_lesson(body: NewsToLessonRequest):
             print(f"[legal_news_to_lesson] MongoDB write error: {e}", flush=True)
 
     return result
+
+
+def load_per_law_indexes():
+    global MASTER_INDEX, PER_LAW_INDEXES
+    mip = DATA_DIR / "master_index.json"
+    if not mip.exists():
+        logger.warning("[startup] master_index.json not found at %s — skipping per-law FAISS loading", mip)
+        return
+    with open(mip, "r", encoding="utf-8") as fp:
+        MASTER_INDEX = json.load(fp)
+    logger.info("[startup] master_index.json loaded | %d laws, %d total provisions",
+                MASTER_INDEX["total_laws"], MASTER_INDEX["total_provisions"])
+    for law in MASTER_INDEX["laws"]:
+        lid = law["id"]
+        law_dir = DATA_DIR / lid
+        index_path = law_dir / "faiss.index"
+        meta_path = law_dir / "corpus_meta.json"
+        corpus_path = law_dir / "corpus.json"
+        curated_path = law_dir / "curated.json"
+        if not index_path.exists():
+            logger.warning("[startup]  %s: faiss.index not found, skipping", lid)
+            continue
+        t = time.perf_counter()
+        idx = faiss.read_index(str(index_path))
+        meta = json.loads(meta_path.read_text(encoding="utf-8")) if meta_path.exists() else []
+        corpus = json.loads(corpus_path.read_text(encoding="utf-8")) if corpus_path.exists() else {}
+        curated = json.loads(curated_path.read_text(encoding="utf-8")) if curated_path.exists() else {}
+        PER_LAW_INDEXES[lid] = {
+            "index": idx,
+            "meta": meta,
+            "corpus": corpus,
+            "curated": curated,
+            "label": law["label"],
+            "domain": law["domain"],
+            "provision_label": corpus.get("provision_label", "Section"),
+        }
+        logger.info("[startup]  %s: %s | %d vectors | %.1fs",
+                    lid, law["label"], idx.ntotal, time.perf_counter() - t)
+    logger.info("[startup] per-law FAISS loaded: %d/%d laws | total vectors: %d",
+                len(PER_LAW_INDEXES), len(MASTER_INDEX["laws"]),
+                sum(v["index"].ntotal for v in PER_LAW_INDEXES.values()))
+
+
+class LawListResponse(BaseModel):
+    total_laws: int
+    total_provisions: int
+    embedding_model: str
+    laws: List[dict]
+
+
+class LawDetailResponse(BaseModel):
+    id: str
+    label: str
+    domain: str
+    strategy: str
+    provision_label: str
+    provision_count: int
+    provisions: List[dict] = []
+
+
+class ProvisionDetailResponse(BaseModel):
+    law_id: str
+    law_label: str
+    provision_label: str
+    number: str
+    title: str
+    full_text: Optional[str] = None
+    section_number: Optional[str] = None
+    page: Optional[int] = None
+    sub_clauses: List[dict] = []
+    examples: List[dict] = []
+    summary: Optional[str] = None
+    plain_english: Optional[str] = None
+    keywords: List[str] = []
+    legal_topics: List[str] = []
+    related: List[str] = []
+    cross_references: List[dict] = []
+
+
+class RoutedAskRequest(BaseModel):
+    question: str
+    law_ids: List[str]
+    top_k: int = 5
+
+
+def per_law_retrieve(law_id: str, query: str, top_k: int = 5) -> list:
+    data = PER_LAW_INDEXES.get(law_id)
+    if not data:
+        return []
+    idx = data["index"]
+    meta = data["meta"]
+    corpus = data["corpus"]
+    q_emb = per_law_embed_model.encode([query], normalize_embeddings=True)
+    scores, indices = idx.search(q_emb, min(top_k * 3, idx.ntotal))
+    results = []
+    for si, ii in enumerate(indices[0]):
+        if ii < 0 or ii >= len(meta):
+            continue
+        m = meta[ii]
+        results.append({
+            "score": float(scores[0][si]),
+            "provision_number": m.get("provision_number", "?"),
+            "title": m.get("title", ""),
+            "page": m.get("page", 0),
+        })
+    results.sort(key=lambda x: -x["score"])
+    return results[:top_k]
+
+
+@app.get("/laws", response_model=LawListResponse)
+def list_laws():
+    if not MASTER_INDEX:
+        raise HTTPException(503, "Master index not loaded")
+    return LawListResponse(
+        total_laws=MASTER_INDEX["total_laws"],
+        total_provisions=MASTER_INDEX["total_provisions"],
+        embedding_model=MASTER_INDEX.get("embedding_model", "BAAI/bge-base-en-v1.5"),
+        laws=MASTER_INDEX["laws"],
+    )
+
+
+@app.get("/laws/{law_id}", response_model=LawDetailResponse)
+def get_law(law_id: str, include_provisions: bool = Query(False)):
+    if not MASTER_INDEX:
+        raise HTTPException(503, "Master index not loaded")
+    law_entry = next((l for l in MASTER_INDEX["laws"] if l["id"] == law_id), None)
+    if not law_entry:
+        raise HTTPException(404, f"Law '{law_id}' not found")
+    provisions = []
+    if include_provisions:
+        data = PER_LAW_INDEXES.get(law_id, {}).get("corpus", {})
+        provisions = data.get("provisions", [])
+    return LawDetailResponse(
+        id=law_entry["id"],
+        label=law_entry["label"],
+        domain=law_entry["domain"],
+        strategy=law_entry.get("strategy", ""),
+        provision_label=law_entry.get("provision_label", "Section"),
+        provision_count=law_entry["provision_count"],
+        provisions=provisions,
+    )
+
+
+@app.get("/laws/{law_id}/provisions/{provision_number}", response_model=ProvisionDetailResponse)
+def get_provision(law_id: str, provision_number: str):
+    if not MASTER_INDEX:
+        raise HTTPException(503, "Master index not loaded")
+    law_entry = next((l for l in MASTER_INDEX["laws"] if l["id"] == law_id), None)
+    if not law_entry:
+        raise HTTPException(404, f"Law '{law_id}' not found")
+    data = PER_LAW_INDEXES.get(law_id)
+    if not data:
+        raise HTTPException(404, f"Law '{law_id}' data not loaded")
+    corpus = data["corpus"]
+    provisions = corpus.get("provisions", [])
+    prov = next((p for p in provisions if str(p.get("number", "")) == provision_number), None)
+    if not prov:
+        raise HTTPException(404, f"Provision {provision_number} not found in {law_id}")
+    curated = data.get("curated", {}).get("curated", [])
+    cur_entry = next((c for c in curated if c.get("provision_number") == provision_number), None)
+    return ProvisionDetailResponse(
+        law_id=law_id,
+        law_label=data["label"],
+        provision_label=corpus.get("provision_label", "Section"),
+        number=prov.get("number", provision_number),
+        title=prov.get("title", ""),
+        full_text=prov.get("full_text"),
+        section_number=prov.get("section"),
+        page=prov.get("page"),
+        sub_clauses=prov.get("sub_clauses", []),
+        examples=prov.get("examples", []),
+        summary=(cur_entry or {}).get("summary"),
+        plain_english=(cur_entry or {}).get("plain_english"),
+        keywords=(cur_entry or {}).get("keywords", []),
+        legal_topics=(cur_entry or {}).get("legal_topics", []),
+        related=(cur_entry or {}).get("related", []),
+        cross_references=law_entry.get("cross_references", []),
+    )
+
+
+@app.post("/ask/routed")
+async def ask_routed(body: RoutedAskRequest):
+    req_start = time.perf_counter()
+    logger.info("─" * 80)
+    logger.info("[POST /ask/routed] request | law_ids=%s | question=%r | top_k=%d",
+                body.law_ids, _truncate(body.question, 160), body.top_k)
+
+    if not body.law_ids:
+        raise HTTPException(400, "At least one law_id is required")
+    invalid = [lid for lid in body.law_ids if lid not in PER_LAW_INDEXES]
+    if invalid:
+        raise HTTPException(404, f"Laws not loaded: {invalid}")
+
+    loop = asyncio.get_event_loop()
+    tasks = [loop.run_in_executor(None, per_law_retrieve, lid, body.question, body.top_k)
+             for lid in body.law_ids]
+    per_law_results = await asyncio.gather(*tasks)
+    all_results = []
+    for lid, results in zip(body.law_ids, per_law_results):
+        data = PER_LAW_INDEXES[lid]
+        for r in results:
+            all_results.append({
+                "law_id": lid,
+                "law_label": data["label"],
+                "provision_number": r["provision_number"],
+                "title": r["title"],
+                "page": r["page"],
+                "score": r["score"],
+            })
+    all_results.sort(key=lambda x: -x["score"])
+    top = all_results[:body.top_k]
+
+    context_parts = []
+    for r in top:
+        data = PER_LAW_INDEXES[r["law_id"]]
+        pnl = data["provision_label"]
+        corpus = data["corpus"]
+        provisions = corpus.get("provisions", [])
+        prov = next((p for p in provisions if str(p.get("number", "")) == r["provision_number"]), None)
+        text = prov.get("full_text") or "" if prov else ""
+        context_parts.append(
+            f"{r['law_label']} {pnl} {r['provision_number']} — {r['title']}\n{text[:2000]}"
+        )
+    context = "\n\n".join(context_parts)
+
+    messages = [
+        {"role": "system", "content": (
+            "You are an expert Indian legal assistant. "
+            "Answer the question using the provided statutory provisions. "
+            "Cite the law name and section numbers.")},
+        {"role": "user", "content": f"Question: {body.question}\n\nRelevant provisions:\n{context}"},
+    ]
+
+    logger.info("[POST /ask/routed] → NVIDIA | law_ids=%s | top=%d | context_chars=%d",
+                body.law_ids, len(top), len(context))
+    t_llm = time.perf_counter()
+    try:
+        completion = client.chat.completions.create(
+            model=LLM_MODEL,
+            messages=messages,
+            temperature=0,
+            max_tokens=4096,
+        )
+        answer = completion.choices[0].message.content or ""
+        elapsed = time.perf_counter() - t_llm
+        logger.info("[POST /ask/routed] ← NVIDIA | elapsed=%.3fs | answer_len=%d",
+                    elapsed, len(answer))
+    except Exception as e:
+        elapsed = time.perf_counter() - t_llm
+        logger.error("[POST /ask/routed] ← NVIDIA | ERROR after %.3fs | %s", elapsed, e)
+        answer = f"Error: {str(e)}"
+
+    logger.info("[POST /ask/routed] done | total_elapsed=%.3fs",
+                time.perf_counter() - req_start)
+    logger.info("─" * 80)
+
+    return {
+        "question": body.question,
+        "ai_answer": answer,
+        "law_ids": body.law_ids,
+        "results": top,
+        "total_found": len(all_results),
+        "model_used": LLM_MODEL,
+    }
 
 
 @app.get("/stats")
