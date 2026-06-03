@@ -5,8 +5,10 @@ import { useSearchParams } from "next/navigation";
 import {
     Scale, Gavel, Paperclip, Send, Trash2, Sparkles,
     CheckCheck, FileText, BookOpen, Copy, BookMarked, ChevronRight, ImageIcon, X,
+    Filter, ChevronDown,
 } from "lucide-react";
 import FormattedAiText from "@/components/FormattedAiText";
+import { fetchLaws, ragAskRouted } from "@/lib/userApi";
 
 const RAG_API = process.env.NEXT_PUBLIC_RAG_API || "http://localhost:8000";
 const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:4000";
@@ -48,6 +50,9 @@ export default function AiLegalChatPage() {
     const [isTyping, setIsTyping] = useState(false);
     const [selectedImage, setSelectedImage] = useState<string | null>(null);
     const [imagePreview, setImagePreview] = useState<string | null>(null);
+    const [selectedLawIds, setSelectedLawIds] = useState<string[]>([]);
+    const [availableLaws, setAvailableLaws] = useState<{ id: string; label: string; domain: string }[]>([]);
+    const [showLawFilter, setShowLawFilter] = useState(false);
     const fileInputRef = useRef<HTMLInputElement>(null);
     const messagesEndRef = useRef<HTMLDivElement>(null);
 
@@ -83,6 +88,10 @@ export default function AiLegalChatPage() {
             const fallbackId = `chat_${Date.now()}`;
             chatIdRef.current = fallbackId;
         }
+
+        fetchLaws().then(data => {
+            if (data?.laws) setAvailableLaws(data.laws);
+        }).catch(() => {});
     }, []);
 
     // Persist to localStorage whenever messages change
@@ -134,10 +143,11 @@ export default function AiLegalChatPage() {
 
     const analyzeImage = async (imageBase64: string) => {
         const now = new Date().toISOString();
-        const msgId = Date.now() + 1;
+        const userId = Date.now();
+        const msgId = userId + 1;
 
         setMessages(prev => [...prev, {
-            id: Date.now(), sender: "user", text: "📷 Uploaded a screenshot for analysis", timestamp: now
+            id: userId, sender: "user", text: "📷 Uploaded a screenshot for analysis", timestamp: now
         }]);
         setMessages(prev => [...prev, {
             id: msgId, sender: "ai", text: "", timestamp: new Date().toISOString(),
@@ -192,14 +202,39 @@ export default function AiLegalChatPage() {
         if (!q || isTyping) return;
         setInput("");
         const now = new Date().toISOString();
-        setMessages(prev => [...prev, { id: Date.now(), sender: "user", text: q, timestamp: now }]);
+        const userId = Date.now();
+        const msgId = userId + 1;
+        setMessages(prev => [...prev, { id: userId, sender: "user", text: q, timestamp: now }]);
         setIsTyping(true);
 
-        const msgId = Date.now() + 1;
         setMessages(prev => [...prev, {
             id: msgId, sender: "ai", text: "", timestamp: new Date().toISOString(),
             sections: [], ikResults: [],
         }]);
+
+        if (selectedLawIds.length > 0) {
+            try {
+                const data = await ragAskRouted(q, selectedLawIds, 5);
+                setMessages(prev => prev.map(m =>
+                    m.id === msgId ? {
+                        ...m,
+                        text: data.ai_answer,
+                        sections: data.results.map(r => ({
+                            document: r.law_label,
+                            section_number: parseInt(r.provision_number) || 0,
+                            title: r.title,
+                        })),
+                    } : m
+                ));
+            } catch {
+                setMessages(prev => prev.map(m =>
+                    m.id === msgId ? { ...m, text: "Routed AI search failed. Ensure the RAG server is running." } : m
+                ));
+            } finally {
+                setIsTyping(false);
+            }
+            return;
+        }
 
         // Build conversation history from previous messages
         const history = messages
@@ -303,6 +338,55 @@ export default function AiLegalChatPage() {
                     </button>
                 )}
             </div>
+
+            {/* ── Law Filter Bar ── */}
+            {availableLaws.length > 0 && (
+                <div className="shrink-0 border-b" style={{ backgroundColor: THEME_SOFT, borderColor: THEME_BORDER }}>
+                    <button
+                        onClick={() => setShowLawFilter(!showLawFilter)}
+                        className="flex items-center gap-2 px-4 py-2 w-full text-xs font-medium"
+                        style={{ color: THEME_DARK }}
+                    >
+                        <Filter size={13} />
+                        {selectedLawIds.length > 0
+                            ? `Filtered by ${selectedLawIds.length} law${selectedLawIds.length > 1 ? 's' : ''}`
+                            : "Search across all laws"}
+                        <ChevronDown size={12} className={`ml-auto transition-transform ${showLawFilter ? 'rotate-180' : ''}`} />
+                    </button>
+                    {showLawFilter && (
+                        <div className="px-3 pb-3 flex flex-wrap gap-1.5 max-h-40 overflow-y-auto">
+                            {availableLaws.map(law => {
+                                const active = selectedLawIds.includes(law.id);
+                                return (
+                                    <button
+                                        key={law.id}
+                                        onClick={() => setSelectedLawIds(prev =>
+                                            active ? prev.filter(id => id !== law.id) : [...prev, law.id]
+                                        )}
+                                        className={`px-2.5 py-1 rounded-full text-[10px] font-medium border transition-all ${
+                                            active
+                                                ? 'text-white border-transparent'
+                                                : 'bg-white text-gray-600 hover:bg-gray-50'
+                                        }`}
+                                        style={active ? { backgroundColor: THEME_COLOR } : { borderColor: THEME_BORDER }}
+                                        title={law.label}
+                                    >
+                                        {law.id}
+                                    </button>
+                                );
+                            })}
+                            {selectedLawIds.length > 0 && (
+                                <button
+                                    onClick={() => setSelectedLawIds([])}
+                                    className="px-2.5 py-1 rounded-full text-[10px] font-medium border border-red-200 text-red-400 hover:bg-red-50"
+                                >
+                                    Clear all
+                                </button>
+                            )}
+                        </div>
+                    )}
+                </div>
+            )}
 
             {/* ── Chat Body ── */}
             <div className="flex-1 overflow-y-auto min-h-0" style={{ backgroundColor: THEME_PANEL }}>

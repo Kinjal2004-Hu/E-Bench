@@ -269,6 +269,110 @@ export async function fetchDailyLawSections(): Promise<DailyLawResponse> {
   return res.json();
 }
 
+// ── Per-Law FAISS Index API (Phase 6+) ───────────────────────────────────
+
+export type LawEntry = {
+  id: string;
+  label: string;
+  domain: string;
+  provision_label: string;
+  provision_count: number;
+};
+
+export type LawListResponse = {
+  total_laws: number;
+  total_provisions: number;
+  embedding_model: string;
+  laws: LawEntry[];
+};
+
+export type LawProvision = {
+  number: string;
+  title: string;
+};
+
+export type LawDetailResponse = LawEntry & {
+  strategy?: string;
+  provisions?: LawProvision[];
+};
+
+export type ProvisionDetailResponse = {
+  law_id: string;
+  law_label: string;
+  provision_label: string;
+  number: string;
+  title: string;
+  full_text?: string;
+  sub_clauses: { id: string; text: string; type: string; level: number }[];
+  examples: { id: string; text: string }[];
+  summary?: string;
+  plain_english?: string;
+  keywords: string[];
+  legal_topics: string[];
+  related: string[];
+};
+
+export type RoutedAskResult = {
+  law_id: string;
+  law_label: string;
+  provision_number: string;
+  title: string;
+  score: number;
+};
+
+export type RoutedAskResponse = {
+  question: string;
+  ai_answer: string;
+  law_ids: string[];
+  results: RoutedAskResult[];
+  total_found: number;
+  model_used: string;
+};
+
+export async function fetchLaws(): Promise<LawListResponse> {
+  const res = await fetch(`${RAG_BASE}/laws`);
+  if (!res.ok) {
+    let msg = `Failed to fetch laws (${res.status})`;
+    try { const d = await res.json(); msg = d.detail || msg; } catch { /* no-op */ }
+    throw new Error(msg);
+  }
+  return res.json();
+}
+
+export async function fetchLawById(lawId: string, includeProvisions = false): Promise<LawDetailResponse> {
+  const res = await fetch(`${RAG_BASE}/laws/${lawId}?include_provisions=${includeProvisions}`);
+  if (!res.ok) {
+    let msg = `Failed to fetch law ${lawId} (${res.status})`;
+    try { const d = await res.json(); msg = d.detail || msg; } catch { /* no-op */ }
+    throw new Error(msg);
+  }
+  return res.json();
+}
+
+export async function fetchProvisionDetail(lawId: string, provisionNumber: string): Promise<ProvisionDetailResponse> {
+  const res = await fetch(`${RAG_BASE}/laws/${lawId}/provisions/${provisionNumber}`);
+  if (!res.ok) {
+    let msg = `Failed to fetch provision (${res.status})`;
+    try { const d = await res.json(); msg = d.detail || msg; } catch { /* no-op */ }
+    throw new Error(msg);
+  }
+  return res.json();
+}
+
+export async function ragAskRouted(question: string, lawIds: string[], top_k = 5): Promise<RoutedAskResponse> {
+  const res = await fetch(`${RAG_BASE}/ask/routed`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ question, law_ids: lawIds, top_k }),
+  });
+  if (!res.ok) {
+    let msg = `Routed RAG request failed (${res.status})`;
+    try { const d = await res.json(); msg = d.detail || msg; } catch { /* no-op */ }
+    throw new Error(msg);
+  }
+  return res.json();
+}
+
 // ── Legal News & Microlearning Progress ──────────────────────────────────
 
 export type LegalNewsItem = {
