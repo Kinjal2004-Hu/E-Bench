@@ -24,6 +24,7 @@ import {
   Newspaper,
   ShieldCheck,
   MessageSquareText,
+  FileSignature,
 } from "lucide-react";
 import { useState } from "react";
 
@@ -37,6 +38,8 @@ const NAV = [
   { label: "Case Analyzer",          href: "/lawyer-dashboard/case-analyzer",   icon: Brain },
   { label: "Risk Analyzer",          href: "/lawyer-dashboard/risk-analyzer",   icon: ShieldCheck },
   { label: "Contracts",              href: "/lawyer-dashboard/contracts",       icon: FileText },
+  { label: "Law Browser",            href: "/laws",                             icon: Scale },
+  { label: "Document Drafting",      href: "/lawyer-dashboard/document-draft", icon: FileSignature },
   { label: "Legal News",             href: "/lawyer-dashboard/legal-news",     icon: Newspaper },
   { label: "Community Forum",        href: "/lawyer-dashboard/community",     icon: Users },
   { label: "Downloads",              href: "/downloads",                      icon: Download },

@@ -303,6 +303,8 @@ export type ProvisionDetailResponse = {
   number: string;
   title: string;
   full_text?: string;
+  section_number?: string;
+  page?: number;
   sub_clauses: { id: string; text: string; type: string; level: number }[];
   examples: { id: string; text: string }[];
   summary?: string;
@@ -310,6 +312,19 @@ export type ProvisionDetailResponse = {
   keywords: string[];
   legal_topics: string[];
   related: string[];
+  doctrines?: string;
+  use_cases?: string;
+  important_concepts?: string;
+};
+
+export type ProvisionEnrichResponse = {
+  law_id: string;
+  provision_number: string;
+  doctrines?: string;
+  use_cases?: string;
+  important_concepts?: string;
+  model_used: string;
+  cached: boolean;
 };
 
 export type RoutedAskResult = {
@@ -353,6 +368,20 @@ export async function fetchProvisionDetail(lawId: string, provisionNumber: strin
   const res = await fetch(`${RAG_BASE}/laws/${lawId}/provisions/${provisionNumber}`);
   if (!res.ok) {
     let msg = `Failed to fetch provision (${res.status})`;
+    try { const d = await res.json(); msg = d.detail || msg; } catch { /* no-op */ }
+    throw new Error(msg);
+  }
+  return res.json();
+}
+
+export async function enrichProvision(lawId: string, provisionNumber: string, force = false): Promise<ProvisionEnrichResponse> {
+  const res = await fetch(`${RAG_BASE}/laws/${lawId}/provisions/${provisionNumber}/enrich`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ force }),
+  });
+  if (!res.ok) {
+    let msg = `Failed to enrich provision (${res.status})`;
     try { const d = await res.json(); msg = d.detail || msg; } catch { /* no-op */ }
     throw new Error(msg);
   }

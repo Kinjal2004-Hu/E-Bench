@@ -5,7 +5,8 @@ import { useRouter } from "next/navigation"
 import {
     Scale, FileText, AlertTriangle, Newspaper, Flame,
     BookOpen, ChevronRight, Clock, Gavel,
-    CheckCircle, Sparkles, MessageSquare, Maximize2, X, LogOut
+    CheckCircle, Sparkles, MessageSquare, Maximize2, X, LogOut,
+    FileSignature,
 } from "lucide-react"
 import {
     fetchDailyLawSections,
@@ -349,6 +350,15 @@ export default function Dashboard() {
                         <div className="eb-tool-name">Contract Risk Analyzer</div>
                         <div className="eb-tool-desc">Detect hidden risks, unfair clauses, and legal loopholes. Get a plain-English risk score.</div>
                         <div className="eb-tool-link">Review a Contract <ChevronRight size={12} /></div>
+                    </button>
+                    <button type="button" className="eb-tool-card" onClick={() => openTool('/tools/document-draft')}>
+                        <div className="eb-tool-top-row">
+                            <div className="eb-tool-icon-box"><FileSignature size={18} /></div>
+                            <span className="eb-tool-tag">Document Drafting</span>
+                        </div>
+                        <div className="eb-tool-name">Legal Document Drafting</div>
+                        <div className="eb-tool-desc">Draft legal letters, notices, affidavits, and rent agreements with a guided step-by-step interview.</div>
+                        <div className="eb-tool-link">Draft a Document <ChevronRight size={12} /></div>
                     </button>
                     <button type="button" className="eb-tool-card" onClick={() => openTool('/tools/case-summarizer')}>
                         <div className="eb-tool-top-row">

@@ -1,4 +1,4 @@
-export type LessonStatus = "completed" | "in-progress";
+export type LessonStatus = "completed" | "in-progress" | "locked";
 export type LessonDifficulty = "Beginner" | "Intermediate";
 
 export type MicroLessonTopic = {

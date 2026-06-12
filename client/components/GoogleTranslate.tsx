@@ -9,14 +9,15 @@ declare global {
   }
 }
 
-const origRemoveChild = Node.prototype.removeChild;
-Node.prototype.removeChild = function (child: Node) {
-  if (child.parentNode !== this) return child;
-  return origRemoveChild.call(this, child);
-};
-
 export default function GoogleTranslate() {
   useEffect(() => {
+    if (typeof Node === "undefined") return;
+    const origRemoveChild = Node.prototype.removeChild;
+    Node.prototype.removeChild = function (this: Node, child: Node) {
+      if (child.parentNode !== this) return child;
+      return origRemoveChild.call(this, child);
+    } as unknown as typeof Node.prototype.removeChild;
+
     if (document.getElementById("google-translate-init")) return;
 
     window.googleTranslateElementInit = () => {

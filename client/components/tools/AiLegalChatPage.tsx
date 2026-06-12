@@ -212,6 +212,25 @@ export default function AiLegalChatPage() {
             sections: [], ikResults: [],
         }]);
 
+        // ── Drafting Intent Detection ──
+        const DRAFT_INTENT = /\b(draft|write|create|prepare|generate)\b.*\b(letter|notice|affidavit|agreement|document|eviction|complaint|will|deed|contract|petition|application|appeal)\b/i;
+        if (DRAFT_INTENT.test(q)) {
+            setMessages(prev => prev.map(m =>
+                m.id === msgId ? { ...m, text:
+                    "I can help you draft that! \uD83D\uDCDD\n\n" +
+                    "You can use our **Document Drafting Tool** for a guided step-by-step experience:\n" +
+                    "\u2022 Answer simple questions one at a time\n" +
+                    "\u2022 Preview and edit the final document\n" +
+                    "\u2022 Download as a formatted PDF\n\n" +
+                    "\uD83D\uDC49 Click the link below to open the drafting tool:\n" +
+                    "**[Open Document Drafting](/tools/document-draft)**\n\n" +
+                    "Alternatively, tell me what you need and I'll draft the text right here in the chat."
+                } : m
+            ));
+            setIsTyping(false);
+            return;
+        }
+
         if (selectedLawIds.length > 0) {
             try {
                 const data = await ragAskRouted(q, selectedLawIds, 5);

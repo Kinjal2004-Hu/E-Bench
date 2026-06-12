@@ -4,7 +4,7 @@ import { useState } from "react"
 import {
     Bell, Search, Scale, FileText, LayoutDashboard, BookOpen,
   Download, Settings, User, ChevronLeft, ChevronRight as ChevronR,
-    Mail, Sun, Moon, Bot, Plus, GraduationCap
+    Mail, Sun, Moon, Bot, Plus, GraduationCap, FileSignature
 } from "lucide-react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
@@ -325,6 +325,8 @@ const mainNav = [
     { label: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
     { label: "Cases", href: "/cases", icon: Scale },
     { label: "Contracts", href: "/contracts", icon: FileText },
+    { label: "Law Browser", href: "/laws", icon: BookOpen },
+    { label: "Drafting", href: "/tools/document-draft", icon: FileSignature },
     { label: "Microlearning", href: "/microlearning", icon: GraduationCap },
     { label: "AI Chatbot", href: "/chat", icon: Bot },
     { label: "My Chats", href: "/chats", icon: BookOpen },

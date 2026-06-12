@@ -259,7 +259,7 @@ export default function LawAwarenessPage() {
                 </button>
             </div>
 
-            <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
+            <Tabs defaultValue="rights" value={activeTab} onValueChange={setActiveTab} className="w-full">
                 <TabsList className="mb-6">
                     <TabsTrigger value="rights" className="flex items-center gap-2">
                         <Landmark size={15} /> Know Your Rights
