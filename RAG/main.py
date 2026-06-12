@@ -1019,8 +1019,8 @@ def build_case_summary(raw_html: str, title: str) -> str:
         model=LLM_MODEL,
         messages=messages,
         temperature=0,
-        max_tokens=16384,
-        extra_body={"chat_template_kwargs": {"enable_thinking": True}, "reasoning_budget": 16384}
+        max_tokens=8192,
+        extra_body={"chat_template_kwargs": {"enable_thinking": True}, "reasoning_budget": 4096}
     )
     return (response.choices[0].message.content or "").strip()
 
@@ -1182,13 +1182,22 @@ class CaseAskResponse(BaseModel):
     model_used: str
 
 
-SYSTEM_PROMPT = """
-You are an expert Indian legal assistant.
+SYSTEM_PROMPT = """You are an expert Indian legal assistant. Answer concisely and precisely.
 
-Use the provided legal sections and any Indian Kanoon case-law context.
-
-Explain the law clearly, cite Act and Section numbers, and reference
-relevant case names when available.
+RULES:
+1. Keep answers under 2000 characters unless the user explicitly asks for detail.
+2. Never repeat the same section or point. Each law/section must appear ONCE.
+3. Use this structure:
+   - **Summary** (1-2 sentences: direct answer)
+   - **Your Rights** (bullet list of specific rights)
+   - **Relevant Laws** (table: Act | Section | What it says — include 3-7 laws when multiple apply)
+   - **Steps to Take** (numbered actionable steps, max 5)
+4. Cite Act name + Section number. Example: "BNS Section 189" not "Section 189 of the Bharatiya Nyaya Sanhita".
+5. Reference max 2 case names if directly relevant. Skip if uncertain.
+6. Do NOT list every possible CrPC/BNS section. Only cite sections directly relevant to the user's question.
+7. If the user asks about burden of proof, explain it in 2-3 sentences — do not list BSA sections 112-119 individually.
+8. For tenant-tenant or consumer or property matters, cite laws from ALL relevant domains (criminal, civil, contractual) — not just one.
+9. End with a one-line disclaimer: "This is general legal information, not legal advice. Consult a lawyer for your specific situation."
 """
 
 
@@ -1396,24 +1405,60 @@ async def ask(body: AskRequest):
     loop = asyncio.get_event_loop()
 
     ranked_task = loop.run_in_executor(None, retrieve, body.question, body.top_k)
+    multi_task = loop.run_in_executor(None, multi_law_retrieve, body.question, 7)
     ik_task = loop.run_in_executor(None, ik_search, body.question, 0, 5)
 
-    ranked, ik_raw = await asyncio.gather(ranked_task, ik_task)
-    print(f"[ask] retrieved {len(ranked)} sections, {len(ik_raw)} ik results", flush=True)
-    logger.info("[POST /ask] retrieval done | sections=%d | ik_results=%d | elapsed=%.3fs",
-                len(ranked), len(ik_raw), time.perf_counter() - req_start)
+    ranked, multi_results, ik_raw = await asyncio.gather(ranked_task, multi_task, ik_task)
+    print(f"[ask] retrieved {len(ranked)} legacy + {len(multi_results)} multi-law sections, {len(ik_raw)} ik results", flush=True)
+    logger.info("[POST /ask] retrieval done | legacy=%d | multi_law=%d | ik_results=%d | elapsed=%.3fs",
+                len(ranked), len(multi_results), len(ik_raw), time.perf_counter() - req_start)
 
     sections = [r["section"] for r in ranked]
 
-    ai_answer = await loop.run_in_executor(None, ask_llm, body.question, sections, ik_raw)
+    context = ""
+    for s in sections:
+        sec_text = s.get("full_text") or " ".join(sc["text"] for sc in s.get("sub_clauses", []))
+        context += f"\n{s['document']} Section {s['section']} — {s['title']}\n{sec_text}\n"
+    for r in multi_results:
+        lid = r["law_id"]
+        data = PER_LAW_INDEXES.get(lid, {})
+        corpus = data.get("corpus", {})
+        provisions = corpus.get("provisions", [])
+        prov = next((p for p in provisions if str(p.get("number", "")) == r["provision_number"]), None)
+        text = (prov.get("full_text") or "")[:2000] if prov else ""
+        context += f"\n{r['law_label']} {r['provision_label']} {r['provision_number']} — {r['title']}\n{text}\n"
+    if ik_raw:
+        context += "\n--- Indian Kanoon Case Law ---\n"
+        for ik in ik_raw:
+            context += f"\n[{ik['title']}]\n{ik.get('headline', '')}\n"
+
+    messages = [{"role": "system", "content": SYSTEM_PROMPT}]
+    for h in (body.history or []):
+        role = "user" if h.get("role") == "user" else "assistant"
+        messages.append({"role": role, "content": h.get("content", "")})
+    messages.append({"role": "user", "content": f"Question: {body.question}\n\nRelevant law:\n{context}"})
+
+    logger.info("[POST /ask] → NVIDIA | model=%s | context_chars=%d", LLM_MODEL, len(context))
+    t_llm = time.perf_counter()
+    try:
+        completion = client.chat.completions.create(
+            model=LLM_MODEL,
+            messages=messages,
+            temperature=0,
+            max_tokens=4096,
+        )
+        ai_answer = completion.choices[0].message.content or ""
+    except Exception as e:
+        logger.error("[POST /ask] ← NVIDIA ERROR | %s", e)
+        ai_answer = f"Error: {str(e)}"
+    elapsed_llm = time.perf_counter() - t_llm
+
     print(f"[ask] ai_answer length={len(ai_answer)} preview='{ai_answer[:200]}'", flush=True)
-    logger.info("[POST /ask] response sent | answer_len=%d | total_elapsed=%.3fs",
-                len(ai_answer), time.perf_counter() - req_start)
-    logger.info("[POST /ask] answer preview: %s", _truncate(ai_answer, 300))
+    logger.info("[POST /ask] response sent | answer_len=%d | llm_elapsed=%.3fs | total_elapsed=%.3fs",
+                len(ai_answer), elapsed_llm, time.perf_counter() - req_start)
     logger.info("─" * 80)
 
     results = to_search_results(ranked)
-
     ik_models = [IKResult(doc_id=d["doc_id"], title=d["title"], headline=d.get("headline", "")) for d in ik_raw]
 
     return AskResponse(
@@ -1434,15 +1479,24 @@ def ask_stream(body: AskRequest):
                 _truncate(body.question, 160), body.top_k, len(body.history or []))
 
     ranked = retrieve(body.question, body.top_k)
+    multi_results = multi_law_retrieve(body.question, 7)
     sections = [r["section"] for r in ranked]
     ik_raw = ik_search(body.question, max_results=5)
-    logger.info("[POST /ask/stream] retrieval done | sections=%d | ik_results=%d | elapsed=%.3fs",
-                len(ranked), len(ik_raw), time.perf_counter() - req_start)
+    logger.info("[POST /ask/stream] retrieval done | legacy=%d | multi_law=%d | ik_results=%d",
+                len(ranked), len(multi_results), len(ik_raw))
 
     context = ""
     for s in sections:
         sec_text = s.get("full_text") or " ".join(sc["text"] for sc in s.get("sub_clauses", []))
         context += f"\n{s['document']} Section {s['section']} — {s['title']}\n{sec_text}\n"
+    for r in multi_results:
+        lid = r["law_id"]
+        data = PER_LAW_INDEXES.get(lid, {})
+        corpus = data.get("corpus", {})
+        provisions = corpus.get("provisions", [])
+        prov = next((p for p in provisions if str(p.get("number", "")) == r["provision_number"]), None)
+        text = (prov.get("full_text") or "")[:2000] if prov else ""
+        context += f"\n{r['law_label']} {r['provision_label']} {r['provision_number']} — {r['title']}\n{text}\n"
     if ik_raw:
         context += "\n--- Indian Kanoon Case Law ---\n"
         for ik in ik_raw:
@@ -1456,6 +1510,8 @@ def ask_stream(body: AskRequest):
     messages.append({"role": "user", "content": f"Question: {body.question}\n\nRelevant law:\n{context}"})
 
     sections_meta = [{"document": s["document"], "section_number": s["section"], "title": s["title"], "snippet": (s.get("full_text") or "")[:400]} for s in sections]
+    for r in multi_results:
+        sections_meta.append({"document": r["law_label"], "section_number": r["provision_number"], "title": r["title"], "snippet": ""})
     ik_meta = [{"doc_id": d["doc_id"], "title": d["title"], "headline": d.get("headline", "")} for d in ik_raw]
 
     def event_stream():
@@ -1468,8 +1524,8 @@ def ask_stream(body: AskRequest):
                 model=LLM_MODEL,
                 messages=messages,
                 temperature=0,
-                max_tokens=16384,
-                extra_body={"chat_template_kwargs": {"enable_thinking": True}, "reasoning_budget": 16384},
+                max_tokens=4096,
+                extra_body={"chat_template_kwargs": {"enable_thinking": True}, "reasoning_budget": 4096},
                 stream=True
             )
             for chunk in completion:
@@ -1790,8 +1846,8 @@ def tool_contract_risk(body: ToolContractRiskRequest):
             model=LLM_MODEL,
             messages=messages,
             temperature=0,
-            max_tokens=16384,
-            extra_body={"chat_template_kwargs": {"enable_thinking": True}, "reasoning_budget": 16384}
+            max_tokens=4096,
+            extra_body={"chat_template_kwargs": {"enable_thinking": True}, "reasoning_budget": 2048}
         )
         llm_elapsed = time.perf_counter() - llm_start
         output = response.choices[0].message.content or ""
@@ -2062,8 +2118,8 @@ def ik_case_ask(doc_id: str, body: CaseAskRequest):
         model=LLM_MODEL,
         messages=messages,
         temperature=0,
-        max_tokens=16384,
-        extra_body={"chat_template_kwargs": {"enable_thinking": True}, "reasoning_budget": 16384}
+        max_tokens=4096,
+        extra_body={"chat_template_kwargs": {"enable_thinking": True}, "reasoning_budget": 2048}
     )
     answer = response.choices[0].message.content or ""
     return CaseAskResponse(
@@ -2467,6 +2523,23 @@ class ProvisionDetailResponse(BaseModel):
     legal_topics: List[str] = []
     related: List[str] = []
     cross_references: List[dict] = []
+    doctrines: Optional[str] = None
+    use_cases: Optional[str] = None
+    important_concepts: Optional[str] = None
+
+
+class ProvisionEnrichRequest(BaseModel):
+    force: bool = False
+
+
+class ProvisionEnrichResponse(BaseModel):
+    law_id: str
+    provision_number: str
+    doctrines: Optional[str] = None
+    use_cases: Optional[str] = None
+    important_concepts: Optional[str] = None
+    model_used: str
+    cached: bool
 
 
 class RoutedAskRequest(BaseModel):
@@ -2497,6 +2570,43 @@ def per_law_retrieve(law_id: str, query: str, top_k: int = 5) -> list:
         })
     results.sort(key=lambda x: -x["score"])
     return results[:top_k]
+
+
+def multi_law_retrieve(query: str, top_k: int = 10) -> list:
+    """Search ALL per-law FAISS indexes and return merged, deduplicated results."""
+    if not PER_LAW_INDEXES:
+        return []
+    q_emb = per_law_embed_model.encode([query], normalize_embeddings=True)
+    all_results = []
+    for lid, data in PER_LAW_INDEXES.items():
+        idx = data["index"]
+        meta = data["meta"]
+        corpus = data["corpus"]
+        search_k = min(top_k, idx.ntotal)
+        scores, indices = idx.search(q_emb, search_k)
+        for si, ii in enumerate(indices[0]):
+            if ii < 0 or ii >= len(meta):
+                continue
+            m = meta[ii]
+            prov_num = m.get("provision_number", "?")
+            all_results.append({
+                "law_id": lid,
+                "law_label": data["label"],
+                "provision_label": data.get("provision_label", "Section"),
+                "provision_number": prov_num,
+                "title": m.get("title", ""),
+                "page": m.get("page", 0),
+                "score": float(scores[0][si]),
+            })
+    all_results.sort(key=lambda x: -x["score"])
+    seen = set()
+    unique = []
+    for r in all_results:
+        key = (r["law_id"], r["provision_number"])
+        if key not in seen:
+            seen.add(key)
+            unique.append(r)
+    return unique[:top_k]
 
 
 @app.get("/laws", response_model=LawListResponse)
@@ -2567,6 +2677,150 @@ def get_provision(law_id: str, provision_number: str):
         legal_topics=(cur_entry or {}).get("legal_topics", []),
         related=(cur_entry or {}).get("related", []),
         cross_references=law_entry.get("cross_references", []),
+        doctrines=(cur_entry or {}).get("doctrines"),
+        use_cases=(cur_entry or {}).get("use_cases"),
+        important_concepts=(cur_entry or {}).get("important_concepts"),
+    )
+
+
+@app.post("/laws/{law_id}/provisions/{provision_number}/enrich", response_model=ProvisionEnrichResponse)
+def enrich_provision(law_id: str, provision_number: str, body: ProvisionEnrichRequest = ProvisionEnrichRequest()):
+    """On-demand Nemotron enrichment for doctrines, use_cases, important_concepts.
+    Results are cached into curated.json so subsequent calls are instant."""
+    req_start = time.perf_counter()
+    logger.info("[POST /laws/%s/provisions/%s/enrich] request | force=%s", law_id, provision_number, body.force)
+
+    if not MASTER_INDEX:
+        raise HTTPException(503, "Master index not loaded")
+    law_entry = next((l for l in MASTER_INDEX["laws"] if l["id"] == law_id), None)
+    if not law_entry:
+        raise HTTPException(404, f"Law '{law_id}' not found")
+    data = PER_LAW_INDEXES.get(law_id)
+    if not data:
+        raise HTTPException(404, f"Law '{law_id}' data not loaded")
+    corpus = data["corpus"]
+    provisions = corpus.get("provisions", [])
+    prov = next((p for p in provisions if str(p.get("number", "")) == provision_number), None)
+    if not prov:
+        raise HTTPException(404, f"Provision {provision_number} not found in {law_id}")
+
+    curated_data = data.get("curated", {})
+    curated_list = curated_data.get("curated", [])
+    cur_entry = next((c for c in curated_list if c.get("provision_number") == provision_number), None)
+
+    has_enrichment = cur_entry and (cur_entry.get("doctrines") or cur_entry.get("use_cases") or cur_entry.get("important_concepts"))
+    if has_enrichment and not body.force:
+        logger.info("[POST /laws/%s/provisions/%s/enrich] cache hit | returning cached", law_id, provision_number)
+        return ProvisionEnrichResponse(
+            law_id=law_id,
+            provision_number=provision_number,
+            doctrines=cur_entry.get("doctrines"),
+            use_cases=cur_entry.get("use_cases"),
+            important_concepts=cur_entry.get("important_concepts"),
+            model_used=LLM_MODEL,
+            cached=True,
+        )
+
+    provision_label = corpus.get("provision_label", "Section")
+    full_text = prov.get("full_text", "") or ""
+    title = prov.get("title", "")
+    summary = (cur_entry or {}).get("summary", "")
+    law_label = data["label"]
+
+    prompt = f"""You are an expert Indian legal scholar. Analyze the following statutory provision and provide three things in plain English:
+
+1. **Doctrines**: What legal doctrines or principles does this provision establish or relate to?
+2. **Use Cases**: In what real-world legal situations would this provision be invoked? Give 2-3 specific examples.
+3. **Important Concepts**: What are the key legal concepts or definitions a law student or practitioner must understand from this provision?
+
+Be concise (2-3 sentences each). Use plain English, not legalese.
+
+Law: {law_label}
+{provision_label} {provision_number}: {title}
+{summary}
+Full text: {full_text[:3000]}"""
+
+    messages = [
+        {"role": "system", "content": "You are an expert Indian legal scholar. Respond only with the three sections requested, clearly labeled."},
+        {"role": "user", "content": prompt},
+    ]
+
+    t_llm = time.perf_counter()
+    try:
+        completion = client.chat.completions.create(
+            model=LLM_MODEL,
+            messages=messages,
+            temperature=0.2,
+            max_tokens=1024,
+        )
+        raw = completion.choices[0].message.content or ""
+        elapsed = time.perf_counter() - t_llm
+        logger.info("[enrich] ← NVIDIA | elapsed=%.3fs | len=%d", elapsed, len(raw))
+    except Exception as e:
+        elapsed = time.perf_counter() - t_llm
+        logger.error("[enrich] ← NVIDIA ERROR after %.3fs | %s", elapsed, e)
+        raise HTTPException(502, f"LLM enrichment failed: {e}")
+
+    doctrines = ""
+    use_cases = ""
+    important_concepts = ""
+
+    for section in raw.split("\n"):
+        lower = section.lower().strip()
+        if lower.startswith("**doctrines") or lower.startswith("1.") or lower.startswith("doctrines:"):
+            doctrines = section.split(":", 1)[-1].strip().strip("*") if ":" in section else section.strip().strip("*").split(".", 1)[-1].strip()
+        elif lower.startswith("**use cases") or lower.startswith("2.") or lower.startswith("use cases:"):
+            use_cases = section.split(":", 1)[-1].strip().strip("*") if ":" in section else section.strip().strip("*").split(".", 1)[-1].strip()
+        elif lower.startswith("**important") or lower.startswith("3.") or lower.startswith("important concepts:"):
+            important_concepts = section.split(":", 1)[-1].strip().strip("*") if ":" in section else section.strip().strip("*").split(".", 1)[-1].strip()
+
+    if not doctrines and not use_cases and not important_concepts:
+        parts = raw.split("\n\n")
+        if len(parts) >= 3:
+            doctrines = parts[0].strip().strip("*").split(".", 1)[-1].strip()
+            use_cases = parts[1].strip().strip("*").split(".", 1)[-1].strip()
+            important_concepts = parts[2].strip().strip("*").split(".", 1)[-1].strip()
+        elif len(parts) == 2:
+            doctrines = parts[0].strip()
+            use_cases = parts[1].strip()
+
+    if cur_entry:
+        cur_entry["doctrines"] = doctrines
+        cur_entry["use_cases"] = use_cases
+        cur_entry["important_concepts"] = important_concepts
+    else:
+        new_entry = {
+            "provision_number": provision_number,
+            "summary": f"{provision_label} {provision_number}: {title}",
+            "plain_english": full_text[:500] if full_text else f"{provision_label} {provision_number}",
+            "keywords": [],
+            "legal_topics": [],
+            "related": [],
+            "doctrines": doctrines,
+            "use_cases": use_cases,
+            "important_concepts": important_concepts,
+        }
+        curated_list.append(new_entry)
+        curated_data["curated"] = curated_list
+
+    curated_path = DATA_DIR / law_id / "curated.json"
+    try:
+        curated_path.write_text(json.dumps(curated_data, indent=2, ensure_ascii=False), encoding="utf-8")
+        logger.info("[enrich] cached to %s", curated_path)
+    except Exception as e:
+        logger.error("[enrich] cache write error: %s", e)
+
+    total_elapsed = time.perf_counter() - req_start
+    logger.info("[enrich] done | total_elapsed=%.3fs", total_elapsed)
+
+    return ProvisionEnrichResponse(
+        law_id=law_id,
+        provision_number=provision_number,
+        doctrines=doctrines,
+        use_cases=use_cases,
+        important_concepts=important_concepts,
+        model_used=LLM_MODEL,
+        cached=False,
     )
 
 
@@ -2617,9 +2871,16 @@ async def ask_routed(body: RoutedAskRequest):
 
     messages = [
         {"role": "system", "content": (
-            "You are an expert Indian legal assistant. "
-            "Answer the question using the provided statutory provisions. "
-            "Cite the law name and section numbers.")},
+            "You are an expert Indian legal assistant. Answer concisely under 2000 characters.\n"
+            "Use this structure:\n"
+            "- **Summary** (1-2 sentences)\n"
+            "- **Your Rights** (bullet list)\n"
+            "- **Relevant Laws** (table: Act | Section | What it says — include 3-7 laws when multiple apply)\n"
+            "- **Steps to Take** (max 5)\n"
+            "Cite Act name + Section number. Never repeat a section. "
+            "For multi-domain matters, cite from ALL relevant domains (criminal, civil, contractual). "
+            "End with: 'This is general legal information, not legal advice. Consult a lawyer for your specific situation.'"
+        )},
         {"role": "user", "content": f"Question: {body.question}\n\nRelevant provisions:\n{context}"},
     ]
 
