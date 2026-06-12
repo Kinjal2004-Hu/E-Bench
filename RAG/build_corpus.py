@@ -45,6 +45,7 @@ from typing import Any, Dict, List, Optional, Tuple
 import pdfplumber
 
 RAG_DIR = Path(__file__).parent
+PDF_DIR = RAG_DIR / "PDFs"
 DATA_DIR = RAG_DIR / "data"
 DATA_DIR.mkdir(exist_ok=True)
 
@@ -736,7 +737,7 @@ STRATEGIES = {
 
 
 def extract_law(law: Dict[str, Any]) -> Dict[str, Any]:
-    pdf_path = RAG_DIR / law["pdf"]
+    pdf_path = PDF_DIR / law["pdf"]
     if not pdf_path.exists():
         return {
             "law_id": law["id"],

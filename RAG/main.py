@@ -74,12 +74,12 @@ from pymongo import MongoClient
 
 
 DOCUMENTS = {
-    "BNS": "BNS2023.pdf",
-    "BNSS": "BNSS2023.pdf",
-    "BSA": "BSA2023.pdf",
-    "Motor Vehicles Act": "MotorVehicleAct.pdf",
-    "Corporate Laws": "CorporateLaws.pdf",
-    "Securities Laws": "SecurityLaw.pdf"
+    "BNS": "PDFs/BNS2023.pdf",
+    "BNSS": "PDFs/BNSS2023.pdf",
+    "BSA": "PDFs/BSA2023.pdf",
+    "Motor Vehicles Act": "PDFs/MotorVehicleAct.pdf",
+    "Corporate Laws": "PDFs/CorporateLaws.pdf",
+    "Securities Laws": "PDFs/SecurityLaw.pdf"
 }
 
 LLM_MODEL = "nvidia/nemotron-3-super-120b-a12b"
