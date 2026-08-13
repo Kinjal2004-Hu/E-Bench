@@ -50,8 +50,9 @@ const TWILIO_PHONE_NUMBER = process.env.TWILIO_PHONE_NUMBER || '';
 const twilioClient = twilio(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN);
 
 const server = http.createServer(app);
+const ALLOWED_ORIGINS = (process.env.ALLOWED_ORIGINS || 'http://localhost:3000').split(',').map(s => s.trim());
 const io = new Server(server, {
-  cors: { origin: 'http://localhost:3000', methods: ['GET', 'POST'] }
+  cors: { origin: ALLOWED_ORIGINS.includes('*') ? true : ALLOWED_ORIGINS, methods: ['GET', 'POST'] }
 });
 
 // JWT authentication for Socket.IO connections
@@ -288,4 +289,5 @@ setInterval(() => {
 }, 30 * 60 * 1000);
 
 const PORT = process.env.PORT || 4000;
+app.get('/', (req, res) => res.status(200).json({ ok: true, service: 'ebench-backend' }));
 server.listen(PORT, () => console.log(`✓ Signaling server running on :${PORT}`));
