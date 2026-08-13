@@ -233,6 +233,12 @@ export default function DocumentDraftingPage() {
     const fileName = `${title.replace(/\s+/g, "_")}_${Date.now()}.pdf`;
     const url = generateStyledLegalPdf(fileName, title, generatedText, tpl.legalRefs, tpl.category);
     setPdfBlobUrl(url);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = fileName;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
   }
 
   function handleViewOnline() {

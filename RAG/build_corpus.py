@@ -174,7 +174,7 @@ LAW_REGISTRY: List[Dict[str, Any]] = [
         "label": "Bharatiya Nyaya Sanhita, 2023",
         "domain": "Criminal Law",
         "pdf": "BNS2023.pdf",
-        "strategy": "default_numbered",
+        "strategy": "gazette_two_column",
         "provision_label": "Section",
         "has_schedules": False,
     },
@@ -183,7 +183,7 @@ LAW_REGISTRY: List[Dict[str, Any]] = [
         "label": "Bharatiya Nagarik Suraksha Sanhita, 2023",
         "domain": "Criminal Procedure",
         "pdf": "BNSS2023.pdf",
-        "strategy": "default_numbered",
+        "strategy": "gazette_two_column",
         "provision_label": "Section",
         "has_schedules": False,
     },
@@ -192,7 +192,7 @@ LAW_REGISTRY: List[Dict[str, Any]] = [
         "label": "Bharatiya Sakshya Adhiniyam, 2023",
         "domain": "Evidence Law",
         "pdf": "BSA2023.pdf",
-        "strategy": "default_numbered",
+        "strategy": "gazette_two_column",
         "provision_label": "Section",
         "has_schedules": False,
     },
@@ -255,10 +255,189 @@ def is_continuation_line(line: str) -> bool:
     return False
 
 
+# ============================================================
+#  Strategy 6: gazette_two_column (BNS / BNSS / BSA gazettes)
+# ============================================================
+
+# Government gazette PDFs (e.g., BNS2023.pdf) use a two-column layout:
+#   - LEFT margin  (x0 < ~114) holds the section TITLE, wrapped over several
+#     short lines aligned vertically.
+#   - RIGHT column (x0 >= ~118) holds "NN. <body text>".
+# The body text has NO space glyphs — words are separated only by a slightly
+# wider gap between characters. We reconstruct words from character x-gaps:
+#   - intra-word gaps are tiny  (~0.0 – 0.7)
+#   - word-boundary gaps are larger (~0.95 – 3.8)
+# A gap threshold of 0.8 cleanly separates the two distributions.
+GAZETTE_MARGIN_X = 115.0   # chars with x0 < this are left margin/title
+GAZETTE_BODY_X = 116.0     # chars with x0 >= this are body text (body lines start at x0=117.6)
+GAZETTE_TITLE_RIGHT_X = 482.0  # chars with x0 > this are right margin/title (booklet outer edge; body wraps to x1 ~478)
+GAZETTE_WORD_GAP = 0.8     # char gap > this => word boundary
+
+
+def gazette_reconstruct_words(chars) -> str:
+    """Rebuild words from character x-positions, inserting a space where the
+    gap between consecutive characters exceeds GAZETTE_WORD_GAP."""
+    chars = sorted(chars, key=lambda c: c["x0"])
+    if not chars:
+        return ""
+    out = []
+    cur = chars[0]["text"]
+    prev_x1 = chars[0]["x1"]
+    for c in chars[1:]:
+        if c["x0"] - prev_x1 > GAZETTE_WORD_GAP:
+            out.append(cur)
+            cur = c["text"]
+        else:
+            cur += c["text"]
+        prev_x1 = c["x1"]
+    out.append(cur)
+    return " ".join(out).strip()
+
+
+GAZETTE_SECTION_RE = re.compile(r"^(\d{1,3}[A-Z]?)\.\s*(.*)$")
+GAZETTE_CHAPTER_RE = re.compile(r"^CHAPTER\s+([IVXLCM0-9A-Z]+)\s*$", re.IGNORECASE)
+GAZETTE_GAZETTE_RE = re.compile(r"THE\s+GAZETTE\s+OF\s+INDIA", re.IGNORECASE)
+# Footnote act-citations printed alone in the margin column (e.g. "30 of 2019.",
+# "2 of 2016.", "10 of 2017."). They are NOT part of section titles.
+GAZETTE_CITATION_RE = re.compile(r"^\d{1,3}\s+of\s+\d{4}\.?\s*$")
+
+
+def parse_gazette_two_column(pdf_path: Path, label: str) -> List[Dict[str, Any]]:
+    """NN. Title with margin title column(s) + squished body (BNS/BNSS/BSA).
+
+    The gazette is laid out as a booklet: each page has a body column
+    (x0 in [118, ~460]) and a title margin column on the OUTER edge — on the
+    LEFT (x0 < 114) for even pages and on the RIGHT (x0 > 460) for odd pages.
+    For each visual line we split chars into title vs body columns, then
+    reconstruct words in each from char gaps. The title column accumulates the
+    current section's title; body lines accumulate its text. A body line
+    starting with 'NN.' begins a new section.
+    """
+    provisions: List[Dict[str, Any]] = []
+    current: Optional[Dict[str, Any]] = None
+    current_chapter: Optional[str] = None
+    title_buf: List[str] = []
+    body_buf: List[str] = []
+    pending: Optional[str] = None
+    pending_top: Optional[float] = None
+
+    def flush() -> None:
+        nonlocal current, title_buf, body_buf, pending, pending_top
+        if pending is not None:
+            title_buf.append(pending)
+            pending = None
+            pending_top = None
+        if current is not None:
+            current["title"] = clean_title(" ".join(title_buf))
+            current["full_text"] = " ".join(body_buf).strip()
+            if current.get("number"):
+                provisions.append(current)
+        current = None
+        title_buf = []
+        body_buf = []
+
+    with pdfplumber.open(pdf_path) as pdf:
+        for page_num, page in enumerate(pdf.pages):
+            chars = [c for c in (page.chars or []) if c.get("text", "").strip()]
+            if not chars:
+                continue
+
+            # Group chars into visual lines by their vertical position.
+            # Round to the nearest integer so a margin title line that sits
+            # <1pt away from its section header (e.g. "Grievous hurt." at
+            # top=513.5 vs "116." at 513.9) merges into the same group.
+            lines: Dict[float, List[dict]] = {}
+            for c in chars:
+                key = round(c["top"])
+                lines.setdefault(key, []).append(c)
+
+            for top in sorted(lines):
+                grp = sorted(lines[top], key=lambda c: c["x0"])
+                left_margin = [c for c in grp if c["x0"] < GAZETTE_MARGIN_X]
+                body = [c for c in grp if GAZETTE_BODY_X <= c["x0"] <= GAZETTE_TITLE_RIGHT_X]
+                right_margin = [c for c in grp if c["x0"] > GAZETTE_TITLE_RIGHT_X]
+
+                # Title = whichever margin column is populated (outer edge).
+                mtext = gazette_reconstruct_words(left_margin) or gazette_reconstruct_words(right_margin)
+                btext = gazette_reconstruct_words(body)
+
+                # Skip pure footnote act-citations in the margin column.
+                if mtext and GAZETTE_CITATION_RE.match(mtext):
+                    mtext = ""
+
+                # Skip page headers / footers.
+                if GAZETTE_GAZETTE_RE.search(btext):
+                    continue
+                if btext and all(ch in "_-~ " for ch in btext):
+                    continue
+                if not mtext and not btext:
+                    continue
+
+                # Chapter heading (in body column).
+                if btext and GAZETTE_CHAPTER_RE.match(btext):
+                    flush()
+                    current_chapter = f"CHAPTER {GAZETTE_CHAPTER_RE.match(btext).group(1).upper()}"
+                    continue
+
+                # Section header: body line starts with 'NN.'
+                m = GAZETTE_SECTION_RE.match(btext) if btext else None
+                if m and not re.match(r"^\d{4}", m.group(1)):
+                    # A pending margin title sitting just above this header
+                    # (e.g. "Stalking." at top=125 vs "78." at top=129)
+                    # belongs to the NEW section, not the previous one.
+                    prev_pending = None
+                    if pending is not None and pending_top is not None and (top - pending_top) <= 8:
+                        prev_pending = pending
+                        pending = None
+                        pending_top = None
+                    flush()
+                    current = {
+                        "number": m.group(1),
+                        "chapter": current_chapter,
+                        "title": "",
+                        "full_text": "",
+                        "page": page_num + 1,
+                    }
+                    title_buf = []
+                    if prev_pending:
+                        title_buf.append(prev_pending)
+                    if mtext:
+                        title_buf.append(mtext)
+                    body_buf = [m.group(2)] if m.group(2) else []
+                    continue
+
+                if current is not None:
+                    if btext:
+                        # Body line: any pending margin title flushes to the
+                        # current section's title.
+                        if pending is not None:
+                            title_buf.append(pending)
+                            pending = None
+                            pending_top = None
+                        body_buf.append(btext)
+                    elif mtext:
+                        # Margin-only line: the title is often offset a couple
+                        # of points from its section header (e.g. "Stalking."
+                        # at top=125 vs "78." at top=129). Hold it as pending;
+                        # if the next line is a section header, the new section
+                        # claims this title instead.
+                        if pending is not None:
+                            pending += " " + mtext
+                        else:
+                            pending = mtext
+                            pending_top = top
+                    # else: neither body nor margin (skipped earlier).
+
+    flush()
+    return [p for p in provisions if p.get("title") and p.get("number")]
+
+
 def clean_title(title: str) -> str:
-    """Strip trailing [Omitted.] markers, normalise whitespace."""
+    """Strip trailing [Omitted.] markers, footnote citations, normalise whitespace."""
     t = (title or "").strip()
     t = OMITTED_RE.sub("", t)
+    # Drop embedded footnote act-citations like "2 of 2016." / "30 of 2019."
+    t = re.sub(r"\b\d{1,3}\s+of\s+\d{4}\.?", "", t)
     t = re.sub(r"\s+", " ", t).strip(" .,-:")
     return t or "(untitled)"
 
@@ -733,6 +912,7 @@ STRATEGIES = {
     "constitution_with_parts": parse_constitution_with_parts,
     "multi_act_compilation": parse_multi_act_compilation,
     "rules_with_inline_clauses": parse_rules_with_inline_clauses,
+    "gazette_two_column": parse_gazette_two_column,
 }
 
 

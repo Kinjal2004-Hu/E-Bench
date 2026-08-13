@@ -1,0 +1,35 @@
+distinct tops (body): 53
+sample tops: [64.4, 68.0, 69.5, 84.0, 95.9, 107.9, 119.9, 131.9, 143.9, 155.9, 167.9, 185.9, 197.9, 209.9, 221.9, 233.9, 251.9, 267.0, 269.4, 281.9, 297.0, 309.0, 321.0, 339.0, 351.0, 363.0, 381.0, 393.0, 411.0, 423.0, 435.0, 452.9, 464.9, 476.9, 494.9, 506.9, 518.9, 536.9, 554.9, 566.9]
+
+=== top=84.0 chars=74 ===
+gap histogram (gap: count):
+   -0.5 : 1
+   -0.1 : 57
+   -0.0 : 1
+    1.4 : 1
+    1.7 : 13
+sequence:
+301.Whoever,withtheintentionofwoundingthefeelingsofanyperson,orofinsulting
+
+=== top=95.9 chars=78 ===
+gap histogram (gap: count):
+    0.0 : 60
+    1.9 : 17
+sequence:
+thereligionofanyperson,orwiththeknowledgethatthefeelingsofanypersonarelikelyto
+
+=== top=107.9 chars=76 ===
+gap histogram (gap: count):
+   -0.7 : 1
+    0.0 : 58
+    2.3 : 16
+sequence:
+bewounded,orthatthereligionofanypersonislikelytobeinsultedthereby,commitsany
+
+=== top=131.9 chars=74 ===
+gap histogram (gap: count):
+    0.0 : 57
+    3.0 : 5
+    3.1 : 11
+sequence:
+performanceoffuneralritesorasadepositoryfortheremainsofthedead,oroffersany

@@ -1,278 +1,1022 @@
 [
   {
     "idx": 0,
-    "number": "3",
-    "title": "Evidencemaybegiveninanysuitorproceedingoftheexistenceornon-existence Evidence may",
-    "page": 3
+    "number": "1",
+    "title": "Short title, application and commencement",
+    "page": 1
   },
   {
     "idx": 1,
-    "number": "9",
-    "title": "Factsnototherwiserelevantarerelevant— When facts",
-    "page": 7
+    "number": "2",
+    "title": "Definitions",
+    "page": 2
   },
   {
     "idx": 2,
-    "number": "10",
-    "title": "Insuitsinwhichdamagesareclaimed,anyfactwhichwillenabletheCourtto Facts tending",
-    "page": 7
+    "number": "3",
+    "title": "Evidence may be given of facts in issue and relevant",
+    "page": 3
   },
   {
     "idx": 3,
-    "number": "11",
-    "title": "Wherethequestionisastotheexistenceofanyrightorcustom,thefollowing Facts relevant",
-    "page": 7
+    "number": "4",
+    "title": "Relevancy of facts forming part of same transaction",
+    "page": 4
   },
   {
     "idx": 4,
-    "number": "12",
-    "title": "Factsshowingtheexistenceofanystateofmind,suchasintention,knowledge, Facts showing",
-    "page": 7
+    "number": "5",
+    "title": "Facts which are occasion, cause or effect of facts in issue or relevant facts",
+    "page": 4
   },
   {
     "idx": 5,
-    "number": "13",
-    "title": "Whenthereisaquestionwhetheranactwasaccidentalorintentional,ordone Facts bearing",
-    "page": 9
+    "number": "6",
+    "title": "Motive, preparation and previous or subsequent conduct",
+    "page": 4
   },
   {
     "idx": 6,
-    "number": "14",
-    "title": "Whenthereisaquestionwhetheraparticularactwasdone,theexistenceofany Existence of",
-    "page": 9
+    "number": "7",
+    "title": "Facts necessary to explain or introduce fact in issue or relevant facts",
+    "page": 6
   },
   {
     "idx": 7,
-    "number": "15",
-    "title": "Anadmissionisastatement,oralordocumentaryorcontainedinelectronicform, Admission",
-    "page": 9
+    "number": "8",
+    "title": "Things said or done by conspirator in reference to common design",
+    "page": 6
   },
   {
     "idx": 8,
-    "number": "20",
-    "title": "Oral admissions as to the contents of a document are not relevant, unless and When oral",
-    "page": 11
+    "number": "9",
+    "title": "When facts not otherwise relevant become relevant",
+    "page": 7
   },
   {
     "idx": 9,
-    "number": "21",
-    "title": "Incivilcasesnoadmissionisrelevant,ifitismadeeitheruponanexpresscondition Admissions in",
-    "page": 11
+    "number": "10",
+    "title": "Facts tending to determine amount are relevant in suits for damages",
+    "page": 7
   },
   {
     "idx": 10,
-    "number": "22",
-    "title": "Aconfessionmadebyanaccusedpersonisirrelevantinacriminalproceeding,if Confession",
-    "page": 11
+    "number": "11",
+    "title": "Facts relevant custom is in question",
+    "page": 7
   },
   {
     "idx": 11,
-    "number": "32",
-    "title": "WhentheCourthastoformanopinionastoalawofanycountry,anystatement Relevancy of",
-    "page": 15
+    "number": "12",
+    "title": "Facts showing existence of state of mind, or of body or bodily feeling",
+    "page": 7
   },
   {
     "idx": 12,
-    "number": "33",
-    "title": "Whenanystatementofwhichevidenceisgivenformspartofalongerstatement, What evidence",
-    "page": 15
+    "number": "13",
+    "title": "Facts bearing whether act was accidental or intentional",
+    "page": 9
   },
   {
     "idx": 13,
-    "number": "34",
-    "title": "Theexistenceofanyjudgment,orderordecreewhichbylawpreventsanyCourt Previous",
-    "page": 15
+    "number": "14",
+    "title": "Existence of course of business when relevant",
+    "page": 9
   },
   {
     "idx": 14,
-    "number": "36",
-    "title": "Judgments,ordersordecreesotherthanthosementionedinsection35arerelevant Relevancy and",
-    "page": 15
+    "number": "15",
+    "title": "Admission defined",
+    "page": 9
   },
   {
     "idx": 15,
-    "number": "40",
-    "title": "Facts, not otherwise relevant, are relevant if they support or are inconsistent Facts bearing",
-    "page": 17
+    "number": "16",
+    "title": "Admission by party to proceeding or his agent",
+    "page": 9
   },
   {
     "idx": 16,
-    "number": "42",
-    "title": "WhentheCourthastoformanopinionastotheexistenceofanygeneralcustom Opinion as to",
-    "page": 17
+    "number": "17",
+    "title": "Admissions by persons whose position must be proved as against party to suit",
+    "page": 10
   },
   {
     "idx": 17,
-    "number": "43",
-    "title": "WhentheCourthastoformanopinionasto— Opinion as to",
-    "page": 17
+    "number": "18",
+    "title": "Admissions by expressly referred to by party to suit",
+    "page": 10
   },
   {
     "idx": 18,
-    "number": "50",
-    "title": "In civil cases, the fact that the character of any person is such as to affect the Character as",
-    "page": 19
+    "number": "19",
+    "title": "Proof of against persons making them, and by or on their behalf",
+    "page": 10
   },
   {
     "idx": 19,
-    "number": "51",
-    "title": "NofactofwhichtheCourtwilltakejudicialnoticeneedbeproved. Fact judicially",
-    "page": 19
+    "number": "20",
+    "title": "When oral admissions as to contents of documents are relevant",
+    "page": 11
   },
   {
     "idx": 20,
-    "number": "59",
-    "title": "Documentsshallbeprovedbyprimaryevidenceexceptinthecaseshereinafter Proof of",
-    "page": 21
+    "number": "21",
+    "title": "Admissions in civil cases when relevant",
+    "page": 11
   },
   {
     "idx": 21,
-    "number": "69",
-    "title": "The admission of a party to an attested document of its execution by himself Admission of",
-    "page": 25
+    "number": "22",
+    "title": "Confession caused by inducement, threat, coercion or irrelevant in criminal proceeding",
+    "page": 11
   },
   {
     "idx": 22,
-    "number": "70",
-    "title": "Iftheattestingwitnessdeniesordoesnotrecollecttheexecutionofthedocument, Proof when",
-    "page": 25
+    "number": "23",
+    "title": "Confession to police officer",
+    "page": 11
   },
   {
     "idx": 23,
-    "number": "71",
-    "title": "Anattesteddocumentnotrequiredbylawtobeattestedmaybeprovedasifit Proof of",
-    "page": 25
+    "number": "24",
+    "title": "Consideration of proved confession affecting person making it and others jointly under trial for same offence",
+    "page": 12
   },
   {
     "idx": 24,
-    "number": "73",
-    "title": "Inordertoascertainwhetheradigitalsignatureisthatofthepersonbywhomit Proof as to",
-    "page": 25
+    "number": "25",
+    "title": "Admissions not conclusive proof, but may estop",
+    "page": 12
   },
   {
     "idx": 25,
-    "number": "75",
-    "title": "Everypublicofficerhavingthecustodyofapublicdocument,whichanyperson Certified",
-    "page": 25
+    "number": "26",
+    "title": "Cases in which statement of relevant fact by person who is dead or cannot be found, etc., is relevant",
+    "page": 12
   },
   {
     "idx": 26,
-    "number": "80",
-    "title": "The Court shall presume the genuineness of every document purporting to be Presumption",
-    "page": 27
+    "number": "27",
+    "title": "Relevancy of certain evidence for proving, in subsequent truth of facts therein stated",
+    "page": 14
   },
   {
     "idx": 27,
-    "number": "81",
-    "title": "The Court shall presume the genuineness of every electronic or digital record Presumption",
-    "page": 27
+    "number": "28",
+    "title": "Entries in books of account when relevant",
+    "page": 14
   },
   {
     "idx": 28,
-    "number": "82",
-    "title": "TheCourtshallpresumethatmapsorplanspurportingtobemadebytheauthority Presumption",
-    "page": 27
+    "number": "29",
+    "title": "Relevancy of entry in public record or an electronic record made in of duty",
+    "page": 14
   },
   {
     "idx": 29,
-    "number": "83",
-    "title": "TheCourtshallpresumethegenuinenessof,everybookpurportingtobeprinted Presumption as",
-    "page": 27
+    "number": "30",
+    "title": "Relevancy of statements in maps, charts and plans",
+    "page": 14
   },
   {
     "idx": 30,
-    "number": "84",
-    "title": "The Court shall presume that every document purporting to be a Presumption",
-    "page": 27
+    "number": "31",
+    "title": "Relevancy of statement as to fact of public nature contained in certain Acts or",
+    "page": 14
   },
   {
     "idx": 31,
-    "number": "85",
-    "title": "TheCourtshallpresumethateveryelectronicrecordpurportingtobeanagreement Presumption as",
-    "page": 27
+    "number": "32",
+    "title": "notifications. Relevancy of statements as to any law contained in law books including electronic or digital form",
+    "page": 15
   },
   {
     "idx": 32,
-    "number": "94",
-    "title": "Whenthetermsofacontract,orofagrant,orofanyotherdispositionofproperty, Evidence of",
-    "page": 29
+    "number": "33",
+    "title": "What evidence when statement forms part of a conversation, document, record, book or series of letters or papers",
+    "page": 15
   },
   {
     "idx": 33,
-    "number": "97",
-    "title": "Whenlanguageusedinadocumentisplaininitself,andwhenitappliesaccurately Exclusion of",
-    "page": 31
+    "number": "34",
+    "title": "Previous relevant to bar a second suit or trial",
+    "page": 15
   },
   {
     "idx": 34,
-    "number": "98",
-    "title": "Whenlanguageusedinadocumentisplaininitself,butisunmeaninginreference Evidence as to",
-    "page": 31
+    "number": "35",
+    "title": "Relevancy of certain judgments in probate, etc., jurisdiction",
+    "page": 15
   },
   {
     "idx": 35,
-    "number": "100",
-    "title": "Whenthelanguageusedappliespartlytoonesetofexistingfacts,andpartlyto Evidence as to",
-    "page": 31
+    "number": "36",
+    "title": "Relevancy and effect of judgments, orders or decrees, other than those mentioned in section 35",
+    "page": 15
   },
   {
     "idx": 36,
-    "number": "101",
-    "title": "Evidence may be given to show the meaning of illegible or not commonly Evidence as to",
-    "page": 31
+    "number": "37",
+    "title": "Judgments, etc., other than those mentioned in sections 34, 35 relevant",
+    "page": 16
   },
   {
     "idx": 37,
-    "number": "103",
-    "title": "Nothing in this Chapter shall be taken to affect any of the provisions of the Saving of",
-    "page": 31
+    "number": "38",
+    "title": "Fraud or collusion in obtaining judgment, or incompetency of Court, may be proved",
+    "page": 16
   },
   {
     "idx": 38,
-    "number": "110",
-    "title": "Whenthequestioniswhetheramanisaliveordead,anditisshownthathewas Burden of",
-    "page": 33
+    "number": "39",
+    "title": "Opinions of experts",
+    "page": 16
   },
   {
     "idx": 39,
-    "number": "112",
-    "title": "When the question is whether persons are partners, landlord and tenant, or Burden of",
-    "page": 33
+    "number": "40",
+    "title": "Facts bearing upon opinions of experts",
+    "page": 17
   },
   {
     "idx": 40,
-    "number": "120",
-    "title": "Inaprosecutionforrapeundersub-section(2)ofsection64oftheBharatiya Presumption",
-    "page": 35
+    "number": "41",
+    "title": "Opinion as to handwriting and signature, when relevant",
+    "page": 17
   },
   {
     "idx": 41,
-    "number": "128",
-    "title": "No person who is or has been married, shall be compelled to disclose any Communications",
-    "page": 37
+    "number": "42",
+    "title": "Opinion as to general custom or right, when",
+    "page": 17
   },
   {
     "idx": 42,
-    "number": "131",
-    "title": "No Magistrate or police officer shall be compelled to say when he got any Information",
-    "page": 37
+    "number": "43",
+    "title": "Opinion as to usages, tenets, etc., when relevant",
+    "page": 17
   },
   {
     "idx": 43,
-    "number": "138",
-    "title": "An accomplice shall be a competent witness against an accused person; Accomplice",
-    "page": 39
+    "number": "44",
+    "title": "Opinion on relationship, when relevant",
+    "page": 18
   },
   {
     "idx": 44,
-    "number": "159",
-    "title": "When a witness whom it is intended to corroborate gives evidence of any Questions",
-    "page": 43
+    "number": "45",
+    "title": "Grounds of opinion, when relevant",
+    "page": 18
   },
   {
     "idx": 45,
-    "number": "163",
-    "title": "A witness may also testify to facts mentioned in any such document as is Testimony to",
+    "number": "46",
+    "title": "In civil cases character to prove conduct imputed, irrelevant",
+    "page": 18
+  },
+  {
+    "idx": 46,
+    "number": "47",
+    "title": "In criminal cases previous good character relevant",
+    "page": 18
+  },
+  {
+    "idx": 47,
+    "number": "48",
+    "title": "Evidence of character or previous sexual experience not relevant in",
+    "page": 18
+  },
+  {
+    "idx": 48,
+    "number": "49",
+    "title": "Previous bad character not relevant, except in reply",
+    "page": 18
+  },
+  {
+    "idx": 49,
+    "number": "50",
+    "title": "Character as affecting damages",
+    "page": 19
+  },
+  {
+    "idx": 50,
+    "number": "51",
+    "title": "Fact judicially noticeable need not be proved",
+    "page": 19
+  },
+  {
+    "idx": 51,
+    "number": "52",
+    "title": "Facts of which Court shall take judicial notice",
+    "page": 19
+  },
+  {
+    "idx": 52,
+    "number": "53",
+    "title": "Facts admitted need not be proved",
+    "page": 20
+  },
+  {
+    "idx": 53,
+    "number": "54",
+    "title": "Proof of facts by oral evidence",
+    "page": 20
+  },
+  {
+    "idx": 54,
+    "number": "55",
+    "title": "Oral evidence to be direct",
+    "page": 20
+  },
+  {
+    "idx": 55,
+    "number": "56",
+    "title": "Proof of contents of documents",
+    "page": 20
+  },
+  {
+    "idx": 56,
+    "number": "57",
+    "title": "Primary evidence",
+    "page": 20
+  },
+  {
+    "idx": 57,
+    "number": "58",
+    "title": "Secondary evidence",
+    "page": 21
+  },
+  {
+    "idx": 58,
+    "number": "59",
+    "title": "Proof of documents by",
+    "page": 21
+  },
+  {
+    "idx": 59,
+    "number": "60",
+    "title": "primary evidence. Cases in which secondary evidence documents may be given",
+    "page": 22
+  },
+  {
+    "idx": 60,
+    "number": "61",
+    "title": "Electronic or digital record",
+    "page": 22
+  },
+  {
+    "idx": 61,
+    "number": "62",
+    "title": "Special provisions as to evidence relating to electronic record",
+    "page": 22
+  },
+  {
+    "idx": 62,
+    "number": "63",
+    "title": "Admissibility of electronic records",
+    "page": 22
+  },
+  {
+    "idx": 63,
+    "number": "64",
+    "title": "Rules as to notice to produce",
+    "page": 24
+  },
+  {
+    "idx": 64,
+    "number": "65",
+    "title": "Proof of signature and handwriting of person alleged to have signed or written document produced",
+    "page": 24
+  },
+  {
+    "idx": 65,
+    "number": "66",
+    "title": "Proof as to signature",
+    "page": 24
+  },
+  {
+    "idx": 66,
+    "number": "67",
+    "title": "Proof of execution of document required by law to be attested",
+    "page": 24
+  },
+  {
+    "idx": 67,
+    "number": "68",
+    "title": "Proof where no attesting witness found",
+    "page": 24
+  },
+  {
+    "idx": 68,
+    "number": "69",
+    "title": "Admission of execution by party to attested document",
+    "page": 25
+  },
+  {
+    "idx": 69,
+    "number": "70",
+    "title": "Proof when attesting witness denies execution",
+    "page": 25
+  },
+  {
+    "idx": 70,
+    "number": "71",
+    "title": "Proof of document not required by law to be attested",
+    "page": 25
+  },
+  {
+    "idx": 71,
+    "number": "72",
+    "title": "Comparison of signature, writing or seal with others admitted or proved",
+    "page": 25
+  },
+  {
+    "idx": 72,
+    "number": "73",
+    "title": "Proof as to verification of digital signature",
+    "page": 25
+  },
+  {
+    "idx": 73,
+    "number": "74",
+    "title": "Public and private documents",
+    "page": 25
+  },
+  {
+    "idx": 74,
+    "number": "75",
+    "title": "Certified copies of public documents",
+    "page": 25
+  },
+  {
+    "idx": 75,
+    "number": "76",
+    "title": "Proof of documents by production of certified copies",
+    "page": 26
+  },
+  {
+    "idx": 76,
+    "number": "77",
+    "title": "Proof of other official documents",
+    "page": 26
+  },
+  {
+    "idx": 77,
+    "number": "78",
+    "title": "Presumption as to genuineness of certified copies",
+    "page": 26
+  },
+  {
+    "idx": 78,
+    "number": "79",
+    "title": "Presumption as to documents produced as record of evidence, etc",
+    "page": 26
+  },
+  {
+    "idx": 79,
+    "number": "80",
+    "title": "Presumption as to Gazettes, newspapers, and other documents",
+    "page": 27
+  },
+  {
+    "idx": 80,
+    "number": "81",
+    "title": "Presumption as to Gazettes in electronic or digital record",
+    "page": 27
+  },
+  {
+    "idx": 81,
+    "number": "82",
+    "title": "Presumption as to maps or plans made by authority of Government",
+    "page": 27
+  },
+  {
+    "idx": 82,
+    "number": "83",
+    "title": "Presumption as to collections of laws and reports of decisions",
+    "page": 27
+  },
+  {
+    "idx": 83,
+    "number": "84",
+    "title": "Presumption as to powers- of-attorney",
+    "page": 27
+  },
+  {
+    "idx": 84,
+    "number": "85",
+    "title": "Presumption as agreements",
+    "page": 27
+  },
+  {
+    "idx": 85,
+    "number": "86",
+    "title": "Presumption as to electronic records and electronic signatures",
+    "page": 27
+  },
+  {
+    "idx": 86,
+    "number": "87",
+    "title": "Presumption as to Electronic Signature Certificates",
+    "page": 28
+  },
+  {
+    "idx": 87,
+    "number": "88",
+    "title": "Presumption as to certified copies of foreign judicial records",
+    "page": 28
+  },
+  {
+    "idx": 88,
+    "number": "89",
+    "title": "Presumption as to books, maps and charts",
+    "page": 28
+  },
+  {
+    "idx": 89,
+    "number": "90",
+    "title": "Presumption as to electronic messages",
+    "page": 28
+  },
+  {
+    "idx": 90,
+    "number": "91",
+    "title": "Presumption as to due execution, etc., of documents not produced",
+    "page": 28
+  },
+  {
+    "idx": 91,
+    "number": "92",
+    "title": "Presumption as to documents thirty years",
+    "page": 28
+  },
+  {
+    "idx": 92,
+    "number": "93",
+    "title": "Presumption as to electronic records five",
+    "page": 28
+  },
+  {
+    "idx": 93,
+    "number": "94",
+    "title": "Evidence of terms of contracts, grants and other dispositions of property reduced to form of document",
+    "page": 29
+  },
+  {
+    "idx": 94,
+    "number": "95",
+    "title": "Exclusion of evidence of oral agreement",
+    "page": 29
+  },
+  {
+    "idx": 95,
+    "number": "96",
+    "title": "Exclusion of evidence to explain or amend ambiguous document",
+    "page": 30
+  },
+  {
+    "idx": 96,
+    "number": "97",
+    "title": "Exclusion of evidence against application of document to existing facts",
+    "page": 31
+  },
+  {
+    "idx": 97,
+    "number": "98",
+    "title": "Evidence as to document unmeaning in reference to existing facts",
+    "page": 31
+  },
+  {
+    "idx": 98,
+    "number": "99",
+    "title": "Evidence as to application of language which can apply to one only of several persons",
+    "page": 31
+  },
+  {
+    "idx": 99,
+    "number": "100",
+    "title": "Evidence as to application of language to one of two sets of facts, to neither of which the whole correctly applies",
+    "page": 31
+  },
+  {
+    "idx": 100,
+    "number": "101",
+    "title": "Evidence as to meaning of illegible characters, etc",
+    "page": 31
+  },
+  {
+    "idx": 101,
+    "number": "102",
+    "title": "Who may give evidence of agreement varying terms of document",
+    "page": 31
+  },
+  {
+    "idx": 102,
+    "number": "103",
+    "title": "Saving of provisions of Indian Succession Act relating to wills",
+    "page": 31
+  },
+  {
+    "idx": 103,
+    "number": "104",
+    "title": "Burden of proof",
+    "page": 32
+  },
+  {
+    "idx": 104,
+    "number": "105",
+    "title": "On whom burden of proof lies",
+    "page": 32
+  },
+  {
+    "idx": 105,
+    "number": "106",
+    "title": "Burden of proof as to particular fact",
+    "page": 32
+  },
+  {
+    "idx": 106,
+    "number": "107",
+    "title": "Burden of proving fact to be proved to make evidence admissible",
+    "page": 32
+  },
+  {
+    "idx": 107,
+    "number": "108",
+    "title": "Burden of proving that case of accused comes within exceptions",
+    "page": 32
+  },
+  {
+    "idx": 108,
+    "number": "109",
+    "title": "Burden of proving fact especially within knowledge",
+    "page": 33
+  },
+  {
+    "idx": 109,
+    "number": "110",
+    "title": "Burden of of person known to have been alive within thirty years",
+    "page": 33
+  },
+  {
+    "idx": 110,
+    "number": "111",
+    "title": "Burden of proving that person is alive who has not been heard of for seven years",
+    "page": 33
+  },
+  {
+    "idx": 111,
+    "number": "112",
+    "title": "Burden of proof as to relationship in the cases of partners, landlord and tenant, principal and agent",
+    "page": 33
+  },
+  {
+    "idx": 112,
+    "number": "113",
+    "title": "Burden of proof as to ownership",
+    "page": 33
+  },
+  {
+    "idx": 113,
+    "number": "114",
+    "title": "Proof of good faith in transactions where one party is in relation of active confidence",
+    "page": 33
+  },
+  {
+    "idx": 114,
+    "number": "115",
+    "title": "Presumption as to certain offences",
+    "page": 34
+  },
+  {
+    "idx": 115,
+    "number": "116",
+    "title": "Birth during marriage, conclusive proof of legitimacy",
+    "page": 34
+  },
+  {
+    "idx": 116,
+    "number": "117",
+    "title": "Presumption as to abetment of suicide by a married woman",
+    "page": 34
+  },
+  {
+    "idx": 117,
+    "number": "118",
+    "title": "Presumption death",
+    "page": 34
+  },
+  {
+    "idx": 118,
+    "number": "119",
+    "title": "Court may presume existence of certain facts",
+    "page": 34
+  },
+  {
+    "idx": 119,
+    "number": "120",
+    "title": "Presumption as to absence of consent in certain prosecution",
+    "page": 35
+  },
+  {
+    "idx": 120,
+    "number": "121",
+    "title": "Estoppel",
+    "page": 36
+  },
+  {
+    "idx": 121,
+    "number": "122",
+    "title": "Estoppel of tenant and of licensee of person in possession",
+    "page": 36
+  },
+  {
+    "idx": 122,
+    "number": "123",
+    "title": "Estoppel of bill of exchange, bailee or licensee",
+    "page": 36
+  },
+  {
+    "idx": 123,
+    "number": "124",
+    "title": "Who may testify",
+    "page": 36
+  },
+  {
+    "idx": 124,
+    "number": "125",
+    "title": "Witness unable to communicate verbally",
+    "page": 36
+  },
+  {
+    "idx": 125,
+    "number": "126",
+    "title": "Competency of husband and wife as certain cases",
+    "page": 37
+  },
+  {
+    "idx": 126,
+    "number": "127",
+    "title": "Judges and Magistrates",
+    "page": 37
+  },
+  {
+    "idx": 127,
+    "number": "128",
+    "title": "Communications marriage",
+    "page": 37
+  },
+  {
+    "idx": 128,
+    "number": "129",
+    "title": "Evidence as to State",
+    "page": 37
+  },
+  {
+    "idx": 129,
+    "number": "130",
+    "title": "Official communications",
+    "page": 37
+  },
+  {
+    "idx": 130,
+    "number": "131",
+    "title": "Information commission of offences",
+    "page": 37
+  },
+  {
+    "idx": 131,
+    "number": "132",
+    "title": "Professional",
+    "page": 37
+  },
+  {
+    "idx": 132,
+    "number": "133",
+    "title": "Privilege not waived by volunteering evidence",
+    "page": 38
+  },
+  {
+    "idx": 133,
+    "number": "134",
+    "title": "Confidential communication with legal advisers",
+    "page": 38
+  },
+  {
+    "idx": 134,
+    "number": "135",
+    "title": "Production of title-deeds of witness not a party",
+    "page": 38
+  },
+  {
+    "idx": 135,
+    "number": "136",
+    "title": "Production of documents or electronic records which another person, having possession, could refuse to produce",
+    "page": 38
+  },
+  {
+    "idx": 136,
+    "number": "137",
+    "title": "Witness not excused from answering on ground that answer will",
+    "page": 38
+  },
+  {
+    "idx": 137,
+    "number": "138",
+    "title": "Accomplice",
+    "page": 39
+  },
+  {
+    "idx": 138,
+    "number": "139",
+    "title": "Number of witnesses",
+    "page": 39
+  },
+  {
+    "idx": 139,
+    "number": "140",
+    "title": "Order of production and examination of witnesses",
+    "page": 39
+  },
+  {
+    "idx": 140,
+    "number": "141",
+    "title": "Judge to decide as to admissibility of evidence",
+    "page": 39
+  },
+  {
+    "idx": 141,
+    "number": "142",
+    "title": "Examination of witnesses",
+    "page": 39
+  },
+  {
+    "idx": 142,
+    "number": "143",
+    "title": "Order of",
+    "page": 40
+  },
+  {
+    "idx": 143,
+    "number": "144",
+    "title": "Cross- examination of person called to produce a document. Witnesses to",
+    "page": 40
+  },
+  {
+    "idx": 144,
+    "number": "145",
+    "title": "character",
+    "page": 40
+  },
+  {
+    "idx": 145,
+    "number": "146",
+    "title": "Leading questions",
+    "page": 40
+  },
+  {
+    "idx": 146,
+    "number": "147",
+    "title": "Evidence as to matters in writing",
+    "page": 40
+  },
+  {
+    "idx": 147,
+    "number": "148",
+    "title": "Cross- examination as to previous statements in writing",
+    "page": 40
+  },
+  {
+    "idx": 148,
+    "number": "149",
+    "title": "Questions lawful in cross- examination",
+    "page": 40
+  },
+  {
+    "idx": 149,
+    "number": "150",
+    "title": "When witness compelled to answer",
+    "page": 41
+  },
+  {
+    "idx": 150,
+    "number": "151",
+    "title": "Court to decide when question shall be asked and when witness compelled to answer",
+    "page": 41
+  },
+  {
+    "idx": 151,
+    "number": "152",
+    "title": "Question not to be asked without reasonable grounds",
+    "page": 41
+  },
+  {
+    "idx": 152,
+    "number": "153",
+    "title": "Procedure of Court in case of question being asked",
+    "page": 41
+  },
+  {
+    "idx": 153,
+    "number": "154",
+    "title": "without reasonable grounds. Indecent and questions",
+    "page": 42
+  },
+  {
+    "idx": 154,
+    "number": "155",
+    "title": "Questions intended to insult or annoy",
+    "page": 42
+  },
+  {
+    "idx": 155,
+    "number": "156",
+    "title": "Exclusion of evidence to contradict answers to questions testing veracity",
+    "page": 42
+  },
+  {
+    "idx": 156,
+    "number": "157",
+    "title": "Question by party to his own witness",
+    "page": 42
+  },
+  {
+    "idx": 157,
+    "number": "158",
+    "title": "Impeaching credit of witness",
+    "page": 42
+  },
+  {
+    "idx": 158,
+    "number": "159",
+    "title": "Questions tending to corroborate evidence of relevant fact, admissible",
     "page": 43
+  },
+  {
+    "idx": 159,
+    "number": "160",
+    "title": "Former statements of witness may be proved to corroborate later testimony as to same fact",
+    "page": 43
+  },
+  {
+    "idx": 160,
+    "number": "161",
+    "title": "What matters may be proved in connection with proved statement relevant under section 26 or 27",
+    "page": 43
+  },
+  {
+    "idx": 161,
+    "number": "162",
+    "title": "Refreshing",
+    "page": 43
+  },
+  {
+    "idx": 162,
+    "number": "163",
+    "title": "Testimony to facts stated in document mentioned in section 162",
+    "page": 43
+  },
+  {
+    "idx": 163,
+    "number": "164",
+    "title": "Right of adverse party as to writing used to refresh memory",
+    "page": 44
+  },
+  {
+    "idx": 164,
+    "number": "165",
+    "title": "Production of",
+    "page": 44
+  },
+  {
+    "idx": 165,
+    "number": "166",
+    "title": "Giving, as evidence, of document called for and produced on notice",
+    "page": 44
+  },
+  {
+    "idx": 166,
+    "number": "167",
+    "title": "Using, as evidence, of document production of which was refused on notice",
+    "page": 44
+  },
+  {
+    "idx": 167,
+    "number": "168",
+    "title": "Judge's power to put questions or order production",
+    "page": 44
+  },
+  {
+    "idx": 168,
+    "number": "169",
+    "title": "No new trial for improper admission or rejection of evidence",
+    "page": 45
+  },
+  {
+    "idx": 169,
+    "number": "170",
+    "title": "savings. Kshitiz DigitallysignedbyKshitizMohan DN:c=IN,st=Delhi, 1775fa98f7ccdab,postalCode=110002,street=MintoRoadNew Delhi,pseudonym=5c90ab0ba7a48905de2428b65504151c, serialNumber=0a5dc5b84f902a7bf2d6ed41c0c26429a0d4d5848d Mohan d23eb18886abaeea31b247,ou=DeputyManager,o=Government ofIndiaPress,cn=KshitizMohan Date:2023.12.2521:14:13+05'30'",
+    "page": 45
   }
 ]

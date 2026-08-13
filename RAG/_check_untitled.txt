@@ -1,0 +1,8 @@
+=== section 1 (title='(untitled)') page=1 ===
+  line: '1.(1)ThisActmaybecalledtheBharatiyaNyayaSanhita,2023. Short title,'
+
+=== section 15 (title='(untitled)') page=11 ===
+  line: '15. Nothing is an offence which is done by a Judge when acting judicially in the ActofJudge'
+
+=== section 103 (title='Punishment for murder') page=34 ===
+  line: 'Punishment 103.(1)Whoevercommitsmurdershallbepunishedwithdeathorimprisonmentfor'

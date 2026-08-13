@@ -1,278 +1,2150 @@
 [
   {
     "idx": 0,
-    "number": "15",
-    "title": "Nothing is an offence which is done by a Judge when acting judicially in the ActofJudge",
-    "page": 11
+    "number": "1",
+    "title": "Short title, commencement and application",
+    "page": 1
   },
   {
     "idx": 1,
-    "number": "52",
-    "title": "Iftheactforwhichtheabettorisliableundersection51iscommittedinadditionto Abettor when",
-    "page": 19
+    "number": "2",
+    "title": "Definitions",
+    "page": 2
   },
   {
     "idx": 2,
-    "number": "58",
-    "title": "Whoever intending to facilitate or knowing it to be likely that he will thereby Concealing",
-    "page": 21
+    "number": "3",
+    "title": "General explanations",
+    "page": 6
   },
   {
     "idx": 3,
-    "number": "63",
-    "title": "Amanissaidtocommit“rape”ifhe— Rape",
-    "page": 23
+    "number": "4",
+    "title": "Punishments",
+    "page": 8
   },
   {
     "idx": 4,
-    "number": "67",
-    "title": "Whoeverhassexualintercoursewithhisownwife,whoislivingseparately,whether Sexual",
-    "page": 25
+    "number": "5",
+    "title": "Commutation of sentence",
+    "page": 8
   },
   {
     "idx": 5,
-    "number": "73",
-    "title": "Whoever prints or publishes any matter in relation to any proceeding before a Printing or",
-    "page": 27
+    "number": "6",
+    "title": "Fractions of terms of punishment",
+    "page": 8
   },
   {
     "idx": 6,
-    "number": "87",
-    "title": "Whoeverkidnapsorabductsanywomanwithintentthatshemaybecompelled,or Kidnapping",
-    "page": 29
+    "number": "7",
+    "title": "Sentence may be (in certain cases of imprisonment) partly rigorous or simple",
+    "page": 8
   },
   {
     "idx": 7,
-    "number": "88",
-    "title": "Whoevervoluntarilycausesawomanwithchildtomiscarry,shall,ifsuchmiscarriage Causing",
-    "page": 29
+    "number": "8",
+    "title": "Amount of fine, liability in default of payment of fine, etc",
+    "page": 8
   },
   {
     "idx": 8,
-    "number": "100",
-    "title": "Whoever causes death by doing an act with the intention of causing death, Culpable",
-    "page": 31
+    "number": "9",
+    "title": "Limit of punishment of offence made up of several offences",
+    "page": 9
   },
   {
     "idx": 9,
-    "number": "110",
-    "title": "Whoever does any act with such intention or knowledge and under such Attempt to",
-    "page": 35
+    "number": "10",
+    "title": "Punishment of person guilty of one of several offences, judgment stating that it is doubtful of which",
+    "page": 10
   },
   {
     "idx": 10,
-    "number": "136",
-    "title": "Whoever assaults or uses criminal force to any person on grave and sudden Assault or",
-    "page": 45
+    "number": "11",
+    "title": "Solitary confinement",
+    "page": 10
   },
   {
     "idx": 11,
-    "number": "145",
-    "title": "Whoever habitually imports, exports, removes, buys, sells, traffics or deals in Habitual",
-    "page": 47
+    "number": "12",
+    "title": "Limit of solitary confinement",
+    "page": 10
   },
   {
     "idx": 12,
-    "number": "155",
-    "title": "Whoever receives any property knowing the same to have been taken in the Receiving",
-    "page": 49
+    "number": "13",
+    "title": "Enhanced punishment for certain offences after previous conviction",
+    "page": 10
   },
   {
     "idx": 13,
-    "number": "158",
-    "title": "Whoever knowingly aids or assists any State prisoner or prisoner of war in Aiding escape",
-    "page": 49
+    "number": "14",
+    "title": "Act done by a person bound, or by mistake of fact believing himself bound, by law",
+    "page": 10
   },
   {
     "idx": 14,
-    "number": "181",
-    "title": "Whoever makes or mends, or performs any part of the process of making or Making or",
-    "page": 53
+    "number": "15",
+    "title": "Act of Judge when acting judicially",
+    "page": 11
   },
   {
     "idx": 15,
-    "number": "183",
-    "title": "Whoever,fraudulentlyorwithintenttocauselosstotheGovernment,removesor Effacing",
-    "page": 53
+    "number": "16",
+    "title": "Act done pursuant to judgment or order of Court",
+    "page": 11
   },
   {
     "idx": 16,
-    "number": "185",
-    "title": "Whoever, fraudulently or with intent to cause loss to Government, erases or Erasure of",
-    "page": 53
+    "number": "17",
+    "title": "Act done by a person justified, or by mistake of fact believing himself justified, by law",
+    "page": 11
   },
   {
     "idx": 17,
-    "number": "190",
-    "title": "Ifanoffenceiscommittedbyanymemberofanunlawfulassemblyinprosecution Every member",
-    "page": 55
+    "number": "18",
+    "title": "Accident in doing a lawful act",
+    "page": 11
   },
   {
     "idx": 18,
-    "number": "206",
-    "title": "Whoever absconds in order to avoid being served with a summons, notice or Absconding to",
-    "page": 59
+    "number": "19",
+    "title": "Act likely to cause harm, but done without criminal intent, and to harm",
+    "page": 11
   },
   {
     "idx": 19,
-    "number": "208",
-    "title": "Whoever,beinglegallyboundtoattendinpersonorbyanagentatacertainplace Non",
-    "page": 59
+    "number": "20",
+    "title": "Act of a child under seven years of age",
+    "page": 12
   },
   {
     "idx": 20,
-    "number": "213",
-    "title": "Whoever refuses to bind himself by an oath or affirmation to state the truth, Refusing oath",
-    "page": 61
+    "number": "21",
+    "title": "Act of a child above seven and under twelve years of age of immature understanding",
+    "page": 12
   },
   {
     "idx": 21,
-    "number": "214",
-    "title": "Whoever, being legally bound to state the truth on any subject to any public Refusing to",
-    "page": 61
+    "number": "22",
+    "title": "Act of a person of unsound mind",
+    "page": 12
   },
   {
     "idx": 22,
-    "number": "215",
-    "title": "Whoever refuses to sign any statement made by him, when required to sign Refusing to",
-    "page": 61
+    "number": "23",
+    "title": "Act of a person incapable of judgment by reason of intoxication caused against his will",
+    "page": 12
   },
   {
     "idx": 23,
-    "number": "216",
-    "title": "Whoever, being legally bound by an oath or affirmation to state the truth on False",
-    "page": 61
+    "number": "24",
+    "title": "Offence requiring a particular intent or knowledge committed by one who is intoxicated",
+    "page": 12
   },
   {
     "idx": 24,
-    "number": "217",
-    "title": "Whoever gives to any public servant any information which he knows or False",
-    "page": 61
+    "number": "25",
+    "title": "Act not intended and not known to be likely to cause death or done by consent",
+    "page": 12
   },
   {
     "idx": 25,
-    "number": "225",
-    "title": "Whoever holds out any threat of injury to any person for the purpose of Threat of",
-    "page": 63
+    "number": "26",
+    "title": "Act not intended to cause death, done by consent in good faith for person's",
+    "page": 12
   },
   {
     "idx": 26,
-    "number": "231",
-    "title": "Whoever gives or fabricates false evidence intending thereby to cause, or Giving or",
-    "page": 65
+    "number": "27",
+    "title": "Act done in good faith for benefit of child or person of unsound mind, by, or by consent of guardian",
+    "page": 12
   },
   {
     "idx": 27,
-    "number": "240",
-    "title": "Whoever, knowing or having reason to believe that an offence has been Giving false",
-    "page": 67
+    "number": "28",
+    "title": "Consent known to be given under misconception",
+    "page": 13
   },
   {
     "idx": 28,
-    "number": "241",
-    "title": "Whoever secretes or destroys any document or electronic record which he Destruction of",
-    "page": 67
+    "number": "29",
+    "title": "Exclusion of acts which are offences independently of harm caused",
+    "page": 13
   },
   {
     "idx": 29,
-    "number": "242",
-    "title": "Whoever falsely personates another, and in such assumed character makes False",
-    "page": 67
+    "number": "30",
+    "title": "Act done in good faith for benefit of a person without consent",
+    "page": 13
   },
   {
     "idx": 30,
-    "number": "243",
-    "title": "Whoever fraudulently removes, conceals, transfers or delivers to any person Fraudulent",
-    "page": 67
+    "number": "31",
+    "title": "Communication made in good faith",
+    "page": 14
   },
   {
     "idx": 31,
-    "number": "244",
-    "title": "Whoever fraudulently accepts, receives or claims any property or any interest Fraudulent",
-    "page": 67
+    "number": "32",
+    "title": "Act to which a compelled by threats",
+    "page": 14
   },
   {
     "idx": 32,
-    "number": "245",
-    "title": "Whoever fraudulently causes or suffersa decree ororderto be passed against Fraudulently",
-    "page": 67
+    "number": "33",
+    "title": "Act causing slight harm",
+    "page": 14
   },
   {
     "idx": 33,
-    "number": "250",
-    "title": "Whoever accepts or attempts to obtain, or agrees to accept, any gratification Taking gift",
-    "page": 69
+    "number": "34",
+    "title": "Things done in private defence",
+    "page": 14
   },
   {
     "idx": 34,
-    "number": "252",
-    "title": "Whoever takes or agrees or consents to take any gratification under pretence Taking gift to",
-    "page": 69
+    "number": "35",
+    "title": "Right of defence of body and of property",
+    "page": 14
   },
   {
     "idx": 35,
-    "number": "256",
-    "title": "Whoever, being a public servant, and being as such public servant, charged Public servant",
-    "page": 71
+    "number": "36",
+    "title": "Right of private defence against act of a person of unsound mind, etc",
+    "page": 15
   },
   {
     "idx": 36,
-    "number": "259",
-    "title": "Whoever, being a public servant, legally bound as such public servant to Intentional",
-    "page": 71
+    "number": "37",
+    "title": "Acts against which there is no right of defence",
+    "page": 15
   },
   {
     "idx": 37,
-    "number": "260",
-    "title": "Whoever, being a public servant, legally bound as such public servant to Intentional",
-    "page": 71
+    "number": "38",
+    "title": "When right of private defence of body extends to causing death",
+    "page": 15
   },
   {
     "idx": 38,
-    "number": "264",
-    "title": "Whoever, being a public servant legally bound as such public servant to Omission to",
-    "page": 73
+    "number": "39",
+    "title": "When such right extends to causing any harm other than death",
+    "page": 16
   },
   {
     "idx": 39,
-    "number": "267",
-    "title": "Whoever,intentionallyoffersanyinsult,orcausesanyinterruptiontoanypublic Intentional",
-    "page": 73
+    "number": "40",
+    "title": "Commencement and continuance of right of private defence of body",
+    "page": 16
   },
   {
     "idx": 40,
-    "number": "286",
-    "title": "Whoever does, with any poisonous substance, any act in a manner so rash or Negligent",
-    "page": 75
+    "number": "41",
+    "title": "When right of private defence of property extends to causing death",
+    "page": 16
   },
   {
     "idx": 41,
-    "number": "300",
-    "title": "Whoever voluntarily causes disturbance to any assembly lawfully engaged in Disturbing",
-    "page": 77
+    "number": "42",
+    "title": "When such right extends to causing any harm other than death",
+    "page": 16
   },
   {
     "idx": 42,
-    "number": "313",
-    "title": "Whoever belongs to any gang of persons associated in habitually committing Punishment",
-    "page": 83
+    "number": "43",
+    "title": "Commencement and continuance of right of private defence of property",
+    "page": 16
   },
   {
     "idx": 43,
-    "number": "321",
-    "title": "Whoeverdishonestlyorfraudulentlypreventsanydebtordemandduetohimself Dishonestly or",
-    "page": 87
+    "number": "44",
+    "title": "Right of private defence against deadly assault when there is risk of harm to innocent person",
+    "page": 16
   },
   {
     "idx": 44,
-    "number": "349",
-    "title": "Whoever sells, or exposes, or has in possession for sale, any goods or things Sellinggoods",
-    "page": 97
+    "number": "45",
+    "title": "Abetment of a thing",
+    "page": 17
   },
   {
     "idx": 45,
+    "number": "46",
+    "title": "Abettor",
+    "page": 17
+  },
+  {
+    "idx": 46,
+    "number": "47",
+    "title": "Abetment in India of offences outside India",
+    "page": 18
+  },
+  {
+    "idx": 47,
+    "number": "48",
+    "title": "Abetment outside India for offence in India",
+    "page": 18
+  },
+  {
+    "idx": 48,
+    "number": "49",
+    "title": "Punishment of abetment if act abetted is committed in consequence and where no express provision is made for its punishment",
+    "page": 19
+  },
+  {
+    "idx": 49,
+    "number": "50",
+    "title": "Punishment of abetment if person abetted does act with different intention from that of abettor",
+    "page": 19
+  },
+  {
+    "idx": 50,
+    "number": "51",
+    "title": "Liability of abettor when one act abetted and different act done",
+    "page": 19
+  },
+  {
+    "idx": 51,
+    "number": "52",
+    "title": "Abettor when liable to cumulative punishment for act abetted and for act done",
+    "page": 19
+  },
+  {
+    "idx": 52,
+    "number": "53",
+    "title": "Liability of effect caused by act abetted different from that intended",
+    "page": 20
+  },
+  {
+    "idx": 53,
+    "number": "54",
+    "title": "Abettor present when offence is committed",
+    "page": 20
+  },
+  {
+    "idx": 54,
+    "number": "55",
+    "title": "Abetment of punishable with death or imprisonment for life",
+    "page": 20
+  },
+  {
+    "idx": 55,
+    "number": "56",
+    "title": "Abetment of offence punishable with imprisonment",
+    "page": 20
+  },
+  {
+    "idx": 56,
+    "number": "57",
+    "title": "Abetting commission of offence by public or by more than ten persons",
+    "page": 21
+  },
+  {
+    "idx": 57,
+    "number": "58",
+    "title": "Concealing design to commit offence punishable with death or imprisonment for life",
+    "page": 21
+  },
+  {
+    "idx": 58,
+    "number": "59",
+    "title": "Public servant concealing design to commit offence which it is his duty to prevent",
+    "page": 21
+  },
+  {
+    "idx": 59,
+    "number": "60",
+    "title": "Concealing design to commit offence punishable with imprisonment",
+    "page": 22
+  },
+  {
+    "idx": 60,
+    "number": "61",
+    "title": "Criminal conspiracy",
+    "page": 22
+  },
+  {
+    "idx": 61,
+    "number": "62",
+    "title": "Punishment for attempting to commit offences punishable with imprisonment for life or other imprisonment",
+    "page": 22
+  },
+  {
+    "idx": 62,
+    "number": "63",
+    "title": "Rape",
+    "page": 23
+  },
+  {
+    "idx": 63,
+    "number": "64",
+    "title": "Punishment for rape",
+    "page": 23
+  },
+  {
+    "idx": 64,
+    "number": "65",
+    "title": "Punishment for rape in certain cases",
+    "page": 25
+  },
+  {
+    "idx": 65,
+    "number": "66",
+    "title": "Punishment for causing death or resulting in persistent vegetative state of victim",
+    "page": 25
+  },
+  {
+    "idx": 66,
+    "number": "67",
+    "title": "Sexual intercourse by husband upon his wife during separation",
+    "page": 25
+  },
+  {
+    "idx": 67,
+    "number": "68",
+    "title": "Sexual intercourse by a person in authority",
+    "page": 25
+  },
+  {
+    "idx": 68,
+    "number": "69",
+    "title": "Sexual by employing deceitful means, etc",
+    "page": 26
+  },
+  {
+    "idx": 69,
+    "number": "70",
+    "title": "Gang rape",
+    "page": 26
+  },
+  {
+    "idx": 70,
+    "number": "71",
+    "title": "Punishment for repeat offenders",
+    "page": 26
+  },
+  {
+    "idx": 71,
+    "number": "72",
+    "title": "Disclosure of identity of victim of certain offences, etc",
+    "page": 26
+  },
+  {
+    "idx": 72,
+    "number": "73",
+    "title": "Printing or publishing any matter relating to Court proceedings permission",
+    "page": 27
+  },
+  {
+    "idx": 73,
+    "number": "74",
+    "title": "Assault or use of criminal force to woman with intent to outrage her modesty",
+    "page": 27
+  },
+  {
+    "idx": 74,
+    "number": "75",
+    "title": "Sexual harassment",
+    "page": 27
+  },
+  {
+    "idx": 75,
+    "number": "76",
+    "title": "Assault or use of criminal force to woman with intent to disrobe",
+    "page": 27
+  },
+  {
+    "idx": 76,
+    "number": "77",
+    "title": "Voyeurism",
+    "page": 27
+  },
+  {
+    "idx": 77,
+    "number": "78",
+    "title": "Stalking",
+    "page": 28
+  },
+  {
+    "idx": 78,
+    "number": "79",
+    "title": "Word, gesture or act intended to insult modesty of a woman",
+    "page": 28
+  },
+  {
+    "idx": 79,
+    "number": "80",
+    "title": "Dowry death",
+    "page": 28
+  },
+  {
+    "idx": 80,
+    "number": "81",
+    "title": "Cohabitation caused by man deceitfully inducing belief of lawful marriage. Marrying",
+    "page": 28
+  },
+  {
+    "idx": 81,
+    "number": "82",
+    "title": "again during lifetime of husband or wife",
+    "page": 28
+  },
+  {
+    "idx": 82,
+    "number": "83",
+    "title": "Marriage ceremony fraudulently gone through without lawful marriage",
+    "page": 29
+  },
+  {
+    "idx": 83,
+    "number": "84",
+    "title": "Enticing or taking away or detaining with criminal intent a married woman",
+    "page": 29
+  },
+  {
+    "idx": 84,
+    "number": "85",
+    "title": "Husband or relative of husband of a woman subjecting her to cruelty",
+    "page": 29
+  },
+  {
+    "idx": 85,
+    "number": "86",
+    "title": "Cruelty defined",
+    "page": 29
+  },
+  {
+    "idx": 86,
+    "number": "87",
+    "title": "Kidnapping, abducting or inducing woman to compel her",
+    "page": 29
+  },
+  {
+    "idx": 87,
+    "number": "88",
+    "title": "Causing miscarriage",
+    "page": 29
+  },
+  {
+    "idx": 88,
+    "number": "89",
+    "title": "Causing miscarriage without woman's consent",
+    "page": 30
+  },
+  {
+    "idx": 89,
+    "number": "90",
+    "title": "Death caused by act done with intent to cause miscarriage",
+    "page": 30
+  },
+  {
+    "idx": 90,
+    "number": "91",
+    "title": "Act done with intent to prevent child being born alive or to cause to die after birth",
+    "page": 30
+  },
+  {
+    "idx": 91,
+    "number": "92",
+    "title": "Causing death of quick unborn child by act amounting to culpable",
+    "page": 30
+  },
+  {
+    "idx": 92,
+    "number": "93",
+    "title": "Exposure and of child under twelve years of age, by parent or person having care of it",
+    "page": 30
+  },
+  {
+    "idx": 93,
+    "number": "94",
+    "title": "Concealment of birth by secret disposal of dead body",
+    "page": 30
+  },
+  {
+    "idx": 94,
+    "number": "95",
+    "title": "Hiring, engaging a child to commit an offence",
+    "page": 30
+  },
+  {
+    "idx": 95,
+    "number": "96",
+    "title": "Procuration of child",
+    "page": 30
+  },
+  {
+    "idx": 96,
+    "number": "97",
+    "title": "Kidnapping or abducting child under ten years of age with intent to steal",
+    "page": 30
+  },
+  {
+    "idx": 97,
+    "number": "98",
+    "title": "from its person. Selling child for purposes of prostitution, etc",
+    "page": 31
+  },
+  {
+    "idx": 98,
+    "number": "99",
+    "title": "Buying child for purposes of prostitution, etc",
+    "page": 31
+  },
+  {
+    "idx": 99,
+    "number": "100",
+    "title": "Culpable homicide",
+    "page": 31
+  },
+  {
+    "idx": 100,
+    "number": "101",
+    "title": "Murder",
+    "page": 32
+  },
+  {
+    "idx": 101,
+    "number": "102",
+    "title": "Culpable homicide by causing death of person other than person whose death was intended",
+    "page": 34
+  },
+  {
+    "idx": 102,
+    "number": "103",
+    "title": "Punishment for murder",
+    "page": 34
+  },
+  {
+    "idx": 103,
+    "number": "104",
+    "title": "Punishment life-convict",
+    "page": 34
+  },
+  {
+    "idx": 104,
+    "number": "105",
+    "title": "Punishment for culpable homicide not amounting to murder",
+    "page": 34
+  },
+  {
+    "idx": 105,
+    "number": "106",
+    "title": "Causing death by negligence",
+    "page": 34
+  },
+  {
+    "idx": 106,
+    "number": "107",
+    "title": "Abetment of suicide of child or person of unsound mind",
+    "page": 34
+  },
+  {
+    "idx": 107,
+    "number": "108",
+    "title": "Abetment of suicide",
+    "page": 34
+  },
+  {
+    "idx": 108,
+    "number": "109",
+    "title": "Attempt to murder",
+    "page": 34
+  },
+  {
+    "idx": 109,
+    "number": "110",
+    "title": "Attempt to commit culpable homicide",
+    "page": 35
+  },
+  {
+    "idx": 110,
+    "number": "111",
+    "title": "Organised crime",
+    "page": 35
+  },
+  {
+    "idx": 111,
+    "number": "112",
+    "title": "Petty organised crime",
+    "page": 36
+  },
+  {
+    "idx": 112,
+    "number": "113",
+    "title": "Terrorist act",
+    "page": 37
+  },
+  {
+    "idx": 113,
+    "number": "114",
+    "title": "Hurt",
+    "page": 38
+  },
+  {
+    "idx": 114,
+    "number": "115",
+    "title": "Voluntarily causing hurt",
+    "page": 38
+  },
+  {
+    "idx": 115,
+    "number": "116",
+    "title": "Grievous hurt",
+    "page": 38
+  },
+  {
+    "idx": 116,
+    "number": "117",
+    "title": "Voluntarily causing grievous hurt",
+    "page": 38
+  },
+  {
+    "idx": 117,
+    "number": "118",
+    "title": "Voluntarily causing hurt or grievous hurt by dangerous weapons or means",
+    "page": 39
+  },
+  {
+    "idx": 118,
+    "number": "119",
+    "title": "Voluntarily causing hurt or grievous hurt to extort property, or to constrain to an illegal act",
+    "page": 39
+  },
+  {
+    "idx": 119,
+    "number": "120",
+    "title": "Voluntarily causing hurt or grievous hurt to extort confession, or to compel restoration of property",
+    "page": 39
+  },
+  {
+    "idx": 120,
+    "number": "121",
+    "title": "Voluntarily grievous hurt to deter public servant from his duty",
+    "page": 40
+  },
+  {
+    "idx": 121,
+    "number": "122",
+    "title": "Voluntarily causing hurt or grievous hurt o n provocation",
+    "page": 40
+  },
+  {
+    "idx": 122,
+    "number": "123",
+    "title": "Causing hurt by means of poison, etc., with intent to commit an offence",
+    "page": 40
+  },
+  {
+    "idx": 123,
+    "number": "124",
+    "title": "Voluntarily causing grievous hurt by use of acid, etc",
+    "page": 40
+  },
+  {
+    "idx": 124,
+    "number": "125",
+    "title": "Act endangering life or personal safety of others",
+    "page": 41
+  },
+  {
+    "idx": 125,
+    "number": "126",
+    "title": "Wrongful restraint",
+    "page": 41
+  },
+  {
+    "idx": 126,
+    "number": "127",
+    "title": "Wrongful confinement",
+    "page": 41
+  },
+  {
+    "idx": 127,
+    "number": "128",
+    "title": "Force",
+    "page": 42
+  },
+  {
+    "idx": 128,
+    "number": "129",
+    "title": "Criminal force",
+    "page": 43
+  },
+  {
+    "idx": 129,
+    "number": "130",
+    "title": "Assault",
+    "page": 43
+  },
+  {
+    "idx": 130,
+    "number": "131",
+    "title": "Punishment for assault or criminal force otherwise than on grave provocation",
+    "page": 44
+  },
+  {
+    "idx": 131,
+    "number": "132",
+    "title": "Assault or criminal force to deter public servant from discharge of his duty",
+    "page": 44
+  },
+  {
+    "idx": 132,
+    "number": "133",
+    "title": "Assault or criminal force with intent to dishonour person, otherwise than on grave provocation. Assault or",
+    "page": 44
+  },
+  {
+    "idx": 133,
+    "number": "134",
+    "title": "criminal force in attempt to commit theft of property carried by a person. Assault or",
+    "page": 44
+  },
+  {
+    "idx": 134,
+    "number": "135",
+    "title": "criminal force in attempt to wrongfully",
+    "page": 44
+  },
+  {
+    "idx": 135,
+    "number": "136",
+    "title": "confine a person. Assault or criminal force on grave provocation",
+    "page": 45
+  },
+  {
+    "idx": 136,
+    "number": "137",
+    "title": "Kidnapping",
+    "page": 45
+  },
+  {
+    "idx": 137,
+    "number": "138",
+    "title": "Abduction",
+    "page": 45
+  },
+  {
+    "idx": 138,
+    "number": "139",
+    "title": "Kidnapping or maiming a child for purposes of begging",
+    "page": 45
+  },
+  {
+    "idx": 139,
+    "number": "140",
+    "title": "Kidnapping or order to murder or for ransom, etc",
+    "page": 46
+  },
+  {
+    "idx": 140,
+    "number": "141",
+    "title": "Importation of girl or boy from foreign country",
+    "page": 46
+  },
+  {
+    "idx": 141,
+    "number": "142",
+    "title": "Wrongfully concealing or keeping in confinement, kidnapped or abducted person",
+    "page": 46
+  },
+  {
+    "idx": 142,
+    "number": "143",
+    "title": "Trafficking of person",
+    "page": 46
+  },
+  {
+    "idx": 143,
+    "number": "144",
+    "title": "Exploitation of a trafficked person",
+    "page": 47
+  },
+  {
+    "idx": 144,
+    "number": "145",
+    "title": "Habitual dealing in slaves",
+    "page": 47
+  },
+  {
+    "idx": 145,
+    "number": "146",
+    "title": "Unlawful compulsory labour",
+    "page": 47
+  },
+  {
+    "idx": 146,
+    "number": "147",
+    "title": "Waging, or attempting to wage war, or abetting waging of war, against Government of India",
+    "page": 48
+  },
+  {
+    "idx": 147,
+    "number": "148",
+    "title": "Conspiracy to commit offences punishable by section 147",
+    "page": 48
+  },
+  {
+    "idx": 148,
+    "number": "149",
+    "title": "Collecting arms, etc., with intention of waging war against Government of India",
+    "page": 48
+  },
+  {
+    "idx": 149,
+    "number": "150",
+    "title": "Concealing with intent to facilitate design to wage war",
+    "page": 48
+  },
+  {
+    "idx": 150,
+    "number": "151",
+    "title": "Assaulting President, Governor, etc., with intent to compel or restrain exercise of any lawful power",
+    "page": 48
+  },
+  {
+    "idx": 151,
+    "number": "152",
+    "title": "Act endangering sovereignty, unity and integrity of India",
+    "page": 48
+  },
+  {
+    "idx": 152,
+    "number": "153",
+    "title": "Waging war against Government of any foreign State at peace with",
+    "page": 48
+  },
+  {
+    "idx": 153,
+    "number": "154",
+    "title": "Government of India. Committing depredation on territories of foreign State at peace with of India",
+    "page": 49
+  },
+  {
+    "idx": 154,
+    "number": "155",
+    "title": "Receiving property taken by war or depredation mentioned in sections 153 and 154",
+    "page": 49
+  },
+  {
+    "idx": 155,
+    "number": "156",
+    "title": "Public servant voluntarily allowing prisoner of State or war to escape",
+    "page": 49
+  },
+  {
+    "idx": 156,
+    "number": "157",
+    "title": "Public servant negligently suffering such prisoner to escape",
+    "page": 49
+  },
+  {
+    "idx": 157,
+    "number": "158",
+    "title": "Aiding escape of, rescuing or harbouring such prisoner",
+    "page": 49
+  },
+  {
+    "idx": 158,
+    "number": "159",
+    "title": "Abetting mutiny, or attempting to seduce a soldier, sailor or airman from his duty",
+    "page": 49
+  },
+  {
+    "idx": 159,
+    "number": "160",
+    "title": "Abetment of mutiny, if mutiny is committed in consequence thereof",
+    "page": 49
+  },
+  {
+    "idx": 160,
+    "number": "161",
+    "title": "Abetment of assault by soldier, sailor or airman on",
+    "page": 49
+  },
+  {
+    "idx": 161,
+    "number": "162",
+    "title": "his superior officer, when in execution of his office. Abetment of such assault, if assault committed",
+    "page": 50
+  },
+  {
+    "idx": 162,
+    "number": "163",
+    "title": "Abetment of desertion of soldier, sailor or airman",
+    "page": 50
+  },
+  {
+    "idx": 163,
+    "number": "164",
+    "title": "Harbouring deserter",
+    "page": 50
+  },
+  {
+    "idx": 164,
+    "number": "165",
+    "title": "Deserter concealed on board merchant vessel through negligence of master",
+    "page": 50
+  },
+  {
+    "idx": 165,
+    "number": "166",
+    "title": "Abetment of act of insubordination by soldier, sailor or",
+    "page": 50
+  },
+  {
+    "idx": 166,
+    "number": "167",
+    "title": "Persons subject to certain Acts",
+    "page": 50
+  },
+  {
+    "idx": 167,
+    "number": "168",
+    "title": "Wearing garb or carrying token used by soldier, sailor or airman",
+    "page": 50
+  },
+  {
+    "idx": 168,
+    "number": "169",
+    "title": "Candidate, electoral right",
+    "page": 50
+  },
+  {
+    "idx": 169,
+    "number": "170",
+    "title": "Bribery",
+    "page": 50
+  },
+  {
+    "idx": 170,
+    "number": "171",
+    "title": "Undue influence at elections",
+    "page": 51
+  },
+  {
+    "idx": 171,
+    "number": "172",
+    "title": "Personation at elections",
+    "page": 51
+  },
+  {
+    "idx": 172,
+    "number": "173",
+    "title": "Punishment for bribery",
+    "page": 51
+  },
+  {
+    "idx": 173,
+    "number": "174",
+    "title": "Punishment for undue influence or personation at an election",
+    "page": 51
+  },
+  {
+    "idx": 174,
+    "number": "175",
+    "title": "False statement in connection with an",
+    "page": 51
+  },
+  {
+    "idx": 175,
+    "number": "176",
+    "title": "election. Illegal payments in connection with an election",
+    "page": 52
+  },
+  {
+    "idx": 176,
+    "number": "177",
+    "title": "Failure to keep election accounts",
+    "page": 52
+  },
+  {
+    "idx": 177,
+    "number": "178",
+    "title": "Counterfeiting coin, Government stamps, currency-notes or bank-notes",
+    "page": 52
+  },
+  {
+    "idx": 178,
+    "number": "179",
+    "title": "Using as genuine, forged or counterfeit coin, Government stamp, currency-notes or bank-notes",
+    "page": 52
+  },
+  {
+    "idx": 179,
+    "number": "180",
+    "title": "Possession of forged or counterfeit coin, stamp, currency-notes or bank-notes",
+    "page": 52
+  },
+  {
+    "idx": 180,
+    "number": "181",
+    "title": "Making or possessing instruments or forging or counterfeiting Government stamp, or bank-notes. Making or",
+    "page": 53
+  },
+  {
+    "idx": 181,
+    "number": "182",
+    "title": "using documents resembling currency-notes or bank-notes",
+    "page": 53
+  },
+  {
+    "idx": 182,
+    "number": "183",
+    "title": "Effacing writing from substance bearing Government stamp, or document a stamp used for to cause loss to Government",
+    "page": 53
+  },
+  {
+    "idx": 183,
+    "number": "184",
+    "title": "Using Government stamp known before used",
+    "page": 53
+  },
+  {
+    "idx": 184,
+    "number": "185",
+    "title": "Erasure of mark denoting that stamp has been used",
+    "page": 53
+  },
+  {
+    "idx": 185,
+    "number": "186",
+    "title": "Prohibition of fictitious stamps",
+    "page": 53
+  },
+  {
+    "idx": 186,
+    "number": "187",
+    "title": "Person employed in mint causing coin to be of different weight or composition from that fixed by law",
+    "page": 54
+  },
+  {
+    "idx": 187,
+    "number": "188",
+    "title": "Unlawfully taking coining instrument",
+    "page": 54
+  },
+  {
+    "idx": 188,
+    "number": "189",
+    "title": "Unlawful assembly",
+    "page": 54
+  },
+  {
+    "idx": 189,
+    "number": "190",
+    "title": "Every member of unlawful assembly guilty of offence committed in prosecution of common object",
+    "page": 55
+  },
+  {
+    "idx": 190,
+    "number": "191",
+    "title": "Rioting",
+    "page": 55
+  },
+  {
+    "idx": 191,
+    "number": "192",
+    "title": "Wantonly giving provocation with intent to cause riot-if rioting be committed; if committed",
+    "page": 55
+  },
+  {
+    "idx": 192,
+    "number": "193",
+    "title": "Liability of owner, occupier, etc., of land on which an unlawful assembly or riot takes place",
+    "page": 56
+  },
+  {
+    "idx": 193,
+    "number": "194",
+    "title": "Affray",
+    "page": 56
+  },
+  {
+    "idx": 194,
+    "number": "195",
+    "title": "Assaulting or public servant when riot, etc",
+    "page": 56
+  },
+  {
+    "idx": 195,
+    "number": "196",
+    "title": "Promoting enmity between different groups on grounds of religion, race, place of birth, residence, and doing acts prejudicial to maintenance of harmony",
+    "page": 56
+  },
+  {
+    "idx": 196,
+    "number": "197",
+    "title": "Imputations, assertions prejudicial to national integration",
+    "page": 57
+  },
+  {
+    "idx": 197,
+    "number": "198",
+    "title": "Public servant disobeying law, with intent to cause injury to any person",
+    "page": 57
+  },
+  {
+    "idx": 198,
+    "number": "199",
+    "title": "Public servant disobeying direction under law",
+    "page": 58
+  },
+  {
+    "idx": 199,
+    "number": "200",
+    "title": "Punishment for non- treatment of victim",
+    "page": 58
+  },
+  {
+    "idx": 200,
+    "number": "201",
+    "title": "Public servant framing an incorrect document with intent to cause injury",
+    "page": 58
+  },
+  {
+    "idx": 201,
+    "number": "202",
+    "title": "Public servant unlawfully engaging in trade",
+    "page": 58
+  },
+  {
+    "idx": 202,
+    "number": "203",
+    "title": "Public servant unlawfully buying or bidding for property",
+    "page": 58
+  },
+  {
+    "idx": 203,
+    "number": "204",
+    "title": "Personating a public servant",
+    "page": 58
+  },
+  {
+    "idx": 204,
+    "number": "205",
+    "title": "Wearing garb or carrying token used by public servant with fraudulent intent",
+    "page": 58
+  },
+  {
+    "idx": 205,
+    "number": "206",
+    "title": "Absconding to avoid service of summons or other proceeding",
+    "page": 59
+  },
+  {
+    "idx": 206,
+    "number": "207",
+    "title": "Preventing service of summons or other proceeding, or preventing publication",
+    "page": 59
+  },
+  {
+    "idx": 207,
+    "number": "208",
+    "title": "Non- attendance in obedience to an order from public servant",
+    "page": 59
+  },
+  {
+    "idx": 208,
+    "number": "209",
+    "title": "Non- appearance in response to a proclamation section 84 of Bharatiya Nagarik Suraksha",
+    "page": 59
+  },
+  {
+    "idx": 209,
+    "number": "210",
+    "title": "Sanhita, 2023. Omission to produce document or record to public servant by person legally bound to produce it",
+    "page": 60
+  },
+  {
+    "idx": 210,
+    "number": "211",
+    "title": "Omission to information to public servant by person legally bound to give it",
+    "page": 60
+  },
+  {
+    "idx": 211,
+    "number": "212",
+    "title": "Furnishing false information",
+    "page": 60
+  },
+  {
+    "idx": 212,
+    "number": "213",
+    "title": "Refusing oath or affirmation when duly public servant to make it",
+    "page": 61
+  },
+  {
+    "idx": 213,
+    "number": "214",
+    "title": "Refusing to answer public servant question",
+    "page": 61
+  },
+  {
+    "idx": 214,
+    "number": "215",
+    "title": "Refusing to sign statement",
+    "page": 61
+  },
+  {
+    "idx": 215,
+    "number": "216",
+    "title": "False statement on oath or affirmation to public servant or person administer an oath or affirmation",
+    "page": 61
+  },
+  {
+    "idx": 216,
+    "number": "217",
+    "title": "False information, with intent to cause public servant to use his lawful power to injury of another person",
+    "page": 61
+  },
+  {
+    "idx": 217,
+    "number": "218",
+    "title": "Resistance to taking of property by lawful authority of a public servant",
+    "page": 62
+  },
+  {
+    "idx": 218,
+    "number": "219",
+    "title": "Obstructing sale of property offered for sale by authority of public servant",
+    "page": 62
+  },
+  {
+    "idx": 219,
+    "number": "220",
+    "title": "Illegal purchase or bid for property offered for sale public servant",
+    "page": 62
+  },
+  {
+    "idx": 220,
+    "number": "221",
+    "title": "Obstructing public servant in discharge of public",
+    "page": 62
+  },
+  {
+    "idx": 221,
+    "number": "222",
+    "title": "Omission to assist public servant when bound by law to give assistance",
+    "page": 62
+  },
+  {
+    "idx": 222,
+    "number": "223",
+    "title": "Disobedience to order duly promulgated by public",
+    "page": 62
+  },
+  {
+    "idx": 223,
+    "number": "224",
+    "title": "Threat of injury to public servant",
+    "page": 63
+  },
+  {
+    "idx": 224,
+    "number": "225",
+    "title": "Threat of injury to induce person to refrain from applying for protection to public servant",
+    "page": 63
+  },
+  {
+    "idx": 225,
+    "number": "226",
+    "title": "Attempt to commit suicide to compel or restrain exercise of lawful power",
+    "page": 63
+  },
+  {
+    "idx": 226,
+    "number": "227",
+    "title": "Giving false evidence",
+    "page": 63
+  },
+  {
+    "idx": 227,
+    "number": "228",
+    "title": "Fabricating false evidence",
+    "page": 64
+  },
+  {
+    "idx": 228,
+    "number": "229",
+    "title": "Punishment for false evidence",
+    "page": 64
+  },
+  {
+    "idx": 229,
+    "number": "230",
+    "title": "Giving or fabricating false evidence with intent to procure capital offence",
+    "page": 65
+  },
+  {
+    "idx": 230,
+    "number": "231",
+    "title": "Giving or fabricating false evidence with intent to procure offence punishable with imprisonment for life or imprisonment",
+    "page": 65
+  },
+  {
+    "idx": 231,
+    "number": "232",
+    "title": "Threatening any person to give false evidence",
+    "page": 65
+  },
+  {
+    "idx": 232,
+    "number": "233",
+    "title": "Using evidence known to be false",
+    "page": 66
+  },
+  {
+    "idx": 233,
+    "number": "234",
+    "title": "Issuing or signing false certificate",
+    "page": 66
+  },
+  {
+    "idx": 234,
+    "number": "235",
+    "title": "Using as true a certificate known to be false",
+    "page": 66
+  },
+  {
+    "idx": 235,
+    "number": "236",
+    "title": "False statement made in declaration which is by law receivable as evidence",
+    "page": 66
+  },
+  {
+    "idx": 236,
+    "number": "237",
+    "title": "Using as true such declaration knowing it to be false",
+    "page": 66
+  },
+  {
+    "idx": 237,
+    "number": "238",
+    "title": "Causing disappearance of evidence of offence, or giving false information to screen",
+    "page": 66
+  },
+  {
+    "idx": 238,
+    "number": "239",
+    "title": "Intentional omission to give information of offence by person bound",
+    "page": 66
+  },
+  {
+    "idx": 239,
+    "number": "240",
+    "title": "to inform. Giving false information respecting an offence committed",
+    "page": 67
+  },
+  {
+    "idx": 240,
+    "number": "241",
+    "title": "Destruction of document or electronic record to prevent its production as evidence",
+    "page": 67
+  },
+  {
+    "idx": 241,
+    "number": "242",
+    "title": "False personation for purpose of act or proceeding in suit or prosecution",
+    "page": 67
+  },
+  {
+    "idx": 242,
+    "number": "243",
+    "title": "Fraudulent removal or concealment of property to prevent its seizure as forfeited or in execution",
+    "page": 67
+  },
+  {
+    "idx": 243,
+    "number": "244",
+    "title": "Fraudulent claim to property to prevent its seizure as forfeited or in execution",
+    "page": 67
+  },
+  {
+    "idx": 244,
+    "number": "245",
+    "title": "Fraudulently suffering decree for sum not due",
+    "page": 67
+  },
+  {
+    "idx": 245,
+    "number": "246",
+    "title": "Dishonestly making false claim in Court",
+    "page": 68
+  },
+  {
+    "idx": 246,
+    "number": "247",
+    "title": "Fraudulently obtaining decree for sum not due",
+    "page": 68
+  },
+  {
+    "idx": 247,
+    "number": "248",
+    "title": "False charge of offence made with intent to injure",
+    "page": 68
+  },
+  {
+    "idx": 248,
+    "number": "249",
+    "title": "Harbouring offender",
+    "page": 68
+  },
+  {
+    "idx": 249,
+    "number": "250",
+    "title": "Taking gift, etc., to screen an offender from punishment",
+    "page": 69
+  },
+  {
+    "idx": 250,
+    "number": "251",
+    "title": "Offering gift of property in consideration of screening",
+    "page": 69
+  },
+  {
+    "idx": 251,
+    "number": "252",
+    "title": "Taking gift to help to recover stolen property, etc",
+    "page": 69
+  },
+  {
+    "idx": 252,
+    "number": "253",
+    "title": "Harbouring has escaped from custody or whose has been ordered",
+    "page": 70
+  },
+  {
+    "idx": 253,
+    "number": "254",
+    "title": "Penalty for harbouring robbers or dacoits",
+    "page": 70
+  },
+  {
+    "idx": 254,
+    "number": "255",
+    "title": "Public servant disobeying direction of law with intent to save person from punishment or property from",
+    "page": 70
+  },
+  {
+    "idx": 255,
+    "number": "256",
+    "title": "forfeiture. Public servant framing incorrect record or writing with intent to save person from punishment or property from forfeiture",
+    "page": 71
+  },
+  {
+    "idx": 256,
+    "number": "257",
+    "title": "Public servant in judicial proceeding corruptly making report, etc., contrary to law",
+    "page": 71
+  },
+  {
+    "idx": 257,
+    "number": "258",
+    "title": "Commitment for trial or confinement by person having authority who knows that he is acting contrary to law",
+    "page": 71
+  },
+  {
+    "idx": 258,
+    "number": "259",
+    "title": "Intentional omission to apprehend on part of public servant bound to apprehend",
+    "page": 71
+  },
+  {
+    "idx": 259,
+    "number": "260",
+    "title": "Intentional omission to apprehend on part of public servant bound to apprehend person under sentence or lawfully committed",
+    "page": 71
+  },
+  {
+    "idx": 260,
+    "number": "261",
+    "title": "Escape from confinement or custody negligently suffered by public servant",
+    "page": 72
+  },
+  {
+    "idx": 261,
+    "number": "262",
+    "title": "Resistance or obstruction by a person to his lawful apprehension",
+    "page": 72
+  },
+  {
+    "idx": 262,
+    "number": "263",
+    "title": "Resistance or lawful apprehension of another person",
+    "page": 72
+  },
+  {
+    "idx": 263,
+    "number": "264",
+    "title": "Omission to apprehend, or sufferance of escape, on part of public servant, in cases not otherwise . provided for",
+    "page": 73
+  },
+  {
+    "idx": 264,
+    "number": "265",
+    "title": "Resistance or obstruction to lawful apprehension or escape or rescue in cases not otherwise provided for",
+    "page": 73
+  },
+  {
+    "idx": 265,
+    "number": "266",
+    "title": "Violation of condition of remission of punishment",
+    "page": 73
+  },
+  {
+    "idx": 266,
+    "number": "267",
+    "title": "Intentional insult or interruption to public servant sitting in judicial proceeding. Personation",
+    "page": 73
+  },
+  {
+    "idx": 267,
+    "number": "268",
+    "title": "of assessor",
+    "page": 73
+  },
+  {
+    "idx": 268,
+    "number": "269",
+    "title": "Failure by person released on bail bond or appear in Court",
+    "page": 73
+  },
+  {
+    "idx": 269,
+    "number": "270",
+    "title": "Public nuisance",
+    "page": 73
+  },
+  {
+    "idx": 270,
+    "number": "271",
+    "title": "Negligent act likely to spread infection of disease dangerous to life",
+    "page": 74
+  },
+  {
+    "idx": 271,
+    "number": "272",
+    "title": "M alignant act likely to spread infection of disease dangerous to life",
+    "page": 74
+  },
+  {
+    "idx": 272,
+    "number": "273",
+    "title": "Disobedience to quarantine rule",
+    "page": 74
+  },
+  {
+    "idx": 273,
+    "number": "274",
+    "title": "Adulteration of food or drink intended for sale",
+    "page": 74
+  },
+  {
+    "idx": 274,
+    "number": "275",
+    "title": "Sale of noxious food or drink",
+    "page": 74
+  },
+  {
+    "idx": 275,
+    "number": "276",
+    "title": "Adulteration of drugs",
+    "page": 74
+  },
+  {
+    "idx": 276,
+    "number": "277",
+    "title": "Sale of drugs",
+    "page": 74
+  },
+  {
+    "idx": 277,
+    "number": "278",
+    "title": "Sale of drug as a different drug or preparation",
+    "page": 74
+  },
+  {
+    "idx": 278,
+    "number": "279",
+    "title": "Fouling water of public spring or reservoir",
+    "page": 74
+  },
+  {
+    "idx": 279,
+    "number": "280",
+    "title": "Making atmosphere noxious to health",
+    "page": 74
+  },
+  {
+    "idx": 280,
+    "number": "281",
+    "title": "Rash driving or riding on a public way",
+    "page": 74
+  },
+  {
+    "idx": 281,
+    "number": "282",
+    "title": "Rash navigation of vessel",
+    "page": 75
+  },
+  {
+    "idx": 282,
+    "number": "283",
+    "title": "Exhibition of false light, mark or buoy",
+    "page": 75
+  },
+  {
+    "idx": 283,
+    "number": "284",
+    "title": "Conveying person by water for hire in unsafe or overloaded vessel",
+    "page": 75
+  },
+  {
+    "idx": 284,
+    "number": "285",
+    "title": "Danger or obstruction in public way or line of navigation",
+    "page": 75
+  },
+  {
+    "idx": 285,
+    "number": "286",
+    "title": "Negligent conduct with respect to poisonous substance",
+    "page": 75
+  },
+  {
+    "idx": 286,
+    "number": "287",
+    "title": "Negligent conduct with respect to fire or combustible matter",
+    "page": 75
+  },
+  {
+    "idx": 287,
+    "number": "288",
+    "title": "Negligent conduct with respect to explosive substance",
+    "page": 75
+  },
+  {
+    "idx": 288,
+    "number": "289",
+    "title": "Negligent conduct with respect to machinery",
+    "page": 75
+  },
+  {
+    "idx": 289,
+    "number": "290",
+    "title": "Negligent conduct with respect to pulling down, repairing or",
+    "page": 75
+  },
+  {
+    "idx": 290,
+    "number": "291",
+    "title": "constructing buildings, etc. Negligent conduct with respect to animal",
+    "page": 76
+  },
+  {
+    "idx": 291,
+    "number": "292",
+    "title": "Punishment for public nuisance in cases not otherwise provided for",
+    "page": 76
+  },
+  {
+    "idx": 292,
+    "number": "293",
+    "title": "Continuance of nuisance after injunction to discontinue",
+    "page": 76
+  },
+  {
+    "idx": 293,
+    "number": "294",
+    "title": "Sale, etc., of obscene books, etc",
+    "page": 76
+  },
+  {
+    "idx": 294,
+    "number": "295",
+    "title": "Sale, etc., of obscene objects to child",
+    "page": 77
+  },
+  {
+    "idx": 295,
+    "number": "296",
+    "title": "Obscene acts and songs",
+    "page": 77
+  },
+  {
+    "idx": 296,
+    "number": "297",
+    "title": "Keeping lottery office",
+    "page": 77
+  },
+  {
+    "idx": 297,
+    "number": "298",
+    "title": "Injuring or defiling place of worship with intent to insult religion of any class",
+    "page": 77
+  },
+  {
+    "idx": 298,
+    "number": "299",
+    "title": "Deliberate and malicious acts, intended to outrage religious feelings of any class by insulting its religion or religious beliefs",
+    "page": 77
+  },
+  {
+    "idx": 299,
+    "number": "300",
+    "title": "Disturbing religious assembly",
+    "page": 77
+  },
+  {
+    "idx": 300,
+    "number": "301",
+    "title": "Trespassing on burial places, etc",
+    "page": 78
+  },
+  {
+    "idx": 301,
+    "number": "302",
+    "title": "Uttering words, etc., with deliberate intent to wound religious feelings of any person",
+    "page": 78
+  },
+  {
+    "idx": 302,
+    "number": "303",
+    "title": "Theft",
+    "page": 78
+  },
+  {
+    "idx": 303,
+    "number": "304",
+    "title": "Snatching",
+    "page": 80
+  },
+  {
+    "idx": 304,
+    "number": "305",
+    "title": "Theft in a dwelling house, or means of or place of worship, etc",
+    "page": 80
+  },
+  {
+    "idx": 305,
+    "number": "306",
+    "title": "Theft by clerk or servant of property in possession of master",
+    "page": 80
+  },
+  {
+    "idx": 306,
+    "number": "307",
+    "title": "Theft after preparation made for causing death, hurt or restraint in order to committing of theft",
+    "page": 80
+  },
+  {
+    "idx": 307,
+    "number": "308",
+    "title": "Extortion",
+    "page": 80
+  },
+  {
+    "idx": 308,
+    "number": "309",
+    "title": "Robbery",
+    "page": 81
+  },
+  {
+    "idx": 309,
+    "number": "310",
+    "title": "Dacoity",
+    "page": 82
+  },
+  {
+    "idx": 310,
+    "number": "311",
+    "title": "Robbery, or dacoity, with attempt to cause death or grievous hurt",
+    "page": 82
+  },
+  {
+    "idx": 311,
+    "number": "312",
+    "title": "Attempt to robbery or",
+    "page": 82
+  },
+  {
+    "idx": 312,
+    "number": "313",
+    "title": "dacoity when armed with deadly weapon. Punishment for belonging to gang of robbers, etc",
+    "page": 83
+  },
+  {
+    "idx": 313,
+    "number": "314",
+    "title": "Dishonest misappropriation of property",
+    "page": 83
+  },
+  {
+    "idx": 314,
+    "number": "315",
+    "title": "Dishonest of property possessed by deceased person at the time of his death",
+    "page": 84
+  },
+  {
+    "idx": 315,
+    "number": "316",
+    "title": "Criminal breach of trust",
+    "page": 84
+  },
+  {
+    "idx": 316,
+    "number": "317",
+    "title": "Stolen property",
+    "page": 85
+  },
+  {
+    "idx": 317,
+    "number": "318",
+    "title": "Cheating",
+    "page": 86
+  },
+  {
+    "idx": 318,
+    "number": "319",
+    "title": "Cheating by personation",
+    "page": 87
+  },
+  {
+    "idx": 319,
+    "number": "320",
+    "title": "Dishonest or fraudulent removal or concealment of property to distribution among creditors",
+    "page": 87
+  },
+  {
+    "idx": 320,
+    "number": "321",
+    "title": "Dishonestly or fraudulently preventing debt being available for creditors",
+    "page": 87
+  },
+  {
+    "idx": 321,
+    "number": "322",
+    "title": "Dishonest or fraudulent execution of deed of transfer containing false statement of",
+    "page": 87
+  },
+  {
+    "idx": 322,
+    "number": "323",
+    "title": "consideration. Dishonest or fraudulent removal or concealment of property",
+    "page": 88
+  },
+  {
+    "idx": 323,
+    "number": "324",
+    "title": "Mischief",
+    "page": 88
+  },
+  {
+    "idx": 324,
+    "number": "325",
+    "title": "Mischief by killing or maiming animal",
+    "page": 89
+  },
+  {
+    "idx": 325,
+    "number": "326",
+    "title": "Mischief by injury, or explosive substance, etc",
+    "page": 89
+  },
+  {
+    "idx": 326,
+    "number": "327",
+    "title": "Mischief with intent to destroy or make unsafe a rail, aircraft, decked vessel or one of twenty tons burden",
+    "page": 89
+  },
+  {
+    "idx": 327,
+    "number": "328",
+    "title": "Punishment for intentionally running vessel aground or ashore with intent to commit theft, etc",
+    "page": 90
+  },
+  {
+    "idx": 328,
+    "number": "329",
+    "title": "Criminal house-trespass",
+    "page": 90
+  },
+  {
+    "idx": 329,
+    "number": "330",
+    "title": "House-trespass and house- breaking",
+    "page": 90
+  },
+  {
+    "idx": 330,
+    "number": "331",
+    "title": "Punishment for house-trespass or house- breaking",
+    "page": 91
+  },
+  {
+    "idx": 331,
+    "number": "332",
+    "title": "House-trespass in order to commit",
+    "page": 92
+  },
+  {
+    "idx": 332,
+    "number": "333",
+    "title": "House-trespass after preparation for hurt, assault or wrongful restraint",
+    "page": 92
+  },
+  {
+    "idx": 333,
+    "number": "334",
+    "title": "Dishonestly breaking open receptacle containing property",
+    "page": 92
+  },
+  {
+    "idx": 334,
+    "number": "335",
+    "title": "Making a false document",
+    "page": 92
+  },
+  {
+    "idx": 335,
+    "number": "336",
+    "title": "Forgery",
+    "page": 94
+  },
+  {
+    "idx": 336,
+    "number": "337",
+    "title": "Forgery of record of Court or of public register, etc",
+    "page": 95
+  },
+  {
+    "idx": 337,
+    "number": "338",
+    "title": "Forgery of valuable security, will, etc",
+    "page": 95
+  },
+  {
+    "idx": 338,
+    "number": "339",
+    "title": "Having possession of document described in section 337 or section 338, knowing it to be forged and intending to use it as genuine",
+    "page": 95
+  },
+  {
+    "idx": 339,
+    "number": "340",
+    "title": "Forged document or electronic record and genuine",
+    "page": 95
+  },
+  {
+    "idx": 340,
+    "number": "341",
+    "title": "Making or possessing counterfeit seal, etc., with intent to commit forgery punishable under section",
+    "page": 95
+  },
+  {
+    "idx": 341,
+    "number": "342",
+    "title": "Counterfeiting mark used for authenticating documents described in or possessing counterfeit marked material",
+    "page": 96
+  },
+  {
+    "idx": 342,
+    "number": "343",
+    "title": "Fraudulent destruction, etc., of will, authority to adopt, or valuable security",
+    "page": 96
+  },
+  {
+    "idx": 343,
+    "number": "344",
+    "title": "Falsification of accounts",
+    "page": 96
+  },
+  {
+    "idx": 344,
+    "number": "345",
+    "title": "Property mark",
+    "page": 96
+  },
+  {
+    "idx": 345,
+    "number": "346",
+    "title": "Tampering with property mark with intent to cause injury",
+    "page": 97
+  },
+  {
+    "idx": 346,
+    "number": "347",
+    "title": "Counterfeiting a property mark",
+    "page": 97
+  },
+  {
+    "idx": 347,
+    "number": "348",
+    "title": "Making or possession of any instrument for counterfeiting a property mark",
+    "page": 97
+  },
+  {
+    "idx": 348,
+    "number": "349",
+    "title": "Selling goods marked with a counterfeit property mark",
+    "page": 97
+  },
+  {
+    "idx": 349,
+    "number": "350",
+    "title": "Making a false mark upon any receptacle containing goods",
+    "page": 97
+  },
+  {
+    "idx": 350,
+    "number": "351",
+    "title": "Criminal intimidation",
+    "page": 97
+  },
+  {
+    "idx": 351,
+    "number": "352",
+    "title": "Intentional insult with intent to provoke breach of peace",
+    "page": 98
+  },
+  {
+    "idx": 352,
+    "number": "353",
+    "title": "Statements conducing to public mischief",
+    "page": 98
+  },
+  {
+    "idx": 353,
     "number": "354",
-    "title": "Whoever voluntarily causes or attempts to cause any person to do anything Act caused",
+    "title": "Act caused by inducing person to believe that he will be rendered an object of Divine displeasure",
     "page": 99
+  },
+  {
+    "idx": 354,
+    "number": "355",
+    "title": "Misconduct in public by a drunken person",
+    "page": 99
+  },
+  {
+    "idx": 355,
+    "number": "356",
+    "title": "Defamation",
+    "page": 99
+  },
+  {
+    "idx": 356,
+    "number": "357",
+    "title": "Breach of attend on and supply wants of helpless person",
+    "page": 102
+  },
+  {
+    "idx": 357,
+    "number": "358",
+    "title": "Repeal and savings. Kshitiz DN:c=IN,st=Delhi, 2b.,5p.4o.s2t0a=lCeo8dbe8=8161a09030326,8s2t5ref4edt=8M63in14to2cR6o3a4df2Nf2ew5eD2ee7lh6id,2f0b5f069af1775fa98f7ccda pseudonym=5c90ab0ba7a48905de2428b65504151c, Mohan serialNumber=0a5dc5b84f902a7bf2d6ed41c0c26429a0d4d5848dd23eb18886aba eea31b247,ou=DeputyManager,o=GovernmentofIndiaPress,cn=KshitizMohan Date:2023.12.2521:11:37+05'30'",
+    "page": 102
   }
 ]

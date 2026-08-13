@@ -128,6 +128,12 @@ E-Bench/
 │   │   │   ├── microlearning/         # Legal literacy lessons
 │   │   │   │   ├── page.tsx           # Lesson list
 │   │   │   │   └── [lessonId]/page.tsx # Individual lesson
+│   │   │   ├── laws/                  # Law browser (per-law FAISS)
+│   │   │   │   ├── page.tsx           # Law listing with domain filter + search
+│   │   │   │   └── [lawId]/
+│   │   │   │       ├── page.tsx       # Law detail with provision list
+│   │   │   │       └── provisions/
+│   │   │   │           └── [number]/page.tsx # Provision detail + AI enrichment
 │   │   │   ├── tools/
 │   │   │   │   ├── case-analyzer/page.tsx    # AI Case Analyzer
 │   │   │   │   ├── case-summarizer/page.tsx  # AI Case Summarizer
@@ -260,14 +266,27 @@ E-Bench/
 │       └── router.js
 │
 ├── RAG/                               # Python FastAPI AI server
-│   ├── main.py                       # Full RAG pipeline + 20 API endpoints (Semantic RAG)
+│   ├── main.py                       # Full RAG pipeline + 24 API endpoints (Semantic RAG + per-law)
+│   ├── build_corpus.py               # Phase 1: per-PDF extraction with 5 parser strategies
+│   ├── build_faiss.py                # Phase 2: per-law FAISS indexing (bge-base-en-v1.5, 768-dim)
+│   ├── build_master_index.py         # Phase 3: master_index.json builder
+│   ├── build_curated.py              # Phase 4: rule-based curated content per provision
 │   ├── requirements.txt
 │   ├── Readme.md
-│   ├── law_sections.json             # Cached extracted sections with sub_clauses[] + examples[]
-│   ├── law_embeddings.npy            # Cached corpus embeddings (one per sub-clause/example)
-│   ├── law_faiss.index               # FAISS vector index on sub-clause-level corpus
-│   ├── bns_sections.json             # BNS-specific section cache (legacy)
-│   ├── bns_embeddings.npy            # BNS-specific embeddings (legacy)
+│   ├── law_sections.json             # Legacy cached sections (old single-index pipeline)
+│   ├── law_embeddings.npy            # Legacy embeddings (old single-index)
+│   ├── law_faiss.index               # Legacy FAISS index (old single-index)
+│   ├── data/                         # Per-law file architecture (Phase 1-6)
+│   │   ├── master_index.json         # Router: 18 laws, 5,641 provisions, 15 domains
+│   │   ├── <law_id>/                 # Per-law directory (18 total)
+│   │   │   ├── corpus.json           # Extracted provisions
+│   │   │   ├── curated.json          # Rule-based summaries, keywords, topics
+│   │   │   ├── corpus_meta.json      # Embedding → provision number mapping
+│   │   │   ├── faiss.index           # Per-law FAISS index
+│   │   │   └── embeddings.npy        # Per-law embeddings
+│   │   ├── _extraction_summary.json  # Build stats
+│   │   ├── _faiss_summary.json       # FAISS build stats
+│   │   └── _curated_summary.json     # Curated content stats
 │   ├── BNS2023.pdf                   # Bharatiya Nyaya Sanhita 2023
 │   ├── BNSS2023.pdf                  # Bharatiya Nagarik Suraksha Sanhita 2023
 │   ├── BSA2023.pdf                   # Bharatiya Sakshya Adhiniyam 2023
@@ -496,6 +515,11 @@ E-Bench/
 | POST | `/legal-news/trending` | Fetch trending legal news from Indian Kanoon (multiple queries merged) |
 | POST | `/legal-news/to-lesson` | News → legal topic → sections → explanation → microlearning lesson |
 | GET | `/stats` | Index statistics |
+| GET | `/laws` | List all 18 indexed laws from `master_index.json` |
+| GET | `/laws/{law_id}` | Law detail (`?include_provisions=true` to include provision list) |
+| GET | `/laws/{law_id}/provisions/{number}` | Single provision detail with curated content |
+| POST | `/laws/{law_id}/provisions/{number}/enrich` | On-demand Nemotron enrichment for doctrines/use_cases/important_concepts (cached) |
+| POST | `/ask/routed` | Ask with law filter (`law_ids: ["bns_2023", "it_act_2000"]`) — uses per-law FAISS |
 
 ---
 
@@ -682,6 +706,7 @@ REST-based community forum:
 | Saved Contracts | `/contracts` | Full-view + harmful-clause-view per saved contract |
 | Saved Summaries | `/summaries` | All document summaries |
 | Downloads | `/downloads` | PDF download history (localStorage, max 15 entries) |
+| Law Browser | `/laws` | Browse 18 indexed laws, domain filtering, search, provision detail with AI enrichment |
 | Consultation (Chat + Video) | `/chats/new` | Select lawyer → book date/time slot + case type + notes → Pay → Real-time chat or WebRTC video call; slot saved to ConsultationRequests in MongoDB |
 | Community Forum | `/community` | Posts, replies, upvotes, categories, reputation |
 | Know Your Rights | `/free-tools/law-awareness` | 5 constitutional rights guides (Art 14, 19, 21, 22, 32) |
@@ -703,6 +728,7 @@ REST-based community forum:
 | Case Analyzer | `/lawyer-dashboard/case-analyzer` | AI case analysis (shared component) |
 | Risk Analyzer | `/lawyer-dashboard/risk-analyzer` | Contract risk analysis (shared component) |
 | Contracts | `/lawyer-dashboard/contracts` | Saved contracts (shared component) |
+| Law Browser | `/laws` | Browse indexed laws with provision detail and AI enrichment (shared with user dashboard) |
 | Legal News | `/lawyer-dashboard/legal-news` | Legal news feed (shared component) |
 | Community Forum | `/lawyer-dashboard/community` | Community forum (shared component, includes ask + post detail) |
 | Profile | `/lawyer-dashboard/profile` | Edit specialization, fee, languages |
@@ -853,6 +879,9 @@ class SearchResult(BaseModel):
 - `fetchLearningProgress()` — fetch user's learning progress from backend
 - `saveLessonProgress(payload)` — mark lesson complete, auto-updates daily streak
 - `saveQuizProgress(payload)` — save quiz answers/score
+- `fetchLaws()`, `fetchLawById()`, `fetchProvisionDetail()` — per-law FAISS browse
+- `enrichProvision(lawId, number, force?)` — on-demand Nemotron enrichment
+- `ragAskRouted(question, lawIds, top_k)` — law-filtered RAG Q&A
 
 ### `client/lib/lawyerApi.ts`
 - `fetchStats()`, `fetchLawyerProfile()`, `updateLawyerProfile(data)`
@@ -910,46 +939,146 @@ class SearchResult(BaseModel):
 14. **Google Translate widget** — on-page translation via `googtrans` cookie approach; available in English, Hindi, Marathi in both sidebar and navbar
 15. **Chrome Extension as standalone product** — T&C Analyzer and IndianLegal Chat work independently of the main web app, calling backend NVIDIA API directly
 16. **Semantic RAG (sub-clause level indexing)** — Instead of blind 220-word chunking, the pipeline parses legal PDFs into structured components (section → sub-clause → example). Each sub-clause and illustration becomes an independent corpus entry, enabling precise retrieval of specific legal provisions. The embedding corpus includes the full hierarchical context (`Section 4(1)(a) Punishments`) for accurate semantic matching, and retrieved results carry structured metadata down to the individual clause level. MMR diversity (λ=0.5) ensures section diversity in results, and LRU caching (256 entries) speeds up repeated queries.
+17. **Per-law FAISS architecture** — Instead of a single FAISS index for all laws, pipelines 1-6 build one FAISS index per PDF (18 indexes total, 5,641 provisions, 15.5MB). Each index uses `bge-base-en-v1.5` (768-dim, 10× faster on CPU than `bge-large`). A `master_index.json` router at `RAG/data/` maps law_id → metadata. This enables law-filtered queries (`POST /ask/routed`), modular add/remove of laws without rebuilding everything, and smaller per-query memory (load only relevant indexes). Phase 4 uses rule-based curated content (no LLM) — `curated.json` with summary/plain_english/keywords/legal_topics for every provision, upgradable to Nemotron-generated content later.
 
 ---
 
-## 12b. Semantic RAG Implementation Status
+## 12b. Per-Law FAISS Architecture (Phases 1-6)
 
-**✅ IMPLEMENTATION COMPLETE**
+**✅ PHASES 1-6 COMPLETE**
 
-The Semantic RAG pipeline is fully operational with the following components:
-- **757 sections** indexed across 4 legal documents
-- **3,188 corpus entries** (sub-clauses + examples as separate entries)
-- **1024-dimensional embeddings** via BAAI/bge-large-en-v1.5
-- **FAISS IndexFlatIP** for vector search
-- **CrossEncoder reranking** with hybrid scores (0.35×vector + 0.65×rerank)
-- **MMR diversity** (λ=0.5) for diverse section coverage
-- **LRU query cache** (maxsize=256) for frequent queries
-- **Async endpoints** with parallel IO via `asyncio.gather`
+The per-law FAISS pipeline is fully operational with the following components:
+- **18 laws** indexed (unique PDFs and compiled documents) across 15 domains
+- **5,641 total provisions** extracted and indexed
+- **18 per-law FAISS indexes** (768-dim, IndexFlatIP, bge-base-en-v1.5)
+- **15.5MB total index size** across all 18 laws
+- **master_index.json** router at `RAG/data/` for law discovery
+- **Per-law curated content** (rule-based: summary, plain_english, keywords, legal_topics)
+- **Legacy single-index pipeline** preserved for backward compatibility (`/ask`, `/query`)
 
-**Indexed Documents:**
-- BNS2023.pdf (Bharatiya Nyaya Sanhita 2023) - slow extraction due to Devanagari text
-- BNSS2023.pdf (Bharatiya Nagarik Suraksha Sanhita 2023) - 57+ sections
-- BSA2023.pdf (Bharatiya Sakshya Adhiniyam 2023) - 50 sections
-- MotorVehicleAct.pdf (Motor Vehicles Act) - 345 sections
+**New Endpoints (Phase 6):**
+- `GET /laws` — list all 18 laws with metadata
+- `GET /laws/{law_id}` — law detail with optional provision list
+- `GET /laws/{law_id}/provisions/{number}` — single provision with curated content
+- `POST /ask/routed` — law-filtered Q&A using per-law FAISS + Nemotron-3
 
-**Cache Files Generated:**
-- `law_sections.json` (3.1 MB) - structured sections with sub_clauses[] and examples[]
-- `law_embeddings.npy` (13 MB) - 3188 × 1024 embeddings
-- `law_faiss.index` (13 MB) - FAISS index
+**Per-Law Index Breakdown (largest to smallest):**
+- taxation (Income Tax Act 1961) — 1,581 provisions / 4.7MB / 3,284s build time
+- corporate (Companies Act 2013) — 1,217 provisions / 3.6MB
+- constitution (Constitution of India) — 459 provisions
+- motor_vehicles (Motor Vehicles Act) — 453 provisions
+- ica_1872 (Indian Contract Act 1872) — 317 provisions
+- tpa_1882 (Transfer of Property Act 1882) — 279 provisions
+- labour_employment (Labour & Employment Laws) — 251 provisions
+- it_act_2000 (Information Technology Act 2000) — 214 provisions
+- cpa_2019 (Consumer Protection Act 2019) — 212 provisions
+- rera (RERA 2016) — 180 provisions
+- securities (Securities Laws) — 104 provisions
+- sra_1963 (Specific Relief Act 1963) — 94 provisions
+- dv_act_2005 (Domestic Violence Act 2005) — 70 provisions
+- bnss_2023 (BNSS 2023) — 68 provisions
+- bns_2023 (BNS 2023) — 46 provisions
+- bsa_2023 (BSA 2023) — 46 provisions
+- family_laws (Family Courts Act 1984) — 46 provisions
+- gdr_rules_2014 (GDR Rules 2014) — 4 provisions
 
-**Retrieval Test Results:**
+**Frontend Integration (Phase 8):**
+- `fetchLaws()`, `fetchLawById()`, `fetchProvisionDetail()` in `lib/userApi.ts`
+- `ragAskRouted()` for law-filtered chat
+- Collapsible law-filter bar in `AiLegalChatPage.tsx` — click law chips to filter
+
+**✅ Phase 7 — On-demand Enrichment:**
+- `POST /laws/{law_id}/provisions/{provision_number}/enrich` — Nemotron-generated doctrines, use_cases, important_concepts
+- Results cached into `curated.json` for instant subsequent access
+- `force=true` parameter to re-enrich even if cached
+- `ProvisionDetailResponse` includes `doctrines`, `use_cases`, `important_concepts` fields
+
+**✅ Phase 9 — Frontend Law Browser:**
+- `/laws` — Law browser page with domain filtering, search, and grid view
+- `/laws/[lawId]` — Law detail page with provision list and search
+- `/laws/[lawId]/provisions/[number]` — Provision detail with full text, sub-clauses, curated summary, keywords, and AI enrichment
+- `enrichProvision()` API helper in `lib/userApi.ts`
+- Law Browser added to both user and lawyer dashboard sidebars
+
+---
+
+## 12c. Known Bug Fixes & Lessons Learned
+
+### 🐛 Bug: User message replaced by AI response in chat (FIXED)
+
+**Symptom:** In the AI Legal Chat (`client/components/tools/AiLegalChatPage.tsx`), after the user sends a question, the user message bubble visually disappeared and the AI's response appeared in its place. The user thought the AI's answer had "replaced" their typed question.
+
+**Root cause:** The user-message and the AI placeholder were being assigned ids from `Date.now()` calls in two different evaluation contexts:
+
+```tsx
+// BEFORE (buggy)
+setMessages(prev => [...prev, { id: Date.now(), sender: "user", text: q, ... }]);
+setIsTyping(true);
+const msgId = Date.now() + 1;
+setMessages(prev => [...prev, { id: msgId, sender: "ai", text: "", ... }]);
 ```
-Query: "What is the punishment for theft?"
-Results:
-- [BNSS Sec 243] example=illus_b score=0.841
-- [BNSS Sec 330] example=illus_a score=0.767
-- [BNSS Sec 395] sub_clause=d score=0.746
-- [BNSS Sec 243] example=illus_a score=0.677
-- [BNSS Sec 129] sub_clause=c score=0.624
+
+- The first `id: Date.now()` was *inside* the `setMessages` updater, so it was evaluated by React **later**, at state-update time.
+- The second `id: msgId` (computed as `Date.now() + 1` at line-execution time) was captured in the closure at the moment the line ran.
+
+Whenever the updater fired ~1 ms after the line executed, both messages ended up with the **same `id`**. React's `key={msg.id}` then reused the same DOM node for both, and the second (AI) message visually overwrote the first (user) message. The streaming response handler also updated the wrong message, appending AI tokens to the user bubble.
+
+**Fix:** Capture both ids synchronously, *outside* the updater callbacks, so they can never collide:
+
+```tsx
+// AFTER (fixed)
+const userId = Date.now();
+const msgId = userId + 1;
+setMessages(prev => [...prev, { id: userId, sender: "user", text: q, ... }]);
+setIsTyping(true);
+setMessages(prev => [...prev, { id: msgId, sender: "ai", text: "", ... }]);
 ```
 
-The pipeline correctly returns sub-clause and example level results, not just section-level matches.
+Applied in:
+- `client/components/tools/AiLegalChatPage.tsx` — `sendMessage()` and `analyzeImage()` (lines ~135, ~187).
+
+**Lesson:** When you build a list keyed by `id` and push multiple items in the same render frame, **always compute their ids synchronously, outside the `setState` updater**. A `Date.now()` call inside an updater is evaluated when React runs the updater — not when you wrote the line — and can collide with sibling ids computed moments earlier.
+
+**Related but safe:** The other `id: Date.now()` / `id: Date.now() + 1` patterns in `CaseAnalyzerPage.tsx`, `RiskAnalyzerPage.tsx`, `case-summarizer/page.tsx`, and `cases/page.tsx` are **not** affected — they build a local `messages[]` array that is then stored in `localStorage` and do not pass through a `setMessages` updater, so both `Date.now()` calls evaluate at line-execution time and never collide.
+
+**Unrelated issue surfaced in the same report:** The 403 "Authorization failed" the user saw in the AI bubble is a real backend error from the RAG server's NVIDIA NIM API key (`NVIDIA_API_KEY` in `RAG/.env`) being invalid, expired, or rate-limited. It's a credential issue, not a UI bug — but the user message is now visible alongside it.
+
+### 📊 RAG Server Terminal Logging
+
+The RAG server (`RAG/main.py`) now has structured, timestamped terminal logging via Python's `logging` module, configured at startup with format:
+
+```
+%(asctime)s.%(msecs)03d | %(levelname)-7s | %(name)-18s | %(message)s
+```
+
+Example: `2026-06-02 20:42:13.481 | INFO    | rag               | [POST /ask/stream] → NVIDIA ...`
+
+**What gets logged for every request:**
+
+1. **Endpoint entry** — request method, path, question preview, `top_k`, history message count
+2. **Retrieval timing** — `embed`, `faiss`, `rerank`, `total` durations in seconds (per-stage breakdown)
+3. **Retrieved documents** — for each of the top results: document name (BNS/BNSS/BSA/MVA/Corporate/Securities), section number, title, sub-clause/example locator, and the three scores (hybrid, vector_similarity, reranker_relevance)
+4. **Unique docs touched** — sorted list of distinct document names hit during retrieval
+5. **LLM call** — model name, prompt size (chars / estimated tokens), with `→ NVIDIA` (request) and `← NVIDIA` (response) markers
+6. **LLM response** — elapsed time, prompt/completion/total token counts (from `response.usage`), answer length, response preview (truncated to 400 chars)
+7. **Errors** — exception message, elapsed time at failure, with `logger.error` (not `print`)
+8. **Request total** — end-to-end elapsed time from request received to response sent
+
+**Endpoints covered:**
+- `POST /ask` — non-streaming AI Q&A
+- `POST /ask/stream` — streaming AI Q&A (uses `/ask/stream` from frontend chat)
+- `GET /query` — alternative GET-based Q&A
+- `POST /tools/case-analyzer` — case analysis tool
+- `POST /tools/contract-risk` — contract risk tool
+- `POST /tools/case-summarizer` — document summarizer tool
+- `POST /microlearning/ask` — microlearning Q&A
+
+**Helpers added at top of `RAG/main.py`:**
+- `logger = logging.getLogger("rag")`
+- `_truncate(text, limit=240)` — flattens newlines and truncates with a `(+N chars)` suffix
+- `_format_retrieved_docs(ranked)` — produces a single-line summary of all retrieved docs with their scores
+
+**Startup banner** also logs: model name, document set, FAISS build time + vector count + corpus entry count, MongoDB connection status.
 
 ---
 
@@ -1012,3 +1141,8 @@ npm run dev    # → http://localhost:3000
 | Backend API | http://localhost:4000 |
 | RAG AI API | http://localhost:8000 |
 | RAG Docs (Swagger) | http://localhost:8000/docs |
+
+
+
+  Session   HuggingFace Vercel Render deploy plan & keys
+opencode -s ses_0996b01d8ffeS26YhtaHjUuula

@@ -1,0 +1,3 @@
+BNS: sampled margin_max range [(144.5, 417.5)], body_min range [(172.2, 486.1)]
+BNSS: sampled margin_max range [(71.5, 304.9)], body_min range [(117.6, 453.7)]
+BSA: sampled margin_max range [(87.6, 322.2)], body_min range [(141.6, 486.4)]

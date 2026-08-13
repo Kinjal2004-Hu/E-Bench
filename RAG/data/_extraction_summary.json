@@ -120,8 +120,8 @@
     "id": "bns_2023",
     "label": "Bharatiya Nyaya Sanhita, 2023",
     "domain": "Criminal Law",
-    "provision_count": 46,
-    "strategy": "default_numbered",
+    "provision_count": 358,
+    "strategy": "gazette_two_column",
     "extraction_seconds": 27.69,
     "error": null
   },
@@ -129,8 +129,8 @@
     "id": "bnss_2023",
     "label": "Bharatiya Nagarik Suraksha Sanhita, 2023",
     "domain": "Criminal Procedure",
-    "provision_count": 68,
-    "strategy": "default_numbered",
+    "provision_count": 533,
+    "strategy": "gazette_two_column",
     "extraction_seconds": 33.2,
     "error": null
   },
@@ -138,8 +138,8 @@
     "id": "bsa_2023",
     "label": "Bharatiya Sakshya Adhiniyam, 2023",
     "domain": "Evidence Law",
-    "provision_count": 46,
-    "strategy": "default_numbered",
+    "provision_count": 170,
+    "strategy": "gazette_two_column",
     "extraction_seconds": 11.25,
     "error": null
   },

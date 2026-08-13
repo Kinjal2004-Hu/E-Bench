@@ -1,0 +1,613 @@
+{
+  "results": [
+    {
+      "query": "What is Section 302 BNS and its punishment?",
+      "expected": {
+        "law_id": "bns_2023",
+        "number": "302"
+      },
+      "hit_at": 1,
+      "elapsed_s": 10.43,
+      "top": [
+        {
+          "law": "Bharatiya Nyaya Sanhita, 2023",
+          "num": "302",
+          "title": "Uttering words, etc., with deliberate intent to wo",
+          "score": 0.748
+        },
+        {
+          "law": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "num": "303",
+          "title": "Power of State Government or Central Government to",
+          "score": 0.1214
+        },
+        {
+          "law": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "num": "33",
+          "title": "Public to give information of certain offences",
+          "score": 0.0631
+        },
+        {
+          "law": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "num": "222",
+          "title": "Prosecution defamation",
+          "score": 0.0587
+        },
+        {
+          "law": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "num": "242",
+          "title": "Offences of same kind within year may be charged t",
+          "score": 0.0395
+        }
+      ]
+    },
+    {
+      "query": "What is the punishment for murder in the Bharatiya Nyaya Sanhita?",
+      "expected": {
+        "law_id": "bns_2023",
+        "number": "103"
+      },
+      "hit_at": null,
+      "elapsed_s": 9.99,
+      "top": [
+        {
+          "law": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "num": "220",
+          "title": "Prosecution of offences under section 85 of Bharat",
+          "score": 0.1112
+        },
+        {
+          "law": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "num": "359",
+          "title": "Compounding of offences",
+          "score": 0.0816
+        },
+        {
+          "law": "Bharatiya Nyaya Sanhita, 2023",
+          "num": "1",
+          "title": "Short title, commencement and application",
+          "score": 0.0732
+        },
+        {
+          "law": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "num": "221",
+          "title": "Cognizance of offence",
+          "score": 0.0711
+        },
+        {
+          "law": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "num": "363",
+          "title": "Trial of previously convicted of offences against ",
+          "score": 0.0581
+        }
+      ]
+    },
+    {
+      "query": "What does Section 302 of the Indian Penal Code say in BNS?",
+      "expected": {
+        "law_id": "bns_2023",
+        "number": "103"
+      },
+      "hit_at": 1,
+      "elapsed_s": 10.42,
+      "top": [
+        {
+          "law": "Bharatiya Nyaya Sanhita, 2023",
+          "num": "103",
+          "title": "Punishment for murder",
+          "score": 0.3781
+        },
+        {
+          "law": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "num": "33",
+          "title": "Public to give information of certain offences",
+          "score": 0.2923
+        },
+        {
+          "law": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "num": "303",
+          "title": "Power of State Government or Central Government to",
+          "score": 0.123
+        },
+        {
+          "law": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "num": "222",
+          "title": "Prosecution defamation",
+          "score": 0.0683
+        },
+        {
+          "law": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "num": "283",
+          "title": "Power to try summarily",
+          "score": 0.0569
+        }
+      ]
+    },
+    {
+      "query": "What is the punishment for rape under BNS?",
+      "expected": {
+        "law_id": "bns_2023",
+        "number": "64"
+      },
+      "hit_at": 1,
+      "elapsed_s": 10.38,
+      "top": [
+        {
+          "law": "Bharatiya Nyaya Sanhita, 2023",
+          "num": "64",
+          "title": "Punishment for rape",
+          "score": 0.6623
+        },
+        {
+          "law": "Bharatiya Nyaya Sanhita, 2023",
+          "num": "70",
+          "title": "Gang rape",
+          "score": 0.0764
+        },
+        {
+          "law": "Bharatiya Nyaya Sanhita, 2023",
+          "num": "65",
+          "title": "Punishment for rape in certain cases",
+          "score": 0.0696
+        }
+      ]
+    },
+    {
+      "query": "What is the punishment for dowry death in BNS?",
+      "expected": {
+        "law_id": "bns_2023",
+        "number": "80"
+      },
+      "hit_at": 1,
+      "elapsed_s": 9.14,
+      "top": [
+        {
+          "law": "Bharatiya Nyaya Sanhita, 2023",
+          "num": "80",
+          "title": "Dowry death",
+          "score": 0.7665
+        },
+        {
+          "law": "Bharatiya Sakshya Adhiniyam, 2023",
+          "num": "118",
+          "title": "Presumption death",
+          "score": 0.0425
+        }
+      ]
+    },
+    {
+      "query": "What is Section 302 of BNSS about?",
+      "expected": {
+        "law_id": "bnss_2023",
+        "number": "302"
+      },
+      "hit_at": 1,
+      "elapsed_s": 6.45,
+      "top": [
+        {
+          "law": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "num": "302",
+          "title": "Power to require attendance of prisoners",
+          "score": 0.7486
+        },
+        {
+          "law": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "num": "303",
+          "title": "Power of State Government or Central Government to",
+          "score": 0.2267
+        },
+        {
+          "law": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "num": "33",
+          "title": "Public to give information of certain offences",
+          "score": 0.0551
+        },
+        {
+          "law": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "num": "292",
+          "title": "Report of mutually satisfactory disposition to be ",
+          "score": 0.0435
+        },
+        {
+          "law": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "num": "222",
+          "title": "Prosecution defamation",
+          "score": 0.0323
+        }
+      ]
+    },
+    {
+      "query": "What is Section 197 of BNSS about?",
+      "expected": {
+        "law_id": "bnss_2023",
+        "number": "197"
+      },
+      "hit_at": 1,
+      "elapsed_s": 6.44,
+      "top": [
+        {
+          "law": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "num": "197",
+          "title": "Ordinary place of inquiry and trial",
+          "score": 0.7487
+        },
+        {
+          "law": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "num": "217",
+          "title": "Prosecution for offences against State and for cri",
+          "score": 0.3513
+        }
+      ]
+    },
+    {
+      "query": "What is Section 480 of BNSS about bail?",
+      "expected": {
+        "law_id": "bnss_2023",
+        "number": "480"
+      },
+      "hit_at": 2,
+      "elapsed_s": 9.66,
+      "top": [
+        {
+          "law": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "num": "483",
+          "title": "Special powers of High Court or Court of Session r",
+          "score": 0.7222
+        },
+        {
+          "law": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "num": "480",
+          "title": "When bail in case of non-bailable offence",
+          "score": 0.3494
+        },
+        {
+          "law": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "num": "482",
+          "title": "Direction for grant of bail to person apprehending",
+          "score": 0.0714
+        }
+      ]
+    },
+    {
+      "query": "What does Section 3 of BSA say about evidence?",
+      "expected": {
+        "law_id": "bsa_2023",
+        "number": "3"
+      },
+      "hit_at": 1,
+      "elapsed_s": 9.3,
+      "top": [
+        {
+          "law": "Bharatiya Sakshya Adhiniyam, 2023",
+          "num": "3",
+          "title": "Evidence may be given of facts in issue and releva",
+          "score": 0.7223
+        },
+        {
+          "law": "Bharatiya Sakshya Adhiniyam, 2023",
+          "num": "141",
+          "title": "Judge to decide as to admissibility of evidence",
+          "score": 0.0646
+        },
+        {
+          "law": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "num": "509",
+          "title": "Non- compliance with provisions of section 183 or ",
+          "score": 0.0585
+        },
+        {
+          "law": "Bharatiya Sakshya Adhiniyam, 2023",
+          "num": "161",
+          "title": "What matters may be proved in connection with prov",
+          "score": 0.0307
+        }
+      ]
+    },
+    {
+      "query": "What is Section 66 of the Information Technology Act?",
+      "expected": {
+        "law_id": "it_act_2000",
+        "number": "66"
+      },
+      "hit_at": null,
+      "elapsed_s": 3.47,
+      "top": [
+        {
+          "law": "Information Technology Act, 2000",
+          "num": "90",
+          "title": "Power of State Government to make rules",
+          "score": 0.2514
+        },
+        {
+          "law": "Bharatiya Sakshya Adhiniyam, 2023",
+          "num": "62",
+          "title": "Special provisions as to evidence relating to elec",
+          "score": 0.2085
+        },
+        {
+          "law": "Income Tax Act, 1961",
+          "num": "66",
+          "title": "Total income.\u2014In computing the total income of an ",
+          "score": 0.0632
+        },
+        {
+          "law": "Information Technology Act, 2000",
+          "num": "1",
+          "title": "Short title, extent, commencement and application.",
+          "score": 0.0482
+        },
+        {
+          "law": "Information Technology Act, 2000",
+          "num": "69B",
+          "title": "Power to authorise to monitor and collect traffic ",
+          "score": 0.0463
+        }
+      ]
+    },
+    {
+      "query": "Section 130 of the Motor Vehicles Act, duty to produce licence?",
+      "expected": {
+        "law_id": "motor_vehicles",
+        "number": "130"
+      },
+      "hit_at": null,
+      "elapsed_s": 1.05,
+      "top": [
+        {
+          "law": "Motor Vehicles Act",
+          "num": "2",
+          "title": "Definitions.\u2014In this Act, unless the context other",
+          "score": 0.4651
+        },
+        {
+          "law": "Motor Vehicles Act",
+          "num": "12",
+          "title": "Licensing and regulation of schools or establishme",
+          "score": 0.2274
+        },
+        {
+          "law": "Motor Vehicles Act",
+          "num": "210",
+          "title": "Courts to send intimation about conviction.\u2014Every ",
+          "score": 0.1546
+        },
+        {
+          "law": "Motor Vehicles Act",
+          "num": "28",
+          "title": "Power of State Government to make rules.\u2014(1) A Sta",
+          "score": 0.1529
+        }
+      ]
+    },
+    {
+      "query": "What agreements are contracts under Section 10 of the Indian Contract Act?",
+      "expected": {
+        "law_id": "ica_1872",
+        "number": "10"
+      },
+      "hit_at": null,
+      "elapsed_s": 5.02,
+      "top": [
+        {
+          "law": "Indian Contract Act, 1872",
+          "num": "30",
+          "title": "Agreements by way of wager, void",
+          "score": 0.2629
+        },
+        {
+          "law": "Indian Contract Act, 1872",
+          "num": "9",
+          "title": "Promises, express and implied",
+          "score": 0.1811
+        },
+        {
+          "law": "Indian Contract Act, 1872",
+          "num": "238",
+          "title": "Effect, on agreement, of misrepresentation or frau",
+          "score": 0.0385
+        },
+        {
+          "law": "Specific Relief Act, 1963",
+          "num": "9",
+          "title": "Defences respecting suits for relief based on cont",
+          "score": 0.0355
+        },
+        {
+          "law": "Income Tax Act, 1961",
+          "num": "10A",
+          "title": "Special provision in respect of newly established ",
+          "score": 0.0336
+        }
+      ]
+    },
+    {
+      "query": "What does Article 21 of the Constitution of India protect?",
+      "expected": {
+        "law_id": "constitution",
+        "number": "21"
+      },
+      "hit_at": null,
+      "elapsed_s": 4.67,
+      "top": [
+        {
+          "law": "Protection of Women from Domestic Violence Act, 2005",
+          "num": "37",
+          "title": "Power of Central Government to make rules",
+          "score": 0.3289
+        },
+        {
+          "law": "Consumer Protection Act, 2019",
+          "num": "107",
+          "title": "Repeal and savings",
+          "score": 0.1035
+        },
+        {
+          "law": "Constitution of India",
+          "num": "367",
+          "title": "Interpretation.\u2014(1) Unless the context otherwise r",
+          "score": 0.0861
+        },
+        {
+          "law": "Bharatiya Sakshya Adhiniyam, 2023",
+          "num": "52",
+          "title": "Facts of which Court shall take judicial notice",
+          "score": 0.0385
+        }
+      ]
+    },
+    {
+      "query": "What does Section 18 of RERA say about return of amount?",
+      "expected": {
+        "law_id": "rera",
+        "number": "18"
+      },
+      "hit_at": 1,
+      "elapsed_s": 7.34,
+      "top": [
+        {
+          "law": "Real Estate (Regulation and Development) Act, 2016",
+          "num": "18",
+          "title": "Return of amount and compensation",
+          "score": 0.7495
+        },
+        {
+          "law": "Income Tax Act, 1961",
+          "num": "237",
+          "title": "Refunds.\u2014If any person satisfies the 1[AssessingOf",
+          "score": 0.162
+        },
+        {
+          "law": "Income Tax Act, 1961",
+          "num": "3",
+          "title": "The Explanation numbered as Explanation 1 by Act 2",
+          "score": 0.0944
+        },
+        {
+          "law": "Companies Act, 2013",
+          "num": "4",
+          "title": "Sub-section (7) omitted by Act 22 of 2019, s. 29 (",
+          "score": 0.0381
+        }
+      ]
+    },
+    {
+      "query": "What is cheating under Section 420 of the IPC in the new law?",
+      "expected": {
+        "law_id": "bns_2023",
+        "number": "318"
+      },
+      "hit_at": 1,
+      "elapsed_s": 8.44,
+      "top": [
+        {
+          "law": "Bharatiya Nyaya Sanhita, 2023",
+          "num": "318",
+          "title": "Cheating",
+          "score": 0.6477
+        },
+        {
+          "law": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "num": "202",
+          "title": "Offences committed by means of electronic communic",
+          "score": 0.2708
+        },
+        {
+          "law": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "num": "238",
+          "title": "Effect of errors",
+          "score": 0.1831
+        }
+      ]
+    },
+    {
+      "query": "What is the punishment for criminal breach of trust?",
+      "expected": {
+        "law_id": "bns_2023",
+        "number": "316"
+      },
+      "hit_at": 2,
+      "elapsed_s": 4.17,
+      "top": [
+        {
+          "law": "Bharatiya Nyaya Sanhita, 2023",
+          "num": "315",
+          "title": "Dishonest of property possessed by deceased person",
+          "score": 0.77
+        },
+        {
+          "law": "Bharatiya Nyaya Sanhita, 2023",
+          "num": "316",
+          "title": "Criminal breach of trust",
+          "score": 0.0377
+        }
+      ]
+    },
+    {
+      "query": "What does Section 109 of BNS say about attempt to murder?",
+      "expected": {
+        "law_id": "bns_2023",
+        "number": "109"
+      },
+      "hit_at": 1,
+      "elapsed_s": 13.93,
+      "top": [
+        {
+          "law": "Bharatiya Nyaya Sanhita, 2023",
+          "num": "109",
+          "title": "Attempt to murder",
+          "score": 0.7546
+        },
+        {
+          "law": "Bharatiya Sakshya Adhiniyam, 2023",
+          "num": "24",
+          "title": "Consideration of proved confession affecting perso",
+          "score": 0.2888
+        }
+      ]
+    },
+    {
+      "query": "What is Section 482 of BNSS about anticipatory bail?",
+      "expected": {
+        "law_id": "bnss_2023",
+        "number": "482"
+      },
+      "hit_at": 1,
+      "elapsed_s": 10.77,
+      "top": [
+        {
+          "law": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "num": "482",
+          "title": "Direction for grant of bail to person apprehending",
+          "score": 0.7552
+        },
+        {
+          "law": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "num": "492",
+          "title": "Cancellation of bond and bail bond",
+          "score": 0.2216
+        },
+        {
+          "law": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "num": "297",
+          "title": "Period of detention undergone by accused to be set",
+          "score": 0.0896
+        },
+        {
+          "law": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "num": "493",
+          "title": "Procedure in case of insolvency or death of surety",
+          "score": 0.0363
+        }
+      ]
+    }
+  ],
+  "top_k": 7,
+  "hits": {
+    "1": 11,
+    "3": 13,
+    "5": 13,
+    "7": 13
+  },
+  "mrr": 0.6667,
+  "avg_retrieval_s": 7.84
+}

@@ -1,410 +1,3200 @@
 [
   {
     "idx": 0,
-    "number": "30",
-    "title": "Police officers superior in rank to an officer in charge of a police station may Powers of",
-    "page": 11
+    "number": "1",
+    "title": "Short title, extent and commencement",
+    "page": 1
   },
   {
     "idx": 1,
-    "number": "31",
-    "title": "Every person is bound to assist a Magistrate or police officer reasonably demanding Public when to",
-    "page": 11
+    "number": "2",
+    "title": "Definitions",
+    "page": 2
   },
   {
     "idx": 2,
-    "number": "32",
-    "title": "When a warrant is directed to a person other than a police officer, any other Aid to person",
-    "page": 11
+    "number": "3",
+    "title": "Construction of references",
+    "page": 3
   },
   {
     "idx": 3,
-    "number": "38",
-    "title": "When any person is arrested and interrogated by the police, he shall be entitled Right of",
-    "page": 15
+    "number": "4",
+    "title": "Trial of offences under Bharatiya Nyaya Sanhita, 2023 and other laws",
+    "page": 4
   },
   {
     "idx": 4,
-    "number": "50",
-    "title": "The police officer or other person making any arrest under this Sanhita may, Power to seize",
-    "page": 17
+    "number": "5",
+    "title": "Saving",
+    "page": 4
   },
   {
     "idx": 5,
-    "number": "54",
-    "title": "Where a person is arrested on a charge of committing an offence and his Identification",
-    "page": 19
+    "number": "6",
+    "title": "Classes of Courts",
+    "page": 4
   },
   {
     "idx": 6,
-    "number": "56",
-    "title": "It shall be the duty of the person having the custody of an accused to take Health and",
-    "page": 19
+    "number": "7",
+    "title": "Territorial",
+    "page": 4
   },
   {
     "idx": 7,
-    "number": "57",
-    "title": "A police officer making an arrest without warrant shall, without unnecessary Person",
-    "page": 19
+    "number": "8",
+    "title": "Court of Session",
+    "page": 4
   },
   {
     "idx": 8,
-    "number": "58",
-    "title": "No police officer shall detain in custody a person arrested without warrant for a Person",
-    "page": 19
+    "number": "9",
+    "title": "Courts of Judicial Magistrates",
+    "page": 5
   },
   {
     "idx": 9,
-    "number": "59",
-    "title": "Officers in charge of police stations shall report to the District Magistrate, or, if Police to",
-    "page": 19
+    "number": "10",
+    "title": "Chief Judicial Magistrate and Additional Chief Judicial Magistrate, etc",
+    "page": 5
   },
   {
     "idx": 10,
-    "number": "67",
-    "title": "If service cannot by the exercise of due diligence be effected as provided in Procedure",
-    "page": 21
+    "number": "11",
+    "title": "Special Judicial Magistrates",
+    "page": 6
   },
   {
     "idx": 11,
-    "number": "69",
-    "title": "When a Court desires that a summons issued by it shall be served at any place Service of",
-    "page": 21
+    "number": "12",
+    "title": "Local Jurisdiction of Judicial Magistrates",
+    "page": 6
   },
   {
     "idx": 12,
-    "number": "86",
-    "title": "The Court may, on the written request from a police officer not below the rank of Identification",
-    "page": 25
+    "number": "13",
+    "title": "Subordination of Judicial Magistrates",
+    "page": 6
   },
   {
     "idx": 13,
-    "number": "101",
-    "title": "Upon complaint made on oath of the abduction or unlawful detention of a Power to",
-    "page": 29
+    "number": "14",
+    "title": "Executive Magistrates",
+    "page": 6
   },
   {
     "idx": 14,
-    "number": "109",
-    "title": "Any Court may, if it thinks fit, impound any document or thing produced before Power to",
-    "page": 31
+    "number": "15",
+    "title": "Special Executive Magistrates",
+    "page": 7
   },
   {
     "idx": 15,
-    "number": "128",
-    "title": "When an Executive Magistrate receives information that there is within his local Security for",
-    "page": 37
+    "number": "16",
+    "title": "Local Jurisdiction of Executive Magistrates",
+    "page": 7
   },
   {
     "idx": 16,
-    "number": "129",
-    "title": "When an Executive Magistrate receives information that there is within his local Security for",
-    "page": 37
+    "number": "17",
+    "title": "Subordination of Executive Magistrates",
+    "page": 7
   },
   {
     "idx": 17,
-    "number": "137",
-    "title": "If, on an inquiry under section 135, it is not proved that it is necessary for Discharge of",
-    "page": 39
+    "number": "18",
+    "title": "Public Prosecutors",
+    "page": 7
   },
   {
     "idx": 18,
-    "number": "155",
-    "title": "If the person against whom an order is made under section 154 does not perform Penalty for",
-    "page": 47
+    "number": "19",
+    "title": "Assistant Public Prosecutors",
+    "page": 8
   },
   {
     "idx": 19,
-    "number": "162",
-    "title": "A District Magistrate or Sub-divisional Magistrate, or any other Executive Magistrate",
-    "page": 49
+    "number": "20",
+    "title": "Directorate of Prosecution",
+    "page": 8
   },
   {
     "idx": 20,
-    "number": "178",
-    "title": "The Magistrate, on receiving a report under section 176, may direct an Power to hold",
-    "page": 55
+    "number": "21",
+    "title": "Courts by which offences are triable",
+    "page": 9
   },
   {
     "idx": 21,
-    "number": "188",
-    "title": "When any subordinate police officer has made any investigation under this Report of",
-    "page": 61
+    "number": "22",
+    "title": "Sentences which High Courts and Sessions Judges may pass",
+    "page": 10
   },
   {
     "idx": 22,
-    "number": "189",
-    "title": "If, upon an investigation under this Chapter, it appears to the officer in charge of Release of",
-    "page": 61
+    "number": "23",
+    "title": "Sentences which Magistrates may pass",
+    "page": 10
   },
   {
     "idx": 23,
-    "number": "197",
-    "title": "Every offence shall ordinarily be inquired into and tried by a Court within whose Ordinary place",
-    "page": 65
+    "number": "24",
+    "title": "Sentence of imprisonment in default of fine",
+    "page": 10
   },
   {
     "idx": 24,
-    "number": "209",
-    "title": "When any offence alleged to have been committed in a territory outside India is Receipt of",
-    "page": 67
+    "number": "25",
+    "title": "Sentence in cases of conviction of several offences at",
+    "page": 10
   },
   {
     "idx": 25,
-    "number": "216",
-    "title": "A witness or any other person may file a complaint in relation to an offence Procedure for",
-    "page": 69
+    "number": "26",
+    "title": "Mode of conferring powers",
+    "page": 10
   },
   {
     "idx": 26,
-    "number": "224",
-    "title": "If the complaint is made to a Magistrate who is not competent to take cognizance Procedure by",
-    "page": 73
+    "number": "27",
+    "title": "Powers of officers appointed",
+    "page": 10
   },
   {
     "idx": 27,
-    "number": "230",
-    "title": "In any case where the proceeding has been instituted on a police report, the Supply to",
-    "page": 75
+    "number": "28",
+    "title": "Withdrawal of powers",
+    "page": 11
   },
   {
     "idx": 28,
-    "number": "232",
-    "title": "When in a case instituted on a police report or otherwise, the accused appears or Commitment",
-    "page": 75
+    "number": "29",
+    "title": "Powers of Judges and Magistrates exercisable by their successors-in- office",
+    "page": 11
   },
   {
     "idx": 29,
-    "number": "236",
-    "title": "When the nature of the case is such that the particulars mentioned in",
-    "page": 77
+    "number": "30",
+    "title": "Powers of superior officers of police",
+    "page": 11
   },
   {
     "idx": 30,
-    "number": "252",
-    "title": "If the accused pleads guilty, the Judge shall record the plea and may, in his Conviction on",
-    "page": 83
+    "number": "31",
+    "title": "Public when to Magistrates and police",
+    "page": 11
   },
   {
     "idx": 31,
-    "number": "255",
-    "title": "If, after taking the evidence for the prosecution, examining the accused and Acquittal",
-    "page": 83
+    "number": "32",
+    "title": "Aid to person, police officer, executing warrant",
+    "page": 11
   },
   {
     "idx": 32,
-    "number": "259",
-    "title": "In a case where a previous conviction is charged under the provisions of Previous",
-    "page": 83
+    "number": "33",
+    "title": "Public to give information of certain offences",
+    "page": 11
   },
   {
     "idx": 33,
-    "number": "272",
-    "title": "When the proceedings have been instituted upon complaint, and on any day Absence of",
-    "page": 87
+    "number": "34",
+    "title": "Duty of officers employed in connection with affairs of a village to make certain report",
+    "page": 12
   },
   {
     "idx": 34,
-    "number": "274",
-    "title": "When in a summons-case the accused appears or is brought before the Substance of",
-    "page": 87
+    "number": "35",
+    "title": "When police may arrest without",
+    "page": 13
   },
   {
     "idx": 35,
-    "number": "281",
-    "title": "In any summons-case instituted otherwise than upon complaint, a Magistrate of Power to stop",
-    "page": 89
+    "number": "36",
+    "title": "Procedure of arrest and duties of officer making arrest",
+    "page": 14
   },
   {
     "idx": 36,
-    "number": "282",
-    "title": "When in the course of the trial of a summons-case relating to an offence punishable Power of",
-    "page": 89
+    "number": "37",
+    "title": "Designated police officer",
+    "page": 14
   },
   {
     "idx": 37,
-    "number": "291",
-    "title": "In working out a mutually satisfactory disposition under clause (a) of Guidelines for",
-    "page": 91
+    "number": "38",
+    "title": "Right of arrested person to meet an advocate of his choice during interrogation",
+    "page": 15
   },
   {
     "idx": 38,
-    "number": "300",
-    "title": "Nothing in this Chapter shall apply to any juvenile or child as defined in section2 Non",
-    "page": 93
+    "number": "39",
+    "title": "Arrest on refusal to give name and residence",
+    "page": 15
   },
   {
     "idx": 39,
-    "number": "312",
-    "title": "In every case where evidence is taken down under section 310 or section 311,— Language of",
-    "page": 95
+    "number": "40",
+    "title": "Arrest by private person and procedure on such arrest",
+    "page": 15
   },
   {
     "idx": 40,
-    "number": "321",
-    "title": "Upon receipt of the commission, the Chief Judicial Magistrate or such Magistrate Execution of",
-    "page": 97
+    "number": "41",
+    "title": "Arrest by Magistrate",
+    "page": 15
   },
   {
     "idx": 41,
-    "number": "324",
-    "title": "In every case in which a commission is issued under section 319, the inquiry, trial Adjournment",
-    "page": 97
+    "number": "42",
+    "title": "Protection of members of Armed Forces from arrest",
+    "page": 15
   },
   {
     "idx": 42,
-    "number": "344",
-    "title": "At any time after commitment of a case but before judgment is passed, the Court Power to",
-    "page": 103
+    "number": "43",
+    "title": "Arrest how made",
+    "page": 16
   },
   {
     "idx": 43,
-    "number": "349",
-    "title": "If a Magistrate of the first class is satisfied that, for the purposes of any Power of",
-    "page": 105
+    "number": "44",
+    "title": "Search of place entered by person sought to be arrested",
+    "page": 16
   },
   {
     "idx": 44,
-    "number": "350",
-    "title": "Subject to any rules made by the State Government, any Criminal Court may, if it",
-    "page": 105
+    "number": "45",
+    "title": "Pursuit of offenders into other jurisdictions",
+    "page": 17
   },
   {
     "idx": 45,
-    "number": "354",
-    "title": "Except as provided in sections 343 and 344, no influence, by means of any No influence",
-    "page": 107
+    "number": "46",
+    "title": "No unnecessary restraint",
+    "page": 17
   },
   {
     "idx": 46,
-    "number": "357",
-    "title": "If the accused, though not a person of unsound mind, cannot be made to",
-    "page": 108
+    "number": "47",
+    "title": "Person arrested to be informed of grounds of arrest and of right to bail",
+    "page": 17
   },
   {
     "idx": 47,
-    "number": "372",
-    "title": "When the accused appears to be of sound mind at the time of inquiry or trial, and When accused",
-    "page": 117
+    "number": "48",
+    "title": "Obligation of person making arrest to inform about arrest, etc., to friend",
+    "page": 17
   },
   {
     "idx": 48,
-    "number": "376",
-    "title": "If a person is detained under the provisions of sub-section (2) of section 369, Procedure",
-    "page": 117
+    "number": "49",
+    "title": "Search of arrested person",
+    "page": 17
   },
   {
     "idx": 49,
-    "number": "391",
-    "title": "Except as provided in sections 383, 384, 388 and 389, no Judge of a Criminal Court Certain Judges",
-    "page": 121
+    "number": "50",
+    "title": "Power to seize offensive weapons",
+    "page": 17
   },
   {
     "idx": 50,
-    "number": "410",
-    "title": "In every case so submitted, the confirmation of the sentence, or any new sentence Confirmation",
-    "page": 127
+    "number": "51",
+    "title": "Examination of accused by medical practitioner at request of police officer",
+    "page": 17
   },
   {
     "idx": 51,
-    "number": "411",
-    "title": "Where any such case is heard before a Bench of Judges and such Judges are Procedure in",
-    "page": 127
+    "number": "52",
+    "title": "Examination of person accused of rape by medical practitioner",
+    "page": 18
   },
   {
     "idx": 52,
-    "number": "412",
-    "title": "In cases submitted by the Court of Session to the High Court for the confirmation Procedure in",
-    "page": 127
+    "number": "53",
+    "title": "Examination of arrested person by medical officer",
+    "page": 18
   },
   {
     "idx": 53,
-    "number": "427",
-    "title": "After perusing such record and hearing the appellant or his advocate, if he Powers of",
-    "page": 131
+    "number": "54",
+    "title": "Identification of person arrested",
+    "page": 19
   },
   {
     "idx": 54,
-    "number": "434",
-    "title": "Judgments and orders passed by an Appellate Court upon an appeal shall be Finality of",
-    "page": 133
+    "number": "55",
+    "title": "Procedure when police officer deputes subordinate to arrest without",
+    "page": 19
   },
   {
     "idx": 55,
-    "number": "445",
-    "title": "When a case is revised under this Chapter by the High Court or a Sessions High Court's",
-    "page": 135
+    "number": "56",
+    "title": "Health and safety of arrested person",
+    "page": 19
   },
   {
     "idx": 56,
-    "number": "459",
-    "title": "Every warrant for the execution of a sentence of imprisonment shall be directed Direction of",
-    "page": 139
+    "number": "57",
+    "title": "Person arrested to be taken before Magistrate or charge of police station",
+    "page": 19
   },
   {
     "idx": 57,
-    "number": "460",
-    "title": "When the prisoner is to be confined in a jail, the warrant shall be lodged with the Warrant with",
-    "page": 139
+    "number": "58",
+    "title": "Person arrested not to be detained more than hours",
+    "page": 19
   },
   {
     "idx": 58,
-    "number": "462",
-    "title": "A warrant issued under clause (a) of sub-section (1) of section 461 by any Court Effect of such",
-    "page": 139
+    "number": "59",
+    "title": "Police to report apprehensions",
+    "page": 19
   },
   {
     "idx": 59,
-    "number": "465",
-    "title": "Every warrant for the execution of a sentence may be issued either by the Judge",
-    "page": 140
+    "number": "60",
+    "title": "Discharge of person apprehended",
+    "page": 20
   },
   {
     "idx": 60,
-    "number": "470",
-    "title": "When a sentence has been fully executed, the officer executing it shall return the",
-    "page": 141
+    "number": "61",
+    "title": "Power, on escape, to pursue and retake",
+    "page": 20
   },
   {
     "idx": 61,
-    "number": "474",
-    "title": "The appropriate Government may, without the consent of the person sentenced, Power to",
-    "page": 143
+    "number": "62",
+    "title": "Arrest to be made strictly according to Sanhita",
+    "page": 20
   },
   {
     "idx": 62,
-    "number": "475",
-    "title": "Notwithstanding anything contained in section 473, where a sentence of Restriction on",
-    "page": 143
+    "number": "63",
+    "title": "Form of summons",
+    "page": 20
   },
   {
     "idx": 63,
-    "number": "476",
-    "title": "The powers conferred by sections 473 and 474 upon the State Government may, Concurrent",
-    "page": 143
+    "number": "64",
+    "title": "Summons how served",
+    "page": 20
   },
   {
     "idx": 64,
-    "number": "496",
-    "title": "The High Court or Court of Session may direct any Magistrate to levy the Power to",
-    "page": 149
+    "number": "65",
+    "title": "Service of summons on corporate bodies, firms, and societies",
+    "page": 20
   },
   {
     "idx": 65,
-    "number": "506",
-    "title": "If any Magistrate not empowered by law to do any of the following things, Irregularities",
-    "page": 151
+    "number": "66",
+    "title": "Service when persons summoned cannot be found",
+    "page": 21
   },
   {
     "idx": 66,
-    "number": "512",
-    "title": "No attachment made under this Sanhita shall be deemed unlawful, nor shall any Defect or",
-    "page": 153
+    "number": "67",
+    "title": "Procedure when service cannot be effected as before provided",
+    "page": 21
   },
   {
     "idx": 67,
-    "number": "519",
-    "title": "Notwithstanding anything contained in the foregoing provisions of this Chapter, Extension of",
+    "number": "68",
+    "title": "Service on Government servant",
+    "page": 21
+  },
+  {
+    "idx": 68,
+    "number": "69",
+    "title": "Service of summons outside local limits",
+    "page": 21
+  },
+  {
+    "idx": 69,
+    "number": "70",
+    "title": "Proof of service in such cases and when serving officer not present",
+    "page": 21
+  },
+  {
+    "idx": 70,
+    "number": "71",
+    "title": "Service of summons on witness",
+    "page": 21
+  },
+  {
+    "idx": 71,
+    "number": "72",
+    "title": "Form of warrant of arrest and duration",
+    "page": 21
+  },
+  {
+    "idx": 72,
+    "number": "73",
+    "title": "Power to direct security to be taken",
+    "page": 22
+  },
+  {
+    "idx": 73,
+    "number": "74",
+    "title": "Warrants to whom directed",
+    "page": 22
+  },
+  {
+    "idx": 74,
+    "number": "75",
+    "title": "Warrant may be directed to any person",
+    "page": 22
+  },
+  {
+    "idx": 75,
+    "number": "76",
+    "title": "Warrant directed to police officer",
+    "page": 22
+  },
+  {
+    "idx": 76,
+    "number": "77",
+    "title": "Notification of substance of warrant",
+    "page": 22
+  },
+  {
+    "idx": 77,
+    "number": "78",
+    "title": "Person arrested to be brought before Court without delay",
+    "page": 22
+  },
+  {
+    "idx": 78,
+    "number": "79",
+    "title": "Where warrant may be executed",
+    "page": 22
+  },
+  {
+    "idx": 79,
+    "number": "80",
+    "title": "Warrant forwarded for execution outside jurisdiction",
+    "page": 23
+  },
+  {
+    "idx": 80,
+    "number": "81",
+    "title": "Warrant directed to police officer for execution outside jurisdiction",
+    "page": 23
+  },
+  {
+    "idx": 81,
+    "number": "82",
+    "title": "Procedure on arrest of person against whom warrant issued",
+    "page": 23
+  },
+  {
+    "idx": 82,
+    "number": "83",
+    "title": "Procedure by Magistrate before whom such person arrested is brought",
+    "page": 23
+  },
+  {
+    "idx": 83,
+    "number": "84",
+    "title": "Proclamation for person absconding",
+    "page": 24
+  },
+  {
+    "idx": 84,
+    "number": "85",
+    "title": "Attachment of property of person absconding",
+    "page": 24
+  },
+  {
+    "idx": 85,
+    "number": "86",
+    "title": "Identification and attachment of property of proclaimed person",
+    "page": 25
+  },
+  {
+    "idx": 86,
+    "number": "87",
+    "title": "Claims and objections to attachment",
+    "page": 25
+  },
+  {
+    "idx": 87,
+    "number": "88",
+    "title": "Release, sale and restoration of attached property",
+    "page": 25
+  },
+  {
+    "idx": 88,
+    "number": "89",
+    "title": "Appeal from order rejecting application for restoration of attached property",
+    "page": 26
+  },
+  {
+    "idx": 89,
+    "number": "90",
+    "title": "Issue of warrant in lieu of, or in addition to, summons",
+    "page": 26
+  },
+  {
+    "idx": 90,
+    "number": "91",
+    "title": "Power to take bond or bail bond for appearance",
+    "page": 26
+  },
+  {
+    "idx": 91,
+    "number": "92",
+    "title": "Arrest on breach of bond or bail bond for appearance. Provisions of",
+    "page": 26
+  },
+  {
+    "idx": 92,
+    "number": "93",
+    "title": "this Chapter generally applicable to summons and warrants of arrest",
+    "page": 26
+  },
+  {
+    "idx": 93,
+    "number": "94",
+    "title": "Summons to produce document or other thing",
+    "page": 26
+  },
+  {
+    "idx": 94,
+    "number": "95",
+    "title": "Procedure as",
+    "page": 27
+  },
+  {
+    "idx": 95,
+    "number": "96",
+    "title": "When search- warrant may be issued",
+    "page": 27
+  },
+  {
+    "idx": 96,
+    "number": "97",
+    "title": "Search of place suspected to contain stolen property, documents, etc",
+    "page": 27
+  },
+  {
+    "idx": 97,
+    "number": "98",
+    "title": "Power to declare certain publications forfeited and to issue search- warrants for same",
+    "page": 28
+  },
+  {
+    "idx": 98,
+    "number": "99",
+    "title": "Application to High Court to set aside declaration of forfeiture",
+    "page": 28
+  },
+  {
+    "idx": 99,
+    "number": "100",
+    "title": "Search for persons wrongfully confined",
+    "page": 29
+  },
+  {
+    "idx": 100,
+    "number": "101",
+    "title": "Power to restoration of abducted females",
+    "page": 29
+  },
+  {
+    "idx": 101,
+    "number": "102",
+    "title": "Direction, etc., of search- warrants",
+    "page": 29
+  },
+  {
+    "idx": 102,
+    "number": "103",
+    "title": "Persons in charge of closed place to allow search",
+    "page": 29
+  },
+  {
+    "idx": 103,
+    "number": "104",
+    "title": "Disposal of things found in search beyond jurisdiction",
+    "page": 30
+  },
+  {
+    "idx": 104,
+    "number": "105",
+    "title": "Recording of search and seizure through audio- video means",
+    "page": 30
+  },
+  {
+    "idx": 105,
+    "number": "106",
+    "title": "Power of police officer to seize certain property",
+    "page": 30
+  },
+  {
+    "idx": 106,
+    "number": "107",
+    "title": "Attachment, forfeiture or restoration of property",
+    "page": 30
+  },
+  {
+    "idx": 107,
+    "number": "108",
+    "title": "Magistrate search in his presence",
+    "page": 31
+  },
+  {
+    "idx": 108,
+    "number": "109",
+    "title": "Power to document, etc., produced",
+    "page": 31
+  },
+  {
+    "idx": 109,
+    "number": "110",
+    "title": "Reciprocal arrangements regarding processes",
+    "page": 31
+  },
+  {
+    "idx": 110,
+    "number": "111",
+    "title": "Definitions",
+    "page": 32
+  },
+  {
+    "idx": 111,
+    "number": "112",
+    "title": "Letter of request to competent authority for investigation in a country or place outside India",
+    "page": 33
+  },
+  {
+    "idx": 112,
+    "number": "113",
+    "title": "Letter of request from a country or place outside India to a Court or an authority for investigation",
+    "page": 33
+  },
+  {
+    "idx": 113,
+    "number": "114",
+    "title": "Assistance in securing transfer of persons",
+    "page": 33
+  },
+  {
+    "idx": 114,
+    "number": "115",
+    "title": "Assistance in relation to orders of attachment or forfeiture of property",
+    "page": 34
+  },
+  {
+    "idx": 115,
+    "number": "116",
+    "title": "Identifying unlawfully acquired property",
+    "page": 34
+  },
+  {
+    "idx": 116,
+    "number": "117",
+    "title": "Seizure or attachment of property",
+    "page": 34
+  },
+  {
+    "idx": 117,
+    "number": "118",
+    "title": "Management of properties seized or forfeited under this Chapter",
+    "page": 35
+  },
+  {
+    "idx": 118,
+    "number": "119",
+    "title": "Notice of forfeiture of property",
+    "page": 35
+  },
+  {
+    "idx": 119,
+    "number": "120",
+    "title": "Forfeiture of property in certain cases",
+    "page": 35
+  },
+  {
+    "idx": 120,
+    "number": "121",
+    "title": "Fine in lieu of forfeiture",
+    "page": 35
+  },
+  {
+    "idx": 121,
+    "number": "122",
+    "title": "Certain transfers to be and . null void",
+    "page": 36
+  },
+  {
+    "idx": 122,
+    "number": "123",
+    "title": "Procedure in respect of letter of request",
+    "page": 36
+  },
+  {
+    "idx": 123,
+    "number": "124",
+    "title": "Application of this Chapter",
+    "page": 36
+  },
+  {
+    "idx": 124,
+    "number": "125",
+    "title": "Security for keeping peace on conviction",
+    "page": 36
+  },
+  {
+    "idx": 125,
+    "number": "126",
+    "title": "Security for keeping peace in other cases",
+    "page": 36
+  },
+  {
+    "idx": 126,
+    "number": "127",
+    "title": "Security for good behaviour from persons disseminating certain matters",
+    "page": 37
+  },
+  {
+    "idx": 127,
+    "number": "128",
+    "title": "Security for good behaviour from suspected persons",
+    "page": 37
+  },
+  {
+    "idx": 128,
+    "number": "129",
+    "title": "Security for good behaviour from habitual offenders",
+    "page": 37
+  },
+  {
+    "idx": 129,
+    "number": "130",
+    "title": "Order to be made",
+    "page": 38
+  },
+  {
+    "idx": 130,
+    "number": "131",
+    "title": "Procedure in respect of person present in Court",
+    "page": 38
+  },
+  {
+    "idx": 131,
+    "number": "132",
+    "title": "Summons or warrant in case of person not so present",
+    "page": 38
+  },
+  {
+    "idx": 132,
+    "number": "133",
+    "title": "Copy of order summons or warrant",
+    "page": 38
+  },
+  {
+    "idx": 133,
+    "number": "134",
+    "title": "Power to dispense with personal attendance",
+    "page": 38
+  },
+  {
+    "idx": 134,
+    "number": "135",
+    "title": "Inquiry as to truth of information",
+    "page": 38
+  },
+  {
+    "idx": 135,
+    "number": "136",
+    "title": "Order to give security",
+    "page": 39
+  },
+  {
+    "idx": 136,
+    "number": "137",
+    "title": "Discharge of person informed against",
+    "page": 39
+  },
+  {
+    "idx": 137,
+    "number": "138",
+    "title": "Commencement of period for which security is required",
+    "page": 40
+  },
+  {
+    "idx": 138,
+    "number": "139",
+    "title": "Contents of bond",
+    "page": 40
+  },
+  {
+    "idx": 139,
+    "number": "140",
+    "title": "Power to reject sureties",
+    "page": 40
+  },
+  {
+    "idx": 140,
+    "number": "141",
+    "title": "Imprisonment in default of security",
+    "page": 40
+  },
+  {
+    "idx": 141,
+    "number": "142",
+    "title": "Power to release persons imprisoned for failing to give security",
+    "page": 41
+  },
+  {
+    "idx": 142,
+    "number": "143",
+    "title": "Security for unexpired period of bond",
+    "page": 42
+  },
+  {
+    "idx": 143,
+    "number": "144",
+    "title": "Order for maintenance of wives, children and parents",
+    "page": 42
+  },
+  {
+    "idx": 144,
+    "number": "145",
+    "title": "Procedure",
+    "page": 43
+  },
+  {
+    "idx": 145,
+    "number": "146",
+    "title": "Alteration in allowance",
+    "page": 44
+  },
+  {
+    "idx": 146,
+    "number": "147",
+    "title": "Enforcement of order of maintenance",
+    "page": 44
+  },
+  {
+    "idx": 147,
+    "number": "148",
+    "title": "Dispersal of assembly by use of civil force",
+    "page": 45
+  },
+  {
+    "idx": 148,
+    "number": "149",
+    "title": "Use of armed forces to disperse assembly",
+    "page": 45
+  },
+  {
+    "idx": 149,
+    "number": "150",
+    "title": "Power of certain armed force officers to disperse assembly",
+    "page": 45
+  },
+  {
+    "idx": 150,
+    "number": "151",
+    "title": "Protection against prosecution for acts done under sections 148, 149 and 150",
+    "page": 45
+  },
+  {
+    "idx": 151,
+    "number": "152",
+    "title": "Conditional order for removal of nuisance",
+    "page": 46
+  },
+  {
+    "idx": 152,
+    "number": "153",
+    "title": "Service or notification of order",
+    "page": 47
+  },
+  {
+    "idx": 153,
+    "number": "154",
+    "title": "Person to whom order is addressed to obey or show cause",
+    "page": 47
+  },
+  {
+    "idx": 154,
+    "number": "155",
+    "title": "Penalty for comply with section 154",
+    "page": 47
+  },
+  {
+    "idx": 155,
+    "number": "156",
+    "title": "Procedure existence of public right is denied",
+    "page": 47
+  },
+  {
+    "idx": 156,
+    "number": "157",
+    "title": "Procedure where person against whom order is made under section 152 appears to show cause",
+    "page": 48
+  },
+  {
+    "idx": 157,
+    "number": "158",
+    "title": "Power of Magistrate to direct local and examination of an expert",
+    "page": 48
+  },
+  {
+    "idx": 158,
+    "number": "159",
+    "title": "Power of Magistrate to furnish written etc",
+    "page": 48
+  },
+  {
+    "idx": 159,
+    "number": "160",
+    "title": "Procedure on order being made absolute and consequences of disobedience",
+    "page": 48
+  },
+  {
+    "idx": 160,
+    "number": "161",
+    "title": "Injunction pending inquiry",
+    "page": 48
+  },
+  {
+    "idx": 161,
+    "number": "162",
+    "title": "Magistrate may prohibit repetition or continuance of public nuisance",
+    "page": 49
+  },
+  {
+    "idx": 162,
+    "number": "163",
+    "title": "Power to issue order in urgent cases of nuisance or apprehended danger",
+    "page": 49
+  },
+  {
+    "idx": 163,
+    "number": "164",
+    "title": "Procedure where dispute concerning land or water is likely to of peace",
+    "page": 49
+  },
+  {
+    "idx": 164,
+    "number": "165",
+    "title": "Power to attach subject of dispute and to appoint receiver",
+    "page": 51
+  },
+  {
+    "idx": 165,
+    "number": "166",
+    "title": "Dispute right of use of land or water",
+    "page": 51
+  },
+  {
+    "idx": 166,
+    "number": "167",
+    "title": "Local inquiry",
+    "page": 52
+  },
+  {
+    "idx": 167,
+    "number": "168",
+    "title": "Police to prevent cognizable offences",
+    "page": 52
+  },
+  {
+    "idx": 168,
+    "number": "169",
+    "title": "Information of design to commit cognizable offences",
+    "page": 52
+  },
+  {
+    "idx": 169,
+    "number": "170",
+    "title": "Arrest to commission of cognizable offences",
+    "page": 52
+  },
+  {
+    "idx": 170,
+    "number": "171",
+    "title": "Prevention of injury to public property",
+    "page": 52
+  },
+  {
+    "idx": 171,
+    "number": "172",
+    "title": "Persons bound lawful directions of police",
+    "page": 52
+  },
+  {
+    "idx": 172,
+    "number": "173",
+    "title": "Information in cognizable cases",
+    "page": 52
+  },
+  {
+    "idx": 173,
+    "number": "174",
+    "title": "Information as to non- cognizable cases and investigation of such cases",
+    "page": 53
+  },
+  {
+    "idx": 174,
+    "number": "175",
+    "title": "Police officer's power to investigate cognizable case",
+    "page": 54
+  },
+  {
+    "idx": 175,
+    "number": "176",
+    "title": "Procedure for investigation",
+    "page": 54
+  },
+  {
+    "idx": 176,
+    "number": "177",
+    "title": "Report how submitted",
+    "page": 55
+  },
+  {
+    "idx": 177,
+    "number": "178",
+    "title": "Power to hold investigation or preliminary inquiry",
+    "page": 55
+  },
+  {
+    "idx": 178,
+    "number": "179",
+    "title": "Police to require attendance of witnesses",
+    "page": 55
+  },
+  {
+    "idx": 179,
+    "number": "180",
+    "title": "Examination of witnesses by police",
+    "page": 55
+  },
+  {
+    "idx": 180,
+    "number": "181",
+    "title": "Statements to police and use thereof",
+    "page": 56
+  },
+  {
+    "idx": 181,
+    "number": "182",
+    "title": "No inducement to be offered",
+    "page": 56
+  },
+  {
+    "idx": 182,
+    "number": "183",
+    "title": "Recording of confessions and statements",
+    "page": 56
+  },
+  {
+    "idx": 183,
+    "number": "184",
+    "title": "Medical of victim of rape",
+    "page": 57
+  },
+  {
+    "idx": 184,
+    "number": "185",
+    "title": "Search by police officer",
+    "page": 58
+  },
+  {
+    "idx": 185,
+    "number": "186",
+    "title": "When officer in charge of police station may require another to issue search- warrant",
+    "page": 59
+  },
+  {
+    "idx": 186,
+    "number": "187",
+    "title": "Procedure when investigation cannot be completed in twenty-four hours",
+    "page": 59
+  },
+  {
+    "idx": 187,
+    "number": "188",
+    "title": "Report of investigation by subordinate police officer",
+    "page": 61
+  },
+  {
+    "idx": 188,
+    "number": "189",
+    "title": "Release of accused when evidence deficient",
+    "page": 61
+  },
+  {
+    "idx": 189,
+    "number": "190",
+    "title": "Cases to be sent to Magistrate, when evidence is sufficient",
+    "page": 61
+  },
+  {
+    "idx": 190,
+    "number": "191",
+    "title": "Complainant and witnesses not to be required to accompany police officer and not to be restraint",
+    "page": 62
+  },
+  {
+    "idx": 191,
+    "number": "192",
+    "title": "Diary of proceedings in investigation",
+    "page": 62
+  },
+  {
+    "idx": 192,
+    "number": "193",
+    "title": "Report of police officer on completion of investigation",
+    "page": 62
+  },
+  {
+    "idx": 193,
+    "number": "194",
+    "title": "Police to report on suicide, etc",
+    "page": 63
+  },
+  {
+    "idx": 194,
+    "number": "195",
+    "title": "Power to summon persons",
+    "page": 64
+  },
+  {
+    "idx": 195,
+    "number": "196",
+    "title": "Inquiry by Magistrate into cause of death",
+    "page": 64
+  },
+  {
+    "idx": 196,
+    "number": "197",
+    "title": "Ordinary place of inquiry and trial",
+    "page": 65
+  },
+  {
+    "idx": 197,
+    "number": "198",
+    "title": "Place of inquiry or trial",
+    "page": 65
+  },
+  {
+    "idx": 198,
+    "number": "199",
+    "title": "Offence act is done or consequence ensues",
+    "page": 65
+  },
+  {
+    "idx": 199,
+    "number": "200",
+    "title": "Place of trial where act is an offence by reason of relation to other offence",
+    "page": 65
+  },
+  {
+    "idx": 200,
+    "number": "201",
+    "title": "Place of trial certain offences",
+    "page": 65
+  },
+  {
+    "idx": 201,
+    "number": "202",
+    "title": "Offences committed by means of electronic communications, letters, etc",
+    "page": 66
+  },
+  {
+    "idx": 202,
+    "number": "203",
+    "title": "Offence committed on journey or voyage",
+    "page": 66
+  },
+  {
+    "idx": 203,
+    "number": "204",
+    "title": "Place of trial for offences triable",
+    "page": 66
+  },
+  {
+    "idx": 204,
+    "number": "205",
+    "title": "Power to order cases to be tried in different sessions divisions",
+    "page": 66
+  },
+  {
+    "idx": 205,
+    "number": "206",
+    "title": "High Court to decide, in case of doubt, district where inquiry or trial shall take place",
+    "page": 66
+  },
+  {
+    "idx": 206,
+    "number": "207",
+    "title": "Power to issue warrant for offence committed beyond local jurisdiction",
+    "page": 67
+  },
+  {
+    "idx": 207,
+    "number": "208",
+    "title": "Offence committed outside India",
+    "page": 67
+  },
+  {
+    "idx": 208,
+    "number": "209",
+    "title": "Receipt of evidence relating to offences committed outside India",
+    "page": 67
+  },
+  {
+    "idx": 209,
+    "number": "210",
+    "title": "Cognizance of Magistrate",
+    "page": 67
+  },
+  {
+    "idx": 210,
+    "number": "211",
+    "title": "Transfer on application of accused",
+    "page": 68
+  },
+  {
+    "idx": 211,
+    "number": "212",
+    "title": "Making over of cases to Magistrates",
+    "page": 68
+  },
+  {
+    "idx": 212,
+    "number": "213",
+    "title": "Cognizance of offences by Court of Session",
+    "page": 68
+  },
+  {
+    "idx": 213,
+    "number": "214",
+    "title": "Additional Sessions Judges to try cases made over to them",
+    "page": 68
+  },
+  {
+    "idx": 214,
+    "number": "215",
+    "title": "Prosecution for contempt of lawful authority of public servants, for offences against public justice and for offences relating to documents given in evidence",
+    "page": 68
+  },
+  {
+    "idx": 215,
+    "number": "216",
+    "title": "Procedure for witnesses in case of threatening, etc",
+    "page": 69
+  },
+  {
+    "idx": 216,
+    "number": "217",
+    "title": "Prosecution for offences against State and for criminal conspiracy to commit such offence",
+    "page": 69
+  },
+  {
+    "idx": 217,
+    "number": "218",
+    "title": "Prosecution of Judges and public servants",
+    "page": 70
+  },
+  {
+    "idx": 218,
+    "number": "219",
+    "title": "Prosecution for offences against",
+    "page": 71
+  },
+  {
+    "idx": 219,
+    "number": "220",
+    "title": "Prosecution of offences under section 85 of Bharatiya Nyaya Sanhita, 2023",
+    "page": 72
+  },
+  {
+    "idx": 220,
+    "number": "221",
+    "title": "Cognizance of offence",
+    "page": 72
+  },
+  {
+    "idx": 221,
+    "number": "222",
+    "title": "Prosecution defamation",
+    "page": 72
+  },
+  {
+    "idx": 222,
+    "number": "223",
+    "title": "Examination of complainant",
+    "page": 73
+  },
+  {
+    "idx": 223,
+    "number": "224",
+    "title": "Procedure by Magistrate not competent to take case",
+    "page": 73
+  },
+  {
+    "idx": 224,
+    "number": "225",
+    "title": "Postponement of issue of process",
+    "page": 73
+  },
+  {
+    "idx": 225,
+    "number": "226",
+    "title": "Dismissal of complaint",
+    "page": 74
+  },
+  {
+    "idx": 226,
+    "number": "227",
+    "title": "Issue of process",
+    "page": 74
+  },
+  {
+    "idx": 227,
+    "number": "228",
+    "title": "Magistrate may dispense with personal attendance of",
+    "page": 74
+  },
+  {
+    "idx": 228,
+    "number": "229",
+    "title": "Special summons in cases of petty offence",
+    "page": 74
+  },
+  {
+    "idx": 229,
+    "number": "230",
+    "title": "Supply to accused of copy of police report and other documents",
+    "page": 75
+  },
+  {
+    "idx": 230,
+    "number": "231",
+    "title": "Supply of copies of statements and documents to accused in other cases triable by Court of Session",
+    "page": 75
+  },
+  {
+    "idx": 231,
+    "number": "232",
+    "title": "Commitment of Session when offence is exclusively by it",
+    "page": 75
+  },
+  {
+    "idx": 232,
+    "number": "233",
+    "title": "Procedure to be followed when there is a complaint case and investigation in respect of same offence",
+    "page": 76
+  },
+  {
+    "idx": 233,
+    "number": "234",
+    "title": "Contents of",
+    "page": 76
+  },
+  {
+    "idx": 234,
+    "number": "235",
+    "title": "Particulars as to time, place and person",
+    "page": 77
+  },
+  {
+    "idx": 235,
+    "number": "236",
+    "title": "When manner of committing offence must be stated",
+    "page": 77
+  },
+  {
+    "idx": 236,
+    "number": "237",
+    "title": "Words in charge law under which offence is punishable",
+    "page": 77
+  },
+  {
+    "idx": 237,
+    "number": "238",
+    "title": "Effect of errors",
+    "page": 78
+  },
+  {
+    "idx": 238,
+    "number": "239",
+    "title": "Court may",
+    "page": 78
+  },
+  {
+    "idx": 239,
+    "number": "240",
+    "title": "Recall of witnesses when charge altered",
+    "page": 78
+  },
+  {
+    "idx": 240,
+    "number": "241",
+    "title": "Separate charges for distinct offences",
+    "page": 79
+  },
+  {
+    "idx": 241,
+    "number": "242",
+    "title": "Offences of same kind within year may be charged together",
+    "page": 79
+  },
+  {
+    "idx": 242,
+    "number": "243",
+    "title": "Trial for more than one offence",
+    "page": 79
+  },
+  {
+    "idx": 243,
+    "number": "244",
+    "title": "Where it is doubtful what offence has been committed",
+    "page": 80
+  },
+  {
+    "idx": 244,
+    "number": "245",
+    "title": "When offence proved included in offence charged",
+    "page": 81
+  },
+  {
+    "idx": 245,
+    "number": "246",
+    "title": "What persons may be charged jointly",
+    "page": 81
+  },
+  {
+    "idx": 246,
+    "number": "247",
+    "title": "Withdrawal of remaining charges on conviction on one of several",
+    "page": 82
+  },
+  {
+    "idx": 247,
+    "number": "248",
+    "title": "Trial to be conducted by Public Prosecutor",
+    "page": 82
+  },
+  {
+    "idx": 248,
+    "number": "249",
+    "title": "Opening case for prosecution",
+    "page": 82
+  },
+  {
+    "idx": 249,
+    "number": "250",
+    "title": "Discharge",
+    "page": 82
+  },
+  {
+    "idx": 250,
+    "number": "251",
+    "title": "Framing of charge",
+    "page": 82
+  },
+  {
+    "idx": 251,
+    "number": "252",
+    "title": "Conviction on plea of guilty",
+    "page": 83
+  },
+  {
+    "idx": 252,
+    "number": "253",
+    "title": "Date for prosecution evidence",
+    "page": 83
+  },
+  {
+    "idx": 253,
+    "number": "254",
+    "title": "Evidence for",
+    "page": 83
+  },
+  {
+    "idx": 254,
+    "number": "255",
+    "title": "Acquittal",
+    "page": 83
+  },
+  {
+    "idx": 255,
+    "number": "256",
+    "title": "Entering upon defence",
+    "page": 83
+  },
+  {
+    "idx": 256,
+    "number": "257",
+    "title": "Arguments",
+    "page": 83
+  },
+  {
+    "idx": 257,
+    "number": "258",
+    "title": "Judgment of conviction",
+    "page": 83
+  },
+  {
+    "idx": 258,
+    "number": "259",
+    "title": "Previous conviction",
+    "page": 83
+  },
+  {
+    "idx": 259,
+    "number": "260",
+    "title": "Procedure in under sub-section (2)",
+    "page": 84
+  },
+  {
+    "idx": 260,
+    "number": "261",
+    "title": "Compliance 230",
+    "page": 84
+  },
+  {
+    "idx": 261,
+    "number": "262",
+    "title": "When accused shall be discharged",
+    "page": 84
+  },
+  {
+    "idx": 262,
+    "number": "263",
+    "title": "Framing of charge",
+    "page": 85
+  },
+  {
+    "idx": 263,
+    "number": "264",
+    "title": "Conviction on plea of guilty",
+    "page": 85
+  },
+  {
+    "idx": 264,
+    "number": "265",
+    "title": "Evidence for prosecution",
+    "page": 85
+  },
+  {
+    "idx": 265,
+    "number": "266",
+    "title": "Evidence for defence",
+    "page": 85
+  },
+  {
+    "idx": 266,
+    "number": "267",
+    "title": "Evidence for prosecution",
+    "page": 85
+  },
+  {
+    "idx": 267,
+    "number": "268",
+    "title": "When accused shall be discharged",
+    "page": 86
+  },
+  {
+    "idx": 268,
+    "number": "269",
+    "title": "Procedure where accused is not discharged",
+    "page": 86
+  },
+  {
+    "idx": 269,
+    "number": "270",
+    "title": "Evidence for defence",
+    "page": 86
+  },
+  {
+    "idx": 270,
+    "number": "271",
+    "title": "Acquittal or conviction",
+    "page": 86
+  },
+  {
+    "idx": 271,
+    "number": "272",
+    "title": "Absence of complainant",
+    "page": 87
+  },
+  {
+    "idx": 272,
+    "number": "273",
+    "title": "Compensation for accusation without reasonable cause",
+    "page": 87
+  },
+  {
+    "idx": 273,
+    "number": "274",
+    "title": "Substance of accusation to be stated",
+    "page": 87
+  },
+  {
+    "idx": 274,
+    "number": "275",
+    "title": "Conviction on plea of guilty",
+    "page": 88
+  },
+  {
+    "idx": 275,
+    "number": "276",
+    "title": "Conviction on plea of guilty in absence of accused in petty cases",
+    "page": 88
+  },
+  {
+    "idx": 276,
+    "number": "277",
+    "title": "Procedure when not convicted",
+    "page": 88
+  },
+  {
+    "idx": 277,
+    "number": "278",
+    "title": "Acquittal or conviction",
+    "page": 88
+  },
+  {
+    "idx": 278,
+    "number": "279",
+    "title": "Non-appearance or death of complainant",
+    "page": 88
+  },
+  {
+    "idx": 279,
+    "number": "280",
+    "title": "Withdrawal of complaint",
+    "page": 88
+  },
+  {
+    "idx": 280,
+    "number": "281",
+    "title": "Power to stop proceedings in certain cases",
+    "page": 89
+  },
+  {
+    "idx": 281,
+    "number": "282",
+    "title": "Power of Court to convert summons- cases into warrant-cases",
+    "page": 89
+  },
+  {
+    "idx": 282,
+    "number": "283",
+    "title": "Power to try summarily",
+    "page": 89
+  },
+  {
+    "idx": 283,
+    "number": "284",
+    "title": "Summary trial by Magistrate of second class",
+    "page": 90
+  },
+  {
+    "idx": 284,
+    "number": "285",
+    "title": "Procedure for summary trials",
+    "page": 90
+  },
+  {
+    "idx": 285,
+    "number": "286",
+    "title": "Record in summary trials",
+    "page": 90
+  },
+  {
+    "idx": 286,
+    "number": "287",
+    "title": "Judgment in cases tried summarily",
+    "page": 90
+  },
+  {
+    "idx": 287,
+    "number": "288",
+    "title": "Language of record and",
+    "page": 90
+  },
+  {
+    "idx": 288,
+    "number": "289",
+    "title": "Application of Chapter",
+    "page": 90
+  },
+  {
+    "idx": 289,
+    "number": "290",
+    "title": "Application for plea bargaining",
+    "page": 91
+  },
+  {
+    "idx": 290,
+    "number": "291",
+    "title": "Guidelines for mutually satisfactory",
+    "page": 91
+  },
+  {
+    "idx": 291,
+    "number": "292",
+    "title": "Report of mutually satisfactory disposition to be submitted before Court",
+    "page": 92
+  },
+  {
+    "idx": 292,
+    "number": "293",
+    "title": "Disposal of case",
+    "page": 92
+  },
+  {
+    "idx": 293,
+    "number": "294",
+    "title": "Judgment of Court",
+    "page": 92
+  },
+  {
+    "idx": 294,
+    "number": "295",
+    "title": "Finality of judgment",
+    "page": 92
+  },
+  {
+    "idx": 295,
+    "number": "296",
+    "title": "Power of Court in plea bargaining",
+    "page": 92
+  },
+  {
+    "idx": 296,
+    "number": "297",
+    "title": "Period of detention undergone by accused to be set off against sentence of imprisonment",
+    "page": 92
+  },
+  {
+    "idx": 297,
+    "number": "298",
+    "title": "Savings",
+    "page": 92
+  },
+  {
+    "idx": 298,
+    "number": "299",
+    "title": "Statements of accused not to be used",
+    "page": 93
+  },
+  {
+    "idx": 299,
+    "number": "300",
+    "title": "Non- application of Chapter",
+    "page": 93
+  },
+  {
+    "idx": 300,
+    "number": "301",
+    "title": "Definitions",
+    "page": 93
+  },
+  {
+    "idx": 301,
+    "number": "302",
+    "title": "Power to require attendance of prisoners",
+    "page": 93
+  },
+  {
+    "idx": 302,
+    "number": "303",
+    "title": "Power of State Government or Central Government to exclude certain persons from operation of section 302",
+    "page": 93
+  },
+  {
+    "idx": 303,
+    "number": "304",
+    "title": "Officer in charge of prison to abstain from carrying out order in certain contingencies",
+    "page": 94
+  },
+  {
+    "idx": 304,
+    "number": "305",
+    "title": "Prisoner to be brought to Court in custody",
+    "page": 94
+  },
+  {
+    "idx": 305,
+    "number": "306",
+    "title": "Power to issue commission for examination of witness in prison",
+    "page": 94
+  },
+  {
+    "idx": 306,
+    "number": "307",
+    "title": "Language of Courts",
+    "page": 94
+  },
+  {
+    "idx": 307,
+    "number": "308",
+    "title": "Evidence to be taken in presence of accused",
+    "page": 94
+  },
+  {
+    "idx": 308,
+    "number": "309",
+    "title": "Record in summons- cases and inquiries",
+    "page": 94
+  },
+  {
+    "idx": 309,
+    "number": "310",
+    "title": "Record in warrant-cases",
+    "page": 95
+  },
+  {
+    "idx": 310,
+    "number": "311",
+    "title": "Record in trial before Court of Session",
+    "page": 95
+  },
+  {
+    "idx": 311,
+    "number": "312",
+    "title": "Language of record of evidence",
+    "page": 95
+  },
+  {
+    "idx": 312,
+    "number": "313",
+    "title": "Procedure in regard to such evidence when completed",
+    "page": 95
+  },
+  {
+    "idx": 313,
+    "number": "314",
+    "title": "Interpretation of evidence to accused or his advocate",
+    "page": 96
+  },
+  {
+    "idx": 314,
+    "number": "315",
+    "title": "Remarks respecting demeanour of witness",
+    "page": 96
+  },
+  {
+    "idx": 315,
+    "number": "316",
+    "title": "Record of examination of accused",
+    "page": 96
+  },
+  {
+    "idx": 316,
+    "number": "317",
+    "title": "Interpreter to be bound to interpret truthfully",
+    "page": 96
+  },
+  {
+    "idx": 317,
+    "number": "318",
+    "title": "Record in High Court",
+    "page": 96
+  },
+  {
+    "idx": 318,
+    "number": "319",
+    "title": "When attendance of witness may be dispensed with and commission issued",
+    "page": 96
+  },
+  {
+    "idx": 319,
+    "number": "320",
+    "title": "Commission to whom to be issued",
+    "page": 97
+  },
+  {
+    "idx": 320,
+    "number": "321",
+    "title": "Execution of commissions",
+    "page": 97
+  },
+  {
+    "idx": 321,
+    "number": "322",
+    "title": "Parties may examine witnesses",
+    "page": 97
+  },
+  {
+    "idx": 322,
+    "number": "323",
+    "title": "Return of commission",
+    "page": 97
+  },
+  {
+    "idx": 323,
+    "number": "324",
+    "title": "Adjournment of proceeding",
+    "page": 97
+  },
+  {
+    "idx": 324,
+    "number": "325",
+    "title": "Execution of foreign commissions",
+    "page": 97
+  },
+  {
+    "idx": 325,
+    "number": "326",
+    "title": "Deposition of medical witness",
+    "page": 98
+  },
+  {
+    "idx": 326,
+    "number": "327",
+    "title": "Identification report of Magistrate",
+    "page": 98
+  },
+  {
+    "idx": 327,
+    "number": "328",
+    "title": "Evidence of officers of Mint",
+    "page": 98
+  },
+  {
+    "idx": 328,
+    "number": "329",
+    "title": "Reports of Government scientific experts",
+    "page": 99
+  },
+  {
+    "idx": 329,
+    "number": "330",
+    "title": "No formal proof of certain documents",
+    "page": 99
+  },
+  {
+    "idx": 330,
+    "number": "331",
+    "title": "Affidavit in proof of conduct of public servants",
+    "page": 99
+  },
+  {
+    "idx": 331,
+    "number": "332",
+    "title": "Evidence of formal character on affidavit",
+    "page": 99
+  },
+  {
+    "idx": 332,
+    "number": "333",
+    "title": "Authorities before whom affidavits may be sworn",
+    "page": 100
+  },
+  {
+    "idx": 333,
+    "number": "334",
+    "title": "Previous conviction or acquittal how proved",
+    "page": 100
+  },
+  {
+    "idx": 334,
+    "number": "335",
+    "title": "Record of absence of accused",
+    "page": 100
+  },
+  {
+    "idx": 335,
+    "number": "336",
+    "title": "Evidence of public servants, experts, police officers in certain cases",
+    "page": 100
+  },
+  {
+    "idx": 336,
+    "number": "337",
+    "title": "Person once convicted or acquitted not to be tried for same offence",
+    "page": 101
+  },
+  {
+    "idx": 337,
+    "number": "338",
+    "title": "Appearance by Public Prosecutors",
+    "page": 101
+  },
+  {
+    "idx": 338,
+    "number": "339",
+    "title": "Permission to conduct prosecution",
+    "page": 102
+  },
+  {
+    "idx": 339,
+    "number": "340",
+    "title": "Right of person against whom proceedings are instituted to be defended",
+    "page": 102
+  },
+  {
+    "idx": 340,
+    "number": "341",
+    "title": "Legal aid to accused at State expense in certain cases",
+    "page": 102
+  },
+  {
+    "idx": 341,
+    "number": "342",
+    "title": "Procedure when corporation or society is an accused",
+    "page": 102
+  },
+  {
+    "idx": 342,
+    "number": "343",
+    "title": "Tender of pardon to accomplice",
+    "page": 103
+  },
+  {
+    "idx": 343,
+    "number": "344",
+    "title": "Power to direct tender of pardon",
+    "page": 103
+  },
+  {
+    "idx": 344,
+    "number": "345",
+    "title": "Trial of person not complying with conditions of",
+    "page": 104
+  },
+  {
+    "idx": 345,
+    "number": "346",
+    "title": "Power to postpone or adjourn proceedings",
+    "page": 104
+  },
+  {
+    "idx": 346,
+    "number": "347",
+    "title": "Local inspection",
+    "page": 105
+  },
+  {
+    "idx": 347,
+    "number": "348",
+    "title": "Power to summon material witness, or examine person present",
+    "page": 105
+  },
+  {
+    "idx": 348,
+    "number": "349",
+    "title": "Power of Magistrate to order person to give specimen signatures or handwriting, etc",
+    "page": 105
+  },
+  {
+    "idx": 349,
+    "number": "350",
+    "title": "Expenses of and witnesses",
+    "page": 105
+  },
+  {
+    "idx": 350,
+    "number": "351",
+    "title": "Power to examine accused",
+    "page": 106
+  },
+  {
+    "idx": 351,
+    "number": "352",
+    "title": "Oral arguments and memorandum of arguments",
+    "page": 106
+  },
+  {
+    "idx": 352,
+    "number": "353",
+    "title": "Accused person to be competent witness",
+    "page": 106
+  },
+  {
+    "idx": 353,
+    "number": "354",
+    "title": "No influence to be used to induce disclosure",
+    "page": 107
+  },
+  {
+    "idx": 354,
+    "number": "355",
+    "title": "Provision for inquiries and trial being held in absence of accused in certain cases",
+    "page": 107
+  },
+  {
+    "idx": 355,
+    "number": "356",
+    "title": "Inquiry, trial or judgment in absentia of proclaimed offender",
+    "page": 107
+  },
+  {
+    "idx": 356,
+    "number": "357",
+    "title": "Procedure where accused understand proceedings",
+    "page": 108
+  },
+  {
+    "idx": 357,
+    "number": "358",
+    "title": "Power to proceed against other persons appearing to be guilty of offence",
+    "page": 108
+  },
+  {
+    "idx": 358,
+    "number": "359",
+    "title": "Compounding of offences",
+    "page": 108
+  },
+  {
+    "idx": 359,
+    "number": "360",
+    "title": "Withdrawal prosecution",
+    "page": 112
+  },
+  {
+    "idx": 360,
+    "number": "361",
+    "title": "Procedure in cases which Magistrate cannot dispose of",
+    "page": 113
+  },
+  {
+    "idx": 361,
+    "number": "362",
+    "title": "Procedure when after commencement of inquiry or trial, Magistrate finds case should be committed",
+    "page": 113
+  },
+  {
+    "idx": 362,
+    "number": "363",
+    "title": "Trial of previously convicted of offences against stamp-law or property",
+    "page": 113
+  },
+  {
+    "idx": 363,
+    "number": "364",
+    "title": "Procedure when Magistrate cannot pass sentence sufficiently severe",
+    "page": 113
+  },
+  {
+    "idx": 364,
+    "number": "365",
+    "title": "Conviction or on evidence partly recorded by one Magistrate and partly by another",
+    "page": 113
+  },
+  {
+    "idx": 365,
+    "number": "366",
+    "title": "Court to be open",
+    "page": 114
+  },
+  {
+    "idx": 366,
+    "number": "367",
+    "title": "Procedure in case of accused being person of unsound mind",
+    "page": 114
+  },
+  {
+    "idx": 367,
+    "number": "368",
+    "title": "Procedure in case of person of unsound mind tried before Court",
+    "page": 115
+  },
+  {
+    "idx": 368,
+    "number": "369",
+    "title": "Release of person of unsound mind pending investigation or trial",
+    "page": 116
+  },
+  {
+    "idx": 369,
+    "number": "370",
+    "title": "Resumption of inquiry or trial",
+    "page": 116
+  },
+  {
+    "idx": 370,
+    "number": "371",
+    "title": "Procedure on accused appearing before Court",
+    "page": 116
+  },
+  {
+    "idx": 371,
+    "number": "372",
+    "title": "When accused appears to have been of sound mind",
+    "page": 117
+  },
+  {
+    "idx": 372,
+    "number": "373",
+    "title": "Judgment of acquittal on ground of unsoundness of mind",
+    "page": 117
+  },
+  {
+    "idx": 373,
+    "number": "374",
+    "title": "Person acquitted on ground of unsoundness of mind to be safe custody",
+    "page": 117
+  },
+  {
+    "idx": 374,
+    "number": "375",
+    "title": "Power of State Government to empower officer in charge to discharge",
+    "page": 117
+  },
+  {
+    "idx": 375,
+    "number": "376",
+    "title": "Procedure of unsound mind is reported capable of defence",
+    "page": 117
+  },
+  {
+    "idx": 376,
+    "number": "377",
+    "title": "Procedure where person of unsound mind detained is declared fit to be released",
+    "page": 117
+  },
+  {
+    "idx": 377,
+    "number": "378",
+    "title": "Delivery of person of unsound mind to care of relative or friend",
+    "page": 118
+  },
+  {
+    "idx": 378,
+    "number": "379",
+    "title": "Procedure in cases mentioned in section 215",
+    "page": 118
+  },
+  {
+    "idx": 379,
+    "number": "380",
+    "title": "Appeal",
+    "page": 119
+  },
+  {
+    "idx": 380,
+    "number": "381",
+    "title": "Power to order costs",
+    "page": 119
+  },
+  {
+    "idx": 381,
+    "number": "382",
+    "title": "Procedure of taking cognizance",
+    "page": 119
+  },
+  {
+    "idx": 382,
+    "number": "383",
+    "title": "Summary procedure for trial for giving false evidence",
+    "page": 119
+  },
+  {
+    "idx": 383,
+    "number": "384",
+    "title": "Procedure in certain cases of contempt",
+    "page": 119
+  },
+  {
+    "idx": 384,
+    "number": "385",
+    "title": "Procedure considers that case should not be dealt with under",
+    "page": 120
+  },
+  {
+    "idx": 385,
+    "number": "386",
+    "title": "When Registrar or Sub-Registrar to be deemed a Civil Court",
+    "page": 120
+  },
+  {
+    "idx": 386,
+    "number": "387",
+    "title": "Discharge of offender on submission of apology",
+    "page": 120
+  },
+  {
+    "idx": 387,
+    "number": "388",
+    "title": "Imprisonment or committal of person refusing to answer or produce document",
+    "page": 120
+  },
+  {
+    "idx": 388,
+    "number": "389",
+    "title": "Summary procedure for punishment for non- attendance by a witness in obedience to summons",
+    "page": 120
+  },
+  {
+    "idx": 389,
+    "number": "390",
+    "title": "Appeals from convictions under sections 383, 384, 388 and 389",
+    "page": 120
+  },
+  {
+    "idx": 390,
+    "number": "391",
+    "title": "Certain Judges and Magistrates not to try certain offences when committed before",
+    "page": 121
+  },
+  {
+    "idx": 391,
+    "number": "392",
+    "title": "Judgment",
+    "page": 121
+  },
+  {
+    "idx": 392,
+    "number": "393",
+    "title": "Language and contents of judgment",
+    "page": 122
+  },
+  {
+    "idx": 393,
+    "number": "394",
+    "title": "Order for notifying address of previously convicted offender",
+    "page": 122
+  },
+  {
+    "idx": 394,
+    "number": "395",
+    "title": "Order to pay compensation",
+    "page": 123
+  },
+  {
+    "idx": 395,
+    "number": "396",
+    "title": "Victim compensation scheme",
+    "page": 123
+  },
+  {
+    "idx": 396,
+    "number": "397",
+    "title": "Treatment of victims",
+    "page": 124
+  },
+  {
+    "idx": 397,
+    "number": "398",
+    "title": "Witness protection scheme",
+    "page": 124
+  },
+  {
+    "idx": 398,
+    "number": "399",
+    "title": "Compensation to persons groundlessly arrested",
+    "page": 124
+  },
+  {
+    "idx": 399,
+    "number": "400",
+    "title": "Order to pay costs in non- cognizable cases",
+    "page": 124
+  },
+  {
+    "idx": 400,
+    "number": "401",
+    "title": "Order to release on probation of good conduct or after admonition",
+    "page": 124
+  },
+  {
+    "idx": 401,
+    "number": "402",
+    "title": "Special reasons to be recorded in",
+    "page": 126
+  },
+  {
+    "idx": 402,
+    "number": "403",
+    "title": "Court not to alter judgment",
+    "page": 126
+  },
+  {
+    "idx": 403,
+    "number": "404",
+    "title": "Copy of judgment to be given to other persons",
+    "page": 126
+  },
+  {
+    "idx": 404,
+    "number": "405",
+    "title": "Judgment when to be translated",
+    "page": 126
+  },
+  {
+    "idx": 405,
+    "number": "406",
+    "title": "Court of send copy of finding and sentence to District Magistrate",
+    "page": 126
+  },
+  {
+    "idx": 406,
+    "number": "407",
+    "title": "Sentence of death to be submitted by Court of Session for confirmation",
+    "page": 127
+  },
+  {
+    "idx": 407,
+    "number": "408",
+    "title": "Power to direct further inquiry to be made or additional evidence to be taken",
+    "page": 127
+  },
+  {
+    "idx": 408,
+    "number": "409",
+    "title": "Power of High Court to confirm sentence or annul conviction",
+    "page": 127
+  },
+  {
+    "idx": 409,
+    "number": "410",
+    "title": "Confirmation or new sentence to be signed by two Judges",
+    "page": 127
+  },
+  {
+    "idx": 410,
+    "number": "411",
+    "title": "Procedure in case of difference of opinion",
+    "page": 127
+  },
+  {
+    "idx": 411,
+    "number": "412",
+    "title": "Procedure in cases submitted to High Court for confirmation",
+    "page": 127
+  },
+  {
+    "idx": 412,
+    "number": "413",
+    "title": "No appeal to lie unless otherwise",
+    "page": 127
+  },
+  {
+    "idx": 413,
+    "number": "414",
+    "title": "Appeal from orders requiring refusal to accept or surety for keeping peace or good behaviour",
+    "page": 128
+  },
+  {
+    "idx": 414,
+    "number": "415",
+    "title": "Appeals from convictions",
+    "page": 128
+  },
+  {
+    "idx": 415,
+    "number": "416",
+    "title": "No appeal in certain cases when accused pleads guilty",
+    "page": 128
+  },
+  {
+    "idx": 416,
+    "number": "417",
+    "title": "No appeal in petty cases",
+    "page": 128
+  },
+  {
+    "idx": 417,
+    "number": "418",
+    "title": "Appeal by Government against",
+    "page": 129
+  },
+  {
+    "idx": 418,
+    "number": "419",
+    "title": "Appeal in case of acquittal",
+    "page": 129
+  },
+  {
+    "idx": 419,
+    "number": "420",
+    "title": "Appeal against High Court in certain cases",
+    "page": 130
+  },
+  {
+    "idx": 420,
+    "number": "421",
+    "title": "Special right certain cases",
+    "page": 130
+  },
+  {
+    "idx": 421,
+    "number": "422",
+    "title": "Appeal to Session how heard",
+    "page": 130
+  },
+  {
+    "idx": 422,
+    "number": "423",
+    "title": "Petition of",
+    "page": 130
+  },
+  {
+    "idx": 423,
+    "number": "424",
+    "title": "Procedure in jail",
+    "page": 130
+  },
+  {
+    "idx": 424,
+    "number": "425",
+    "title": "Summary dismissal of appeal",
+    "page": 130
+  },
+  {
+    "idx": 425,
+    "number": "426",
+    "title": "Procedure for hearing appeals not summarily",
+    "page": 131
+  },
+  {
+    "idx": 426,
+    "number": "427",
+    "title": "Powers of Appellate Court",
+    "page": 131
+  },
+  {
+    "idx": 427,
+    "number": "428",
+    "title": "Judgments of subordinate Appellate Court",
+    "page": 132
+  },
+  {
+    "idx": 428,
+    "number": "429",
+    "title": "Order of High Court on appeal to be certified to lower Court",
+    "page": 132
+  },
+  {
+    "idx": 429,
+    "number": "430",
+    "title": "Suspension of sentence pending appeal; release of appellant on bail",
+    "page": 132
+  },
+  {
+    "idx": 430,
+    "number": "431",
+    "title": "Arrest of appeal from acquittal",
+    "page": 132
+  },
+  {
+    "idx": 431,
+    "number": "432",
+    "title": "Appellate Court may take further evidence or direct it to be taken",
+    "page": 133
+  },
+  {
+    "idx": 432,
+    "number": "433",
+    "title": "Procedure where Judges of Court of appeal are equally divided",
+    "page": 133
+  },
+  {
+    "idx": 433,
+    "number": "434",
+    "title": "Finality of judgments and orders on appeal",
+    "page": 133
+  },
+  {
+    "idx": 434,
+    "number": "435",
+    "title": "Abatement of appeals",
+    "page": 133
+  },
+  {
+    "idx": 435,
+    "number": "436",
+    "title": "Reference to High Court",
+    "page": 133
+  },
+  {
+    "idx": 436,
+    "number": "437",
+    "title": "Disposal of case according to decision of High Court",
+    "page": 134
+  },
+  {
+    "idx": 437,
+    "number": "438",
+    "title": "Calling for records to exercise powers of revision",
+    "page": 134
+  },
+  {
+    "idx": 438,
+    "number": "439",
+    "title": "Power to order inquiry",
+    "page": 134
+  },
+  {
+    "idx": 439,
+    "number": "440",
+    "title": "Sessions Judge's powers of revision",
+    "page": 134
+  },
+  {
+    "idx": 440,
+    "number": "441",
+    "title": "Power of Additional Sessions Judge",
+    "page": 134
+  },
+  {
+    "idx": 441,
+    "number": "442",
+    "title": "High Court's powers of revision",
+    "page": 135
+  },
+  {
+    "idx": 442,
+    "number": "443",
+    "title": "Power of High withdraw or transfer revision cases",
+    "page": 135
+  },
+  {
+    "idx": 443,
+    "number": "444",
+    "title": "Option of Court to hear parties",
+    "page": 135
+  },
+  {
+    "idx": 444,
+    "number": "445",
+    "title": "High Court's certified to lower Court",
+    "page": 135
+  },
+  {
+    "idx": 445,
+    "number": "446",
+    "title": "Power of Supreme Court to transfer cases and appeals",
+    "page": 136
+  },
+  {
+    "idx": 446,
+    "number": "447",
+    "title": "Power of High Court to transfer cases and appeals",
+    "page": 136
+  },
+  {
+    "idx": 447,
+    "number": "448",
+    "title": "Power of Sessions Judge to transfer cases and appeals",
+    "page": 137
+  },
+  {
+    "idx": 448,
+    "number": "449",
+    "title": "Withdrawal of cases and appeals by Sessions Judges",
+    "page": 137
+  },
+  {
+    "idx": 449,
+    "number": "450",
+    "title": "Withdrawal of cases by Judicial Magistrates",
+    "page": 137
+  },
+  {
+    "idx": 450,
+    "number": "451",
+    "title": "Making over or withdrawal of cases by Executive Magistrates",
+    "page": 137
+  },
+  {
+    "idx": 451,
+    "number": "452",
+    "title": "Reasons to be recorded",
+    "page": 138
+  },
+  {
+    "idx": 452,
+    "number": "453",
+    "title": "Execution of order passed under section 409",
+    "page": 138
+  },
+  {
+    "idx": 453,
+    "number": "454",
+    "title": "Execution of death passed by High Court",
+    "page": 138
+  },
+  {
+    "idx": 454,
+    "number": "455",
+    "title": "Postponement of sentence of death in case of appeal to Supreme Court",
+    "page": 138
+  },
+  {
+    "idx": 455,
+    "number": "456",
+    "title": "Commutation death on pregnant woman",
+    "page": 138
+  },
+  {
+    "idx": 456,
+    "number": "457",
+    "title": "Power to appoint place of imprisonment",
+    "page": 138
+  },
+  {
+    "idx": 457,
+    "number": "458",
+    "title": "Execution of sentence of imprisonment",
+    "page": 139
+  },
+  {
+    "idx": 458,
+    "number": "459",
+    "title": "Direction of warrant for execution",
+    "page": 139
+  },
+  {
+    "idx": 459,
+    "number": "460",
+    "title": "Warrant with whom to be lodged",
+    "page": 139
+  },
+  {
+    "idx": 460,
+    "number": "461",
+    "title": "Warrant for levy of fine",
+    "page": 139
+  },
+  {
+    "idx": 461,
+    "number": "462",
+    "title": "Effect of such warrant",
+    "page": 139
+  },
+  {
+    "idx": 462,
+    "number": "463",
+    "title": "Warrant for levy of fine issued by a Court in any territory to which this not extend",
+    "page": 139
+  },
+  {
+    "idx": 463,
+    "number": "464",
+    "title": "Suspension of execution of sentence of imprisonment",
+    "page": 140
+  },
+  {
+    "idx": 464,
+    "number": "465",
+    "title": "Who may issue warrant",
+    "page": 140
+  },
+  {
+    "idx": 465,
+    "number": "466",
+    "title": "Sentence on convict when to take effect",
+    "page": 140
+  },
+  {
+    "idx": 466,
+    "number": "467",
+    "title": "Sentence on offender already sentenced for another offence",
+    "page": 140
+  },
+  {
+    "idx": 467,
+    "number": "468",
+    "title": "Period of detention undergone by accused to be set off against sentence of imprisonment",
+    "page": 141
+  },
+  {
+    "idx": 468,
+    "number": "469",
+    "title": "Saving",
+    "page": 141
+  },
+  {
+    "idx": 469,
+    "number": "470",
+    "title": "Return of warrant on execution of sentence",
+    "page": 141
+  },
+  {
+    "idx": 470,
+    "number": "471",
+    "title": "Money paid recoverable as",
+    "page": 141
+  },
+  {
+    "idx": 471,
+    "number": "472",
+    "title": "Mercy death sentence cases",
+    "page": 141
+  },
+  {
+    "idx": 472,
+    "number": "473",
+    "title": "Power to suspend or remit sentences",
+    "page": 142
+  },
+  {
+    "idx": 473,
+    "number": "474",
+    "title": "Power to commute sentence",
+    "page": 143
+  },
+  {
+    "idx": 474,
+    "number": "475",
+    "title": "Restriction on powers of remission or commutation in certain cases",
+    "page": 143
+  },
+  {
+    "idx": 475,
+    "number": "476",
+    "title": "Concurrent power of Central Government in case of death sentences. State",
+    "page": 143
+  },
+  {
+    "idx": 476,
+    "number": "477",
+    "title": "Government to act after concurrence with Central Government in certain cases",
+    "page": 143
+  },
+  {
+    "idx": 477,
+    "number": "478",
+    "title": "In what cases taken",
+    "page": 143
+  },
+  {
+    "idx": 478,
+    "number": "479",
+    "title": "Maximum period for which undertrial prisoner can be detained",
+    "page": 144
+  },
+  {
+    "idx": 479,
+    "number": "480",
+    "title": "When bail in case of non-bailable offence",
+    "page": 144
+  },
+  {
+    "idx": 480,
+    "number": "481",
+    "title": "Bail to require accused to appear before next Appellate",
+    "page": 146
+  },
+  {
+    "idx": 481,
+    "number": "482",
+    "title": "Direction for grant of bail to person apprehending arrest",
+    "page": 146
+  },
+  {
+    "idx": 482,
+    "number": "483",
+    "title": "Special powers of High Court or Court of Session regarding bail",
+    "page": 146
+  },
+  {
+    "idx": 483,
+    "number": "484",
+    "title": "Amount of bond and reduction thereof",
+    "page": 147
+  },
+  {
+    "idx": 484,
+    "number": "485",
+    "title": "Bond of sureties",
+    "page": 147
+  },
+  {
+    "idx": 485,
+    "number": "486",
+    "title": "Declaration by",
+    "page": 147
+  },
+  {
+    "idx": 486,
+    "number": "487",
+    "title": "Discharge",
+    "page": 147
+  },
+  {
+    "idx": 487,
+    "number": "488",
+    "title": "Power to order sufficient bail when that first taken is insufficient. Discharge of",
+    "page": 148
+  },
+  {
+    "idx": 488,
+    "number": "489",
+    "title": "sureties",
+    "page": 148
+  },
+  {
+    "idx": 489,
+    "number": "490",
+    "title": "Deposit instead of recognizance",
+    "page": 148
+  },
+  {
+    "idx": 490,
+    "number": "491",
+    "title": "Procedure when bond has been forfeited",
+    "page": 148
+  },
+  {
+    "idx": 491,
+    "number": "492",
+    "title": "Cancellation of bond and bail bond",
+    "page": 149
+  },
+  {
+    "idx": 492,
+    "number": "493",
+    "title": "Procedure in case of insolvency or death of surety or when a bond is forfeited",
+    "page": 149
+  },
+  {
+    "idx": 493,
+    "number": "494",
+    "title": "Bond required from child",
+    "page": 149
+  },
+  {
+    "idx": 494,
+    "number": "495",
+    "title": "Appeal from orders under section 491",
+    "page": 149
+  },
+  {
+    "idx": 495,
+    "number": "496",
+    "title": "Power to direct levy of amount due on certain recognizances",
+    "page": 149
+  },
+  {
+    "idx": 496,
+    "number": "497",
+    "title": "Order for custody and disposal of property pending trial in certain cases",
+    "page": 149
+  },
+  {
+    "idx": 497,
+    "number": "498",
+    "title": "Order for property at conclusion of trial",
+    "page": 150
+  },
+  {
+    "idx": 498,
+    "number": "499",
+    "title": "Payment to innocent purchaser of money found on accused",
+    "page": 150
+  },
+  {
+    "idx": 499,
+    "number": "500",
+    "title": "Appeal against orders under section 498 or section 499",
+    "page": 150
+  },
+  {
+    "idx": 500,
+    "number": "501",
+    "title": "Destruction of other matter",
+    "page": 150
+  },
+  {
+    "idx": 501,
+    "number": "502",
+    "title": "Power to restore possession of immovable property",
+    "page": 151
+  },
+  {
+    "idx": 502,
+    "number": "503",
+    "title": "Procedure by seizure of property",
+    "page": 151
+  },
+  {
+    "idx": 503,
+    "number": "504",
+    "title": "Procedure where no claimant appears within six months",
+    "page": 151
+  },
+  {
+    "idx": 504,
+    "number": "505",
+    "title": "Power to sell perishable property",
+    "page": 151
+  },
+  {
+    "idx": 505,
+    "number": "506",
+    "title": "Irregularities vitiate proceedings",
+    "page": 151
+  },
+  {
+    "idx": 506,
+    "number": "507",
+    "title": "Irregularities which vitiate proceedings",
+    "page": 152
+  },
+  {
+    "idx": 507,
+    "number": "508",
+    "title": "Proceedings in wrong place",
+    "page": 152
+  },
+  {
+    "idx": 508,
+    "number": "509",
+    "title": "Non- compliance with provisions of section 183 or section 316",
+    "page": 153
+  },
+  {
+    "idx": 509,
+    "number": "510",
+    "title": "Effect of omission to frame, or absence of, or error in, charge",
+    "page": 153
+  },
+  {
+    "idx": 510,
+    "number": "511",
+    "title": "Finding or sentence when reversible by reason of error, omission or",
+    "page": 153
+  },
+  {
+    "idx": 511,
+    "number": "512",
+    "title": "Defect or make attachment unlawful",
+    "page": 153
+  },
+  {
+    "idx": 512,
+    "number": "513",
+    "title": "Definitions",
+    "page": 153
+  },
+  {
+    "idx": 513,
+    "number": "514",
+    "title": "Bar to taking cognizance after lapse of period of limitation",
+    "page": 153
+  },
+  {
+    "idx": 514,
+    "number": "515",
+    "title": "Commencement of period of limitation",
+    "page": 154
+  },
+  {
+    "idx": 515,
+    "number": "516",
+    "title": "Exclusion of time in certain cases",
+    "page": 154
+  },
+  {
+    "idx": 516,
+    "number": "517",
+    "title": "Exclusion of date on which Court is closed",
+    "page": 154
+  },
+  {
+    "idx": 517,
+    "number": "518",
+    "title": "Continuing offence",
     "page": 155
+  },
+  {
+    "idx": 518,
+    "number": "519",
+    "title": "Extension of period of limitation in certain cases",
+    "page": 155
+  },
+  {
+    "idx": 519,
+    "number": "520",
+    "title": "Trials before High Courts",
+    "page": 155
+  },
+  {
+    "idx": 520,
+    "number": "521",
+    "title": "Delivery to commanding officers of persons liable to be tried by Court-martial",
+    "page": 155
+  },
+  {
+    "idx": 521,
+    "number": "522",
+    "title": "Forms",
+    "page": 155
+  },
+  {
+    "idx": 522,
+    "number": "523",
+    "title": "Power of High Court to make rules",
+    "page": 155
+  },
+  {
+    "idx": 523,
+    "number": "524",
+    "title": "Power to alter functions allocated to Executive Magistrate in certain cases",
+    "page": 156
+  },
+  {
+    "idx": 524,
+    "number": "525",
+    "title": "Cases in which Judge or Magistrate is personally interested",
+    "page": 156
+  },
+  {
+    "idx": 525,
+    "number": "526",
+    "title": "Practising advocate not to sit as Magistrate in certain Courts",
+    "page": 156
+  },
+  {
+    "idx": 526,
+    "number": "527",
+    "title": "Public servant concerned in sale not to purchase or bid for property",
+    "page": 156
+  },
+  {
+    "idx": 527,
+    "number": "528",
+    "title": "Saving of inherent powers of High Court",
+    "page": 156
+  },
+  {
+    "idx": 528,
+    "number": "529",
+    "title": "Duty of High Court to exercise continuous superintendence over Courts",
+    "page": 156
+  },
+  {
+    "idx": 529,
+    "number": "530",
+    "title": "Trial and proceedings to be held in electronic mode",
+    "page": 156
+  },
+  {
+    "idx": 530,
+    "number": "531",
+    "title": "Repeal and savings. wife. body. etc. India. war",
+    "page": 156
+  },
+  {
+    "idx": 531,
+    "number": "4",
+    "title": "and 15 used. riot. etc. intent. etc. death. class. etc. death. injury. ill-will. case. so. Magistrate of than 7 years. the first class",
+    "page": 169
+  },
+  {
+    "idx": 532,
+    "number": "20",
+    "title": "EC",
+    "page": 220
   }
 ]

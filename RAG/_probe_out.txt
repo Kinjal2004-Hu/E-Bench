@@ -1,0 +1,38 @@
+pages: 102
+--- Method 1: extract_text() page 78, line containing 302 ---
+'Utteringwords, 302.Whoever,withthedeliberateintentionofwoundingthereligiousfeelingsofany'
+--- Method 2: extract_words() page 78, words near "302" ---
+Trespassing on 301.Whoever,withtheintentionofwoundingthefeelingsofanyperson,orofinsulting burial places, thereligionofanyperson,orwiththeknowledgethatthefeelingsofanypersonarelikelyto etc. bewounded,orthatthereligionofanypersonislikelytobeinsultedthereby,commitsany trespassinanyplaceofworshiporonany
+--- Method 3: extract_text(layout=True) ---
+'        Utteringwords, 302.Whoever,withthedeliberateintentionofwoundingthereligiousfeelingsofany'
+--- word x0 sample (page 78) ---
+x0=122.4 top=64.4 text='78'
+x0=216.9 top=64.4 text='THEGAZETTEOFINDIAEXTRAORDINARY'
+x0=441.8 top=64.4 text='[PartII—'
+x0=122.4 top=68.0 text='_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________'
+x0=57.6 top=84.6 text='Trespassing'
+x0=100.4 top=84.6 text='on'
+x0=141.6 top=84.0 text='301.Whoever,withtheintentionofwoundingthefeelingsofanyperson,orofinsulting'
+x0=57.6 top=94.2 text='burial'
+x0=83.6 top=94.2 text='places,'
+x0=117.6 top=95.9 text='thereligionofanyperson,orwiththeknowledgethatthefeelingsofanypersonarelikelyto'
+x0=57.6 top=103.7 text='etc.'
+x0=117.6 top=107.9 text='bewounded,orthatthereligionofanypersonislikelytobeinsultedthereby,commitsany'
+x0=117.6 top=119.9 text='trespassinanyplaceofworshiporonanyplaceofsepulchre,oranyplacesetapartforthe'
+x0=117.6 top=131.9 text='performance'
+x0=171.2 top=131.9 text='of'
+x0=182.5 top=131.9 text='funeral'
+x0=213.9 top=131.9 text='rites'
+x0=234.2 top=131.9 text='or'
+x0=245.5 top=131.9 text='as'
+x0=256.9 top=131.9 text='a'
+x0=264.4 top=131.9 text='depository'
+x0=309.6 top=131.9 text='for'
+x0=324.3 top=131.9 text='the'
+x0=339.6 top=131.9 text='remains'
+x0=374.3 top=131.9 text='of'
+x0=385.7 top=131.9 text='the'
+x0=400.9 top=131.9 text='dead,'
+x0=425.3 top=131.9 text='or'
+x0=436.7 top=131.9 text='offers'
+x0=463.1 top=131.9 text='any'
