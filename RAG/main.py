@@ -90,21 +90,49 @@ NEWSAPI_BASE = "https://newsapi.org/v2"
 # ── SerpApi (Google web search) — current-events / pending-legislation fallback ──
 SERPAPI_KEY = os.getenv("SERPAPI_KEY", "")
 SERPAPI_BASE = "https://serpapi.com/search.json"
+WEB_SEARCH_MODE = os.getenv("WEB_SEARCH_MODE", "auto").lower()
+WEB_SEARCH_MAX_RESULTS = int(os.getenv("WEB_SEARCH_MAX_RESULTS", "5"))
 
 # Queries about legislation that isn't (yet) an enacted statute in the corpus:
 # bills, ordinances, drafts, or anything phrased as newly/recently passed.
 CURRENT_EVENTS_RE = re.compile(
     r"\b(bill|ordinance|draft law|draft bill|amendment bill|pending legislation|"
     r"lok sabha|rajya sabha|parliament|cabinet approved|recently passed|"
-    r"newly passed|new law|proposed law|introduced in parliament|gazette notification)\b",
+    r"newly passed|new law|proposed law|introduced in parliament|gazette notification|"
+    r"commencement notification|came into force|in force|latest|current|updated|"
+    r"recent amendment|amended|notification|gazette)\b",
+    re.IGNORECASE,
+)
+LEGAL_PROVISION_WEB_RE = re.compile(
+    r"\b(section|sec\.?|s\.|article|art\.?|rule|regulation|reg\.?)\s*\.?\s*[1-9]\d{0,3}[A-Z]?\b",
+    re.IGNORECASE,
+)
+LEGAL_SOURCE_RE = re.compile(
+    r"\b(bns|bnss|bsa|bharatiya|constitution|it act|information technology act|"
+    r"contract act|motor vehicles act|rera|companies act|consumer protection|"
+    r"income tax|taxation|specific relief|transfer of property|law|act|code|sanhita)\b",
     re.IGNORECASE,
 )
 
 
 def _needs_web_search(query: str) -> bool:
-    """Heuristic: does this look like a current-events / pending-legislation question
-    that the static enacted-statute corpus won't cover?"""
-    return bool(SERPAPI_KEY) and bool(CURRENT_EVENTS_RE.search(query))
+    """Should this query get live web context in addition to corpus retrieval?"""
+    if not SERPAPI_KEY or WEB_SEARCH_MODE == "off":
+        return False
+    if WEB_SEARCH_MODE == "always":
+        return True
+    return bool(
+        CURRENT_EVENTS_RE.search(query)
+        or (LEGAL_PROVISION_WEB_RE.search(query) and LEGAL_SOURCE_RE.search(query))
+    )
+
+
+def _official_law_web_query(query: str) -> str:
+    official_sites = (
+        "(site:indiacode.nic.in OR site:mha.gov.in OR site:egazette.gov.in "
+        "OR site:pib.gov.in OR site:lawmin.gov.in)"
+    )
+    return f"{query} India law provision official source {official_sites}"
 
 TOP_K_FINAL = 7
 RERANK_TEXT_LEN = int(os.getenv("RERANK_TEXT_LEN", "800"))
@@ -394,6 +422,8 @@ class WebResult(BaseModel):
     snippet: str = ""
     source: str = ""
     date: str = ""
+    displayed_link: str = ""
+    position: Optional[int] = None
 
 
 class QueryResponse(BaseModel):
@@ -1081,8 +1111,7 @@ def ik_search(query: str, page: int = 0, max_results: int = 5) -> List[dict]:
 
 
 def web_search(query: str, max_results: int = 5) -> List[dict]:
-    """Search the live web via SerpApi (Google) for current-events context
-    that the static statute corpus can't have (pending bills, recent news)."""
+    """Search live web via SerpApi for current legal context and official provisions."""
     if not SERPAPI_KEY:
         return []
     try:
@@ -1090,9 +1119,11 @@ def web_search(query: str, max_results: int = 5) -> List[dict]:
             SERPAPI_BASE,
             params={
                 "engine": "google",
-                "q": query,
+                "q": _official_law_web_query(query),
+                "location": "India",
                 "gl": "in",
                 "hl": "en",
+                "google_domain": "google.co.in",
                 "num": max_results,
                 "api_key": SERPAPI_KEY,
             },
@@ -1109,6 +1140,8 @@ def web_search(query: str, max_results: int = 5) -> List[dict]:
                 "snippet": r.get("snippet", ""),
                 "source": r.get("source", ""),
                 "date": r.get("date", ""),
+                "displayed_link": r.get("displayed_link", ""),
+                "position": r.get("position", None),
             })
         return results
     except Exception as e:
@@ -1877,7 +1910,8 @@ def _build_context_from_results(ranked: list, ik_raw: list, web_raw: Optional[li
         )
         for w in web_raw:
             date_part = f" ({w['date']})" if w.get("date") else ""
-            web_section += f"\n[{w['title']}]{date_part} — {w.get('source', '')}\n{w.get('snippet', '')}\nLink: {w.get('link', '')}\n"
+            source = w.get("source") or w.get("displayed_link", "")
+            web_section += f"\n[{w['title']}]{date_part} — {source}\n{w.get('snippet', '')}\nLink: {w.get('link', '')}\n"
         if chars + len(web_section) <= max_chars:
             parts.append(web_section)
 
@@ -1900,7 +1934,7 @@ async def ask(body: AskRequest):
 
     ranked_task = loop.run_in_executor(None, retrieve, hyde_query_str, body.top_k)
     ik_task = loop.run_in_executor(None, ik_search, body.question, 0, 5)
-    web_task = loop.run_in_executor(None, web_search, body.question, 5) if _needs_web_search(body.question) else None
+    web_task = loop.run_in_executor(None, web_search, body.question, WEB_SEARCH_MAX_RESULTS) if _needs_web_search(body.question) else None
 
     if web_task is not None:
         ranked, ik_raw, web_raw = await asyncio.gather(ranked_task, ik_task, web_task)
@@ -1985,7 +2019,7 @@ def ask_stream(body: AskRequest):
 
     ranked = retrieve(body.question, body.top_k)
     ik_raw = ik_search(body.question, max_results=5)
-    web_raw = web_search(body.question, max_results=5) if _needs_web_search(body.question) else []
+    web_raw = web_search(body.question, max_results=WEB_SEARCH_MAX_RESULTS) if _needs_web_search(body.question) else []
     logger.info("[POST /ask/stream] retrieval done | sections=%d | ik_results=%d | web_results=%d",
                 len(ranked), len(ik_raw), len(web_raw))
 
@@ -1999,7 +2033,15 @@ def ask_stream(body: AskRequest):
 
     sections_meta = _ranked_to_section_meta(ranked)
     ik_meta = [{"doc_id": d["doc_id"], "title": d["title"], "headline": d.get("headline", "")} for d in ik_raw]
-    web_meta = [{"title": w["title"], "link": w["link"], "snippet": w.get("snippet", ""), "source": w.get("source", ""), "date": w.get("date", "")} for w in web_raw]
+    web_meta = [{
+        "title": w["title"],
+        "link": w["link"],
+        "snippet": w.get("snippet", ""),
+        "source": w.get("source", ""),
+        "date": w.get("date", ""),
+        "displayed_link": w.get("displayed_link", ""),
+        "position": w.get("position"),
+    } for w in web_raw]
 
     def event_stream():
         llm_start = time.perf_counter()
@@ -2053,7 +2095,7 @@ async def query(q: str = Query(...), top_k: int = 7):
     hyde_query_str = await loop.run_in_executor(None, hyde_query, q)
     ranked_task = loop.run_in_executor(None, retrieve, hyde_query_str, top_k)
     ik_task = loop.run_in_executor(None, ik_search, q, 0, 5)
-    web_task = loop.run_in_executor(None, web_search, q, 5) if _needs_web_search(q) else None
+    web_task = loop.run_in_executor(None, web_search, q, WEB_SEARCH_MAX_RESULTS) if _needs_web_search(q) else None
 
     if web_task is not None:
         ranked, ik_raw, web_raw = await asyncio.gather(ranked_task, ik_task, web_task)
