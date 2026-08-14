@@ -554,7 +554,7 @@ npm run dev    # → http://localhost:4000
 # 3. Start RAG AI Server
 cd RAG
 pip install -r requirements.txt
-# Create RAG/.env: NVIDIA_API_KEY, IK_API_TOKEN, NEWSAPI_KEY
+# Create RAG/.env: NVIDIA_API_KEY, IK_API_TOKEN, NEWSAPI_KEY, SERPAPI_KEY
 uvicorn main:app --reload --port 8000  # → http://localhost:8000
 # First run: loads two embedding models (~30s), then builds legacy + per-law indexes
 
@@ -596,6 +596,7 @@ npm run dev    # → http://localhost:3000
 | `GOOGLE_API_KEY` | Backend | Google API key (Gemini fallback for voice) |
 | `IK_API_TOKEN` | RAG | Indian Kanoon API token |
 | `NEWSAPI_KEY` | RAG | NewsAPI.org API key |
+| `SERPAPI_KEY` | RAG | SerpApi (Google search) key — powers the web-search fallback for pending-bill/current-events queries not covered by the static statute corpus |
 
 **All secrets are read from `.env` files — never hardcoded in source code.**
 - `backend/.env` — MongoDB, JWT, NVIDIA, Cloudinary, Twilio, Google

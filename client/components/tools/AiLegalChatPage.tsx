@@ -5,7 +5,7 @@ import { useSearchParams } from "next/navigation";
 import {
     Scale, Gavel, Paperclip, Send, Trash2, Sparkles,
     CheckCheck, FileText, BookOpen, Copy, BookMarked, ChevronRight, ImageIcon, X,
-    Filter, ChevronDown,
+    Filter, ChevronDown, Globe,
 } from "lucide-react";
 import FormattedAiText from "@/components/FormattedAiText";
 import { fetchLaws, ragAskRouted } from "@/lib/userApi";
@@ -24,6 +24,7 @@ const SUGGESTED: { q: string; icon: typeof Scale }[] = [
 
 type Section = { document: string; section_number: number; title: string; snippet?: string };
 type IKResult = { doc_id: string; title: string; headline: string };
+type WebResult = { title: string; link: string; snippet?: string; source?: string; date?: string };
 type Message = {
     id: number;
     sender: "user" | "ai";
@@ -31,6 +32,7 @@ type Message = {
     timestamp: string;
     sections?: Section[];
     ikResults?: IKResult[];
+    webResults?: WebResult[];
     saved?: boolean;
     copied?: boolean;
 };
@@ -151,7 +153,7 @@ export default function AiLegalChatPage() {
         }]);
         setMessages(prev => [...prev, {
             id: msgId, sender: "ai", text: "", timestamp: new Date().toISOString(),
-            sections: [], ikResults: [],
+            sections: [], ikResults: [], webResults: [],
         }]);
         setIsTyping(true);
 
@@ -209,7 +211,7 @@ export default function AiLegalChatPage() {
 
         setMessages(prev => [...prev, {
             id: msgId, sender: "ai", text: "", timestamp: new Date().toISOString(),
-            sections: [], ikResults: [],
+            sections: [], ikResults: [], webResults: [],
         }]);
 
         // ── Drafting Intent Detection ──
@@ -292,7 +294,7 @@ export default function AiLegalChatPage() {
                             ));
                         } else if (event.t === "meta") {
                             setMessages(prev => prev.map(m =>
-                                m.id === msgId ? { ...m, sections: event.sections || [], ikResults: event.ik || [] } : m
+                                m.id === msgId ? { ...m, sections: event.sections || [], ikResults: event.ik || [], webResults: event.web || [] } : m
                             ));
                         } else if (event.t === "error") {
                             setMessages(prev => prev.map(m =>
@@ -496,6 +498,27 @@ export default function AiLegalChatPage() {
                                                         <li key={i} className="flex items-start gap-2 text-xs text-gray-700">
                                                             <span className="w-4 h-4 rounded-full flex items-center justify-center text-[9px] font-bold shrink-0 mt-0.5" style={{ backgroundColor: "#FFF8EC", color: THEME_DARK }}>{i + 1}</span>
                                                             <span><strong>{ik.title}</strong>{ik.headline ? <span className="text-gray-400"> — {ik.headline.slice(0, 90)}</span> : null}</span>
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+                                        )}
+                                        {/* Recent Web Results */}
+                                        {msg.webResults && msg.webResults.length > 0 && (
+                                            <div className="bg-white border rounded-xl p-3.5 w-full shadow-sm" style={{ borderColor: THEME_BORDER }}>
+                                                <p className="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider mb-2.5 pb-2 border-b border-gray-100" style={{ color: THEME_DARK }}>
+                                                    <Globe size={11} style={{ color: THEME_COLOR }} /> Recent Web Results
+                                                </p>
+                                                <p className="text-[10px] text-gray-400 mb-2 -mt-1">May include pending bills or proposals not yet enacted as law.</p>
+                                                <ul className="space-y-1.5">
+                                                    {msg.webResults.map((w, i) => (
+                                                        <li key={i} className="flex items-start gap-2 text-xs text-gray-700">
+                                                            <span className="w-4 h-4 rounded-full flex items-center justify-center text-[9px] font-bold shrink-0 mt-0.5" style={{ backgroundColor: THEME_SOFT, color: THEME_DARK }}>{i + 1}</span>
+                                                            <span>
+                                                                <a href={w.link} target="_blank" rel="noopener noreferrer" className="font-semibold hover:underline" style={{ color: THEME_DARK }}>{w.title}</a>
+                                                                {w.source ? <span className="text-gray-400"> — {w.source}</span> : null}
+                                                                {w.date ? <span className="text-gray-400"> ({w.date})</span> : null}
+                                                            </span>
                                                         </li>
                                                     ))}
                                                 </ul>

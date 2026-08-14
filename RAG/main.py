@@ -87,8 +87,31 @@ IK_HEADERS = {
 NEWSAPI_KEY = os.getenv("NEWSAPI_KEY", "")
 NEWSAPI_BASE = "https://newsapi.org/v2"
 
+# ── SerpApi (Google web search) — current-events / pending-legislation fallback ──
+SERPAPI_KEY = os.getenv("SERPAPI_KEY", "")
+SERPAPI_BASE = "https://serpapi.com/search.json"
+
+# Queries about legislation that isn't (yet) an enacted statute in the corpus:
+# bills, ordinances, drafts, or anything phrased as newly/recently passed.
+CURRENT_EVENTS_RE = re.compile(
+    r"\b(bill|ordinance|draft law|draft bill|amendment bill|pending legislation|"
+    r"lok sabha|rajya sabha|parliament|cabinet approved|recently passed|"
+    r"newly passed|new law|proposed law|introduced in parliament|gazette notification)\b",
+    re.IGNORECASE,
+)
+
+
+def _needs_web_search(query: str) -> bool:
+    """Heuristic: does this look like a current-events / pending-legislation question
+    that the static enacted-statute corpus won't cover?"""
+    return bool(SERPAPI_KEY) and bool(CURRENT_EVENTS_RE.search(query))
+
 TOP_K_FINAL = 7
-RERANK_TEXT_LEN = 2000
+RERANK_TEXT_LEN = int(os.getenv("RERANK_TEXT_LEN", "800"))
+RERANK_POOL = int(os.getenv("RERANK_POOL", "50"))
+RERANK_PER_LAW_FLOOR = int(os.getenv("RERANK_PER_LAW_FLOOR", "2"))
+TITLE_MATCH_WEIGHT = float(os.getenv("TITLE_MATCH_WEIGHT", "0.25"))
+SKIP_RERANK_FOR_SINGLE_EXACT = os.getenv("SKIP_RERANK_FOR_SINGLE_EXACT", "true").lower() != "false"
 
 EMBED_MODEL_NAME = "BAAI/bge-base-en-v1.5"
 embed_model = SentenceTransformer(EMBED_MODEL_NAME)
@@ -127,12 +150,21 @@ LAW_ALIASES = [
     (re.compile(r"income tax|taxation"), "taxation"),
     (re.compile(r"transfer of property"), "tpa_1882"),
 ]
-SECTION_NUM_RE = re.compile(r"\b(?:section|secs?|ss\.?|s\.)\s*\.?\s*([1-9]\d{0,3})\b", re.IGNORECASE)
-STANDALONE_NUM_RE = re.compile(r"\b([1-9]\d{2,3})\b")
+SECTION_NUM_RE = re.compile(
+    r"\b(?:section|secs?|ss\.?|s\.|article|art\.?|rule|regulation|reg\.?)\s*\.?\s*([1-9]\d{0,3}[A-Z]?)\b",
+    re.IGNORECASE,
+)
+STANDALONE_NUM_RE = re.compile(r"\b([1-9]\d{2,3}[A-Z]?)\b", re.IGNORECASE)
 # IPC -> BNS renumbering (verified against corpus titles)
 IPC_TO_BNS = {
     "302": "103", "304": "105", "307": "109", "309": "109",
     "323": "115", "354": "74", "376": "64", "420": "318", "498A": "85",
+}
+TITLE_MATCH_STOPWORDS = {
+    "what", "which", "does", "say", "about", "under", "section", "article",
+    "rule", "regulation", "act", "law", "new", "the", "and", "for", "with",
+    "from", "into", "bharatiya", "nyaya", "sanhita", "nagarik", "suraksha",
+    "sakshya", "adhiniyam", "indian", "penal", "code", "constitution",
 }
 
 
@@ -177,12 +209,11 @@ def _targeted_provision_hits(query, search_query):
         if lid not in PER_LAW_INDEXES:
             continue
         data = PER_LAW_INDEXES[lid]
-        provisions = data["corpus"].get("provisions", [])
-        if any(str(p.get("number", "")) == num for p in provisions):
+        if _get_provision(data, num):
             hits.append((lid, num))
         if likes_ipc and lid == "bns_2023" and num.upper() in IPC_TO_BNS:
             target = IPC_TO_BNS[num.upper()]
-            if any(str(p.get("number", "")) == target for p in provisions):
+            if _get_provision(data, target):
                 hits.append(("bns_2023", target))
     if hits:
         return hits
@@ -212,6 +243,112 @@ MONGO_DB = None
 DATA_DIR = Path(__file__).parent / "data"
 MASTER_INDEX = None
 PER_LAW_INDEXES = {}
+
+
+def _build_provision_lookup(corpus: dict) -> Dict[str, dict]:
+    return {
+        str(p.get("number", "")): p
+        for p in corpus.get("provisions", [])
+        if p.get("number") is not None
+    }
+
+
+def _get_provision(data: dict, number) -> Optional[dict]:
+    if not data or number is None:
+        return None
+    key = str(number)
+    prov = (data.get("provisions_by_number") or {}).get(key)
+    if prov is not None:
+        return prov
+    return next(
+        (p for p in data.get("corpus", {}).get("provisions", []) if str(p.get("number", "")) == key),
+        None,
+    )
+
+
+def _provision_rerank_text(prov: Optional[dict]) -> str:
+    if not prov:
+        return ""
+    title = prov.get("title", "") or ""
+    full_text = prov.get("full_text", "") or ""
+    return f"{title}\n{full_text}".strip()[:RERANK_TEXT_LEN]
+
+
+def _title_match_score(query: str, title: str) -> float:
+    if not query or not title:
+        return 0.0
+    q_norm = re.sub(r"[^a-z0-9]+", " ", query.lower()).strip()
+    title_norm = re.sub(r"[^a-z0-9]+", " ", title.lower()).strip()
+    if title_norm and title_norm in q_norm:
+        return 2.0
+
+    q_tokens = {
+        t for t in re.findall(r"[a-z0-9]+", q_norm)
+        if len(t) > 2 and t not in TITLE_MATCH_STOPWORDS
+    }
+    title_tokens = [
+        t for t in re.findall(r"[a-z0-9]+", title_norm)
+        if len(t) > 2 and t not in TITLE_MATCH_STOPWORDS
+    ]
+    if not q_tokens or not title_tokens:
+        return 0.0
+    overlap = sum(1 for t in title_tokens if t in q_tokens)
+    return overlap / len(title_tokens)
+
+
+def _candidate_key(candidate: dict) -> tuple:
+    return (candidate.get("law_id"), str(candidate.get("provision_number", "")))
+
+
+def _trim_rerank_candidates(candidates: list, pool_size: int = RERANK_POOL) -> list:
+    if len(candidates) <= pool_size:
+        return sorted(candidates, key=lambda c: -c["vector_score"])
+
+    selected = {}
+
+    def add(candidate: dict):
+        selected.setdefault(_candidate_key(candidate), candidate)
+
+    by_law = {}
+    for candidate in candidates:
+        by_law.setdefault(candidate["law_id"], []).append(candidate)
+
+    for law_candidates in by_law.values():
+        law_candidates.sort(key=lambda c: -c["vector_score"])
+        for candidate in law_candidates[:max(0, RERANK_PER_LAW_FLOOR)]:
+            if len(selected) >= pool_size:
+                break
+            add(candidate)
+
+    for candidate in sorted(candidates, key=lambda c: -c["vector_score"]):
+        if len(selected) >= pool_size:
+            break
+        add(candidate)
+
+    return sorted(selected.values(), key=lambda c: -c["vector_score"])
+
+
+def _result_from_candidate(entry: dict, score: float = 1.0, vector_score: float = 1.0, rerank_score: float = 0.0) -> dict:
+    return {
+        "score": float(score),
+        "score_breakdown": {
+            "hybrid": round(float(score), 4),
+            "vector_similarity": round(float(vector_score), 4),
+            "reranker_relevance": round(float(rerank_score), 4),
+        },
+        "section": {
+            "document": entry["law_label"],
+            "section": entry["provision_number"],
+            "title": entry["title"],
+            "page": entry["page"],
+            "full_text": "",
+        },
+        "snippet": "",
+        "sub_clause": None,
+        "example": None,
+        "law_id": entry["law_id"],
+        "provision_number": entry["provision_number"],
+    }
 
 
 # ── Pydantic Models ──
@@ -250,6 +387,15 @@ class IKResult(BaseModel):
     source: str = "Indian Kanoon"
 
 
+class WebResult(BaseModel):
+    """A single live web-search result (current events / pending legislation)."""
+    title: str
+    link: str
+    snippet: str = ""
+    source: str = ""
+    date: str = ""
+
+
 class QueryResponse(BaseModel):
     query: str
     ai_answer: str
@@ -258,6 +404,7 @@ class QueryResponse(BaseModel):
     model_used: str
     user_rights: Optional[List[str]] = None
     indian_kanoon_results: Optional[List[IKResult]] = None
+    web_results: Optional[List[WebResult]] = None
 
 
 class AskRequest(BaseModel):
@@ -274,6 +421,7 @@ class AskResponse(BaseModel):
     user_rights: Optional[List[str]] = None
     legal_steps: Optional[List[str]] = None
     indian_kanoon_results: Optional[List[IKResult]] = None
+    web_results: Optional[List[WebResult]] = None
 
 
 class CaseStudy(BaseModel):
@@ -634,20 +782,48 @@ def retrieve(query, top_k=TOP_K_FINAL):
     expanded = rewrite_query(query)
     search_query = expanded
 
-# Phase 2: Embed and search all per-law indexes
-    t0 = time.perf_counter()
-    q_emb = embed_model.encode([search_query], normalize_embeddings=True)
-    t_embed = time.perf_counter()
-
     # Targeted routing: pull the exact provision the query asks for, when it
-    # names a section number and/or a law (e.g. "Section 302 BNS").
+    # names a provision number and/or a law (e.g. "Section 302 BNS").
     named_laws = set(_detect_law_ids(search_query))
     targeted = {lid: num for lid, num in _targeted_provision_hits(query, search_query) if num is not None}
     if targeted:
         named_laws |= set(targeted)
 
+    if SKIP_RERANK_FOR_SINGLE_EXACT and len(targeted) == 1:
+        lid, num = next(iter(targeted.items()))
+        data = PER_LAW_INDEXES.get(lid)
+        prov = _get_provision(data, num)
+        if data and prov:
+            entry = {
+                "law_id": lid,
+                "law_label": data["label"],
+                "provision_label": data.get("provision_label", "Section"),
+                "provision_number": str(num),
+                "title": prov.get("title", ""),
+                "page": prov.get("page", 0),
+                "vector_score": 10.0,
+                "corpus_idx": -1,
+                "exact": True,
+            }
+            t_done = time.perf_counter()
+            logger.info(
+                "[retrieve] query=%r | top_k=%d | embed=%.3fs faiss=%.3fs rerank=%.3fs total=%.3fs | docs=%s | exact_shortcut=true",
+                _truncate(query, 120), top_k,
+                0.0, 0.0, 0.0, t_done - start_wall,
+                [data["label"]],
+            )
+            return [_result_from_candidate(entry, score=1.0, vector_score=1.0, rerank_score=0.0)]
+
+    # Phase 2: Embed and search all per-law indexes
+    t0 = time.perf_counter()
+    q_emb = embed_model.encode([search_query], normalize_embeddings=True)
+    t_embed = time.perf_counter()
+
+    search_law_ids = [lid for lid in PER_LAW_INDEXES if not named_laws or lid in named_laws]
+
     all_candidates = []
-    for lid, data in PER_LAW_INDEXES.items():
+    for lid in search_law_ids:
+        data = PER_LAW_INDEXES[lid]
         idx = data["index"]
         meta = data["meta"]
         corpus = data["corpus"]
@@ -679,8 +855,7 @@ def retrieve(query, top_k=TOP_K_FINAL):
         data = PER_LAW_INDEXES.get(lid)
         if not data:
             continue
-        provisions = data["corpus"].get("provisions", [])
-        prov = next((p for p in provisions if str(p.get("number", "")) == num), None)
+        prov = _get_provision(data, num)
         if not prov:
             continue
         all_candidates.append({
@@ -697,11 +872,9 @@ def retrieve(query, top_k=TOP_K_FINAL):
     t_faiss = time.perf_counter()
 
     # Phase 3: Trim candidate pool before reranking (CPU CrossEncoder is slow).
-    # Keep per-law recall during FAISS, but globally cap to RERANK_POOL candidates
-    # by vector score so the reranker only scores a manageable subset.
-    RERANK_POOL = int(os.getenv("RERANK_POOL", "50"))
-    all_candidates.sort(key=lambda c: -c["vector_score"])
-    all_candidates = all_candidates[:RERANK_POOL]
+    # Keep a small per-law floor first, then fill remaining slots globally by
+    # vector score so large generic indexes cannot starve the right law.
+    all_candidates = _trim_rerank_candidates(all_candidates, RERANK_POOL)
 
     # Phase 4: Resolve provision text for reranking
     pairs = []
@@ -710,9 +883,8 @@ def retrieve(query, top_k=TOP_K_FINAL):
         data = PER_LAW_INDEXES.get(c["law_id"])
         if not data:
             continue
-        provisions = data["corpus"].get("provisions", [])
-        prov = next((p for p in provisions if str(p.get("number", "")) == c["provision_number"]), None)
-        text = (prov.get("full_text") or "")[:RERANK_TEXT_LEN] if prov else ""
+        prov = _get_provision(data, c["provision_number"])
+        text = _provision_rerank_text(prov)
         if not text:
             continue
         pairs.append((query, text))
@@ -744,6 +916,9 @@ def retrieve(query, top_k=TOP_K_FINAL):
         w_vec = 1.0 - w_rerank
 
         hybrid = w_vec * vec_norm + w_rerank * rerank_norm
+        title_scores = np.array([_title_match_score(query, v.get("title", "")) for v in valid])
+        if TITLE_MATCH_WEIGHT > 0:
+            hybrid = hybrid + TITLE_MATCH_WEIGHT * title_scores
 
         # Notes: exact matches get a moderate boost so "Section 302 BNS" is not
         # overtaken by an irrelevant BNSS hit that only matches on "Section".
@@ -775,6 +950,7 @@ def retrieve(query, top_k=TOP_K_FINAL):
                 "hybrid": round(float(h_score), 4),
                 "vector_similarity": round(float(v_score), 4),
                 "reranker_relevance": round(float(r_score), 4),
+                "title_match": round(float(_title_match_score(query, entry.get("title", ""))), 4),
             },
             "section": {
                 "document": entry["law_label"],
@@ -901,6 +1077,42 @@ def ik_search(query: str, page: int = 0, max_results: int = 5) -> List[dict]:
         return results
     except Exception as e:
         print(f"Indian Kanoon search error: {e}")
+        return []
+
+
+def web_search(query: str, max_results: int = 5) -> List[dict]:
+    """Search the live web via SerpApi (Google) for current-events context
+    that the static statute corpus can't have (pending bills, recent news)."""
+    if not SERPAPI_KEY:
+        return []
+    try:
+        resp = httpx.get(
+            SERPAPI_BASE,
+            params={
+                "engine": "google",
+                "q": query,
+                "gl": "in",
+                "hl": "en",
+                "num": max_results,
+                "api_key": SERPAPI_KEY,
+            },
+            timeout=15,
+        )
+        resp.raise_for_status()
+        data = resp.json()
+        organic = data.get("organic_results", [])[:max_results]
+        results = []
+        for r in organic:
+            results.append({
+                "title": r.get("title", ""),
+                "link": r.get("link", ""),
+                "snippet": r.get("snippet", ""),
+                "source": r.get("source", ""),
+                "date": r.get("date", ""),
+            })
+        return results
+    except Exception as e:
+        print(f"SerpApi web search error: {e}")
         return []
 
 
@@ -1088,6 +1300,24 @@ Supreme Court Judgments
 High Court Judgments
 ↓
 Government notifications
+↓
+Recent Web/News Results (current-events context only)
+
+6. Recent Web/News Results are supplementary, not enacted law.
+
+If the context includes a "Recent Web/News Results" section, it covers bills, ordinances,
+proposed amendments, or news that may NOT yet be enacted law.
+
+Always state clearly whether something is:
+- Enacted law (in force), or
+- A pending bill / proposal / draft (not yet law)
+
+Never present a pending bill as if it were already binding law.
+Cite the web source (title + link) when used.
+
+If NO retrieved statute, judgment, or web result supports an answer, state:
+
+"I could not find sufficient legal authority in the available sources to answer this confidently."
 
 ==========================================================
 STANDARD RESPONSE FORMAT
@@ -1314,6 +1544,8 @@ Judgments
 
 Government Sources
 
+Recent Web/News Results (label each as "Enacted" or "Pending/Proposed")
+
 Mention only sources actually retrieved.
 
 ----------------------------------------------------------
@@ -1414,10 +1646,10 @@ Your goal is to make every response feel like it was prepared by an experienced 
 """
 
 
-def ask_llm(question, ranked, ik_results=None):
+def ask_llm(question, ranked, ik_results=None, web_results=None):
     """Ask LLM using ranked results from new unified retrieve()."""
 
-    context = _build_context_from_results(ranked, ik_results or [])
+    context = _build_context_from_results(ranked, ik_results or [], web_results or [])
 
     messages = [
         {"role": "system", "content": SYSTEM_PROMPT},
@@ -1504,8 +1736,7 @@ def to_search_results(ranked):
             pn = r.get("provision_number", "")
             if lid and pn:
                 data = PER_LAW_INDEXES.get(lid, {})
-                provisions = data.get("corpus", {}).get("provisions", [])
-                prov = next((p for p in provisions if str(p.get("number", "")) == str(pn)), None)
+                prov = _get_provision(data, pn)
                 if prov:
                     full = prov.get("full_text", "")
                     snippet = full[:400] if full else ""
@@ -1600,7 +1831,7 @@ def home():
     """
 
 
-def _build_context_from_results(ranked: list, ik_raw: list, max_chars: int = 12000) -> str:
+def _build_context_from_results(ranked: list, ik_raw: list, web_raw: Optional[list] = None, max_chars: int = 12000) -> str:
     """Build LLM context from retrieved results, truncating to avoid token overflow."""
     parts = []
     chars = 0
@@ -1616,8 +1847,7 @@ def _build_context_from_results(ranked: list, ik_raw: list, max_chars: int = 120
         text = ""
         if lid and pn:
             data = PER_LAW_INDEXES.get(lid, {})
-            provisions = data.get("corpus", {}).get("provisions", [])
-            prov = next((p for p in provisions if str(p.get("number", "")) == str(pn)), None)
+            prov = _get_provision(data, pn)
             if prov:
                 text = prov.get("full_text", "") or ""
 
@@ -1637,6 +1867,19 @@ def _build_context_from_results(ranked: list, ik_raw: list, max_chars: int = 120
             ik_section += f"\n[{ik['title']}]\n{ik.get('headline', '')}\n"
         if chars + len(ik_section) <= max_chars:
             parts.append(ik_section)
+            chars += len(ik_section)
+
+    if web_raw:
+        web_section = (
+            "\n--- Recent Web/News Results (current-events context; may include "
+            "pending bills/proposals that are NOT yet enacted law — verify status "
+            "before treating as binding) ---\n"
+        )
+        for w in web_raw:
+            date_part = f" ({w['date']})" if w.get("date") else ""
+            web_section += f"\n[{w['title']}]{date_part} — {w.get('source', '')}\n{w.get('snippet', '')}\nLink: {w.get('link', '')}\n"
+        if chars + len(web_section) <= max_chars:
+            parts.append(web_section)
 
     return "".join(parts)
 
@@ -1657,13 +1900,18 @@ async def ask(body: AskRequest):
 
     ranked_task = loop.run_in_executor(None, retrieve, hyde_query_str, body.top_k)
     ik_task = loop.run_in_executor(None, ik_search, body.question, 0, 5)
+    web_task = loop.run_in_executor(None, web_search, body.question, 5) if _needs_web_search(body.question) else None
 
-    ranked, ik_raw = await asyncio.gather(ranked_task, ik_task)
-    print(f"[ask] retrieved {len(ranked)} sections, {len(ik_raw)} ik results", flush=True)
-    logger.info("[POST /ask] retrieval done | sections=%d | ik_results=%d | elapsed=%.3fs",
-                len(ranked), len(ik_raw), time.perf_counter() - req_start)
+    if web_task is not None:
+        ranked, ik_raw, web_raw = await asyncio.gather(ranked_task, ik_task, web_task)
+    else:
+        ranked, ik_raw = await asyncio.gather(ranked_task, ik_task)
+        web_raw = []
+    print(f"[ask] retrieved {len(ranked)} sections, {len(ik_raw)} ik results, {len(web_raw)} web results", flush=True)
+    logger.info("[POST /ask] retrieval done | sections=%d | ik_results=%d | web_results=%d | elapsed=%.3fs",
+                len(ranked), len(ik_raw), len(web_raw), time.perf_counter() - req_start)
 
-    context = _build_context_from_results(ranked, ik_raw)
+    context = _build_context_from_results(ranked, ik_raw, web_raw)
 
     messages = [{"role": "system", "content": SYSTEM_PROMPT}]
     for h in (body.history or []):
@@ -1693,6 +1941,7 @@ async def ask(body: AskRequest):
 
     results = to_search_results(ranked)
     ik_models = [IKResult(doc_id=d["doc_id"], title=d["title"], headline=d.get("headline", "")) for d in ik_raw]
+    web_models = [WebResult(**w) for w in web_raw]
 
     return AskResponse(
         question=body.question,
@@ -1700,6 +1949,7 @@ async def ask(body: AskRequest):
         supporting_sections=results,
         model_used=LLM_MODEL,
         indian_kanoon_results=ik_models,
+        web_results=web_models,
     )
 
 
@@ -1713,8 +1963,7 @@ def _ranked_to_section_meta(ranked: list) -> list:
         pn = r.get("provision_number", "")
         if lid and pn:
             data = PER_LAW_INDEXES.get(lid, {})
-            provisions = data.get("corpus", {}).get("provisions", [])
-            prov = next((p for p in provisions if str(p.get("number", "")) == str(pn)), None)
+            prov = _get_provision(data, pn)
             if prov:
                 snippet = (prov.get("full_text") or "")[:400]
         meta.append({
@@ -1736,10 +1985,11 @@ def ask_stream(body: AskRequest):
 
     ranked = retrieve(body.question, body.top_k)
     ik_raw = ik_search(body.question, max_results=5)
-    logger.info("[POST /ask/stream] retrieval done | sections=%d | ik_results=%d",
-                len(ranked), len(ik_raw))
+    web_raw = web_search(body.question, max_results=5) if _needs_web_search(body.question) else []
+    logger.info("[POST /ask/stream] retrieval done | sections=%d | ik_results=%d | web_results=%d",
+                len(ranked), len(ik_raw), len(web_raw))
 
-    context = _build_context_from_results(ranked, ik_raw)
+    context = _build_context_from_results(ranked, ik_raw, web_raw)
     history = body.history or []
     messages = [{"role": "system", "content": SYSTEM_PROMPT}]
     for h in history:
@@ -1749,6 +1999,7 @@ def ask_stream(body: AskRequest):
 
     sections_meta = _ranked_to_section_meta(ranked)
     ik_meta = [{"doc_id": d["doc_id"], "title": d["title"], "headline": d.get("headline", "")} for d in ik_raw]
+    web_meta = [{"title": w["title"], "link": w["link"], "snippet": w.get("snippet", ""), "source": w.get("source", ""), "date": w.get("date", "")} for w in web_raw]
 
     def event_stream():
         llm_start = time.perf_counter()
@@ -1784,7 +2035,7 @@ def ask_stream(body: AskRequest):
         logger.info("[POST /ask/stream] full response preview: %s", _truncate(full_response, 400))
         logger.info("─" * 80)
 
-        yield f"data: {json.dumps({'t': 'meta', 'sections': sections_meta, 'ik': ik_meta})}\n\n"
+        yield f"data: {json.dumps({'t': 'meta', 'sections': sections_meta, 'ik': ik_meta, 'web': web_meta})}\n\n"
         yield f"data: {json.dumps({'t': 'done'})}\n\n"
 
     return StreamingResponse(event_stream(), media_type="text/event-stream")
@@ -1802,11 +2053,16 @@ async def query(q: str = Query(...), top_k: int = 7):
     hyde_query_str = await loop.run_in_executor(None, hyde_query, q)
     ranked_task = loop.run_in_executor(None, retrieve, hyde_query_str, top_k)
     ik_task = loop.run_in_executor(None, ik_search, q, 0, 5)
+    web_task = loop.run_in_executor(None, web_search, q, 5) if _needs_web_search(q) else None
 
-    ranked, ik_raw = await asyncio.gather(ranked_task, ik_task)
+    if web_task is not None:
+        ranked, ik_raw, web_raw = await asyncio.gather(ranked_task, ik_task, web_task)
+    else:
+        ranked, ik_raw = await asyncio.gather(ranked_task, ik_task)
+        web_raw = []
 
-    context = _build_context_from_results(ranked, ik_raw)
-    ai_answer = await loop.run_in_executor(None, ask_llm, q, ranked, ik_raw)
+    context = _build_context_from_results(ranked, ik_raw, web_raw)
+    ai_answer = await loop.run_in_executor(None, ask_llm, q, ranked, ik_raw, web_raw)
 
     logger.info("[GET /query] done | total_elapsed=%.3fs | answer_len=%d",
                 time.perf_counter() - req_start, len(ai_answer))
@@ -1814,6 +2070,7 @@ async def query(q: str = Query(...), top_k: int = 7):
 
     results = to_search_results(ranked)
     ik_models = [IKResult(doc_id=d["doc_id"], title=d["title"], headline=d.get("headline", "")) for d in ik_raw]
+    web_models = [WebResult(**w) for w in web_raw]
 
     return QueryResponse(
         query=q,
@@ -1822,6 +2079,7 @@ async def query(q: str = Query(...), top_k: int = 7):
         total_found=len(results),
         model_used=LLM_MODEL,
         user_rights=None,
+        web_results=web_models,
         indian_kanoon_results=ik_models,
     )
 
@@ -2166,8 +2424,7 @@ def tool_case_summarizer(body: ToolCaseSummarizerRequest):
 def section(number: int):
     """Look up a section across all per-law indexes (legacy endpoint)."""
     for lid, data in PER_LAW_INDEXES.items():
-        provisions = data["corpus"].get("provisions", [])
-        prov = next((p for p in provisions if str(p.get("number", "")) == str(number)), None)
+        prov = _get_provision(data, number)
         if prov:
             ranked_single = [{
                 "score": 1.0,
@@ -2234,8 +2491,7 @@ def punishment(offense: str):
         text_for_pun = ""
         if lid and pn:
             data = PER_LAW_INDEXES.get(lid, {})
-            provisions = data.get("corpus", {}).get("provisions", [])
-            prov = next((p for p in provisions if str(p.get("number", "")) == str(pn)), None)
+            prov = _get_provision(data, pn)
             if prov:
                 text_for_pun = prov.get("full_text", "") or ""
         p = extract_punishment(text_for_pun) if text_for_pun else None
@@ -2717,10 +2973,12 @@ def load_per_law_indexes():
         meta = json.loads(meta_path.read_text(encoding="utf-8")) if meta_path.exists() else []
         corpus = json.loads(corpus_path.read_text(encoding="utf-8")) if corpus_path.exists() else {}
         curated = json.loads(curated_path.read_text(encoding="utf-8")) if curated_path.exists() else {}
+        provisions_by_number = _build_provision_lookup(corpus)
         PER_LAW_INDEXES[lid] = {
             "index": idx,
             "meta": meta,
             "corpus": corpus,
+            "provisions_by_number": provisions_by_number,
             "curated": curated,
             "label": law["label"],
             "domain": law["domain"],
@@ -2799,8 +3057,6 @@ def per_law_retrieve(law_id: str, query: str, top_k: int = 5) -> list:
         return []
     idx = data["index"]
     meta = data["meta"]
-    corpus = data["corpus"]
-    provisions = corpus.get("provisions", [])
     q_emb = embed_model.encode([query], normalize_embeddings=True)
     scores, indices = idx.search(q_emb, min(top_k * 4, idx.ntotal))
 
@@ -2811,8 +3067,8 @@ def per_law_retrieve(law_id: str, query: str, top_k: int = 5) -> list:
             continue
         m = meta[ii]
         prov_num = str(m.get("number", ""))
-        prov = next((p for p in provisions if str(p.get("number", "")) == prov_num), None)
-        text = (prov.get("full_text") or "")[:RERANK_TEXT_LEN] if prov else ""
+        prov = _get_provision(data, prov_num)
+        text = _provision_rerank_text(prov)
         pairs.append((query, text))
         valid.append(m)
 
@@ -2872,9 +3128,8 @@ def multi_law_retrieve(query: str, top_k: int = 10) -> list:
         data = PER_LAW_INDEXES.get(c["law_id"])
         if not data:
             continue
-        provisions = data["corpus"].get("provisions", [])
-        prov = next((p for p in provisions if str(p.get("number", "")) == str(c["provision_number"])), None)
-        text = (prov.get("full_text") or "")[:RERANK_TEXT_LEN] if prov else ""
+        prov = _get_provision(data, c["provision_number"])
+        text = _provision_rerank_text(prov)
         pairs.append((query, text))
         valid.append(c)
 
@@ -2958,8 +3213,7 @@ def get_provision(law_id: str, provision_number: str):
     if not data:
         raise HTTPException(404, f"Law '{law_id}' data not loaded")
     corpus = data["corpus"]
-    provisions = corpus.get("provisions", [])
-    prov = next((p for p in provisions if str(p.get("number", "")) == provision_number), None)
+    prov = _get_provision(data, provision_number)
     if not prov:
         raise HTTPException(404, f"Provision {provision_number} not found in {law_id}")
     curated = data.get("curated", {}).get("curated", [])
@@ -3003,8 +3257,7 @@ def enrich_provision(law_id: str, provision_number: str, body: ProvisionEnrichRe
     if not data:
         raise HTTPException(404, f"Law '{law_id}' data not loaded")
     corpus = data["corpus"]
-    provisions = corpus.get("provisions", [])
-    prov = next((p for p in provisions if str(p.get("number", "")) == provision_number), None)
+    prov = _get_provision(data, provision_number)
     if not prov:
         raise HTTPException(404, f"Provision {provision_number} not found in {law_id}")
 
@@ -3164,9 +3417,7 @@ async def ask_routed(body: RoutedAskRequest):
     for r in top:
         data = PER_LAW_INDEXES[r["law_id"]]
         pnl = data["provision_label"]
-        corpus = data["corpus"]
-        provisions = corpus.get("provisions", [])
-        prov = next((p for p in provisions if str(p.get("number", "")) == r["provision_number"]), None)
+        prov = _get_provision(data, r["provision_number"])
         text = prov.get("full_text") or "" if prov else ""
         context_parts.append(
             f"{r['law_label']} {pnl} {r['provision_number']} — {r['title']}\n{text[:2000]}"
